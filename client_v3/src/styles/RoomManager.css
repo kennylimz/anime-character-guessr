@@ -213,10 +213,6 @@ h2 {
   background-color: #f9f9f9;
 }
 
-.room-item.in-game {
-  border-left: 4px solid #FFC107;
-}
-
 .room-info {
   flex: 1;
 }
