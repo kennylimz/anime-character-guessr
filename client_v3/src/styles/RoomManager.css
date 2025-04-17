@@ -1,0 +1,408 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 添加全局背景样式 */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+}
+
+.room-manager-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+  padding-top: 3rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.room-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+.create-room-section,
+.join-room-section {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-room-section h2,
+.join-room-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.create-room-section p,
+.join-room-section p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.room-history-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.create-room-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #27ae60; /* 绿色 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-room-button:hover {
+  background-color: #219a52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.join-room-input-group {
+  display: flex;
+  gap: 8px;
+  height: 46px;
+  margin-top: auto;
+}
+
+.join-room-input {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background: #fff;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+.join-room-input:focus {
+  border-color: #646cff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.1);
+}
+
+.join-room-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4a90e2; /* 蓝色 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.join-room-button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.room-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.clear-history-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f39c12; /* 橙色 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clear-history-button:hover {
+  background-color: #e67e22;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.loading-message,
+.no-history-message {
+  text-align: center;
+  padding: 2rem;
+  color: #757575;
+  font-style: italic;
+}
+
+.room-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.room-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.room-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room-item.inactive {
+  opacity: 0.7;
+  background-color: #f9f9f9;
+}
+
+.room-item.in-game {
+  border-left: 4px solid #FFC107;
+}
+
+.room-info {
+  flex: 1;
+}
+
+.room-primary-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.room-type-badge {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #4a90e2; /* 默认蓝色 */
+}
+
+/* 我们不能使用:contains选择器，需要在JSX代码中处理颜色 */
+.room-type-badge.created {
+  background-color: #27ae60; /* 绿色 */
+}
+
+.room-type-badge.joined {
+  background-color: #4a90e2; /* 蓝色 */
+}
+
+.room-id {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  background-color: #f5f5f5;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.room-id:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room-id-label {
+  color: #666;
+  font-weight: normal;
+  margin-right: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.85rem;
+}
+
+.copy-icon {
+  margin-left: 4px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.room-id:hover .copy-icon {
+  opacity: 1;
+}
+
+.room-status {
+  font-size: 0.9rem;
+}
+
+.room-status.public {
+  color: #4CAF50;
+}
+
+.room-status.private {
+  color: #F44336;
+}
+
+.room-game-status {
+  background-color: #9b59b6; /* 紫色 */
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.room-secondary-info {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #757575;
+}
+
+.room-not-exists {
+  color: #F44336;
+}
+
+.room-action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.join-room-button-small {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #4a90e2; /* 蓝色 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.join-room-button-small:hover {
+  background-color: #357abd;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.delete-room-button {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #ff6b6b; /* 红色 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.delete-room-button:hover {
+  background-color: #e45050;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Copy notification */
+.copy-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 4px;
+  z-index: 1000;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .room-manager-container {
+    padding: 1rem;
+  }
+  
+  .room-actions {
+    flex-direction: column;
+  }
+  
+  .create-room-section,
+  .join-room-section {
+    width: 100%;
+    height: auto;
+  }
+  
+  .join-room-input-group {
+    flex-direction: column;
+  }
+  
+  .room-primary-info {
+    flex-wrap: wrap;
+  }
+  
+  .room-action-buttons {
+    flex-direction: column;
+  }
+} 

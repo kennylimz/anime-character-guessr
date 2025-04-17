@@ -52,6 +52,7 @@ io.on('connection', (socket) => {
     rooms.set(roomId, {
       host: socket.id,
       isPublic: true, // Default to public
+      createdAt: Date.now(),
       players: [{
         id: socket.id,
         username,
@@ -481,6 +482,29 @@ io.on('connection', (socket) => {
 
 app.get('/ping', (req, res) => {
   res.status(200).send('Server is active');
+});
+
+// API to get room status
+app.get('/api/rooms/:roomId', (req, res) => {
+  const roomId = req.params.roomId;
+  const room = rooms.get(roomId);
+  
+  if (!room) {
+    return res.status(404).json({ 
+      exists: false,
+      message: 'Room not found' 
+    });
+  }
+  
+  // Return room status without sensitive information
+  res.json({
+    exists: true,
+    isPublic: room.isPublic,
+    playerCount: room.players.length,
+    playerNames: room.players.map(p => p.username),
+    inGame: !!room.currentGame,
+    createdAt: room.createdAt || Date.now()
+  });
 });
 
 startSelfPing();

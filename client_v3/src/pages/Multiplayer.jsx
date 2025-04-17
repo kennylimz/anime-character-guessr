@@ -163,8 +163,15 @@ const Multiplayer = () => {
       setIsHost(true);
       navigate(`/multiplayer/${newRoomId}`);
     } else {
+      // Check if user is the creator from URL query params
+      const urlParams = new URLSearchParams(window.location.search);
+      const isCreator = urlParams.get('creator') === 'true';
+      if (isCreator) {
+        setIsHost(true);
+      }
+      
       // Set room URL for sharing
-      setRoomUrl(window.location.href);
+      setRoomUrl(window.location.href.split('?')[0]);
     }
   }, [roomId, navigate]);
 
