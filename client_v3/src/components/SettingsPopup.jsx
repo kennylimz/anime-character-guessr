@@ -127,7 +127,11 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onClose}>×</button>
+       {hideRestart ? (
+          <button className="popup-close multiplayer-confirm" onClick={onClose}>确认修改</button>
+        ) : (
+          <button className="popup-close" onClick={onClose}>×</button>
+        )}
         <div className="popup-header">
           <h2>设置</h2>
         </div>
