@@ -47,6 +47,25 @@
   color: #1e293b;
 }
 
+.popup-close.multiplayer-confirm {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.popup-close.multiplayer-confirm:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+
+
 .popup-header {
   text-align: center;
   margin-bottom: 8px;
