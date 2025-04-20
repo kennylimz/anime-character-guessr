@@ -64,8 +64,6 @@
   color: white;
 }
 
-
-
 .popup-header {
   text-align: center;
   margin-bottom: 8px;
@@ -1130,4 +1128,130 @@
 
 .submit-tags-btn:disabled:hover {
   background: #94a3b8;
+}
+
+.existing-tags {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.existing-tags h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.existing-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.existing-tag {
+  background-color: #f1f5f9;
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.no-tags {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.existing-tag-container {
+  display: inline-block;
+  position: relative;
+  margin: 4px;
+}
+
+.existing-tag-btn {
+  background-color: #f1f5f9;
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  color: #475569;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.existing-tag-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.existing-tag-btn:focus {
+  outline: none;
+}
+
+.existing-tag-btn.upvoted {
+  background-color: #22c55e;
+  color: white;
+}
+
+.existing-tag-btn.downvoted {
+  background-color: #ef4444;
+  color: white;
+}
+
+.existing-tag-btn.upvoted:hover {
+  background-color: #16a34a;
+}
+
+.existing-tag-btn.downvoted:hover {
+  background-color: #dc2626;
+}
+
+.vote-box {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.vote-box::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+}
+
+.vote-btn {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.vote-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.existing-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
 }

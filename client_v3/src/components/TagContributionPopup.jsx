@@ -1,6 +1,7 @@
 import '../styles/popups.css';
-import { useState } from 'react';
-import { submitCharacterTags, proposeCustomTags } from '../utils/db';
+import { useState, useRef, useEffect } from 'react';
+import { submitCharacterTags, proposeCustomTags, submitFeedbackTags } from '../utils/db';
+import { idToTags } from '../data/id_tags.js';
 
 function TagContributionPopup({ character, onClose }) {
   const [selectedTags, setSelectedTags] = useState([]);
@@ -8,6 +9,59 @@ function TagContributionPopup({ character, onClose }) {
   const [customTagInput, setCustomTagInput] = useState('');
   const [inputError, setInputError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [activeVoteTag, setActiveVoteTag] = useState(null);
+  const [upvotedTags, setUpvotedTags] = useState(new Set());
+  const [downvotedTags, setDownvotedTags] = useState(new Set());
+  
+  // Close vote box when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.vote-box') && !event.target.closest('.existing-tag-btn')) {
+        setActiveVoteTag(null);
+      }
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
+  const handleTagVoteClick = (event, tag) => {
+    console.log(character.id);
+    event.stopPropagation();
+    setActiveVoteTag(activeVoteTag === tag ? null : tag);
+  };
+
+  const handleVote = (tag, vote) => {
+    // Remove from both sets first
+    upvotedTags.delete(tag);
+    downvotedTags.delete(tag);
+
+    // Then add to appropriate set based on vote
+    if (vote === 'up') {
+      upvotedTags.add(tag);
+    }
+    else if (vote === 'down') {
+      downvotedTags.add(tag);
+    }
+    else if (vote === 'neutral') {
+      upvotedTags.delete(tag);
+      downvotedTags.delete(tag);
+    }
+    
+    // Force a re-render by setting the state with the same Set
+    setUpvotedTags(new Set(upvotedTags));
+    setDownvotedTags(new Set(downvotedTags));
+    setActiveVoteTag(null);
+  };
+
+  const getTagClassName = (tag) => {
+    let className = 'existing-tag-btn';
+    if (upvotedTags.has(tag)) {
+      className += ' upvoted';
+    } else if (downvotedTags.has(tag)) {
+      className += ' downvoted';
+    }
+    return className;
+  };
 
   const MAX_TAGS = 6;
   const totalTags = selectedTags.length + customTags.length;
@@ -68,6 +122,11 @@ function TagContributionPopup({ character, onClose }) {
       if (customTags.length > 0) {
         submitPromises.push(proposeCustomTags(character.id, customTags));
       }
+
+      // Submit tag feedback if there are any votes
+      if (upvotedTags.size > 0 || downvotedTags.size > 0) {
+        submitPromises.push(submitFeedbackTags(character.id, upvotedTags, downvotedTags));
+      }
       
       await Promise.all(submitPromises);
       
@@ -116,13 +175,27 @@ function TagContributionPopup({ character, onClose }) {
                 <div className="character-preview-name">{character.name}</div>
                 <div className="character-preview-name-cn">{character.nameCn}</div>
               </div>
-              <div className="author-notes">
-                为角色贡献标签，帮助其他玩家更容易猜到TA。<br />
-                请负责任地选择或添加，避免使用重复、无关或者过于稀有的标签。<br/>
-                可以参考:萌娘百科角色页的“萌点”、Bangumi番剧页的标签，或者其他有助于过滤的属性。<br/>
-                声优名字一定有的，所以不用添加。<br/>
-                每次最多可以贡献6个标签。<br/>
-                现在是什么情况？这几天先收集一下投票，之后就会加入到游戏里。谢谢大家。
+              <div className="existing-tags">
+                <h4>现有标签</h4>
+                <div className="existing-tags-list">
+                  {idToTags[character.id]?.map(tag => (
+                    <div key={tag} className="existing-tag-container">
+                      <button
+                        className={getTagClassName(tag)}
+                        onClick={(e) => handleTagVoteClick(e, tag)}
+                      >
+                        {tag}
+                      </button>
+                      {activeVoteTag === tag && (
+                        <div className="vote-box">
+                          <button onClick={() => handleVote(tag, 'up')} className="vote-btn">👍</button>
+                          <button onClick={() => handleVote(tag, 'neutral')} className="vote-btn">—</button>
+                          <button onClick={() => handleVote(tag, 'down')} className="vote-btn">👎</button>
+                        </div>
+                      )}
+                    </div>
+                  )) || <span className="no-tags">暂无</span>}
+                </div>
               </div>
             </div>
             <div className="tag-input-section">
@@ -187,7 +260,7 @@ function TagContributionPopup({ character, onClose }) {
         <div className="popup-footer">
           <button 
             className="submit-tags-btn" 
-            disabled={totalTags === 0 || isSubmitting}
+            disabled={(totalTags === 0 && upvotedTags.size === 0 && downvotedTags.size === 0) || isSubmitting}
             onClick={handleSubmit}
           >
             {isSubmitting ? '提交中...' : `提交标签 (${totalTags}/${MAX_TAGS})`}

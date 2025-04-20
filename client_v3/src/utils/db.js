@@ -54,3 +54,28 @@ export async function proposeCustomTags(characterId, tags) {
   }
 }
 
+export async function submitFeedbackTags(characterId, upvotes, downvotes) {
+  try {
+    const response = await fetch(`${DB_SERVER_URL}/api/feedback-tags`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        characterId,
+        upvotes: Array.from(upvotes),
+        downvotes: Array.from(downvotes),
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error('Error submitting tag feedback:', error);
+    throw error;
+  }
+}
+

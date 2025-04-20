@@ -21,7 +21,7 @@ const Home = () => {
         </Link>
         <Link to="/multiplayer" className="mode-button">
           <h2>多人</h2>
-          <small>当前房间数: {roomCount}/300</small>
+          <small>当前房间数: {roomCount}/259</small>
         </Link>
       </div>
       <div className="home-footer">
@@ -32,8 +32,7 @@ const Home = () => {
           灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
           数据来源<a href="https://bgm.tv/"> Bangumi </a>。<br />
           <a href="https://space.bilibili.com/87983557">@作者</a>：“感谢 Bangumi 管理员的优化支持，以及各位网友贡献的代码。感谢大家这段时间的热情和支持。”<br/>
-          角色标签有大佬帮忙持续更新，之后会加入点赞倒赞的页面。<br/>
-          作品标签逻辑已重写。更新了老二次元友好的设置项。<br/>
+          角色标签有大佬帮忙持续更新，已可对现有角色标签投票。<br/>
           有好的预设或目录可以B站私信<a href="https://space.bilibili.com/87983557">作者</a>，可能被采纳成为每日推荐或者常驻预设。<br/>
           想加入一个童年回忆的主题……
         </p>

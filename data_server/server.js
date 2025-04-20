@@ -153,6 +153,66 @@ app.post('/api/propose-tags', async (req, res) => {
   }
 });
 
+// Feedback for character tags
+app.post('/api/feedback-tags', async (req, res) => {
+  try {
+    const { characterId, upvotes, downvotes } = req.body;
+    
+    // Validate request body
+    if (!characterId || !upvotes || !downvotes || !Array.isArray(upvotes) || !Array.isArray(downvotes)) {
+      return res.status(400).json({ 
+        error: 'Invalid request body. Required format: { characterId: number, upvotes: string[], downvotes: string[] }' 
+      });
+    }
+
+    const client = db.getClient();
+    const database = client.db('tags');
+    const collection = database.collection('character_tags');
+
+    // Get existing document if it exists
+    const existingDoc = await collection.findOne({ _id: characterId });
+    
+    // Check if document exists
+    if (!existingDoc || !existingDoc.tagCounts) {
+      return res.status(404).json({
+        error: 'Character not found or has no tags'
+      });
+    }
+
+    let tagCounts = { ...existingDoc.tagCounts };
+
+    // Increment upvoted tags
+    for (const tag of upvotes) {
+      if (tag in tagCounts) {
+        tagCounts[tag]++;
+      }
+    }
+
+    // Decrement downvoted tags
+    for (const tag of downvotes) {
+      if (tag in tagCounts) {
+        tagCounts[tag]--;
+      }
+    }
+
+    // Update document
+    const result = await collection.updateOne(
+      { _id: characterId },
+      { $set: { tagCounts } }
+    );
+
+    res.json({
+      message: 'Tag feedback processed successfully',
+      characterId,
+      updated: result.modifiedCount > 0,
+      tagCounts
+    });
+  } catch (error) {
+    console.error('Error processing tag feedback:', error);
+    res.status(500).json({ error: 'Failed to process tag feedback' });
+  }
+});
+
 startSelfPing();
 
 app.listen(PORT, () => {
