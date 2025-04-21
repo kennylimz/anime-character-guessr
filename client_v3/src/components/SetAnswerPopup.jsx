@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import '../styles/SetAnswerPopup.css';
 import { designateCharacter } from '../utils/anime';
+import { submitAnswerCharacterCount } from '../utils/db';
 
 const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
@@ -18,6 +19,13 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
       setIsSubmitting(true);
       try {
         const character = await designateCharacter(selectedCharacter.id, gameSettings);
+        
+        try {
+          await submitAnswerCharacterCount(selectedCharacter.id, character.nameCn || character.name);
+        } catch (error) {
+          console.error('Failed to submit answer count:', error);
+        }
+
         onSetAnswer({
           character,
           hints: [hint1, hint2]

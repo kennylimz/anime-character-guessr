@@ -213,6 +213,43 @@ app.post('/api/feedback-tags', async (req, res) => {
   }
 });
 
+// Count character usage
+app.post('/api/answer-character-count', async (req, res) => {
+  try {
+    const { characterId, characterName } = req.body;
+    
+    // Validate request body
+    if (!characterId || !characterName || typeof characterId !== 'number' || typeof characterName !== 'string') {
+      return res.status(400).json({ 
+        error: 'Invalid request body. Required format: { characterId: number, characterName: string }' 
+      });
+    }
+
+    const client = db.getClient();
+    const database = client.db('stats');
+    const collection = database.collection('answer_count');
+
+    const result = await collection.updateOne(
+      { _id: characterId },
+      { 
+        $inc: { count: 1 },
+        $set: { characterName: characterName.trim() }
+      },
+      { upsert: true }
+    );
+
+    res.json({
+      message: 'Character answer count updated successfully',
+      characterId,
+      updated: result.modifiedCount > 0,
+      created: result.upsertedCount > 0
+    });
+  } catch (error) {
+    console.error('Error updating character answer count:', error);
+    res.status(500).json({ error: 'Failed to update character answer count' });
+  }
+});
+
 startSelfPing();
 
 app.listen(PORT, () => {

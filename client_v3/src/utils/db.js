@@ -79,3 +79,26 @@ export async function submitFeedbackTags(characterId, upvotes, downvotes) {
   }
 }
 
+export async function submitAnswerCharacterCount(characterId, characterName) {
+  try {
+    const response = await fetch(`${DB_SERVER_URL}/api/answer-character-count`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        characterId,
+        characterName,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error('Error submitting character answer count:', error);
+    throw error;
+  }
+}
