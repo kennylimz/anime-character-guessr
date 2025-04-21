@@ -229,7 +229,6 @@ io.on('connection', (socket) => {
         // Store current game state in room data
         room.currentGame = {
             settings,
-            startTime: Date.now(),
             guesses: [] // Initialize guesses as an array of objects
         };
 
@@ -273,9 +272,16 @@ io.on('connection', (socket) => {
                 playerGuesses.guesses.push({
                     playerId: socket.id,
                     playerName: player.username,
-                    ...guessResult,
-                    timestamp: Date.now()
+                    ...guessResult
                 });
+
+                // Send real-time guess history update to the original answer setter
+                const originalAnswerSetter = room.players.find(p => p.isAnswerSetter);
+                if (originalAnswerSetter) {
+                    io.to(originalAnswerSetter.id).emit('guessHistoryUpdate', {
+                        guesses: room.currentGame.guesses
+                    });
+                }
             }
         }
 
@@ -317,43 +323,83 @@ io.on('connection', (socket) => {
                 player.guesses += '💀';
         }
 
-        // Check if all players have ended their game or disconnected
-        const allEnded = room.players.every(p => p.guesses.includes('✌') || p.guesses.includes('💀') || p.guesses.includes('🏳️') || p.disconnected);
-        const winner = room.players.find(p => p.guesses.includes('✌'));
+        // Check if all non-answer-setter players have ended their game or disconnected
+        const activePlayers = room.players.filter(p => !p.isAnswerSetter);
+        const allEnded = activePlayers.every(p => 
+            p.guesses.includes('✌') || 
+            p.guesses.includes('💀') || 
+            p.guesses.includes('🏳️') || 
+            p.disconnected
+        );
+        const winner = activePlayers.find(p => p.guesses.includes('✌'));
+
+        const handleGameEnd = () => {
+            // Get the answer setter before resetting status
+            const answerSetter = room.players.find(p => p.isAnswerSetter);
+
+            // If there was an answer setter (manual mode)
+            if (answerSetter) {
+                if (winner) {
+                    // If winner took many guesses
+                    if (winner.guesses.length > 5) {
+                        answerSetter.score += 1;
+                        io.to(roomId).emit('gameEnded', {
+                            message: `赢家是: ${winner.username}！出题人 ${answerSetter.username} 获得1分！`,
+                            guesses: room.currentGame?.guesses || []
+                        });
+                    } else {
+                        io.to(roomId).emit('gameEnded', {
+                            message: `赢家是: ${winner.username}！`,
+                            guesses: room.currentGame?.guesses || []
+                        });
+                    }
+                } else {
+                    // Deduct point from answer setter for no winner
+                    answerSetter.score--;
+                    io.to(roomId).emit('gameEnded', {
+                        message: `已经结束咧🙄！没人猜中，出题人 ${answerSetter.username} 扣1分！`,
+                        guesses: room.currentGame?.guesses || []
+                    });
+                }
+            } else {
+                // Normal mode end messages
+                io.to(roomId).emit('gameEnded', {
+                    message: winner ? `赢家是: ${winner.username}` : '已经结束咧🙄！没人猜中',
+                    guesses: room.currentGame?.guesses || []
+                });
+            }
+
+            // Reset answer setter status for all players
+            room.players.forEach(p => {
+                p.isAnswerSetter = false;
+            });
+
+            // Reset ready status
+            io.to(roomId).emit('resetReadyStatus');
+
+            // Clear current game state
+            room.currentGame = null;
+
+            // Broadcast updated players to ensure answer setter status is reset
+            io.to(roomId).emit('updatePlayers', {
+                players: room.players,
+                isPublic: room.isPublic,
+                answerSetterId: null
+            });
+        };
 
         if (winner) {
             // Increment winner's score by 1
             winner.score += 1;
-
-            // Broadcast winner and answer to all clients
-            io.to(roomId).emit('gameEnded', {
-                message: `赢家是: ${winner.username}`,
-                guesses: room.currentGame?.guesses || [] // Safely handle undefined case
-            });
-
-            // Reset ready status only when game globally ends
-            io.to(roomId).emit('resetReadyStatus');
-
-            // Clear current game state
-            room.currentGame = null;
+            handleGameEnd();
         } else if (allEnded) {
-            // Broadcast game end with answer to all clients
-            io.to(roomId).emit('gameEnded', {
-                message: '已经结束咧🙄！没人猜中',
-                guesses: room.currentGame?.guesses || [] // Safely handle undefined case
+            handleGameEnd();
+        } else {
+            // Just broadcast updated players for this individual player's end
+            io.to(roomId).emit('updatePlayers', {
+                players: room.players
             });
-
-            // Reset ready status only when game globally ends
-            io.to(roomId).emit('resetReadyStatus');
-
-            // Clear current game state
-            room.currentGame = null;
         }
-
-        // Broadcast updated players to all clients in the room
-        io.to(roomId).emit('updatePlayers', {
-            players: room.players
-        });
 
         console.log(`Player ${player.username} ended their game in room ${roomId} with result: ${result}`);
     });
@@ -486,6 +532,148 @@ io.on('connection', (socket) => {
         });
 
         console.log(`Room ${roomId} visibility changed to ${room.isPublic ? 'public' : 'private'}`);
+    });
+
+    // Handle entering manual mode
+    socket.on('enterManualMode', ({roomId}) => {
+        const room = rooms.get(roomId);
+
+        if (!room) {
+            socket.emit('error', {message: 'Room not found'});
+            return;
+        }
+
+        // Only allow host to enter manual mode
+        const player = room.players.find(p => p.id === socket.id);
+        if (!player || !player.isHost) {
+            socket.emit('error', {message: '只有房主可以进入出题模式'});
+            return;
+        }
+
+        // Set all non-host players as ready
+        room.players.forEach(p => {
+            if (!p.isHost) {
+                p.ready = true;
+            }
+        });
+
+        // Notify all players in the room about the update
+        io.to(roomId).emit('updatePlayers', {
+            players: room.players,
+            isPublic: room.isPublic
+        });
+
+        console.log(`Room ${roomId} entered manual mode`);
+    });
+
+    // Handle setting answer setter
+    socket.on('setAnswerSetter', ({roomId, setterId}) => {
+        const room = rooms.get(roomId);
+
+        if (!room) {
+            socket.emit('error', {message: 'Room not found'});
+            return;
+        }
+
+        // Only allow host to set answer setter
+        const player = room.players.find(p => p.id === socket.id);
+        if (!player || !player.isHost) {
+            socket.emit('error', {message: '只有房主可以选择出题人'});
+            return;
+        }
+
+        // Find the selected player
+        const setter = room.players.find(p => p.id === setterId);
+        if (!setter) {
+            socket.emit('error', {message: '找不到选中的玩家'});
+            return;
+        }
+
+        // Update room state
+        room.isPublic = false;
+        room.answerSetterId = setterId;
+        room.waitingForAnswer = true;
+
+        // Notify all players in the room about the update
+        io.to(roomId).emit('updatePlayers', {
+            players: room.players,
+            isPublic: room.isPublic,
+            answerSetterId: setterId
+        });
+
+        // Emit waitForAnswer event
+        io.to(roomId).emit('waitForAnswer', {
+            answerSetterId: setterId,
+            setterUsername: setter.username
+        });
+
+        console.log(`Answer setter set to ${setter.username} in room ${roomId}`);
+    });
+
+    // Handle answer setting from designated player
+    socket.on('setAnswer', ({roomId, character, hints}) => {
+        const room = rooms.get(roomId);
+
+        if (!room) {
+            socket.emit('error', {message: 'Room not found'});
+            return;
+        }
+
+        // Only allow designated answer setter to set answer
+        if (socket.id !== room.answerSetterId) {
+            socket.emit('error', {message: '你不是指定的出题人'});
+            return;
+        }
+
+        // Remove disconnected players with 0 score
+        room.players = room.players.filter(p => !p.disconnected || p.score > 0);
+
+        // Store current game state in room data
+        room.currentGame = {
+            settings: room.settings,
+            guesses: [] // Initialize guesses as an array of objects
+        };
+
+        // Reset all players' game state and mark the answer setter
+        room.players.forEach(p => {
+            p.guesses = '';
+            p.isAnswerSetter = (p.id === socket.id); // Mark the answer setter
+            // Initialize each player's guesses array using their username
+            if (!p.isAnswerSetter) { // Only initialize guesses for non-answer setters
+                room.currentGame.guesses.push({username: p.username, guesses: []});
+            }
+        });
+
+        // Reset room state
+        room.waitingForAnswer = false;
+        room.answerSetterId = null;
+
+        // Send initial empty guess history to answer setter
+        socket.emit('guessHistoryUpdate', {
+            guesses: room.currentGame.guesses
+        });
+
+        // Broadcast game start to all clients in the room
+        io.to(roomId).emit('gameStart', {
+            character,
+            settings: room.settings,
+            players: room.players,
+            isPublic: false,
+            hints: hints,
+            isAnswerSetter: false
+        });
+
+        // Send special game start event to answer setter
+        socket.emit('gameStart', {
+            character,
+            settings: room.settings,
+            players: room.players,
+            isPublic: false,
+            hints: hints,
+            isAnswerSetter: true
+        });
+
+        console.log(`Game started in room ${roomId} with custom answer`);
     });
 });
 

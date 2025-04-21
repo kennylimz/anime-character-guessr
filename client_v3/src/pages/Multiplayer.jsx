@@ -9,6 +9,7 @@ import GuessesTable from '../components/GuessesTable';
 import Timer from '../components/Timer';
 import PlayerList from '../components/PlayerList';
 import GameEndPopup from '../components/GameEndPopup';
+import SetAnswerPopup from '../components/SetAnswerPopup';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
 import CryptoJS from 'crypto-js';
@@ -29,6 +30,9 @@ const Multiplayer = () => {
   const [error, setError] = useState('');
   const [showSettings, setShowSettings] = useState(false);
   const [isPublic, setIsPublic] = useState(true);
+  const [isManualMode, setIsManualMode] = useState(false);
+  const [answerSetterId, setAnswerSetterId] = useState(null);
+  const [waitingForAnswer, setWaitingForAnswer] = useState(false);
   const [gameSettings, setGameSettings, removeGameSettings] = useLocalStorage('multiplayer-game-settings', {
     startYear: new Date().getFullYear()-5,
     endYear: new Date().getFullYear(),
@@ -68,8 +72,9 @@ const Multiplayer = () => {
   const [globalGameEnd, setGlobalGameEnd] = useState(false);
   const [guessesHistory, setGuessesHistory] = useState([]);
   const [showNames, setShowNames] = useState(true);
-  const [currentSubjectSearch, setCurrentSubjectSearch] = useState(true);
   const [showCharacterPopup, setShowCharacterPopup] = useState(false);
+  const [showSetAnswerPopup, setShowSetAnswerPopup] = useState(false);
+  const [isAnswerSetter, setIsAnswerSetter] = useState(false);
 
   useEffect(() => {
     // Initialize socket connection
@@ -77,37 +82,32 @@ const Multiplayer = () => {
     setSocket(newSocket);
 
     // Socket event listeners
-    newSocket.on('updatePlayers', ({ players, isPublic }) => {
+    newSocket.on('updatePlayers', ({ players, isPublic, answerSetterId }) => {
       setPlayers(players);
       if (isPublic !== undefined) {
         setIsPublic(isPublic);
       }
+      if (answerSetterId !== undefined) {
+        setAnswerSetterId(answerSetterId);
+      }
     });
 
-    newSocket.on('roomClosed', ({ message }) => {
-      alert(message || '房主已断开连接，房间已关闭。');
-      setError('房间已关闭');
-      navigate('/multiplayer');
+    newSocket.on('waitForAnswer', ({ answerSetterId }) => {
+      setWaitingForAnswer(true);
+      setIsManualMode(false);
+      // Show popup if current user is the answer setter
+      if (answerSetterId === newSocket.id) {
+        setShowSetAnswerPopup(true);
+      }
     });
 
-    newSocket.on('error', ({ message }) => {
-      alert(`错误: ${message}`);
-      setError(message);
-      setIsJoined(false);
-    });
-
-    newSocket.on('updateGameSettings', ({ settings }) => {
-      console.log('Received game settings:', settings);
-      setGameSettings(settings);
-    });
-
-    newSocket.on('gameStart', ({ character, settings, players, isPublic }) => {
+    newSocket.on('gameStart', ({ character, settings, players, isPublic, hints, isAnswerSetter: isAnswerSetterFlag }) => {
       gameEndedRef.current = false;
       const decryptedCharacter = JSON.parse(CryptoJS.AES.decrypt(character, secret).toString(CryptoJS.enc.Utf8));
       setAnswerCharacter(decryptedCharacter);
       setGameSettings(settings);
       setGuessesLeft(settings.maxAttempts);
-      setCurrentSubjectSearch(settings.subjectSearch);
+      setIsAnswerSetter(isAnswerSetterFlag);
       if (players) {
         setPlayers(players);
       }
@@ -115,9 +115,16 @@ const Multiplayer = () => {
         setIsPublic(isPublic);
       }
 
+      // Reset guess history when game starts
+      setGuessesHistory([]);
+
       // Prepare hints if enabled
       let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-      if (settings.enableHints && decryptedCharacter.summary) {
+      if (settings.enableHints && (hints[0] || hints[1])) {
+        hintTexts = hints;
+      } 
+      else if (settings.enableHints && decryptedCharacter && decryptedCharacter.summary) {
+        // Generate hints from summary if enabled and summary exists
         const sentences = decryptedCharacter.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
         if (sentences.length > 0) {
           const selectedIndices = new Set();
@@ -137,7 +144,28 @@ const Multiplayer = () => {
       setGuesses([]);
     });
 
-    // Listen for game end event
+    // Add new event listener for guess history updates
+    newSocket.on('guessHistoryUpdate', ({ guesses }) => {
+      setGuessesHistory(guesses);
+    });
+
+    newSocket.on('roomClosed', ({ message }) => {
+      alert(message || '房主已断开连接，房间已关闭。');
+      setError('房间已关闭');
+      navigate('/multiplayer');
+    });
+
+    newSocket.on('error', ({ message }) => {
+      alert(`错误: ${message}`);
+      setError(message);
+      setIsJoined(false);
+    });
+
+    newSocket.on('updateGameSettings', ({ settings }) => {
+      console.log('Received game settings:', settings);
+      setGameSettings(settings);
+    });
+
     newSocket.on('gameEnded', ({ message, guesses }) => {
       setWinner(message);
       setGlobalGameEnd(true);
@@ -145,7 +173,6 @@ const Multiplayer = () => {
       setIsGameStarted(false);
     });
 
-    // Listen for reset ready status event
     newSocket.on('resetReadyStatus', () => {
       setPlayers(prevPlayers => prevPlayers.map(player => ({
         ...player,
@@ -399,7 +426,6 @@ const Multiplayer = () => {
         // Update local state
         setAnswerCharacter(character);
         setGuessesLeft(gameSettings.maxAttempts);
-        setCurrentSubjectSearch(gameSettings.subjectSearch);
 
         // Prepare hints if enabled
         let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
@@ -428,6 +454,22 @@ const Multiplayer = () => {
     }
   };
 
+  const handleManualMode = () => {
+    if (isManualMode) {
+      setAnswerSetterId(null);
+      setIsManualMode(false);
+    } else {
+      // Set all players as ready when entering manual mode
+      socket.emit('enterManualMode', { roomId });
+      setIsManualMode(true);
+    }
+  };
+
+  const handleSetAnswerSetter = (setterId) => {
+    if (!isHost || !isManualMode) return;
+    socket.emit('setAnswerSetter', { roomId, setterId });
+  };
+
   const getGenderEmoji = (gender) => {
     switch (gender) {
       case 'male':
@@ -441,6 +483,21 @@ const Multiplayer = () => {
 
   const handleVisibilityToggle = () => {
     socket.emit('toggleRoomVisibility', { roomId });
+  };
+
+  const handleSetAnswer = async ({ character, hints }) => {
+    try {
+      const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
+      socket.emit('setAnswer', {
+        roomId,
+        character: encryptedCharacter,
+        hints
+      });
+      setShowSetAnswerPopup(false);
+    } catch (error) {
+      console.error('Failed to set answer:', error);
+      alert('设置答案失败，请重试');
+    }
   };
 
   if (!roomId) {
@@ -484,11 +541,15 @@ const Multiplayer = () => {
             isGameStarted={isGameStarted}
             handleReadyToggle={handleReadyToggle}
             onAnonymousModeChange={setShowNames}
+            isManualMode={isManualMode}
+            isHost={isHost}
+            answerSetterId={answerSetterId}
+            onSetAnswerSetter={handleSetAnswerSetter}
           />
 
           {!isGameStarted && !globalGameEnd && (
             <>
-              {isHost && (
+              {isHost && !waitingForAnswer && (
                 <div className="host-controls">
                   <div className="room-url-container">
                     <input
@@ -501,7 +562,7 @@ const Multiplayer = () => {
                   </div>
                 </div>
               )}
-              {isHost && (
+              {isHost && !waitingForAnswer && (
                 <div className="host-game-controls">
                   <div className="button-group">
                     <button
@@ -523,6 +584,13 @@ const Multiplayer = () => {
                     >
                       开始
                     </button>
+                    <button
+                      onClick={handleManualMode}
+                      className={`manual-mode-button ${isManualMode ? 'active' : ''}`}
+                      disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected)}
+                    >
+                      有人出题？
+                    </button>
                   </div>
                   <div className="anonymous-mode-info">
                     匿名模式？点表头"名"切换。
@@ -540,42 +608,89 @@ const Multiplayer = () => {
           {isGameStarted && !globalGameEnd && (
             // In game
             <div className="container">
-              <SearchBar
-                onCharacterSelect={handleCharacterSelect}
-                isGuessing={isGuessing}
-                gameEnd={gameEnd}
-                subjectSearch={gameSettings.subjectSearch}
-              />
-              {gameSettings.timeLimit && !gameEnd && (
-                <Timer
-                  timeLimit={gameSettings.timeLimit}
-                  onTimeUp={handleTimeUp}
-                  isActive={!isGuessing}
-                  reset={shouldResetTimer}
-                />
-              )}
-              <div className="game-info">
-                <div className="guesses-left">
-                  <span>剩余猜测次数: {guessesLeft}</span>
-                  <button
-                    className="surrender-button"
-                    onClick={handleSurrender}
-                  >
-                    投降 🏳️
-                  </button>
-                </div>
-                {gameSettings.enableHints && hints.first && (
-                  <div className="hints">
-                    {guessesLeft <= 5 && <div className="hint">提示1: {hints.first}</div>}
-                    {guessesLeft <= 2 && <div className="hint">提示2: {hints.second}</div>}
+              {!isAnswerSetter ? (
+                // Regular player view
+                <>
+                  <SearchBar
+                    onCharacterSelect={handleCharacterSelect}
+                    isGuessing={isGuessing}
+                    gameEnd={gameEnd}
+                    subjectSearch={gameSettings.subjectSearch}
+                  />
+                  {gameSettings.timeLimit && !gameEnd && (
+                    <Timer
+                      timeLimit={gameSettings.timeLimit}
+                      onTimeUp={handleTimeUp}
+                      isActive={!isGuessing}
+                      reset={shouldResetTimer}
+                    />
+                  )}
+                  <div className="game-info">
+                    <div className="guesses-left">
+                      <span>剩余猜测次数: {guessesLeft}</span>
+                      <button
+                        className="surrender-button"
+                        onClick={handleSurrender}
+                      >
+                        投降 🏳️
+                      </button>
+                    </div>
+                    {gameSettings.enableHints && hints.first && (
+                      <div className="hints">
+                        {guessesLeft <= 5 && <div className="hint">提示1: {hints.first}</div>}
+                        {guessesLeft <= 2 && <div className="hint">提示2: {hints.second}</div>}
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-              <GuessesTable
-                guesses={guesses}
-                getGenderEmoji={getGenderEmoji}
-                enableTagCensor={gameSettings.enableTagCensor}
-              />
+                  <GuessesTable
+                    guesses={guesses}
+                    getGenderEmoji={getGenderEmoji}
+                    enableTagCensor={gameSettings.enableTagCensor}
+                  />
+                </>
+              ) : (
+                // Answer setter view
+                <div className="answer-setter-view">
+                  <h3>你是出题人</h3>
+                  <div className="selected-answer">
+                    <img src={answerCharacter.imageGrid} alt={answerCharacter.name} className="answer-image" />
+                    <div className="answer-info">
+                      <div>{answerCharacter.name}</div>
+                      <div>{answerCharacter.nameCn}</div>
+                    </div>
+                  </div>
+                  <div className="guess-history-table">
+                    <table>
+                      <thead>
+                        <tr>
+                          {guessesHistory.map((playerGuesses, index) => (
+                            <th key={playerGuesses.username}>
+                              {showNames ? playerGuesses.username : `玩家${index + 1}`}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {Array.from({ length: Math.max(...guessesHistory.map(g => g.guesses.length)) }).map((_, rowIndex) => (
+                          <tr key={rowIndex}>
+                            {guessesHistory.map(playerGuesses => (
+                              <td key={playerGuesses.username}>
+                                {playerGuesses.guesses[rowIndex] && (
+                                  <>
+                                    <img className="character-icon" src={playerGuesses.guesses[rowIndex].icon} alt={playerGuesses.guesses[rowIndex].name} />
+                                    <div className="character-name">{playerGuesses.guesses[rowIndex].name}</div>
+                                    <div className="character-name-cn">{playerGuesses.guesses[rowIndex].nameCn}</div>
+                                  </>
+                                )}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -603,6 +718,13 @@ const Multiplayer = () => {
                       disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected)}
                     >
                       开始
+                    </button>
+                    <button
+                      onClick={handleManualMode}
+                      className={`manual-mode-button ${isManualMode ? 'active' : ''}`}
+                      disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected)}
+                    >
+                      有人想出题？
                     </button>
                   </div>
                 </div>
@@ -670,6 +792,13 @@ const Multiplayer = () => {
               result={guesses.some(g => g.isAnswer) ? 'win' : 'lose'}
               answer={answerCharacter}
               onClose={() => setShowCharacterPopup(false)}
+            />
+          )}
+
+          {showSetAnswerPopup && (
+            <SetAnswerPopup
+              onSetAnswer={handleSetAnswer}
+              gameSettings={gameSettings}
             />
           )}
         </>

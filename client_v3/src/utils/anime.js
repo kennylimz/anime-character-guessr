@@ -283,6 +283,7 @@ async function getCharacterDetails(characterId) {
       nameCn: nameCn,
       gender,
       image: response.data.images.medium,
+      imageGrid: response.data.images.grid,
       summary: response.data.summary,
       popularity: response.data.stat.collects
     };
@@ -449,6 +450,26 @@ async function getRandomCharacter(gameSettings) {
 
     return {
       ...selectedCharacter,
+      ...characterDetails,
+      ...appearances
+    };
+  } catch (error) {
+    console.error('Error getting random character:', error);
+    throw error;
+  }
+}
+
+async function designateCharacter(characterId, gameSettings) {
+  try {
+    // Get additional character details
+    const characterDetails = await getCharacterDetails(characterId);
+
+    // Get character appearances
+    const appearances = await getCharacterAppearances(characterId, gameSettings);
+    console.log(characterDetails);
+
+    return {
+      id: characterId,
       ...characterDetails,
       ...appearances
     };
@@ -629,6 +650,7 @@ function censoredText(text) {
 
 export {
   getRandomCharacter,
+  designateCharacter,
   getCharacterAppearances,
   getCharactersBySubjectId,
   getCharacterDetails,

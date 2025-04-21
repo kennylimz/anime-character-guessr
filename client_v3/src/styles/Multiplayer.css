@@ -174,6 +174,25 @@
   cursor: not-allowed;
 }
 
+.manual-mode-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+}
+
+.manual-mode-button:hover {
+  background-color: #219a52;
+}
+
+.manual-mode-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.manual-mode-button.active {
+  background-color: #219a52;
+}
+
 .score-table {
   width: 100%;
   border-collapse: collapse;
@@ -485,4 +504,54 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   background: linear-gradient(135deg, #a777e3, #6e8efb);
   background-color: #e67e22;
+}
+
+.answer-setter-view {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.answer-setter-view h3 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.selected-answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: rgba(74, 144, 226, 0.1);
+  border-radius: 8px;
+}
+
+.answer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.answer-info {
+  text-align: left;
+}
+
+.answer-info div {
+  margin: 5px 0;
+}
+
+.hints-display {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(74, 144, 226, 0.05);
+  border-radius: 8px;
+}
+
+.hints-display div {
+  margin: 10px 0;
+  color: #666;
+  font-style: italic;
 }
