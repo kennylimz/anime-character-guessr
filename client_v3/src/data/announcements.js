@@ -14,7 +14,7 @@
 const announcements = [
   {
     version: '1.1.0',
-    date: '2024-04-21',
+    date: '2025-04-21',
     content: `
       具体可见视频：<a href="https://www.bilibili.com/video/BV1mjLuz4Euj">二次元猜猜呗 4.21更新</a>。 <br/>
       已可对现有角色标签投票。多人模式已可指定选手出题。<br/>
@@ -26,7 +26,7 @@ const announcements = [
   
   {
     version: '1.0.0',
-    date: '2024-04-13',
+    date: '2025-04-13',
     content: `
       二次元猜猜呗正式上线！<br/>
       <b>主要功能：</b><br/>
