@@ -4,7 +4,7 @@ function HelpPopup({ onClose }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onClose}>×</button>
+        <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
         <div className="popup-header">
           <h2>为什么我在这里？</h2>
         </div>

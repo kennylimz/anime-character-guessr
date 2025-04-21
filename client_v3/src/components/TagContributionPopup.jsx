@@ -159,7 +159,7 @@ function TagContributionPopup({ character, onClose }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onClose}>×</button>
+        <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
         <div className="popup-header">
           <h2>为 {character.nameCn} 贡献标签</h2>
         </div>

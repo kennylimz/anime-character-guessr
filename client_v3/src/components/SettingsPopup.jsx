@@ -147,7 +147,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
        {hideRestart ? (
           <button className="popup-close multiplayer-confirm" onClick={onClose}>确认修改</button>
         ) : (
-          <button className="popup-close" onClick={onClose}>×</button>
+          <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
         )}
         <div className="popup-header">
           <h2>设置</h2>
