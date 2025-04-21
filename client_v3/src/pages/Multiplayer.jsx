@@ -10,6 +10,7 @@ import Timer from '../components/Timer';
 import PlayerList from '../components/PlayerList';
 import GameEndPopup from '../components/GameEndPopup';
 import SetAnswerPopup from '../components/SetAnswerPopup';
+import GameSettingsDisplay from '../components/GameSettingsDisplay';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
 import CryptoJS from 'crypto-js';
@@ -33,7 +34,7 @@ const Multiplayer = () => {
   const [isManualMode, setIsManualMode] = useState(false);
   const [answerSetterId, setAnswerSetterId] = useState(null);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
-  const [gameSettings, setGameSettings, removeGameSettings] = useLocalStorage('multiplayer-game-settings', {
+  const [gameSettings, setGameSettings] = useLocalStorage('multiplayer-game-settings', {
     startYear: new Date().getFullYear()-5,
     endYear: new Date().getFullYear(),
     topNSubjects: 20,
@@ -597,9 +598,13 @@ const Multiplayer = () => {
                 </div>
               )}
               {!isHost && (
-                <div className="game-settings-display">
-                  <pre>{JSON.stringify(gameSettings, null, 2)}</pre>
-                </div>
+                <>
+                  {/* 调试信息*/}
+                  {/* <pre style={{ fontSize: '12px', color: '#666', padding: '5px', background: '#f5f5f5' }}>
+                    {JSON.stringify({...gameSettings, __debug: '显示原始数据用于调试'}, null, 2)}
+                  </pre> */}
+                  <GameSettingsDisplay settings={gameSettings} />
+                </>
               )}
             </>
           )}
@@ -739,9 +744,13 @@ const Multiplayer = () => {
               </div>
               <div className="game-end-container">
                 {!isHost && (
-                  <div className="game-settings-display">
-                    <pre>{JSON.stringify(gameSettings, null, 2)}</pre>
-                  </div>
+                  <>
+                    {/* 调试信息*/}
+                    {/* <pre style={{ fontSize: '12px', color: '#666', padding: '5px', background: '#f5f5f5' }}>
+                      {JSON.stringify({...gameSettings, __debug: '显示原始数据用于调试'}, null, 2)}
+                    </pre> */}
+                    <GameSettingsDisplay settings={gameSettings} />
+                  </>
                 )}
                 <div className="guess-history-table">
                   <table>
