@@ -100,12 +100,6 @@ io.on('connection', (socket) => {
             return;
         }
 
-        // Check if room is full (max 8 players)
-        if (room.players.length >= 8) {
-            socket.emit('error', {message: '房间已满（最多8人）'});
-            return;
-        }
-
         // Check for duplicate username (case-insensitive)
         const isUsernameTaken = room.players.some(
             player => player.username.toLowerCase() === username.toLowerCase()
