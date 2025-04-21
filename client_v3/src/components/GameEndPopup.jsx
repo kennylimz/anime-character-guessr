@@ -21,7 +21,7 @@ function GameEndPopup({ result, answer, onClose }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onClose}>×</button>
+        <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
         <div className="popup-header">
           <h2>{result === 'win' ? '🎉 给你猜对了，有点东西' : '😢 已经结束咧'}</h2>
         </div>
