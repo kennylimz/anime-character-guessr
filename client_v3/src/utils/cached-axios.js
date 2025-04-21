@@ -74,11 +74,22 @@ class RequestCache {
   }
 
   _saveCacheToStorageInternal() {
-    const cacheData = {};
-    this.cache.forEach((value, key) => {
-      cacheData[key] = value;
-    });
-    localStorage.setItem('requestCache', JSON.stringify(cacheData));
+    try {
+      const cacheData = {};
+      this.cache.forEach((value, key) => {
+        cacheData[key] = value;
+      });
+      localStorage.setItem('requestCache', JSON.stringify(cacheData));
+    } catch (error) {
+      if (error.name === 'QuotaExceededError' || 
+          error.message.includes('quota') || 
+          error.message.includes('storage')) {
+        console.warn('Storage quota exceeded, clearing all cache');
+        this.clearCache();
+      } else {
+        throw error;
+      }
+    }
   }
 
   _saveCacheToStorage = debounce(this._saveCacheToStorageInternal, 1000);
