@@ -189,7 +189,7 @@ function TagContributionPopup({ character, onClose }) {
                       {activeVoteTag === tag && (
                         <div className="vote-box">
                           <button onClick={() => handleVote(tag, 'up')} className="vote-btn">👍</button>
-                          <button onClick={() => handleVote(tag, 'neutral')} className="vote-btn">—</button>
+                          <button onClick={() => handleVote(tag, 'neutral')} className="vote-btn">👐🏼</button>
                           <button onClick={() => handleVote(tag, 'down')} className="vote-btn">👎</button>
                         </div>
                       )}
