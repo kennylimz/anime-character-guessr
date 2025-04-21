@@ -280,6 +280,7 @@ async function getCharacterDetails(characterId) {
       : '?';
 
     return {
+      name: response.data.name,
       nameCn: nameCn,
       gender,
       image: response.data.images.medium,

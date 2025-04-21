@@ -589,7 +589,7 @@ const Multiplayer = () => {
                       className={`manual-mode-button ${isManualMode ? 'active' : ''}`}
                       disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected)}
                     >
-                      有人出题？
+                      有人想出题？
                     </button>
                   </div>
                   <div className="anonymous-mode-info">
@@ -730,7 +730,7 @@ const Multiplayer = () => {
                 </div>
               )}
               <div className="game-end-message">
-                {showNames ? <>{winner}<br /></> : ''} 答案是: {answerCharacter.nameCn}
+                {showNames ? <>{winner}<br /></> : ''} 答案是: {answerCharacter.nameCn || answerCharacter.name}
                 <button
                   className="character-details-button"
                   onClick={() => setShowCharacterPopup(true)}
