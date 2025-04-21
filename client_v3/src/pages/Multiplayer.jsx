@@ -101,7 +101,7 @@ const Multiplayer = () => {
       }
     });
 
-    newSocket.on('gameStart', ({ character, settings, players, isPublic, hints, isAnswerSetter: isAnswerSetterFlag }) => {
+    newSocket.on('gameStart', ({ character, settings, players, isPublic, hints = null, isAnswerSetter: isAnswerSetterFlag }) => {
       gameEndedRef.current = false;
       const decryptedCharacter = JSON.parse(CryptoJS.AES.decrypt(character, secret).toString(CryptoJS.enc.Utf8));
       setAnswerCharacter(decryptedCharacter);
@@ -115,16 +115,15 @@ const Multiplayer = () => {
         setIsPublic(isPublic);
       }
 
-      // Reset guess history when game starts
       setGuessesHistory([]);
 
       // Prepare hints if enabled
       let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-      if (settings.enableHints && (hints[0] || hints[1])) {
+      if (settings.enableHints && hints) {
         hintTexts = hints;
       } 
       else if (settings.enableHints && decryptedCharacter && decryptedCharacter.summary) {
-        // Generate hints from summary if enabled and summary exists
+        // Automatic mode - generate hints from summary
         const sentences = decryptedCharacter.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
         if (sentences.length > 0) {
           const selectedIndices = new Set();
@@ -415,7 +414,7 @@ const Multiplayer = () => {
     if (isHost) {
       try {
         const character = await getRandomCharacter(gameSettings);
-        // console.log(character);
+        console.log(character);
         const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
         socket.emit('gameStart', {
           roomId,

@@ -86,7 +86,24 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
       alert('请输入目录ID');
       return;
     }
-    await setIndex(indexInputValue);
+    try {
+      const info = await getIndexInfo(indexInputValue);
+      setIndexInputValue(indexInputValue);
+      setIndexInfo(info);
+      onSettingsChange('indexId', indexInputValue);
+    } catch (error) {
+      console.error('Failed to fetch index info:', error);
+      if (error.message === 'Index not found') {
+        alert('目录不存在或者FIFA了');
+      } else {
+        alert('导入失败，请稍后重试');
+      }
+      // Reset index settings on error
+      onSettingsChange('useIndex', false);
+      onSettingsChange('indexId', null);
+      setIndexInputValue('');
+      setIndexInfo(null);
+    }
   };
 
   const handleSearch = async () => {
@@ -498,6 +515,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                         onSettingsChange('addedSubjects', []);
                         onSettingsChange('indexId', null);
                         setIndexInfo(null);
+                        setIndexInputValue('');
                       }
                     }}
                     style={{ marginRight: '50px', marginLeft: '0px' }}

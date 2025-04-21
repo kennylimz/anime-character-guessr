@@ -63,7 +63,6 @@ function SinglePlayer() {
       try {
         const character = await getRandomCharacter(gameSettings);
         if (isMounted) {
-          // console.log('获取角色', character);
           setAnswerCharacter(character);
           setGuessesLeft(gameSettings.maxAttempts);
           setCurrentTimeLimit(gameSettings.timeLimit);
@@ -72,7 +71,7 @@ function SinglePlayer() {
           let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
           if (gameSettings.enableHints && character.summary) {
             // Split summary into sentences using Chinese punctuation
-            const sentences = character.summary.split(/[。、，。！？ “”]/).filter(s => s.trim());
+            const sentences = character.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
             if (sentences.length > 0) {
               // Randomly select 2 sentences if available
               const selectedIndices = new Set();
@@ -102,7 +101,7 @@ function SinglePlayer() {
     return () => {
       isMounted = false;
     };
-  }, [gameSettings]);
+  }, []);
 
   const handleCharacterSelect = async (character) => {
     if (isGuessing || !answerCharacter) return;
@@ -226,7 +225,7 @@ function SinglePlayer() {
     }));
   };
 
-  const handleRestartWithSettings = () => {
+  const handleRestartWithSettings = async () => {
     setGuesses([]);
     setGuessesLeft(gameSettings.maxAttempts);
     setIsGuessing(false);
@@ -243,37 +242,33 @@ function SinglePlayer() {
       second: null
     });
 
-    const initializeNewGame = async () => {
-      try {
-        const character = await getRandomCharacter(gameSettings);
-        setAnswerCharacter(character);
-        // Prepare hints based on settings for new game
-        let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-        if (gameSettings.enableHints && character.summary) {
-          // Split summary into sentences using Chinese punctuation
-          const sentences = character.summary.split(/[。、，。！？ “”]/).filter(s => s.trim());
-          if (sentences.length > 0) {
-            // Randomly select 2 sentences if available
-            const selectedIndices = new Set();
-            while (selectedIndices.size < Math.min(2, sentences.length)) {
-              selectedIndices.add(Math.floor(Math.random() * sentences.length));
-            }
-            hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
+    try {
+      const character = await getRandomCharacter(gameSettings);
+      setAnswerCharacter(character);
+      // Prepare hints based on settings for new game
+      let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
+      if (gameSettings.enableHints && character.summary) {
+        // Split summary into sentences using Chinese punctuation
+        const sentences = character.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
+        if (sentences.length > 0) {
+          // Randomly select 2 sentences if available
+          const selectedIndices = new Set();
+          while (selectedIndices.size < Math.min(2, sentences.length)) {
+            selectedIndices.add(Math.floor(Math.random() * sentences.length));
           }
+          hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
         }
-        setHints({
-          first: hintTexts[0],
-          second: hintTexts[1]
-        });
-        console.log('初始化游戏', gameSettings);
-        setFinishInit(true);
-      } catch (error) {
-        console.error('Failed to initialize new game:', error);
-        alert('游戏初始化失败，请重试');
       }
-    };
-
-    initializeNewGame();
+      setHints({
+        first: hintTexts[0],
+        second: hintTexts[1]
+      });
+      console.log('初始化游戏', gameSettings);
+      setFinishInit(true);
+    } catch (error) {
+      console.error('Failed to initialize new game:', error);
+      alert('游戏初始化失败，请重试');
+    }
   };
 
   const timeUpRef = useRef(false);
