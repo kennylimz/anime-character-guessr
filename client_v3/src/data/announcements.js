@@ -16,7 +16,7 @@ const announcements = [
     version: '1.1.0',
     date: '2024-04-21',
     content: `
-      具体可见视频：<a href="https://www.bilibili.com/video/BV18y4y1x79y">二次元猜猜呗 4.21更新</a>。 <br/>
+      具体可见视频：<a href="https://www.bilibili.com/video/BV1mjLuz4Euj">二次元猜猜呗 4.21更新</a>。 <br/>
       已可对现有角色标签投票。多人模式已可指定选手出题。<br/>
       有好的预设或目录可以B站私信<a href="https://space.bilibili.com/87983557">作者</a>，可能被采纳成为每日推荐或者常驻预设。<br/>
       想加入一个童年回忆的主题……
