@@ -40,7 +40,8 @@ const Home = () => {
           <br/>
           灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
           数据来源<a href="https://bgm.tv/"> Bangumi </a>。<br />
-          <a href="https://space.bilibili.com/87983557">@作者</a>："感谢 Bangumi 管理员的优化支持，以及各位网友贡献的代码和数据。感谢大家这段时间的热情和支持。"
+          <a href="https://space.bilibili.com/87983557">@作者</a>：“感谢 Bangumi 管理员的优化支持，以及各位网友贡献的代码和数据。感谢大家这段时间的热情和支持。”<br/>
+          没有朋友一起玩？QQ群：467740403
         </p>
       </div>
     </div>
