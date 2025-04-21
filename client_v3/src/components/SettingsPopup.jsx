@@ -2,6 +2,7 @@ import '../styles/popups.css';
 import { getIndexInfo, searchSubjects } from '../utils/anime';
 import { useState, useEffect, useRef } from 'react';
 import axiosCache from '../utils/cached-axios';
+import { getPresetConfig } from '../data/presets';
 
 function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hideRestart = false }) {
   const [indexInputValue, setIndexInputValue] = useState('');
@@ -141,6 +142,25 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
     alert('缓存已清空！');
   }
 
+  const applyPresetConfig = async (presetName) => {
+    const presetConfig = getPresetConfig(presetName);
+    if (!presetConfig) return;
+    
+    // 处理所有普通配置项
+    Object.entries(presetConfig).forEach(([key, value]) => {
+      if (key !== 'indexId') { // 特殊处理indexId
+        onSettingsChange(key, value);
+      }
+    });
+    
+    // 特殊处理indexId，确保使用setIndex函数
+    if (presetConfig.useIndex && presetConfig.indexId) {
+      await setIndex(presetConfig.indexId);
+    } else {
+      await setIndex(""); // 清除索引
+    }
+  };
+
   return (
     <div className="popup-overlay">
       <div className="popup-content">
@@ -159,137 +179,42 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
               <div className="presets-buttons">
                 <button 
                   className="preset-button"
-                  onClick={async () => {
-                    onSettingsChange('startYear', new Date().getFullYear()-5);
-                    onSettingsChange('endYear', new Date().getFullYear());
-                    onSettingsChange('topNSubjects', 20);
-                    onSettingsChange('useSubjectPerYear', false);
-                    onSettingsChange('metaTags', ["", "", ""]);
-                    onSettingsChange('useIndex', false);
-                    onSettingsChange('addedSubjects', []);
-                    onSettingsChange('mainCharacterOnly', true);
-                    onSettingsChange('characterNum', 3);
-                    onSettingsChange('maxAttempts', 10);
-                    await setIndex("");
-                    onSettingsChange('enableHints', true);
-                    onSettingsChange('includeGame', false);
-                    onSettingsChange('subjectSearch', true);
-                    onSettingsChange('subjectTagNum', 8);
-                    onSettingsChange('characterTagNum', 6);
-                  }}
+                  onClick={() => applyPresetConfig('入门')}
                 >
                   入门
                 </button>
                 <button 
                   className="preset-button"
-                  onClick={async () => {
-                    onSettingsChange('startYear', new Date().getFullYear()-20);
-                    onSettingsChange('endYear', new Date().getFullYear());
-                    onSettingsChange('topNSubjects', 5);
-                    onSettingsChange('useSubjectPerYear', true);
-                    onSettingsChange('metaTags', ["", "", ""]);
-                    onSettingsChange('useIndex', false);
-                    onSettingsChange('addedSubjects', []);
-                    onSettingsChange('mainCharacterOnly', false);
-                    onSettingsChange('characterNum', 6);
-                    onSettingsChange('maxAttempts', 10);
-                    await setIndex("");
-                    onSettingsChange('enableHints', false);
-                    onSettingsChange('includeGame', false);
-                    onSettingsChange('subjectSearch', false);
-                    onSettingsChange('subjectTagNum', 8);
-                    onSettingsChange('characterTagNum', 6);
-                  }}
+                  onClick={() => applyPresetConfig('冻鳗高手')}
                 >
                   冻鳗高手
                 </button>
                 <button 
                   className="preset-button"
-                  onClick={async () => {
-                    onSettingsChange('startYear', 2000);
-                    onSettingsChange('endYear', 2015);
-                    onSettingsChange('topNSubjects', 5);
-                    onSettingsChange('useSubjectPerYear', true);
-                    onSettingsChange('metaTags', ["", "", ""]);
-                    onSettingsChange('useIndex', false);
-                    onSettingsChange('addedSubjects', []);
-                    onSettingsChange('mainCharacterOnly', true);
-                    onSettingsChange('characterNum', 6);
-                    onSettingsChange('maxAttempts', 10);
-                    await setIndex("");
-                    onSettingsChange('enableHints', false);
-                    onSettingsChange('includeGame', false);
-                    onSettingsChange('subjectSearch', false);
-                    onSettingsChange('subjectTagNum', 8);
-                    onSettingsChange('characterTagNum', 6);
-                  }}
+                  onClick={() => applyPresetConfig('老番享受者')}
                 >
                   老番享受者
                 </button>
                 <button 
                   className="preset-button"
-                  onClick={async () => {
-                    onSettingsChange('startYear', 2005);
-                    onSettingsChange('endYear', new Date().getFullYear());
-                    onSettingsChange('topNSubjects', 75);
-                    onSettingsChange('useSubjectPerYear', false);
-                    onSettingsChange('metaTags', ["", "", ""]);
-                    onSettingsChange('addedSubjects', []);
-                    onSettingsChange('mainCharacterOnly', true);
-                    onSettingsChange('characterNum', 10);
-                    onSettingsChange('maxAttempts', 7);
-                    await setIndex("");
-                    onSettingsChange('enableHints', false);
-                    onSettingsChange('includeGame', false);
-                    onSettingsChange('subjectSearch', true);
-                    onSettingsChange('subjectTagNum', 8);
-                    onSettingsChange('characterTagNum', 5);
-                  }}
+                  onClick={() => applyPresetConfig('瓶子严选')}
                 >
                   瓶子严选
                 </button>
                 <button 
                   className="preset-button"
-                  onClick={async () => {
+                  onClick={() => {
                     alert('😅');
-                    onSettingsChange('startYear', new Date().getFullYear()-10);
-                    onSettingsChange('endYear', new Date().getFullYear());
-                    onSettingsChange('topNSubjects', 50);
-                    onSettingsChange('useSubjectPerYear', false);
-                    onSettingsChange('metaTags', ["", "", ""]);
-                    onSettingsChange('addedSubjects', []);
-                    onSettingsChange('mainCharacterOnly', true);
-                    onSettingsChange('characterNum', 6);
-                    onSettingsChange('maxAttempts', 10);
-                    await setIndex("75522");
-                    onSettingsChange('enableHints', false);
-                    onSettingsChange('includeGame', false);
-                    onSettingsChange('subjectSearch', false);
-                    onSettingsChange('subjectTagNum', 8);
-                    onSettingsChange('characterTagNum', 6);
+                    applyPresetConfig('木柜子痴');
                   }}
                 >
                   木柜子痴
                 </button>
                 <button 
                   className="preset-button"
-                  onClick={async () => {
+                  onClick={() => {
                     alert('那很有生活了😅');
-                    onSettingsChange('startYear', new Date().getFullYear()-10);
-                    onSettingsChange('endYear', new Date().getFullYear());
-                    onSettingsChange('topNSubjects', 50);
-                    onSettingsChange('useSubjectPerYear', false);
-                    onSettingsChange('metaTags', ["", "", ""]);
-                    onSettingsChange('addedSubjects', []);
-                    onSettingsChange('mainCharacterOnly', false);
-                    onSettingsChange('characterNum', 10);
-                    onSettingsChange('maxAttempts', 10);
-                    await setIndex("75442");
-                    onSettingsChange('enableHints', false);
-                    onSettingsChange('includeGame', true);
-                    onSettingsChange('subjectSearch', false);
-                    onSettingsChange('subjectTagNum', 3);
-                    onSettingsChange('characterTagNum', 6);
+                    applyPresetConfig('二游高手+');
                   }}
                 >
                   二游高手+

@@ -1,0 +1,155 @@
+/* 这是多人模式参与者观看设置显示的样式 */
+.game-settings-display {
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.settings-display-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.settings-display-header.collapsible {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.settings-display-header.collapsible:hover {
+  background-color: #e2e8f0;
+}
+
+.settings-display-header h3 {
+  margin: 0;
+  color: #334155;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.expand-icon {
+  color: #64748b;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.expand-icon.expanded {
+  transform: rotate(0deg);
+}
+
+.settings-display-content {
+  padding: 0;
+}
+
+.settings-group {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.settings-group:last-child {
+  border-bottom: none;
+}
+
+.settings-group h4 {
+  margin: 0 0 12px 0;
+  color: #475569;
+  font-size: 16px;
+  font-weight: 500;
+  border-left: 3px solid #3b82f6;
+  padding-left: 10px;
+}
+
+.settings-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px 20px;
+}
+
+.settings-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.setting-label {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.setting-value {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 高亮一些重要的设置项 */
+/* 使用更基本的选择器，不依赖:has和:contains，提高浏览器兼容性 */
+.settings-item[data-key="indexId"] .setting-value,
+.settings-item[data-key="yearRange"] .setting-value,
+.settings-item[data-key="maxAttempts"] .setting-value,
+.settings-item[data-key="timeLimit"] .setting-value {
+  color: #3b82f6;
+}
+
+/* 响应式样式 */
+@media (max-width: 640px) {
+  .game-settings-display {
+    margin: 1rem 10px;
+  }
+  
+  .settings-display-header {
+    padding: 12px 15px;
+  }
+  
+  .settings-display-header h3 {
+    font-size: 16px;
+  }
+  
+  .settings-group {
+    padding: 12px 15px;
+  }
+  
+  .settings-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .setting-value {
+    font-size: 15px;
+  }
+}
+
+.settings-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.preset-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.preset-name {
+  color: #3b82f6;
+  font-weight: 500;
+  padding: 2px 8px;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 4px;
+}
+
+.preset-modified {
+  color: #f59e0b;
+  font-size: 12px;
+  font-style: italic;
+} 
