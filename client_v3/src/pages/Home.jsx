@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles/Home.css';
+import UpdateAnnouncement from '../components/UpdateAnnouncement';
+import announcements from '../data/announcements';
 
 const Home = () => {
   const [roomCount, setRoomCount] = useState(0);
@@ -24,6 +26,13 @@ const Home = () => {
           <small>当前房间数: {roomCount}/259</small>
         </Link>
       </div>
+      
+      <UpdateAnnouncement 
+        announcements={announcements} 
+        defaultExpanded={false}
+        initialVisibleCount={1}
+      />
+      
       <div className="home-footer">
         <p>
           一个猜动漫角色的游戏,
@@ -31,10 +40,7 @@ const Home = () => {
           <br/>
           灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
           数据来源<a href="https://bgm.tv/"> Bangumi </a>。<br />
-          <a href="https://space.bilibili.com/87983557">@作者</a>：“感谢 Bangumi 管理员的优化支持，以及各位网友贡献的代码和数据。感谢大家这段时间的热情和支持。”<br/>
-          <b>已可对现有角色标签投票。多人模式已可指定选手出题。</b><br/>
-          有好的预设或目录可以B站私信<a href="https://space.bilibili.com/87983557">作者</a>，可能被采纳成为每日推荐或者常驻预设。<br/>
-          想加入一个童年回忆的主题……
+          <a href="https://space.bilibili.com/87983557">@作者</a>："感谢 Bangumi 管理员的优化支持，以及各位网友贡献的代码和数据。感谢大家这段时间的热情和支持。"
         </p>
       </div>
     </div>
