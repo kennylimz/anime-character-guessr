@@ -180,6 +180,15 @@ const Multiplayer = () => {
       })));
     });
 
+    newSocket.on('playerKicked', ({ playerId, username }) => {
+      if (playerId === newSocket.id) {
+        alert(`你已被房主踢出房间。`);
+        navigate('/multiplayer');
+      } else {
+        alert(`玩家 ${username} 已被踢出房间。`);
+      }
+    });
+
     return () => {
       newSocket.disconnect();
     };
@@ -485,6 +494,10 @@ const Multiplayer = () => {
     socket.emit('toggleRoomVisibility', { roomId });
   };
 
+  const handleNameVisibilityToggle = (showNames) => {
+    setShowNames(showNames);
+  };
+
   const handleSetAnswer = async ({ character, hints }) => {
     try {
       const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
@@ -497,6 +510,17 @@ const Multiplayer = () => {
     } catch (error) {
       console.error('Failed to set answer:', error);
       alert('设置答案失败，请重试');
+    }
+  };
+
+  const handleKickPlayer = (playerId) => {
+    if (!isHost || !socket) return;
+    
+    const playerToKick = players.find(p => p.id === playerId);
+    if (!playerToKick) return;
+
+    if (confirm(`确定要踢出断开连接的玩家 ${playerToKick.username} 吗？`)) {
+      socket.emit('kickPlayer', { roomId, playerId });
     }
   };
 
@@ -535,17 +559,18 @@ const Multiplayer = () => {
         </div>
       ) : (
         <>
-          <PlayerList
-            players={players}
-            socket={socket}
-            isGameStarted={isGameStarted}
-            handleReadyToggle={handleReadyToggle}
-            onAnonymousModeChange={setShowNames}
-            isManualMode={isManualMode}
-            isHost={isHost}
-            answerSetterId={answerSetterId}
-            onSetAnswerSetter={handleSetAnswerSetter}
-          />
+              <PlayerList 
+                players={players} 
+                socket={socket} 
+                isGameStarted={isGameStarted}
+                handleReadyToggle={handleReadyToggle}
+                onAnonymousModeChange={handleNameVisibilityToggle}
+                isManualMode={isManualMode}
+                isHost={isHost}
+                answerSetterId={answerSetterId}
+                onSetAnswerSetter={handleSetAnswerSetter}
+                onKickPlayer={handleKickPlayer}
+              />
 
           {!isGameStarted && !globalGameEnd && (
             <>
