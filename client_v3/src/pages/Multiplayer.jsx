@@ -156,6 +156,16 @@ const Multiplayer = () => {
       navigate('/multiplayer');
     });
 
+    newSocket.on('hostTransferred', ({ oldHostName, newHostId, newHostName }) => {
+      // 如果当前用户是新房主，则更新状态
+      if (newHostId === newSocket.id) {
+        setIsHost(true);
+        alert(`房主 ${oldHostName} 已断开连接，你已成为新房主！`);
+      } else {
+        alert(`房主 ${oldHostName} 已断开连接，${newHostName} 已成为新房主。`);
+      }
+    });
+
     newSocket.on('error', ({ message }) => {
       alert(`错误: ${message}`);
       setError(message);
@@ -514,11 +524,19 @@ const Multiplayer = () => {
   const handleKickPlayer = (playerId) => {
     if (!isHost || !socket) return;
     
-    const playerToKick = players.find(p => p.id === playerId);
-    if (!playerToKick) return;
-
-    if (confirm(`确定要踢出断开连接的玩家 ${playerToKick.username} 吗？`)) {
+    // 确认后再踢出
+    if (window.confirm('确定要踢出该玩家吗？')) {
       socket.emit('kickPlayer', { roomId, playerId });
+    }
+  };
+
+  const handleTransferHost = (playerId) => {
+    if (!isHost || !socket) return;
+    
+    // 确认后再转移房主
+    if (window.confirm('确定要将房主权限转移给该玩家吗？')) {
+      socket.emit('transferHost', { roomId, newHostId: playerId });
+      setIsHost(false);
     }
   };
 
@@ -568,6 +586,7 @@ const Multiplayer = () => {
                 answerSetterId={answerSetterId}
                 onSetAnswerSetter={handleSetAnswerSetter}
                 onKickPlayer={handleKickPlayer}
+                onTransferHost={handleTransferHost}
               />
 
           {!isGameStarted && !globalGameEnd && (
