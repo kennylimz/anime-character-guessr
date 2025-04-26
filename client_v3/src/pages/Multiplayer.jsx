@@ -125,7 +125,8 @@ const Multiplayer = () => {
       } 
       else if (settings.enableHints && decryptedCharacter && decryptedCharacter.summary) {
         // Automatic mode - generate hints from summary
-        const sentences = decryptedCharacter.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
+        const sentences = decryptedCharacter.summary.replace('[mask]', '').replace('[/mask]','')
+          .split(/[。、，。！？ ""]/).filter(s => s.trim());
         if (sentences.length > 0) {
           const selectedIndices = new Set();
           while (selectedIndices.size < Math.min(2, sentences.length)) {
@@ -430,7 +431,8 @@ const Multiplayer = () => {
         // Prepare hints if enabled
         let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
         if (gameSettings.enableHints && character.summary) {
-          const sentences = character.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
+          const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
+            .split(/[。、，。！？ ""]/).filter(s => s.trim());
           if (sentences.length > 0) {
             const selectedIndices = new Set();
             while (selectedIndices.size < Math.min(2, sentences.length)) {
