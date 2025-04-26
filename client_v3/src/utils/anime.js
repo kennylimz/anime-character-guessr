@@ -509,7 +509,7 @@ function generateFeedback(guess, answerCharacter) {
   let ratingFeedback;
   if (guess.highestRating === -1 || answerCharacter.highestRating === -1) {
     ratingFeedback = '?';
-  } else if (Math.abs(ratingDiff) <= 0.4) {
+  } else if (Math.abs(ratingDiff) <= 0.3) {
     ratingFeedback = '=';
   } else if (ratingDiff > 0) {
     ratingFeedback = ratingDiff <= 1 ? '+' : '++';
