@@ -604,6 +604,58 @@ io.on('connection', (socket) => {
         console.log(`Answer setter set to ${setter.username} in room ${roomId}`);
     });
 
+    // Handle kicking disconnected players
+    socket.on('kickPlayer', ({roomId, playerId}) => {
+        const room = rooms.get(roomId);
+
+        if (!room) {
+            socket.emit('error', {message: '房间不存在'});
+            return;
+        }
+
+        // 只允许房主踢出玩家
+        const host = room.players.find(p => p.id === socket.id);
+        if (!host || !host.isHost) {
+            socket.emit('error', {message: '只有房主可以踢出玩家'});
+            return;
+        }
+
+        // 找到要踢出的玩家
+        const playerIndex = room.players.findIndex(p => p.id === playerId);
+        if (playerIndex === -1) {
+            socket.emit('error', {message: '找不到要踢出的玩家'});
+            return;
+        }
+
+        const playerToKick = room.players[playerIndex];
+        
+        // 验证玩家是否断开连接
+        if (!playerToKick.disconnected) {
+            socket.emit('error', {message: '只能踢出已断开连接的玩家'});
+            return;
+        }
+
+        // 保存玩家信息用于通知
+        const kickedPlayerUsername = playerToKick.username;
+        
+        // 从房间中移除玩家
+        room.players.splice(playerIndex, 1);
+        
+        // 通知所有玩家
+        io.to(roomId).emit('playerKicked', {
+            playerId: playerId,
+            username: kickedPlayerUsername
+        });
+        
+        // 更新玩家列表
+        io.to(roomId).emit('updatePlayers', {
+            players: room.players,
+            isPublic: room.isPublic
+        });
+        
+        console.log(`Player ${kickedPlayerUsername} kicked from room ${roomId}`);
+    });
+
     // Handle answer setting from designated player
     socket.on('setAnswer', ({roomId, character, hints}) => {
         const room = rooms.get(roomId);

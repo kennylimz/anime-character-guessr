@@ -181,6 +181,15 @@ const Multiplayer = () => {
       })));
     });
 
+    newSocket.on('playerKicked', ({ playerId, username }) => {
+      if (playerId === newSocket.id) {
+        alert(`你已被房主踢出房间。`);
+        navigate('/multiplayer');
+      } else {
+        alert(`玩家 ${username} 已被踢出房间。`);
+      }
+    });
+
     return () => {
       newSocket.disconnect();
     };
@@ -502,6 +511,17 @@ const Multiplayer = () => {
     }
   };
 
+  const handleKickPlayer = (playerId) => {
+    if (!isHost || !socket) return;
+    
+    const playerToKick = players.find(p => p.id === playerId);
+    if (!playerToKick) return;
+
+    if (confirm(`确定要踢出断开连接的玩家 ${playerToKick.username} 吗？`)) {
+      socket.emit('kickPlayer', { roomId, playerId });
+    }
+  };
+
   if (!roomId) {
     return <div>Loading...</div>;
   }
@@ -537,17 +557,18 @@ const Multiplayer = () => {
         </div>
       ) : (
         <>
-          <PlayerList
-            players={players}
-            socket={socket}
-            isGameStarted={isGameStarted}
-            handleReadyToggle={handleReadyToggle}
-            onAnonymousModeChange={setShowNames}
-            isManualMode={isManualMode}
-            isHost={isHost}
-            answerSetterId={answerSetterId}
-            onSetAnswerSetter={handleSetAnswerSetter}
-          />
+              <PlayerList 
+                players={players} 
+                socket={socket} 
+                isGameStarted={isGameStarted}
+                handleReadyToggle={handleReadyToggle}
+                onAnonymousModeChange={setShowNames}
+                isManualMode={isManualMode}
+                isHost={isHost}
+                answerSetterId={answerSetterId}
+                onSetAnswerSetter={handleSetAnswerSetter}
+                onKickPlayer={handleKickPlayer}
+              />
 
           {!isGameStarted && !globalGameEnd && (
             <>
