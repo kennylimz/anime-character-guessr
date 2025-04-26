@@ -218,7 +218,7 @@ io.on('connection', (socket) => {
         }
 
         // Remove disconnected players with 0 score
-        room.players = room.players.filter(p => !p.disconnected || p.score > 0);
+        room.players = room.players.filter(p => !p.disconnected);
 
         // Store current game state in room data
         room.currentGame = {
@@ -620,7 +620,7 @@ io.on('connection', (socket) => {
         }
 
         // Remove disconnected players with 0 score
-        room.players = room.players.filter(p => !p.disconnected || p.score > 0);
+        room.players = room.players.filter(p => !p.disconnected);
 
         // Store current game state in room data
         room.currentGame = {
