@@ -494,10 +494,6 @@ const Multiplayer = () => {
     socket.emit('toggleRoomVisibility', { roomId });
   };
 
-  const handleNameVisibilityToggle = (showNames) => {
-    setShowNames(showNames);
-  };
-
   const handleSetAnswer = async ({ character, hints }) => {
     try {
       const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
@@ -564,7 +560,7 @@ const Multiplayer = () => {
                 socket={socket} 
                 isGameStarted={isGameStarted}
                 handleReadyToggle={handleReadyToggle}
-                onAnonymousModeChange={handleNameVisibilityToggle}
+                onAnonymousModeChange={setShowNames}
                 isManualMode={isManualMode}
                 isHost={isHost}
                 answerSetterId={answerSetterId}
