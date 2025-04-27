@@ -476,10 +476,46 @@ io.on('connection', (socket) => {
                 const disconnectedPlayer = room.players[playerIndex];
 
                 if (room.host === socket.id) {
-                    rooms.delete(roomId);
+                    // 找出一个新的房主（第一个没有断开连接的玩家）
+                    const newHost = room.players.find(p => !p.disconnected && p.id !== socket.id);
+                    
+                    if (newHost) {
+                        // 将房主权限转移给新玩家
+                        room.host = newHost.id;
+                        // 更新新房主的状态
+                        const newHostIndex = room.players.findIndex(p => p.id === newHost.id);
+                        if (newHostIndex !== -1) {
+                            room.players[newHostIndex].isHost = true;
+                        }
+                        
+                        // 如果原房主分数为0，则移除，否则标记为断开连接
+                        if (disconnectedPlayer.score === 0) {
+                            room.players.splice(playerIndex, 1);
+                        } else {
+                            disconnectedPlayer.disconnected = true;
+                        }
+                        
+                        // 通知房间中的所有玩家房主已更换
+                        io.to(roomId).emit('hostTransferred', {
+                            oldHostName: disconnectedPlayer.username,
+                            newHostId: newHost.id,
+                            newHostName: newHost.username
+                        });
+                        
+                        // 更新玩家列表
+                        io.to(roomId).emit('updatePlayers', {
+                            players: room.players,
+                            isPublic: room.isPublic
+                        });
+                        
+                        console.log(`Host ${disconnectedPlayer.username} disconnected. New host: ${newHost.username} in room ${roomId}.`);
+                    } else {
+                        // 如果没有其他玩家可以成为房主，则关闭房间
+                        rooms.delete(roomId);
                     // Notify remaining players the room is closed
-                    io.to(roomId).emit('roomClosed', {message: 'Host disconnected'});
-                    console.log(`Host ${disconnectedPlayer.username} disconnected. Room ${roomId} closed and disbanded.`);
+                        io.to(roomId).emit('roomClosed', {message: 'Host disconnected and no available players to transfer ownership'});
+                        console.log(`Host ${disconnectedPlayer.username} disconnected. Room ${roomId} closed as no available players to transfer ownership.`);
+                    }
                 } else {
                     // Remove player if score is 0, otherwise mark as disconnected
                     if (disconnectedPlayer.score === 0) {
@@ -720,6 +756,55 @@ io.on('connection', (socket) => {
         });
 
         console.log(`Game started in room ${roomId} with custom answer`);
+    });
+
+    // 添加手动转移房主的功能
+    socket.on('transferHost', ({roomId, newHostId}) => {
+        const room = rooms.get(roomId);
+
+        if (!room) {
+            socket.emit('error', {message: '房间不存在'});
+            return;
+        }
+
+        // 只允许当前房主转移权限
+        if (socket.id !== room.host) {
+            socket.emit('error', {message: '只有房主可以转移权限'});
+            return;
+        }
+
+        // 确认新房主在房间内
+        const newHost = room.players.find(p => p.id === newHostId);
+        if (!newHost || newHost.disconnected) {
+            socket.emit('error', {message: '无法将房主转移给该玩家'});
+            return;
+        }
+
+        // 找到当前房主
+        const currentHost = room.players.find(p => p.id === socket.id);
+
+        // 更新房主信息
+        room.host = newHostId;
+
+        // 更新玩家状态
+        room.players.forEach(p => {
+            p.isHost = p.id === newHostId;
+        });
+
+        // 通知所有玩家房主已更换
+        io.to(roomId).emit('hostTransferred', {
+            oldHostName: currentHost.username,
+            newHostId: newHost.id,
+            newHostName: newHost.username
+        });
+
+        // 更新玩家列表
+        io.to(roomId).emit('updatePlayers', {
+            players: room.players,
+            isPublic: room.isPublic
+        });
+
+        console.log(`Host transferred from ${currentHost.username} to ${newHost.username} in room ${roomId}.`);
     });
 });
 
