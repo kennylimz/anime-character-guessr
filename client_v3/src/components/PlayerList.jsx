@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter }) => {
+const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter, onKickPlayer, onTransferHost }) => {
   const [showNames, setShowNames] = useState(true);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
 
@@ -72,6 +72,20 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
     }
   };
 
+  const handleKickClick = (e, playerId) => {
+    e.stopPropagation(); // 阻止事件冒泡，防止触发行点击事件
+    if (onKickPlayer) {
+      onKickPlayer(playerId);
+    }
+  };
+
+  const handleTransferHostClick = (e, playerId) => {
+    e.stopPropagation(); // 阻止事件冒泡，防止触发行点击事件
+    if (onTransferHost) {
+      onTransferHost(playerId);
+    }
+  };
+
   return (
     <div className="players-list">
       <table className="score-table">
@@ -98,6 +112,7 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
             </th>
             <th>分</th>
             <th>猜</th>
+            {isHost && <th>操作</th>} 
           </tr>
         </thead>
         <tbody>
@@ -123,6 +138,46 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
               </td>
               <td>{player.score}</td>
               <td>{isGameStarted && player.isAnswerSetter ? '出题者' : player.guesses || ''}</td>
+              {isHost && player.id !== socket?.id && (
+                <td>
+                  {player.disconnected ? (
+                    <button 
+                      onClick={(e) => handleKickClick(e, player.id)}
+                      className="kick-button"
+                      title="踢出断开连接的玩家"
+                      style={{
+                        background: '#ffebeb',
+                        border: '1px solid #dc3545',
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        color: '#dc3545',
+                        fontSize: '14px',
+                        padding: '2px 6px',
+                        marginRight: '5px'
+                      }}
+                    >
+                      踢出
+                    </button>
+                  ) : (
+                    <button 
+                      onClick={(e) => handleTransferHostClick(e, player.id)}
+                      className="transfer-host-button"
+                      title="将房主权限转移给该玩家"
+                      style={{
+                        background: '#e6f3ff',
+                        border: '1px solid #007bff',
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        color: '#007bff',
+                        fontSize: '14px',
+                        padding: '2px 6px'
+                      }}
+                    >
+                      转移房主
+                    </button>
+                  )}
+                </td>
+              )}
             </tr>
           ))}
         </tbody>

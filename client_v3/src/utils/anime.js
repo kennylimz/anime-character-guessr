@@ -509,12 +509,12 @@ function generateFeedback(guess, answerCharacter) {
   let ratingFeedback;
   if (guess.highestRating === -1 || answerCharacter.highestRating === -1) {
     ratingFeedback = '?';
-  } else if (Math.abs(ratingDiff) <= 0.2) {
+  } else if (Math.abs(ratingDiff) <= 0.3) {
     ratingFeedback = '=';
   } else if (ratingDiff > 0) {
-    ratingFeedback = ratingDiff <= 0.5 ? '+' : '++';
+    ratingFeedback = ratingDiff <= 1 ? '+' : '++';
   } else {
-    ratingFeedback = ratingDiff >= -0.5 ? '-' : '--';
+    ratingFeedback = ratingDiff >= -1 ? '-' : '--';
   }
   result.rating = {
     guess: guess.highestRating,

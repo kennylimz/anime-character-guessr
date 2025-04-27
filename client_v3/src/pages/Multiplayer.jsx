@@ -125,7 +125,8 @@ const Multiplayer = () => {
       } 
       else if (settings.enableHints && decryptedCharacter && decryptedCharacter.summary) {
         // Automatic mode - generate hints from summary
-        const sentences = decryptedCharacter.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
+        const sentences = decryptedCharacter.summary.replace('[mask]', '').replace('[/mask]','')
+          .split(/[。、，。！？ ""]/).filter(s => s.trim());
         if (sentences.length > 0) {
           const selectedIndices = new Set();
           while (selectedIndices.size < Math.min(2, sentences.length)) {
@@ -155,6 +156,16 @@ const Multiplayer = () => {
       navigate('/multiplayer');
     });
 
+    newSocket.on('hostTransferred', ({ oldHostName, newHostId, newHostName }) => {
+      // 如果当前用户是新房主，则更新状态
+      if (newHostId === newSocket.id) {
+        setIsHost(true);
+        alert(`房主 ${oldHostName} 已断开连接，你已成为新房主！`);
+      } else {
+        alert(`房主 ${oldHostName} 已断开连接，${newHostName} 已成为新房主。`);
+      }
+    });
+
     newSocket.on('error', ({ message }) => {
       alert(`错误: ${message}`);
       setError(message);
@@ -178,6 +189,15 @@ const Multiplayer = () => {
         ...player,
         ready: player.isHost ? player.ready : false
       })));
+    });
+
+    newSocket.on('playerKicked', ({ playerId, username }) => {
+      if (playerId === newSocket.id) {
+        alert(`你已被房主踢出房间。`);
+        navigate('/multiplayer');
+      } else {
+        alert(`玩家 ${username} 已被踢出房间。`);
+      }
     });
 
     return () => {
@@ -430,7 +450,8 @@ const Multiplayer = () => {
         // Prepare hints if enabled
         let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
         if (gameSettings.enableHints && character.summary) {
-          const sentences = character.summary.split(/[。、，。！？ ""]/).filter(s => s.trim());
+          const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
+            .split(/[。、，。！？ ""]/).filter(s => s.trim());
           if (sentences.length > 0) {
             const selectedIndices = new Set();
             while (selectedIndices.size < Math.min(2, sentences.length)) {
@@ -500,6 +521,25 @@ const Multiplayer = () => {
     }
   };
 
+  const handleKickPlayer = (playerId) => {
+    if (!isHost || !socket) return;
+    
+    // 确认后再踢出
+    if (window.confirm('确定要踢出该玩家吗？')) {
+      socket.emit('kickPlayer', { roomId, playerId });
+    }
+  };
+
+  const handleTransferHost = (playerId) => {
+    if (!isHost || !socket) return;
+    
+    // 确认后再转移房主
+    if (window.confirm('确定要将房主权限转移给该玩家吗？')) {
+      socket.emit('transferHost', { roomId, newHostId: playerId });
+      setIsHost(false);
+    }
+  };
+
   if (!roomId) {
     return <div>Loading...</div>;
   }
@@ -535,17 +575,19 @@ const Multiplayer = () => {
         </div>
       ) : (
         <>
-          <PlayerList
-            players={players}
-            socket={socket}
-            isGameStarted={isGameStarted}
-            handleReadyToggle={handleReadyToggle}
-            onAnonymousModeChange={setShowNames}
-            isManualMode={isManualMode}
-            isHost={isHost}
-            answerSetterId={answerSetterId}
-            onSetAnswerSetter={handleSetAnswerSetter}
-          />
+              <PlayerList 
+                players={players} 
+                socket={socket} 
+                isGameStarted={isGameStarted}
+                handleReadyToggle={handleReadyToggle}
+                onAnonymousModeChange={setShowNames}
+                isManualMode={isManualMode}
+                isHost={isHost}
+                answerSetterId={answerSetterId}
+                onSetAnswerSetter={handleSetAnswerSetter}
+                onKickPlayer={handleKickPlayer}
+                onTransferHost={handleTransferHost}
+              />
 
           {!isGameStarted && !globalGameEnd && (
             <>
