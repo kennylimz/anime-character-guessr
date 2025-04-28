@@ -225,7 +225,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
         rawTags.set(topSourceTag[0], (rawTags.get(topSourceTag[0]) || 0) + topSourceTag[1]);
       }
       const sortedEntries = [...rawTags.entries()].filter(entry => !entry[0].includes('20')).sort((a, b) => b[1] - a[1]);
-      sortedRawTags = new Map(sortedEntries.slice(0, 30));
+      sortedRawTags = new Map(sortedEntries.slice(0, gameSettings.subjectTagNum*3));
     }
     else{
       sortedSourceTags = Array.from(sourceTagCounts.entries())
