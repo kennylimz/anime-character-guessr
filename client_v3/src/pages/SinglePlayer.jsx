@@ -61,14 +61,14 @@ function SinglePlayer() {
 
     const initializeGame = async () => {
       try {
-        setCurrentGameSettings({ ...gameSettings });
         const character = await getRandomCharacter(gameSettings);
+        setCurrentGameSettings({ ...gameSettings });
         if (isMounted) {
           setAnswerCharacter(character);
-          setGuessesLeft(currentGameSettings.maxAttempts);
+          setGuessesLeft(gameSettings.maxAttempts);
           // Prepare hints based on settings
           let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-          if (currentGameSettings.enableHints && character.summary) {
+          if (gameSettings.enableHints && character.summary) {
             // Split summary into sentences using Chinese punctuation
             const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
               .split(/[。、，。！？ ""]/).filter(s => s.trim());
@@ -85,7 +85,7 @@ function SinglePlayer() {
             first: hintTexts[0],
             second: hintTexts[1]
           });
-          console.log('初始化游戏', currentGameSettings);
+          console.log('初始化游戏', gameSettings);
           setFinishInit(true);
         }
       } catch (error) {
@@ -227,7 +227,7 @@ function SinglePlayer() {
 
   const handleRestartWithSettings = async () => {
     setGuesses([]);
-    setGuessesLeft(currentGameSettings.maxAttempts);
+    setGuessesLeft(gameSettings.maxAttempts);
     setIsGuessing(false);
     setGameEnd(false);
     setGameEndPopup(null);
@@ -246,7 +246,7 @@ function SinglePlayer() {
       setAnswerCharacter(character);
       // Prepare hints based on settings for new game
       let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-      if (currentGameSettings.enableHints && character.summary) {
+      if (gameSettings.enableHints && character.summary) {
         // Split summary into sentences using Chinese punctuation
         const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
           .split(/[。、，。！？ ""]/).filter(s => s.trim());
@@ -263,7 +263,7 @@ function SinglePlayer() {
         first: hintTexts[0],
         second: hintTexts[1]
       });
-      console.log('初始化游戏', currentGameSettings);
+      console.log('初始化游戏', gameSettings);
       setFinishInit(true);
     } catch (error) {
       console.error('Failed to initialize new game:', error);
