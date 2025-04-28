@@ -13,15 +13,6 @@
  */
 const announcements = [
   {
-    version: '1.2.1',
-    date: '2025-04-28',
-    content: `
-      重写的标签功能作为一项设置加入，默认开启。<br/>
-      
-    `
-  },
-
-  {
     version: '1.2.0',
     date: '2025-04-27',
     content: `

@@ -52,8 +52,7 @@ const Multiplayer = () => {
     subjectSearch: true,
     characterTagNum: 6,
     subjectTagNum: 8,
-    enableTagCensor: false,
-    commonTags: true
+    enableTagCensor: false
   });
 
   // Game state
@@ -106,7 +105,6 @@ const Multiplayer = () => {
     newSocket.on('gameStart', ({ character, settings, players, isPublic, hints = null, isAnswerSetter: isAnswerSetterFlag }) => {
       gameEndedRef.current = false;
       const decryptedCharacter = JSON.parse(CryptoJS.AES.decrypt(character, secret).toString(CryptoJS.enc.Utf8));
-      decryptedCharacter.rawTags = new Map(decryptedCharacter.rawTags);
       setAnswerCharacter(decryptedCharacter);
       setGameSettings(settings);
       setGuessesLeft(settings.maxAttempts);
@@ -340,7 +338,7 @@ const Multiplayer = () => {
 
         handleGameEnd(true);
       } else if (guessesLeft <= 1) {
-        const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
+        const feedback = generateFeedback(guessData, answerCharacter);
         setGuesses(prevGuesses => [...prevGuesses, {
           icon: guessData.image,
           name: guessData.name,
@@ -358,14 +356,14 @@ const Multiplayer = () => {
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
           sharedAppearances: feedback.shared_appearances,
-          metaTags: feedback.metaTags.guess,
+          metaTags: guessData.metaTags,
           sharedMetaTags: feedback.metaTags.shared,
           isAnswer: false
         }]);
 
         handleGameEnd(false);
       } else {
-        const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
+        const feedback = generateFeedback(guessData, answerCharacter);
         setGuesses(prevGuesses => [...prevGuesses, {
           icon: guessData.image,
           name: guessData.name,
@@ -383,7 +381,7 @@ const Multiplayer = () => {
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
           sharedAppearances: feedback.shared_appearances,
-          metaTags: feedback.metaTags.guess,
+          metaTags: guessData.metaTags,
           sharedMetaTags: feedback.metaTags.shared,
           isAnswer: false
         }]);
@@ -437,7 +435,7 @@ const Multiplayer = () => {
     if (isHost) {
       try {
         const character = await getRandomCharacter(gameSettings);
-        character.rawTags = Array.from(character.rawTags.entries());
+        console.log(character);
         const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
         socket.emit('gameStart', {
           roomId,
@@ -510,7 +508,6 @@ const Multiplayer = () => {
 
   const handleSetAnswer = async ({ character, hints }) => {
     try {
-      character.rawTags = Array.from(character.rawTags.entries());
       const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
       socket.emit('setAnswer', {
         roomId,

@@ -23,7 +23,9 @@ function SinglePlayer() {
   const [settingsPopup, setSettingsPopup] = useState(false);
   const [helpPopup, setHelpPopup] = useState(false);
   const [finishInit, setFinishInit] = useState(false);
+  const [currentTimeLimit, setCurrentTimeLimit] = useState(null);
   const [shouldResetTimer, setShouldResetTimer] = useState(false);
+  const [currentSubjectSearch, setCurrentSubjectSearch] = useState(true);
   const [hints, setHints] = useState({
     first: null,
     second: null
@@ -47,9 +49,7 @@ function SinglePlayer() {
     characterTagNum: 6,
     subjectTagNum: 8,
     enableTagCensor: false,
-    commonTags: true
   });
-  const [currentGameSettings, setCurrentGameSettings] = useState(gameSettings);
 
   // Initialize game
   useEffect(() => {
@@ -61,14 +61,15 @@ function SinglePlayer() {
 
     const initializeGame = async () => {
       try {
-        setCurrentGameSettings({ ...gameSettings });
-        const character = await getRandomCharacter(currentGameSettings);
+        const character = await getRandomCharacter(gameSettings);
         if (isMounted) {
           setAnswerCharacter(character);
-          setGuessesLeft(currentGameSettings.maxAttempts);
+          setGuessesLeft(gameSettings.maxAttempts);
+          setCurrentTimeLimit(gameSettings.timeLimit);
+          setCurrentSubjectSearch(gameSettings.subjectSearch);
           // Prepare hints based on settings
           let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-          if (currentGameSettings.enableHints && character.summary) {
+          if (gameSettings.enableHints && character.summary) {
             // Split summary into sentences using Chinese punctuation
             const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
               .split(/[。、，。！？ ""]/).filter(s => s.trim());
@@ -85,7 +86,7 @@ function SinglePlayer() {
             first: hintTexts[0],
             second: hintTexts[1]
           });
-          console.log('初始化游戏', currentGameSettings);
+          console.log('初始化游戏', gameSettings);
           setFinishInit(true);
         }
       } catch (error) {
@@ -113,7 +114,7 @@ function SinglePlayer() {
     }
 
     try {
-      const appearances = await getCharacterAppearances(character.id, currentGameSettings);
+      const appearances = await getCharacterAppearances(character.id, gameSettings);
 
       const guessData = {
         ...character,
@@ -156,7 +157,7 @@ function SinglePlayer() {
           answer: answerCharacter
         });
       } else if (guessesLeft <= 1) {
-        const feedback = generateFeedback(guessData, answerCharacter, currentGameSettings);
+        const feedback = generateFeedback(guessData, answerCharacter);
         setGuesses(prevGuesses => [...prevGuesses, {
           icon: guessData.image,
           name: guessData.name,
@@ -174,7 +175,7 @@ function SinglePlayer() {
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
           sharedAppearances: feedback.shared_appearances,
-          metaTags: feedback.metaTags.guess,
+          metaTags: guessData.metaTags,
           sharedMetaTags: feedback.metaTags.shared,
           isAnswer: false
         }]);
@@ -186,7 +187,7 @@ function SinglePlayer() {
           answer: answerCharacter
         });
       } else {
-        const feedback = generateFeedback(guessData, answerCharacter, currentGameSettings);
+        const feedback = generateFeedback(guessData, answerCharacter);
         setGuesses(prevGuesses => [...prevGuesses, {
           icon: guessData.image,
           name: guessData.name,
@@ -204,7 +205,7 @@ function SinglePlayer() {
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
           sharedAppearances: feedback.shared_appearances,
-          metaTags: feedback.metaTags.guess,
+          metaTags: guessData.metaTags,
           sharedMetaTags: feedback.metaTags.shared,
           isAnswer: false
         }]);
@@ -227,12 +228,14 @@ function SinglePlayer() {
 
   const handleRestartWithSettings = async () => {
     setGuesses([]);
-    setGuessesLeft(currentGameSettings.maxAttempts);
+    setGuessesLeft(gameSettings.maxAttempts);
     setIsGuessing(false);
     setGameEnd(false);
     setGameEndPopup(null);
     setAnswerCharacter(null);
     setSettingsPopup(false);
+    setCurrentTimeLimit(gameSettings.timeLimit);
+    setCurrentSubjectSearch(gameSettings.subjectSearch);
     setShouldResetTimer(false);
     setFinishInit(false);
     setHints({
@@ -241,12 +244,11 @@ function SinglePlayer() {
     });
 
     try {
-      setCurrentGameSettings({ ...gameSettings });
-      const character = await getRandomCharacter(currentGameSettings);
+      const character = await getRandomCharacter(gameSettings);
       setAnswerCharacter(character);
       // Prepare hints based on settings for new game
       let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-      if (currentGameSettings.enableHints && character.summary) {
+      if (gameSettings.enableHints && character.summary) {
         // Split summary into sentences using Chinese punctuation
         const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
           .split(/[。、，。！？ ""]/).filter(s => s.trim());
@@ -263,7 +265,7 @@ function SinglePlayer() {
         first: hintTexts[0],
         second: hintTexts[1]
       });
-      console.log('初始化游戏', currentGameSettings);
+      console.log('初始化游戏', gameSettings);
       setFinishInit(true);
     } catch (error) {
       console.error('Failed to initialize new game:', error);
@@ -318,13 +320,13 @@ function SinglePlayer() {
           onCharacterSelect={handleCharacterSelect}
           isGuessing={isGuessing}
           gameEnd={gameEnd}
-          subjectSearch={currentGameSettings.subjectSearch}
+          subjectSearch={currentSubjectSearch}
         />
       </div>
 
-      {currentGameSettings.timeLimit && (
+      {currentTimeLimit && (
         <Timer
-          timeLimit={currentGameSettings.timeLimit}
+          timeLimit={currentTimeLimit}
           onTimeUp={handleTimeUp}
           isActive={!gameEnd && !isGuessing}
           reset={shouldResetTimer}
@@ -343,7 +345,7 @@ function SinglePlayer() {
 
       <GuessesTable
         guesses={guesses}
-        enableTagCensor={currentGameSettings.enableTagCensor}
+        enableTagCensor={gameSettings.enableTagCensor}
       />
 
       {settingsPopup && (

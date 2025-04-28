@@ -25,7 +25,6 @@ export const gamePresets = {
     subjectSearch: true,
     subjectTagNum: 8,
     characterTagNum: 6,
-    commonTags: true,
     // 标记哪些字段是动态计算的
     dynamicFields: ['startYear', 'endYear']
   },
@@ -46,7 +45,6 @@ export const gamePresets = {
     subjectSearch: false,
     subjectTagNum: 8,
     characterTagNum: 6,
-    commonTags: true,
     dynamicFields: ['startYear', 'endYear']
   },
   '老番享受者': {
@@ -66,7 +64,6 @@ export const gamePresets = {
     subjectSearch: false,
     subjectTagNum: 8,
     characterTagNum: 6,
-    commonTags: true,
     dynamicFields: []
   },
   '瓶子严选': {
@@ -84,7 +81,6 @@ export const gamePresets = {
     subjectSearch: true,
     subjectTagNum: 8,
     characterTagNum: 5,
-    commonTags: true,
     dynamicFields: ['endYear']
   },
   '木柜子痴': {
@@ -103,8 +99,7 @@ export const gamePresets = {
     includeGame: false,
     subjectSearch: false,
     subjectTagNum: 8,
-    characterTagNum: 6, 
-    commonTags: true,
+    characterTagNum: 6,
     dynamicFields: ['startYear', 'endYear']
   },
   '二游高手+': {
@@ -124,7 +119,6 @@ export const gamePresets = {
     subjectSearch: false,
     subjectTagNum: 3,
     characterTagNum: 6,
-    commonTags: true,
     dynamicFields: ['startYear', 'endYear']
   }
 };
