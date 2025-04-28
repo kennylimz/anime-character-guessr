@@ -62,7 +62,7 @@ function SinglePlayer() {
     const initializeGame = async () => {
       try {
         setCurrentGameSettings({ ...gameSettings });
-        const character = await getRandomCharacter(currentGameSettings);
+        const character = await getRandomCharacter(gameSettings);
         if (isMounted) {
           setAnswerCharacter(character);
           setGuessesLeft(currentGameSettings.maxAttempts);
@@ -242,7 +242,7 @@ function SinglePlayer() {
 
     try {
       setCurrentGameSettings({ ...gameSettings });
-      const character = await getRandomCharacter(currentGameSettings);
+      const character = await getRandomCharacter(gameSettings);
       setAnswerCharacter(character);
       // Prepare hints based on settings for new game
       let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
