@@ -1,5 +1,5 @@
 import '../styles/popups.css';
-import subaruIcon from '../assets/subaru.jpg';
+import subaruIcon from '/assets/subaru.jpg';
 import { useState } from 'react';
 import TagContributionPopup from './TagContributionPopup';
 
