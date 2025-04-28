@@ -266,7 +266,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
       latestAppearance,
       earliestAppearance,
       highestRating,
-      rawTags: sortedRawTags,
+      rawTags: sortedRawTags || new Map(),
       animeVAs: Array.from(animeVAs),
       metaTags: Array.from(allMetaTags)
     };
@@ -565,8 +565,6 @@ function generateFeedback(guess, answerCharacter, gameSettings) {
   };
 
   if (gameSettings.commonTags){
-    console.log('guess', guess);
-    console.log('answerCharacter', answerCharacter);
     const guessSubjectTags = Array.from(guess.rawTags.keys());
     const answerSubjectTags = Array.from(answerCharacter.rawTags.keys());
     const answerSubjectTagsSet = new Set(answerSubjectTags);
@@ -579,8 +577,8 @@ function generateFeedback(guess, answerCharacter, gameSettings) {
       }
     }
 
-    const guessCharacterTags = idToTags[guess.id]? idToTags[guess.id] : [];
-    const answerCharacterTags = idToTags[answerCharacter.id]? idToTags[answerCharacter.id] : [];
+    const guessCharacterTags = idToTags && idToTags[guess.id]? idToTags[guess.id] : [];
+    const answerCharacterTags = idToTags && idToTags[answerCharacter.id]? idToTags[answerCharacter.id] : [];
     const answerCharacterTagsSet = new Set(answerCharacterTags);
     const sharedCharacterTags = guessCharacterTags.filter(tag => answerCharacterTagsSet.has(tag)).slice(0, gameSettings.characterTagNum);
     const characterTags = [...sharedCharacterTags];
