@@ -589,6 +589,23 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     max="10"
                   />
                 </div>
+                <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                  <label>共同标签优先</label>
+                  <span className="tooltip-trigger">
+                    ?
+                    <span className="tooltip-text">
+                      优先展示共同的（标绿的）标签，但可能会增加处理时间。
+                    </span>
+                  </span>
+                  <input 
+                    type="checkbox"
+                    checked={gameSettings.commonTags}
+                    onChange={(e) => {
+                      onSettingsChange('commonTags', e.target.checked);
+                    }}
+                    style={{ marginRight: '50px', marginLeft: '0px' }}
+                  />
+                </div>
               </div>
             </div>
 

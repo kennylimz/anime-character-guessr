@@ -55,6 +55,7 @@ async function getSubjectDetails(subjectId) {
       name: response.data.name_cn || response.data.name,
       year,
       tags,
+      raw_tags: response.data.tags,
       meta_tags: response.data.meta_tags,
       rating: response.data.rating?.score || 0,
       rating_count: response.data.rating?.total || 0
@@ -78,6 +79,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
         latestAppearance: -1,
         earliestAppearance: -1,
         highestRating: 0,
+        rawTags: new Map(),
         metaTags: []
       };
     }
@@ -100,6 +102,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
         latestAppearance: -1,
         earliestAppearance: -1,
         highestRating: -1,
+        rawTags: new Map(),
         metaTags: []
       };
     }
@@ -125,6 +128,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
     const tagCounts = new Map(); // Track cumulative counts for each tag
     const metaTagCounts = new Map(); // Track cumulative counts for each meta tag
     const allMetaTags = new Set();
+    const rawTags = new Map();
 
     // Get just the names and collect meta tags
     const appearances = await Promise.all(
@@ -148,37 +152,44 @@ async function getCharacterAppearances(characterId, gameSettings) {
             highestRating = details.rating;
           }
 
-          details.meta_tags.forEach(tag => {
-            if (sourceTagSet.has(tag)) {
-              return;
-            }
-            else if (regionTagSet.has(tag)) {
-              regionTags.add(tag);
-            }
-            else {
-              metaTagCounts.set(tag, (metaTagCounts.get(tag) || 0) + (tagCounts.get(tag) || stuffFactor));
-            }
-          });
-
-          details.tags.forEach(tagObj => {
-            const [[name, count]] = Object.entries(tagObj);
-            if (sourceTagSet.has(name)) {
-              sourceTagCounts.set(name, (sourceTagCounts.get(name) || 0) + count*stuffFactor);
-            }
-            else if (regionTagSet.has(name)) {
-              regionTags.add(name);
-            }
-            else if (sourceTagMap.has(name)) {
-              const mappedTag = sourceTagMap.get(name);
-              sourceTagCounts.set(mappedTag, (sourceTagCounts.get(mappedTag) || 0) + count*stuffFactor);
-            }
-            else if (regionTags.has(name)) {
-              return;
-            }
-            else {
-              tagCounts.set(name, (tagCounts.get(name) || 0) + count*stuffFactor);
-            }
-          });
+          if (gameSettings.commonTags) {
+            details.raw_tags.forEach(tag => {
+              rawTags.set(tag.name, (rawTags.get(tag.name) || 0) + stuffFactor*tag.count);
+            });
+          }
+          else{
+            details.meta_tags.forEach(tag => {
+              if (sourceTagSet.has(tag)) {
+                return;
+              }
+              else if (regionTagSet.has(tag)) {
+                regionTags.add(tag);
+              }
+              else {
+                metaTagCounts.set(tag, (metaTagCounts.get(tag) || 0) + (tagCounts.get(tag) || stuffFactor));
+              }
+            });
+  
+            details.tags.forEach(tagObj => {
+              const [[name, count]] = Object.entries(tagObj);
+              if (sourceTagSet.has(name)) {
+                sourceTagCounts.set(name, (sourceTagCounts.get(name) || 0) + count*stuffFactor);
+              }
+              else if (regionTagSet.has(name)) {
+                regionTags.add(name);
+              }
+              else if (sourceTagMap.has(name)) {
+                const mappedTag = sourceTagMap.get(name);
+                sourceTagCounts.set(mappedTag, (sourceTagCounts.get(mappedTag) || 0) + count*stuffFactor);
+              }
+              else if (regionTags.has(name)) {
+                return;
+              }
+              else {
+                tagCounts.set(name, (tagCounts.get(name) || 0) + count*stuffFactor);
+              }
+            });
+          }
 
           return {
             name: details.name,
@@ -192,54 +203,61 @@ async function getCharacterAppearances(characterId, gameSettings) {
       })
     );
 
-    const sortedSourceTags = Array.from(sourceTagCounts.entries())
-      .map(([name, count]) => ({ [name]: count }))
-      .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
-
-    // Convert tagCounts to array of objects and sort by count
-    const sortedTags = Array.from(tagCounts.entries())
-      .map(([name, count]) => ({ [name]: count }))
-      .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
-
-    const sortedMetaTags = Array.from(metaTagCounts.entries())
-      .map(([name, count]) => ({ [name]: count }))
-      .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
-
-    // Only add one source tag to avoid confusion
-    if (sortedSourceTags.length > 0) {
-      allMetaTags.add(Object.keys(sortedSourceTags[0])[0]);
+    let sortedRawTags;
+    let sortedSourceTags;
+    let sortedTags;
+    let sortedMetaTags;
+    if (gameSettings.commonTags){
+      const sortedEntries = [...rawTags.entries()].filter(entry => !entry[0].includes('20')).sort((a, b) => b[1] - a[1]);
+      sortedRawTags = new Map(sortedEntries.slice(0, 30));
     }
+    else{
+      sortedSourceTags = Array.from(sourceTagCounts.entries())
+        .map(([name, count]) => ({ [name]: count }))
+        .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
 
-    for (const tagObj of sortedMetaTags) {
-      if (allMetaTags.size >= gameSettings.subjectTagNum) break;
-      allMetaTags.add(Object.keys(tagObj)[0]);
-    }
-    
-    if (idToTags && idToTags[characterId]) {
-      idToTags[characterId].slice(0, Math.min(gameSettings.characterTagNum, idToTags[characterId].length)).forEach(tag => allMetaTags.add(tag));
-    }
-    
-    for (const tagObj of sortedTags) {
-      if (allMetaTags.size >= gameSettings.subjectTagNum+gameSettings.characterTagNum) break;
-      allMetaTags.add(Object.keys(tagObj)[0]);
-    }
+      sortedTags = Array.from(tagCounts.entries())
+        .map(([name, count]) => ({ [name]: count }))
+        .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
 
-    regionTags.forEach(tag => allMetaTags.add(tag));
+      sortedMetaTags = Array.from(metaTagCounts.entries())
+        .map(([name, count]) => ({ [name]: count }))
+        .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
+
+      // Only add one source tag to avoid confusion
+      if (sortedSourceTags.length > 0) {
+        allMetaTags.add(Object.keys(sortedSourceTags[0])[0]);
+      }
+      for (const tagObj of sortedMetaTags) {
+        if (allMetaTags.size >= gameSettings.subjectTagNum) break;
+        allMetaTags.add(Object.keys(tagObj)[0]);
+      }
+      if (idToTags && idToTags[characterId]) {
+        idToTags[characterId].slice(0, Math.min(gameSettings.characterTagNum, idToTags[characterId].length)).forEach(tag => allMetaTags.add(tag));
+      }
+      for (const tagObj of sortedTags) {
+        if (allMetaTags.size >= gameSettings.subjectTagNum+gameSettings.characterTagNum) break;
+        allMetaTags.add(Object.keys(tagObj)[0]);
+      }
+      regionTags.forEach(tag => allMetaTags.add(tag));
+    }
     
     const validAppearances = appearances
       .filter(appearance => appearance !== null)
       .sort((a, b) => b.rating_count - a.rating_count)
       .map(appearance => appearance.name);
 
+    const animeVAs = new Set();
     if (characterId === 56822 || characterId === 56823 || characterId === 17529 || characterId === 10956) {
-      personsResponse.data = [];
+      animeVAs = [];
       allMetaTags.add('展开');
-    } 
+    }
     else if (personsResponse.data && personsResponse.data.length) {
-      const animeVAs = personsResponse.data.filter(person => person.subject_type === 2 || person.subject_type === 4);
-      if (animeVAs.length > 0) {
-        animeVAs.forEach(person => {
+      const persons = personsResponse.data.filter(person => person.subject_type === 2 || person.subject_type === 4);
+      if (persons.length > 0) {
+        persons.forEach(person => {
           allMetaTags.add(`${person.name}`);
+          animeVAs.add(person.name);
         });
       }
     }
@@ -248,6 +266,8 @@ async function getCharacterAppearances(characterId, gameSettings) {
       latestAppearance,
       earliestAppearance,
       highestRating,
+      rawTags: sortedRawTags,
+      animeVAs: Array.from(animeVAs),
       metaTags: Array.from(allMetaTags)
     };
   } catch (error) {
@@ -257,6 +277,8 @@ async function getCharacterAppearances(characterId, gameSettings) {
       latestAppearance: -1,
       earliestAppearance: -1,
       highestRating: -1,
+      rawTags: new Map(),
+      animeVAs: [],
       metaTags: []
     };
   }
@@ -480,7 +502,7 @@ async function designateCharacter(characterId, gameSettings) {
   }
 }
 
-function generateFeedback(guess, answerCharacter) {
+function generateFeedback(guess, answerCharacter, gameSettings) {
   const result = {};
 
   result.gender = {
@@ -542,14 +564,53 @@ function generateFeedback(guess, answerCharacter) {
     feedback: appearancesFeedback
   };
 
-  // Advice from EST-NINE
-  const answerMetaTagsSet = new Set(answerCharacter.metaTags);
-  const sharedMetaTags = guess.metaTags.filter(tag => answerMetaTagsSet.has(tag));
-  
-  result.metaTags = {
-    guess: guess.metaTags,
-    shared: sharedMetaTags
-  };
+  if (gameSettings.commonTags){
+    console.log('guess', guess);
+    console.log('answerCharacter', answerCharacter);
+    const guessSubjectTags = Array.from(guess.rawTags.keys());
+    const answerSubjectTags = Array.from(answerCharacter.rawTags.keys());
+    const answerSubjectTagsSet = new Set(answerSubjectTags);
+    const sharedSubjectTags = guessSubjectTags.filter(tag => answerSubjectTagsSet.has(tag)).slice(0, gameSettings.subjectTagNum);
+    const subjectTags = [...sharedSubjectTags];
+    for (const tag of guessSubjectTags) {
+      if (subjectTags.length >= gameSettings.subjectTagNum) break;
+      if (!answerSubjectTagsSet.has(tag)) {
+        subjectTags.push(tag);
+      }
+    }
+
+    const guessCharacterTags = idToTags[guess.id]? idToTags[guess.id] : [];
+    const answerCharacterTags = idToTags[answerCharacter.id]? idToTags[answerCharacter.id] : [];
+    const answerCharacterTagsSet = new Set(answerCharacterTags);
+    const sharedCharacterTags = guessCharacterTags.filter(tag => answerCharacterTagsSet.has(tag)).slice(0, gameSettings.characterTagNum);
+    const characterTags = [...sharedCharacterTags];
+    for (const tag of guessCharacterTags) {
+      if (characterTags.length >= gameSettings.characterTagNum) break;
+      if (!answerCharacterTagsSet.has(tag)) {
+        characterTags.push(tag);
+      }
+    }
+    const guessCVTags = guess.animeVAs? guess.animeVAs : [];
+    const answerCVTags = answerCharacter.animeVAs? answerCharacter.animeVAs : [];
+    const sharedCVTags = guessCVTags.filter(tag => answerCVTags.includes(tag));
+
+    const finalGuessTagsSet = new Set([...subjectTags, ...characterTags, ...guessCVTags]);
+    const finalSharedTagsSet = new Set([...sharedSubjectTags, ...sharedCharacterTags, ...sharedCVTags]);
+    result.metaTags = {
+      guess: Array.from(finalGuessTagsSet),
+      shared: Array.from(finalSharedTagsSet)
+    };
+  }
+  else{
+    // Advice from EST-NINE
+    const answerMetaTagsSet = new Set(answerCharacter.metaTags);
+    const sharedMetaTags = guess.metaTags.filter(tag => answerMetaTagsSet.has(tag));
+
+    result.metaTags = {
+      guess: guess.metaTags,
+      shared: sharedMetaTags
+    };
+  }
 
   if (guess.latestAppearance === -1 || answerCharacter.latestAppearance === -1) {
     result.latestAppearance = {
@@ -592,7 +653,6 @@ function generateFeedback(guess, answerCharacter) {
       feedback: yearFeedback
     };
   }
-
   return result;
 }
 
