@@ -18,7 +18,7 @@ const announcements = [
     content: `
       服务器的免费流量用完了，在这里放一个打赏码。<br/>
       意思一下就行，多出来的会请开发群的群友喝奶茶。<br/>
-      <img src="/src/assets/tip_code.jpg" alt="Tip Code" style="max-width: 20rem" /><br/>
+      <img src="/assets/tip_code.jpg" alt="Tip Code" style="max-width: 20rem" /><br/>
     `
   },
 
