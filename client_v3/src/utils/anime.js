@@ -154,7 +154,16 @@ async function getCharacterAppearances(characterId, gameSettings) {
 
           if (gameSettings.commonTags) {
             details.raw_tags.forEach(tag => {
-              rawTags.set(tag.name, (rawTags.get(tag.name) || 0) + stuffFactor*tag.count);
+              if (sourceTagSet.has(tag.name)) {
+                sourceTagCounts.set(tag.name, (sourceTagCounts.get(tag.name) || 0) + stuffFactor*tag.count);
+              }
+              else if (sourceTagMap.has(tag.name)) {
+                const mappedTag = sourceTagMap.get(tag.name);
+                sourceTagCounts.set(mappedTag, (sourceTagCounts.get(mappedTag) || 0) + stuffFactor*tag.count);
+              }
+              else{
+                rawTags.set(tag.name, (rawTags.get(tag.name) || 0) + stuffFactor*tag.count);
+              }
             });
           }
           else{
@@ -208,6 +217,13 @@ async function getCharacterAppearances(characterId, gameSettings) {
     let sortedTags;
     let sortedMetaTags;
     if (gameSettings.commonTags){
+      sortedSourceTags = Array.from(sourceTagCounts.entries())
+        .map(([name, count]) => ({ [name]: count }))
+        .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
+      if (sortedSourceTags.length > 0) {
+        const topSourceTag = Object.entries(sortedSourceTags[0])[0];
+        rawTags.set(topSourceTag[0], (rawTags.get(topSourceTag[0]) || 0) + topSourceTag[1]);
+      }
       const sortedEntries = [...rawTags.entries()].filter(entry => !entry[0].includes('20')).sort((a, b) => b[1] - a[1]);
       sortedRawTags = new Map(sortedEntries.slice(0, 30));
     }

@@ -40,7 +40,9 @@ const Home = () => {
           <br/>
           灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
           数据来源<a href="https://bgm.tv/"> Bangumi </a>。<br />
-          <a href="https://space.bilibili.com/87983557">@作者</a>：“感谢 Bangumi 管理员的优化支持，以及各位网友贡献的代码和数据。感谢大家这段时间的热情和支持。”<br/>
+          <a href="https://space.bilibili.com/87983557">@作者</a>：“感谢 <a href="https://github.com/trim21">Bangumi 管理员</a> 的优化支持，
+          以及各位<a href="https://github.com/kennylimz/anime-character-guessr/graphs/contributors">网友</a>贡献的代码和数据。
+          感谢大家这段时间的热情和支持。”<br/>
           想找朋友一起玩？QQ群：467740403
         </p>
       </div>

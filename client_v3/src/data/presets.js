@@ -23,7 +23,7 @@ export const gamePresets = {
     enableHints: true,
     includeGame: false,
     subjectSearch: true,
-    subjectTagNum: 8,
+    subjectTagNum: 6,
     characterTagNum: 6,
     commonTags: true,
     // 标记哪些字段是动态计算的
@@ -44,7 +44,7 @@ export const gamePresets = {
     enableHints: false,
     includeGame: false,
     subjectSearch: false,
-    subjectTagNum: 8,
+    subjectTagNum: 6,
     characterTagNum: 6,
     commonTags: true,
     dynamicFields: ['startYear', 'endYear']
@@ -64,7 +64,7 @@ export const gamePresets = {
     enableHints: false,
     includeGame: false,
     subjectSearch: false,
-    subjectTagNum: 8,
+    subjectTagNum: 6,
     characterTagNum: 6,
     commonTags: true,
     dynamicFields: []
@@ -82,7 +82,7 @@ export const gamePresets = {
     enableHints: false,
     includeGame: false,
     subjectSearch: true,
-    subjectTagNum: 8,
+    subjectTagNum: 6,
     characterTagNum: 5,
     commonTags: true,
     dynamicFields: ['endYear']
@@ -102,7 +102,7 @@ export const gamePresets = {
     enableHints: false,
     includeGame: false,
     subjectSearch: false,
-    subjectTagNum: 8,
+    subjectTagNum: 6,
     characterTagNum: 6, 
     commonTags: true,
     dynamicFields: ['startYear', 'endYear']

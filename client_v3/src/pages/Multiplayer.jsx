@@ -11,6 +11,7 @@ import PlayerList from '../components/PlayerList';
 import GameEndPopup from '../components/GameEndPopup';
 import SetAnswerPopup from '../components/SetAnswerPopup';
 import GameSettingsDisplay from '../components/GameSettingsDisplay';
+import Leaderboard from '../components/Leaderboard';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
 import CryptoJS from 'crypto-js';
@@ -51,7 +52,7 @@ const Multiplayer = () => {
     timeLimit: 60,
     subjectSearch: true,
     characterTagNum: 6,
-    subjectTagNum: 8,
+    subjectTagNum: 6,
     enableTagCensor: false,
     commonTags: true
   });
@@ -561,24 +562,27 @@ const Multiplayer = () => {
         <i className="fas fa-angle-left"></i>
       </a>
       {!isJoined ? (
-        <div className="join-container">
-          <h2>{isHost ? '创建房间' : '加入房间'}</h2>
-          <input
-            type="text"
-            placeholder="输入用户名"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className="username-input"
-            maxLength={20}
-          />
-          <button onClick={handleJoinRoom} className="join-button">
-            {isHost ? '创建' : '加入'}
-          </button>
-          {error && <p className="error-message">{error}</p>}
-        </div>
+        <>
+          <div className="join-container">
+            <h2>{isHost ? '创建房间' : '加入房间'}</h2>
+            <input
+              type="text"
+              placeholder="输入用户名"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="username-input"
+              maxLength={20}
+            />
+            <button onClick={handleJoinRoom} className="join-button">
+              {isHost ? '创建' : '加入'}
+            </button>
+            {error && <p className="error-message">{error}</p>}
+          </div>
+          <Leaderboard />
+        </>
       ) : (
         <>
-              <PlayerList 
+          <PlayerList 
                 players={players} 
                 socket={socket} 
                 isGameStarted={isGameStarted}

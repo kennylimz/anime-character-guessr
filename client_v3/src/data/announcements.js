@@ -13,10 +13,21 @@
  */
 const announcements = [
   {
+    version: '我50',
+    date: '置顶',
+    content: `
+      服务器的免费流量用完了，在这里放一个打赏码。<br/>
+      意思一下就行，多出来的会请开发群的群友喝奶茶。<br/>
+      <img src="/src/assets/tip_code.jpg" alt="Tip Code" style="max-width: 20rem" /><br/>
+    `
+  },
+
+  {
     version: '1.2.1',
     date: '2025-04-28',
     content: `
       重写的标签功能作为一项设置加入，默认开启。<br/>
+      新增受欢迎角色排行榜。<br/>
       
     `
   },
