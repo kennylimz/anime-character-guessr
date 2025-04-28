@@ -15,7 +15,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
   return (
     <div className="leaderboard-container">
       <div className="leaderboard-header" onClick={toggleExpand}>
-        <h3>最受出题人欢迎（截止4.29）</h3>
+        <h3>最受出题人欢迎（截至4.29）</h3>
         <span className={`expand-icon ${isExpanded ? 'expanded' : ''}`}>{isExpanded ? '▼' : '▶'}</span>
       </div>
       {isExpanded && (
