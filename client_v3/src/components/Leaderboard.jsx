@@ -15,7 +15,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
   return (
     <div className="leaderboard-container">
       <div className="leaderboard-header" onClick={toggleExpand}>
-        <h3>最受出题人欢迎（截至4.29）</h3>
+        <h3>热门常考真题（截至4.30）</h3>
         <span className={`expand-icon ${isExpanded ? 'expanded' : ''}`}>{isExpanded ? '▼' : '▶'}</span>
       </div>
       {isExpanded && (
@@ -26,7 +26,6 @@ const Leaderboard = ({ defaultExpanded = false }) => {
                 className={`podium-place podium-place-${char.rank} ${char.rank === 1 ? 'podium-center' : ''}`}
                 key={char.name}
               >
-                {/* For real use, use char.portrait for podium, char.grid for list. Here, use char.image for both. */}
                 <img
                   src={char.image}
                   alt={char.name}
