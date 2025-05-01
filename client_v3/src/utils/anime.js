@@ -90,11 +90,18 @@ async function getCharacterAppearances(characterId, gameSettings) {
         (appearance.staff === '主角' || appearance.staff === '配角')
         && (appearance.type === 2 || appearance.type === 4)
       );
-    } else {
+    }
+    else {
       filteredAppearances = subjectsResponse.data.filter(appearance => 
         (appearance.staff === '主角' || appearance.staff === '配角')
         && (appearance.type === 2)
       );
+      if (filteredAppearances.length === 0) {
+        filteredAppearances = subjectsResponse.data.filter(appearance => 
+          (appearance.staff === '主角' || appearance.staff === '配角')
+          && (appearance.type === 4)
+        );
+      }
     }
     if (filteredAppearances.length === 0) {
       return {
@@ -134,7 +141,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
     const appearances = await Promise.all(
       filteredAppearances.map(async appearance => {
         try {
-          const stuffFactor = appearance.staff === '主角' ? 2 : 1;
+          const stuffFactor = appearance.staff === '主角' ? 3 : 1;
           const details = await getSubjectDetails(appearance.id);
           if (!details || details.year === null) return null;
 
@@ -225,7 +232,10 @@ async function getCharacterAppearances(characterId, gameSettings) {
         rawTags.set(topSourceTag[0], (rawTags.get(topSourceTag[0]) || 0) + topSourceTag[1]);
       }
       const sortedEntries = [...rawTags.entries()].filter(entry => !entry[0].includes('20')).sort((a, b) => b[1] - a[1]);
-      sortedRawTags = new Map(sortedEntries.slice(0, gameSettings.subjectTagNum*3));
+      const maxCount = sortedEntries.length > 0 ? sortedEntries[0][1] : 0;
+      const threshold = maxCount * 0.1;
+      let cutoffIndex = sortedEntries.findIndex(entry => entry[1] < threshold);
+      sortedRawTags = new Map(sortedEntries.slice(0, Math.max(cutoffIndex, gameSettings.subjectTagNum)));
     }
     else{
       sortedSourceTags = Array.from(sourceTagCounts.entries())
