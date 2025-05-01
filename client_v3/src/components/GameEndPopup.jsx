@@ -2,6 +2,7 @@ import '../styles/popups.css';
 import subaruIcon from '/assets/subaru.jpg';
 import { useState } from 'react';
 import TagContributionPopup from './TagContributionPopup';
+import { idToTags } from '../data/id_tags';
 
 function GameEndPopup({ result, answer, onClose }) {
   const [showTagPopup, setShowTagPopup] = useState(false);
@@ -70,11 +71,11 @@ function GameEndPopup({ result, answer, onClose }) {
               )}
 
               {/* 角色标签 */}
-              {answer.metaTags && answer.metaTags.length > 0 && (
+              {idToTags[answer.id] && idToTags[answer.id].length > 0 && (
                 <div className="answer-tags">
-                  <h3>标签：</h3>
+                  <h3>角色标签：</h3>
                   <div className="tags-container">
-                    {answer.metaTags.map((tag, index) => (
+                    {idToTags[answer.id].map((tag, index) => (
                       <span key={index} className="character-tag">{tag}</span>
                     ))}
                   </div>
