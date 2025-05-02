@@ -28,7 +28,7 @@ const rooms = new Map();
 
 // Socket.IO connection handling
 io.on('connection', (socket) => {
-    console.log('A user connected');
+    console.log(`A user connected: ${socket.id}`);
 
     // Handle room creation
     socket.on('createRoom', ({roomId, username}) => {
@@ -84,7 +84,34 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            rooms.set(roomId, {
+                host: socket.id,
+                isPublic: true, // Default to public
+                players: [{
+                    id: socket.id,
+                    username,
+                    isHost: true,
+                    score: 0,
+                    ready: false,
+                    guesses: ''
+                }]
+            });
+    
+            // Join socket to room
+            socket.join(roomId);
+    
+            io.to(roomId).emit('hostTransferred', {
+                oldHostName: username,
+                newHostId: socket.id,
+                newHostName: username
+            });
+
+            io.to(roomId).emit('updatePlayers', {
+                players: rooms.get(roomId).players,
+                isPublic: rooms.get(roomId).isPublic
+            });
+            
+            console.log(`Room ${roomId} created by ${username}`);
             return;
         }
 

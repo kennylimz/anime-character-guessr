@@ -2,7 +2,7 @@ import '../styles/guesses.css';
 import { useState } from 'react';
 import { censoredText } from '../utils/anime';
 
-function GuessesTable({ guesses, enableTagCensor }) {
+function GuessesTable({ guesses, gameSettings }) {
   const [clickedExpandTags, setClickedExpandTags] = useState(new Set());
 
   const getGenderEmoji = (gender) => {
@@ -96,7 +96,7 @@ function GuessesTable({ guesses, enableTagCensor }) {
                         onClick={isExpandTag ? () => handleExpandTagClick(guessIndex, tagIndex) : undefined}
                         style={isExpandTag && !isClicked ? { color: '#0084B4', cursor: 'pointer' } : undefined}
                       >
-                        { enableTagCensor ? censoredText(tag) : tag }
+                        { gameSettings.enableTagCensor ? censoredText(tag) : tag }
                       </span>
                     );
                   })}

@@ -343,7 +343,7 @@ function SinglePlayer() {
 
       <GuessesTable
         guesses={guesses}
-        enableTagCensor={currentGameSettings.enableTagCensor}
+        gameSettings={currentGameSettings}
       />
 
       {settingsPopup && (

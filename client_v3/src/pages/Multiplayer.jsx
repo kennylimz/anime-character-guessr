@@ -163,7 +163,11 @@ const Multiplayer = () => {
       // 如果当前用户是新房主，则更新状态
       if (newHostId === newSocket.id) {
         setIsHost(true);
-        alert(`房主 ${oldHostName} 已断开连接，你已成为新房主！`);
+        if (oldHostName === newHostName) {
+          alert(`原房主已断开连接，你已成为新房主！`);
+        } else {
+          alert(`房主 ${oldHostName} 已断开连接，你已成为新房主！`);
+        }
       } else {
         alert(`房主 ${oldHostName} 已断开连接，${newHostName} 已成为新房主。`);
       }
@@ -698,7 +702,7 @@ const Multiplayer = () => {
                   <GuessesTable
                     guesses={guesses}
                     getGenderEmoji={getGenderEmoji}
-                    enableTagCensor={gameSettings.enableTagCensor}
+                    gameSettings={gameSettings}
                   />
                 </>
               ) : (
