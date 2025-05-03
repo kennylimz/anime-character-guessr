@@ -1,4 +1,4 @@
-﻿
+{
   "65905": {
     "稀有度": {
       "5星": "<img src='/assets/tag/arknights/Star_Rating/5star.png' alt='5星' />"
@@ -7300,3 +7300,4 @@
       "否": "否"
     }
   }
+}
