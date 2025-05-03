@@ -34,15 +34,15 @@ function ModifiedTagDisplay({ guessCharacterId, answerCharacterId }) {
   }, [guessCharacterId, answerCharacterId]);
 
   if (loading) {
-    return <div className="modified-tag-display loading">Loading...</div>;
+    return <div className="modified-tag-display loading">加载中……</div>;
   }
 
   if (error) {
-    return <div className="modified-tag-display error">Error: {error}</div>;
+    return <div className="modified-tag-display error">出错了: {error}</div>;
   }
 
   if (!guessTagData) {
-    return <div className="modified-tag-display empty">No tag data available</div>;
+    return <div className="modified-tag-display empty">没有标签……</div>;
   }
 
   return (
