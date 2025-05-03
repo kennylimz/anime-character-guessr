@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import axios from '../utils/cached-axios';
-import { searchSubjects, getCharactersBySubjectId, getCharacterDetails } from '../utils/anime';
+import { searchSubjects, getCharactersBySubjectId, getCharacterDetails } from '../utils/bangumi';
 import '../styles/search.css';
 
 function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
@@ -94,7 +94,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
         name: character.name,
         nameCn: character.infobox.find(item => item.key === "简体中文名")?.value || character.name,
         gender: character.gender || '?',
-        popularity: character.stat.collects
+        popularity: character.stat.collects+character.stat.comments
       }));
 
       if (reset) {

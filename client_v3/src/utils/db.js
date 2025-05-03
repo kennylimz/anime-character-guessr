@@ -102,3 +102,19 @@ export async function submitAnswerCharacterCount(characterId, characterName) {
     throw error;
   }
 }
+
+export async function getCharacterUsage(characterId) {
+  try {
+    const response = await fetch(`${DB_SERVER_URL}/api/character-usage/${characterId}`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data.count;
+  } catch (error) {
+    console.error('Error fetching character usage:', error);
+    return 0;
+  }
+}
+
+

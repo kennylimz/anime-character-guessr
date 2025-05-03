@@ -221,4 +221,189 @@
     padding: 4px 8px;
     font-size: 13px;
   }
+}
+
+/* Wide column for externalTagMode, using a class on the table */
+.guesses-table.external-tag-mode th:nth-child(3),
+.guesses-table.external-tag-mode td:nth-child(3) {
+  min-width: 600px;
+}
+
+/* Keep 标签 and 共同出演 columns at their original width */
+.guesses-table.external-tag-mode th:nth-child(4),
+.guesses-table.external-tag-mode td:nth-child(4) {
+  width: 250px;
+}
+.guesses-table.external-tag-mode th:nth-child(5),
+.guesses-table.external-tag-mode td:nth-child(5) {
+  width: 250px;
+}
+
+.modified-tag-display {
+  padding: 8px;
+  max-width: 600px;
+  overflow-x: auto;
+}
+
+.modified-tag-display > div {
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Add some basic styles for common HTML elements that might be in the response */
+.modified-tag-display a {
+  color: #0084B4;
+  text-decoration: none;
+}
+
+.modified-tag-display a:hover {
+  text-decoration: underline;
+}
+
+.modified-tag-display mark {
+  background-color: #ffe58f;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.modified-tag-display del {
+  color: #ff4d4f;
+  text-decoration: line-through;
+}
+
+.modified-tag-display ins {
+  color: #52c41a;
+  text-decoration: none;
+  background-color: #f6ffed;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.modified-tag-display.loading,
+.modified-tag-display.error,
+.modified-tag-display.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.modified-tag-display.error {
+  color: #dc2626;
+}
+
+.modified-tag-display.loading {
+  position: relative;
+}
+
+.modified-tag-display.loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  border: 2px solid #e2e8f0;
+  border-top-color: #0084B4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tag-section {
+  margin-bottom: 12px;
+}
+
+.tag-section:last-child {
+  margin-bottom: 0;
+}
+
+.tag-section-title {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 4px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.meta-tag.external-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 12px;
+  white-space: nowrap;
+  border: none;
+  border-radius: 4px;
+}
+
+.meta-tag.external-tag img {
+  max-height: 20px;
+  object-fit: contain;
+}
+
+.meta-tag.external-tag b {
+  color: #334155;
+}
+
+.meta-tag.external-tag.shared-tag {
+  background: #bbf7d0;
+  color: #14532d;
+  border-color: #86efac;
+  font-weight: 600;
+}
+
+.horizontal-sections {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: stretch;
+  width: 100%;
+}
+
+.tag-section-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 120px;
+  position: relative;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.meta-tags-container.horizontal {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+}
+
+.tag-section-divider {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background: #e5e7eb;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.tag-section-title-below {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #b0b4ba;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background: none;
 } 

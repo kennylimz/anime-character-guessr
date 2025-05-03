@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { getRandomCharacter, getCharacterAppearances, generateFeedback } from '../utils/anime';
+import { getRandomCharacter, getCharacterAppearances, generateFeedback } from '../utils/bangumi';
 import SearchBar from '../components/SearchBar';
 import GuessesTable from '../components/GuessesTable';
 import SettingsPopup from '../components/SettingsPopup';
@@ -47,7 +47,8 @@ function SinglePlayer() {
     characterTagNum: 6,
     subjectTagNum: 6,
     enableTagCensor: false,
-    commonTags: true
+    commonTags: true,
+    externalTagMode: false
   });
   const [currentGameSettings, setCurrentGameSettings] = useState(gameSettings);
 
@@ -125,6 +126,7 @@ function SinglePlayer() {
 
       if (isCorrect) {
         setGuesses(prevGuesses => [...prevGuesses, {
+          id: guessData.id,
           icon: guessData.image,
           name: guessData.name,
           nameCn: guessData.nameCn,
@@ -158,6 +160,7 @@ function SinglePlayer() {
       } else if (guessesLeft <= 1) {
         const feedback = generateFeedback(guessData, answerCharacter, currentGameSettings);
         setGuesses(prevGuesses => [...prevGuesses, {
+          id: guessData.id,
           icon: guessData.image,
           name: guessData.name,
           nameCn: guessData.nameCn,
@@ -188,6 +191,7 @@ function SinglePlayer() {
       } else {
         const feedback = generateFeedback(guessData, answerCharacter, currentGameSettings);
         setGuesses(prevGuesses => [...prevGuesses, {
+          id: guessData.id,
           icon: guessData.image,
           name: guessData.name,
           nameCn: guessData.nameCn,
@@ -344,6 +348,7 @@ function SinglePlayer() {
       <GuessesTable
         guesses={guesses}
         gameSettings={currentGameSettings}
+        answerCharacter={answerCharacter}
       />
 
       {settingsPopup && (

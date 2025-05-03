@@ -1,5 +1,5 @@
 import '../styles/popups.css';
-import { getIndexInfo, searchSubjects } from '../utils/anime';
+import { getIndexInfo, searchSubjects } from '../utils/bangumi';
 import { useState, useEffect, useRef } from 'react';
 import axiosCache from '../utils/cached-axios';
 import { getPresetConfig } from '../data/presets';
@@ -221,6 +221,109 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 </button>
                 
               </div>
+            </div>
+
+            <div className="settings-section">
+              <h3>游戏设置</h3>
+              <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <label>搜作品</label>
+                <input 
+                  type="checkbox"
+                  checked={gameSettings.subjectSearch}
+                  onChange={(e) => {
+                    onSettingsChange('subjectSearch', e.target.checked);
+                  }}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                />
+                <label>外部标签模式</label>
+                <span className="tooltip-trigger">
+                  ?
+                  <span className="tooltip-text">
+                    新的标签模式，适用于部分游戏角色。会引入游戏特色的标签，并改变表格的显示方式。<br/>
+                    目前支持以下游戏：
+                    <br/>
+                    赛马娘
+                    <br/>
+                    
+                  </span>
+                </span>
+                <input 
+                  type="checkbox"
+                  checked={gameSettings.externalTagMode}
+                  onChange={(e) => {
+                    onSettingsChange('externalTagMode', e.target.checked);
+                  }}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                />
+                {/* <label>主播模式</label>
+                <span className="tooltip-trigger">
+                  ?
+                  <span className="tooltip-text">
+                    tag {'=>'} tag.replace('乳', 'R')
+                  </span>
+                </span>
+                <input 
+                  type="checkbox"
+                  checked={gameSettings.enableTagCensor}
+                  onChange={(e) => {
+                    onSettingsChange('enableTagCensor', e.target.checked);
+                  }}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                /> */}
+              </div>
+              <div className="settings-row">
+                <label>启用提示</label>
+                <input 
+                  type="checkbox"
+                  checked={gameSettings.enableHints}
+                  onChange={(e) => {
+                    onSettingsChange('enableHints', e.target.checked);
+                  }}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                />
+              </div>
+              <div className="settings-row">
+                <label>每局次数：</label>
+                <input 
+                  type="number"
+                  value={gameSettings.maxAttempts || ''}
+                  onChange={(e) => {
+                    const value = e.target.value === '' ? 10 : Math.max(5, Math.min(15, parseInt(e.target.value) || 5));
+                    onSettingsChange('maxAttempts', value);
+                  }}
+                  min="5"
+                  max="15"
+                />
+              </div>
+
+              <div className="settings-row">
+                <label>*时间限制：</label>
+                <input
+                  type="checkbox"
+                  checked={gameSettings.timeLimit !== null}
+                  onChange={(e) => onSettingsChange('timeLimit', e.target.checked ? 60 : null)}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                />
+                {gameSettings.timeLimit !== null && (
+                  <div className="settings-row">
+                    <input
+                      type="number"
+                      min="30"
+                      max="120"
+                      value={gameSettings.timeLimit}
+                      onChange={(e) => {
+                        const value = Math.max(30, Math.min(120, parseInt(e.target.value) || 30));
+                        onSettingsChange('timeLimit', value);
+                      }}
+                    />
+                    <label>秒/轮</label>
+                  </div>
+                )}
+              </div>
+              <div className="settings-row">
+                <label>（带*的功能可能有bug）</label>
+              </div>
+              
             </div>
 
             <div className="settings-section">
@@ -466,7 +569,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 {gameSettings.useIndex && indexInfo && (
                   <div className="settings-row index-info">
                     <div className="index-info-content">
-                      <span className="index-title">{indexInfo.title}</span>
+                      <a className="index-title" href={`https://bangumi.tv/index/${gameSettings.indexId}`} target='_blank' rel='noopener noreferrer'>{indexInfo.title}</a>
                       <span className="index-total">共 {indexInfo.total} 部作品</span>
                     </div>
                   </div>
@@ -521,7 +624,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     {gameSettings.addedSubjects.map((subject) => (
                       <div key={subject.id} className="added-subject-item">
                         <div className="subject-info">
-                          <span className="subject-title">{subject.name}</span>
+                          <a className="subject-title" href={`https://bangumi.tv/subject/${subject.id}`} target="_blank" rel="noopener noreferrer">{subject.name}</a>
                           <span className="subject-meta">{subject.name_cn || ''}（{subject.type}）</span>
                         </div>
                         <button 
@@ -609,86 +712,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
               </div>
             </div>
 
-            <div className="settings-section">
-              <h3>游戏设置</h3>
-              <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <label>作品搜索</label>
-                <input 
-                  type="checkbox"
-                  checked={gameSettings.subjectSearch}
-                  onChange={(e) => {
-                    onSettingsChange('subjectSearch', e.target.checked);
-                  }}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
-                />
-                <label>启用提示</label>
-                <input 
-                  type="checkbox"
-                  checked={gameSettings.enableHints}
-                  onChange={(e) => {
-                    onSettingsChange('enableHints', e.target.checked);
-                  }}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
-                />
-                <label>主播模式</label>
-                <span className="tooltip-trigger">
-                  ?
-                  <span className="tooltip-text">
-                    tag {'=>'} tag.replace('乳', 'R')
-                  </span>
-                </span>
-                <input 
-                  type="checkbox"
-                  checked={gameSettings.enableTagCensor}
-                  onChange={(e) => {
-                    onSettingsChange('enableTagCensor', e.target.checked);
-                  }}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
-                />
-              </div>
-              <div className="settings-row">
-                <label>每局次数：</label>
-                <input 
-                  type="number"
-                  value={gameSettings.maxAttempts || ''}
-                  onChange={(e) => {
-                    const value = e.target.value === '' ? 10 : Math.max(5, Math.min(15, parseInt(e.target.value) || 5));
-                    onSettingsChange('maxAttempts', value);
-                  }}
-                  min="5"
-                  max="15"
-                />
-              </div>
-
-              <div className="settings-row">
-                <label>*时间限制：</label>
-                <input
-                  type="checkbox"
-                  checked={gameSettings.timeLimit !== null}
-                  onChange={(e) => onSettingsChange('timeLimit', e.target.checked ? 60 : null)}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
-                />
-                {gameSettings.timeLimit !== null && (
-                  <div className="settings-row">
-                    <input
-                      type="number"
-                      min="30"
-                      max="120"
-                      value={gameSettings.timeLimit}
-                      onChange={(e) => {
-                        const value = Math.max(30, Math.min(120, parseInt(e.target.value) || 30));
-                        onSettingsChange('timeLimit', value);
-                      }}
-                    />
-                    <label>秒/轮</label>
-                  </div>
-                )}
-              </div>
-              <div className="settings-row">
-                <label>（带*的功能可能有bug）</label>
-              </div>
-              
-            </div>
+            
           </div>
         </div>
         <div className="popup-footer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

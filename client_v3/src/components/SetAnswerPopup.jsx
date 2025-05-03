@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import '../styles/SetAnswerPopup.css';
-import { designateCharacter } from '../utils/anime';
+import { designateCharacter } from '../utils/bangumi';
 import { submitAnswerCharacterCount } from '../utils/db';
 
 const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {

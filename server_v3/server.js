@@ -362,7 +362,7 @@ io.on('connection', (socket) => {
             if (answerSetter) {
                 if (winner) {
                     // If winner took many guesses
-                    if (winner.guesses.length > 5) {
+                    if (winner.guesses.length > 6) {
                         answerSetter.score += 1;
                         io.to(roomId).emit('gameEnded', {
                             message: `赢家是: ${winner.username}！出题人 ${answerSetter.username} 获得1分！`,

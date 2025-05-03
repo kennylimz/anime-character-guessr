@@ -1,4 +1,4 @@
-import axios from './cached-axios';
+import axios from './cached-axios.js';
 import { idToTags } from '../data/id_tags.js';
 
 const API_BASE_URL = 'https://api.bgm.tv';
@@ -313,7 +313,6 @@ async function getCharacterAppearances(characterId, gameSettings) {
 async function getCharacterDetails(characterId) {
   try {
     const response = await axios.get(`${API_BASE_URL}/v0/characters/${characterId}`);
-
     if (!response.data) {
       throw new Error('No character details found');
     }
@@ -334,7 +333,7 @@ async function getCharacterDetails(characterId) {
       image: response.data.images.medium,
       imageGrid: response.data.images.grid,
       summary: response.data.summary,
-      popularity: response.data.stat.collects
+      popularity: response.data.stat.collects+response.data.stat.comments
     };
   } catch (error) {
     console.error('Error fetching character details:', error);

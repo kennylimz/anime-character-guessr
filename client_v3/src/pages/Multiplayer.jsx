@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { io } from 'socket.io-client';
-import { getRandomCharacter, getCharacterAppearances, generateFeedback } from '../utils/anime';
+import { getRandomCharacter, getCharacterAppearances, generateFeedback } from '../utils/bangumi';
 import SettingsPopup from '../components/SettingsPopup';
 import SearchBar from '../components/SearchBar';
 import GuessesTable from '../components/GuessesTable';
@@ -54,7 +54,8 @@ const Multiplayer = () => {
     characterTagNum: 6,
     subjectTagNum: 6,
     enableTagCensor: false,
-    commonTags: true
+    commonTags: true,
+    externalTagMode: false
   });
 
   // Game state
@@ -319,6 +320,7 @@ const Multiplayer = () => {
 
       if (isCorrect) {
         setGuesses(prevGuesses => [...prevGuesses, {
+          id: guessData.id,
           icon: guessData.image,
           name: guessData.name,
           nameCn: guessData.nameCn,
@@ -347,6 +349,7 @@ const Multiplayer = () => {
       } else if (guessesLeft <= 1) {
         const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
         setGuesses(prevGuesses => [...prevGuesses, {
+          id: guessData.id,
           icon: guessData.image,
           name: guessData.name,
           nameCn: guessData.nameCn,
@@ -372,6 +375,7 @@ const Multiplayer = () => {
       } else {
         const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
         setGuesses(prevGuesses => [...prevGuesses, {
+          id: guessData.id,
           icon: guessData.image,
           name: guessData.name,
           nameCn: guessData.nameCn,
@@ -496,17 +500,6 @@ const Multiplayer = () => {
   const handleSetAnswerSetter = (setterId) => {
     if (!isHost || !isManualMode) return;
     socket.emit('setAnswerSetter', { roomId, setterId });
-  };
-
-  const getGenderEmoji = (gender) => {
-    switch (gender) {
-      case 'male':
-        return '♂️';
-      case 'female':
-        return '♀️';
-      default:
-        return '❓';
-    }
   };
 
   const handleVisibilityToggle = () => {
@@ -701,8 +694,8 @@ const Multiplayer = () => {
                   </div>
                   <GuessesTable
                     guesses={guesses}
-                    getGenderEmoji={getGenderEmoji}
                     gameSettings={gameSettings}
+                    answerCharacter={answerCharacter}
                   />
                 </>
               ) : (
