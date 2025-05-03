@@ -884,8 +884,8 @@
     }
   },
   "50576": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -900,8 +900,8 @@
     }
   },
   "50577": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -915,8 +915,8 @@
     }
   },
   "50578": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -930,8 +930,8 @@
     }
   },
   "50599": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -946,8 +946,8 @@
     }
   },
   "50586": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地",
@@ -964,8 +964,8 @@
     }
   },
   "50593": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地",
@@ -980,8 +980,8 @@
     }
   },
   "50600": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -996,8 +996,8 @@
     }
   },
   "50592": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1013,8 +1013,8 @@
     }
   },
   "68386": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1029,8 +1029,8 @@
     }
   },
   "50588": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1046,8 +1046,8 @@
     }
   },
   "50580": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1062,8 +1062,8 @@
     }
   },
   "50594": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1079,8 +1079,8 @@
     }
   },
   "50587": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1096,8 +1096,8 @@
     }
   },
   "50585": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "泥地": "泥地",
@@ -1114,8 +1114,8 @@
     }
   },
   "50584": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1130,8 +1130,8 @@
     }
   },
   "68392": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1148,8 +1148,8 @@
     }
   },
   "60561": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1164,8 +1164,8 @@
     }
   },
   "60529": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1180,8 +1180,8 @@
     }
   },
   "68383": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1196,8 +1196,8 @@
     }
   },
   "60522": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1212,8 +1212,8 @@
     }
   },
   "62513": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1228,8 +1228,8 @@
     }
   },
   "60527": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "泥地": "泥地"
@@ -1244,8 +1244,8 @@
     }
   },
   "60530": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1260,8 +1260,8 @@
     }
   },
   "68394": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1276,8 +1276,8 @@
     }
   },
   "68395": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1293,8 +1293,8 @@
     }
   },
   "50595": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1309,8 +1309,8 @@
     }
   },
   "62509": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1325,8 +1325,8 @@
     }
   },
   "62512": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1341,8 +1341,8 @@
     }
   },
   "68388": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1356,8 +1356,8 @@
     }
   },
   "60558": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1372,8 +1372,8 @@
     }
   },
   "60557": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地"
@@ -1388,8 +1388,8 @@
     }
   },
   "50596": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1405,8 +1405,8 @@
     }
   },
   "23243": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1421,8 +1421,8 @@
     }
   },
   "50597": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1438,8 +1438,8 @@
     }
   },
   "50598": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1454,8 +1454,8 @@
     }
   },
   "60560": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1471,8 +1471,8 @@
     }
   },
   "68385": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1487,8 +1487,8 @@
     }
   },
   "68390": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1503,8 +1503,8 @@
     }
   },
   "62506": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1519,8 +1519,8 @@
     }
   },
   "68389": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地",
@@ -1537,8 +1537,8 @@
     }
   },
   "60528": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1552,8 +1552,8 @@
     }
   },
   "60525": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1567,8 +1567,8 @@
     }
   },
   "60526": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1583,8 +1583,8 @@
     }
   },
   "68393": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1599,8 +1599,8 @@
     }
   },
   "60556": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1614,8 +1614,8 @@
     }
   },
   "60523": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1631,8 +1631,8 @@
     }
   },
   "96119": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1647,8 +1647,8 @@
     }
   },
   "106681": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1662,8 +1662,8 @@
     }
   },
   "68387": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1677,8 +1677,8 @@
     }
   },
   "89568": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1693,8 +1693,8 @@
     }
   },
   "90095": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1709,8 +1709,8 @@
     }
   },
   "89569": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1725,8 +1725,8 @@
     }
   },
   "106373": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1741,8 +1741,8 @@
     }
   },
   "62504": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1757,8 +1757,8 @@
     }
   },
   "106374": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1773,8 +1773,8 @@
     }
   },
   "62511": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1788,8 +1788,8 @@
     }
   },
   "91246": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1803,8 +1803,8 @@
     }
   },
   "60562": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地",
@@ -1822,8 +1822,8 @@
     }
   },
   "62510": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1838,8 +1838,8 @@
     }
   },
   "60559": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1854,8 +1854,8 @@
     }
   },
   "62507": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1869,8 +1869,8 @@
     }
   },
   "114176": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地"
@@ -1885,8 +1885,8 @@
     }
   },
   "60524": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1902,8 +1902,8 @@
     }
   },
   "60521": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地",
@@ -1918,8 +1918,8 @@
     }
   },
   "115274": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1934,8 +1934,8 @@
     }
   },
   "109439": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1950,8 +1950,8 @@
     }
   },
   "68391": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1966,8 +1966,8 @@
     }
   },
   "114172": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地"
@@ -1981,8 +1981,8 @@
     }
   },
   "68384": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -1997,8 +1997,8 @@
     }
   },
   "114171": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地"
@@ -2013,8 +2013,8 @@
     }
   },
   "90096": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2030,8 +2030,8 @@
     }
   },
   "68382": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地"
@@ -2046,8 +2046,8 @@
     }
   },
   "91610": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2063,8 +2063,8 @@
     }
   },
   "90090": {
-    "初始星级": {
-      "1star": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "稀有度": {
+      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2078,8 +2078,8 @@
     }
   },
   "107336": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2095,8 +2095,8 @@
     }
   },
   "110329": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2111,8 +2111,8 @@
     }
   },
   "133649": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2128,8 +2128,8 @@
     }
   },
   "133650": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2144,8 +2144,8 @@
     }
   },
   "115289": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2161,8 +2161,8 @@
     }
   },
   "110330": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2177,8 +2177,8 @@
     }
   },
   "62508": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2193,8 +2193,8 @@
     }
   },
   "125977": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2210,8 +2210,8 @@
     }
   },
   "106375": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2225,8 +2225,8 @@
     }
   },
   "106372": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2241,8 +2241,8 @@
     }
   },
   "115290": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2257,8 +2257,8 @@
     }
   },
   "125975": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2274,8 +2274,8 @@
     }
   },
   "133651": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2290,8 +2290,8 @@
     }
   },
   "122526": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2306,8 +2306,8 @@
     }
   },
   "122525": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2322,8 +2322,8 @@
     }
   },
   "143489": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2337,8 +2337,8 @@
     }
   },
   "62505": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2353,8 +2353,8 @@
     }
   },
   "139048": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2369,8 +2369,8 @@
     }
   },
   "90093": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2385,8 +2385,8 @@
     }
   },
   "152172": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2401,8 +2401,8 @@
     }
   },
   "136229": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2417,8 +2417,8 @@
     }
   },
   "138303": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2432,8 +2432,8 @@
     }
   },
   "125976": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2448,8 +2448,8 @@
     }
   },
   "160762": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2464,8 +2464,8 @@
     }
   },
   "160765": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2478,8 +2478,8 @@
     }
   },
   "152831": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2495,8 +2495,8 @@
     }
   },
   "152173": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2511,8 +2511,8 @@
     }
   },
   "160766": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2526,8 +2526,8 @@
     }
   },
   "163803": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2542,8 +2542,8 @@
     }
   },
   "152832": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2558,8 +2558,8 @@
     }
   },
   "152824": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "泥地": "泥地"
@@ -2574,8 +2574,8 @@
     }
   },
   "108091": {
-    "初始星级": {
-      "2star": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "稀有度": {
+      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2589,8 +2589,8 @@
     }
   },
   "152830": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2605,8 +2605,8 @@
     }
   },
   "171891": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
@@ -2622,8 +2622,8 @@
     }
   },
   "152828": {
-    "初始星级": {
-      "3star": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "稀有度": {
+      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
     },
     "场地": {
       "草地": "草地"
