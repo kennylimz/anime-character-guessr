@@ -132,6 +132,27 @@ export const gamePresets = {
     commonTags: true,
     externalTagMode: false,
     dynamicFields: ['startYear', 'endYear']
+  },
+  '米哈游高手': {
+    startYear: currentYear - 10,
+    endYear: currentYear,
+    topNSubjects: 50,
+    useSubjectPerYear: false,
+    metaTags: ["", "", ""],
+    addedSubjects: [],
+    mainCharacterOnly: false,
+    characterNum: 40,
+    maxAttempts: 10,
+    useIndex: true,
+    indexId: "76524",
+    enableHints: false,
+    includeGame: true,
+    subjectSearch: false,
+    subjectTagNum: 3,
+    characterTagNum: 6,
+    commonTags: true,
+    externalTagMode: true,
+    dynamicFields: ['startYear', 'endYear']
   }
 };
 

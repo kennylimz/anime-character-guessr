@@ -219,7 +219,15 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 >
                   二游高手+
                 </button>
-                
+                <button 
+                  className="preset-button"
+                  onClick={() => {
+                    alert('新功能有bug请反馈');
+                    applyPresetConfig('米哈游高手');
+                  }}
+                >
+                  米哈游高高手
+                </button>
               </div>
             </div>
 
@@ -244,6 +252,11 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     <br/>
                     赛马娘
                     <br/>
+                    崩坏：星穹铁道
+                    <br/>
+                    原神
+                    <br/>
+                    绝区零
                     
                   </span>
                 </span>

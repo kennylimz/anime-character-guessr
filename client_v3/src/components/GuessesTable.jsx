@@ -33,11 +33,11 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
           <tr>
             <th></th>
             <th>名字</th>
+            <th>性别</th>
             {gameSettings.externalTagMode ? (
               <th></th>
             ) : (
               <>
-                <th>性别</th>
                 <th>热度</th>
                 <th>作品数<br/>最高分</th>
                 <th>最晚登场<br/>最早登场</th>
@@ -59,6 +59,11 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
                   <div className="character-name-cn">{guess.nameCn}</div>
                 </div>
               </td>
+              <td>
+                <span className={`feedback-cell ${guess.genderFeedback === 'yes' ? 'correct' : ''}`}>
+                  {getGenderEmoji(guess.gender)}
+                </span>
+              </td>
               {gameSettings.externalTagMode ? (
                 <td>
                   <ModifiedTagDisplay 
@@ -68,11 +73,6 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
                 </td>
               ) : (
                 <>
-                  <td>
-                    <span className={`feedback-cell ${guess.genderFeedback === 'yes' ? 'correct' : ''}`}>
-                      {getGenderEmoji(guess.gender)}
-                    </span>
-                  </td>
                   <td>
                     <span className={`feedback-cell ${guess.popularityFeedback === '=' ? 'correct' : (guess.popularityFeedback === '+' || guess.popularityFeedback === '-') ? 'partial' : ''}`}>
                       {guess.popularity}{(guess.popularityFeedback === '+' || guess.popularityFeedback === '++') ? ' ↓' : (guess.popularityFeedback === '-' || guess.popularityFeedback === '--') ? ' ↑' : ''}
