@@ -11,7 +11,7 @@ export const gamePresets = {
   '入门': {
     startYear: currentYear - 5,
     endYear: currentYear,
-    topNSubjects: 20,
+    topNSubjects: 30,
     useSubjectPerYear: false,
     metaTags: ["", "", ""],
     useIndex: false,
