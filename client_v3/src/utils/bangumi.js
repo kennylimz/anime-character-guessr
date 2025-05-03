@@ -275,8 +275,8 @@ async function getCharacterAppearances(characterId, gameSettings) {
 
     const animeVAs = new Set();
     if (characterId === 56822 || characterId === 56823 || characterId === 17529 || characterId === 10956) {
-      animeVAs = [];
       allMetaTags.add('展开');
+      animeVAs.add('展开');
     }
     else if (personsResponse.data && personsResponse.data.length) {
       const persons = personsResponse.data.filter(person => person.subject_type === 2 || person.subject_type === 4);
