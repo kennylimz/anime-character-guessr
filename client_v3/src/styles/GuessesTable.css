@@ -242,7 +242,7 @@
 /* Keep 标签 and 共同出演 columns at their original width */
 .guesses-table.external-tag-mode th:nth-child(5),
 .guesses-table.external-tag-mode td:nth-child(5) {
-  width: 200px;
+  width: 150px;
 }
 .guesses-table.external-tag-mode th:nth-child(6),
 .guesses-table.external-tag-mode td:nth-child(6) {
@@ -255,7 +255,7 @@
   align-items: stretch;
   height: 100%;
   padding: 8px;
-  max-width: 600px;
+  width: 100%;
   overflow-x: auto;
 }
 
@@ -372,7 +372,6 @@
   background: #bbf7d0;
   color: #14532d;
   border-color: #86efac;
-  font-weight: 600;
 }
 
 .horizontal-sections {
@@ -390,7 +389,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
+  flex: 1 1 auto;
   min-width: 120px;
   position: relative;
   padding: 0 12px;
