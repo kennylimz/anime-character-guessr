@@ -150,7 +150,7 @@ export const gamePresets = {
     subjectSearch: false,
     subjectTagNum: 3,
     characterTagNum: 6,
-    commonTags: true,
+    commonTags: false,
     externalTagMode: true,
     dynamicFields: ['startYear', 'endYear']
   },
@@ -171,7 +171,7 @@ export const gamePresets = {
     subjectSearch: false,
     subjectTagNum: 3,
     characterTagNum: 6,
-    commonTags: true,
+    commonTags: false,
     externalTagMode: true,
     dynamicFields: ['startYear', 'endYear']
   }
