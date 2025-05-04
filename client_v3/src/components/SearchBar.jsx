@@ -12,7 +12,15 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
   const [hasMore, setHasMore] = useState(true);
   const [searchMode, setSearchMode] = useState('character'); // 'character' or 'subject'
   const [selectedSubject, setSelectedSubject] = useState(null);
+  const [selectedItemIndex, setSelectedItemIndex] = useState(-1); // 当前键盘选中的项目索引
+  const [isLoadingNewResults, setIsLoadingNewResults] = useState(false); // 标记是否正在加载更多结果
+  
+  // DOM引用
   const searchContainerRef = useRef(null);
+  const searchInputRef = useRef(null);
+  const searchDropdownRef = useRef(null);
+  const selectedItemRef = useRef(null);
+  
   const INITIAL_LIMIT = 10;
   const MORE_LIMIT = 5;
 
@@ -32,6 +40,101 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  // 快捷键聚焦搜索框（按空格键）
+  useEffect(() => {
+    function handleKeyDown(e) {
+      // 当用户按下空格键且不在输入框中时，聚焦到搜索输入框
+      if (e.key === ' ' && document.activeElement.tagName !== 'INPUT' && 
+          document.activeElement.tagName !== 'TEXTAREA' && !isGuessing && !gameEnd) {
+        e.preventDefault();
+        searchInputRef.current.focus();
+      }
+    }
+    
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isGuessing, gameEnd]);
+
+  // 自动滚动，确保选中项在视图中可见
+  useEffect(() => {
+    if (selectedItemIndex >= 0 && selectedItemRef.current) {
+      selectedItemRef.current.scrollIntoView({
+        behavior: 'smooth', 
+        block: 'nearest'
+      });
+    }
+  }, [selectedItemIndex]);
+
+  // 键盘导航处理
+  useEffect(() => {
+    function handleKeyboardNavigation(e) {
+      // 只在搜索结果存在且搜索框聚焦时处理键盘导航
+      if (searchResults.length === 0 || document.activeElement !== searchInputRef.current) {
+        return;
+      }
+
+      switch (e.key) {
+        case 'ArrowDown':
+          e.preventDefault();
+          setSelectedItemIndex(prevIndex => {
+            const maxIndex = searchMode === 'character' && hasMore ? 
+              searchResults.length : searchResults.length - 1;
+            // 不再循环到顶部，如果已经到底部就保持在底部
+            return prevIndex < maxIndex ? prevIndex + 1 : maxIndex;
+          });
+          break;
+        case 'ArrowUp':
+          e.preventDefault();
+          setSelectedItemIndex(prevIndex => 
+            // 不再循环到底部，如果已经到顶部就保持在顶部
+            prevIndex > 0 ? prevIndex - 1 : 0);
+          break;
+        case 'Enter':
+          e.preventDefault();
+          if (selectedItemIndex === -1) {
+            return;
+          }
+          
+          if (searchMode === 'subject' && !selectedSubject) {
+            // 如果在作品搜索模式且选择的是作品
+            if (selectedItemIndex < searchResults.length) {
+              handleSubjectSelect(searchResults[selectedItemIndex]);
+            }
+          } else if (selectedItemIndex === searchResults.length && hasMore && searchMode === 'character') {
+            // 如果选择的是"加载更多"
+            setIsLoadingNewResults(true); // 标记正在加载更多结果
+            handleLoadMore();
+          } else if (selectedItemIndex < searchResults.length) {
+            // 如果选择的是角色
+            handleCharacterSelect(searchResults[selectedItemIndex]);
+          }
+          break;
+        default:
+          break;
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyboardNavigation);
+    return () => {
+      document.removeEventListener('keydown', handleKeyboardNavigation);
+    };
+  }, [searchResults, selectedItemIndex, searchMode, hasMore, selectedSubject]);
+
+  // 当搜索结果变化时，处理选中索引的重置或保持
+  useEffect(() => {
+    // 如果是加载更多的情况，将选中索引设置到新加载内容的第一项
+    if (isLoadingNewResults) {
+      const previousLength = selectedItemIndex; // 之前选中的是"加载更多"，其索引等于之前结果的长度
+      setSelectedItemIndex(previousLength); // 设置到新内容的第一项
+      setIsLoadingNewResults(false);
+    } else {
+      // 正常情况下重置选中索引
+      setSelectedItemIndex(-1);
+    }
+  }, [searchResults]);
 
   // Reset pagination when search query changes
   useEffect(() => {
@@ -177,15 +280,16 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
 
     if (searchMode === 'subject' && !selectedSubject) {
       return (
-        <div className="search-dropdown">
+        <div className="search-dropdown" ref={searchDropdownRef}>
           {isSearching ? (
             <div className="search-loading">搜索中...</div>
           ) : (
-            searchResults.map((subject) => (
+            searchResults.map((subject, index) => (
               <div
                 key={subject.id}
-                className="search-result-item"
+                className={`search-result-item ${selectedItemIndex === index ? 'selected' : ''}`}
                 onClick={() => handleSubjectSelect(subject)}
+                ref={selectedItemIndex === index ? selectedItemRef : null}
               >
                 {subject.image ? (
                   <img 
@@ -211,7 +315,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
     }
 
     return (
-      <div className="search-dropdown">
+      <div className="search-dropdown" ref={searchDropdownRef}>
         {selectedSubject && (
           <div className="selected-subject-header">
             <span>{selectedSubject.name_cn || selectedSubject.name}</span>
@@ -230,11 +334,12 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
           <div className="search-loading">加载角色中...</div>
         ) : (
           <>
-            {searchResults.map((character) => (
+            {searchResults.map((character, index) => (
               <div
                 key={character.id}
-                className="search-result-item"
+                className={`search-result-item ${selectedItemIndex === index ? 'selected' : ''}`}
                 onClick={() => handleCharacterSelect(character)}
+                ref={selectedItemIndex === index ? selectedItemRef : null}
               >
                 {character.image ? (
                   <img 
@@ -255,8 +360,9 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
             ))}
             {hasMore && searchMode === 'character' && (
               <div 
-                className="search-result-item load-more"
+                className={`search-result-item load-more ${selectedItemIndex === searchResults.length ? 'selected' : ''}`}
                 onClick={handleLoadMore}
+                ref={selectedItemIndex === searchResults.length ? selectedItemRef : null}
               >
                 {isLoadingMore ? '加载中...' : '更多'}
               </div>
@@ -277,7 +383,8 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             disabled={isGuessing || gameEnd}
-            placeholder={searchMode === 'character' ? "搜索角色..." : "搜索作品..."}
+            placeholder={searchMode === 'character' ? "搜索角色... (按空格键聚焦, 方向键选择, 回车确认)" : "搜索作品... (按空格键聚焦, 方向键选择, 回车确认)"}
+            ref={searchInputRef}
           />
           {renderSearchResults()}
         </div>
