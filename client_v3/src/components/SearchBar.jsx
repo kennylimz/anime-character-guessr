@@ -383,7 +383,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             disabled={isGuessing || gameEnd}
-            placeholder={searchMode === 'character' ? "搜索想猜的角色..."}
+            placeholder={searchMode === 'character' ? "搜索想猜的角色..." : "搜索想猜的作品..."}
             ref={searchInputRef}
           />
           {renderSearchResults()}
