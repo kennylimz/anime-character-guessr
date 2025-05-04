@@ -27,7 +27,7 @@ const announcements = [
     date: '2025-05-03',
     content: `
       更新了新的外部标签模式，支持下列游戏：<br/>
-      崩坏：星穹铁道、原神、绝区零、赛马娘、明日方舟(感谢<a href="https://github.com/czjun">@czjun</a>)。
+      崩坏：星穹铁道、原神、绝区零、赛马娘、明日方舟(感谢<a href="https://github.com/czjun">@czjun</a>)、英雄联盟。
         
     `
   },

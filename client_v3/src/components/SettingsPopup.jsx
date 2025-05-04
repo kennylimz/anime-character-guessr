@@ -248,15 +248,6 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   ?
                   <span className="tooltip-text">
                     新的标签模式，适用于部分游戏角色。会引入游戏特色的标签，并改变表格的显示方式。<br/>
-                    目前支持以下游戏：
-                    <br/>
-                    赛马娘
-                    <br/>
-                    崩坏：星穹铁道
-                    <br/>
-                    原神
-                    <br/>
-                    绝区零
                     
                   </span>
                 </span>

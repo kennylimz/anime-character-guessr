@@ -250,6 +250,10 @@
 }
 
 .modified-tag-display {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100%;
   padding: 8px;
   max-width: 600px;
   overflow-x: auto;
@@ -375,19 +379,23 @@
   display: flex;
   flex-direction: row;
   gap: 0;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
+  min-height: 100px;
+  flex: 1;
 }
 
 .tag-section-horizontal {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  flex: 1 1 0;
+  flex: 1;
   min-width: 120px;
   position: relative;
   padding: 0 12px;
   box-sizing: border-box;
+  min-height: 80px;
 }
 
 .meta-tags-container.horizontal {
@@ -395,6 +403,8 @@
   justify-content: center;
   gap: 6px;
   min-height: 36px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .tag-section-divider {
@@ -416,4 +426,8 @@
   font-weight: 500;
   letter-spacing: 0.5px;
   background: none;
+}
+
+.flex-spacer {
+  flex: 1;
 } 
