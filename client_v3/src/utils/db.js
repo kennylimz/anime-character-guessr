@@ -8,22 +8,11 @@ if (!DB_SERVER_URL) {
 
 export async function submitCharacterTags(characterId, tags) {
   try {
-    const response = await fetch(`${DB_SERVER_URL}/api/character-tags`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        characterId,
-        tags,
-      }),
+    const response = await axios.post(`${DB_SERVER_URL}/api/character-tags`, {
+      characterId,
+      tags,
     });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    return response.json();
+    return response.data;
   } catch (error) {
     console.error('Error submitting character tags:', error);
     throw error;
@@ -32,22 +21,11 @@ export async function submitCharacterTags(characterId, tags) {
 
 export async function proposeCustomTags(characterId, tags) {
   try {
-    const response = await fetch(`${DB_SERVER_URL}/api/propose-tags`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        characterId,
-        tags,
-      }),
+    const response = await axios.post(`${DB_SERVER_URL}/api/propose-tags`, {
+      characterId,
+      tags,
     });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    return response.json();
+    return response.data;
   } catch (error) {
     console.error('Error proposing custom tags:', error);
     throw error;
@@ -56,23 +34,12 @@ export async function proposeCustomTags(characterId, tags) {
 
 export async function submitFeedbackTags(characterId, upvotes, downvotes) {
   try {
-    const response = await fetch(`${DB_SERVER_URL}/api/feedback-tags`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        characterId,
-        upvotes: Array.from(upvotes),
-        downvotes: Array.from(downvotes),
-      }),
+    const response = await axios.post(`${DB_SERVER_URL}/api/feedback-tags`, {
+      characterId,
+      upvotes: Array.from(upvotes),
+      downvotes: Array.from(downvotes),
     });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    return response.json();
+    return response.data;
   } catch (error) {
     console.error('Error submitting tag feedback:', error);
     throw error;
@@ -81,22 +48,11 @@ export async function submitFeedbackTags(characterId, upvotes, downvotes) {
 
 export async function submitAnswerCharacterCount(characterId, characterName) {
   try {
-    const response = await fetch(`${DB_SERVER_URL}/api/answer-character-count`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        characterId,
-        characterName,
-      }),
+    const response = await axios.post(`${DB_SERVER_URL}/api/answer-character-count`, {
+      characterId,
+      characterName,
     });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    return response.json();
+    return response.data;
   } catch (error) {
     console.error('Error submitting character answer count:', error);
     throw error;
@@ -105,12 +61,8 @@ export async function submitAnswerCharacterCount(characterId, characterName) {
 
 export async function getCharacterUsage(characterId) {
   try {
-    const response = await fetch(`${DB_SERVER_URL}/api/character-usage/${characterId}`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    return data.count;
+    const response = await axios.get(`${DB_SERVER_URL}/api/character-usage/${characterId}`);
+    return response.data.count;
   } catch (error) {
     console.error('Error fetching character usage:', error);
     return 0;

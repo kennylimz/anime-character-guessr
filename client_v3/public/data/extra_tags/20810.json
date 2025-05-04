@@ -9,7 +9,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -28,7 +28,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -47,7 +47,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -64,7 +64,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -82,7 +82,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
@@ -101,7 +101,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -118,7 +118,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -137,7 +137,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -154,7 +154,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久"
@@ -170,7 +170,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
       "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
@@ -186,7 +186,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
@@ -205,7 +205,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -223,7 +223,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -241,7 +241,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
@@ -257,7 +257,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -275,7 +275,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
@@ -291,7 +291,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -308,7 +308,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -326,7 +326,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -344,7 +344,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -362,7 +362,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -379,7 +379,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -396,7 +396,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -414,7 +414,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -432,7 +432,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -450,7 +450,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -468,7 +468,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -485,7 +485,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -503,7 +503,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -521,7 +521,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -539,7 +539,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
@@ -556,7 +556,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
@@ -574,7 +574,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -591,7 +591,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
@@ -608,7 +608,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久"
@@ -624,7 +624,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
@@ -640,7 +640,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
@@ -658,7 +658,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
@@ -674,7 +674,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
       "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
@@ -690,7 +690,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -708,7 +708,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
@@ -724,7 +724,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
@@ -740,7 +740,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
@@ -756,7 +756,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
     }
@@ -771,7 +771,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -788,7 +788,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -806,7 +806,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
@@ -823,7 +823,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制"
@@ -839,7 +839,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制"
@@ -855,7 +855,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
       "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久"
@@ -871,7 +871,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
@@ -888,7 +888,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
@@ -906,7 +906,7 @@
     "攻击类型": {
       "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
@@ -923,7 +923,7 @@
     "攻击类型": {
       "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
     },
-    "定位": {
+    "标签": {
       "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
       "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
       "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"

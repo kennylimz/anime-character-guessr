@@ -25,7 +25,7 @@ function TagContributionPopup({ character, onClose }) {
   }, []);
 
   const handleTagVoteClick = (event, tag) => {
-    console.log(character.id);
+    console.log(character);
     event.stopPropagation();
     setActiveVoteTag(activeVoteTag === tag ? null : tag);
   };

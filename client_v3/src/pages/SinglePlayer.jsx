@@ -142,6 +142,7 @@ function SinglePlayer() {
           appearancesCountFeedback: '=',
           popularity: guessData.popularity,
           popularityFeedback: '=',
+          appearanceIds: guessData.appearanceIds,
           sharedAppearances: {
             first: appearances.appearances[0] || '',
             count: appearances.appearances.length
@@ -176,6 +177,7 @@ function SinglePlayer() {
           appearancesCountFeedback: feedback.appearancesCount.feedback,
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
+          appearanceIds: guessData.appearanceIds,
           sharedAppearances: feedback.shared_appearances,
           metaTags: feedback.metaTags.guess,
           sharedMetaTags: feedback.metaTags.shared,
@@ -207,6 +209,7 @@ function SinglePlayer() {
           appearancesCountFeedback: feedback.appearancesCount.feedback,
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
+          appearanceIds: guessData.appearanceIds,
           sharedAppearances: feedback.shared_appearances,
           metaTags: feedback.metaTags.guess,
           sharedMetaTags: feedback.metaTags.shared,

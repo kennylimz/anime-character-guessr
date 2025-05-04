@@ -2,22 +2,46 @@ import { useState, useEffect } from 'react';
 import '../styles/GuessesTable.css';
 import axios from 'axios';
 
-function ModifiedTagDisplay({ guessCharacterId, answerCharacterId }) {
+function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
   const [guessTagData, setGuessTagData] = useState(null);
   const [answerTagData, setAnswerTagData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const subjectsWithExtraTags = new Set(
+    [
+      18011, // 英雄联盟
+      20810, // 刀塔2
+      175552, // 赛马娘 Pretty Derby
+      225878, // 明日方舟
+      284157, // 原神
+      360097, // 崩坏：星穹铁道
+      380974, // 绝区零
+      194792, // 王者荣耀
+    ]
+  );
 
   useEffect(() => {
     const fetchTagData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('/data/extra_tags.json');
-        const data = response.data;
-        const guessData = data[guessCharacterId];
-        const answerData = data[answerCharacterId];
-        setGuessTagData(guessData || null);
-        setAnswerTagData(answerData || null);
+        let guessData = null;
+        let answerData = null;
+        for (const subjectId of guessCharacter.appearanceIds) {
+          if (subjectsWithExtraTags.has(subjectId)) {
+            const response = await axios.get(`/data/extra_tags/${subjectId}.json`);
+            guessData = response.data[guessCharacter.id];
+            break;
+          }
+        }
+        for (const subjectId of answerCharacter.appearanceIds) {
+          if (subjectsWithExtraTags.has(subjectId)) {
+            const response = await axios.get(`/data/extra_tags/${subjectId}.json`);
+            answerData = response.data[answerCharacter.id];
+            break;
+          }
+        }
+        setGuessTagData(guessData);
+        setAnswerTagData(answerData);
       } catch (err) {
         console.error('Error fetching tag data:', err);
         setError(err.message);
@@ -26,10 +50,10 @@ function ModifiedTagDisplay({ guessCharacterId, answerCharacterId }) {
       }
     };
 
-    if (guessCharacterId && answerCharacterId) {
+    if (guessCharacter && answerCharacter) {
       fetchTagData();
     }
-  }, [guessCharacterId, answerCharacterId]);
+  }, [guessCharacter, answerCharacter]);
 
   if (loading) {
     return <div className="modified-tag-display loading">加载中……</div>;

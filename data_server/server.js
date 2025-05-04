@@ -6,15 +6,11 @@ const { startSelfPing } = require('./utils/selfPing');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
+const SERVER_URL = process.env.SERVER_URL || 'http://localhost:3000';
 
 const cors_options = {
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:5174',
-    'https://anime-character-guessr.onrender.com',
-    'https://anime-character-guessr.vercel.app',
-    'https://anime-character-guessr.netlify.app'
-  ],
+  origin: [CLIENT_URL, SERVER_URL],
   methods: ['GET', 'POST'],
   credentials: true
 };
@@ -95,6 +91,52 @@ app.post('/api/character-tags', async (req, res) => {
   }
 });
 
+app.post('/api/game-character-tags', async (req, res) => {
+  try {
+    const { characterId, subjectId, tags } = req.body;
+    // Validate request body
+    if (!characterId || !subjectId || !tags || typeof tags !== 'object' || Array.isArray(tags)) {
+      return res.status(400).json({ 
+        error: 'Invalid request body. Required format: { characterId: string|number, subjectId: string|number, tags: { [section]: tag } }' 
+      });
+    }
+
+    const client = db.getClient();
+    const database = client.db('tags');
+    const collection = database.collection('game_character_tags');
+
+    // Build the $inc update object
+    const incUpdate = {};
+    for (const [section, tag] of Object.entries(tags)) {
+      if (!section || !tag) continue;
+      // Path: characters.characterId.section.tag
+      const path = `characters.${characterId}.${section}.${tag}`;
+      incUpdate[path] = 1;
+    }
+
+    if (Object.keys(incUpdate).length === 0) {
+      return res.status(400).json({ error: 'No valid tags provided.' });
+    }
+
+    // Update the document for the subjectId
+    const result = await collection.updateOne(
+      { _id: subjectId },
+      { $inc: incUpdate },
+      { upsert: true }
+    );
+
+    res.status(201).json({
+      message: result.upsertedCount ? 'Game character tags added successfully' : 'Game character tags updated successfully',
+      subjectId,
+      characterId,
+      tags
+    });
+  } catch (error) {
+    console.error('Error inserting game character tags:', error);
+    res.status(500).json({ error: 'Failed to insert game character tags' });
+  }
+});
+
 // Propose new tags for a character
 app.post('/api/propose-tags', async (req, res) => {
   try {
@@ -157,7 +199,7 @@ app.post('/api/propose-tags', async (req, res) => {
 app.post('/api/feedback-tags', async (req, res) => {
   try {
     const { characterId, upvotes, downvotes } = req.body;
-    
+
     // Validate request body
     if (!characterId || !upvotes || !downvotes || !Array.isArray(upvotes) || !Array.isArray(downvotes)) {
       return res.status(400).json({ 

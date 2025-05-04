@@ -67,8 +67,8 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
               {gameSettings.externalTagMode ? (
                 <td>
                   <ModifiedTagDisplay 
-                    guessCharacterId={guess.id} 
-                    answerCharacterId={answerCharacter.id}
+                    guessCharacter={guess} 
+                    answerCharacter={answerCharacter}
                   />
                 </td>
               ) : (

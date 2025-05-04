@@ -222,11 +222,19 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 <button 
                   className="preset-button"
                   onClick={() => {
-                    alert('新功能有bug请反馈');
                     applyPresetConfig('米哈游高手');
                   }}
                 >
                   米哈游高高手
+                </button>
+                <button 
+                  className="preset-button"
+                  onClick={() => {
+                    alert('风暴要火');
+                    applyPresetConfig('MOBA糕手');
+                  }}
+                >
+                  MOBA糕手
                 </button>
               </div>
             </div>

@@ -76,6 +76,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
     if (!subjectsResponse.data || !subjectsResponse.data.length) {
       return {
         appearances: [],
+        appearanceIds: [],
         latestAppearance: -1,
         earliestAppearance: -1,
         highestRating: 0,
@@ -106,6 +107,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
     if (filteredAppearances.length === 0) {
       return {
         appearances: [],
+        appearanceIds: [],
         latestAppearance: -1,
         earliestAppearance: -1,
         highestRating: -1,
@@ -208,6 +210,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
           }
 
           return {
+            id: appearance.id,
             name: details.name,
             rating_count: details.rating_count
           };
@@ -267,11 +270,16 @@ async function getCharacterAppearances(characterId, gameSettings) {
       }
       regionTags.forEach(tag => allMetaTags.add(tag));
     }
+
+    const appearanceNames = [];
+    const appearanceIds = [];
     
-    const validAppearances = appearances
-      .filter(appearance => appearance !== null)
+    appearances.filter(appearance => appearance !== null)
       .sort((a, b) => b.rating_count - a.rating_count)
-      .map(appearance => appearance.name);
+      .forEach(appearance => {
+        appearanceNames.push(appearance.name);
+        appearanceIds.push(appearance.id);
+      });
 
     const animeVAs = new Set();
     if (characterId === 56822 || characterId === 56823 || characterId === 17529 || characterId === 10956) {
@@ -288,7 +296,8 @@ async function getCharacterAppearances(characterId, gameSettings) {
       }
     }
     return {
-      appearances: validAppearances,
+      appearances: appearanceNames,
+      appearanceIds: appearanceIds,
       latestAppearance,
       earliestAppearance,
       highestRating,
@@ -300,6 +309,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
     console.error('Error fetching character appearances:', error);
     return {
       appearances: [],
+      appearanceIds: [],
       latestAppearance: -1,
       earliestAppearance: -1,
       highestRating: -1,

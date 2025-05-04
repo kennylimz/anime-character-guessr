@@ -1,3 +1,0 @@
-上传标签的时候请注意！
-素材文件分好文件夹，可以直接上传到public/assets下。
-标签数据请先放到最外边的external_tags/extracted_data下，作者会看一下再合并。

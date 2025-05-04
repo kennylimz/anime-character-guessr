@@ -336,6 +336,7 @@ const Multiplayer = () => {
           appearancesCountFeedback: '=',
           popularity: guessData.popularity,
           popularityFeedback: '=',
+          appearanceIds: guessData.appearanceIds,
           sharedAppearances: {
             first: appearances.appearances[0] || '',
             count: appearances.appearances.length
@@ -365,6 +366,7 @@ const Multiplayer = () => {
           appearancesCountFeedback: feedback.appearancesCount.feedback,
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
+          appearanceIds: guessData.appearanceIds,
           sharedAppearances: feedback.shared_appearances,
           metaTags: feedback.metaTags.guess,
           sharedMetaTags: feedback.metaTags.shared,
@@ -391,6 +393,7 @@ const Multiplayer = () => {
           appearancesCountFeedback: feedback.appearancesCount.feedback,
           popularity: guessData.popularity,
           popularityFeedback: feedback.popularity.feedback,
+          appearanceIds: guessData.appearanceIds,
           sharedAppearances: feedback.shared_appearances,
           metaTags: feedback.metaTags.guess,
           sharedMetaTags: feedback.metaTags.shared,
