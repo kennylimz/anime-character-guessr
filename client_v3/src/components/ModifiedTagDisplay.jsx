@@ -11,11 +11,26 @@ function ModifiedTagDisplay({ guessCharacterId, answerCharacterId }) {
     const fetchTagData = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/data/extra_tags.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch tag data');
+        // Try to get from localStorage first
+        let data = null;
+        const cached = localStorage.getItem('extra_tags_json');
+        if (cached) {
+          try {
+            data = JSON.parse(cached);
+          } catch (e) {
+            // If parsing fails, clear the cache
+            localStorage.removeItem('extra_tags_json');
+          }
         }
-        const data = await response.json();
+        if (!data) {
+          const response = await fetch('/data/extra_tags.json');
+          if (!response.ok) {
+            throw new Error('Failed to fetch tag data');
+          }
+          data = await response.json();
+          // Store in localStorage for future use
+          localStorage.setItem('extra_tags_json', JSON.stringify(data));
+        }
         const guessData = data[guessCharacterId];
         const answerData = data[answerCharacterId];
         setGuessTagData(guessData || null);

@@ -256,6 +256,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   checked={gameSettings.externalTagMode}
                   onChange={(e) => {
                     onSettingsChange('externalTagMode', e.target.checked);
+                    localStorage.removeItem('extra_tags_json');
                   }}
                   style={{ marginRight: '50px', marginLeft: '0px' }}
                 />
