@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../styles/GuessesTable.css';
+import axios from 'axios';
 
 function ModifiedTagDisplay({ guessCharacterId, answerCharacterId }) {
   const [guessTagData, setGuessTagData] = useState(null);
@@ -11,11 +12,8 @@ function ModifiedTagDisplay({ guessCharacterId, answerCharacterId }) {
     const fetchTagData = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/data/extra_tags.json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch tag data');
-        }
-        const data = await response.json();
+        const response = await axios.get('/data/extra_tags.json');
+        const data = response.data;
         const guessData = data[guessCharacterId];
         const answerData = data[answerCharacterId];
         setGuessTagData(guessData || null);
