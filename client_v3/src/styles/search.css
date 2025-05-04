@@ -86,6 +86,7 @@
   overflow-y: auto;
   z-index: 1000;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  scroll-behavior: smooth;
 }
 
 .search-result-item {
@@ -206,4 +207,10 @@
 
 .search-dropdown::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+/* 键盘导航选中项的样式 */
+.search-result-item.selected {
+  background-color: rgba(70, 130, 180, 0.2);
+  border-left: 3px solid #4682b4;
 } 
