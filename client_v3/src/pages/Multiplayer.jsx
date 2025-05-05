@@ -35,7 +35,7 @@ const Multiplayer = () => {
   const [isManualMode, setIsManualMode] = useState(false);
   const [answerSetterId, setAnswerSetterId] = useState(null);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
-  const [gameSettings, setGameSettings] = useLocalStorage('multiplayer-game-settings', {
+  const [gameSettings, setGameSettings] = useState({
     startYear: new Date().getFullYear()-5,
     endYear: new Date().getFullYear(),
     topNSubjects: 20,
