@@ -268,10 +268,22 @@ app.post('/api/answer-character-count', async (req, res) => {
     }
 
     const client = db.getClient();
-    const database = client.db('stats');
-    const collection = database.collection('answer_count');
+    let database = client.db('stats');
+    let collection = database.collection('weekly_count');
 
-    const result = await collection.updateOne(
+    await collection.updateOne(
+      { _id: characterId },
+      { 
+        $inc: { count: 1 },
+        $set: { characterName: characterName.trim() }
+      },
+      { upsert: true }
+    );
+
+    database = client.db('stats');
+    collection = database.collection('answer_count');
+
+    result = await collection.updateOne(
       { _id: characterId },
       { 
         $inc: { count: 1 },
