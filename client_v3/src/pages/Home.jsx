@@ -35,7 +35,7 @@ const Home = () => {
       
       <div className="home-footer">
         <p>
-          一个猜动漫角色的游戏,
+          一个猜动漫/游戏角色的网站,
           建议使用桌面端浏览器游玩。
           <br/>
           灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
