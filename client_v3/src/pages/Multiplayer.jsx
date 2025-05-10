@@ -544,6 +544,23 @@ const Multiplayer = () => {
     }
   };
 
+  // Add handleQuickJoin function
+  const handleQuickJoin = async () => {
+    try {
+      const response = await fetch(`${SOCKET_URL}/quick-join`);
+      if (!response.ok) {
+        const data = await response.json();
+        alert(data.error || '没有可用的公开房间');
+        return;
+      }
+      const data = await response.json();
+      // Navigate to the returned URL
+      window.location.href = data.url;
+    } catch (error) {
+      alert('快速加入失败，请重试');
+    }
+  };
+
   if (!roomId) {
     return <div>Loading...</div>;
   }
@@ -565,6 +582,7 @@ const Multiplayer = () => {
         <>
           <div className="join-container">
             <h2>{isHost ? '创建房间' : '加入房间'}</h2>
+            {isHost && !isJoined && <button onClick={handleQuickJoin} className="join-button">快速加入</button>}
             <input
               type="text"
               placeholder="输入用户名"
@@ -576,6 +594,7 @@ const Multiplayer = () => {
             <button onClick={handleJoinRoom} className="join-button">
               {isHost ? '创建' : '加入'}
             </button>
+            {/* Only show quick-join if not joined and is host, use same style as '创建' */}
             {error && <p className="error-message">{error}</p>}
           </div>
           <Leaderboard />

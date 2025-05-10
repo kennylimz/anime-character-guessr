@@ -839,6 +839,24 @@ app.get('/ping', (req, res) => {
     res.status(200).send('Server is active');
 });
 
+app.get('/quick-join', (req, res) => {
+    // Get all public rooms that are not in progress
+    const publicRooms = Array.from(rooms.entries()).filter(([id, room]) => 
+        room.isPublic && !room.currentGame
+    );
+
+    if (publicRooms.length === 0) {
+        return res.status(404).json({ error: '没有可用的公开房间' });
+    }
+
+    // Pick a random room
+    const [roomId] = publicRooms[Math.floor(Math.random() * publicRooms.length)];
+
+    // Construct the URL for the client to join
+    const url = `${CLIENT_URL}/multiplayer/${roomId}`;
+    res.json({ url });
+});
+
 startSelfPing();
 
 server.listen(PORT, () => {
