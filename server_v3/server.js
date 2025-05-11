@@ -667,7 +667,7 @@ io.on('connection', (socket) => {
         console.log(`Answer setter set to ${setter.username} in room ${roomId}`);
     });
 
-    // Handle kicking disconnected players
+    // Handle kicking players from room
     socket.on('kickPlayer', ({roomId, playerId}) => {
         const room = rooms.get(roomId);
 
@@ -692,31 +692,50 @@ io.on('connection', (socket) => {
 
         const playerToKick = room.players[playerIndex];
         
-        // 验证玩家是否断开连接
-        if (!playerToKick.disconnected) {
-            socket.emit('error', {message: '只能踢出已断开连接的玩家'});
+        // 防止房主踢出自己
+        if (playerToKick.id === socket.id) {
+            socket.emit('error', {message: '无法踢出自己'});
             return;
         }
 
         // 保存玩家信息用于通知
         const kickedPlayerUsername = playerToKick.username;
         
-        // 从房间中移除玩家
-        room.players.splice(playerIndex, 1);
-        
-        // 通知所有玩家
-        io.to(roomId).emit('playerKicked', {
+        // 从房间中移除玩家前先通知被踢玩家
+        io.to(playerId).emit('playerKicked', {
             playerId: playerId,
             username: kickedPlayerUsername
         });
         
-        // 更新玩家列表
-        io.to(roomId).emit('updatePlayers', {
-            players: room.players,
-            isPublic: room.isPublic
-        });
-        
-        console.log(`Player ${kickedPlayerUsername} kicked from room ${roomId}`);
+        // 延迟一小段时间确保通知送达
+        setTimeout(() => {
+            try {
+                // 从房间中移除玩家
+                room.players.splice(playerIndex, 1);
+                
+                // 通知房间内其他玩家
+                socket.to(roomId).emit('playerKicked', {
+                    playerId: playerId,
+                    username: kickedPlayerUsername
+                });
+                
+                // 更新玩家列表
+                io.to(roomId).emit('updatePlayers', {
+                    players: room.players,
+                    isPublic: room.isPublic
+                });
+                
+                // 将被踢玩家从房间中移除
+                const kickedSocket = io.sockets.sockets.get(playerId);
+                if (kickedSocket) {
+                    kickedSocket.leave(roomId);
+                }
+                
+                console.log(`Player ${kickedPlayerUsername} kicked from room ${roomId}`);
+            } catch (error) {
+                console.error(`Error kicking player ${kickedPlayerUsername}:`, error);
+            }
+        }, 300);
     });
 
     // Handle answer setting from designated player
