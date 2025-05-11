@@ -555,3 +555,48 @@
   color: #666;
   font-style: italic;
 }
+
+/* 踢出通知样式 */
+.kick-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: rgba(220, 53, 69, 0.9);
+  color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: notification-slide-in 0.3s ease-out;
+  max-width: 90%;
+  min-width: 300px;
+}
+
+/* 房主转移通知样式 */
+.kick-notification.host-notification {
+  background-color: rgba(74, 144, 226, 0.9);
+}
+
+.kick-notification-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.kick-notification i {
+  font-size: 20px;
+}
+
+@keyframes notification-slide-in {
+  from {
+    transform: translateX(-50%) translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter, onKickPlayer, onTransferHost }) => {
   const [showNames, setShowNames] = useState(true);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
 
   // Add socket event listener for waitForAnswer
-  React.useEffect(() => {
+ useEffect(() => {
     if (socket) {
       socket.on('waitForAnswer', () => {
         setWaitingForAnswer(true);
@@ -17,6 +18,20 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
       });
     }
   }, [socket]);
+
+  // Add click outside handler to close menu
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (activeMenu && !event.target.closest('.player-actions')) {
+        setActiveMenu(null);
+      }
+    }
+    
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [activeMenu]);
 
   const handleShowNamesToggle = () => {
     const newShowNames = !showNames;
@@ -140,42 +155,90 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
               <td>{isGameStarted && player.isAnswerSetter ? '出题者' : player.guesses || ''}</td>
               {isHost && player.id !== socket?.id && (
                 <td>
-                  {player.disconnected ? (
+                  <div className="player-actions" style={{ position: 'relative' }}>
                     <button 
-                      onClick={(e) => handleKickClick(e, player.id)}
-                      className="kick-button"
-                      title="踢出断开连接的玩家"
+                      className="action-menu-button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        // 切换显示该玩家的操作菜单
+                        setActiveMenu(activeMenu === player.id ? null : player.id);
+                      }}
                       style={{
-                        background: '#ffebeb',
-                        border: '1px solid #dc3545',
+                        background: '#f8f9fa',
+                        border: '1px solid #dee2e6',
                         borderRadius: '4px',
                         cursor: 'pointer',
-                        color: '#dc3545',
+                        color: '#212529',
+                        padding: '4px 8px',
                         fontSize: '14px',
-                        padding: '2px 6px',
-                        marginRight: '5px'
+                        minWidth: '70px',
                       }}
                     >
-                      踢出
+                      ⚙️ 操作
                     </button>
-                  ) : (
-                    <button 
-                      onClick={(e) => handleTransferHostClick(e, player.id)}
-                      className="transfer-host-button"
-                      title="将房主权限转移给该玩家"
-                      style={{
-                        background: '#e6f3ff',
-                        border: '1px solid #007bff',
+                    
+                    {activeMenu === player.id && (
+                      <div className="action-dropdown" style={{
+                        position: 'absolute',
+                        background: 'white',
+                        border: '1px solid #dee2e6',
                         borderRadius: '4px',
-                        cursor: 'pointer',
-                        color: '#007bff',
-                        fontSize: '14px',
-                        padding: '2px 6px'
-                      }}
-                    >
-                      转移房主
-                    </button>
-                  )}
+                        boxShadow: '0 2px 5px rgba(0,0,0,0.15)',
+                        zIndex: 100,
+                        width: '120px',
+                        right: 0,
+                        top: '100%',
+                        marginTop: '4px',
+                      }}>
+                        <button 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleKickClick(e, player.id);
+                            setActiveMenu(null);
+                          }}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            width: '100%',
+                            padding: '8px 12px',
+                            border: 'none',
+                            background: 'none',
+                            textAlign: 'left',
+                            cursor: 'pointer',
+                            color: '#dc3545',
+                            borderBottom: '1px solid #eee',
+                          }}
+                        >
+                          <span>❌</span> 踢出
+                        </button>
+                        
+                        {!player.disconnected && (
+                          <button 
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleTransferHostClick(e, player.id);
+                              setActiveMenu(null);
+                            }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '8px',
+                              width: '100%',
+                              padding: '8px 12px',
+                              border: 'none',
+                              background: 'none',
+                              textAlign: 'left',
+                              cursor: 'pointer',
+                              color: '#007bff',
+                            }}
+                          >
+                            <span>👑</span> 转移房主
+                          </button>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </td>
               )}
             </tr>
