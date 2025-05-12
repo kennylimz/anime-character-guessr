@@ -31,7 +31,7 @@ io.on('connection', (socket) => {
     console.log(`A user connected: ${socket.id}`);
 
     // Handle room creation
-    socket.on('createRoom', ({roomId, username}) => {
+    socket.on('createRoom', ({roomId, username, roomName}) => {
         // Basic validation
         if (!username || username.trim().length === 0) {
             socket.emit('error', {message: '用户名呢'});
@@ -51,6 +51,7 @@ io.on('connection', (socket) => {
         rooms.set(roomId, {
             host: socket.id,
             isPublic: true, // Default to public
+            roomName: roomName || `房间 ${roomId}`, // 保存房间名称，使用默认值如果未提供
             players: [{
                 id: socket.id,
                 username,
@@ -67,10 +68,11 @@ io.on('connection', (socket) => {
         // Send room data back to host
         io.to(roomId).emit('updatePlayers', {
             players: rooms.get(roomId).players,
-            isPublic: rooms.get(roomId).isPublic
+            isPublic: rooms.get(roomId).isPublic,
+            roomName: rooms.get(roomId).roomName
         });
 
-        console.log(`Room ${roomId} created by ${username}`);
+        console.log(`Room ${roomId} created by ${username} with name "${rooms.get(roomId).roomName}"`);
     });
 
     // Handle room joining
@@ -84,34 +86,8 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            rooms.set(roomId, {
-                host: socket.id,
-                isPublic: true, // Default to public
-                players: [{
-                    id: socket.id,
-                    username,
-                    isHost: true,
-                    score: 0,
-                    ready: false,
-                    guesses: ''
-                }]
-            });
-    
-            // Join socket to room
-            socket.join(roomId);
-    
-            io.to(roomId).emit('hostTransferred', {
-                oldHostName: username,
-                newHostId: socket.id,
-                newHostName: username
-            });
-
-            io.to(roomId).emit('updatePlayers', {
-                players: rooms.get(roomId).players,
-                isPublic: rooms.get(roomId).isPublic
-            });
-            
-            console.log(`Room ${roomId} created by ${username}`);
+            // 房间不存在时返回错误，不再自动创建房间
+            socket.emit('error', {message: '房间不存在，请创建新房间或加入其他房间'});
             return;
         }
 
@@ -869,4 +845,24 @@ app.get('/', (req, res) => {
 
 app.get('/room-count', (req, res) => {
     res.json({count: rooms.size});
+});
+
+// 修改获取公开房间列表的接口，返回自定义房间名称
+app.get('/public-rooms', (req, res) => {
+    try {
+        // 筛选出所有公开且未开始游戏的房间
+        const publicRooms = Array.from(rooms.entries())
+            .filter(([id, room]) => room.isPublic && !room.currentGame)
+            .map(([id, room]) => ({
+                id, 
+                name: room.roomName || `房间 ${id}`, // 使用自定义房间名称或默认名称
+                playerCount: room.players.length,
+                status: 'waiting'
+            }));
+
+        res.json({ rooms: publicRooms });
+    } catch (error) {
+        console.error('获取公开房间失败:', error);
+        res.status(500).json({ error: '服务器内部错误' });
+    }
 });

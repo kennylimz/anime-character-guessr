@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 import { io } from 'socket.io-client';
 import { getRandomCharacter, getCharacterAppearances, generateFeedback } from '../utils/bangumi';
 import SettingsPopup from '../components/SettingsPopup';
@@ -15,7 +14,6 @@ import Leaderboard from '../components/Leaderboard';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
 import CryptoJS from 'crypto-js';
-import { useLocalStorage } from 'usehooks-ts';
 
 const secret = import.meta.env.VITE_AES_SECRET || 'My-Secret-Key';
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
@@ -25,7 +23,6 @@ const Multiplayer = () => {
   const { roomId } = useParams();
   const [isHost, setIsHost] = useState(false);
   const [players, setPlayers] = useState([]);
-  const [roomUrl, setRoomUrl] = useState('');
   const [username, setUsername] = useState('');
   const [isJoined, setIsJoined] = useState(false);
   const [socket, setSocket] = useState(null);
@@ -35,6 +32,16 @@ const Multiplayer = () => {
   const [isManualMode, setIsManualMode] = useState(false);
   const [answerSetterId, setAnswerSetterId] = useState(null);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
+  const [publicRooms, setPublicRooms] = useState([]);
+  const [isLoadingRooms, setIsLoadingRooms] = useState(false);
+  
+  // 创建房间相关状态
+  const [customRoomId, setCustomRoomId] = useState('');
+  
+  // 加入房间相关状态
+  const [joinRoomId, setJoinRoomId] = useState('');
+  
+  // 游戏设置状态
   const [gameSettings, setGameSettings] = useState({
     startYear: new Date().getFullYear()-5,
     endYear: new Date().getFullYear(),
@@ -216,14 +223,11 @@ const Multiplayer = () => {
   useEffect(() => {
     if (!roomId) {
       // Create new room if no roomId in URL
-      const newRoomId = uuidv4();
-      setIsHost(true);
-      navigate(`/multiplayer/${newRoomId}`);
+      // 不再自动创建房间，让用户在大厅选择或创建
     } else {
-      // Set room URL for sharing
-      setRoomUrl(window.location.href);
+      // Set room URL for sharing - 不再需要设置roomUrl
     }
-  }, [roomId, navigate]);
+  }, [roomId]);
 
   useEffect(() => {
     console.log('Game Settings:', gameSettings);
@@ -241,12 +245,14 @@ const Multiplayer = () => {
 
     setError('');
     if (isHost) {
-      socket.emit('createRoom', { roomId, username });
-      // Send initial game settings when creating room
+      socket.emit('createRoom', { 
+        roomId, 
+        username,
+        roomName: `房间 ${roomId}` // 使用默认名称
+      });
       socket.emit('updateGameSettings', { roomId, settings: gameSettings });
     } else {
       socket.emit('joinRoom', { roomId, username });
-      // Request current settings from server
       socket.emit('requestGameSettings', { roomId });
     }
     setIsJoined(true);
@@ -263,8 +269,8 @@ const Multiplayer = () => {
     }));
   };
 
-  const copyRoomUrl = () => {
-    navigator.clipboard.writeText(roomUrl);
+  const copyRoomId = () => {
+    navigator.clipboard.writeText(roomId);
   };
 
   const handleGameEnd = (isWin) => {
@@ -561,8 +567,181 @@ const Multiplayer = () => {
     }
   };
 
+  // 获取公开房间列表
+  const fetchPublicRooms = async () => {
+    try {
+      setIsLoadingRooms(true);
+      const response = await fetch(`${SOCKET_URL}/public-rooms`);
+      if (response.ok) {
+        const data = await response.json();
+        setPublicRooms(data.rooms || []);
+      } else {
+        console.error('获取房间列表失败');
+      }
+    } catch (error) {
+      console.error('获取房间列表出错:', error);
+    } finally {
+      setIsLoadingRooms(false);
+    }
+  };
+
+  // 在组件挂载时加载房间列表
+  useEffect(() => {
+    if (!roomId) {
+      fetchPublicRooms();
+      // 每10秒自动刷新一次房间列表
+      const intervalId = setInterval(fetchPublicRooms, 10000);
+      return () => clearInterval(intervalId);
+    }
+  }, [roomId]);
+
   if (!roomId) {
-    return <div>Loading...</div>;
+    return (
+      <div className="multiplayer-container">
+        <a
+          href="/"
+          className="social-link floating-back-button"
+          title="Back"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate('/');
+          }}
+        >
+          <i className="fas fa-angle-left"></i>
+        </a>
+        <h1 className="mb-8 text-center text-4xl font-bold text-gray-800">多人游戏</h1>
+        <div className="lobby-container">
+          <div className="lobby-section rounded-lg bg-white p-6 shadow-md">
+            <div className="mb-6 grid gap-x-8 gap-y-4 md:grid-cols-2">
+              <div>
+                <h3 className="mb-2 text-lg font-medium text-gray-700">创建新房间</h3>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    placeholder="房间ID（4位）"
+                    maxLength="4"
+                    className="focus:border-primary-500 focus:ring-primary-500/20 w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-hidden"
+                    value={customRoomId}
+                    onChange={(e) => setCustomRoomId(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3 flex items-center">
+                  <input
+                    id="isPrivateRoom"
+                    type="checkbox"
+                    className="cursor-pointer rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500"
+                    checked={!isPublic}
+                    onChange={() => setIsPublic(!isPublic)}
+                  />
+                  <label htmlFor="isPrivateRoom" className="ml-2 block cursor-pointer text-sm text-gray-700 select-none">
+                    创建私密房间
+                  </label>
+                </div>
+                <button
+                  className="w-full cursor-pointer rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
+                  onClick={() => {
+                    if (!customRoomId || customRoomId.length !== 4) {
+                      alert('请输入4位房间ID');
+                      return;
+                    }
+                    setIsHost(true);
+                    navigate(`/multiplayer/${customRoomId}`);
+                  }}
+                >
+                  创建房间
+                </button>
+              </div>
+              <div>
+                <h3 className="mb-2 text-lg font-medium text-gray-700">加入房间</h3>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    placeholder="加入房间ID（4位）"
+                    maxLength="4"
+                    className="focus:border-primary-500 focus:ring-primary-500/20 w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:outline-hidden"
+                    value={joinRoomId}
+                    onChange={(e) => setJoinRoomId(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3">
+                  {/* 空白占位区域，确保高度与创建房间区域一致 */}
+                  <div className="h-10"></div>
+                </div>
+                <div className="mb-3">
+                  {/* 空白占位区域，确保高度与创建房间区域一致 */}
+                  <div className="h-6"></div>
+                </div>
+                <button
+                  className="w-full cursor-pointer rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
+                  onClick={() => {
+                    if (joinRoomId && joinRoomId.length === 4) {
+                      navigate(`/multiplayer/${joinRoomId}`);
+                    } else {
+                      alert('请输入4位房间ID');
+                    }
+                  }}
+                >
+                  点击加入
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div className="lobby-section rounded-lg bg-white p-6 shadow-md">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-semibold text-gray-800">房间列表 ({publicRooms.length})</h2>
+              <div className="flex items-center gap-2">
+                <button
+                  className="quick-join-button"
+                  onClick={handleQuickJoin}
+                >
+                  快速加入
+                </button>
+                <button
+                  className="cursor-pointer rounded-lg border border-blue-600 px-4 py-2 text-blue-600 transition-colors hover:bg-blue-50"
+                  onClick={fetchPublicRooms}
+                >
+                  刷新列表
+                </button>
+              </div>
+            </div>
+            
+            {isLoadingRooms ? (
+              <p className="text-center text-gray-500">加载中...</p>
+            ) : publicRooms.length === 0 ? (
+              <p className="text-center text-gray-500">当前没有可用的公开房间，创建一个吧！</p>
+            ) : (
+              <div className="rooms-list mt-4">
+                <div className="grid gap-4 md:grid-cols-2">
+                  {publicRooms.map(room => (
+                    <div
+                      key={room.id}
+                      className="room-card cursor-pointer p-4 border border-gray-200 rounded-lg hover:border-blue-400 hover:shadow-md transition-all"
+                      onClick={() => {
+                        navigate(`/multiplayer/${room.id}`);
+                      }}
+                    >
+                      <div className="flex justify-between items-center">
+                        <h3 className="font-medium">{room.name || `房间 ${room.id}`}</h3>
+                        <span className="text-sm text-gray-500">{room.playerCount}/6 人</span>
+                      </div>
+                      <div className="mt-2 text-sm text-gray-600 flex justify-between">
+                        <span>{room.status === 'waiting' ? '等待中' : '游戏中'}</span>
+                        <span className="text-blue-500">ID: {room.id}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+          
+          <div className="lobby-section">
+            <Leaderboard />
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -582,7 +761,6 @@ const Multiplayer = () => {
         <>
           <div className="join-container">
             <h2>{isHost ? '创建房间' : '加入房间'}</h2>
-            {isHost && !isJoined && <button onClick={handleQuickJoin} className="join-button">快速加入</button>}
             <input
               type="text"
               placeholder="输入用户名"
@@ -594,7 +772,6 @@ const Multiplayer = () => {
             <button onClick={handleJoinRoom} className="join-button">
               {isHost ? '创建' : '加入'}
             </button>
-            {/* Only show quick-join if not joined and is host, use same style as '创建' */}
             {error && <p className="error-message">{error}</p>}
           </div>
           <Leaderboard />
@@ -622,11 +799,11 @@ const Multiplayer = () => {
                   <div className="room-url-container">
                     <input
                       type="text"
-                      value={roomUrl}
+                      value={roomId}
                       readOnly
                       className="room-url-input"
                     />
-                    <button onClick={copyRoomUrl} className="copy-button">复制</button>
+                    <button onClick={copyRoomId} className="copy-button">复制房间ID</button>
                   </div>
                 </div>
               )}
