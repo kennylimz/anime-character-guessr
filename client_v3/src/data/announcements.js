@@ -23,6 +23,16 @@ const announcements = [
   },
 
   {
+    version: '1.3.1',
+    date: '2025-05-09',
+    content: `
+      这周有点摸鱼，做了一个<a href="https://www.bilibili.com/video/BV14CVRzUELs">介绍视频</a>希望宣传下。
+      
+        
+    `
+  },
+
+  {
     version: '1.3.0',
     date: '2025-05-03',
     content: `

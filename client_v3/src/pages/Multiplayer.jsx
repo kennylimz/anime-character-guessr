@@ -86,11 +86,15 @@ const Multiplayer = () => {
   const [showCharacterPopup, setShowCharacterPopup] = useState(false);
   const [showSetAnswerPopup, setShowSetAnswerPopup] = useState(false);
   const [isAnswerSetter, setIsAnswerSetter] = useState(false);
+  const [kickNotification, setKickNotification] = useState(null);
 
   useEffect(() => {
     // Initialize socket connection
     const newSocket = io(SOCKET_URL);
     setSocket(newSocket);
+
+    // 用于追踪事件是否已经被处理
+    const kickEventProcessed = {}; 
 
     // Socket event listeners
     newSocket.on('updatePlayers', ({ players, isPublic, answerSetterId }) => {
@@ -172,12 +176,12 @@ const Multiplayer = () => {
       if (newHostId === newSocket.id) {
         setIsHost(true);
         if (oldHostName === newHostName) {
-          alert(`原房主已断开连接，你已成为新房主！`);
+          showKickNotification(`原房主已断开连接，你已成为新房主！`, 'host');
         } else {
-          alert(`房主 ${oldHostName} 已断开连接，你已成为新房主！`);
+          showKickNotification(`房主 ${oldHostName} 已将房主权限转移给你！`, 'host');
         }
       } else {
-        alert(`房主 ${oldHostName} 已断开连接，${newHostName} 已成为新房主。`);
+        showKickNotification(`房主权限已从 ${oldHostName} 转移给 ${newHostName}`, 'host');
       }
     });
 
@@ -207,15 +211,39 @@ const Multiplayer = () => {
     });
 
     newSocket.on('playerKicked', ({ playerId, username }) => {
+      // 使用唯一标识确保同一事件不会处理多次
+      const eventId = `${playerId}-${Date.now()}`;
+      if (kickEventProcessed[eventId]) return;
+      kickEventProcessed[eventId] = true;
+      
       if (playerId === newSocket.id) {
-        alert(`你已被房主踢出房间。`);
-        navigate('/multiplayer');
+        // 如果当前玩家被踢出，显示通知并重定向到多人游戏大厅
+        showKickNotification('你已被房主踢出房间', 'kick');
+        setIsJoined(false); 
+        setGameEnd(true); 
+        setTimeout(() => {
+          navigate('/multiplayer');
+        }, 100); // 延长延迟时间确保通知显示后再跳转
       } else {
-        alert(`玩家 ${username} 已被踢出房间。`);
+        showKickNotification(`玩家 ${username} 已被踢出房间`, 'kick');
+        setPlayers(prevPlayers => prevPlayers.filter(p => p.id !== playerId));
       }
     });
 
     return () => {
+      // 清理事件监听和连接
+      newSocket.off('playerKicked');
+      newSocket.off('hostTransferred');
+      newSocket.off('updatePlayers');
+      newSocket.off('waitForAnswer');
+      newSocket.off('gameStart');
+      newSocket.off('guessHistoryUpdate');
+      newSocket.off('roomClosed');
+      newSocket.off('error');
+      newSocket.off('updateGameSettings');
+      newSocket.off('gameEnded');
+      newSocket.off('resetReadyStatus');
+      
       newSocket.disconnect();
     };
   }, [navigate]);
@@ -534,9 +562,27 @@ const Multiplayer = () => {
   const handleKickPlayer = (playerId) => {
     if (!isHost || !socket) return;
     
+    // 确认当前玩家是房主
+    const currentPlayer = players.find(p => p.id === socket.id);
+    if (!currentPlayer || !currentPlayer.isHost) {
+      alert('只有房主可以踢出玩家');
+      return;
+    }
+    
+    // 防止房主踢出自己
+    if (playerId === socket.id) {
+      alert('房主不能踢出自己');
+      return;
+    }
+    
     // 确认后再踢出
     if (window.confirm('确定要踢出该玩家吗？')) {
-      socket.emit('kickPlayer', { roomId, playerId });
+      try {
+        socket.emit('kickPlayer', { roomId, playerId });
+      } catch (error) {
+        console.error('踢出玩家失败:', error);
+        alert('踢出玩家失败，请重试');
+      }
     }
   };
 
@@ -565,6 +611,14 @@ const Multiplayer = () => {
     } catch (error) {
       alert('快速加入失败，请重试');
     }
+  };
+
+  // 创建一个函数显示踢出通知
+  const showKickNotification = (message, type = 'kick') => {
+    setKickNotification({ message, type });
+    setTimeout(() => {
+      setKickNotification(null);
+    }, 5000); // 5秒后自动关闭通知
   };
 
   // 获取公开房间列表
@@ -746,6 +800,15 @@ const Multiplayer = () => {
 
   return (
     <div className="multiplayer-container">
+      {/* 添加踢出通知 */}
+      {kickNotification && (
+        <div className={`kick-notification ${kickNotification.type === 'host' ? 'host-notification' : ''}`}>
+          <div className="kick-notification-content">
+            <i className={`fas ${kickNotification.type === 'host' ? 'fa-crown' : 'fa-exclamation-circle'}`}></i>
+            <span>{kickNotification.message}</span>
+          </div>
+        </div>
+      )}
       <a
           href="/"
           className="social-link floating-back-button"
