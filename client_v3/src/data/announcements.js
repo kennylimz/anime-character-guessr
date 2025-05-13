@@ -26,7 +26,7 @@ const announcements = [
     version: '1.3.1',
     date: '2025-05-09',
     content: `
-      这周有点摸鱼，做了一个<a href="https://www.bilibili.com/video/BV14CVRzUELs">介绍视频</a>希望宣传下。
+      这周有点摸鱼，做了一个<a href="https://www.bilibili.com/video/BV14CVRzUELs">介绍视频</a>希望宣传下。<br/>
       加入了快速匹配房间的按钮，不活跃的房间会在10分钟之后自动关闭。
         
     `
