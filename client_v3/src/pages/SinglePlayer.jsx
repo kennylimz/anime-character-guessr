@@ -92,7 +92,7 @@ function SinglePlayer() {
       } catch (error) {
         console.error('Failed to initialize game:', error);
         if (isMounted) {
-          alert('游戏初始化失败，请刷新页面重试');
+          alert('游戏初始化失败，请刷新页面重试，或在设置里清理缓存');
         }
       }
     };
@@ -274,7 +274,7 @@ function SinglePlayer() {
       setFinishInit(true);
     } catch (error) {
       console.error('Failed to initialize new game:', error);
-      alert('游戏初始化失败，请重试');
+      alert('游戏初始化失败，请刷新页面重试，或在设置里清理缓存');
     }
   };
 

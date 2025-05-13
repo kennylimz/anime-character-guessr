@@ -58,7 +58,8 @@ io.on('connection', (socket) => {
                 score: 0,
                 ready: false,
                 guesses: ''
-            }]
+            }],
+            lastActive: Date.now()
         });
 
         // Join socket to room
@@ -94,7 +95,8 @@ io.on('connection', (socket) => {
                     score: 0,
                     ready: false,
                     guesses: ''
-                }]
+                }],
+                lastActive: Date.now()
             });
     
             // Join socket to room
@@ -196,6 +198,7 @@ io.on('connection', (socket) => {
     // Handle game settings update
     socket.on('updateGameSettings', ({roomId, settings}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: 'Room not found'});
@@ -221,6 +224,7 @@ io.on('connection', (socket) => {
     // Handle game start
     socket.on('gameStart', ({roomId, character, settings}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: 'Room not found'});
@@ -274,6 +278,7 @@ io.on('connection', (socket) => {
     // Handle player guesses
     socket.on('playerGuess', ({roomId, guessResult}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: 'Room not found'});
@@ -320,6 +325,7 @@ io.on('connection', (socket) => {
     // Handle game end
     socket.on('gameEnd', ({roomId, result}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: 'Room not found'});
@@ -539,8 +545,7 @@ io.on('connection', (socket) => {
                     } else {
                         // 如果没有其他玩家可以成为房主，则关闭房间
                         rooms.delete(roomId);
-                    // Notify remaining players the room is closed
-                        io.to(roomId).emit('roomClosed', {message: 'Host disconnected and no available players to transfer ownership'});
+                        io.to(roomId).emit('roomClosed', {message: '房主已断开连接，房间已关闭'});
                         console.log(`Host ${disconnectedPlayer.username} disconnected. Room ${roomId} closed as no available players to transfer ownership.`);
                     }
                 } else {
@@ -566,6 +571,7 @@ io.on('connection', (socket) => {
     // Handle room visibility toggle
     socket.on('toggleRoomVisibility', ({roomId}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: 'Room not found'});
@@ -670,6 +676,7 @@ io.on('connection', (socket) => {
     // Handle kicking players from room
     socket.on('kickPlayer', ({roomId, playerId}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: '房间不存在'});
@@ -741,6 +748,7 @@ io.on('connection', (socket) => {
     // Handle answer setting from designated player
     socket.on('setAnswer', ({roomId, character, hints}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: 'Room not found'});
@@ -807,6 +815,7 @@ io.on('connection', (socket) => {
     // 添加手动转移房主的功能
     socket.on('transferHost', ({roomId, newHostId}) => {
         const room = rooms.get(roomId);
+        if (room) room.lastActive = Date.now();
 
         if (!room) {
             socket.emit('error', {message: '房间不存在'});
@@ -876,12 +885,6 @@ app.get('/quick-join', (req, res) => {
     res.json({ url });
 });
 
-startSelfPing();
-
-server.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
-
 app.get('/', (req, res) => {
     res.send(`Hello from the server!`);
 });
@@ -889,3 +892,27 @@ app.get('/', (req, res) => {
 app.get('/room-count', (req, res) => {
     res.json({count: rooms.size});
 });
+
+app.get('/clean-rooms', (req, res) => {
+    const now = Date.now();
+    let cleaned = 0;
+    for (const [roomId, room] of rooms.entries()) {
+        if (room.lastActive && now - room.lastActive > 600000) {
+            // Notify all players in the room
+            io.to(roomId).emit('roomClosed', {message: '房间因长时间无活动已关闭'});
+            // Delete the room
+            rooms.delete(roomId);
+            cleaned++;
+            console.log(`Room ${roomId} closed due to inactivity.`);
+        }
+    }
+    res.json({message: `已清理${cleaned}个房间`});
+});
+
+startSelfPing();
+
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
+
