@@ -223,6 +223,19 @@
   width: 50%;
 }
 
+.score-table .table-head-name-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  line-height: 1;
+  font-size: inherit;
+  outline: none;
+  font-weight: bold;
+}
+
 .ready-button {
   padding: 0.5rem 1rem;
   border: none;
@@ -245,6 +258,48 @@
 
 .ready-button.ready:hover {
   background-color: #45a049;
+}
+
+.action-menu-button {
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #212529;
+  font-size: 14px;
+  min-width: 70px;
+}
+
+.action-dropdown{
+  position: absolute;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 100;
+  width: 120px;
+  right: 0;
+  top: 100%;
+  margin-top: 4px;
+}
+
+.action-dropdown .action-button{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: #dc3545;
+  border-bottom: 1px solid #eee;
+  border-radius: 0px;
+}
+.action-dropdown .action-button:hover{
+  background-color: #d8d8d8;
 }
 
 .game-settings-display {
