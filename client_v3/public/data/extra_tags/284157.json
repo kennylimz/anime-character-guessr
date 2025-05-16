@@ -14,7 +14,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "其它": "其它"
     }
   },
@@ -33,7 +33,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "其它": "其它"
     }
   },
@@ -47,7 +47,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -61,7 +61,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -75,7 +75,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -89,7 +89,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -103,7 +103,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -117,7 +117,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -131,7 +131,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -145,7 +145,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -159,7 +159,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -173,7 +173,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -187,7 +187,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -201,7 +201,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -215,7 +215,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -229,7 +229,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -243,7 +243,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -257,7 +257,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -271,7 +271,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -285,7 +285,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -299,7 +299,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -313,7 +313,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -327,7 +327,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -341,7 +341,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -355,7 +355,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "至冬": "至冬"
     }
   },
@@ -369,7 +369,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -383,7 +383,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -397,7 +397,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -411,7 +411,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -425,7 +425,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -439,7 +439,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -453,7 +453,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -467,7 +467,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -481,7 +481,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -495,7 +495,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -509,7 +509,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -523,7 +523,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -537,7 +537,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -551,7 +551,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -565,7 +565,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -579,7 +579,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -593,7 +593,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -607,7 +607,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -621,7 +621,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -635,7 +635,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -649,7 +649,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -663,7 +663,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -677,7 +677,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -691,7 +691,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -705,7 +705,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -719,7 +719,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -733,7 +733,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -747,7 +747,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -761,7 +761,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -775,7 +775,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -789,7 +789,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -803,7 +803,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -817,7 +817,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -831,7 +831,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -845,7 +845,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -859,7 +859,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -873,7 +873,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -887,7 +887,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -901,7 +901,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -915,7 +915,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
     }
   },
@@ -929,7 +929,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -943,7 +943,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -957,7 +957,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -971,7 +971,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -985,7 +985,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -999,7 +999,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1013,7 +1013,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1027,7 +1027,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1041,7 +1041,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1055,7 +1055,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1069,7 +1069,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1083,7 +1083,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1097,7 +1097,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -1111,7 +1111,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -1125,7 +1125,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -1139,7 +1139,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "至冬": "至冬"
     }
   },
@@ -1153,7 +1153,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
     }
   },
@@ -1167,7 +1167,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1181,7 +1181,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1195,7 +1195,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
     }
   },
@@ -1209,7 +1209,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1223,7 +1223,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1237,7 +1237,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1251,7 +1251,7 @@
     "武器类型": {
       "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1265,7 +1265,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1279,7 +1279,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1293,7 +1293,7 @@
     "武器类型": {
       "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1307,7 +1307,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1321,7 +1321,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
     }
   },
@@ -1335,7 +1335,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
     }
   },
@@ -1349,7 +1349,7 @@
     "武器类型": {
       "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1363,7 +1363,7 @@
     "武器类型": {
       "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
     },
-    "所属国家": {
+    "所属": {
       "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
     }
   },
@@ -1377,7 +1377,7 @@
     "武器类型": {
       "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
     },
-    "所属国家": {
+    "所属": {
       "其它": "其它"
     }
   }
