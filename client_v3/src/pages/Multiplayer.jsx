@@ -733,7 +733,8 @@ const Multiplayer = () => {
                     </button>
                   </div>
                   <div className="anonymous-mode-info">
-                    点表头"名"切换匿名模式，点自己名字写短信息。
+                    匿名模式？点表头"名"切换。<br/>
+                    想沟通玩法？点自己名字编辑短信息。
                   </div>
                 </div>
               )}
