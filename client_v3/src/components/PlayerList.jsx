@@ -142,7 +142,7 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                   <input
                     type="text"
                     value={messageDraft}
-                    placeholder='请文明友好交流（比心）'
+                    placeholder='请友好交流（比心）'
                     autoFocus
                     maxLength={15}
                     style={{ width: '90%' }}
