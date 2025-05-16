@@ -16,7 +16,6 @@ import '../styles/Multiplayer.css';
 import '../styles/MultiplayerLobby.css';
 import '../styles/game.css';
 import CryptoJS from 'crypto-js';
-import { useLocalStorage } from 'usehooks-ts';
 
 const secret = import.meta.env.VITE_AES_SECRET || 'My-Secret-Key';
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
@@ -680,12 +679,13 @@ const Multiplayer = () => {
       setKickNotification(null);
     }, 5000); // 5秒后自动关闭通知
   };
-
-  // 创建房间处理函数
-  const handleCreateRoom = () => {
-    const newRoomId = uuidv4().substring(0, 4);
-    setIsHost(true);
-    navigate(`/multiplayer/${newRoomId}`);
+  // Handle player message change
+  const handleMessageChange = (newMessage) => {
+    setPlayers(prevPlayers => prevPlayers.map(p =>
+      p.id === socket.id ? { ...p, message: newMessage } : p
+    ));
+    // Emit to server for sync
+    socket.emit('updatePlayerMessage', { roomId, message: newMessage });
   };
 
   if (!roomId) {
@@ -920,6 +920,7 @@ const Multiplayer = () => {
                 onSetAnswerSetter={handleSetAnswerSetter}
                 onKickPlayer={handleKickPlayer}
                 onTransferHost={handleTransferHost}
+                onMessageChange={handleMessageChange}
               />
 
           {!isGameStarted && !globalGameEnd && (
@@ -973,7 +974,8 @@ const Multiplayer = () => {
                     </button>
                   </div>
                   <div className="anonymous-mode-info">
-                    匿名模式？点表头"名"切换。
+                    匿名模式？点表头"名"切换。<br/>
+                    想沟通玩法？点自己名字编辑短信息。
                   </div>
                 </div>
               )}

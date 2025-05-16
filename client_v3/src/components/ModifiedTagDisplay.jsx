@@ -17,6 +17,9 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
       360097, // 崩坏：星穹铁道
       380974, // 绝区零
       194792, // 王者荣耀
+      172168, // 崩坏3
+      300648, // 蔚蓝档案
+      385208, // 鸣潮
     ]
   );
 
