@@ -897,6 +897,38 @@ app.get('/ping', (req, res) => {
     res.status(200).send('Server is active');
 });
 
+app.get('/public-rooms', (req, res) => {
+    const now = Date.now();
+    const publicRoomsList = [];
+
+    for (const [roomId, room] of rooms.entries()) {
+        // Optional: Clean up inactive rooms during this check
+        // if (room.lastActive && now - room.lastActive > 600000) { // 10 minutes inactivity
+        //     io.to(roomId).emit('roomClosed', { message: '房间因长时间无活动已关闭' });
+        //     rooms.delete(roomId);
+        //     console.log(`Room ${roomId} auto-closed due to inactivity before listing public rooms.`);
+        //     continue; 
+        // }
+
+        if (room.isPublic) { // We will return all public rooms, status will indicate joinability
+            const hostPlayer = room.players.find(p => p.isHost);
+            const hostUsername = hostPlayer ? hostPlayer.username : '未知';
+            const currentStatus = room.currentGame ? 'in-progress' : 'waiting';
+
+            publicRoomsList.push({
+                id: roomId,
+                name: roomId, 
+                playerCount: room.players.filter(p => !p.disconnected).length,
+                maxPlayers: room.settings && room.settings.characterNum ? (room.settings.characterNum + 2) : 10, 
+                gameMode: room.settings && room.settings.mainCharacterOnly ? '角色模式' : '混合模式',
+                host: hostUsername,
+                status: currentStatus // Added status field
+            });
+        }
+    }
+    res.json({ rooms: publicRoomsList });
+});
+
 app.get('/quick-join', (req, res) => {
     // Get all public rooms that are not in progress
     const publicRooms = Array.from(rooms.entries()).filter(([id, room]) => 
