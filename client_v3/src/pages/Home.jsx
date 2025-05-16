@@ -35,10 +35,10 @@ const Home = () => {
       
       <div className="home-footer">
         <p>
-          一个猜动漫/游戏角色的网站,
+          一个猜动漫/游戏角色的网站，
           建议使用桌面端浏览器游玩。
           <br/>
-          灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
+          <a href="https://www.bilibili.com/video/BV14CVRzUELs">玩法简介视频</a>，灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
           数据来源<a href="https://bgm.tv/"> Bangumi </a>。<br />
           <a href="https://space.bilibili.com/87983557">@作者</a>：“感谢 <a href="https://github.com/trim21">Bangumi 管理员</a> 的优化支持，
           以及各位<a href="https://github.com/kennylimz/anime-character-guessr/graphs/contributors">网友</a>贡献的代码和数据。

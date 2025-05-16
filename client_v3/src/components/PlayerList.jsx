@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter, onKickPlayer, onTransferHost }) => {
+const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter, onKickPlayer, onTransferHost, onMessageChange }) => {
   const [showNames, setShowNames] = useState(true);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
+  const [editingMessagePlayerId, setEditingMessagePlayerId] = useState(null);
+  const [messageDraft, setMessageDraft] = useState("");
 
   // Add socket event listener for waitForAnswer
  useEffect(() => {
@@ -136,13 +138,48 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                 {getStatusDisplay(player)}
               </td>
               <td>
-                <span style={{
-                  backgroundColor: !showNames && player.id !== socket?.id ? '#000' : 'transparent',
-                  color: !showNames && player.id !== socket?.id ? '#000' : 'inherit',
-                  padding: !showNames && player.id !== socket?.id ? '2px 4px' : '0'
-                }}>
-                  {player.username}
-                </span>
+                {socket?.id === player.id && editingMessagePlayerId === player.id ? (
+                  <input
+                    type="text"
+                    value={messageDraft}
+                    autoFocus
+                    maxLength={15}
+                    style={{ width: '90%' }}
+                    onChange={e => setMessageDraft(e.target.value)}
+                    onBlur={() => {
+                      setEditingMessagePlayerId(null);
+                      if (onMessageChange) onMessageChange(messageDraft);
+                    }}
+                    onKeyDown={e => {
+                      if (e.key === 'Enter') {
+                        setEditingMessagePlayerId(null);
+                        if (onMessageChange) onMessageChange(messageDraft);
+                      }
+                    }}
+                  />
+                ) : (
+                  <span
+                    style={{
+                      backgroundColor: !showNames && player.id !== socket?.id ? '#000' : 'transparent',
+                      color: !showNames && player.id !== socket?.id ? '#000' : 'inherit',
+                      padding: !showNames && player.id !== socket?.id ? '2px 4px' : '0',
+                      cursor: socket?.id === player.id ? 'pointer' : 'default',
+                    }}
+                    onClick={() => {
+                      if (socket?.id === player.id) {
+                        setEditingMessagePlayerId(player.id);
+                        setMessageDraft(player.message || "");
+                      }
+                    }}
+                  >
+                    {player.username}
+                    {player.message && (
+                      <span>
+                        : “{player.message}”
+                      </span>
+                    )}
+                  </span>
+                )}
               </td>
               <td>{player.score}</td>
               <td>{isGameStarted && player.isAnswerSetter ? '出题者' : player.guesses || ''}</td>

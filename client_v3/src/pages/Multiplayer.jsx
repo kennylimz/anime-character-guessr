@@ -15,7 +15,6 @@ import Leaderboard from '../components/Leaderboard';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
 import CryptoJS from 'crypto-js';
-import { useLocalStorage } from 'usehooks-ts';
 
 const secret = import.meta.env.VITE_AES_SECRET || 'My-Secret-Key';
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
@@ -615,6 +614,15 @@ const Multiplayer = () => {
     }, 5000); // 5秒后自动关闭通知
   };
 
+  // Handle player message change
+  const handleMessageChange = (newMessage) => {
+    setPlayers(prevPlayers => prevPlayers.map(p =>
+      p.id === socket.id ? { ...p, message: newMessage } : p
+    ));
+    // Emit to server for sync
+    socket.emit('updatePlayerMessage', { roomId, message: newMessage });
+  };
+
   if (!roomId) {
     return <div>Loading...</div>;
   }
@@ -676,6 +684,7 @@ const Multiplayer = () => {
                 onSetAnswerSetter={handleSetAnswerSetter}
                 onKickPlayer={handleKickPlayer}
                 onTransferHost={handleTransferHost}
+                onMessageChange={handleMessageChange}
               />
 
           {!isGameStarted && !globalGameEnd && (
@@ -724,7 +733,7 @@ const Multiplayer = () => {
                     </button>
                   </div>
                   <div className="anonymous-mode-info">
-                    匿名模式？点表头"名"切换。
+                    点表头"名"切换匿名模式，点自己名字写短信息。
                   </div>
                 </div>
               )}

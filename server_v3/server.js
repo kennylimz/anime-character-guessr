@@ -57,7 +57,8 @@ io.on('connection', (socket) => {
                 isHost: true,
                 score: 0,
                 ready: false,
-                guesses: ''
+                guesses: '',
+                message: ''
             }],
             lastActive: Date.now()
         });
@@ -94,7 +95,8 @@ io.on('connection', (socket) => {
                     isHost: true,
                     score: 0,
                     ready: false,
-                    guesses: ''
+                    guesses: '',
+                    message: ''
                 }],
                 lastActive: Date.now()
             });
@@ -146,7 +148,8 @@ io.on('connection', (socket) => {
             isHost: false,
             score: 0,
             ready: false,
-            guesses: ''
+            guesses: '',
+            message: ''
         });
 
         // Join socket to room
@@ -860,6 +863,33 @@ io.on('connection', (socket) => {
         });
 
         console.log(`Host transferred from ${currentHost.username} to ${newHost.username} in room ${roomId}.`);
+    });
+
+    // Handle player message update
+    socket.on('updatePlayerMessage', ({ roomId, message }) => {
+        const room = rooms.get(roomId);
+        if (!room) {
+            socket.emit('error', { message: 'Room not found' });
+            return;
+        }
+
+        // Find the player
+        const player = room.players.find(p => p.id === socket.id);
+        if (!player) {
+            socket.emit('error', { message: 'Player not found in room' });
+            return;
+        }
+
+        // Update the player's message
+        player.message = message;
+
+        // Broadcast updated players to all clients in the room
+        io.to(roomId).emit('updatePlayers', {
+            players: room.players,
+            isPublic: room.isPublic
+        });
+
+        console.log(`Player ${player.username} updated their message in room ${roomId}: ${message}`);
     });
 });
 
