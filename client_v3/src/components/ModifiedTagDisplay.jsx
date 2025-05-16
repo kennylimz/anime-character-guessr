@@ -19,6 +19,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
       194792, // 王者荣耀
       172168, // 崩坏3
       300648, // 蔚蓝档案
+      385208, // 鸣潮
     ]
   );
 
