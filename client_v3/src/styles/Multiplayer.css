@@ -224,16 +224,33 @@
 }
 
 .score-table .table-head-name-button {
-  background: none;
+  background-color: transparent;
   border: none;
+  padding: 0.2em 0.4em; /* Adjusted padding for a tighter fit in table header */
+  border-radius: 0;      /* Explicitly remove border-radius */
+  color: inherit;        /* Inherit text color from table header parent */
+  font-weight: inherit;  /* Inherit font-weight */
+  font-size: inherit;    /* Inherit font-size */
+  text-align: center;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
-  height: auto;
-  line-height: 1;
-  font-size: inherit;
-  outline: none;
-  font-weight: bold;
+  /* Reset any other global button styles if necessary */
+}
+
+.score-table .table-head-name-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Subtle hover for light mode */
+  border-color: transparent; /* Ensure global hover border doesn't apply */
+  color: inherit; /* Ensure text color on hover remains consistent if needed */
+}
+
+/* Dark mode considerations for the button if a global dark mode button style is aggressive */
+@media (prefers-color-scheme: dark) {
+  .score-table .table-head-name-button {
+    /* color: #your-dark-mode-header-text-color; /* Ensure it matches dark mode header text */
+    /* background-color: transparent; /* Ensure it remains transparent */
+  }
+  .score-table .table-head-name-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover for dark mode */
+  }
 }
 
 .ready-button {
