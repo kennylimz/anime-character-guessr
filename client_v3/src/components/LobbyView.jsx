@@ -11,25 +11,25 @@ const LobbyView = ({
   joinRoomIdInput,
   handleJoinIdChange,
   isValidRoomId, // Pass this down for client-side validation before showing notification
-  showKickNotification, // Pass this down for notifications
+  showNotification, // Renamed from showKickNotification
   publicRooms,
   isLoadingRooms,
   handleQuickJoin, // Quick Join from room list
   fetchPublicRooms, // Refresh button
-  notificationToDisplay, // Added prop
-  dismissNotification, // Added prop
+  notificationToDisplay, // Was already correctly named from previous step if that was applied
+  dismissNotification, // Was already correctly named
 }) => {
   return (
     <div className="multiplayer-container">
       {/* Notification display logic for LobbyView */}
       {notificationToDisplay && (
-        <div className={`kick-notification ${notificationToDisplay.type === 'host' ? 'host-notification' : ''} ${notificationToDisplay.type === 'info' ? 'info-notification' : ''} ${notificationToDisplay.type === 'error' ? 'error-notification' : ''}`}>
-          <div className="kick-notification-content">
+        <div className={`notification-banner ${notificationToDisplay.type === 'success' ? 'notification-success' : ''} ${notificationToDisplay.type === 'info' ? 'notification-info' : ''} ${notificationToDisplay.type === 'error' ? 'notification-error' : ''}`}>
+          <div className="notification-content">
             <i className={`fas ${
-              notificationToDisplay.type === 'host' ? 'fa-crown' :
-              notificationToDisplay.type === 'info' ? 'fa-info-circle' :
+              notificationToDisplay.type === 'success' ? 'fa-check-circle' : 
+              notificationToDisplay.type === 'info' ? 'fa-info-circle' : 
               notificationToDisplay.type === 'error' ? 'fa-exclamation-triangle' :
-              'fa-user-slash' // Default for 'kick' or other unhandled types
+              'fa-bell' // Default icon
             }`}></i>
             <span>{notificationToDisplay.message}</span>
             <button 
@@ -105,15 +105,15 @@ const LobbyView = ({
                   onClick={() => {
                     const processedJoinId = joinRoomIdInput.trim();
                     if (!processedJoinId) {
-                        showKickNotification('请输入房间ID。', 'error');
+                        showNotification('请输入房间ID。', 'error');
                         return; // Stop further execution
                     } 
                     if (!isValidRoomId(processedJoinId)) { // Check validity only if not empty
-                        showKickNotification('请输入有效的4位字母或数字房间ID。', 'error');
+                        showNotification('请输入有效的4位字母或数字房间ID。', 'error');
                         return; // Stop further execution
                     }
                     // If both checks pass, it's valid
-                    showKickNotification(`正在加入房间 ${processedJoinId}...`, 'info');
+                    showNotification(`正在加入房间 ${processedJoinId}...`, 'info');
                     navigate(`/multiplayer/${processedJoinId}`);
                   }}
                 >
@@ -167,7 +167,7 @@ const LobbyView = ({
                     key={room.id}
                     className="room-card cursor-pointer p-4 border border-gray-200 rounded-lg hover:border-blue-400 hover:shadow-md transition-all bg-white text-gray-800 shadow-sm dark:bg-gray-100 dark:text-gray-900 dark:border-gray-700 hover:dark:border-blue-500"
                     onClick={() => {
-                      showKickNotification(`正在加入房间 ${room.id}...`, 'info');
+                      showNotification(`正在加入房间 ${room.id}...`, 'info');
                       navigate(`/multiplayer/${room.id}`);
                     }}
                   >

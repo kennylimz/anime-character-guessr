@@ -611,47 +611,87 @@
   font-style: italic;
 }
 
-/* 踢出通知样式 */
-.kick-notification {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  background-color: rgba(220, 53, 69, 0.9);
-  color: white;
-  border-radius: 8px;
-  padding: 15px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  animation: notification-slide-in 0.3s ease-out;
-  max-width: 90%;
-  min-width: 300px;
+/* General Notification Banner Styles */
+.notification-banner {
+  position: sticky; /* Stick to the top of its container (.multiplayer-container) */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it's above other content within the container */
+  padding: 12px 20px;
+  margin-bottom: 15px; /* Space below the notification */
+  border-bottom: 1px solid transparent; /* Base border, color set by type */
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners if at top of screen, or full if inside container */
+  font-size: 0.95rem;
+  color: #fff; /* Default text color, overridden by type */
+  display: flex;
+  justify-content: center; /* Center the content box if banner is full width */
+  animation: notification-slide-in 0.5s ease-out forwards;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 房主转移通知样式 */
-.kick-notification.host-notification {
-  background-color: rgba(74, 144, 226, 0.9);
-}
-
-.kick-notification-content {
+.notification-content {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 16px;
-  font-weight: 500;
+  gap: 10px; /* Space between icon, message, and button */
+  max-width: 800px; /* Max width for the content itself */
+  width: 100%;
 }
 
-.kick-notification i {
-  font-size: 20px;
+.notification-content i {
+  font-size: 1.2em; /* Slightly larger icon */
+  margin-right: 5px; /* Keep small gap if gap property not fully supported */
+}
+
+.notification-content span {
+  flex-grow: 1; /* Message takes available space */
+  text-align: left;
+}
+
+.notification-close-btn {
+  background: none;
+  border: none;
+  color: inherit; /* Inherits color from parent (.notification-banner type) */
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.notification-close-btn:hover {
+  opacity: 1;
+}
+
+/* Info Notification */
+.notification-banner.notification-info {
+  background-color: #e0f2fe; /* Light blue */
+  border-color: #7dd3fc; /* Medium blue */
+  color: #075985; /* Dark blue */
+}
+
+/* Success Notification */
+.notification-banner.notification-success {
+  background-color: #dcfce7; /* Light green */
+  border-color: #86efac; /* Medium green */
+  color: #166534; /* Dark green */
+}
+
+/* Error Notification */
+.notification-banner.notification-error {
+  background-color: #fee2e2; /* Light red */
+  border-color: #fca5a5; /* Medium red */
+  color: #991b1b; /* Dark red */
 }
 
 @keyframes notification-slide-in {
   from {
-    transform: translateX(-50%) translateY(-100px);
+    transform: translateY(-100%);
     opacity: 0;
   }
   to {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }

@@ -910,7 +910,7 @@ app.get('/public-rooms', (req, res) => {
         //     continue; 
         // }
 
-        if (room.isPublic) { // We will return all public rooms, status will indicate joinability
+        if (room.isPublic) { //return all public rooms, status will indicate joinability
             const hostPlayer = room.players.find(p => p.isHost);
             const hostUsername = hostPlayer ? hostPlayer.username : '未知';
             const currentStatus = room.currentGame ? 'in-progress' : 'waiting';
@@ -920,7 +920,6 @@ app.get('/public-rooms', (req, res) => {
                 name: roomId, 
                 playerCount: room.players.filter(p => !p.disconnected).length,
                 maxPlayers: room.settings && room.settings.characterNum ? (room.settings.characterNum + 2) : 10, 
-                gameMode: room.settings && room.settings.mainCharacterOnly ? '角色模式' : '混合模式',
                 host: hostUsername,
                 status: currentStatus // Added status field
             });

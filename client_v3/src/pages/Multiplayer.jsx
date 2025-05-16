@@ -83,7 +83,7 @@ const Multiplayer = () => {
   const [showCharacterPopup, setShowCharacterPopup] = useState(false);
   const [showSetAnswerPopup, setShowSetAnswerPopup] = useState(false);
   const [isAnswerSetter, setIsAnswerSetter] = useState(false);
-  const [kickNotification, setKickNotification] = useState(null);
+  const [notification, setNotification] = useState(null);
 
   const publicRoomsRef = useRef(publicRooms);
   useEffect(() => {
@@ -91,10 +91,10 @@ const Multiplayer = () => {
   }, [publicRooms]);
 
   // Function to show temporary notifications
-  const showKickNotification = (message, type = 'kick') => {
-    setKickNotification({ message, type });
+  const showNotification = (message, type = 'info') => {
+    setNotification({ message, type });
     setTimeout(() => {
-      setKickNotification(null);
+      setNotification(null);
     }, 5000); // Auto-close after 5 seconds
   };
 
@@ -117,12 +117,12 @@ const Multiplayer = () => {
   const handleCreateRoom = () => {
     let newRoomId = roomName.trim();
     if (!isValidRoomId(newRoomId) && newRoomId !== '') { // Allow empty for auto-generate, but validate if not empty
-        showKickNotification('自定义房间ID格式无效，将为您自动生成。需要4位字母或数字。', 'info');
+        showNotification('自定义房间ID格式无效，将为您自动生成。需要4位字母或数字。', 'info');
         newRoomId = uuidv4().substring(0, 4);
     } else if (newRoomId === '') {
         newRoomId = uuidv4().substring(0, 4);
     }
-    showKickNotification(`正在创建房间 ${newRoomId}...`, 'info');
+    showNotification(`正在创建房间 ${newRoomId}...`, 'info');
     setIsHost(true);
     setRoomName(''); // Clear input after use
     navigate(`/multiplayer/${newRoomId}`);
@@ -131,14 +131,14 @@ const Multiplayer = () => {
   // 复制房间ID而不是URL
   const copyRoomId = () => {
     navigator.clipboard.writeText(roomId);
-    showKickNotification('房间ID已复制到剪贴板', 'info');
+    showNotification('房间ID已复制到剪贴板', 'info');
   };
 
   // 复制房间链接
   const copyRoomLink = () => {
     const url = `${window.location.origin}/multiplayer/${roomId}`;
     navigator.clipboard.writeText(url);
-    showKickNotification('房间链接已复制到剪贴板', 'info');
+    showNotification('房间链接已复制到剪贴板', 'info');
   };
 
   // 获取公开房间列表
@@ -273,12 +273,12 @@ const Multiplayer = () => {
       if (newHostId === newSocket.id) {
         setIsHost(true);
         if (oldHostName === newHostName) {
-          showKickNotification(`原房主已断开连接，你已成为新房主！`, 'host');
+          showNotification(`原房主已断开连接，你已成为新房主！`, 'success');
         } else {
-          showKickNotification(`房主 ${oldHostName} 已将房主权限转移给你！`, 'host');
+          showNotification(`房主 ${oldHostName} 已将房主权限转移给你！`, 'success');
         }
       } else {
-        showKickNotification(`房主权限已从 ${oldHostName} 转移给 ${newHostName}`, 'host');
+        showNotification(`房主权限已从 ${oldHostName} 转移给 ${newHostName}`, 'success');
       }
     });
 
@@ -315,14 +315,14 @@ const Multiplayer = () => {
       
       if (playerId === newSocket.id) {
         // 如果当前玩家被踢出，显示通知并重定向到多人游戏大厅
-        showKickNotification('你已被房主踢出房间', 'kick');
+        showNotification('你已被房主踢出房间', 'error');
         setIsJoined(false); 
         setGameEnd(true); 
         setTimeout(() => {
           navigate('/multiplayer');
         }, 100); // 延长延迟时间确保通知显示后再跳转
       } else {
-        showKickNotification(`玩家 ${username} 已被踢出房间`, 'kick');
+        showNotification(`玩家 ${username} 已被踢出房间`, 'error');
         setPlayers(prevPlayers => prevPlayers.filter(p => p.id !== playerId));
       }
     });
@@ -689,11 +689,11 @@ const Multiplayer = () => {
   // Restored Quick Join function to client-side logic
   const handleQuickJoin = async () => {
     if (isLoadingRooms) { // Still good to keep, prevents quick clicks if lobby is initially loading
-      showKickNotification('房间列表仍在加载中，请稍候。', 'info');
+      showNotification('房间列表仍在加载中，请稍候。', 'info');
       return;
     }
     
-    showKickNotification('正在查找可加入的房间...', 'info');
+    showNotification('正在查找可加入的房间...', 'info');
     
     try {
       const response = await fetch(`${SOCKET_URL}/quick-join`);
@@ -703,7 +703,7 @@ const Multiplayer = () => {
           // Extract roomId from the URL provided by the backend
           const urlParts = data.url.split('/');
           const roomIdFromServer = urlParts[urlParts.length - 1];
-          showKickNotification(`正在加入房间 ${roomIdFromServer}...`, 'info');
+          showNotification(`正在加入房间 ${roomIdFromServer}...`, 'info');
           // Clear any previous input before navigating
           setJoinRoomIdInput(''); 
           setRoomName(''); 
@@ -711,22 +711,22 @@ const Multiplayer = () => {
         } else {
           // This case should ideally not happen if backend sends 404 for no rooms,
           // or if it sends a specific error message in JSON.
-          showKickNotification('未能获取到房间链接，请稍后再试。', 'error');
+          showNotification('未能获取到房间链接，请稍后再试。', 'error');
         }
       } else if (response.status === 404) {
         // The backend /quick-join sends 404 if no rooms are available.
         const errorJson = await response.json().catch(() => ({})); // Try to parse JSON, default to empty if fail
         const message = errorJson.error || '暂时没有可快速加入的房间，请尝试创建一个房间或稍后再试。';
-        showKickNotification(message, 'info');
+        showNotification(message, 'info');
       } else {
         // Handle other potential errors like 500, etc.
         const errorData = await response.text(); 
         console.error('[handleQuickJoin] Failed to quick join:', response.status, errorData);
-        showKickNotification(`快速加入失败 (状态: ${response.status})，请稍后再试。`, 'error');
+        showNotification(`快速加入失败 (状态: ${response.status})，请稍后再试。`, 'error');
       }
     } catch (error) {
       console.error('[handleQuickJoin] Error during quick join fetch:', error);
-      showKickNotification('快速加入时发生网络错误，请检查连接并稍后再试。', 'error');
+      showNotification('快速加入时发生网络错误，请检查连接并稍后再试。', 'error');
     }
   };
 
@@ -751,9 +751,9 @@ const Multiplayer = () => {
         joinRoomIdInput={joinRoomIdInput}
         handleJoinIdChange={handleJoinIdChange}
         isValidRoomId={isValidRoomId}
-        showKickNotification={showKickNotification}
-        notificationToDisplay={kickNotification}
-        dismissNotification={() => setKickNotification(null)}
+        showNotification={showNotification}
+        notificationToDisplay={notification}
+        dismissNotification={() => setNotification(null)}
         publicRooms={publicRooms}
         isLoadingRooms={isLoadingRooms}
         handleQuickJoin={handleQuickJoin}
@@ -765,20 +765,19 @@ const Multiplayer = () => {
 
   return (
     <div className="multiplayer-container">
-      {/* 添加踢出通知 */}
-      {kickNotification && (
-        <div className={`kick-notification ${kickNotification.type === 'host' ? 'host-notification' : ''} ${kickNotification.type === 'info' ? 'info-notification' : ''} ${kickNotification.type === 'error' ? 'error-notification' : ''}`}>
-          <div className="kick-notification-content">
+      {notification && (
+        <div className={`notification-banner ${notification.type === 'success' ? 'notification-success' : ''} ${notification.type === 'info' ? 'notification-info' : ''} ${notification.type === 'error' ? 'notification-error' : ''}`}>
+          <div className="notification-content">
             <i className={`fas ${
-              kickNotification.type === 'host' ? 'fa-crown' : 
-              kickNotification.type === 'info' ? 'fa-info-circle' : 
-              kickNotification.type === 'error' ? 'fa-exclamation-triangle' :
-              'fa-exclamation-circle'
+              notification.type === 'success' ? 'fa-check-circle' : 
+              notification.type === 'info' ? 'fa-info-circle' : 
+              notification.type === 'error' ? 'fa-exclamation-triangle' :
+              'fa-bell'
             }`}></i>
-            <span>{kickNotification.message}</span>
+            <span>{notification.message}</span>
             <button 
               className="notification-close-btn" 
-              onClick={() => setKickNotification(null)}
+              onClick={() => setNotification(null)}
               aria-label="关闭通知"
             >
               &times;
