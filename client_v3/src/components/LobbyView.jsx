@@ -16,9 +16,33 @@ const LobbyView = ({
   isLoadingRooms,
   handleQuickJoin, // Quick Join from room list
   fetchPublicRooms, // Refresh button
+  notificationToDisplay, // Added prop
+  dismissNotification, // Added prop
 }) => {
   return (
     <div className="multiplayer-container">
+      {/* Notification display logic for LobbyView */}
+      {notificationToDisplay && (
+        <div className={`kick-notification ${notificationToDisplay.type === 'host' ? 'host-notification' : ''} ${notificationToDisplay.type === 'info' ? 'info-notification' : ''} ${notificationToDisplay.type === 'error' ? 'error-notification' : ''}`}>
+          <div className="kick-notification-content">
+            <i className={`fas ${
+              notificationToDisplay.type === 'host' ? 'fa-crown' :
+              notificationToDisplay.type === 'info' ? 'fa-info-circle' :
+              notificationToDisplay.type === 'error' ? 'fa-exclamation-triangle' :
+              'fa-user-slash' // Default for 'kick' or other unhandled types
+            }`}></i>
+            <span>{notificationToDisplay.message}</span>
+            <button 
+              className="notification-close-btn" 
+              onClick={dismissNotification}
+              aria-label="关闭通知"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+
       <a
         href="/"
         className="social-link floating-back-button"

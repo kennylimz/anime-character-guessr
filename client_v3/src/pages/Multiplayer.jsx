@@ -752,6 +752,8 @@ const Multiplayer = () => {
         handleJoinIdChange={handleJoinIdChange}
         isValidRoomId={isValidRoomId}
         showKickNotification={showKickNotification}
+        notificationToDisplay={kickNotification}
+        dismissNotification={() => setKickNotification(null)}
         publicRooms={publicRooms}
         isLoadingRooms={isLoadingRooms}
         handleQuickJoin={handleQuickJoin}
