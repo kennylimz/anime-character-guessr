@@ -214,10 +214,10 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   className="preset-button"
                   onClick={() => {
                     alert('那很有生活了😅');
-                    applyPresetConfig('二游高手+');
+                    applyPresetConfig('二游高手');
                   }}
                 >
-                  二游高手+
+                  二游高手
                 </button>
                 <button 
                   className="preset-button"

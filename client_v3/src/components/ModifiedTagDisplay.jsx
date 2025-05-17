@@ -20,6 +20,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
       172168, // 崩坏3
       300648, // 蔚蓝档案
       385208, // 鸣潮
+      208559, // 碧蓝航线
     ]
   );
 

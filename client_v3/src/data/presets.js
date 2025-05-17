@@ -112,7 +112,7 @@ export const gamePresets = {
     externalTagMode: false,
     dynamicFields: ['startYear', 'endYear']
   },
-  '二游高手+': {
+  '二游高手': {
     startYear: currentYear - 10,
     endYear: currentYear,
     topNSubjects: 50,
@@ -123,7 +123,7 @@ export const gamePresets = {
     characterNum: 30,
     maxAttempts: 10,
     useIndex: true,
-    indexId: "75442",
+    indexId: "74622",
     enableHints: false,
     includeGame: true,
     subjectSearch: true,
