@@ -686,6 +686,10 @@ const Multiplayer = () => {
                 onTransferHost={handleTransferHost}
                 onMessageChange={handleMessageChange}
               />
+          <div className="anonymous-mode-info">
+            匿名模式？点表头"名"切换。<br/>
+            沟通玩法？点自己名字编辑短信息。
+          </div>
 
           {!isGameStarted && !globalGameEnd && (
             <>
@@ -731,10 +735,6 @@ const Multiplayer = () => {
                     >
                       有人想出题？
                     </button>
-                  </div>
-                  <div className="anonymous-mode-info">
-                    匿名模式？点表头"名"切换。<br/>
-                    想沟通玩法？点自己名字编辑短信息。
                   </div>
                 </div>
               )}
