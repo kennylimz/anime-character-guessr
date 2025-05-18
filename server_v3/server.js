@@ -927,7 +927,7 @@ app.get('/clean-rooms', (req, res) => {
     const now = Date.now();
     let cleaned = 0;
     for (const [roomId, room] of rooms.entries()) {
-        if (room.lastActive && now - room.lastActive > 600000) {
+        if (room.lastActive && now - room.lastActive > 300000) {
             // Notify all players in the room
             io.to(roomId).emit('roomClosed', {message: '房间因长时间无活动已关闭'});
             // Delete the room

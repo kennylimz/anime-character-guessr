@@ -21,6 +21,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
       300648, // 蔚蓝档案
       385208, // 鸣潮
       208559, // 碧蓝航线
+      109378, // 命运-冠位指定
     ]
   );
 

@@ -1,7 +1,7 @@
 const axios = require('axios');
 require('dotenv').config()
 
-const PING_INTERVAL = 14.5 * 60 * 1000; // 14 minutes in milliseconds
+const PING_INTERVAL = 6 * 60 * 1000; // 6 minutes in milliseconds
 
 const pingServer = () => {
   axios.get(`${process.env.SERVER_URL}/clean-rooms`)
