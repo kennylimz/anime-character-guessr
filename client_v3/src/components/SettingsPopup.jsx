@@ -164,7 +164,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-       {hideRestart ? (
+        {hideRestart ? (
           <button className="popup-close multiplayer-confirm" onClick={onClose}>确认修改</button>
         ) : (
           <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
@@ -266,6 +266,16 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     onSettingsChange('externalTagMode', e.target.checked);
                   }}
                   style={{ marginRight: '50px', marginLeft: '0px' }}
+                />
+                <label>*提示多多</label>
+                <input 
+                  type="checkbox"
+                  checked={gameSettings.enableMultipleHints}
+                  onChange={(e) => {
+                    onSettingsChange('enableMultipleHints', e.target.checked);
+                  }}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                  disabled={!gameSettings.enableHints}
                 />
                 {/* <label>主播模式</label>
                 <span className="tooltip-trigger">

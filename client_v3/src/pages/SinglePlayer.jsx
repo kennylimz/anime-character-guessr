@@ -28,6 +28,7 @@ function SinglePlayer() {
     first: null,
     second: null
   });
+  const [multipleHints, setMultipleHints] = useState([]);
   const [gameSettings, setGameSettings] = useLocalStorage('singleplayer-game-settings', {
     startYear: new Date().getFullYear()-10,
     endYear: new Date().getFullYear(),
@@ -48,7 +49,8 @@ function SinglePlayer() {
     subjectTagNum: 6,
     enableTagCensor: false,
     commonTags: true,
-    externalTagMode: false
+    externalTagMode: false,
+    enableMultipleHints: true
   });
   const [currentGameSettings, setCurrentGameSettings] = useState(gameSettings);
 
@@ -64,13 +66,19 @@ function SinglePlayer() {
       try {
         const character = await getRandomCharacter(gameSettings);
         setCurrentGameSettings({ ...gameSettings });
+        console.log(character);
+        const a = [];
+        a.push(...character.rawTags.keys().filter(tag => !correlation(tag, character.appearances[0], 3)).map(tag => "……"+tag.trim()+"……"))
+        console.log(a);
         if (isMounted) {
           setAnswerCharacter(character);
           setGuessesLeft(gameSettings.maxAttempts);
           // Prepare hints based on settings
           let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
+          let multipleHintTexts = [];
           if (gameSettings.enableHints && character.summary) {
             // Split summary into sentences using Chinese punctuation
+            
             const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
               .split(/[。、，。！？ ""]/).filter(s => s.trim());
             if (sentences.length > 0) {
@@ -81,7 +89,15 @@ function SinglePlayer() {
               }
               hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
             }
+            if(gameSettings.enableMultipleHints){
+              multipleHintTexts.push(...character.rawTags.keys().filter(tag => !correlation(tag, character.appearances[0], 3)).map(tag => "……"+tag.trim()+"……"));
+              multipleHintTexts.push(...sentences.map(sen => "……"+sen.trim()+"……"));
+              multipleHintTexts.sort(() => Math.random() - 0.5);
+              setMultipleHints(multipleHintTexts);
+            }
           }
+          
+          
           setHints({
             first: hintTexts[0],
             second: hintTexts[1]
@@ -253,6 +269,7 @@ function SinglePlayer() {
       setAnswerCharacter(character);
       // Prepare hints based on settings for new game
       let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
+      let multipleHintTexts = [];
       if (gameSettings.enableHints && character.summary) {
         // Split summary into sentences using Chinese punctuation
         const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
@@ -260,11 +277,20 @@ function SinglePlayer() {
         if (sentences.length > 0) {
           // Randomly select 2 sentences if available
           const selectedIndices = new Set();
+          console.log("sentences");
+          console.log(sentences);
           while (selectedIndices.size < Math.min(2, sentences.length)) {
             selectedIndices.add(Math.floor(Math.random() * sentences.length));
+            
           }
           hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
         }
+        if(gameSettings.enableMultipleHints){
+              multipleHintTexts.push(...character.rawTags.keys().filter(tag => !correlation(tag, character.appearances[0], 3)).map(tag => "……"+tag.trim()+"……"));
+              multipleHintTexts.push(...sentences.map(sen => "……"+sen.trim()+"……"));
+              multipleHintTexts.sort(() => Math.random() - 0.5);
+              setMultipleHints(multipleHintTexts);
+            }
       }
       setHints({
         first: hintTexts[0],
@@ -313,6 +339,18 @@ function SinglePlayer() {
     alert('已投降！查看角色详情');
   };
 
+  const correlation = (str1, str2, len) => {
+    const minLength = Math.min(str1.length, str2.length);
+    console.log("str1:" + str1);
+    console.log("str2:" + str2);
+    for (let i = 0; i <= minLength - len; i++) {
+        const substr1 = str1.substring(i, i + len);
+        if (str2.includes(substr1)) {
+            return true;
+        }
+    }
+    return false;
+  }
   return (
     <div className="single-player-container">
       <SocialLinks
@@ -344,8 +382,11 @@ function SinglePlayer() {
         onRestart={handleRestartWithSettings}
         answerCharacter={answerCharacter}
         finishInit={finishInit}
+        enableHints={currentGameSettings.enableHints}
         hints={hints}
         onSurrender={handleSurrender}
+        enableMultipleHints={currentGameSettings.enableMultipleHints}
+        multipleHints={multipleHints}
       />
 
       <GuessesTable

@@ -121,6 +121,22 @@ html, body, #root {
   cursor: not-allowed;
 }
 
+.hint-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background: #70a7fe;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hint-button:hover {
+  background: #477cd2;
+  transform: translateY(-1px);
+}
+
 .hint-container {
   display: flex;
   align-items: center;
