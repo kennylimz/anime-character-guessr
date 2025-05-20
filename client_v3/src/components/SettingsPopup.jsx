@@ -267,16 +267,6 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   }}
                   style={{ marginRight: '50px', marginLeft: '0px' }}
                 />
-                <label>*提示多多</label>
-                <input 
-                  type="checkbox"
-                  checked={gameSettings.enableMultipleHints}
-                  onChange={(e) => {
-                    onSettingsChange('enableMultipleHints', e.target.checked);
-                  }}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
-                  disabled={!gameSettings.enableHints}
-                />
                 {/* <label>主播模式</label>
                 <span className="tooltip-trigger">
                   ?
@@ -302,6 +292,16 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     onSettingsChange('enableHints', e.target.checked);
                   }}
                   style={{ marginRight: '50px', marginLeft: '0px' }}
+                />
+                <label>*提示多多</label>
+                <input 
+                  type="checkbox"
+                  checked={gameSettings.enableMultipleHints}
+                  onChange={(e) => {
+                    onSettingsChange('enableMultipleHints', e.target.checked);
+                  }}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                  disabled={!gameSettings.enableHints}
                 />
               </div>
               <div className="settings-row">
