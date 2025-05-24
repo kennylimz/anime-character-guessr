@@ -23,6 +23,17 @@ const announcements = [
   },
 
   {
+    version: '1.4.0',
+    date: '2025-05-23',
+    content: `
+      简单做了一个组队功能，允许队友间共享猜测。<br/>
+      计分什么的还没想好怎么弄。
+      
+    `
+  },
+
+
+  {
     version: '1.3.2',
     date: '2025-05-16',
     content: `
