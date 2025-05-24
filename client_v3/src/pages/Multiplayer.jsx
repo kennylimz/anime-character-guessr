@@ -387,9 +387,13 @@ const Multiplayer = () => {
         ...appearances
       };
       const isCorrect = guessData.id === answerCharacter.id;
-      setGuessesLeft(prev => prev - 1);
       // Send guess result to server
       guessData.rawTags = Array.from(appearances.rawTags?.entries?.() || []);
+      if (!guessData || !guessData.id || !guessData.name) {
+        console.warn('Invalid guessData, not emitting');
+        return;
+      }
+      setGuessesLeft(prev => prev - 1);
       socket.emit('playerGuess', {
         roomId,
         guessResult: {
