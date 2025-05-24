@@ -28,6 +28,7 @@ const Multiplayer = () => {
   const [username, setUsername] = useState('');
   const [isJoined, setIsJoined] = useState(false);
   const [socket, setSocket] = useState(null);
+  const socketRef = useRef(null);
   const [error, setError] = useState('');
   const [showSettings, setShowSettings] = useState(false);
   const [isPublic, setIsPublic] = useState(true);
@@ -86,6 +87,7 @@ const Multiplayer = () => {
     // Initialize socket connection
     const newSocket = io(SOCKET_URL);
     setSocket(newSocket);
+    socketRef.current = newSocket;
 
     // 用于追踪事件是否已经被处理
     const kickEventProcessed = {}; 
@@ -306,7 +308,7 @@ const Multiplayer = () => {
   useEffect(() => {
     console.log('Game Settings:', gameSettings);
     if (isHost && isJoined) {
-      socket.emit('updateGameSettings', { roomId, settings: gameSettings });
+      socketRef.current?.emit('updateGameSettings', { roomId, settings: gameSettings });
     }
   }, [showSettings]);
 
@@ -323,19 +325,19 @@ const Multiplayer = () => {
 
     setError('');
     if (isHost) {
-      socket.emit('createRoom', { roomId, username });
+      socketRef.current?.emit('createRoom', { roomId, username });
       // Send initial game settings when creating room
-      socket.emit('updateGameSettings', { roomId, settings: gameSettings });
+      socketRef.current?.emit('updateGameSettings', { roomId, settings: gameSettings });
     } else {
-      socket.emit('joinRoom', { roomId, username });
+      socketRef.current?.emit('joinRoom', { roomId, username });
       // Request current settings from server
-      socket.emit('requestGameSettings', { roomId });
+      socketRef.current?.emit('requestGameSettings', { roomId });
     }
     setIsJoined(true);
   };
 
   const handleReadyToggle = () => {
-    socket.emit('toggleReady', { roomId });
+    socketRef.current?.emit('toggleReady', { roomId });
   };
 
   const handleSettingsChange = (key, value) => {
@@ -353,9 +355,8 @@ const Multiplayer = () => {
     if (gameEndedRef.current) return;
     gameEndedRef.current = true;
     setGameEnd(true);
-
     // Emit game end event to server
-    socket.emit('gameEnd', {
+    socketRef.current?.emit('gameEnd', {
       roomId,
       result: isWin ? 'win' : 'lose'
     });
@@ -363,13 +364,13 @@ const Multiplayer = () => {
     // Update player score
     if (isWin) {
       const updatedPlayers = players.map(p => {
-        if (p.id === socket.id) {
+        if (p.id === socketRef.current?.id) {
           return { ...p, score: p.score + 1 };
         }
         return p;
       });
       setPlayers(updatedPlayers);
-      socket.emit('updateScore', { roomId, score: updatedPlayers.find(p => p.id === socket.id).score });
+      socketRef.current?.emit('updateScore', { roomId, score: updatedPlayers.find(p => p.id === socketRef.current?.id)?.score });
     }
   };
 
@@ -394,7 +395,7 @@ const Multiplayer = () => {
         return;
       }
       setGuessesLeft(prev => prev - 1);
-      socket.emit('playerGuess', {
+      socketRef.current?.emit('playerGuess', {
         roomId,
         guessResult: {
           isCorrect,
@@ -500,7 +501,7 @@ const Multiplayer = () => {
     setGuessesLeft(newGuessesLeft);
 
     // Always emit timeout
-    socket.emit('timeOut', { roomId });
+    socketRef.current?.emit('timeOut', { roomId });
 
     if (newGuessesLeft <= 0) {
       setTimeout(() => {
@@ -521,7 +522,7 @@ const Multiplayer = () => {
     setGameEnd(true);
 
     // Emit game end event with surrender result
-    socket.emit('gameEnd', {
+    socketRef.current?.emit('gameEnd', {
       roomId,
       result: 'surrender'
     });
@@ -533,7 +534,7 @@ const Multiplayer = () => {
         const character = await getRandomCharacter(gameSettings);
         character.rawTags = Array.from(character.rawTags.entries());
         const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
-        socket.emit('gameStart', {
+        socketRef.current?.emit('gameStart', {
           roomId,
           character: encryptedCharacter,
           settings: gameSettings
@@ -577,25 +578,25 @@ const Multiplayer = () => {
       setIsManualMode(false);
     } else {
       // Set all players as ready when entering manual mode
-      socket.emit('enterManualMode', { roomId });
+      socketRef.current?.emit('enterManualMode', { roomId });
       setIsManualMode(true);
     }
   };
 
   const handleSetAnswerSetter = (setterId) => {
     if (!isHost || !isManualMode) return;
-    socket.emit('setAnswerSetter', { roomId, setterId });
+    socketRef.current?.emit('setAnswerSetter', { roomId, setterId });
   };
 
   const handleVisibilityToggle = () => {
-    socket.emit('toggleRoomVisibility', { roomId });
+    socketRef.current?.emit('toggleRoomVisibility', { roomId });
   };
 
   const handleSetAnswer = async ({ character, hints }) => {
     try {
       character.rawTags = Array.from(character.rawTags.entries());
       const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
-      socket.emit('setAnswer', {
+      socketRef.current?.emit('setAnswer', {
         roomId,
         character: encryptedCharacter,
         hints
@@ -608,17 +609,17 @@ const Multiplayer = () => {
   };
 
   const handleKickPlayer = (playerId) => {
-    if (!isHost || !socket) return;
+    if (!isHost || !socketRef.current) return;
     
     // 确认当前玩家是房主
-    const currentPlayer = players.find(p => p.id === socket.id);
+    const currentPlayer = players.find(p => p.id === socketRef.current.id);
     if (!currentPlayer || !currentPlayer.isHost) {
       alert('只有房主可以踢出玩家');
       return;
     }
     
     // 防止房主踢出自己
-    if (playerId === socket.id) {
+    if (playerId === socketRef.current.id) {
       alert('房主不能踢出自己');
       return;
     }
@@ -626,7 +627,7 @@ const Multiplayer = () => {
     // 确认后再踢出
     if (window.confirm('确定要踢出该玩家吗？')) {
       try {
-        socket.emit('kickPlayer', { roomId, playerId });
+        socketRef.current.emit('kickPlayer', { roomId, playerId });
       } catch (error) {
         console.error('踢出玩家失败:', error);
         alert('踢出玩家失败，请重试');
@@ -635,11 +636,11 @@ const Multiplayer = () => {
   };
 
   const handleTransferHost = (playerId) => {
-    if (!isHost || !socket) return;
+    if (!isHost || !socketRef.current) return;
     
     // 确认后再转移房主
     if (window.confirm('确定要将房主权限转移给该玩家吗？')) {
-      socket.emit('transferHost', { roomId, newHostId: playerId });
+      socketRef.current.emit('transferHost', { roomId, newHostId: playerId });
       setIsHost(false);
     }
   };
@@ -672,20 +673,20 @@ const Multiplayer = () => {
   // Handle player message change
   const handleMessageChange = (newMessage) => {
     setPlayers(prevPlayers => prevPlayers.map(p =>
-      p.id === socket.id ? { ...p, message: newMessage } : p
+      p.id === socketRef.current?.id ? { ...p, message: newMessage } : p
     ));
     // Emit to server for sync
-    socket.emit('updatePlayerMessage', { roomId, message: newMessage });
+    socketRef.current?.emit('updatePlayerMessage', { roomId, message: newMessage });
   };
 
   // Handle player team change
   const handleTeamChange = (playerId, newTeam) => {
-    if (!socket) return;
+    if (!socketRef.current) return;
     setPlayers(prevPlayers => prevPlayers.map(p =>
       p.id === playerId ? { ...p, team: newTeam || null } : p
     ));
     // Emit to server for sync
-    socket.emit('updatePlayerTeam', { roomId, team: newTeam || null });
+    socketRef.current.emit('updatePlayerTeam', { roomId, team: newTeam || null });
   };
 
   if (!roomId) {
@@ -739,7 +740,7 @@ const Multiplayer = () => {
         <>
           <PlayerList 
                 players={players} 
-                socket={socket} 
+                socket={socketRef.current} 
                 isGameStarted={isGameStarted}
                 handleReadyToggle={handleReadyToggle}
                 onAnonymousModeChange={setShowNames}
