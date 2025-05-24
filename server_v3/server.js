@@ -338,7 +338,11 @@ io.on('connection', (socket) => {
             players: room.players
         });
 
-        console.log(`Player ${player.username} made a guess in room ${roomId}: ${guessResult.guessData.name} (${guessResult.isCorrect ? 'correct' : 'incorrect'})`);
+        if (guessResult.guessData && guessResult.guessData.name) {
+            console.log(`Player ${player.username} made a guess in room ${roomId}: ${guessResult.guessData.name} (${guessResult.isCorrect ? 'correct' : 'incorrect'})`);
+        } else {
+            console.log(`Player ${player.username} made a guess in room ${roomId} with no valid guessData.`, guessResult);
+        }
     });
 
     // Handle game end
