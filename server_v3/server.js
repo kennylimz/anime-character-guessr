@@ -58,7 +58,8 @@ io.on('connection', (socket) => {
                 score: 0,
                 ready: false,
                 guesses: '',
-                message: ''
+                message: '',
+                team: null
             }],
             lastActive: Date.now()
         });
@@ -96,7 +97,8 @@ io.on('connection', (socket) => {
                     score: 0,
                     ready: false,
                     guesses: '',
-                    message: ''
+                    message: '',
+                    team: null
                 }],
                 lastActive: Date.now()
             });
@@ -149,7 +151,8 @@ io.on('connection', (socket) => {
             score: 0,
             ready: false,
             guesses: '',
-            message: ''
+            message: '',
+            team: null
         });
 
         // Join socket to room
@@ -312,6 +315,19 @@ io.on('connection', (socket) => {
                     });
                 }
             }
+        }
+
+        // Team guess sharing: broadcast guessData to teammates (not self, only for teams 1-8)
+        if (player.team && /^[1-8]$/.test(player.team) && guessResult.guessData && !guessResult.isCorrect) {
+            room.players
+                .filter(p => p.team === player.team && p.id !== socket.id && !p.isAnswerSetter)
+                .forEach(teammate => {
+                    io.to(teammate.id).emit('boardcastTeamGuess', {
+                        guessData: { ...guessResult.guessData, guessrName: player.username },
+                        playerId: socket.id,
+                        playerName: player.username
+                    });
+                });
         }
 
         // Update player's guesses string
@@ -890,6 +906,32 @@ io.on('connection', (socket) => {
         });
 
         console.log(`Player ${player.username} updated their message in room ${roomId}: ${message}`);
+    });
+
+    // Handle player team update
+    socket.on('updatePlayerTeam', ({ roomId, team }) => {
+        const room = rooms.get(roomId);
+        if (!room) {
+            socket.emit('error', { message: 'Room not found' });
+            return;
+        }
+        // Only allow the player themselves to update their team
+        const player = room.players.find(p => p.id === socket.id);
+        if (!player) {
+            socket.emit('error', { message: 'Player not found in room' });
+            return;
+        }
+        // Accept only null or 1-8 as valid team values
+        if (team !== null && !(typeof team === 'string' && /^[1-8]$/.test(team))) {
+            socket.emit('error', { message: 'Invalid team value' });
+            return;
+        }
+        player.team = team === '' ? null : team;
+        io.to(roomId).emit('updatePlayers', {
+            players: room.players,
+            isPublic: room.isPublic
+        });
+        console.log(`Player ${player.username} updated their team to ${player.team} in room ${roomId}`);
     });
 });
 

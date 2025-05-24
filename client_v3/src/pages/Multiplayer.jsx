@@ -14,7 +14,7 @@ import GameSettingsDisplay from '../components/GameSettingsDisplay';
 import Leaderboard from '../components/Leaderboard';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
-import CryptoJS from 'crypto-js';
+import CryptoJS, { x64 } from 'crypto-js';
 
 const secret = import.meta.env.VITE_AES_SECRET || 'My-Secret-Key';
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
@@ -62,6 +62,8 @@ const Multiplayer = () => {
   const [guesses, setGuesses] = useState([]);
   const [guessesLeft, setGuessesLeft] = useState(10);
   const [isGuessing, setIsGuessing] = useState(false);
+  const answerCharacterRef = useRef(null);
+  const gameSettingsRef = useRef(gameSettings);
   const [answerCharacter, setAnswerCharacter] = useState(null);
   const [hints, setHints] = useState({
     first: null,
@@ -113,6 +115,7 @@ const Multiplayer = () => {
       const decryptedCharacter = JSON.parse(CryptoJS.AES.decrypt(character, secret).toString(CryptoJS.enc.Utf8));
       decryptedCharacter.rawTags = new Map(decryptedCharacter.rawTags);
       setAnswerCharacter(decryptedCharacter);
+      answerCharacterRef.current = decryptedCharacter;
       setGameSettings(settings);
       setGuessesLeft(settings.maxAttempts);
       setIsAnswerSetter(isAnswerSetterFlag);
@@ -152,7 +155,6 @@ const Multiplayer = () => {
       setGuesses([]);
     });
 
-    // Add new event listener for guess history updates
     newSocket.on('guessHistoryUpdate', ({ guesses }) => {
       setGuessesHistory(guesses);
     });
@@ -222,6 +224,55 @@ const Multiplayer = () => {
       }
     });
 
+    // Listen for team guess broadcasts
+    newSocket.on('boardcastTeamGuess', ({ guessData, playerId, playerName }) => {
+      if (guessData.rawTags) {
+        guessData.rawTags = new Map(guessData.rawTags);
+      }
+    
+      const feedback = generateFeedback(guessData, answerCharacterRef.current, gameSettingsRef.current);
+    
+      const newGuess = {
+        id: guessData.id,
+        icon: guessData.image,
+        name: guessData.name,
+        nameCn: guessData.nameCn,
+        gender: guessData.gender,
+        genderFeedback: feedback.gender.feedback,
+        latestAppearance: guessData.latestAppearance,
+        latestAppearanceFeedback: feedback.latestAppearance.feedback,
+        earliestAppearance: guessData.earliestAppearance,
+        earliestAppearanceFeedback: feedback.earliestAppearance.feedback,
+        highestRating: guessData.highestRating,
+        ratingFeedback: feedback.rating.feedback,
+        appearancesCount: guessData.appearances.length,
+        appearancesCountFeedback: feedback.appearancesCount.feedback,
+        popularity: guessData.popularity,
+        popularityFeedback: feedback.popularity.feedback,
+        appearanceIds: guessData.appearanceIds,
+        sharedAppearances: feedback.shared_appearances,
+        metaTags: feedback.metaTags.guess,
+        sharedMetaTags: feedback.metaTags.shared,
+        isAnswer: false,
+        playerId,
+        playerName,
+        guessrName: guessData.guessrName || playerName // prefer guessData.guessrName if present
+      };
+    
+      setGuesses(prev => [...prev, newGuess]);
+      setGuessesLeft(prev => {
+        const newGuessesLeft = prev - 1;
+        if (newGuessesLeft <= 0) {
+          setTimeout(() => {
+            handleGameEnd(false);
+          }, 100);
+        }
+        return newGuessesLeft;
+      });
+      setShouldResetTimer(true);
+      setTimeout(() => setShouldResetTimer(false), 100);
+    });
+
     return () => {
       // 清理事件监听和连接
       newSocket.off('playerKicked');
@@ -235,7 +286,7 @@ const Multiplayer = () => {
       newSocket.off('updateGameSettings');
       newSocket.off('gameEnded');
       newSocket.off('resetReadyStatus');
-      
+      newSocket.off('boardcastTeamGuess');
       newSocket.disconnect();
     };
   }, [navigate]);
@@ -258,6 +309,10 @@ const Multiplayer = () => {
       socket.emit('updateGameSettings', { roomId, settings: gameSettings });
     }
   }, [showSettings]);
+
+  useEffect(() => {
+    gameSettingsRef.current = gameSettings;
+  }, [gameSettings]);
 
   const handleJoinRoom = () => {
     if (!username.trim()) {
@@ -331,20 +386,18 @@ const Multiplayer = () => {
         ...character,
         ...appearances
       };
-
       const isCorrect = guessData.id === answerCharacter.id;
       setGuessesLeft(prev => prev - 1);
       // Send guess result to server
+      guessData.rawTags = Array.from(appearances.rawTags?.entries?.() || []);
       socket.emit('playerGuess', {
         roomId,
         guessResult: {
           isCorrect,
-          icon: guessData.image,
-          name: guessData.name,
-          nameCn: guessData.nameCn
+          guessData
         }
       });
-
+      guessData.rawTags = new Map(guessData.rawTags);
       if (isCorrect) {
         setGuesses(prevGuesses => [...prevGuesses, {
           id: guessData.id,
@@ -372,7 +425,6 @@ const Multiplayer = () => {
           sharedMetaTags: guessData.metaTags,
           isAnswer: true
         }]);
-
         handleGameEnd(true);
       } else if (guessesLeft <= 1) {
         const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
@@ -399,7 +451,6 @@ const Multiplayer = () => {
           sharedMetaTags: feedback.metaTags.shared,
           isAnswer: false
         }]);
-
         handleGameEnd(false);
       } else {
         const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
@@ -623,6 +674,16 @@ const Multiplayer = () => {
     socket.emit('updatePlayerMessage', { roomId, message: newMessage });
   };
 
+  // Handle player team change
+  const handleTeamChange = (playerId, newTeam) => {
+    if (!socket) return;
+    setPlayers(prevPlayers => prevPlayers.map(p =>
+      p.id === playerId ? { ...p, team: newTeam || null } : p
+    ));
+    // Emit to server for sync
+    socket.emit('updatePlayerTeam', { roomId, team: newTeam || null });
+  };
+
   if (!roomId) {
     return <div>Loading...</div>;
   }
@@ -685,6 +746,7 @@ const Multiplayer = () => {
                 onKickPlayer={handleKickPlayer}
                 onTransferHost={handleTransferHost}
                 onMessageChange={handleMessageChange}
+                onTeamChange={handleTeamChange}
               />
           <div className="anonymous-mode-info">
             匿名模式？点表头"名"切换。<br/>
@@ -822,9 +884,9 @@ const Multiplayer = () => {
                               <td key={playerGuesses.username}>
                                 {playerGuesses.guesses[rowIndex] && (
                                   <>
-                                    <img className="character-icon" src={playerGuesses.guesses[rowIndex].icon} alt={playerGuesses.guesses[rowIndex].name} />
-                                    <div className="character-name">{playerGuesses.guesses[rowIndex].name}</div>
-                                    <div className="character-name-cn">{playerGuesses.guesses[rowIndex].nameCn}</div>
+                                    <img className="character-icon" src={playerGuesses.guesses[rowIndex].guessData.image} alt={playerGuesses.guesses[rowIndex].guessData.name} />
+                                    <div className="character-name">{playerGuesses.guesses[rowIndex].guessData.name}</div>
+                                    <div className="character-name-cn">{playerGuesses.guesses[rowIndex].guessData.nameCn}</div>
                                   </>
                                 )}
                               </td>
@@ -911,9 +973,9 @@ const Multiplayer = () => {
                             <td key={playerGuesses.username}>
                               {playerGuesses.guesses[rowIndex] && (
                                 <>
-                                  <img className="character-icon" src={playerGuesses.guesses[rowIndex].icon} alt={playerGuesses.guesses[rowIndex].name} />
-                                  <div className="character-name">{playerGuesses.guesses[rowIndex].name}</div>
-                                  <div className="character-name-cn">{playerGuesses.guesses[rowIndex].nameCn}</div>
+                                  <img className="character-icon" src={playerGuesses.guesses[rowIndex].guessData.image} alt={playerGuesses.guesses[rowIndex].guessData.name} />
+                                  <div className="character-name">{playerGuesses.guesses[rowIndex].guessData.name}</div>
+                                  <div className="character-name-cn">{playerGuesses.guesses[rowIndex].guessData.nameCn}</div>
                                 </>
                               )}
                             </td>

@@ -214,13 +214,16 @@
   width: 20%;
 }
 .score-table th:nth-child(2) {
-  width: 30%;
+  width: 8%; /* 队 column: small */
 }
 .score-table th:nth-child(3) {
-  width: 10%;
+  width: 32%; /* 名 column: large */
 }
-.score-table td:nth-child(4) {
-  width: 50%;
+.score-table th:nth-child(4) {
+  width: 8%; /* 分 column: small */
+}
+.score-table th:nth-child(5) {
+  width: 32%; /* 猜 column: large */
 }
 
 .score-table .table-head-name-button {

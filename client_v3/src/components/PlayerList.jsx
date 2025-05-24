@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
-const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter, onKickPlayer, onTransferHost, onMessageChange }) => {
+const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter, onKickPlayer, onTransferHost, onMessageChange, onTeamChange }) => {
   const [showNames, setShowNames] = useState(true);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const [editingMessagePlayerId, setEditingMessagePlayerId] = useState(null);
   const [messageDraft, setMessageDraft] = useState("");
+
+  const teamOptions = [
+    { value: '', label: '无' },
+    ...Array.from({ length: 8 }, (_, i) => ({ value: (i + 1).toString(), label: (i + 1).toString() }))
+  ];
 
   // Add socket event listener for waitForAnswer
  useEffect(() => {
@@ -108,12 +113,19 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
     }
   };
 
+  const handleTeamChange = (playerId, newTeam) => {
+    if (onTeamChange) {
+      onTeamChange(playerId, newTeam);
+    }
+  };
+
   return (
     <div className="players-list">
       <table className="score-table">
         <thead>
           <tr>
             <th></th>
+            <th>队</th>
             <th>
               <button className='table-head-name-button'
                 onClick={handleShowNamesToggle}>
@@ -136,6 +148,21 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
             >
               <td>
                 {getStatusDisplay(player)}
+              </td>
+              <td>
+                {socket?.id === player.id && !player.ready && !isGameStarted ? (
+                  <select
+                    value={player.team || ''}
+                    onChange={e => handleTeamChange(player.id, e.target.value)}
+                    style={{ minWidth: '40px' }}
+                  >
+                    {teamOptions.map(opt => (
+                      <option key={opt.value} value={opt.value}>{opt.label}</option>
+                    ))}
+                  </select>
+                ) : (
+                  <span>{player.team ? player.team : '无'}</span>
+                )}
               </td>
               <td>
                 {socket?.id === player.id && editingMessagePlayerId === player.id ? (
@@ -176,7 +203,7 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                     {player.username}
                     {player.message && (
                       <span>
-                        : “{player.message}”
+                        : "{player.message}"
                       </span>
                     )}
                   </span>

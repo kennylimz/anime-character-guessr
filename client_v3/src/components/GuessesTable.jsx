@@ -55,6 +55,9 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
               </td>
               <td>
                 <div className={`character-name-container ${guess.isAnswer ? 'correct' : ''}`}>
+                  {guess.guessrName && (
+                    <div className="character-guessr-name" style={{ fontSize: '12px', color: '#888' }}>来自：{guess.guessrName}</div>
+                  )}
                   <div className="character-name">{guess.name}</div>
                   <div className="character-name-cn">{guess.nameCn}</div>
                 </div>
