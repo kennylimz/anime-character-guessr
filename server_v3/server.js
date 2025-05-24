@@ -338,7 +338,7 @@ io.on('connection', (socket) => {
             players: room.players
         });
 
-        console.log(`Player ${player.username} made a guess in room ${roomId}: ${guessResult.name} (${guessResult.isCorrect ? 'correct' : 'incorrect'})`);
+        console.log(`Player ${player.username} made a guess in room ${roomId}: ${guessResult.guessData.name} (${guessResult.isCorrect ? 'correct' : 'incorrect'})`);
     });
 
     // Handle game end
@@ -931,7 +931,7 @@ io.on('connection', (socket) => {
             players: room.players,
             isPublic: room.isPublic
         });
-        console.log(`Player ${player.username} updated their team to ${player.team} in room ${roomId}`);
+        console.log(`Player ${player.username} joined team ${player.team} in room ${roomId}`);
     });
 });
 
