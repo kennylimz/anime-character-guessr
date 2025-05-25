@@ -123,7 +123,15 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
   };
 
   const handleAddSubject = (subject) => {
-    const newAddedSubjects = [...gameSettings.addedSubjects, subject];
+    const newAddedSubjects = [
+      ...gameSettings.addedSubjects,
+      {
+        id: subject.id,
+        name: subject.name,
+        name_cn: subject.name_cn,
+        type: subject.type,
+      }
+    ];
     onSettingsChange('addedSubjects', newAddedSubjects);
     
     // Clear search
@@ -176,6 +184,50 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
           <div className="settings-content">
             <div className="settings-section">
               <h3>预设</h3>
+              <div className="settings-import-export-row">
+                <button
+                  className="preset-button preset-button-export"
+                  onClick={() => {
+                    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(gameSettings, null, 2));
+                    const dlAnchorElem = document.createElement('a');
+                    dlAnchorElem.setAttribute("href", dataStr);
+                    dlAnchorElem.setAttribute("download", "gameSettings.json");
+                    document.body.appendChild(dlAnchorElem);
+                    dlAnchorElem.click();
+                    document.body.removeChild(dlAnchorElem);
+                  }}
+                >
+                  导出设置
+                </button>
+                <button
+                  className="preset-button preset-button-import"
+                  onClick={() => {
+                    const input = document.createElement('input');
+                    input.type = 'file';
+                    input.accept = '.json,application/json';
+                    input.onchange = (e) => {
+                      const file = e.target.files[0];
+                      if (!file) return;
+                      const reader = new FileReader();
+                      reader.onload = (event) => {
+                        try {
+                          const imported = JSON.parse(event.target.result);
+                          Object.entries(imported).forEach(([key, value]) => {
+                            onSettingsChange(key, value);
+                          });
+                          alert('设置已导入！');
+                        } catch (err) {
+                          alert('导入失败：无效的JSON文件');
+                        }
+                      };
+                      reader.readAsText(file);
+                    };
+                    input.click();
+                  }}
+                >
+                  导入设置
+                </button>
+              </div>
               <div className="presets-buttons">
                 <button 
                   className="preset-button"
@@ -267,6 +319,25 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   }}
                   style={{ marginRight: '50px', marginLeft: '0px' }}
                 />
+                <div style={{ marginLeft: '30px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <label>关联游戏条目</label>
+                  <span className="tooltip-trigger">
+                    ?
+                    <span className="tooltip-text">
+                      计算登场作品（年份、分数）时会包括游戏。<br/>
+                      但是，答案角色还是只会从动画中选取，因为游戏的热度榜有bug。<br/>
+                      如果想要猜游戏角色，可以自创一个目录或者添加额外作品。
+                    </span>
+                  </span>
+                  <input 
+                    type="checkbox"
+                    checked={gameSettings.includeGame}
+                    onChange={(e) => {
+                      onSettingsChange('includeGame', e.target.checked);
+                    }}
+                    style={{ marginRight: '50px', marginLeft: '0px' }}
+                  />
+                </div>
                 {/* <label>主播模式</label>
                 <span className="tooltip-trigger">
                   ?
@@ -367,25 +438,6 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     max="2100"
                     disabled={gameSettings.useIndex}
                   />
-                  <div style={{ marginLeft: '30px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <label>关联游戏条目</label>
-                    <span className="tooltip-trigger">
-                      ?
-                      <span className="tooltip-text">
-                        计算登场作品（年份、分数）时会包括游戏。<br/>
-                        但是，答案角色还是只会从动画中选取，因为游戏的热度榜有bug。<br/>
-                        如果想要猜游戏角色，可以自创一个目录或者添加额外作品。
-                      </span>
-                    </span>
-                    <input 
-                      type="checkbox"
-                      checked={gameSettings.includeGame}
-                      onChange={(e) => {
-                        onSettingsChange('includeGame', e.target.checked);
-                      }}
-                      style={{ marginRight: '50px', marginLeft: '0px' }}
-                    />
-                  </div>
                 </div>
                 <div className="filter-row">
                   <div className="filter-item">
@@ -632,7 +684,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 )}
                 {gameSettings.addedSubjects.length > 0 && (
                   <div className="added-subjects">
-                    <h5>已添加的作品</h5>
+                    <h5>已添加的作品（只想猜下列作品的话，可以把上面的排行榜部数调成0）</h5>
                     {gameSettings.addedSubjects.map((subject) => (
                       <div key={subject.id} className="added-subject-item">
                         <div className="subject-info">

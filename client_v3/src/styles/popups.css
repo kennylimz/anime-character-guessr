@@ -665,6 +665,17 @@
   background-color: #e5e5e5;
 }
 
+.preset-button-export, .preset-button-import {
+  background-color: #4a90e2;
+  color: #fff;
+  border: 1px solid #4a90e2;
+}
+
+.preset-button-export:hover, .preset-button-import:hover {
+  background-color: #357abd;
+  border-color: #357abd;
+}
+
 @media (max-width: 640px) {
   .popup-content {
     padding: 16px;
@@ -1255,4 +1266,10 @@
   flex-wrap: wrap;
   gap: 4px;
   padding: 4px;
+}
+
+.settings-import-export-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
 }
