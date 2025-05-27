@@ -34,17 +34,20 @@ io.on('connection', (socket) => {
     socket.on('createRoom', ({roomId, username}) => {
         // Basic validation
         if (!username || username.trim().length === 0) {
-            socket.emit('error', {message: '用户名呢'});
+            console.log(`[ERROR][createRoom][${socket.id}] 用户名呢`);
+            socket.emit('error', {message: 'createRoom: 用户名呢'});
             return;
         }
 
         if (rooms.has(roomId)) {
-            socket.emit('error', {message: '房间已存在？但为什么？'});
+            console.log(`[ERROR][createRoom][${socket.id}] 房间已存在？但为什么？`);
+            socket.emit('error', {message: 'createRoom: 房间已存在？但为什么？'});
             return;
         }
 
         if (rooms.size >= 259) {
-            socket.emit('error', {message: '服务器已满，请稍后再试'});
+            console.log(`[ERROR][createRoom][${socket.id}] 服务器已满，请稍后再试`);
+            socket.emit('error', {message: 'createRoom: 服务器已满，请稍后再试'});
             return;
         }
 
@@ -80,7 +83,8 @@ io.on('connection', (socket) => {
     socket.on('joinRoom', ({roomId, username}) => {
         // Basic validation
         if (!username || username.trim().length === 0) {
-            socket.emit('error', {message: '用户名呢'});
+            console.log(`[ERROR][joinRoom][${socket.id}] 用户名呢`);
+            socket.emit('error', {message: 'joinRoom: 用户名呢'});
             return;
         }
 
@@ -123,13 +127,15 @@ io.on('connection', (socket) => {
 
         // Check if room is private
         if (!room.isPublic) {
-            socket.emit('error', {message: '房间已锁定，无法加入'});
+            console.log(`[ERROR][joinRoom][${socket.id}] 房间已锁定，无法加入`);
+            socket.emit('error', {message: 'joinRoom: 房间已锁定，无法加入'});
             return;
         }
 
         // Check if game is in progress
         if (room.currentGame) {
-            socket.emit('error', {message: '游戏正在进行中，无法加入'});
+            console.log(`[ERROR][joinRoom][${socket.id}] 游戏正在进行中，无法加入`);
+            socket.emit('error', {message: 'joinRoom: 游戏正在进行中，无法加入'});
             return;
         }
 
@@ -139,7 +145,8 @@ io.on('connection', (socket) => {
         );
 
         if (isUsernameTaken) {
-            socket.emit('error', {message: '换个名字吧'});
+            console.log(`[ERROR][joinRoom][${socket.id}] 换个名字吧`);
+            socket.emit('error', {message: 'joinRoom: 换个名字吧'});
             return;
         }
 
@@ -172,7 +179,8 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][toggleReady][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'toggleReady: 房间不存在'});
             return;
         }
 
@@ -180,13 +188,15 @@ io.on('connection', (socket) => {
         const player = room.players.find(p => p.id === socket.id);
 
         if (!player) {
-            socket.emit('error', {message: 'Player not found in room'});
+            console.log(`[ERROR][toggleReady][${socket.id}] 连接中断了`);
+            socket.emit('error', {message: 'toggleReady: 连接中断了'});
             return;
         }
 
         // Don't allow host to toggle ready status
         if (player.isHost) {
-            socket.emit('error', {message: '房主不需要准备'});
+            console.log(`[ERROR][toggleReady][${socket.id}] 房主不需要准备`);
+            socket.emit('error', {message: 'toggleReady: 房主不需要准备'});
             return;
         }
 
@@ -207,14 +217,16 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][updateGameSettings][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'updateGameSettings: 房间不存在'});
             return;
         }
 
         // Only allow host to update settings
         const player = room.players.find(p => p.id === socket.id);
         if (!player || !player.isHost) {
-            socket.emit('error', {message: '只有房主可以更改设置'});
+            console.log(`[ERROR][updateGameSettings][${socket.id}] 只有房主可以更改设置`);
+            socket.emit('error', {message: 'updateGameSettings: 只有房主可以更改设置'});
             return;
         }
 
@@ -233,7 +245,8 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][gameStart][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'gameStart: 房间不存在'});
             return;
         }
 
@@ -243,14 +256,16 @@ io.on('connection', (socket) => {
         // Only allow host to start game
         const player = room.players.find(p => p.id === socket.id);
         if (!player || !player.isHost) {
-            socket.emit('error', {message: '只有房主可以开始游戏'});
+            console.log(`[ERROR][gameStart][${socket.id}] 只有房主可以开始游戏`);
+            socket.emit('error', {message: 'gameStart: 只有房主可以开始游戏'});
             return;
         }
 
         // Check if all non-disconnected players are ready
         const allReady = room.players.every(p => p.isHost || p.ready || p.disconnected);
         if (!allReady) {
-            socket.emit('error', {message: '所有玩家必须准备好才能开始游戏'});
+            console.log(`[ERROR][gameStart][${socket.id}] 所有玩家必须准备好才能开始游戏`);
+            socket.emit('error', {message: 'gameStart: 所有玩家必须准备好才能开始游戏'});
             return;
         }
 
@@ -287,13 +302,15 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][playerGuess][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'playerGuess: 房间不存在'});
             return;
         }
 
         const player = room.players.find(p => p.id === socket.id);
         if (!player) {
-            socket.emit('error', {message: 'Player not found in room'});
+            console.log(`[ERROR][playerGuess][${socket.id}] 连接中断了`);
+            socket.emit('error', {message: 'playerGuess: 连接中断了'});
             return;
         }
 
@@ -351,20 +368,22 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][gameEnd][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'gameEnd: 房间不存在'});
             return;
         }
 
         const player = room.players.find(p => p.id === socket.id);
         if (!player) {
-            socket.emit('error', {message: 'Player not found in room'});
+            console.log(`[ERROR][gameEnd][${socket.id}] 连接中断了`);
+            socket.emit('error', {message: 'gameEnd: 连接中断了'});
             return;
         }
 
         // Update player's guesses string
         switch (result) {
             case 'surrender':
-                player.guesses += '🏳️';
+                player.guesses += '��️';
                 break;
             case 'win':
                 player.guesses += '✌';
@@ -459,7 +478,8 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][requestGameSettings][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: '房间不存在'});
             return;
         }
 
@@ -475,13 +495,15 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][surrender][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'surrender: 房间不存在'});
             return;
         }
 
         const player = room.players.find(p => p.id === socket.id);
         if (!player) {
-            socket.emit('error', {message: 'Player not found in room'});
+            console.log(`[ERROR][surrender][${socket.id}] 连接中断了`);
+            socket.emit('error', {message: 'surrender: 连接中断了'});
             return;
         }
 
@@ -501,13 +523,15 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][timeOut][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'timeOut: 房间不存在'});
             return;
         }
 
         const player = room.players.find(p => p.id === socket.id);
         if (!player) {
-            socket.emit('error', {message: 'Player not found in room'});
+            console.log(`[ERROR][timeOut][${socket.id}] 连接中断了`);
+            socket.emit('error', {message: 'timeOut: 连接中断了'});
             return;
         }
 
@@ -597,14 +621,16 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][toggleRoomVisibility][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'toggleRoomVisibility: 房间不存在'});
             return;
         }
 
         // Only allow host to toggle visibility
         const player = room.players.find(p => p.id === socket.id);
         if (!player || !player.isHost) {
-            socket.emit('error', {message: '只有房主可以更改房间状态'});
+            console.log(`[ERROR][toggleRoomVisibility][${socket.id}] 只有房主可以更改房间状态`);
+            socket.emit('error', {message: 'toggleRoomVisibility: 只有房主可以更改房间状态'});
             return;
         }
 
@@ -625,14 +651,16 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][enterManualMode][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'enterManualMode: 房间不存在'});
             return;
         }
 
         // Only allow host to enter manual mode
         const player = room.players.find(p => p.id === socket.id);
         if (!player || !player.isHost) {
-            socket.emit('error', {message: '只有房主可以进入出题模式'});
+            console.log(`[ERROR][enterManualMode][${socket.id}] 只有房主可以进入出题模式`);
+            socket.emit('error', {message: 'enterManualMode: 只有房主可以进入出题模式'});
             return;
         }
 
@@ -657,21 +685,24 @@ io.on('connection', (socket) => {
         const room = rooms.get(roomId);
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][setAnswerSetter][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'setAnswerSetter: 房间不存在'});
             return;
         }
 
         // Only allow host to set answer setter
         const player = room.players.find(p => p.id === socket.id);
         if (!player || !player.isHost) {
-            socket.emit('error', {message: '只有房主可以选择出题人'});
+            console.log(`[ERROR][setAnswerSetter][${socket.id}] 只有房主可以选择出题人`);
+            socket.emit('error', {message: 'setAnswerSetter: 只有房主可以选择出题人'});
             return;
         }
 
         // Find the selected player
         const setter = room.players.find(p => p.id === setterId);
         if (!setter) {
-            socket.emit('error', {message: '找不到选中的玩家'});
+            console.log(`[ERROR][setAnswerSetter][${socket.id}] 找不到选中的玩家`);
+            socket.emit('error', {message: 'setAnswerSetter: 找不到选中的玩家'});
             return;
         }
 
@@ -702,21 +733,24 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: '房间不存在'});
+            console.log(`[ERROR][kickPlayer][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'kickPlayer: 房间不存在'});
             return;
         }
 
         // 只允许房主踢出玩家
         const host = room.players.find(p => p.id === socket.id);
         if (!host || !host.isHost) {
-            socket.emit('error', {message: '只有房主可以踢出玩家'});
+            console.log(`[ERROR][kickPlayer][${socket.id}] 只有房主可以踢出玩家`);
+            socket.emit('error', {message: 'kickPlayer: 只有房主可以踢出玩家'});
             return;
         }
 
         // 找到要踢出的玩家
         const playerIndex = room.players.findIndex(p => p.id === playerId);
         if (playerIndex === -1) {
-            socket.emit('error', {message: '找不到要踢出的玩家'});
+            console.log(`[ERROR][kickPlayer][${socket.id}] 找不到要踢出的玩家`);
+            socket.emit('error', {message: 'kickPlayer: 找不到要踢出的玩家'});
             return;
         }
 
@@ -724,7 +758,8 @@ io.on('connection', (socket) => {
         
         // 防止房主踢出自己
         if (playerToKick.id === socket.id) {
-            socket.emit('error', {message: '无法踢出自己'});
+            console.log(`[ERROR][kickPlayer][${socket.id}] 无法踢出自己`);
+            socket.emit('error', {message: 'kickPlayer: 无法踢出自己'});
             return;
         }
 
@@ -774,13 +809,15 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: 'Room not found'});
+            console.log(`[ERROR][setAnswer][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'setAnswer: 房间不存在'});
             return;
         }
 
         // Only allow designated answer setter to set answer
         if (socket.id !== room.answerSetterId) {
-            socket.emit('error', {message: '你不是指定的出题人'});
+            console.log(`[ERROR][setAnswer][${socket.id}] 你不是指定的出题人`);
+            socket.emit('error', {message: 'setAnswer: 你不是指定的出题人'});
             return;
         }
 
@@ -841,20 +878,23 @@ io.on('connection', (socket) => {
         if (room) room.lastActive = Date.now();
 
         if (!room) {
-            socket.emit('error', {message: '房间不存在'});
+            console.log(`[ERROR][transferHost][${socket.id}] 房间不存在`);
+            socket.emit('error', {message: 'transferHost: 房间不存在'});
             return;
         }
 
         // 只允许当前房主转移权限
         if (socket.id !== room.host) {
-            socket.emit('error', {message: '只有房主可以转移权限'});
+            console.log(`[ERROR][transferHost][${socket.id}] 只有房主可以转移权限`);
+            socket.emit('error', {message: 'transferHost: 只有房主可以转移权限'});
             return;
         }
 
         // 确认新房主在房间内
         const newHost = room.players.find(p => p.id === newHostId);
         if (!newHost || newHost.disconnected) {
-            socket.emit('error', {message: '无法将房主转移给该玩家'});
+            console.log(`[ERROR][transferHost][${socket.id}] 无法将房主转移给该玩家`);
+            socket.emit('error', {message: 'transferHost: 无法将房主转移给该玩家'});
             return;
         }
 
@@ -889,14 +929,16 @@ io.on('connection', (socket) => {
     socket.on('updatePlayerMessage', ({ roomId, message }) => {
         const room = rooms.get(roomId);
         if (!room) {
-            socket.emit('error', { message: 'Room not found' });
+            console.log(`[ERROR][updatePlayerMessage][${socket.id}] 房间不存在`);
+            socket.emit('error', { message: 'updatePlayerMessage: 房间不存在' });
             return;
         }
 
         // Find the player
         const player = room.players.find(p => p.id === socket.id);
         if (!player) {
-            socket.emit('error', { message: 'Player not found in room' });
+            console.log(`[ERROR][updatePlayerMessage][${socket.id}] 连接中断了`);
+            socket.emit('error', { message: 'updatePlayerMessage: 连接中断了' });
             return;
         }
 
@@ -916,18 +958,21 @@ io.on('connection', (socket) => {
     socket.on('updatePlayerTeam', ({ roomId, team }) => {
         const room = rooms.get(roomId);
         if (!room) {
-            socket.emit('error', { message: 'Room not found' });
+            console.log(`[ERROR][updatePlayerTeam][${socket.id}] 房间不存在`);
+            socket.emit('error', { message: 'updatePlayerTeam: 房间不存在' });
             return;
         }
         // Only allow the player themselves to update their team
         const player = room.players.find(p => p.id === socket.id);
         if (!player) {
-            socket.emit('error', { message: 'Player not found in room' });
+            console.log(`[ERROR][updatePlayerTeam][${socket.id}] 连接中断了`);
+            socket.emit('error', { message: 'updatePlayerTeam: 连接中断了' });
             return;
         }
         // Accept only null or 1-8 as valid team values
         if (team !== null && !(typeof team === 'string' && /^[1-8]$/.test(team))) {
-            socket.emit('error', { message: 'Invalid team value' });
+            console.log(`[ERROR][updatePlayerTeam][${socket.id}] Invalid team value`);
+            socket.emit('error', { message: 'updatePlayerTeam: Invalid team value' });
             return;
         }
         player.team = team === '' ? null : team;
