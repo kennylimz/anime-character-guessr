@@ -240,7 +240,7 @@ function SinglePlayer() {
     setGameEndPopup(null);
     setAnswerCharacter(null);
     setSettingsPopup(false);
-    setShouldResetTimer(false);
+    setShouldResetTimer(true);
     setFinishInit(false);
     setHints({
       first: null,
