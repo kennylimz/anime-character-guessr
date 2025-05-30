@@ -69,7 +69,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
   }
 
   if (!guessTagData) {
-    return <div className="modified-tag-display empty">没有标签……<br/>（可能是没启用“关联游戏条目”）</div>;
+    return <div className="modified-tag-display empty">没有标签……<br/>（可能是作者没录入或没启用“关联游戏条目”）</div>;
   }
 
   return (

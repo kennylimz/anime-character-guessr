@@ -33,11 +33,14 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
           <tr>
             <th></th>
             <th>名字</th>
-            <th>性别</th>
             {gameSettings.externalTagMode ? (
-              <th></th>
+              <>
+                <th>性别？</th>
+                <th></th>
+              </>
             ) : (
               <>
+                <th>性别</th>
                 <th>热度</th>
                 <th>作品数<br/>最高分</th>
                 <th>最晚登场<br/>最早登场</th>
