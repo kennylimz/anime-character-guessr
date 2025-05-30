@@ -490,34 +490,6 @@ io.on('connection', (socket) => {
         }
     });
 
-    // Handle surrender event
-    // socket.on('surrender', ({roomId}) => {
-    //     const room = rooms.get(roomId);
-
-    //     if (!room) {
-    //         console.log(`[ERROR][surrender][${socket.id}] 房间不存在`);
-    //         socket.emit('error', {message: 'surrender: 房间不存在'});
-    //         return;
-    //     }
-
-    //     const player = room.players.find(p => p.id === socket.id);
-    //     if (!player) {
-    //         console.log(`[ERROR][surrender][${socket.id}] 连接中断了`);
-    //         socket.emit('error', {message: 'surrender: 连接中断了'});
-    //         return;
-    //     }
-
-    //     // Append 🏳️ to player's guesses
-    //     player.guesses += '🏳️';
-
-    //     // Broadcast updated players to all clients in the room
-    //     io.to(roomId).emit('updatePlayers', {
-    //         players: room.players
-    //     });
-
-    //     console.log(`Player ${player.username} surrendered in room ${roomId}`);
-    // });
-
     // Handle timeout event
     socket.on('timeOut', ({roomId}) => {
         const room = rooms.get(roomId);
