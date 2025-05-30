@@ -1069,6 +1069,15 @@ app.get('/clean-rooms', (req, res) => {
     res.json({message: `已清理${cleaned}个房间`});
 });
 
+app.get('/list-rooms', (req, res) => {
+    const roomsList = Array.from(rooms.entries()).map(([id, room]) => ({
+        id,
+        isPublic: room.isPublic,
+        playerCount: room.players.length
+    }));
+    res.json(roomsList);
+});
+
 startSelfPing();
 
 server.listen(PORT, () => {
