@@ -1072,8 +1072,7 @@ app.get('/clean-rooms', (req, res) => {
 app.get('/list-rooms', (req, res) => {
     const roomsList = Array.from(rooms.entries()).map(([id, room]) => ({
         id,
-        isPublic: room.isPublic,
-        playerCount: room.players.length
+        ...room
     }));
     res.json(roomsList);
 });
