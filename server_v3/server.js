@@ -383,7 +383,7 @@ io.on('connection', (socket) => {
         // Update player's guesses string
         switch (result) {
             case 'surrender':
-                player.guesses += '��️';
+                player.guesses += '🏳️';
                 break;
             case 'win':
                 player.guesses += '✌';
@@ -491,32 +491,32 @@ io.on('connection', (socket) => {
     });
 
     // Handle surrender event
-    socket.on('surrender', ({roomId}) => {
-        const room = rooms.get(roomId);
+    // socket.on('surrender', ({roomId}) => {
+    //     const room = rooms.get(roomId);
 
-        if (!room) {
-            console.log(`[ERROR][surrender][${socket.id}] 房间不存在`);
-            socket.emit('error', {message: 'surrender: 房间不存在'});
-            return;
-        }
+    //     if (!room) {
+    //         console.log(`[ERROR][surrender][${socket.id}] 房间不存在`);
+    //         socket.emit('error', {message: 'surrender: 房间不存在'});
+    //         return;
+    //     }
 
-        const player = room.players.find(p => p.id === socket.id);
-        if (!player) {
-            console.log(`[ERROR][surrender][${socket.id}] 连接中断了`);
-            socket.emit('error', {message: 'surrender: 连接中断了'});
-            return;
-        }
+    //     const player = room.players.find(p => p.id === socket.id);
+    //     if (!player) {
+    //         console.log(`[ERROR][surrender][${socket.id}] 连接中断了`);
+    //         socket.emit('error', {message: 'surrender: 连接中断了'});
+    //         return;
+    //     }
 
-        // Append 🏳️ to player's guesses
-        player.guesses += '🏳️';
+    //     // Append 🏳️ to player's guesses
+    //     player.guesses += '🏳️';
 
-        // Broadcast updated players to all clients in the room
-        io.to(roomId).emit('updatePlayers', {
-            players: room.players
-        });
+    //     // Broadcast updated players to all clients in the room
+    //     io.to(roomId).emit('updatePlayers', {
+    //         players: room.players
+    //     });
 
-        console.log(`Player ${player.username} surrendered in room ${roomId}`);
-    });
+    //     console.log(`Player ${player.username} surrendered in room ${roomId}`);
+    // });
 
     // Handle timeout event
     socket.on('timeOut', ({roomId}) => {
@@ -551,9 +551,10 @@ io.on('connection', (socket) => {
         // Find and remove player from their room
         for (const [roomId, room] of rooms.entries()) {
             const playerIndex = room.players.findIndex(p => p.id === socket.id);
-
+            
             if (playerIndex !== -1) {
                 const disconnectedPlayer = room.players[playerIndex];
+                disconnectedPlayer.guesses += '💀';
 
                 if (room.host === socket.id) {
                     // 找出一个新的房主（第一个没有断开连接的玩家）
@@ -608,11 +609,49 @@ io.on('connection', (socket) => {
                     });
                     console.log(`Player ${disconnectedPlayer.username} ${disconnectedPlayer.score === 0 ? 'removed from' : 'disconnected from'} room ${roomId}.`);
                 }
-                break; // Exit loop once player is found and handled
+
+                if (room.currentGame) {
+                    // Find all non-disconnected, non-answer-setter players
+                    const activePlayers = room.players.filter(p => !p.disconnected && !p.isAnswerSetter);
+                    // Check if all such players have ended their game
+                    const allEnded = activePlayers.every(p =>
+                        p.guesses.includes('✌') ||
+                        p.guesses.includes('💀') ||
+                        p.guesses.includes('🏳️')
+                    );
+                    if (allEnded) {
+                        // Find answer setter (if any)
+                        const answerSetter = room.players.find(p => p.isAnswerSetter);
+                        let message = '';
+                        if (answerSetter) {
+                            answerSetter.score--;
+                            message = `已经结束咧🙄！没人猜中，出题人 ${answerSetter.username} 扣1分！`;
+                        } else {
+                            message = '已经结束咧🙄！没人猜中';
+                        }
+                        io.to(roomId).emit('gameEnded', {
+                            message,
+                            guesses: room.currentGame?.guesses || []
+                        });
+                        room.players.forEach(p => {
+                            p.isAnswerSetter = false;
+                        });
+                        io.to(roomId).emit('resetReadyStatus');
+                        room.currentGame = null;
+                        io.to(roomId).emit('updatePlayers', {
+                            players: room.players,
+                            isPublic: room.isPublic,
+                            answerSetterId: null
+                        });
+                        console.log(`Game in room ${roomId} ended because all active players finished their game (by disconnect or surrender, no winner).`);
+                    }
+                }
+
+                break;
             }
         }
 
-        console.log(`User ${socket.id} disconnected`); // General disconnect log
+        console.log(`User ${socket.id} disconnected`);
     });
 
     // Handle room visibility toggle
@@ -1018,7 +1057,7 @@ app.get('/clean-rooms', (req, res) => {
     const now = Date.now();
     let cleaned = 0;
     for (const [roomId, room] of rooms.entries()) {
-        if (room.lastActive && now - room.lastActive > 300000) {
+        if (room.lastActive && now - room.lastActive > 300000 && !room.currentGame) {
             // Notify all players in the room
             io.to(roomId).emit('roomClosed', {message: '房间因长时间无活动已关闭'});
             // Delete the room
