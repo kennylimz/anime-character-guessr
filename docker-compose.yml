@@ -22,7 +22,7 @@ services:
   # Client Application (React served by Nginx)
   client:
     build:
-      context: ./client_v3
+      context: ./client
       dockerfile: Dockerfile
       args:
         # Derive VITE variables from DOMAIN_NAME at build time
@@ -46,7 +46,7 @@ services:
   # Game Server (Node.js + Socket.IO)
   server:
     build:
-      context: ./server_v3
+      context: ./server
       dockerfile: Dockerfile
     container_name: game_server
     expose:

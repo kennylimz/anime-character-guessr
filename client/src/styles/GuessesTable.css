@@ -1,0 +1,432 @@
+.table-container {
+  border-radius: 12px;
+  background: #f8fafc;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.guesses-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-height: 100px;
+}
+
+.guesses-table th,
+.guesses-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.guesses-table th {
+  background: #e2e8f0;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.guesses-table th br {
+  margin: 4px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .guesses-table th {
+    background: #e2e8f0;
+    color: #1e293b;
+  }
+}
+
+.guesses-table td {
+  background: #fff;
+  color: #334155;
+  text-align: center;
+}
+
+/* Table column widths */
+.guesses-table th:nth-child(1), .guesses-table td:nth-child(1) { width: 60px; } /* Icon */
+.guesses-table th:nth-child(2), .guesses-table td:nth-child(2) { 
+  width: 200px;
+  text-align: left;
+} /* Name */
+.guesses-table th:nth-child(3), .guesses-table td:nth-child(3) { width: 60px; } /* Gender */
+.guesses-table th:nth-child(4), .guesses-table td:nth-child(4) { width: 80px; } /* Popularity */
+.guesses-table th:nth-child(5), .guesses-table td:nth-child(5) { width: 80px; } /* BGM Works/Score */
+.guesses-table th:nth-child(6), .guesses-table td:nth-child(6) { width: 80px; } /* First/Last Appearance */
+.guesses-table th:nth-child(7), .guesses-table td:nth-child(7) { width: 250px; } /* Work Tags */
+.guesses-table th:nth-child(8), .guesses-table td:nth-child(8) { width: 300px; } /* Co-appearances */
+
+/* Character name display */
+.character-name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px 0;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.character-name-container.correct {
+  background: #bbf7d0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 4px 8px;
+}
+
+.character-name-container.correct .character-name {
+  color: #14532d;
+}
+
+.character-name-container.correct .character-name-cn {
+  color: #166534;
+}
+
+.character-name {
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.character-name-cn {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Character icon */
+.character-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Feedback cells */
+.feedback-cell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px auto;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  min-width: 80%;
+  text-align: center;
+  font-weight: 500;
+  background: transparent;
+}
+
+.feedback-cell.correct {
+  background-color: #bbf7d0;
+  color: #14532d;
+}
+
+.feedback-cell.partial {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.feedback-cell.unknown {
+  background-color: #f1f5f9;
+  color: #64748b;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 4px,
+    #e2e8f0 4px,
+    #e2e8f0 8px
+  );
+  opacity: 0.9;
+}
+
+/* Meta tags display */
+.meta-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  padding: 4px;
+}
+
+.meta-tag {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.meta-tag.shared {
+  background: #bbf7d0;
+  color: #14532d;
+}
+
+/* Shared appearances */
+.shared-appearances {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  min-width: 80%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.shared-appearances.has-shared {
+  background: #bbf7d0;
+  color: #14532d;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .guesses-table th,
+  .guesses-table td {
+    padding: 8px 12px;
+  }
+  
+  .meta-tags-container {
+    padding: 2px;
+  }
+  
+  .meta-tag {
+    font-size: 11px;
+    padding: 2px 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    border-radius: 8px;
+  }
+  
+  .guesses-table th,
+  .guesses-table td {
+    padding: 6px 8px;
+  }
+  
+  .character-name {
+    font-size: 13px;
+  }
+  
+  .character-name-cn {
+    font-size: 11px;
+  }
+  
+  .feedback-cell {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+}
+
+.guesses-table.external-tag-mode th:nth-child(2),
+.guesses-table.external-tag-mode td:nth-child(2) {
+  width: 200px;
+}
+
+.guesses-table.external-tag-mode th:nth-child(3),
+.guesses-table.external-tag-mode td:nth-child(3) {
+  width: 50px;
+}
+
+/* Wide column for externalTagMode, using a class on the table */
+.guesses-table.external-tag-mode th:nth-child(4),
+.guesses-table.external-tag-mode td:nth-child(4) {
+  min-width: 600px;
+}
+
+/* Keep 标签 and 共同出演 columns at their original width */
+.guesses-table.external-tag-mode th:nth-child(5),
+.guesses-table.external-tag-mode td:nth-child(5) {
+  width: 150px;
+}
+.guesses-table.external-tag-mode th:nth-child(6),
+.guesses-table.external-tag-mode td:nth-child(6) {
+  width: 200px;
+}
+
+.modified-tag-display {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100%;
+  padding: 8px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.modified-tag-display > div {
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Add some basic styles for common HTML elements that might be in the response */
+.modified-tag-display a {
+  color: #0084B4;
+  text-decoration: none;
+}
+
+.modified-tag-display a:hover {
+  text-decoration: underline;
+}
+
+.modified-tag-display mark {
+  background-color: #ffe58f;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.modified-tag-display del {
+  color: #ff4d4f;
+  text-decoration: line-through;
+}
+
+.modified-tag-display ins {
+  color: #52c41a;
+  text-decoration: none;
+  background-color: #f6ffed;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.modified-tag-display.loading,
+.modified-tag-display.error,
+.modified-tag-display.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.modified-tag-display.error {
+  color: #dc2626;
+}
+
+.modified-tag-display.loading {
+  position: relative;
+}
+
+.modified-tag-display.loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  border: 2px solid #e2e8f0;
+  border-top-color: #0084B4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tag-section {
+  margin-bottom: 12px;
+}
+
+.tag-section:last-child {
+  margin-bottom: 0;
+}
+
+.tag-section-title {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 4px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.meta-tag.external-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 12px;
+  white-space: nowrap;
+  border: none;
+  border-radius: 4px;
+}
+
+.meta-tag.external-tag img {
+  max-height: 20px;
+  object-fit: contain;
+}
+
+.meta-tag.external-tag b {
+  color: #334155;
+}
+
+.meta-tag.external-tag.shared-tag {
+  background: #bbf7d0;
+  color: #14532d;
+  border-color: #86efac;
+}
+
+.horizontal-sections {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100px;
+  flex: 1;
+}
+
+.tag-section-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: 120px;
+  position: relative;
+  padding: 0 12px;
+  box-sizing: border-box;
+  min-height: 80px;
+}
+
+.meta-tags-container.horizontal {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.tag-section-divider {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background: #e5e7eb;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.tag-section-title-below {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #b0b4ba;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background: none;
+}
+
+.flex-spacer {
+  flex: 1;
+} 

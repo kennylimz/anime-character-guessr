@@ -1,0 +1,106 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.difficulty-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+  margin-right: 5px;
+  animation: fadeIn 0.5s ease;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #666;
+  animation: bounceRight 1s infinite;
+}
+
+@keyframes bounceRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.social-link {
+  color: #1e293b;
+  transition: color 0.2s;
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.social-link:hover {
+  color: #646cff;
+}
+
+.help-button,
+.settings-button {
+  color: #1e293b;
+  transition: all 0.2s;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.help-button:hover,
+.settings-button:hover {
+  color: #646cff;
+  transform: scale(1.1);
+}
+
+.help-button:focus,
+.settings-button:focus {
+  outline: none;
+}
+
+.bangumi-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.social-link:hover .bangumi-icon {
+  transform: scale(1.1);
+}
+
+.bilibili-icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+} 

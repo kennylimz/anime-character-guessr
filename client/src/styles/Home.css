@@ -1,0 +1,143 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  color: #2c3e50;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-modes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mode-button {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mode-button::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg,
+  #ff0000, #ff7300, #fffb00, #48ff00,
+  #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mode-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.mode-button:hover::before {
+  opacity: 1;
+  animation: animate-border 8s linear infinite;
+}
+
+@keyframes animate-border {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.mode-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mode-button h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #3498db;
+}
+
+.mode-button p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+.mode-button small {
+  color: #7f8c8d;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.home-footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.home-footer a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.home-footer a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(to right, #7cb8df, #0a9e48);
+  transition: width 0.3s ease;
+}
+
+.home-footer a:hover {
+  color: #3498db;
+}
+
+.home-footer a:hover::before {
+  width: 100%;
+}
