@@ -10,8 +10,6 @@ COPY . .
 # Inject build-time env variables if needed (ensure they are prefixed with VITE_)
  ARG VITE_SERVER_URL
  ENV VITE_SERVER_URL=$VITE_SERVER_URL
- ARG VITE_DB_SERVER_URL
- ENV VITE_DB_SERVER_URL=$VITE_DB_SERVER_URL
  ARG VITE_AES_SECRET
  ENV VITE_AES_SECRET=$VITE_AES_SECRET
 RUN npm run build

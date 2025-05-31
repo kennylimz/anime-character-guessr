@@ -27,7 +27,6 @@ services:
       args:
         # Derive VITE variables from DOMAIN_NAME at build time
         - VITE_SERVER_URL=${DOMAIN_NAME:-http://localhost}
-        - VITE_DB_SERVER_URL=${DOMAIN_NAME:-http://localhost}/api/data
         - VITE_AES_SECRET=${AES_SECRET}
     container_name: client_app
     expose:
@@ -37,7 +36,6 @@ services:
     # Build args are generally sufficient for VITE vars.
     environment:
       - VITE_SERVER_URL=${DOMAIN_NAME:-http://localhost}
-      - VITE_DB_SERVER_URL=${DOMAIN_NAME:-http://localhost}/api/data
       - VITE_AES_SECRET=${AES_SECRET}
     networks:
       - app-network
