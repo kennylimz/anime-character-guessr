@@ -46,7 +46,6 @@ function SinglePlayer() {
     subjectSearch: true,
     characterTagNum: 6,
     subjectTagNum: 6,
-    enableTagCensor: false,
     commonTags: true,
     externalTagMode: false
   });
@@ -61,6 +60,15 @@ function SinglePlayer() {
     });
 
     const initializeGame = async () => {
+      try {
+        if (gameSettings.addedSubjects.length > 0) {
+          await axios.post(import.meta.env.VITE_SERVER_URL + '/api/subject-added', {
+            addedSubjects: gameSettings.addedSubjects
+          });
+        }
+      } catch (error) {
+        console.error('Failed to update subject count:', error);
+      }
       try {
         const character = await getRandomCharacter(gameSettings);
         setCurrentGameSettings({ ...gameSettings });
@@ -247,6 +255,15 @@ function SinglePlayer() {
       second: null
     });
 
+    try {
+      if (gameSettings.addedSubjects.length > 0) {
+        await axios.post(import.meta.env.VITE_SERVER_URL + '/api/subject-added', {
+          addedSubjects: gameSettings.addedSubjects
+        });
+      }
+    } catch (error) {
+      console.error('Failed to update subject count:', error);
+    }
     try {
       setCurrentGameSettings({ ...gameSettings });
       const character = await getRandomCharacter(gameSettings);

@@ -1,6 +1,5 @@
 import '../styles/GuessesTable.css';
 import { useState } from 'react';
-import { censoredText } from '../utils/bangumi';
 import ModifiedTagDisplay from './ModifiedTagDisplay';
 
 function GuessesTable({ guesses, gameSettings, answerCharacter }) {

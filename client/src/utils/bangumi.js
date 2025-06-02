@@ -738,10 +738,6 @@ async function searchSubjects(keyword) {
   }
 }
 
-function censoredText(text) {
-  return text.replace('乳', 'R')
-}
-
 export {
   getRandomCharacter,
   designateCharacter,
@@ -750,6 +746,5 @@ export {
   getCharacterDetails,
   generateFeedback,
   getIndexInfo,
-  searchSubjects,
-  censoredText
+  searchSubjects
 }; 

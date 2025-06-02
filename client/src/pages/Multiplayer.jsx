@@ -14,8 +14,8 @@ import GameSettingsDisplay from '../components/GameSettingsDisplay';
 import Leaderboard from '../components/Leaderboard';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
-import CryptoJS, { x64 } from 'crypto-js';
-
+import CryptoJS from 'crypto-js';
+import axios from 'axios';
 const secret = import.meta.env.VITE_AES_SECRET || 'My-Secret-Key';
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
 
@@ -53,7 +53,6 @@ const Multiplayer = () => {
     subjectSearch: true,
     characterTagNum: 6,
     subjectTagNum: 6,
-    enableTagCensor: false,
     commonTags: true,
     externalTagMode: false
   });
@@ -531,6 +530,15 @@ const Multiplayer = () => {
   const handleStartGame = async () => {
     if (isHost) {
       try {
+        if (gameSettings.addedSubjects.length > 0) {
+          await axios.post(SOCKET_URL + '/api/subject-added', {
+            addedSubjects: gameSettings.addedSubjects
+          });
+        }
+      } catch (error) {
+        console.error('Failed to update subject count:', error);
+      }
+      try {
         const character = await getRandomCharacter(gameSettings);
         character.rawTags = Array.from(character.rawTags.entries());
         const encryptedCharacter = CryptoJS.AES.encrypt(JSON.stringify(character), secret).toString();
@@ -648,17 +656,14 @@ const Multiplayer = () => {
   // Add handleQuickJoin function
   const handleQuickJoin = async () => {
     try {
-      const response = await fetch(`${SOCKET_URL}/quick-join`);
-      if (!response.ok) {
-        const data = await response.json();
-        alert(data.error || '没有可用的公开房间');
-        return;
-      }
-      const data = await response.json();
-      // Navigate to the returned URL
-      window.location.href = data.url;
+      const response = await axios.get(`${SOCKET_URL}/quick-join`);
+      window.location.href = response.data.url;
     } catch (error) {
-      alert('快速加入失败，请重试');
+      if (error.response && error.response.status === 404) {
+        alert(error.response.data.error || '没有可用的公开房间');
+      } else {
+        alert('快速加入失败，请重试');
+      }
     }
   };
 

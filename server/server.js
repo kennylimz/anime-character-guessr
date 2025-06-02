@@ -6,26 +6,21 @@ const cors = require('cors');
 const {startAutoClean} = require('./utils/autoClean');
 const db = require('./utils/db');
 
-const app = express();
-const server = http.createServer(app);
 const PORT = process.env.PORT || 3000;
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
 const SERVER_URL = process.env.SERVER_URL || 'http://localhost:3000';
-
 const cors_options = {
     origin: [CLIENT_URL, SERVER_URL],
     methods: ['GET', 'POST'],
     credentials: true
 }
 
-const io = new Server(server, {
-    cors: cors_options
-});
-
+const app = express();
+const server = http.createServer(app);
+const io = new Server(server, {cors: cors_options});
 app.use(cors(cors_options));
 app.use(express.json());
 
-// Store room data
 const rooms = new Map();
 const setupSocket = require('./utils/socket');
 setupSocket(io, rooms);
@@ -390,6 +385,42 @@ app.get('/api/character-usage/:id', async (req, res) => {
     } catch (error) {
         console.error('Error fetching character usage by id:', error);
         res.status(500).json({ error: 'Failed to fetch character usage by id' });
+    }
+});
+
+app.post('/api/subject-added', async (req, res) => {
+    try {
+        const { addedSubjects } = req.body;
+        if (!Array.isArray(addedSubjects) || addedSubjects.length === 0) {
+            return res.status(400).json({ error: 'Invalid request body. Required format: { addedSubjects: [{ id, name, name_cn, type }] }' });
+        }
+
+        const client = db.getClient();
+        const database = client.db('stats');
+        const collection = database.collection('subject_count');
+
+        const results = [];
+        for (const subject of addedSubjects) {
+            if (!subject.id || !subject.name_cn) continue;
+            const updateResult = await collection.updateOne(
+                { _id: subject.id },
+                {
+                    $inc: { count: 1 },
+                    $set: { name_cn: subject.name_cn.trim() }
+                },
+                { upsert: true }
+            );
+            results.push({
+                id: subject.id,
+                name_cn: subject.name_cn,
+                updated: updateResult.modifiedCount > 0,
+                created: updateResult.upsertedCount > 0
+            });
+        }
+        res.json({ message: 'Subject counts updated', results });
+    } catch (error) {
+        console.error('Error updating subject count:', error);
+        res.status(500).json({ error: 'Failed to update subject count' });
     }
 });
 
