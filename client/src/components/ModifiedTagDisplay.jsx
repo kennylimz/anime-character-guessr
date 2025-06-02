@@ -22,6 +22,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
       385208, // 鸣潮
       208559, // 碧蓝航线
       109378, // 命运-冠位指定
+      228217, // 第五人格
     ]
   );
 
