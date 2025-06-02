@@ -401,12 +401,12 @@ app.post('/api/subject-added', async (req, res) => {
 
         const results = [];
         for (const subject of addedSubjects) {
-            if (!subject.id || !subject.name_cn) continue;
+            if (!subject.id || !subject.name || !subject.type) continue;
             const updateResult = await collection.updateOne(
                 { _id: subject.id },
                 {
                     $inc: { count: 1 },
-                    $set: { name_cn: subject.name_cn.trim() }
+                    $set: { name_cn: subject.name.trim(), type: subject.type }
                 },
                 { upsert: true }
             );
