@@ -23,6 +23,16 @@ const announcements = [
   },
 
   {
+    version: '1.4.2',
+    date: '2025-06-03',
+    content: `
+      为下列作品添加了额外标签：<br/>
+      第五人格、永劫无间、BanG Dream! 少女乐团派对！
+      
+    `
+  },
+  
+  {
     version: '1.4.1',
     date: '2025-06-01',
     content: `
