@@ -23,6 +23,8 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
       208559, // 碧蓝航线
       109378, // 命运-冠位指定
       228217, // 第五人格
+      296327, // 永劫无间
+      208415, // BanG Dream! 少女乐团派对！
     ]
   );
 
