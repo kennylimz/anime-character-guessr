@@ -14,7 +14,6 @@ const UpdateAnnouncement = ({
   initialVisibleCount = 1
 }) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
-  const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
 
   // 如果没有公告，则不显示组件
   if (!announcements || announcements.length === 0) {
@@ -26,46 +25,28 @@ const UpdateAnnouncement = ({
     setIsExpanded(!isExpanded);
   };
 
-  // 显示更多公告
-  const showMore = () => {
-    setVisibleCount(announcements.length);
-  };
-
-  // 只显示有限数量的公告，或者展开时显示全部
-  const displayedAnnouncements = isExpanded 
-    ? announcements 
-    : announcements.slice(0, visibleCount);
-
   return (
     <div className="update-announcement">
       <div className="update-header" onClick={toggleExpand}>
-        <h3>更新公告（最新：{announcements[1].date}）</h3>
+        <h3>更新公告</h3>
         <span className={`expand-icon ${isExpanded ? 'expanded' : ''}`}>
-          {isExpanded ? '▼' : '▶'}
+          {isExpanded ? '收起 ▼' : '展开 ▶'}
         </span>
       </div>
       
-      {isExpanded && (
-        <div className="announcement-content">
-          {displayedAnnouncements.map((announcement, index) => (
-            <div key={index} className="announcement-item">
-              {announcement.version && (
-                <div className="announcement-version">
-                  <span className="version-tag">v{announcement.version}</span>
-                  {announcement.date && <span className="date">{announcement.date}</span>}
-                </div>
-              )}
-              <div className="announcement-text" dangerouslySetInnerHTML={{ __html: announcement.content }} />
-            </div>
-          ))}
-          
-          {!isExpanded && announcements.length > visibleCount && (
-            <button className="show-more-button" onClick={showMore}>
-              查看更多
-            </button>
-          )}
-        </div>
-      )}
+      <div className="announcement-content">
+        {(isExpanded ? announcements : announcements.slice(1, initialVisibleCount+1)).map((announcement, index) => (
+          <div key={index} className="announcement-item">
+            {announcement.version && (
+              <div className="announcement-version">
+                <span className="version-tag">v{announcement.version}</span>
+                {announcement.date && <span className="date">{announcement.date}</span>}
+              </div>
+            )}
+            <div className="announcement-text" dangerouslySetInnerHTML={{ __html: announcement.content }} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
