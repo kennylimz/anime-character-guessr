@@ -25,6 +25,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
       228217, // 第五人格
       296327, // 永劫无间
       208415, // BanG Dream! 少女乐团派对！
+      293554, // 战双帕弥什
     ]
   );
 
