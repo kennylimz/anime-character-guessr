@@ -39,7 +39,7 @@ const UpdateAnnouncement = ({
   return (
     <div className="update-announcement">
       <div className="update-header" onClick={toggleExpand}>
-        <h3>更新公告</h3>
+        <h3>更新公告（最新：{announcements[1].date}）</h3>
         <span className={`expand-icon ${isExpanded ? 'expanded' : ''}`}>
           {isExpanded ? '▼' : '▶'}
         </span>
