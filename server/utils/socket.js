@@ -3,7 +3,7 @@ function setupSocket(io, rooms) {
         console.log(`A user connected: ${socket.id}`);
     
         // Handle room creation
-        socket.on('createRoom', ({roomId, username}) => {
+        socket.on('createRoom', ({roomId, username, avatarId, avatarImage}) => {
             // Basic validation
             if (!username || username.trim().length === 0) {
                 console.log(`[ERROR][createRoom][${socket.id}] 用户名呢`);
@@ -34,7 +34,9 @@ function setupSocket(io, rooms) {
                     ready: false,
                     guesses: '',
                     message: '',
-                    team: null
+                    team: null,
+                    ...(avatarId !== undefined && { avatarId }),
+                    ...(avatarImage !== undefined && { avatarImage })
                 }],
                 lastActive: Date.now()
             });
@@ -52,7 +54,7 @@ function setupSocket(io, rooms) {
         });
     
         // Handle room joining
-        socket.on('joinRoom', ({roomId, username}) => {
+        socket.on('joinRoom', ({roomId, username, avatarId, avatarImage}) => {
             // Basic validation
             if (!username || username.trim().length === 0) {
                 console.log(`[ERROR][joinRoom][${socket.id}] 用户名呢`);
@@ -74,7 +76,9 @@ function setupSocket(io, rooms) {
                         ready: false,
                         guesses: '',
                         message: '',
-                        team: null
+                        team: null,
+                        ...(avatarId !== undefined && { avatarId }),
+                        ...(avatarImage !== undefined && { avatarImage })
                     }],
                     lastActive: Date.now()
                 });
@@ -122,6 +126,16 @@ function setupSocket(io, rooms) {
                 return;
             }
     
+            // Check for duplicate avatarId
+            if (avatarId !== undefined) {
+                const isAvatarTaken = room.players.some(player => String(player.avatarId) === String(avatarId));
+                if (isAvatarTaken) {
+                    console.log(`[ERROR][joinRoom][${socket.id}] 头像已被选用`);
+                    socket.emit('error', {message: 'joinRoom: 头像已被选用'});
+                    return;
+                }
+            }
+    
             // Add player to room
             room.players.push({
                 id: socket.id,
@@ -131,7 +145,9 @@ function setupSocket(io, rooms) {
                 ready: false,
                 guesses: '',
                 message: '',
-                team: null
+                team: null,
+                ...(avatarId !== undefined && { avatarId }),
+                ...(avatarImage !== undefined && { avatarImage })
             });
     
             // Join socket to room

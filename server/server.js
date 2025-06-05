@@ -5,6 +5,8 @@ const {Server} = require('socket.io');
 const cors = require('cors');
 const {startAutoClean} = require('./utils/autoClean');
 const db = require('./utils/db');
+const fs = require('fs');
+const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
@@ -87,6 +89,32 @@ app.get('/list-rooms', (req, res) => {
     res.json(roomsList);
 });
 
+app.get('/roulette', (req, res) => {
+    const characters = require('./data/character_images.json');
+    if (!Array.isArray(characters) || characters.length < 10) {
+        return res.status(500).json({ error: 'Not enough character images' });
+    }
+    function getRandomSample(arr, n) {
+        const result = [];
+        const used = new Set();
+        while (result.length < n && used.size < arr.length) {
+            const idx = Math.floor(Math.random() * arr.length);
+            if (!used.has(idx)) {
+                used.add(idx);
+                result.push(arr[idx]);
+            }
+        }
+        return result;
+    }
+    const selected = getRandomSample(characters, 10).map(char => ({
+        id: char.id,
+        collects: char.collects,
+        image_medium: Array.isArray(char.image_medium) && char.image_medium.length > 0 ? char.image_medium[0] : null,
+        image_grid: Array.isArray(char.image_grid) && char.image_grid.length > 0 ? char.image_grid[0] : null
+    }));
+    res.json(selected);
+});
+
 startAutoClean();
 
 app.post('/api/character-tags', async (req, res) => {
@@ -95,9 +123,9 @@ app.post('/api/character-tags', async (req, res) => {
         
         // Validate request body
         if (!characterId || !tags || !Array.isArray(tags)) {
-        return res.status(400).json({ 
-            error: 'Invalid request body. Required format: { characterId: number, tags: string[] }' 
-        });
+            return res.status(400).json({ 
+                error: 'Invalid request body. Required format: { characterId: number, tags: string[] }' 
+            });
         }
 
         const client = db.getClient();
@@ -110,35 +138,35 @@ app.post('/api/character-tags', async (req, res) => {
         // Initialize or get existing tagCounts
         let tagCounts = {};
         if (existingDoc && existingDoc.tagCounts) {
-        tagCounts = existingDoc.tagCounts;
+            tagCounts = existingDoc.tagCounts;
         }
 
         // Update tag counts
         for (const tag of tags) {
-        if (tag in tagCounts) {
-            tagCounts[tag]++;
-        } else {
-            tagCounts[tag] = 1;
-        }
+            if (tag in tagCounts) {
+                tagCounts[tag]++;
+            } else {
+                tagCounts[tag] = 1;
+            }
         }
         
         // Create or update document
         const document = {
-        _id: characterId,
-        tagCounts
+            _id: characterId,
+            tagCounts
         };
 
         // Use replaceOne with upsert to handle both insert and update cases
         const result = await collection.replaceOne(
-        { _id: characterId },
-        document,
-        { upsert: true }
+            { _id: characterId },
+            document,
+            { upsert: true }
         );
         
         res.status(201).json({
-        message: result.upsertedCount ? 'Character tags added successfully' : 'Character tags updated successfully',
-        characterId,
-        document
+            message: result.upsertedCount ? 'Character tags added successfully' : 'Character tags updated successfully',
+            characterId,
+            document
         });
     } catch (error) {
         console.error('Error inserting character tags:', error);

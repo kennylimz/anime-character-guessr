@@ -216,13 +216,14 @@
 .score-table th:nth-child(2) {
   width: 8%; /* 队 column: small */
 }
-.score-table th:nth-child(3) {
-  width: 32%; /* 名 column: large */
-}
+
 .score-table th:nth-child(4) {
-  width: 8%; /* 分 column: small */
+  width: 26%; /* 名 column: larger */
 }
 .score-table th:nth-child(5) {
+  width: 8%; /* 分 column: small */
+}
+.score-table th:nth-child(6) {
   width: 32%; /* 猜 column: large */
 }
 
@@ -657,4 +658,25 @@
     transform: translateX(-50%) translateY(0);
     opacity: 1;
   }
+}
+
+.player-avatar {
+  height: 100%;
+  width: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.score-table td {
+  min-height: 44px;
+  height: 44px;
+}
+
+.score-table td:nth-child(3), .score-table th:nth-child(3) {
+  border-right: none;
+}
+.score-table td:nth-child(4), .score-table th:nth-child(4) {
+  border-left: none;
 }

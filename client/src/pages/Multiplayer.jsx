@@ -12,6 +12,7 @@ import GameEndPopup from '../components/GameEndPopup';
 import SetAnswerPopup from '../components/SetAnswerPopup';
 import GameSettingsDisplay from '../components/GameSettingsDisplay';
 import Leaderboard from '../components/Leaderboard';
+import Roulette from '../components/Roulette';
 import '../styles/Multiplayer.css';
 import '../styles/game.css';
 import CryptoJS from 'crypto-js';
@@ -184,6 +185,10 @@ const Multiplayer = () => {
       alert(`错误: ${message}`);
       setError(message);
       setIsJoined(false);
+      if (message && message.includes('头像被用了😭😭😭')) {
+        delete sessionStorage.avatarId;
+        delete sessionStorage.avatarImage;
+      }
     });
 
     newSocket.on('updateGameSettings', ({ settings }) => {
@@ -323,13 +328,14 @@ const Multiplayer = () => {
     }
 
     setError('');
+    const avatarId = sessionStorage.avatarId;
+    const avatarImage = sessionStorage.avatarImage;
+    const avatarPayload = avatarId !== undefined ? { avatarId, avatarImage } : {};
     if (isHost) {
-      socketRef.current?.emit('createRoom', { roomId, username });
-      // Send initial game settings when creating room
+      socketRef.current?.emit('createRoom', { roomId, username, ...avatarPayload });
       socketRef.current?.emit('updateGameSettings', { roomId, settings: gameSettings });
     } else {
-      socketRef.current?.emit('joinRoom', { roomId, username });
-      // Request current settings from server
+      socketRef.current?.emit('joinRoom', { roomId, username, ...avatarPayload });
       socketRef.current?.emit('requestGameSettings', { roomId });
     }
     setIsJoined(true);
@@ -739,6 +745,7 @@ const Multiplayer = () => {
             {/* Only show quick-join if not joined and is host, use same style as '创建' */}
             {error && <p className="error-message">{error}</p>}
           </div>
+          <Roulette />
           <Leaderboard />
         </>
       ) : (

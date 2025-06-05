@@ -126,6 +126,7 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
           <tr>
             <th></th>
             <th>队</th>
+            <th></th>
             <th>
               <button className='table-head-name-button'
                 onClick={handleShowNamesToggle}>
@@ -162,6 +163,11 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                   </select>
                 ) : (
                   <span>{player.team ? player.team : '无'}</span>
+                )}
+              </td>
+              <td>
+                {player.avatarId && player.avatarId > 0 && player.avatarImage && (
+                  <img src={player.avatarImage} className="player-avatar" />
                 )}
               </td>
               <td>
