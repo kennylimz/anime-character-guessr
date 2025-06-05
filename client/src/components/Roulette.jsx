@@ -35,8 +35,10 @@ const Roulette = ({ defaultExpanded = false }) => {
   const handleCardClick = (idx) => {
     if (!flipped[idx]) {
       // Flip the card if not already flipped
-      if (sessionStorage.getItem('avatarId') === null) {
-        sessionStorage.setItem('avatarId', 0);
+      setSelected(idx);
+      if (rouletteData[idx] && rouletteData[idx].id !== undefined) {
+        sessionStorage.setItem('avatarId', rouletteData[idx].id);
+        sessionStorage.setItem('avatarImage', rouletteData[idx].image_grid);
       }
       setFlipped((prev) => {
         const next = [...prev];
