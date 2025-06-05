@@ -186,8 +186,8 @@ const Multiplayer = () => {
       setError(message);
       setIsJoined(false);
       if (message && message.includes('头像被用了😭😭😭')) {
-        delete sessionStorage.avatarId;
-        delete sessionStorage.avatarImage;
+        sessionStorage.removeItem('avatarId');
+        sessionStorage.removeItem('avatarImage');
       }
     });
 
@@ -328,9 +328,10 @@ const Multiplayer = () => {
     }
 
     setError('');
-    const avatarId = sessionStorage.avatarId;
-    const avatarImage = sessionStorage.avatarImage;
-    const avatarPayload = avatarId !== undefined ? { avatarId, avatarImage } : {};
+    // Only declare these variables once
+    const avatarId = sessionStorage.getItem('avatarId');
+    const avatarImage = sessionStorage.getItem('avatarImage');
+    const avatarPayload = avatarId !== null ? { avatarId, avatarImage } : {};
     if (isHost) {
       socketRef.current?.emit('createRoom', { roomId, username, ...avatarPayload });
       socketRef.current?.emit('updateGameSettings', { roomId, settings: gameSettings });
@@ -361,21 +362,17 @@ const Multiplayer = () => {
     gameEndedRef.current = true;
     setGameEnd(true);
     // Emit game end event to server
-    socketRef.current?.emit('gameEnd', {
-      roomId,
-      result: isWin ? 'win' : 'lose'
-    });
-
-    // Update player score
-    if (isWin) {
-      const updatedPlayers = players.map(p => {
-        if (p.id === socketRef.current?.id) {
-          return { ...p, score: p.score + 1 };
-        }
-        return p;
+    if (sessionStorage.getItem('avatarId') == answerCharacter.id) {
+      socketRef.current?.emit('gameEnd', {
+        roomId,
+        result: isWin ? 'bigwin' : 'lose'
       });
-      setPlayers(updatedPlayers);
-      socketRef.current?.emit('updateScore', { roomId, score: updatedPlayers.find(p => p.id === socketRef.current?.id)?.score });
+    }
+    else {
+      socketRef.current?.emit('gameEnd', {
+        roomId,
+        result: isWin ? 'win' : 'lose'
+      });
     }
   };
 
@@ -399,15 +396,18 @@ const Multiplayer = () => {
         console.warn('Invalid guessData, not emitting');
         return;
       }
+      let tempFeedback = generateFeedback(guessData, answerCharacter, gameSettings);
       setGuessesLeft(prev => prev - 1);
       socketRef.current?.emit('playerGuess', {
         roomId,
         guessResult: {
           isCorrect,
+          isPartialCorrect: tempFeedback.shared_appearances.count > 0,
           guessData
         }
       });
       guessData.rawTags = new Map(guessData.rawTags);
+      const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
       if (isCorrect) {
         setGuesses(prevGuesses => [...prevGuesses, {
           id: guessData.id,
@@ -437,7 +437,6 @@ const Multiplayer = () => {
         }]);
         handleGameEnd(true);
       } else if (guessesLeft <= 1) {
-        const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
         setGuesses(prevGuesses => [...prevGuesses, {
           id: guessData.id,
           icon: guessData.image,
@@ -463,7 +462,6 @@ const Multiplayer = () => {
         }]);
         handleGameEnd(false);
       } else {
-        const feedback = generateFeedback(guessData, answerCharacter, gameSettings);
         setGuesses(prevGuesses => [...prevGuesses, {
           id: guessData.id,
           icon: guessData.image,
@@ -525,7 +523,6 @@ const Multiplayer = () => {
     if (gameEnd || gameEndedRef.current) return;
     gameEndedRef.current = true;
     setGameEnd(true);
-
     // Emit game end event with surrender result
     socketRef.current?.emit('gameEnd', {
       roomId,

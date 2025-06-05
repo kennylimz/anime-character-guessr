@@ -12,7 +12,7 @@ const Roulette = ({ defaultExpanded = false }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [initialAvatarId, setInitialAvatarId] = useState(() => {
-    return sessionStorage.avatarId !== undefined;
+    return sessionStorage.getItem('avatarId') !== null;
   });
 
   useEffect(() => {
@@ -35,8 +35,8 @@ const Roulette = ({ defaultExpanded = false }) => {
   const handleCardClick = (idx) => {
     if (!flipped[idx]) {
       // Flip the card if not already flipped
-      if (sessionStorage.avatarId === undefined) {
-        sessionStorage.avatarId = 0;
+      if (sessionStorage.getItem('avatarId') === null) {
+        sessionStorage.setItem('avatarId', 0);
       }
       setFlipped((prev) => {
         const next = [...prev];
@@ -47,8 +47,8 @@ const Roulette = ({ defaultExpanded = false }) => {
       // Select the card if already flipped
       setSelected(idx);
       if (rouletteData[idx] && rouletteData[idx].id !== undefined) {
-        sessionStorage.avatarId = rouletteData[idx].id;
-        sessionStorage.avatarImage = rouletteData[idx].image_grid;
+        sessionStorage.setItem('avatarId', rouletteData[idx].id);
+        sessionStorage.setItem('avatarImage', rouletteData[idx].image_grid);
       }
     }
   };
@@ -115,7 +115,7 @@ const Roulette = ({ defaultExpanded = false }) => {
           {initialAvatarId && selected === null ? null : (
             <button className="roulette-cancel-btn" onClick={() => {
               setSelected(null);
-              sessionStorage.avatarId = 0;
+              sessionStorage.setItem('avatarId', 0);
             }}>
               取消选择
             </button>

@@ -23,6 +23,16 @@ const announcements = [
   },
 
   {
+    version: '1.5.0',
+    date: '2025-06-05',
+    content: `
+      添加了不知道有什么用的抽卡功能。<br/>
+      现在猜对作品会给一部分分数。
+      
+    `
+  },
+
+  {
     version: '1.4.2',
     date: '2025-06-03',
     content: `

@@ -336,7 +336,13 @@ function setupSocket(io, rooms) {
             }
     
             // Update player's guesses string
-            player.guesses += guessResult.isCorrect ? '✔' : '❌';
+            if (!guessResult.isCorrect && guessResult.isPartialCorrect && !player.guesses.includes('💡')) {
+                player.score += 1;
+                player.guesses += '💡';
+            }
+            else{
+                player.guesses += guessResult.isCorrect ? '✔' :  '❌';
+            }
     
             // Broadcast updated players to all clients in the room
             io.to(roomId).emit('updatePlayers', {
@@ -376,6 +382,9 @@ function setupSocket(io, rooms) {
                 case 'win':
                     player.guesses += '✌';
                     break;
+                case 'bigwin':
+                    player.guesses += '👑';
+                    break;
                 default:
                     player.guesses += '💀';
             }
@@ -386,8 +395,10 @@ function setupSocket(io, rooms) {
                 p.guesses.includes('✌') || 
                 p.guesses.includes('💀') || 
                 p.guesses.includes('🏳️') || 
+                p.guesses.includes('👑') ||
                 p.disconnected
             );
+            const bigwinner = activePlayers.find(p => p.guesses.includes('👑'));
             const winner = activePlayers.find(p => p.guesses.includes('✌'));
     
             const handleGameEnd = () => {
@@ -396,7 +407,13 @@ function setupSocket(io, rooms) {
     
                 // If there was an answer setter (manual mode)
                 if (answerSetter) {
-                    if (winner) {
+                    if (bigwinner) {
+                        io.to(roomId).emit('gameEnded', {
+                            message: `本命大赢家是: ${bigwinner.username}！出题人 ${answerSetter.username} 纯在送分！`,
+                            guesses: room.currentGame?.guesses || []
+                        });
+                    }
+                    else if (winner) {
                         // If winner took many guesses
                         if (winner.guesses.length > 6) {
                             answerSetter.score += 1;
@@ -420,10 +437,24 @@ function setupSocket(io, rooms) {
                     }
                 } else {
                     // Normal mode end messages
-                    io.to(roomId).emit('gameEnded', {
-                        message: winner ? `赢家是: ${winner.username}` : '已经结束咧🙄！没人猜中',
-                        guesses: room.currentGame?.guesses || []
-                    });
+                    if (bigwinner) {
+                        io.to(roomId).emit('gameEnded', {
+                            message: `本命大赢家是: ${bigwinner.username}！`,
+                            guesses: room.currentGame?.guesses || []
+                        });
+                    }
+                    else if (winner) {
+                        io.to(roomId).emit('gameEnded', {
+                            message: `赢家是: ${winner.username}！`,
+                            guesses: room.currentGame?.guesses || []
+                        });
+                    }
+                    else {
+                        io.to(roomId).emit('gameEnded', {
+                            message: `已经结束咧🙄！没人猜中`,
+                            guesses: room.currentGame?.guesses || []
+                        });
+                    }
                 }
     
                 // Reset answer setter status for all players
@@ -445,9 +476,17 @@ function setupSocket(io, rooms) {
                 });
             };
     
-            if (winner) {
-                // Increment winner's score by 1
-                winner.score += 1;
+            if (bigwinner) {
+                bigwinner.score += 14;
+                if (!bigwinner.guesses.includes('💡')) {
+                    bigwinner.score += 1;
+                }
+                handleGameEnd();
+            } else if (winner) {
+                winner.score += 2;
+                if (!winner.guesses.includes('💡')) {
+                    winner.score += 1;
+                }
                 handleGameEnd();
             } else if (allEnded) {
                 handleGameEnd();
