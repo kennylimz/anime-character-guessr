@@ -408,6 +408,7 @@ function setupSocket(io, rooms) {
                 // If there was an answer setter (manual mode)
                 if (answerSetter) {
                     if (bigwinner) {
+                        answerSetter.score -= 3;
                         io.to(roomId).emit('gameEnded', {
                             message: `本命大赢家是: ${bigwinner.username}！出题人 ${answerSetter.username} 纯在送分！`,
                             guesses: room.currentGame?.guesses || []
@@ -429,7 +430,7 @@ function setupSocket(io, rooms) {
                         }
                     } else {
                         // Deduct point from answer setter for no winner
-                        answerSetter.score--;
+                        answerSetter.score -= 1;
                         io.to(roomId).emit('gameEnded', {
                             message: `已经结束咧🙄！没人猜中，出题人 ${answerSetter.username} 扣1分！`,
                             guesses: room.currentGame?.guesses || []
