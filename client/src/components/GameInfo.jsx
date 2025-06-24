@@ -1,9 +1,6 @@
 import '../styles/game.css';
 
-function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, onSurrender }) {
-  const showFirstHint = guessesLeft <= 5;
-  const showSecondHint = guessesLeft <= 2;
-
+function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, useHints = [], onSurrender }) {
   return (
     <div className="game-info">
       {gameEnd ? (
@@ -20,18 +17,14 @@ function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, onSurren
               </button>
             )}
           </div>
-          {showFirstHint && (
-            <div className="hint-container">
-              <span className="hint-label">提示 1:</span>
-              <span className="hint-text">{hints.first}</span>
-            </div>
-          )}
-          {showSecondHint && (
-            <div className="hint-container">
-              <span className="hint-label">提示 2:</span>
-              <span className="hint-text">{hints.second}</span>
-            </div>
-          )}
+          {useHints && hints && useHints.map((val, idx) => (
+            guessesLeft <= val && hints[idx] && (
+              <div className="hint-container" key={idx}>
+                <span className="hint-label">提示 {idx+1}:</span>
+                <span className="hint-text">{hints[idx]}</span>
+              </div>
+            )
+          ))}
         </div>
       )}
     </div>

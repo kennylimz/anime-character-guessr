@@ -11,6 +11,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
   const [searchResults, setSearchResults] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
   const searchContainerRef = useRef(null);
+  const [hintInputs, setHintInputs] = useState(['8','5','3']);
 
   // Handle click outside to close dropdown
   useEffect(() => {
@@ -51,6 +52,17 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
         .catch(console.error);
     }
   }, []);
+
+  useEffect(() => {
+    if (Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0) {
+      // Always keep 3 inputs, fill with '' if less than 3
+      const arr = gameSettings.useHints.map(String);
+      while (arr.length < 3) arr.push('');
+      setHintInputs(arr);
+    } else {
+      setHintInputs(['8','5','3']);
+    }
+  }, [gameSettings.useHints]);
 
   const setIndex = async (indexId) => {
     if (!indexId) {
@@ -341,14 +353,64 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
               </div>
               <div className="settings-row">
                 <label>启用提示</label>
-                <input 
+                <input
                   type="checkbox"
-                  checked={gameSettings.enableHints}
-                  onChange={(e) => {
-                    onSettingsChange('enableHints', e.target.checked);
+                  checked={Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0}
+                  onChange={e => {
+                    if (e.target.checked) {
+                      setHintInputs(['8','5','3']);
+                      onSettingsChange('useHints', [8,5,3]);
+                    } else {
+                      setHintInputs(['8','5','3']);
+                      onSettingsChange('useHints', []);
+                    }
                   }}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                  style={{ marginRight: '20px', marginLeft: '0px' }}
                 />
+                {Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && (
+                  <>
+                    <label style={{marginLeft: '10px'}}>提示出现时机（剩余次数）：</label>
+                    {[0,1,2].map((idx) => (
+                      <input
+                        key={idx}
+                        type="number"
+                        min="1"
+                        max={gameSettings.maxAttempts || 10}
+                        value={hintInputs[idx] || ''}
+                        onChange={e => {
+                          const newInputs = [...hintInputs];
+                          let val = e.target.value;
+                          if (val === '' || isNaN(Number(val)) || Number(val) < 1) {
+                            newInputs[idx] = '';
+                          } else {
+                            val = String(Math.floor(Number(val)));
+                            // Enforce strictly decreasing order
+                            if (idx > 0 && newInputs[idx-1] && Number(val) >= Number(newInputs[idx-1])) {
+                              // Clear this and all subsequent inputs
+                              for (let i = idx; i < 3; i++) newInputs[i] = '';
+                            } else {
+                              newInputs[idx] = val;
+                            }
+                          }
+                          setHintInputs(newInputs);
+                          // Only save non-empty, valid numbers, and in strictly decreasing order
+                          const arr = [];
+                          for (let i = 0; i < 3; i++) {
+                            const n = parseInt(newInputs[i], 10);
+                            if (!isNaN(n) && (i === 0 || n < arr[i-1])) {
+                              arr.push(n);
+                            } else {
+                              break;
+                            }
+                          }
+                          onSettingsChange('useHints', arr);
+                        }}
+                        style={{ marginLeft: idx === 0 ? '8px' : '4px', width: '60px' }}
+                        placeholder={`🚫`}
+                      />
+                    ))}
+                  </>
+                )}
               </div>
               <div className="settings-row">
                 <label>每局次数：</label>

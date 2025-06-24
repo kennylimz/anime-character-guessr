@@ -55,7 +55,8 @@ const Multiplayer = () => {
     characterTagNum: 6,
     subjectTagNum: 6,
     commonTags: true,
-    externalTagMode: false
+    externalTagMode: false,
+    useHints: []
   });
 
   // Game state
@@ -66,10 +67,7 @@ const Multiplayer = () => {
   const answerCharacterRef = useRef(null);
   const gameSettingsRef = useRef(gameSettings);
   const [answerCharacter, setAnswerCharacter] = useState(null);
-  const [hints, setHints] = useState({
-    first: null,
-    second: null
-  });
+  const [hints, setHints] = useState([]);
   const [shouldResetTimer, setShouldResetTimer] = useState(false);
   const [gameEnd, setGameEnd] = useState(false);
   const timeUpRef = useRef(false);
@@ -94,6 +92,7 @@ const Multiplayer = () => {
 
     // Socket event listeners
     newSocket.on('updatePlayers', ({ players, isPublic, answerSetterId }) => {
+      console.log('updatePlayers', players);
       setPlayers(players);
       if (isPublic !== undefined) {
         setIsPublic(isPublic);
@@ -131,26 +130,22 @@ const Multiplayer = () => {
       setGuessesHistory([]);
 
       // Prepare hints if enabled
-      let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-      if (settings.enableHints && hints) {
+      let hintTexts = [];
+      if (Array.isArray(settings.useHints) && settings.useHints.length > 0 && hints) {
         hintTexts = hints;
-      } 
-      else if (settings.enableHints && decryptedCharacter && decryptedCharacter.summary) {
+      } else if (Array.isArray(settings.useHints) && settings.useHints.length > 0 && decryptedCharacter && decryptedCharacter.summary) {
         // Automatic mode - generate hints from summary
         const sentences = decryptedCharacter.summary.replace('[mask]', '').replace('[/mask]','')
           .split(/[。、，。！？ ""]/).filter(s => s.trim());
         if (sentences.length > 0) {
           const selectedIndices = new Set();
-          while (selectedIndices.size < Math.min(2, sentences.length)) {
+          while (selectedIndices.size < Math.min(settings.useHints.length, sentences.length)) {
             selectedIndices.add(Math.floor(Math.random() * sentences.length));
           }
           hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
         }
       }
-      setHints({
-        first: hintTexts[0],
-        second: hintTexts[1]
-      });
+      setHints(hintTexts);
       setGlobalGameEnd(false);
       setIsGameStarted(true);
       setGameEnd(false);
@@ -556,22 +551,19 @@ const Multiplayer = () => {
         setGuessesLeft(gameSettings.maxAttempts);
 
         // Prepare hints if enabled
-        let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-        if (gameSettings.enableHints && character.summary) {
+        let hintTexts = [];
+        if (Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && character.summary) {
           const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
             .split(/[。、，。！？ ""]/).filter(s => s.trim());
           if (sentences.length > 0) {
             const selectedIndices = new Set();
-            while (selectedIndices.size < Math.min(2, sentences.length)) {
+            while (selectedIndices.size < Math.min(gameSettings.useHints.length, sentences.length)) {
               selectedIndices.add(Math.floor(Math.random() * sentences.length));
             }
             hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
           }
         }
-        setHints({
-          first: hintTexts[0],
-          second: hintTexts[1]
-        });
+        setHints(hintTexts);
         setGlobalGameEnd(false);
         setIsGameStarted(true);
         setGameEnd(false);
@@ -748,20 +740,20 @@ const Multiplayer = () => {
       ) : (
         <>
           <PlayerList 
-                players={players} 
-                socket={socketRef.current} 
-                isGameStarted={isGameStarted}
-                handleReadyToggle={handleReadyToggle}
-                onAnonymousModeChange={setShowNames}
-                isManualMode={isManualMode}
-                isHost={isHost}
-                answerSetterId={answerSetterId}
-                onSetAnswerSetter={handleSetAnswerSetter}
-                onKickPlayer={handleKickPlayer}
-                onTransferHost={handleTransferHost}
-                onMessageChange={handleMessageChange}
-                onTeamChange={handleTeamChange}
-              />
+            players={players} 
+            socket={socketRef.current} 
+            isGameStarted={isGameStarted}
+            handleReadyToggle={handleReadyToggle}
+            onAnonymousModeChange={setShowNames}
+            isManualMode={isManualMode}
+            isHost={isHost}
+            answerSetterId={answerSetterId}
+            onSetAnswerSetter={handleSetAnswerSetter}
+            onKickPlayer={handleKickPlayer}
+            onTransferHost={handleTransferHost}
+            onMessageChange={handleMessageChange}
+            onTeamChange={handleTeamChange}
+          />
           <div className="anonymous-mode-info">
             匿名模式？点表头"名"切换。<br/>
             沟通玩法？点自己名字编辑短信息。
@@ -829,7 +821,7 @@ const Multiplayer = () => {
           {isGameStarted && !globalGameEnd && (
             // In game
             <div className="container">
-              {!isAnswerSetter ? (
+              {!isAnswerSetter && players.find(p => p.id === socketRef.current?.id)?.team !== '0' ? (
                 // Regular player view
                 <>
                   <SearchBar
@@ -856,10 +848,13 @@ const Multiplayer = () => {
                         投降 🏳️
                       </button>
                     </div>
-                    {gameSettings.enableHints && hints.first && (
+                    {Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && hints && hints.length > 0 && (
                       <div className="hints">
-                        {guessesLeft <= 5 && <div className="hint">提示1: {hints.first}</div>}
-                        {guessesLeft <= 2 && <div className="hint">提示2: {hints.second}</div>}
+                        {gameSettings.useHints.map((val, idx) => (
+                          guessesLeft <= val && hints[idx] && (
+                            <div className="hint" key={idx}>提示{idx+1}: {hints[idx]}</div>
+                          )
+                        ))}
                       </div>
                     )}
                   </div>
@@ -872,7 +867,6 @@ const Multiplayer = () => {
               ) : (
                 // Answer setter view
                 <div className="answer-setter-view">
-                  <h3>你是出题人</h3>
                   <div className="selected-answer">
                     <img src={answerCharacter.imageGrid} alt={answerCharacter.name} className="answer-image" />
                     <div className="answer-info">

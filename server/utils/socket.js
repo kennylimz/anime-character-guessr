@@ -269,8 +269,10 @@ function setupSocket(io, rooms) {
             // Reset all players' game state
             room.players.forEach(p => {
                 p.guesses = '';
-                // Initialize each player's guesses array using their username
-                room.currentGame.guesses.push({username: p.username, guesses: []});
+                // Only keep guess history for non-answer-setter and non-observer players
+                if (!p.isAnswerSetter && p.team !== '0') {
+                    room.currentGame.guesses.push({username: p.username, guesses: []});
+                }
             });
     
             // Broadcast game start and updated players to all clients in the room in a single event
@@ -312,13 +314,13 @@ function setupSocket(io, rooms) {
                         ...guessResult
                     });
     
-                    // Send real-time guess history update to the original answer setter
-                    const originalAnswerSetter = room.players.find(p => p.isAnswerSetter);
-                    if (originalAnswerSetter) {
-                        io.to(originalAnswerSetter.id).emit('guessHistoryUpdate', {
-                            guesses: room.currentGame.guesses
-                        });
-                    }
+                    // Send real-time guess history update to the original answer setter and team 0 members
+                    room.players.filter(p => (p.isAnswerSetter || p.team === '0') && p.id !== socket.id)
+                                .forEach(teammate => {
+                                    io.to(teammate.id).emit('guessHistoryUpdate', {
+                                        guesses: room.currentGame.guesses
+                                    });
+                                });
                 }
             }
     
@@ -390,7 +392,7 @@ function setupSocket(io, rooms) {
             }
     
             // Check if all non-answer-setter players have ended their game or disconnected
-            const activePlayers = room.players.filter(p => !p.isAnswerSetter);
+            const activePlayers = room.players.filter(p => !p.isAnswerSetter && p.team !== '0');
             const allEnded = activePlayers.every(p => 
                 p.guesses.includes('✌') || 
                 p.guesses.includes('💀') || 
@@ -612,7 +614,7 @@ function setupSocket(io, rooms) {
     
                     if (room.currentGame) {
                         // Find all non-disconnected, non-answer-setter players
-                        const activePlayers = room.players.filter(p => !p.disconnected && !p.isAnswerSetter);
+                        const activePlayers = room.players.filter(p => !p.disconnected && !p.isAnswerSetter && p.team !== '0');
                         // Check if all such players have ended their game
                         const allEnded = activePlayers.every(p =>
                             p.guesses.includes('✌') ||
@@ -873,8 +875,8 @@ function setupSocket(io, rooms) {
             room.players.forEach(p => {
                 p.guesses = '';
                 p.isAnswerSetter = (p.id === socket.id); // Mark the answer setter
-                // Initialize each player's guesses array using their username
-                if (!p.isAnswerSetter) { // Only initialize guesses for non-answer setters
+                // Only keep guess history for non-answer-setter and non-observer players
+                if (!p.isAnswerSetter && p.team !== '0') {
                     room.currentGame.guesses.push({username: p.username, guesses: []});
                 }
             });
@@ -1008,8 +1010,8 @@ function setupSocket(io, rooms) {
                 socket.emit('error', { message: 'updatePlayerTeam: 连接中断了' });
                 return;
             }
-            // Accept only null or 1-8 as valid team values
-            if (team !== null && !(typeof team === 'string' && /^[1-8]$/.test(team))) {
+            // Accept only null or 0-8 as valid team values
+            if (team !== null && !(typeof team === 'string' && /^[0-8]$/.test(team))) {
                 console.log(`[ERROR][updatePlayerTeam][${socket.id}] Invalid team value`);
                 socket.emit('error', { message: 'updatePlayerTeam: Invalid team value' });
                 return;

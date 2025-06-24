@@ -24,10 +24,7 @@ function SinglePlayer() {
   const [helpPopup, setHelpPopup] = useState(false);
   const [finishInit, setFinishInit] = useState(false);
   const [shouldResetTimer, setShouldResetTimer] = useState(false);
-  const [hints, setHints] = useState({
-    first: null,
-    second: null
-  });
+  const [hints, setHints] = useState([]);
   const [gameSettings, setGameSettings] = useLocalStorage('singleplayer-game-settings', {
     startYear: new Date().getFullYear()-10,
     endYear: new Date().getFullYear(),
@@ -40,7 +37,7 @@ function SinglePlayer() {
     mainCharacterOnly: true,
     characterNum: 6,
     maxAttempts: 10,
-    enableHints: false,
+    useHints: [],
     includeGame: false,
     timeLimit: null,
     subjectSearch: true,
@@ -76,24 +73,20 @@ function SinglePlayer() {
           setAnswerCharacter(character);
           setGuessesLeft(gameSettings.maxAttempts);
           // Prepare hints based on settings
-          let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-          if (gameSettings.enableHints && character.summary) {
-            // Split summary into sentences using Chinese punctuation
+          let hintTexts = [];
+          if (Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && character.summary) {
             const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
               .split(/[。、，。！？ ""]/).filter(s => s.trim());
             if (sentences.length > 0) {
-              // Randomly select 2 sentences if available
+              // Randomly select as many hints as needed
               const selectedIndices = new Set();
-              while (selectedIndices.size < Math.min(2, sentences.length)) {
+              while (selectedIndices.size < Math.min(gameSettings.useHints.length, sentences.length)) {
                 selectedIndices.add(Math.floor(Math.random() * sentences.length));
               }
               hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
             }
           }
-          setHints({
-            first: hintTexts[0],
-            second: hintTexts[1]
-          });
+          setHints(hintTexts);
           console.log('初始化游戏', gameSettings);
           setFinishInit(true);
         }
@@ -250,10 +243,7 @@ function SinglePlayer() {
     setSettingsPopup(false);
     setShouldResetTimer(true);
     setFinishInit(false);
-    setHints({
-      first: null,
-      second: null
-    });
+    setHints([]);
 
     try {
       if (gameSettings.addedSubjects.length > 0) {
@@ -269,24 +259,19 @@ function SinglePlayer() {
       const character = await getRandomCharacter(gameSettings);
       setAnswerCharacter(character);
       // Prepare hints based on settings for new game
-      let hintTexts = ['🚫提示未启用', '🚫提示未启用'];
-      if (gameSettings.enableHints && character.summary) {
-        // Split summary into sentences using Chinese punctuation
+      let hintTexts = [];
+      if (Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && character.summary) {
         const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
           .split(/[。、，。！？ ""]/).filter(s => s.trim());
         if (sentences.length > 0) {
-          // Randomly select 2 sentences if available
           const selectedIndices = new Set();
-          while (selectedIndices.size < Math.min(2, sentences.length)) {
+          while (selectedIndices.size < Math.min(gameSettings.useHints.length, sentences.length)) {
             selectedIndices.add(Math.floor(Math.random() * sentences.length));
           }
           hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
         }
       }
-      setHints({
-        first: hintTexts[0],
-        second: hintTexts[1]
-      });
+      setHints(hintTexts);
       console.log('初始化游戏', gameSettings);
       setFinishInit(true);
     } catch (error) {
@@ -362,6 +347,7 @@ function SinglePlayer() {
         answerCharacter={answerCharacter}
         finishInit={finishInit}
         hints={hints}
+        useHints={currentGameSettings.useHints}
         onSurrender={handleSurrender}
       />
 

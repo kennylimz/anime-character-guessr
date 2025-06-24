@@ -89,9 +89,9 @@ const GameSettingsDisplay = ({
       label: '最大尝试次数',
       value: settings.maxAttempts || '10'
     },
-    enableHints: {
-      label: '启用提示',
-      value: boolToText(settings.enableHints)
+    useHints: {
+      label: '提示出现次数',
+      value: Array.isArray(settings.useHints) && settings.useHints.length > 0 ? settings.useHints.join(',') : '无'
     },
     includeGame: {
       label: '包含游戏作品',
@@ -139,7 +139,7 @@ const GameSettingsDisplay = ({
     '作品范围': ['yearRange', 'topNSubjects', 'useSubjectPerYear', 'metaTags'],
     '目录设置': ['useIndex', 'indexId'],
     '角色设置': ['mainCharacterOnly', 'characterNum', 'characterTagNum'],
-    '游戏规则': ['maxAttempts', 'enableHints', 'timeLimit', 'subjectSearch', 'includeGame', 'subjectTagNum', 'commonTags', 'externalTagMode']
+    '游戏规则': ['maxAttempts', 'useHints', 'timeLimit', 'subjectSearch', 'includeGame', 'subjectTagNum', 'commonTags', 'externalTagMode']
   };
 
   const toggleExpand = () => {

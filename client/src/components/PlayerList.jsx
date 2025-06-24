@@ -9,6 +9,7 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
 
   const teamOptions = [
     { value: '', label: '无' },
+    { value: '0', label: '旁观' },
     ...Array.from({ length: 8 }, (_, i) => ({ value: (i + 1).toString(), label: (i + 1).toString() }))
   ];
 
@@ -162,7 +163,7 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                     ))}
                   </select>
                 ) : (
-                  <span>{player.team ? player.team : '无'}</span>
+                  <span>{player.team === '0' ? '旁观' : (player.team ? player.team : '无')}</span>
                 )}
               </td>
               <td>

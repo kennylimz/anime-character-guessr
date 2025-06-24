@@ -6,12 +6,19 @@ import { submitAnswerCharacterCount } from '../utils/db';
 
 const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
-  const [hint1, setHint1] = useState('');
-  const [hint2, setHint2] = useState('');
+  const [hints, setHints] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleCharacterSelect = async (character) => {
     setSelectedCharacter(character);
+  };
+
+  const handleHintChange = (idx, value) => {
+    setHints(prev => {
+      const newHints = [...prev];
+      newHints[idx] = value;
+      return newHints;
+    });
   };
 
   const handleSubmit = async () => {
@@ -19,16 +26,14 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
       setIsSubmitting(true);
       try {
         const character = await designateCharacter(selectedCharacter.id, gameSettings);
-        
         try {
           await submitAnswerCharacterCount(selectedCharacter.id, character.nameCn || character.name);
         } catch (error) {
           console.error('Failed to submit answer count:', error);
         }
-
         onSetAnswer({
           character,
-          hints: [hint1, hint2]
+          hints: hints.slice(0, Array.isArray(gameSettings.useHints) ? gameSettings.useHints.length : 0)
         });
       } catch (error) {
         console.error('Failed to get character details:', error);
@@ -61,29 +66,19 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
           </div>
         )}
         <div className="hints-container">
-          <h3>添加提示{!gameSettings.enableHints && '（已禁用）'}</h3>
-          <div className="hint-input-group">
-            <label>提示1:</label>
-            <input
-              type="text"
-              value={hint1}
-              onChange={(e) => setHint1(e.target.value)}
-              placeholder={gameSettings.enableHints ? "输入第一条提示" : "提示已禁用"}
-              maxLength={30}
-              disabled={!gameSettings.enableHints}
-            />
-          </div>
-          <div className="hint-input-group">
-            <label>提示2:</label>
-            <input
-              type="text"
-              value={hint2}
-              onChange={(e) => setHint2(e.target.value)}
-              placeholder={gameSettings.enableHints ? "输入第二条提示" : "提示已禁用"}
-              maxLength={30}
-              disabled={!gameSettings.enableHints}
-            />
-          </div>
+          <h3>添加提示{Array.isArray(gameSettings.useHints) && gameSettings.useHints.length === 0 && '（未启用）'}</h3>
+          {Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && gameSettings.useHints.map((val, idx) => (
+            <div className="hint-input-group" key={idx}>
+              <label>提示{idx+1} (在剩余{val}次时出现):</label>
+              <input
+                type="text"
+                value={hints[idx] || ''}
+                onChange={e => handleHintChange(idx, e.target.value)}
+                placeholder={`输入第${idx+1}条提示`}
+                maxLength={30}
+              />
+            </div>
+          ))}
         </div>
         <button
           onClick={handleSubmit}
