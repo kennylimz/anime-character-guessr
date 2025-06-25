@@ -324,17 +324,23 @@ function setupSocket(io, rooms) {
                 }
             }
     
-            // Team guess sharing: broadcast guessData to teammates (not self, only for teams 1-8)
-            if (player.team && /^[1-8]$/.test(player.team) && guessResult.guessData && !guessResult.isCorrect) {
-                room.players
-                    .filter(p => p.team === player.team && p.id !== socket.id && !p.isAnswerSetter)
-                    .forEach(teammate => {
-                        io.to(teammate.id).emit('boardcastTeamGuess', {
-                            guessData: { ...guessResult.guessData, guessrName: player.username },
-                            playerId: socket.id,
-                            playerName: player.username
-                        });
+            // Team guess sharing: broadcast guessData to teammates, observers, and answerSetter (not self)
+            if (guessResult.guessData && !guessResult.isCorrect) {
+                // Collect all intended recipients (teammates, observers, answerSetter), not self, no duplicates
+                const recipients = room.players.filter(p =>
+                    p.id !== socket.id && (
+                        (p.team === player.team && !p.isAnswerSetter) ||
+                        p.team === '0' ||
+                        p.isAnswerSetter
+                    )
+                );
+                recipients.forEach(recipient => {
+                    io.to(recipient.id).emit('boardcastTeamGuess', {
+                        guessData: { ...guessResult.guessData, guessrName: player.username },
+                        playerId: socket.id,
+                        playerName: player.username
                     });
+                });
             }
     
             // Update player's guesses string

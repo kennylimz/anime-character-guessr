@@ -80,6 +80,7 @@ const Multiplayer = () => {
   const [showSetAnswerPopup, setShowSetAnswerPopup] = useState(false);
   const [isAnswerSetter, setIsAnswerSetter] = useState(false);
   const [kickNotification, setKickNotification] = useState(null);
+  const [answerViewMode, setAnswerViewMode] = useState('simple'); // 'simple' or 'detailed'
 
   useEffect(() => {
     // Initialize socket connection
@@ -92,7 +93,6 @@ const Multiplayer = () => {
 
     // Socket event listeners
     newSocket.on('updatePlayers', ({ players, isPublic, answerSetterId }) => {
-      console.log('updatePlayers', players);
       setPlayers(players);
       if (isPublic !== undefined) {
         setIsPublic(isPublic);
@@ -874,36 +874,63 @@ const Multiplayer = () => {
                       <div>{answerCharacter.nameCn}</div>
                     </div>
                   </div>
-                  <div className="guess-history-table">
-                    <table>
-                      <thead>
-                        <tr>
-                          {guessesHistory.map((playerGuesses, index) => (
-                            <th key={playerGuesses.username}>
-                              {showNames ? playerGuesses.username : `玩家${index + 1}`}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {Array.from({ length: Math.max(...guessesHistory.map(g => g.guesses.length)) }).map((_, rowIndex) => (
-                          <tr key={rowIndex}>
-                            {guessesHistory.map(playerGuesses => (
-                              <td key={playerGuesses.username}>
-                                {playerGuesses.guesses[rowIndex] && (
-                                  <>
-                                    <img className="character-icon" src={playerGuesses.guesses[rowIndex].guessData.image} alt={playerGuesses.guesses[rowIndex].guessData.name} />
-                                    <div className="character-name">{playerGuesses.guesses[rowIndex].guessData.name}</div>
-                                    <div className="character-name-cn">{playerGuesses.guesses[rowIndex].guessData.nameCn}</div>
-                                  </>
-                                )}
-                              </td>
+                  {/* Switch for 简单/详细 */}
+                  <div style={{ margin: '10px 0', textAlign: 'center' }}>
+                    <button
+                      className={answerViewMode === 'simple' ? 'active' : ''}
+                      style={{ marginRight: 8, padding: '4px 12px', borderRadius: 6, border: '1px solid #ccc', background: answerViewMode === 'simple' ? '#e0e0e0' : '#fff', cursor: 'pointer' }}
+                      onClick={() => setAnswerViewMode('simple')}
+                    >
+                      简单
+                    </button>
+                    <button
+                      className={answerViewMode === 'detailed' ? 'active' : ''}
+                      style={{ padding: '4px 12px', borderRadius: 6, border: '1px solid #ccc', background: answerViewMode === 'detailed' ? '#e0e0e0' : '#fff', cursor: 'pointer' }}
+                      onClick={() => setAnswerViewMode('detailed')}
+                    >
+                      详细
+                    </button>
+                  </div>
+                  {answerViewMode === 'simple' ? (
+                    <div className="guess-history-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            {guessesHistory.map((playerGuesses, index) => (
+                              <th key={playerGuesses.username}>
+                                {showNames ? playerGuesses.username : `玩家${index + 1}`}
+                              </th>
                             ))}
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
+                        </thead>
+                        <tbody>
+                          {Array.from({ length: Math.max(...guessesHistory.map(g => g.guesses.length)) }).map((_, rowIndex) => (
+                            <tr key={rowIndex}>
+                              {guessesHistory.map(playerGuesses => (
+                                <td key={playerGuesses.username}>
+                                  {playerGuesses.guesses[rowIndex] && (
+                                    <>
+                                      <img className="character-icon" src={playerGuesses.guesses[rowIndex].guessData.image} alt={playerGuesses.guesses[rowIndex].guessData.name} />
+                                      <div className="character-name">{playerGuesses.guesses[rowIndex].guessData.name}</div>
+                                      <div className="character-name-cn">{playerGuesses.guesses[rowIndex].guessData.nameCn}</div>
+                                    </>
+                                  )}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : (
+                    <div style={{ marginTop: 12 }}>
+                      <GuessesTable
+                        guesses={guesses}
+                        gameSettings={gameSettings}
+                        answerCharacter={answerCharacter}
+                      />
+                    </div>
+                  )}
                 </div>
               )}
             </div>
