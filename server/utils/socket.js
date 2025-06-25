@@ -329,7 +329,7 @@ function setupSocket(io, rooms) {
                 // Collect all intended recipients (teammates, observers, answerSetter), not self, no duplicates
                 const recipients = room.players.filter(p =>
                     p.id !== socket.id && (
-                        (p.team === player.team && !p.isAnswerSetter) ||
+                        (p.team !== null && p.team === player.team && !p.isAnswerSetter) ||
                         p.team === '0' ||
                         p.isAnswerSetter
                     )
