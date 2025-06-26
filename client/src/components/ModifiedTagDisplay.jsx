@@ -1,33 +1,13 @@
 import { useState, useEffect } from 'react';
 import '../styles/GuessesTable.css';
 import axios from 'axios';
+import { subjectsWithExtraTags } from '../data/extra_tag_subjects';
 
 function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
   const [guessTagData, setGuessTagData] = useState(null);
   const [answerTagData, setAnswerTagData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const subjectsWithExtraTags = new Set(
-    [
-      18011, // 英雄联盟
-      20810, // 刀塔2
-      175552, // 赛马娘 Pretty Derby
-      225878, // 明日方舟
-      284157, // 原神
-      360097, // 崩坏：星穹铁道
-      380974, // 绝区零
-      194792, // 王者荣耀
-      172168, // 崩坏3
-      300648, // 蔚蓝档案
-      385208, // 鸣潮
-      208559, // 碧蓝航线
-      109378, // 命运-冠位指定
-      228217, // 第五人格
-      296327, // 永劫无间
-      208415, // BanG Dream! 少女乐团派对！
-      293554, // 战双帕弥什
-    ]
-  );
 
   useEffect(() => {
     const fetchTagData = async () => {
@@ -73,7 +53,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
   }
 
   if (!guessTagData) {
-    return <div className="modified-tag-display empty">没有标签……<br/>（可能是作者没录入或没启用“关联游戏条目”）</div>;
+    return <div className="modified-tag-display empty">没有标签……<br/>（可能是作者尚未录入）</div>;
   }
 
   return (

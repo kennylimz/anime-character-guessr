@@ -55,7 +55,6 @@ const Multiplayer = () => {
     characterTagNum: 6,
     subjectTagNum: 6,
     commonTags: true,
-    externalTagMode: false,
     useHints: []
   });
 

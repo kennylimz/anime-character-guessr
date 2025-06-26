@@ -1,0 +1,200 @@
+{
+    "151162": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "双枪·冲锋枪": "双枪·冲锋枪"
+        },
+        "属性": {
+            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        }
+    },
+    "151163": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "突击步枪": "突击步枪"
+        },
+        "属性": {
+            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        }
+    },
+    "151164": {
+        "稀有度": {
+            "4星": "<img src='/assets/tag/cbjq/4星.png' alt='4星'/>"
+        },
+        "武器类型": {
+            "手枪": "手枪"
+        },
+        "属性": {
+            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        }
+    },
+    "151254": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "冲锋枪": "冲锋枪"
+        },
+        "属性": {
+            "电击": "<img src='/assets/tag/cbjq/电击.png'/>电击"
+        }
+    },
+    "151255": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "霰弹枪": "霰弹枪"
+        },
+        "属性": {
+            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        }
+    },
+    "151257": {
+        "稀有度": {
+            "4星": "<img src='/assets/tag/cbjq/4星.png' alt='4星'/>"
+        },
+        "武器类型": {
+            "冲锋枪": "冲锋枪"
+        },
+        "属性": {
+            "低温": "<img src='/assets/tag/cbjq/低温.png'/>低温"
+        }
+    },
+    "151258": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "霰弹枪": "霰弹枪"
+        },
+        "属性": {
+            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        }
+    },
+    "151259": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "狙击枪": "狙击枪"
+        },
+        "属性": {
+            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        }
+    },
+    "151289": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "弓": "弓"
+        },
+        "属性": {
+            "电击": "<img src='/assets/tag/cbjq/电击.png'/>电击"
+        }
+    },
+    "151367": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "手枪": "手枪"
+        },
+        "属性": {
+            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        }
+    },
+    "151368": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "冲锋枪": "冲锋枪"
+        },
+        "属性": {
+            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        }
+    },
+    "151369": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "霰弹枪": "霰弹枪"
+        },
+        "属性": {
+            "高热": "<img src='/assets/tag/cbjq/高热.png'/>高热"
+        }
+    },
+    "151370": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "霰弹枪": "霰弹枪"
+        },
+        "属性": {
+            "高热": "<img src='/assets/tag/cbjq/高热.png'/>高热"
+        }
+    },
+    "155424": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "狙击枪": "狙击枪"
+        },
+        "属性": {
+            "电击": "<img src='/assets/tag/cbjq/电击.png'/>电击"
+        }
+    },
+    "155425": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "突击步枪": "突击步枪"
+        },
+        "属性": {
+            "低温": "<img src='/assets/tag/cbjq/低温.png'/>低温"
+        }
+    },
+    "163595": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "狙击枪": "狙击枪"
+        },
+        "属性": {
+            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        }
+    },
+    "174413": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "突击步枪": "突击步枪"
+        },
+        "属性": {
+            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        }
+    },
+    "155426": {
+        "稀有度": {
+            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        },
+        "武器类型": {
+            "霰弹枪": "霰弹枪"
+        },
+        "属性": {
+            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        }
+    }
+}

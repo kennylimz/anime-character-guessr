@@ -43,8 +43,7 @@ function SinglePlayer() {
     subjectSearch: true,
     characterTagNum: 6,
     subjectTagNum: 6,
-    commonTags: true,
-    externalTagMode: false
+    commonTags: true
   });
   const [currentGameSettings, setCurrentGameSettings] = useState(gameSettings);
 

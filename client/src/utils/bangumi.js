@@ -1,5 +1,6 @@
 import axios from './cached-axios.js';
 import { idToTags } from '../data/id_tags.js';
+import { subjectsWithExtraTags } from '../data/extra_tag_subjects.js';
 
 const API_BASE_URL = 'https://api.bgm.tv';
 
@@ -95,7 +96,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
     else {
       filteredAppearances = subjectsResponse.data.filter(appearance => 
         (appearance.staff === '主角' || appearance.staff === '配角')
-        && (appearance.type === 2)
+        && (appearance.type === 2 || subjectsWithExtraTags.has(appearance.id))
       );
       if (filteredAppearances.length === 0) {
         filteredAppearances = subjectsResponse.data.filter(appearance => 

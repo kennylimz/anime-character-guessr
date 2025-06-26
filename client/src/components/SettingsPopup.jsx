@@ -315,22 +315,6 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   }}
                   style={{ marginRight: '50px', marginLeft: '0px' }}
                 />
-                <label>外部标签模式</label>
-                <span className="tooltip-trigger">
-                  ?
-                  <span className="tooltip-text">
-                    新的标签模式，适用于部分游戏角色。会引入游戏特色的标签，并改变表格的显示方式。<br/>
-                    
-                  </span>
-                </span>
-                <input 
-                  type="checkbox"
-                  checked={gameSettings.externalTagMode}
-                  onChange={(e) => {
-                    onSettingsChange('externalTagMode', e.target.checked);
-                  }}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
-                />
                 <div style={{ marginLeft: '30px', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <label>关联游戏条目</label>
                   <span className="tooltip-trigger">

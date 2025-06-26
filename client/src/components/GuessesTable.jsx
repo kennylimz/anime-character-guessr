@@ -1,9 +1,16 @@
 import '../styles/GuessesTable.css';
 import { useState } from 'react';
 import ModifiedTagDisplay from './ModifiedTagDisplay';
+import { subjectsWithExtraTags } from '../data/extra_tag_subjects';
 
 function GuessesTable({ guesses, gameSettings, answerCharacter }) {
   const [clickedExpandTags, setClickedExpandTags] = useState(new Set());
+  const [externalTagMode, setExternalTagMode] = useState(false);
+
+  // Determine if any guess could have extra tags
+  const hasAnyExtraTags = guesses.some(guess =>
+    Array.isArray(guess.appearanceIds) && guess.appearanceIds.some(id => subjectsWithExtraTags.has(id))
+  );
 
   const getGenderEmoji = (gender) => {
     switch (gender) {
@@ -25,14 +32,47 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
     });
   };
 
+  const handleToggleMode = () => {
+    setExternalTagMode((prev) => !prev);
+  };
+
   return (
     <div className="table-container">
-      <table className={`guesses-table${gameSettings.externalTagMode ? ' external-tag-mode' : ''}`}>
+      {/* Only show toggle if any guess could have extra tags */}
+      {hasAnyExtraTags && (
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
+          <button
+            onClick={handleToggleMode}
+            style={{
+              padding: '8px 24px',
+              borderRadius: '24px',
+              border: 'none',
+              background: externalTagMode ? '#4a90e2' : '#e0e0e0',
+              color: externalTagMode ? '#fff' : '#333',
+              fontWeight: 'bold',
+              fontSize: '16px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+              cursor: 'pointer',
+              transition: 'background 0.2s, color 0.2s',
+              outline: 'none',
+            }}
+            onMouseOver={e => {
+              e.target.style.background = externalTagMode ? '#006a91' : '#d0d0d0';
+            }}
+            onMouseOut={e => {
+              e.target.style.background = externalTagMode ? '#0084B4' : '#e0e0e0';
+            }}
+          >
+            更多标签
+          </button>
+        </div>
+      )}
+      <table className={`guesses-table${externalTagMode ? ' external-tag-mode' : ''}`}>
         <thead>
           <tr>
             <th></th>
             <th>名字</th>
-            {gameSettings.externalTagMode ? (
+            {externalTagMode ? (
               <>
                 <th>性别？</th>
                 <th></th>
@@ -69,7 +109,7 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
                   {getGenderEmoji(guess.gender)}
                 </span>
               </td>
-              {gameSettings.externalTagMode ? (
+              {externalTagMode ? (
                 <td>
                   <ModifiedTagDisplay 
                     guessCharacter={guess} 

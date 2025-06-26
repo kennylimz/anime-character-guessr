@@ -117,10 +117,6 @@ const GameSettingsDisplay = ({
     commonTags: {
       label: '共同标签优先',
       value: boolToText(settings.commonTags)
-    },
-    externalTagMode: {
-      label: '外部标签模式',
-      value: boolToText(settings.externalTagMode)
     }
   };
 
@@ -139,7 +135,7 @@ const GameSettingsDisplay = ({
     '作品范围': ['yearRange', 'topNSubjects', 'useSubjectPerYear', 'metaTags'],
     '目录设置': ['useIndex', 'indexId'],
     '角色设置': ['mainCharacterOnly', 'characterNum', 'characterTagNum'],
-    '游戏规则': ['maxAttempts', 'useHints', 'timeLimit', 'subjectSearch', 'includeGame', 'subjectTagNum', 'commonTags', 'externalTagMode']
+    '游戏规则': ['maxAttempts', 'useHints', 'timeLimit', 'subjectSearch', 'includeGame', 'subjectTagNum', 'commonTags']
   };
 
   const toggleExpand = () => {

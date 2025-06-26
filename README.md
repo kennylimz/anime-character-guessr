@@ -55,4 +55,4 @@ docker-compose down
 - 提交外部标签PR的时候请注意！
 - 素材文件分好文件夹，放到client/public/assets下。
 - 标签数据可以直接放到client/public/data/extra_tags下，作者会看一下再导入。
-- 本地测试新标签加载不出来？看一看有没有把条目ID放进ModifiedTagDisplay的subjectsWithExtraTags里。
+- 本地测试新标签加载不出来？看一看有没有把条目ID放进./client/data的extra_tag_subjects.js里。
