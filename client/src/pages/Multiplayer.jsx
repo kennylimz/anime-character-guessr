@@ -791,14 +791,14 @@ const Multiplayer = () => {
                     <button
                       onClick={handleStartGame}
                       className="start-game-button"
-                      disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected)}
+                      disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected) || players.every(p => p.team === '0')}
                     >
                       开始
                     </button>
                     <button
                       onClick={handleManualMode}
                       className={`manual-mode-button ${isManualMode ? 'active' : ''}`}
-                      disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected)}
+                      disabled={players.length < 2 || players.some(p => !p.isHost && !p.ready && !p.disconnected) || players.every(p => p.team === '0')}
                     >
                       有人想出题？
                     </button>
@@ -877,14 +877,14 @@ const Multiplayer = () => {
                   <div style={{ margin: '10px 0', textAlign: 'center' }}>
                     <button
                       className={answerViewMode === 'simple' ? 'active' : ''}
-                      style={{ marginRight: 8, padding: '4px 12px', borderRadius: 6, border: '1px solid #ccc', background: answerViewMode === 'simple' ? '#e0e0e0' : '#fff', cursor: 'pointer' }}
+                      style={{ marginRight: 8, padding: '4px 12px', borderRadius: 6, border: '1px solid #ccc', background: answerViewMode === 'simple' ? '#e0e0e0' : '#fff', cursor: 'pointer', color: 'inherit' }}
                       onClick={() => setAnswerViewMode('simple')}
                     >
                       简单
                     </button>
                     <button
                       className={answerViewMode === 'detailed' ? 'active' : ''}
-                      style={{ padding: '4px 12px', borderRadius: 6, border: '1px solid #ccc', background: answerViewMode === 'detailed' ? '#e0e0e0' : '#fff', cursor: 'pointer' }}
+                      style={{ padding: '4px 12px', borderRadius: 6, border: '1px solid #ccc', background: answerViewMode === 'detailed' ? '#e0e0e0' : '#fff', cursor: 'pointer', color: 'inherit'}}
                       onClick={() => setAnswerViewMode('detailed')}
                     >
                       详细

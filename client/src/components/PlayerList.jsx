@@ -156,7 +156,7 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                   <select
                     value={player.team || ''}
                     onChange={e => handleTeamChange(player.id, e.target.value)}
-                    style={{ minWidth: '40px' }}
+                    style={{ minWidth: '40px', background: 'inherit', color: 'inherit' }}
                   >
                     {teamOptions.map(opt => (
                       <option key={opt.value} value={opt.value}>{opt.label}</option>
