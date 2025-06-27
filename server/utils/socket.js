@@ -101,13 +101,6 @@ function setupSocket(io, rooms) {
                 return;
             }
     
-            // Check if room is private
-            if (!room.isPublic) {
-                console.log(`[ERROR][joinRoom][${socket.id}] 房间已锁定，无法加入`);
-                socket.emit('error', {message: 'joinRoom: 房间已锁定，无法加入'});
-                return;
-            }
-    
             // Check for duplicate username (case-insensitive)
             const isUsernameTaken = room.players.some(
                 player => player.username.toLowerCase() === username.toLowerCase()
@@ -161,6 +154,11 @@ function setupSocket(io, rooms) {
                     isPublic: room.isPublic,
                     hints: room.currentGame.hints || null,
                     isAnswerSetter: false // observers are not answer setters
+                });
+
+                socket.emit('updatePlayers', {
+                    players: room.players,
+                    isPublic: room.isPublic
                 });
             }
     
