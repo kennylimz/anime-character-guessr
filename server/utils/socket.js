@@ -108,13 +108,6 @@ function setupSocket(io, rooms) {
                 return;
             }
     
-            // Check if game is in progress
-            if (room.currentGame) {
-                console.log(`[ERROR][joinRoom][${socket.id}] 游戏正在进行中，无法加入`);
-                socket.emit('error', {message: 'joinRoom: 游戏正在进行中，无法加入'});
-                return;
-            }
-    
             // Check for duplicate username (case-insensitive)
             const isUsernameTaken = room.players.some(
                 player => player.username.toLowerCase() === username.toLowerCase()
@@ -145,7 +138,7 @@ function setupSocket(io, rooms) {
                 ready: false,
                 guesses: '',
                 message: '',
-                team: null,
+                team: room.currentGame? '0' : null,
                 ...(avatarId !== undefined && { avatarId }),
                 ...(avatarImage !== undefined && { avatarImage })
             });
@@ -158,6 +151,18 @@ function setupSocket(io, rooms) {
                 players: room.players,
                 isPublic: room.isPublic
             });
+    
+            // If a game is in progress, send the current game state to the joining player (observer)
+            if (room.currentGame && room.currentGame.character) {
+                socket.emit('gameStart', {
+                    character: room.currentGame.character,
+                    settings: room.currentGame.settings,
+                    players: room.players,
+                    isPublic: room.isPublic,
+                    hints: room.currentGame.hints || null,
+                    isAnswerSetter: false // observers are not answer setters
+                });
+            }
     
             console.log(`${username} joined room ${roomId}`);
         });
@@ -239,7 +244,7 @@ function setupSocket(io, rooms) {
             }
     
             // Set room to private when game starts
-            room.isPublic = false;
+            // room.isPublic = false;
     
             // Only allow host to start game
             const player = room.players.find(p => p.id === socket.id);
@@ -262,8 +267,10 @@ function setupSocket(io, rooms) {
     
             // Store current game state in room data
             room.currentGame = {
+                character, // store encrypted character for late joiners
                 settings,
-                guesses: [] // Initialize guesses as an array of objects
+                guesses: [], // Initialize guesses as an array of objects
+                hints: null // will be set if hints are used
             };
     
             // Reset all players' game state
@@ -873,8 +880,10 @@ function setupSocket(io, rooms) {
     
             // Store current game state in room data
             room.currentGame = {
+                character, // store encrypted character for late joiners
                 settings: room.settings,
-                guesses: [] // Initialize guesses as an array of objects
+                guesses: [], // Initialize guesses as an array of objects
+                hints: hints || null
             };
     
             // Reset all players' game state and mark the answer setter

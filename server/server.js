@@ -45,9 +45,7 @@ app.get('/health', async (req, res) => {
 
 app.get('/quick-join', (req, res) => {
     // Get all public rooms that are not in progress
-    const publicRooms = Array.from(rooms.entries()).filter(([id, room]) => 
-        room.isPublic && !room.currentGame
-    );
+    const publicRooms = Array.from(rooms.entries()).filter(([id, room]) => room.isPublic);
 
     if (publicRooms.length === 0) {
         return res.status(404).json({ error: '没有可用的公开房间' });
