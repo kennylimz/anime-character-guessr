@@ -153,12 +153,11 @@ function setupSocket(io, rooms) {
                     players: room.players,
                     isPublic: room.isPublic,
                     hints: room.currentGame.hints || null,
-                    isAnswerSetter: false // observers are not answer setters
+                    isAnswerSetter: false
                 });
 
-                socket.emit('updatePlayers', {
-                    players: room.players,
-                    isPublic: room.isPublic
+                socket.emit('guessHistoryUpdate', {
+                    guesses: room.currentGame.guesses
                 });
             }
     
