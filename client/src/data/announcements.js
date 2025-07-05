@@ -23,6 +23,15 @@ const announcements = [
   },
 
   {
+    version: '1.5.2',
+    date: '2025-07-04',
+    content: `
+      抽卡的卡池里添加了历年世萌的海报。不只冠军，优胜者也有海报。
+
+    `
+  },
+
+  {
     version: '1.5.1',
     date: '2025-06-24',
     content: `

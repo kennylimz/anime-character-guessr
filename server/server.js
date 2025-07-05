@@ -106,7 +106,7 @@ app.get('/roulette', (req, res) => {
     }
     const selected = getRandomSample(characters, 10).map(char => ({
         id: char.id,
-        collects: char.collects,
+        tier: char.tier,
         image_medium: Array.isArray(char.image_medium) && char.image_medium.length > 0 ? char.image_medium[Math.floor(Math.random() * char.image_medium.length)] : null,
         image_grid: Array.isArray(char.image_grid) && char.image_grid.length > 0 ? char.image_grid[Math.floor(Math.random() * char.image_grid.length)] : null
     }));

@@ -55,12 +55,6 @@ const Roulette = ({ defaultExpanded = false }) => {
     }
   };
 
-  const getTier = (collects) => {
-    if (collects > 650) return 'S';
-    if (collects > 300) return 'A';
-    return 'B';
-  };
-
   return (
     <div className="roulette-container">
       <div className="roulette-header" onClick={toggleExpand}>
@@ -81,13 +75,13 @@ const Roulette = ({ defaultExpanded = false }) => {
               <div className="roulette-textfield">
                 你已经抽过了……
               </div>
-            ) : (
+            ) : 
+            (
               <div className="roulette-card-grid">
                 {rouletteData.map((char, idx) => {
-                  const tier = getTier(char.collects);
                   return (
                     <div
-                      className={`roulette-card tier-${tier} ${flipped[idx] ? ' flipped' : ''}${selected === idx ? ' selected' : ''}`}
+                      className={`roulette-card tier-${char.tier} ${flipped[idx] ? ' flipped' : ''}${selected === idx ? ' selected' : ''}`}
                       key={char.id}
                       onClick={() => handleCardClick(idx)}
                     >
