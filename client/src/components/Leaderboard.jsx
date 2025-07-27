@@ -21,7 +21,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
     <>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand1}>
-          <h3>热门出题角色周榜（6.25-7.2）</h3>
+          <h3>热门出题角色周榜（7.3-7.27）</h3>
           <span>奶龙王朝了😅</span>
           <span className={`expand-icon ${isExpanded1 ? 'expanded' : ''}`}>{isExpanded1 ? '▼' : '▶'}</span>
         </div>
@@ -72,7 +72,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
       </div>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand2}>
-          <h3>热门出题角色总榜（截至7.2）</h3>
+          <h3>热门出题角色总榜（截至7.27）</h3>
           <span className={`expand-icon ${isExpanded2 ? 'expanded' : ''}`}>{isExpanded2 ? '▼' : '▶'}</span>
         </div>
         {isExpanded2 && (

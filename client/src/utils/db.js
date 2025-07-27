@@ -15,7 +15,6 @@ export async function submitCharacterTags(characterId, tags) {
     return response.data;
   } catch (error) {
     console.error('Error submitting character tags:', error);
-    throw error;
   }
 }
 
@@ -28,7 +27,6 @@ export async function proposeCustomTags(characterId, tags) {
     return response.data;
   } catch (error) {
     console.error('Error proposing custom tags:', error);
-    throw error;
   }
 }
 
@@ -42,7 +40,6 @@ export async function submitFeedbackTags(characterId, upvotes, downvotes) {
     return response.data;
   } catch (error) {
     console.error('Error submitting tag feedback:', error);
-    throw error;
   }
 }
 
@@ -55,7 +52,6 @@ export async function submitAnswerCharacterCount(characterId, characterName) {
     return response.data;
   } catch (error) {
     console.error('Error submitting character answer count:', error);
-    throw error;
   }
 }
 
@@ -66,6 +62,18 @@ export async function getCharacterUsage(characterId) {
   } catch (error) {
     console.error('Error fetching character usage:', error);
     return 0;
+  }
+}
+
+export async function submitGuessCharacterCount(characterId, characterName) {
+  try {
+    const response = await axios.post(`${DB_SERVER_URL}/api/guess-character-count`, {
+      characterId,
+      characterName,
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Error submitting character guess count:', error);
   }
 }
 

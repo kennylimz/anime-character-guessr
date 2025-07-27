@@ -392,6 +392,54 @@ app.post('/api/answer-character-count', async (req, res) => {
     }
 });
 
+app.post('/api/guess-character-count', async (req, res) => {
+    try {
+        const { characterId, characterName } = req.body;
+        
+        // Validate request body
+        if (!characterId || !characterName || typeof characterId !== 'number' || typeof characterName !== 'string') {
+        return res.status(400).json({ 
+            error: 'Invalid request body. Required format: { characterId: number, characterName: string }' 
+        });
+        }
+
+        const client = db.getClient();
+        let database = client.db('stats');
+        let collection = database.collection('weekly_count');
+
+        await collection.updateOne(
+        { _id: characterId },
+        { 
+            $inc: { count: 1 },
+            $set: { characterName: characterName.trim() }
+        },
+        { upsert: true }
+        );
+
+        database = client.db('stats');
+        collection = database.collection('guess_count');
+
+        result = await collection.updateOne(
+        { _id: characterId },
+        { 
+            $inc: { count: 1 },
+            $set: { characterName: characterName.trim() }
+        },
+        { upsert: true }
+        );
+
+        res.json({
+        message: 'Character answer count updated successfully',
+        characterId,
+        updated: result.modifiedCount > 0,
+        created: result.upsertedCount > 0
+        });
+    } catch (error) {
+        console.error('Error updating character answer count:', error);
+        res.status(500).json({ error: 'Failed to update character answer count' });
+    }
+});
+
 // Get character usage by _id
 app.get('/api/character-usage/:id', async (req, res) => {
     try {

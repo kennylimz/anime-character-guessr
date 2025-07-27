@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import axios from '../utils/cached-axios';
 import { searchSubjects, getCharactersBySubjectId, getCharacterDetails } from '../utils/bangumi';
 import '../styles/search.css';
+import { submitGuessCharacterCount } from '../utils/db';
 
 function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -266,6 +267,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
   };
 
   const handleCharacterSelect = (character) => {
+    submitGuessCharacterCount(character.id, character.nameCn || character.name);
     onCharacterSelect(character);
     setSearchQuery('');
     setSearchResults([]);

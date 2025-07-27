@@ -23,6 +23,14 @@ const announcements = [
   },
 
   {
+    version: '1.5.3',
+    date: '2025-07-27',
+    content: `
+      正在偷偷统计角色被猜的次数。
+    `
+  },
+
+  {
     version: '1.5.2',
     date: '2025-07-04',
     content: `
