@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import '../styles/Leaderboard.css';
 import leaderboardCharacters from '../data/leaderboard_characters';
-import weeklyCharacters from '../data/leaderboard_characters_weekly';
+import guessesCharacters from '../data/leaderboard_guesses';
 
 const Leaderboard = ({ defaultExpanded = false }) => {
   const [isExpanded1, setIsExpanded1] = useState(defaultExpanded);
   const [isExpanded2, setIsExpanded2] = useState(defaultExpanded);
 
-  const characters1 = weeklyCharacters;
+  const characters1 = guessesCharacters;
   const characters2 = leaderboardCharacters;
 
   // Podium: 2nd, 1st, 3rd (left, center, right)
@@ -21,8 +21,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
     <>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand1}>
-          <h3>热门出题角色周榜（7.3-7.27）</h3>
-          <span>奶龙王朝了😅</span>
+          <h3>大家都在猜（7.28-8.3）</h3>
           <span className={`expand-icon ${isExpanded1 ? 'expanded' : ''}`}>{isExpanded1 ? '▼' : '▶'}</span>
         </div>
         {isExpanded1 && (
@@ -72,7 +71,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
       </div>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand2}>
-          <h3>热门出题角色总榜（截至7.27）</h3>
+          <h3>热门出题角色总榜（截至8.3）</h3>
           <span className={`expand-icon ${isExpanded2 ? 'expanded' : ''}`}>{isExpanded2 ? '▼' : '▶'}</span>
         </div>
         {isExpanded2 && (
