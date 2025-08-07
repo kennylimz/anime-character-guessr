@@ -26,8 +26,7 @@ const announcements = [
     version: '1.5.3',
     date: '2025-07-27',
     content: `
-      正在偷偷统计角色被猜的次数。<br/>
-      作者的新玩具：<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3543406907">一个桌面挂件</a>。
+      正在偷偷统计角色被猜的次数。
     `
   },
 
