@@ -26,7 +26,8 @@ const announcements = [
     version: '1.5.3',
     date: '2025-07-27',
     content: `
-      正在偷偷统计角色被猜的次数。
+      正在偷偷统计角色被猜的次数。<br/>
+      作者上周末研发的新玩具：<a href="https://www.bilibili.com/video/BV1MstxzgEhg/">一个桌面挂件</a>。
     `
   },
 
