@@ -399,6 +399,13 @@ function setupSocket(io, rooms) {
                     break;
                 default:
                     player.guesses += '💀';
+                    if (player.team !== null && player.team !== '0') {
+                        room.players
+                            .filter(p => p.team === player.team && p.id !== player.id && !p.isAnswerSetter)
+                            .forEach(teammate => {
+                                teammate.guesses += '💀';
+                            });
+                    }
             }
     
             // Check if all non-answer-setter players have ended their game or disconnected
