@@ -25,6 +25,8 @@ function SinglePlayer() {
   const [finishInit, setFinishInit] = useState(false);
   const [shouldResetTimer, setShouldResetTimer] = useState(false);
   const [hints, setHints] = useState([]);
+  const [imgHint, setImgHint] = useState(null);
+  const [useImageHint, setUseImageHint] = useState(0);
   const [gameSettings, setGameSettings] = useLocalStorage('singleplayer-game-settings', {
     startYear: new Date().getFullYear()-10,
     endYear: new Date().getFullYear(),
@@ -38,6 +40,7 @@ function SinglePlayer() {
     characterNum: 6,
     maxAttempts: 10,
     useHints: [],
+    useImageHint: 0,
     includeGame: false,
     timeLimit: null,
     subjectSearch: true,
@@ -86,6 +89,8 @@ function SinglePlayer() {
             }
           }
           setHints(hintTexts);
+          setUseImageHint(gameSettings.useImageHint);
+          setImgHint(gameSettings.useImageHint > 0 ? character.image : null);
           console.log('初始化游戏', gameSettings);
           setFinishInit(true);
         }
@@ -271,6 +276,8 @@ function SinglePlayer() {
         }
       }
       setHints(hintTexts);
+      setUseImageHint(gameSettings.useImageHint);
+      setImgHint(gameSettings.useImageHint > 0 ? character.image : null);
       console.log('初始化游戏', gameSettings);
       setFinishInit(true);
     } catch (error) {
@@ -346,6 +353,8 @@ function SinglePlayer() {
         answerCharacter={answerCharacter}
         finishInit={finishInit}
         hints={hints}
+        useImageHint={useImageHint}
+        imgHint = {imgHint}
         useHints={currentGameSettings.useHints}
         onSurrender={handleSurrender}
       />

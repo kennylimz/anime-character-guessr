@@ -1,6 +1,6 @@
 import '../styles/game.css';
 
-function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, useHints = [], onSurrender }) {
+function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, useHints = [], onSurrender, imgHint=null, useImageHint=0 }) {
   return (
     <div className="game-info">
       {gameEnd ? (
@@ -18,13 +18,20 @@ function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, useHints
             )}
           </div>
           {useHints && hints && useHints.map((val, idx) => (
-            guessesLeft <= val && hints[idx] && (
-              <div className="hint-container" key={idx}>
-                <span className="hint-label">提示 {idx+1}:</span>
-                <span className="hint-text">{hints[idx]}</span>
-              </div>
-            )
+            <div key={idx}>
+              {guessesLeft <= val && hints[idx] && (
+                <div className="hint-container">
+                  <span className="hint-label">提示 {idx+1}:</span>
+                  <span className="hint-text">{hints[idx]}</span>
+                </div>
+              )}
+            </div>
           ))}
+          {guessesLeft <= useImageHint && imgHint && (
+            <div className="hint-container">
+              <img className="hint-image" src={imgHint} style={{height: '200px', filter: `blur(${guessesLeft}px)`}} alt="提示" />
+            </div>
+          )}
         </div>
       )}
     </div>

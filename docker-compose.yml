@@ -12,7 +12,6 @@ services:
     depends_on:
       - client
       - server
-      - data_server
     networks:
       - app-network
     environment:
@@ -54,23 +53,7 @@ services:
       # Derive CORS origin from DOMAIN_NAME
       - CLIENT_URL=${DOMAIN_NAME:-http://localhost}
       - SERVER_URL=${SERVER_URL:-http://server:3000}
-      - NODE_ENV=production
-    networks:
-      - app-network
-    restart: unless-stopped
-
-  # Data Server (Node.js API)
-  data_server:
-    build:
-      context: ./data_server
-      dockerfile: Dockerfile
-    container_name: data_server_api
-    expose:
-      - "${DATA_SERVER_INTERNAL_PORT:-3001}"
-    environment:
-      - PORT=${DATA_SERVER_INTERNAL_PORT:-3001}
       - MONGODB_URI=${MONGODB_URI}
-      - DATA_SERVER_CORS_ORIGIN=${DOMAIN_NAME:-http://localhost}
       - NODE_ENV=production
     depends_on:
       - mongo

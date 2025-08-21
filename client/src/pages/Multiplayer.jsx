@@ -55,7 +55,9 @@ const Multiplayer = () => {
     characterTagNum: 6,
     subjectTagNum: 6,
     commonTags: true,
-    useHints: []
+    useHints: [],
+    useImageHint: 0,
+    imgHint: null
   });
 
   // Game state
@@ -67,6 +69,8 @@ const Multiplayer = () => {
   const gameSettingsRef = useRef(gameSettings);
   const [answerCharacter, setAnswerCharacter] = useState(null);
   const [hints, setHints] = useState([]);
+  const [useImageHint, setUseImageHint] = useState(0);
+  const [imgHint, setImgHint] = useState(null);
   const [shouldResetTimer, setShouldResetTimer] = useState(false);
   const [gameEnd, setGameEnd] = useState(false);
   const timeUpRef = useRef(false);
@@ -145,6 +149,8 @@ const Multiplayer = () => {
         }
       }
       setHints(hintTexts);
+      setUseImageHint(settings.useImageHint);
+      setImgHint(settings.useImageHint > 0 ? decryptedCharacter.image : null);
       setGlobalGameEnd(false);
       setIsGameStarted(true);
       setGameEnd(false);
@@ -563,6 +569,8 @@ const Multiplayer = () => {
           }
         }
         setHints(hintTexts);
+        setUseImageHint(gameSettings.useImageHint);
+        setImgHint(gameSettings.useImageHint > 0 ? character.image : null);
         setGlobalGameEnd(false);
         setIsGameStarted(true);
         setGameEnd(false);
@@ -854,6 +862,11 @@ const Multiplayer = () => {
                             <div className="hint" key={idx}>提示{idx+1}: {hints[idx]}</div>
                           )
                         ))}
+                      </div>
+                    )}
+                    {guessesLeft <= useImageHint && imgHint &&(
+                      <div className="hint-container">
+                        <img src={imgHint} style={{height: '200px', filter: `blur(${guessesLeft}px)`}} alt="提示" />
                       </div>
                     )}
                   </div>

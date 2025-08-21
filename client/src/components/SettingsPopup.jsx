@@ -229,7 +229,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                           });
                           alert('设置已导入！');
                         } catch (err) {
-                          alert('导入失败：无效的JSON文件');
+                          alert('导入失败无效的JSON文件');
                         }
                       };
                       reader.readAsText(file);
@@ -353,7 +353,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 />
                 {Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && (
                   <>
-                    <label style={{marginLeft: '10px'}}>提示出现时机（剩余次数）：</label>
+                    <label style={{marginLeft: '10px'}}>提示出现时机（剩余次数）</label>
                     {[0,1,2].map((idx) => (
                       <input
                         key={idx}
@@ -397,21 +397,35 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 )}
               </div>
               <div className="settings-row">
-                <label>每局次数：</label>
+                <label>剩余次数为</label>
+                <input
+                  type="number"
+                  min="0"
+                  max="10"
+                  value={gameSettings.useImageHint}
+                  onChange={(e) => {
+                    const value = Math.max(0, Math.min(10, parseInt(e.target.value) || 0));
+                    onSettingsChange('useImageHint', value);
+                  }}
+                />
+                <label>时，显示图片提示(0为不使用)</label>
+              </div>
+              <div className="settings-row">
+                <label>每局次数</label>
                 <input 
                   type="number"
                   value={gameSettings.maxAttempts || ''}
                   onChange={(e) => {
-                    const value = e.target.value === '' ? 10 : Math.max(5, Math.min(15, parseInt(e.target.value) || 5));
+                    const value = e.target.value === '' ? 10 : Math.max(1, Math.min(15, parseInt(e.target.value) || 1));
                     onSettingsChange('maxAttempts', value);
                   }}
-                  min="5"
+                  min="1"
                   max="15"
                 />
               </div>
 
               <div className="settings-row">
-                <label>*时间限制：</label>
+                <label>*时间限制</label>
                 <input
                   type="checkbox"
                   checked={gameSettings.timeLimit !== null}
@@ -445,7 +459,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
               
               <div className="settings-subsection">
                 <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                  <label>时间：</label>
+                  <label>时间</label>
                   <input 
                     type="number" 
                     value={gameSettings.startYear || ''}
@@ -472,7 +486,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 </div>
                 <div className="filter-row">
                   <div className="filter-item">
-                    <label>分类：</label>
+                    <label>分类</label>
                     <select 
                       className="settings-select"
                       value={gameSettings.metaTags[0] || ''}
@@ -494,7 +508,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     </select>
                   </div>
                   <div className="filter-item">
-                    <label>来源：</label>
+                    <label>来源</label>
                     <select 
                       className="settings-select"
                       value={gameSettings.metaTags[1] || ''}
@@ -514,7 +528,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     </select>
                   </div>
                   <div className="filter-item">
-                    <label>类型：</label>
+                    <label>类型</label>
                     <select 
                       className="settings-select"
                       value={gameSettings.metaTags[2] || ''}
@@ -736,7 +750,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
 
               <div className="settings-subsection">
                 <div className="settings-row">
-                  <label>仅主角：</label>
+                  <label>仅主角</label>
                   <input 
                     type="checkbox"
                     checked={gameSettings.mainCharacterOnly}
@@ -748,7 +762,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 </div>
                 {!gameSettings.mainCharacterOnly && (
                   <div className="settings-row">
-                    <label>每个作品的角色数：</label>
+                    <label>每个作品的角色数</label>
                     <input 
                       type="number"
                       value={gameSettings.characterNum || ''}
@@ -762,7 +776,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   </div>
                 )}
                 <div className="settings-row">
-                  <label>角色标签数：</label>
+                  <label>角色标签数</label>
                   <input 
                     type="number"
                     value={gameSettings.characterTagNum || ''}
@@ -775,7 +789,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   />
                 </div>
                 <div className="settings-row">
-                  <label>作品标签数：</label>
+                  <label>作品标签数</label>
                   <input 
                     type="number"
                     value={gameSettings.subjectTagNum || ''}

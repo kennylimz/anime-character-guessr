@@ -23,6 +23,14 @@ const announcements = [
   },
 
   {
+    version: '1.5.4',
+    date: '2025-08-21',
+    content: `
+      新增了图片提示功能，可以设置在剩余次数为多少时显示一张模糊的图片。
+    `
+  },
+
+  {
     version: '1.5.3',
     date: '2025-07-27',
     content: `

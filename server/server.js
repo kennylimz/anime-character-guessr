@@ -82,9 +82,20 @@ app.get('/clean-rooms', (req, res) => {
 app.get('/list-rooms', (req, res) => {
     const roomsList = Array.from(rooms.entries()).map(([id, room]) => ({
         id,
-        ...room
+        isPublic: room.isPublic,
+        playerCount: room.players.length,
+        players: room.players.map(player => player.username)
     }));
     res.json(roomsList);
+});
+
+app.get('/room-info/:id', (req, res) => {
+    const roomId = req.params.id;
+    const room = rooms.get(roomId);
+    if (!room) {
+        return res.status(404).json({ error: 'Room not found' });
+    }
+    res.json(room);
 });
 
 app.get('/roulette', (req, res) => {

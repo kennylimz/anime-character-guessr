@@ -93,6 +93,10 @@ const GameSettingsDisplay = ({
       label: '提示出现次数',
       value: Array.isArray(settings.useHints) && settings.useHints.length > 0 ? settings.useHints.join(',') : '无'
     },
+    useImageHint: {
+      label: '图片提示',
+      value: settings.useImageHint || '无'
+    },
     includeGame: {
       label: '包含游戏作品',
       value: boolToText(settings.includeGame)
