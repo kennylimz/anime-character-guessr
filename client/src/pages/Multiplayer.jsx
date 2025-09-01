@@ -22,7 +22,8 @@ import "../styles/game.css";
 import CryptoJS from "crypto-js";
 import axios from "axios";
 const secret = import.meta.env.VITE_AES_SECRET || "My-Secret-Key";
-const SOCKET_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3000";
+const SOCKET_URL =
+  "https://anime-character-guessr.netlify.app" || "http://localhost:3000";
 
 const Multiplayer = () => {
   const navigate = useNavigate();

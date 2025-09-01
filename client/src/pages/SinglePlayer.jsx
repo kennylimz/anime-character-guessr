@@ -61,7 +61,7 @@ function SinglePlayer() {
   useEffect(() => {
     let isMounted = true;
 
-    axios.get(import.meta.env.VITE_SERVER_URL).then((response) => {
+    axios.get("https://anime-character-guessr.netlify.app").then((response) => {
       console.log(response.data);
     });
 
@@ -69,7 +69,7 @@ function SinglePlayer() {
       try {
         if (gameSettings.addedSubjects.length > 0) {
           await axios.post(
-            import.meta.env.VITE_SERVER_URL + "/api/subject-added",
+            "https://anime-character-guessr.netlify.app" + "/api/subject-added",
             {
               addedSubjects: gameSettings.addedSubjects,
             }
@@ -298,7 +298,7 @@ function SinglePlayer() {
     try {
       if (gameSettings.addedSubjects.length > 0) {
         await axios.post(
-          import.meta.env.VITE_SERVER_URL + "/api/subject-added",
+          "https://anime-character-guessr.netlify.app" + "/api/subject-added",
           {
             addedSubjects: gameSettings.addedSubjects,
           }

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/Roulette.css";
 import axios from "axios";
 
-const serverUrl = import.meta.env.VITE_SERVER_URL || "http://localhost:3000";
+const serverUrl = "https://anime-character-guessr.netlify.app";
 
 const Roulette = ({ defaultExpanded = false }) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
