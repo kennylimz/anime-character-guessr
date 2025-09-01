@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import SinglePlayer from './pages/SinglePlayer';
-import Multiplayer from './pages/Multiplayer';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import SinglePlayer from "./pages/SinglePlayer";
+import Multiplayer from "./pages/Multiplayer";
 
 function App() {
   return (
