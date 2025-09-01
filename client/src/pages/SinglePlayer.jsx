@@ -1,17 +1,21 @@
-import { useEffect, useState, useRef } from 'react';
-import { getRandomCharacter, getCharacterAppearances, generateFeedback } from '../utils/bangumi';
-import SearchBar from '../components/SearchBar';
-import GuessesTable from '../components/GuessesTable';
-import SettingsPopup from '../components/SettingsPopup';
-import HelpPopup from '../components/HelpPopup';
-import GameEndPopup from '../components/GameEndPopup';
-import SocialLinks from '../components/SocialLinks';
-import GameInfo from '../components/GameInfo';
-import Timer from '../components/Timer';
-import '../styles/game.css';
-import '../styles/SinglePlayer.css';
-import axios from 'axios';
-import { useLocalStorage } from 'usehooks-ts';
+import { useEffect, useState, useRef } from "react";
+import {
+  getRandomCharacter,
+  getCharacterAppearances,
+  generateFeedback,
+} from "../utils/bangumi";
+import SearchBar from "../components/SearchBar";
+import GuessesTable from "../components/GuessesTable";
+import SettingsPopup from "../components/SettingsPopup";
+import HelpPopup from "../components/HelpPopup";
+import GameEndPopup from "../components/GameEndPopup";
+import SocialLinks from "../components/SocialLinks";
+import GameInfo from "../components/GameInfo";
+import Timer from "../components/Timer";
+import "../styles/game.css";
+import "../styles/SinglePlayer.css";
+import axios from "axios";
+import { useLocalStorage } from "usehooks-ts";
 
 function SinglePlayer() {
   const [guesses, setGuesses] = useState([]);
@@ -27,46 +31,52 @@ function SinglePlayer() {
   const [hints, setHints] = useState([]);
   const [imgHint, setImgHint] = useState(null);
   const [useImageHint, setUseImageHint] = useState(0);
-  const [gameSettings, setGameSettings] = useLocalStorage('singleplayer-game-settings', {
-    startYear: new Date().getFullYear()-10,
-    endYear: new Date().getFullYear(),
-    useSubjectPerYear: false,
-    topNSubjects: 50,
-    metaTags: ["", "", ""],
-    useIndex: false,
-    indexId: null,
-    addedSubjects: [],
-    mainCharacterOnly: true,
-    characterNum: 6,
-    maxAttempts: 10,
-    useHints: [],
-    useImageHint: 0,
-    includeGame: false,
-    timeLimit: null,
-    subjectSearch: true,
-    characterTagNum: 6,
-    subjectTagNum: 6,
-    commonTags: true
-  });
+  const [gameSettings, setGameSettings] = useLocalStorage(
+    "singleplayer-game-settings",
+    {
+      startYear: new Date().getFullYear() - 10,
+      endYear: new Date().getFullYear(),
+      useSubjectPerYear: false,
+      topNSubjects: 50,
+      metaTags: ["", "", ""],
+      useIndex: false,
+      indexId: null,
+      addedSubjects: [],
+      mainCharacterOnly: true,
+      characterNum: 6,
+      maxAttempts: 10,
+      useHints: [],
+      useImageHint: 0,
+      includeGame: false,
+      timeLimit: null,
+      subjectSearch: true,
+      characterTagNum: 6,
+      subjectTagNum: 6,
+      commonTags: true,
+    }
+  );
   const [currentGameSettings, setCurrentGameSettings] = useState(gameSettings);
 
   // Initialize game
   useEffect(() => {
     let isMounted = true;
 
-    axios.get(import.meta.env.VITE_SERVER_URL).then(response => {
+    axios.get(import.meta.env.VITE_SERVER_URL).then((response) => {
       console.log(response.data);
     });
 
     const initializeGame = async () => {
       try {
         if (gameSettings.addedSubjects.length > 0) {
-          await axios.post(import.meta.env.VITE_SERVER_URL + '/api/subject-added', {
-            addedSubjects: gameSettings.addedSubjects
-          });
+          await axios.post(
+            import.meta.env.VITE_SERVER_URL + "/api/subject-added",
+            {
+              addedSubjects: gameSettings.addedSubjects,
+            }
+          );
         }
       } catch (error) {
-        console.error('Failed to update subject count:', error);
+        console.error("Failed to update subject count:", error);
       }
       try {
         const character = await getRandomCharacter(gameSettings);
@@ -76,28 +86,44 @@ function SinglePlayer() {
           setGuessesLeft(gameSettings.maxAttempts);
           // Prepare hints based on settings
           let hintTexts = [];
-          if (Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && character.summary) {
-            const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
-              .split(/[。、，。！？ ""]/).filter(s => s.trim());
+          if (
+            Array.isArray(gameSettings.useHints) &&
+            gameSettings.useHints.length > 0 &&
+            character.summary
+          ) {
+            const sentences = character.summary
+              .replace("[mask]", "")
+              .replace("[/mask]", "")
+              .split(/[。、，。！？ ""]/)
+              .filter((s) => s.trim());
             if (sentences.length > 0) {
               // Randomly select as many hints as needed
               const selectedIndices = new Set();
-              while (selectedIndices.size < Math.min(gameSettings.useHints.length, sentences.length)) {
-                selectedIndices.add(Math.floor(Math.random() * sentences.length));
+              while (
+                selectedIndices.size <
+                Math.min(gameSettings.useHints.length, sentences.length)
+              ) {
+                selectedIndices.add(
+                  Math.floor(Math.random() * sentences.length)
+                );
               }
-              hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
+              hintTexts = Array.from(selectedIndices).map(
+                (i) => "……" + sentences[i].trim() + "……"
+              );
             }
           }
           setHints(hintTexts);
           setUseImageHint(gameSettings.useImageHint);
           setImgHint(gameSettings.useImageHint > 0 ? character.image : null);
-          console.log('初始化游戏', gameSettings);
+          console.log("Initialize game", gameSettings);
           setFinishInit(true);
         }
       } catch (error) {
-        console.error('Failed to initialize game:', error);
+        console.error("Failed to initialize game:", error);
         if (isMounted) {
-          alert('游戏初始化失败，请刷新页面重试，或在设置里清理缓存');
+          alert(
+            "Game initialization failed, please refresh the page and try again, or clear cache in settings"
+          );
         }
       }
     };
@@ -115,115 +141,135 @@ function SinglePlayer() {
     setIsGuessing(true);
     setShouldResetTimer(true);
     if (character.id === 56822 || character.id === 56823) {
-      alert('有点意思');
+      alert("Interesting");
     }
 
     try {
-      const appearances = await getCharacterAppearances(character.id, currentGameSettings);
+      const appearances = await getCharacterAppearances(
+        character.id,
+        currentGameSettings
+      );
 
       const guessData = {
         ...character,
-        ...appearances
+        ...appearances,
       };
 
       const isCorrect = guessData.id === answerCharacter.id;
-      setGuessesLeft(prev => prev - 1);
+      setGuessesLeft((prev) => prev - 1);
 
       if (isCorrect) {
-        setGuesses(prevGuesses => [...prevGuesses, {
-          id: guessData.id,
-          icon: guessData.image,
-          name: guessData.name,
-          nameCn: guessData.nameCn,
-          gender: guessData.gender,
-          genderFeedback: 'yes',
-          latestAppearance: guessData.latestAppearance,
-          latestAppearanceFeedback: '=',
-          earliestAppearance: guessData.earliestAppearance,
-          earliestAppearanceFeedback: '=',
-          highestRating: guessData.highestRating,
-          ratingFeedback: '=',
-          appearancesCount: guessData.appearances.length,
-          appearancesCountFeedback: '=',
-          popularity: guessData.popularity,
-          popularityFeedback: '=',
-          appearanceIds: guessData.appearanceIds,
-          sharedAppearances: {
-            first: appearances.appearances[0] || '',
-            count: appearances.appearances.length
+        setGuesses((prevGuesses) => [
+          ...prevGuesses,
+          {
+            id: guessData.id,
+            icon: guessData.image,
+            name: guessData.name,
+            nameCn: guessData.nameCn,
+            gender: guessData.gender,
+            genderFeedback: "yes",
+            latestAppearance: guessData.latestAppearance,
+            latestAppearanceFeedback: "=",
+            earliestAppearance: guessData.earliestAppearance,
+            earliestAppearanceFeedback: "=",
+            highestRating: guessData.highestRating,
+            ratingFeedback: "=",
+            appearancesCount: guessData.appearances.length,
+            appearancesCountFeedback: "=",
+            popularity: guessData.popularity,
+            popularityFeedback: "=",
+            appearanceIds: guessData.appearanceIds,
+            sharedAppearances: {
+              first: appearances.appearances[0] || "",
+              count: appearances.appearances.length,
+            },
+            metaTags: guessData.metaTags,
+            sharedMetaTags: guessData.metaTags,
+            isAnswer: true,
           },
-          metaTags: guessData.metaTags,
-          sharedMetaTags: guessData.metaTags,
-          isAnswer: true
-        }]);
+        ]);
 
         setGameEnd(true);
-        alert('熟悉这个角色吗？欢迎贡献标签');
+        alert("Familiar with this character? Feel free to contribute tags");
         setGameEndPopup({
-          result: 'win',
-          answer: answerCharacter
+          result: "win",
+          answer: answerCharacter,
         });
       } else if (guessesLeft <= 1) {
-        const feedback = generateFeedback(guessData, answerCharacter, currentGameSettings);
-        setGuesses(prevGuesses => [...prevGuesses, {
-          id: guessData.id,
-          icon: guessData.image,
-          name: guessData.name,
-          nameCn: guessData.nameCn,
-          gender: guessData.gender,
-          genderFeedback: feedback.gender.feedback,
-          latestAppearance: guessData.latestAppearance,
-          latestAppearanceFeedback: feedback.latestAppearance.feedback,
-          earliestAppearance: guessData.earliestAppearance,
-          earliestAppearanceFeedback: feedback.earliestAppearance.feedback,
-          highestRating: guessData.highestRating,
-          ratingFeedback: feedback.rating.feedback,
-          appearancesCount: guessData.appearances.length,
-          appearancesCountFeedback: feedback.appearancesCount.feedback,
-          popularity: guessData.popularity,
-          popularityFeedback: feedback.popularity.feedback,
-          appearanceIds: guessData.appearanceIds,
-          sharedAppearances: feedback.shared_appearances,
-          metaTags: feedback.metaTags.guess,
-          sharedMetaTags: feedback.metaTags.shared,
-          isAnswer: false
-        }]);
+        const feedback = generateFeedback(
+          guessData,
+          answerCharacter,
+          currentGameSettings
+        );
+        setGuesses((prevGuesses) => [
+          ...prevGuesses,
+          {
+            id: guessData.id,
+            icon: guessData.image,
+            name: guessData.name,
+            nameCn: guessData.nameCn,
+            gender: guessData.gender,
+            genderFeedback: feedback.gender.feedback,
+            latestAppearance: guessData.latestAppearance,
+            latestAppearanceFeedback: feedback.latestAppearance.feedback,
+            earliestAppearance: guessData.earliestAppearance,
+            earliestAppearanceFeedback: feedback.earliestAppearance.feedback,
+            highestRating: guessData.highestRating,
+            ratingFeedback: feedback.rating.feedback,
+            appearancesCount: guessData.appearances.length,
+            appearancesCountFeedback: feedback.appearancesCount.feedback,
+            popularity: guessData.popularity,
+            popularityFeedback: feedback.popularity.feedback,
+            appearanceIds: guessData.appearanceIds,
+            sharedAppearances: feedback.shared_appearances,
+            metaTags: feedback.metaTags.guess,
+            sharedMetaTags: feedback.metaTags.shared,
+            isAnswer: false,
+          },
+        ]);
 
         setGameEnd(true);
-        alert('认识这个角色吗？欢迎贡献标签');
+        alert("Know this character? Feel free to contribute tags");
         setGameEndPopup({
-          result: 'lose',
-          answer: answerCharacter
+          result: "lose",
+          answer: answerCharacter,
         });
       } else {
-        const feedback = generateFeedback(guessData, answerCharacter, currentGameSettings);
-        setGuesses(prevGuesses => [...prevGuesses, {
-          id: guessData.id,
-          icon: guessData.image,
-          name: guessData.name,
-          nameCn: guessData.nameCn,
-          gender: guessData.gender,
-          genderFeedback: feedback.gender.feedback,
-          latestAppearance: guessData.latestAppearance,
-          latestAppearanceFeedback: feedback.latestAppearance.feedback,
-          earliestAppearance: guessData.earliestAppearance,
-          earliestAppearanceFeedback: feedback.earliestAppearance.feedback,
-          highestRating: guessData.highestRating,
-          ratingFeedback: feedback.rating.feedback,
-          appearancesCount: guessData.appearances.length,
-          appearancesCountFeedback: feedback.appearancesCount.feedback,
-          popularity: guessData.popularity,
-          popularityFeedback: feedback.popularity.feedback,
-          appearanceIds: guessData.appearanceIds,
-          sharedAppearances: feedback.shared_appearances,
-          metaTags: feedback.metaTags.guess,
-          sharedMetaTags: feedback.metaTags.shared,
-          isAnswer: false
-        }]);
+        const feedback = generateFeedback(
+          guessData,
+          answerCharacter,
+          currentGameSettings
+        );
+        setGuesses((prevGuesses) => [
+          ...prevGuesses,
+          {
+            id: guessData.id,
+            icon: guessData.image,
+            name: guessData.name,
+            nameCn: guessData.nameCn,
+            gender: guessData.gender,
+            genderFeedback: feedback.gender.feedback,
+            latestAppearance: guessData.latestAppearance,
+            latestAppearanceFeedback: feedback.latestAppearance.feedback,
+            earliestAppearance: guessData.earliestAppearance,
+            earliestAppearanceFeedback: feedback.earliestAppearance.feedback,
+            highestRating: guessData.highestRating,
+            ratingFeedback: feedback.rating.feedback,
+            appearancesCount: guessData.appearances.length,
+            appearancesCountFeedback: feedback.appearancesCount.feedback,
+            popularity: guessData.popularity,
+            popularityFeedback: feedback.popularity.feedback,
+            appearanceIds: guessData.appearanceIds,
+            sharedAppearances: feedback.shared_appearances,
+            metaTags: feedback.metaTags.guess,
+            sharedMetaTags: feedback.metaTags.shared,
+            isAnswer: false,
+          },
+        ]);
       }
     } catch (error) {
-      console.error('Error processing guess:', error);
-      alert('出错了，请重试');
+      console.error("Error processing guess:", error);
+      alert("An error occurred, please try again");
     } finally {
       setIsGuessing(false);
       setShouldResetTimer(false);
@@ -231,9 +277,9 @@ function SinglePlayer() {
   };
 
   const handleSettingsChange = (setting, value) => {
-    setGameSettings(prev => ({
+    setGameSettings((prev) => ({
       ...prev,
-      [setting]: value
+      [setting]: value,
     }));
   };
 
@@ -251,12 +297,15 @@ function SinglePlayer() {
 
     try {
       if (gameSettings.addedSubjects.length > 0) {
-        await axios.post(import.meta.env.VITE_SERVER_URL + '/api/subject-added', {
-          addedSubjects: gameSettings.addedSubjects
-        });
+        await axios.post(
+          import.meta.env.VITE_SERVER_URL + "/api/subject-added",
+          {
+            addedSubjects: gameSettings.addedSubjects,
+          }
+        );
       }
     } catch (error) {
-      console.error('Failed to update subject count:', error);
+      console.error("Failed to update subject count:", error);
     }
     try {
       setCurrentGameSettings({ ...gameSettings });
@@ -264,25 +313,39 @@ function SinglePlayer() {
       setAnswerCharacter(character);
       // Prepare hints based on settings for new game
       let hintTexts = [];
-      if (Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && character.summary) {
-        const sentences = character.summary.replace('[mask]', '').replace('[/mask]','')
-          .split(/[。、，。！？ ""]/).filter(s => s.trim());
+      if (
+        Array.isArray(gameSettings.useHints) &&
+        gameSettings.useHints.length > 0 &&
+        character.summary
+      ) {
+        const sentences = character.summary
+          .replace("[mask]", "")
+          .replace("[/mask]", "")
+          .split(/[。、，。！？ ""]/)
+          .filter((s) => s.trim());
         if (sentences.length > 0) {
           const selectedIndices = new Set();
-          while (selectedIndices.size < Math.min(gameSettings.useHints.length, sentences.length)) {
+          while (
+            selectedIndices.size <
+            Math.min(gameSettings.useHints.length, sentences.length)
+          ) {
             selectedIndices.add(Math.floor(Math.random() * sentences.length));
           }
-          hintTexts = Array.from(selectedIndices).map(i => "……"+sentences[i].trim()+"……");
+          hintTexts = Array.from(selectedIndices).map(
+            (i) => "……" + sentences[i].trim() + "……"
+          );
         }
       }
       setHints(hintTexts);
       setUseImageHint(gameSettings.useImageHint);
       setImgHint(gameSettings.useImageHint > 0 ? character.image : null);
-      console.log('初始化游戏', gameSettings);
+      console.log("Initialize game", gameSettings);
       setFinishInit(true);
     } catch (error) {
-      console.error('Failed to initialize new game:', error);
-      alert('游戏初始化失败，请刷新页面重试，或在设置里清理缓存');
+      console.error("Failed to initialize new game:", error);
+      alert(
+        "Game initialization failed, please refresh the page and try again, or clear cache in settings"
+      );
     }
   };
 
@@ -292,13 +355,13 @@ function SinglePlayer() {
     if (timeUpRef.current) return; // prevent multiple triggers
     timeUpRef.current = true;
 
-    setGuessesLeft(prev => {
+    setGuessesLeft((prev) => {
       const newGuessesLeft = prev - 1;
       if (newGuessesLeft <= 0) {
         setGameEnd(true);
         setGameEndPopup({
-          result: 'lose',
-          answer: answerCharacter
+          result: "lose",
+          answer: answerCharacter,
         });
       }
       return newGuessesLeft;
@@ -315,10 +378,10 @@ function SinglePlayer() {
 
     setGameEnd(true);
     setGameEndPopup({
-      result: 'lose',
-      answer: answerCharacter
+      result: "lose",
+      answer: answerCharacter,
     });
-    alert('已投降！查看角色详情');
+    alert("Surrendered! Check character details");
   };
 
   return (
@@ -354,7 +417,7 @@ function SinglePlayer() {
         finishInit={finishInit}
         hints={hints}
         useImageHint={useImageHint}
-        imgHint = {imgHint}
+        imgHint={imgHint}
         useHints={currentGameSettings.useHints}
         onSurrender={handleSurrender}
       />
@@ -374,9 +437,7 @@ function SinglePlayer() {
         />
       )}
 
-      {helpPopup && (
-        <HelpPopup onClose={() => setHelpPopup(false)} />
-      )}
+      {helpPopup && <HelpPopup onClose={() => setHelpPopup(false)} />}
 
       {gameEndPopup && (
         <GameEndPopup

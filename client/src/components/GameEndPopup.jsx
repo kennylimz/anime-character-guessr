@@ -1,8 +1,8 @@
-import '../styles/popups.css';
-import subaruIcon from '/assets/subaru.jpg';
-import { useState } from 'react';
-import TagContributionPopup from './TagContributionPopup';
-import { idToTags } from '../data/id_tags';
+import "../styles/popups.css";
+import subaruIcon from "/assets/subaru.jpg";
+import { useState } from "react";
+import TagContributionPopup from "./TagContributionPopup";
+import { idToTags } from "../data/id_tags";
 
 function GameEndPopup({ result, answer, onClose }) {
   const [showTagPopup, setShowTagPopup] = useState(false);
@@ -22,9 +22,15 @@ function GameEndPopup({ result, answer, onClose }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
+        <button className="popup-close" onClick={onClose}>
+          <i class="fas fa-xmark"></i>
+        </button>
         <div className="popup-header">
-          <h2>{result === 'win' ? '🎉 给你猜对了，有点东西' : '😢 已经结束咧'}</h2>
+          <h2>
+            {result === "win"
+              ? "🎉 You guessed it right, impressive!"
+              : "😢 The game is over"}
+          </h2>
         </div>
         <div className="popup-body">
           <div className="answer-character">
@@ -42,50 +48,54 @@ function GameEndPopup({ result, answer, onClose }) {
                   className="character-link"
                 >
                   <div className="answer-character-name">{answer.name}</div>
-                  <div className="answer-character-name-cn">{answer.nameCn}</div>
+                  <div className="answer-character-name-cn">
+                    {answer.nameCn}
+                  </div>
                 </a>
                 <div className="button-container">
                   <button
                     className="contribute-tag-btn"
                     onClick={() => setShowTagPopup(true)}
                   >
-                    贡献标签
+                    Contribute Tags
                   </button>
                   <img src={subaruIcon} alt="" className="button-icon" />
                 </div>
               </div>
 
-              {/* 角色出演作品 */}
+              {/* Character Appearances */}
               {answer.appearances && answer.appearances.length > 0 && (
                 <div className="answer-appearances">
-                  <h3>出演作品：</h3>
+                  <h3>Appearances:</h3>
                   <ul className="appearances-list">
                     {answer.appearances.slice(0, 3).map((appearance, index) => (
                       <li key={index}>{appearance}</li>
                     ))}
                     {answer.appearances.length > 3 && (
-                      <li>...等 {answer.appearances.length} 部作品</li>
+                      <li>...and {answer.appearances.length} more works</li>
                     )}
                   </ul>
                 </div>
               )}
 
-              {/* 角色标签 */}
+              {/* Character Tags */}
               {idToTags[answer.id] && idToTags[answer.id].length > 0 && (
                 <div className="answer-tags">
-                  <h3>角色标签：</h3>
+                  <h3>Character Tags：</h3>
                   <div className="tags-container">
                     {idToTags[answer.id].map((tag, index) => (
-                      <span key={index} className="character-tag">{tag}</span>
+                      <span key={index} className="character-tag">
+                        {tag}
+                      </span>
                     ))}
                   </div>
                 </div>
               )}
 
-              {/* 角色简介 */}
+              {/* Character Summary */}
               {answer.summary && (
                 <div className="answer-summary">
-                  <h3>角色简介：</h3>
+                  <h3>Character Summary：</h3>
                   <div className="summary-content">{answer.summary}</div>
                 </div>
               )}

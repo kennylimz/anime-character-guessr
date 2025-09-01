@@ -1,6 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnonymousModeChange, isManualMode, isHost, answerSetterId, onSetAnswerSetter, onKickPlayer, onTransferHost, onMessageChange, onTeamChange }) => {
+const PlayerList = ({
+  players,
+  socket,
+  isGameStarted,
+  handleReadyToggle,
+  onAnonymousModeChange,
+  isManualMode,
+  isHost,
+  answerSetterId,
+  onSetAnswerSetter,
+  onKickPlayer,
+  onTransferHost,
+  onMessageChange,
+  onTeamChange,
+}) => {
   const [showNames, setShowNames] = useState(true);
   const [waitingForAnswer, setWaitingForAnswer] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
@@ -8,20 +22,23 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
   const [messageDraft, setMessageDraft] = useState("");
 
   const teamOptions = [
-    { value: '', label: '无' },
-    { value: '0', label: '旁观' },
-    ...Array.from({ length: 8 }, (_, i) => ({ value: (i + 1).toString(), label: (i + 1).toString() }))
+    { value: "", label: "None" },
+    { value: "0", label: "Spectator" },
+    ...Array.from({ length: 8 }, (_, i) => ({
+      value: (i + 1).toString(),
+      label: (i + 1).toString(),
+    })),
   ];
 
   // Add socket event listener for waitForAnswer
- useEffect(() => {
+  useEffect(() => {
     if (socket) {
-      socket.on('waitForAnswer', () => {
+      socket.on("waitForAnswer", () => {
         setWaitingForAnswer(true);
       });
 
       // Reset waiting state when game starts
-      socket.on('gameStart', () => {
+      socket.on("gameStart", () => {
         setWaitingForAnswer(false);
       });
     }
@@ -30,14 +47,14 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
   // Add click outside handler to close menu
   useEffect(() => {
     function handleClickOutside(event) {
-      if (activeMenu && !event.target.closest('.player-actions')) {
+      if (activeMenu && !event.target.closest(".player-actions")) {
         setActiveMenu(null);
       }
     }
-    
-    document.addEventListener('mousedown', handleClickOutside);
+
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [activeMenu]);
 
@@ -50,24 +67,28 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
   };
 
   const getStatusDisplay = (player) => {
-    const host = <span><i className={`fas fa-crown`}></i>房主</span>
+    const host = (
+      <span>
+        <i className={`fas fa-crown`}></i>Host
+      </span>
+    );
     if (player.disconnected) {
-      return renderStyledSpan('已断开','red');
+      return renderStyledSpan("Disconnected", "red");
     }
 
     if (waitingForAnswer) {
       if (player.id === answerSetterId) {
-        return renderStyledSpan('出题中','orange');
+        return renderStyledSpan("Setting Question", "orange");
       }
       if (player.isHost) {
         return host;
       }
-      return renderStyledSpan('已准备','green');
+      return renderStyledSpan("Ready", "green");
     }
 
     if (isManualMode && !isGameStarted) {
       if (player.id === answerSetterId) {
-        return <button className="ready-button ready">出题中</button>;
+        return <button className="ready-button ready">Setting Question</button>;
       }
       return <button className="ready-button">选择</button>;
     }
@@ -78,16 +99,18 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
 
     if (player.id === socket?.id && !isGameStarted) {
       return (
-        <button 
+        <button
           onClick={handleReadyToggle}
-          className={`ready-button ${player.ready ? 'ready' : ''}`}
+          className={`ready-button ${player.ready ? "ready" : ""}`}
         >
-          {player.ready ? '取消准备' : '准备'}
+          {player.ready ? "Cancel Ready" : "Ready"}
         </button>
       );
     }
 
-    return player.ready ? renderStyledSpan('已准备','green') : renderStyledSpan('未准备');
+    return player.ready
+      ? renderStyledSpan("Ready", "green")
+      : renderStyledSpan("Not Ready");
   };
 
   const renderStyledSpan = (text, color = "inherit") => (
@@ -129,64 +152,88 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
             <th>队</th>
             <th></th>
             <th>
-              <button className='table-head-name-button'
-                onClick={handleShowNamesToggle}>
-                {showNames ? '名' : '无名' }
+              <button
+                className="table-head-name-button"
+                onClick={handleShowNamesToggle}
+              >
+                {showNames ? "Name" : "Anonymous"}
               </button>
             </th>
             <th>分</th>
             <th>猜</th>
-            {isHost && <th><span style={{ width: "100px",display:"block" }}>操作</span></th>}
+            {isHost && (
+              <th>
+                <span style={{ width: "100px", display: "block" }}>操作</span>
+              </th>
+            )}
           </tr>
         </thead>
         <tbody>
           {players.map((player) => (
-            <tr 
+            <tr
               key={player.id}
               onClick={() => handlePlayerClick(player)}
               style={{
-                cursor: isHost && isManualMode && !isGameStarted && !waitingForAnswer ? 'pointer' : 'default'
+                cursor:
+                  isHost && isManualMode && !isGameStarted && !waitingForAnswer
+                    ? "pointer"
+                    : "default",
               }}
             >
-              <td>
-                {getStatusDisplay(player)}
-              </td>
+              <td>{getStatusDisplay(player)}</td>
               <td>
                 {socket?.id === player.id && !player.ready && !isGameStarted ? (
                   <select
-                    value={player.team || ''}
-                    onChange={e => handleTeamChange(player.id, e.target.value)}
-                    style={{ minWidth: '40px', background: 'inherit', color: 'inherit' }}
+                    value={player.team || ""}
+                    onChange={(e) =>
+                      handleTeamChange(player.id, e.target.value)
+                    }
+                    style={{
+                      minWidth: "40px",
+                      background: "inherit",
+                      color: "inherit",
+                    }}
                   >
-                    {teamOptions.map(opt => (
-                      <option key={opt.value} value={opt.value}>{opt.label}</option>
+                    {teamOptions.map((opt) => (
+                      <option key={opt.value} value={opt.value}>
+                        {opt.label}
+                      </option>
                     ))}
                   </select>
                 ) : (
-                  <span>{player.team === '0' ? '旁观' : (player.team ? player.team : '无')}</span>
+                  <span>
+                    {player.team === "0"
+                      ? "Spectator"
+                      : player.team
+                      ? player.team
+                      : "None"}
+                  </span>
                 )}
               </td>
               <td>
-                {player.avatarId && player.avatarId > 0 && player.avatarImage && (
-                  <img src={player.avatarImage} className="player-avatar" />
-                )}
+                {player.avatarId &&
+                  player.avatarId > 0 &&
+                  player.avatarImage && (
+                    <img src={player.avatarImage} className="player-avatar" />
+                  )}
               </td>
               <td>
-                {socket?.id === player.id && editingMessagePlayerId === player.id ? (
+                {socket?.id === player.id &&
+                editingMessagePlayerId === player.id ? (
                   <input
                     type="text"
                     value={messageDraft}
-                    placeholder='请友好交流（比心）'
+                    placeholder="Please chat friendly (💖)"
                     autoFocus
                     maxLength={15}
-                    style={{ width: '90%' }}
-                    onChange={e => setMessageDraft(e.target.value)}
+                    style={{ width: "90%" }}
+                    onChange={(e) => setMessageDraft(e.target.value)}
                     onBlur={() => {
                       setEditingMessagePlayerId(null);
                       if (onMessageChange) onMessageChange(messageDraft);
                     }}
-                    onKeyDown={e => {
-                      if (e.key === 'Enter') {
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
                         setEditingMessagePlayerId(null);
                         if (onMessageChange) onMessageChange(messageDraft);
                       }
@@ -195,10 +242,19 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                 ) : (
                   <span
                     style={{
-                      backgroundColor: !showNames && player.id !== socket?.id ? '#000' : 'transparent',
-                      color: !showNames && player.id !== socket?.id ? '#000' : 'inherit',
-                      padding: !showNames && player.id !== socket?.id ? '2px 4px' : '0',
-                      cursor: socket?.id === player.id ? 'pointer' : 'default',
+                      backgroundColor:
+                        !showNames && player.id !== socket?.id
+                          ? "#000"
+                          : "transparent",
+                      color:
+                        !showNames && player.id !== socket?.id
+                          ? "#000"
+                          : "inherit",
+                      padding:
+                        !showNames && player.id !== socket?.id
+                          ? "2px 4px"
+                          : "0",
+                      cursor: socket?.id === player.id ? "pointer" : "default",
                     }}
                     onClick={() => {
                       if (socket?.id === player.id) {
@@ -208,52 +264,59 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
                     }}
                   >
                     {player.username}
-                    {player.message && (
-                      <span>
-                        : "{player.message}"
-                      </span>
-                    )}
+                    {player.message && <span>: "{player.message}"</span>}
                   </span>
                 )}
               </td>
               <td>{player.score}</td>
-              <td>{isGameStarted && player.isAnswerSetter ? '出题者' : player.guesses || ''}</td>
+              <td>
+                {isGameStarted && player.isAnswerSetter
+                  ? "Question Setter"
+                  : player.guesses || ""}
+              </td>
               {isHost && player.id !== socket?.id && (
                 <td>
-                  <div className="player-actions" style={{ position: 'relative' }}>
-                    <button 
+                  <div
+                    className="player-actions"
+                    style={{ position: "relative" }}
+                  >
+                    <button
                       className="action-menu-button"
                       onClick={(e) => {
                         e.stopPropagation();
                         // 切换显示该玩家的操作菜单
-                        setActiveMenu(activeMenu === player.id ? null : player.id);
+                        setActiveMenu(
+                          activeMenu === player.id ? null : player.id
+                        );
                       }}
                     >
-                      ⚙️ 操作
+                      ⚙️ Actions
                     </button>
-                    
+
                     {activeMenu === player.id && (
                       <div className="action-dropdown">
-                        <button className='action-button'
+                        <button
+                          className="action-button"
                           onClick={(e) => {
                             e.stopPropagation();
                             handleKickClick(e, player.id);
                             setActiveMenu(null);
                           }}
-                          >
-                          <span>❌</span> 踢出
+                        >
+                          <span>❌</span> Kick
                         </button>
-                        
+
                         {!player.disconnected && (
-                          <button className='action-button'
+                          <button
+                            className="action-button"
                             onClick={(e) => {
                               e.stopPropagation();
                               handleTransferHostClick(e, player.id);
                               setActiveMenu(null);
                             }}
-                            style={{ color: '#007bff' , borderBottom: '0px' }}
-                            >
-                            <span>👑</span> 转移房主
+                            style={{ color: "#007bff", borderBottom: "0px" }}
+                          >
+                            <span>👑</span> Transfer Host
                           </button>
                         )}
                       </div>
@@ -269,4 +332,4 @@ const PlayerList = ({ players, socket, isGameStarted, handleReadyToggle, onAnony
   );
 };
 
-export default PlayerList; 
+export default PlayerList;

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import SearchBar from './SearchBar';
-import '../styles/SetAnswerPopup.css';
-import { designateCharacter } from '../utils/bangumi';
-import { submitAnswerCharacterCount } from '../utils/db';
+import React, { useState } from "react";
+import SearchBar from "./SearchBar";
+import "../styles/SetAnswerPopup.css";
+import { designateCharacter } from "../utils/bangumi";
+import { submitAnswerCharacterCount } from "../utils/db";
 
 const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
   const [selectedCharacter, setSelectedCharacter] = useState(null);
@@ -14,7 +14,7 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
   };
 
   const handleHintChange = (idx, value) => {
-    setHints(prev => {
+    setHints((prev) => {
       const newHints = [...prev];
       newHints[idx] = value;
       return newHints;
@@ -25,19 +25,30 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
     if (selectedCharacter && !isSubmitting) {
       setIsSubmitting(true);
       try {
-        const character = await designateCharacter(selectedCharacter.id, gameSettings);
+        const character = await designateCharacter(
+          selectedCharacter.id,
+          gameSettings
+        );
         try {
-          await submitAnswerCharacterCount(selectedCharacter.id, character.nameCn || character.name);
+          await submitAnswerCharacterCount(
+            selectedCharacter.id,
+            character.nameCn || character.name
+          );
         } catch (error) {
-          console.error('Failed to submit answer count:', error);
+          console.error("Failed to submit answer count:", error);
         }
         onSetAnswer({
           character,
-          hints: hints.slice(0, Array.isArray(gameSettings.useHints) ? gameSettings.useHints.length : 0)
+          hints: hints.slice(
+            0,
+            Array.isArray(gameSettings.useHints)
+              ? gameSettings.useHints.length
+              : 0
+          ),
         });
       } catch (error) {
-        console.error('Failed to get character details:', error);
-        alert('获取角色详情失败，请重试');
+        console.error("Failed to get character details:", error);
+        alert("Failed to get character details, please try again");
       } finally {
         setIsSubmitting(false);
       }
@@ -47,7 +58,7 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
   return (
     <div className="set-answer-popup-overlay">
       <div className="set-answer-popup">
-        <h2>请选择答案角色</h2>
+        <h2>Please select the answer character</h2>
         <div className="search-container">
           <SearchBar
             onCharacterSelect={handleCharacterSelect}
@@ -66,30 +77,39 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
           </div>
         )}
         <div className="hints-container">
-          <h3>添加提示{Array.isArray(gameSettings.useHints) && gameSettings.useHints.length === 0 && '（未启用）'}</h3>
-          {Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && gameSettings.useHints.map((val, idx) => (
-            <div className="hint-input-group" key={idx}>
-              <label>提示{idx+1} (在剩余{val}次时出现):</label>
-              <input
-                type="text"
-                value={hints[idx] || ''}
-                onChange={e => handleHintChange(idx, e.target.value)}
-                placeholder={`输入第${idx+1}条提示`}
-                maxLength={30}
-              />
-            </div>
-          ))}
+          <h3>
+            Add hints
+            {Array.isArray(gameSettings.useHints) &&
+              gameSettings.useHints.length === 0 &&
+              "(Not enabled)"}
+          </h3>
+          {Array.isArray(gameSettings.useHints) &&
+            gameSettings.useHints.length > 0 &&
+            gameSettings.useHints.map((val, idx) => (
+              <div className="hint-input-group" key={idx}>
+                <label>
+                  Hint{idx + 1} (Appears when {val} uses remaining):
+                </label>
+                <input
+                  type="text"
+                  value={hints[idx] || ""}
+                  onChange={(e) => handleHintChange(idx, e.target.value)}
+                  placeholder={`Enter hint #${idx + 1}`}
+                  maxLength={30}
+                />
+              </div>
+            ))}
         </div>
         <button
           onClick={handleSubmit}
           className="submit-button"
           disabled={!selectedCharacter || isSubmitting}
         >
-          {isSubmitting ? '提交中...' : '确认'}
+          {isSubmitting ? "Submitting..." : "Confirm"}
         </button>
       </div>
     </div>
   );
 };
 
-export default SetAnswerPopup; 
+export default SetAnswerPopup;

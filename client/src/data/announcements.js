@@ -1,194 +1,193 @@
 /**
- * 公告数据
- * 数组中第一个元素会显示在最上面（最新的公告）
- * 要添加新公告，只需编辑 announcements.js 文件
- * 如需改变公告显示方式，只需修改 UpdateAnnouncement 组件
- * 如需更改样式，只需编辑 UpdateAnnouncement.css 文件
- * 格式：
+ * Announcement Data
+ * The first element in the array will be displayed at the top (latest announcement)
+ * To add a new announcement, just edit the announcements.js file
+ * To change how announcements are displayed, just modify the UpdateAnnouncement component
+ * To change the style, just edit the UpdateAnnouncement.css
+ * file：
  * {
- *   version: '版本号', // 可选
- *   date: '发布日期', // 可选
- *   content: '公告内容，支持HTML标签'
+ *   version: 'Version number', // Optional
+ *   date: 'Release date', // Optional
+ *   content: 'Announcement content, supports HTML tags'
  * }
  */
 const announcements = [
   {
-    version: '我50',
-    date: '置顶',
+    version: "Me 50",
+    date: "Pinned",
     content: `
-      服务器的免费流量用完了，在这里放一个打赏码。<br/>
-      意思一下就行，多出来的会请开发群的群友喝奶茶。<br/>
+      The server’s free traffic is used up, here is a donation code.<br/>
+      Just a small contribution is fine, extra will be used to treat developer group friends to milk tea.<br/>
       <img src="/assets/tip_code.jpg" alt="Tip Code" style="max-width: 20rem" /><br/>
-    `
+    `,
   },
 
   {
-    version: '1.5.4',
-    date: '2025-08-21',
+    version: "1.5.4",
+    date: "2025-08-21",
     content: `
-      新增了图片提示功能，可以设置在剩余次数为多少时显示一张模糊的图片。
-    `
+      Added image hint feature, can set to show a blurred image when remaining attempts reach a threshold.
+    `,
   },
 
   {
-    version: '1.5.3',
-    date: '2025-07-27',
+    version: "1.5.3",
+    date: "2025-07-27",
     content: `
-      正在偷偷统计角色被猜的次数。<br/>
-      作者上周末研发的新玩具：<a href="https://www.bilibili.com/video/BV1MstxzgEhg/">一个桌面挂件</a>。
-    `
+      Secretly tracking how many times characters are guessed.<br/>
+      The author’s new toy developed last weekend: a desktop widget: <a href="https://www.bilibili.com/video/BV1MstxzgEhg/">一个桌面挂件</a>。
+    `,
   },
 
   {
-    version: '1.5.2',
-    date: '2025-07-04',
+    version: "1.5.2",
+    date: "2025-07-04",
     content: `
-      抽卡的卡池里添加了历年世萌的海报。不只冠军，优胜者也有海报。
+      Added posters of past ISML contests to the gacha pool. Not only champions, but winners also have posters.
 
-    `
+    `,
   },
 
   {
-    version: '1.5.1',
-    date: '2025-06-24',
+    version: "1.5.1",
+    date: "2025-06-24",
     content: `
-      作者看比赛的时候被faze气晕了，刚刚才醒过来。<br/>
-      添加了简易的旁观功能，在选队伍的地方选择。现在可以自定义提示出现的时间。<br/>
-      开始游戏时默认不再设置私密，玩家可以中途加入旁观。<br/>
-      额外标签现在由玩家选择是否显示，新增了下列游戏的支持：<br/>
-      尘白禁区、公主连结！Re:Dive、重返未来：1999。
+      The author fainted from anger while watching Faze’s match, just woke up.<br/>
+      Added a simple spectating feature, selectable at team selection. Now you can customize when hints appear.<br/>
+      By default, games are no longer private, players can join mid-game as spectators.<br/>
+      Extra tags are now optional, added support for the following games:<br/>
+      Snowbreak: Containment Zone, Princess Connect! Re:Dive, Reverse: 1999
 
-    `
+    `,
   },
 
   {
-    version: '1.5.0',
-    date: '2025-06-05',
+    version: "1.5.0",
+    date: "2025-06-05",
     content: `
-      添加了不知道有什么用的抽卡功能。<br/>
-      现在猜对作品会给一部分分数。
+      Added a gacha feature (not sure what it’s for).<br/>
+      Now guessing the correct work gives partial points.
       
-    `
+    `,
   },
 
   {
-    version: '1.4.2',
-    date: '2025-06-03',
+    version: "1.4.2",
+    date: "2025-06-03",
     content: `
-      为下列作品添加了额外标签：<br/>
-      第五人格、永劫无间、BanG Dream! 少女乐团派对！、战双帕弥什
+      Added extra tags for the following works:<br/>
+      Identity V, Naraka: Bladepoint, BanG Dream! Girls Band Party!, Punishing: Gray Raven
       
-    `
+    `,
   },
-  
+
   {
-    version: '1.4.1',
-    date: '2025-06-01',
+    version: "1.4.1",
+    date: "2025-06-01",
     content: `
-      修复了投降/断线后游戏卡死的问题。<br/>
-      统计额外添加作品的次数，会优先为这类作品添加额外标签。
+      Fixed issue where game froze after surrender/disconnection.<br/>
+      Counted extra-added works, will prioritize adding extra tags for them.
       
-    `
+    `,
   },
 
   {
-    version: '1.4.0',
-    date: '2025-05-23',
+    version: "1.4.0",
+    date: "2025-05-23",
     content: `
-      简单做了一个组队功能，允许队友间共享猜测。<br/>
-      计分什么的还没想好怎么弄。
+      Made a simple team feature, allows teammates to share guesses.<br/>
+      Scoring is not yet decided.
       
-    `
+    `,
   },
 
-
   {
-    version: '1.3.2',
-    date: '2025-05-16',
+    version: "1.3.2",
+    date: "2025-05-16",
     content: `
-      多人模式点自己名字可以写短信息，匿名模式下会一同隐藏。<br/>
-      新增了下列游戏的支持：<br/>
-      崩坏3、蔚蓝档案、鸣潮、碧蓝航线、命运-冠位指定。
+      In multiplayer mode, clicking your name lets you write a short message, hidden in anonymous mode.<br/>
+      Added support for the following games:<br/>
+      Honkai Impact 3rd, Blue Archive, Wuthering Waves, Azur Lane, Fate/Grand Order.
         
-    `
+    `,
   },
 
   {
-    version: '1.3.1',
-    date: '2025-05-09',
+    version: "1.3.1",
+    date: "2025-05-09",
     content: `
-      这周有点摸鱼，做了一个<a href="https://www.bilibili.com/video/BV14CVRzUELs">介绍视频</a>希望宣传下。<br/>
-      加入了快速匹配房间的按钮，不活跃的房间会在10分钟之后自动关闭。
+      Slacked off a bit this week，made an introduction<a href="https://www.bilibili.com/video/BV14CVRzUELs">video</a>for promotion.<br/>
+      Added quick match button, inactive rooms auto-close after 10 minutes.
         
-    `
+    `,
   },
 
   {
-    version: '1.3.0',
-    date: '2025-05-03',
+    version: "1.3.0",
+    date: "2025-05-03",
     content: `
-      更新了新的外部标签模式，支持下列游戏：<br/>
-      崩坏：星穹铁道、原神、绝区零、赛马娘、明日方舟(感谢<a href="https://github.com/czjun">@czjun</a>)、英雄联盟、Dota 2。
+      Updated external tag mode, supports the following games:<br/>
+      Honkai: Star Rail, Genshin Impact, Zenless Zone Zero, Uma Musume, Arknights (Thanks <a href="https://github.com/czjun">@czjun</a>, League of Legends, Dota 2.
         
-    `
+    `,
   },
 
   {
-    version: '1.2.2',
-    date: '2025-05-01',
+    version: "1.2.2",
+    date: "2025-05-01",
     content: `
-      大家节日快乐！<br/>
-      优化了共同标签的筛选方式，现在不会纳入人数太少的标签。<br/>
-      答案或猜测没有动画作品时，即使没有勾选“包含游戏作品”，也会自动统计游戏作品。避免了出题时来回改动设置。<br/>
+      Happy holidays everyone!<br/>
+      Optimized common tag filtering, now won’t include tags with too few entries.<br/>
+      If answers or guesses lack anime works, game works will be auto-counted even if “Include game works” isn’t checked. Prevents changing settings repeatedly while making questions.<br/>
       
-    `
+    `,
   },
 
   {
-    version: '1.2.1',
-    date: '2025-04-28',
+    version: "1.2.1",
+    date: "2025-04-28",
     content: `
-      重写的标签功能作为一项设置加入，默认开启。<br/>
-      新增受欢迎角色排行榜。<br/>
+      Rewritten tagging function added as a setting, enabled by default.<br/>
+      Added popular character ranking.<br/>
       
-    `
+    `,
   },
 
   {
-    version: '1.2.0',
-    date: '2025-04-27',
+    version: "1.2.0",
+    date: "2025-04-27",
     content: `
-      实现玩家踢出功能，房主权限转移功能。 <br/>
-      新增预设配置功能，简化设置选项的应用，优化多人游戏界面中的游戏设置显示。<br/>
-      新增公告组件及样式，更新主页以显示公告内容。
+      Implemented player kick and host transfer features. <br/>
+      Added preset configuration, simplified applying options, optimized multiplayer game settings UI.<br/>
+      Added announcement component and style, updated homepage to show announcements.
       
-    `
+    `,
   },
-  
+
   {
-    version: '1.1.0',
-    date: '2025-04-21',
+    version: "1.1.0",
+    date: "2025-04-21",
     content: `
-      具体可见视频：<a href="https://www.bilibili.com/video/BV1mjLuz4Euj">二次元猜猜呗 4.21更新</a>。 <br/>
-      已可对现有角色标签投票。多人模式已可指定选手出题。<br/>
-      有好的预设或目录可以B站私信<a href="https://space.bilibili.com/87983557">作者</a>，可能被采纳成为每日推荐或者常驻预设。<br/>
-      想加入一个童年回忆的主题……
+      See video: <a href="https://www.bilibili.com/video/BV1mjLuz4Euj">ACG Guess Game 4.21 update</a>. <br/>
+      Voting on existing character tags is now available. In multiplayer, players can now designate who sets the question.<br/>
+      If you have good presets or directories, you can DM the <a href="https://space.bilibili.com/87983557">author</a> on Bilibili, may be adopted as daily recommendations or permanent presets.<br/>
+      Want to add a childhood memories theme…
       
-    `
+    `,
   },
-  
+
   {
-    version: '1.0.0',
-    date: '2025-04-13',
+    version: "1.0.0",
+    date: "2025-04-13",
     content: `
-      二次元猜猜呗正式上线！<br/>
-      <b>主要功能：</b><br/>
-      - 单人模式<br/>
-      - 多人模式<br/>
-      - 自定义游戏设置<br/>
-      感谢 Bangumi 管理员的优化支持，以及各位网友贡献的代码和数据。感谢大家的热情和支持。
-    `
-  }
+      ACG Guess Game officially launched!<br/>
+      <b>Main features:</b><br/>
+      - Single Player Mode<br/>
+      - Multiplayer Mode<br/>
+      - Custom Game Settings<br/>
+      Thanks to Bangumi admins for optimization support, and to all contributors for code and data. Thanks everyone for your enthusiasm and support.
+    `,
+  },
 ];
 
-export default announcements; 
+export default announcements;

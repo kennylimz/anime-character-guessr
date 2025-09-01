@@ -1,23 +1,23 @@
-// 用于判断哪些条目支持额外标签的 subjectId 列表
+// Used to determine which entries support extra tags subjectId list
 export const subjectsWithExtraTags = new Set([
-  18011, // 英雄联盟
-  20810, // 刀塔2
-  175552, // 赛马娘 Pretty Derby
-  225878, // 明日方舟
-  284157, // 原神
-  360097, // 崩坏：星穹铁道
-  380974, // 绝区零
-  194792, // 王者荣耀
-  172168, // 崩坏3
-  300648, // 蔚蓝档案
-  385208, // 鸣潮
-  208559, // 碧蓝航线
-  109378, // 命运-冠位指定
-  228217, // 第五人格
-  296327, // 永劫无间
-  208415, // BanG Dream! 少女乐团派对！
-  293554, // 战双帕弥什
-  378389, // 尘白禁区
-  219588, // 公主连结！Re:Dive
-  365720, // 重返未来：1999
+  18011, // League of Legends
+  20810, // Dota 2
+  175552, // Uma Musume Pretty Derby
+  225878, // Arknights
+  284157, // Genshin Impact
+  360097, // Honkai: Star Rail
+  380974, // Zenless Zone Zero
+  194792, // Honor of Kings
+  172168, // Honkai Impact 3rd
+  300648, // Blue Archive
+  385208, // Wuthering Waves
+  208559, // Azur Lane
+  109378, // Fate/Grand Order
+  228217, // Identity V
+  296327, // Naraka: Bladepoint
+  208415, // BanG Dream! Girls Band Party!
+  293554, // Punishing: Gray Raven
+  378389, // Snowbreak: Containment Zone
+  219588, // Princess Connect! Re:Dive
+  365720, // Reverse: 1999
 ]);

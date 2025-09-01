@@ -1,32 +1,41 @@
-import '../styles/popups.css';
-import { getIndexInfo, searchSubjects } from '../utils/bangumi';
-import { useState, useEffect, useRef } from 'react';
-import axiosCache from '../utils/cached-axios';
-import { getPresetConfig } from '../data/presets';
+import "../styles/popups.css";
+import { getIndexInfo, searchSubjects } from "../utils/bangumi";
+import { useState, useEffect, useRef } from "react";
+import axiosCache from "../utils/cached-axios";
+import { getPresetConfig } from "../data/presets";
 
-function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hideRestart = false }) {
-  const [indexInputValue, setIndexInputValue] = useState('');
+function SettingsPopup({
+  gameSettings,
+  onSettingsChange,
+  onClose,
+  onRestart,
+  hideRestart = false,
+}) {
+  const [indexInputValue, setIndexInputValue] = useState("");
   const [indexInfo, setIndexInfo] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
   const searchContainerRef = useRef(null);
-  const [hintInputs, setHintInputs] = useState(['8','5','3']);
+  const [hintInputs, setHintInputs] = useState(["8", "5", "3"]);
 
   // Handle click outside to close dropdown
   useEffect(() => {
     function handleClickOutside(event) {
       // Add a small delay to allow click events to complete
       setTimeout(() => {
-        if (searchContainerRef.current && !searchContainerRef.current.contains(event.target)) {
+        if (
+          searchContainerRef.current &&
+          !searchContainerRef.current.contains(event.target)
+        ) {
           setSearchResults([]);
         }
       }, 100);
     }
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -48,27 +57,30 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
     if (gameSettings.useIndex && gameSettings.indexId) {
       setIndexInputValue(gameSettings.indexId);
       getIndexInfo(gameSettings.indexId)
-        .then(info => setIndexInfo(info))
+        .then((info) => setIndexInfo(info))
         .catch(console.error);
     }
   }, []);
 
   useEffect(() => {
-    if (Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0) {
+    if (
+      Array.isArray(gameSettings.useHints) &&
+      gameSettings.useHints.length > 0
+    ) {
       // Always keep 3 inputs, fill with '' if less than 3
       const arr = gameSettings.useHints.map(String);
-      while (arr.length < 3) arr.push('');
+      while (arr.length < 3) arr.push("");
       setHintInputs(arr);
     } else {
-      setHintInputs(['8','5','3']);
+      setHintInputs(["8", "5", "3"]);
     }
   }, [gameSettings.useHints]);
 
   const setIndex = async (indexId) => {
     if (!indexId) {
-      onSettingsChange('useIndex', false);
-      onSettingsChange('indexId', null);
-      setIndexInputValue('');
+      onSettingsChange("useIndex", false);
+      onSettingsChange("indexId", null);
+      setIndexInputValue("");
       setIndexInfo(null);
       return;
     }
@@ -77,57 +89,57 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
       const info = await getIndexInfo(indexId);
       setIndexInputValue(indexId);
       setIndexInfo(info);
-      onSettingsChange('useIndex', true);
-      onSettingsChange('indexId', indexId);
+      onSettingsChange("useIndex", true);
+      onSettingsChange("indexId", indexId);
     } catch (error) {
-      console.error('Failed to fetch index info:', error);
-      if (error.message === 'Index not found') {
-        alert('目录不存在或者FIFA了');
+      console.error("Failed to fetch index info:", error);
+      if (error.message === "Index not found") {
+        alert("Directory does not exist or was deleted");
       } else {
-        alert('导入失败，请稍后重试');
+        alert("Import failed, please try again later");
       }
       // Reset index settings on error
-      onSettingsChange('useIndex', false);
-      onSettingsChange('indexId', null);
-      setIndexInputValue('');
+      onSettingsChange("useIndex", false);
+      onSettingsChange("indexId", null);
+      setIndexInputValue("");
       setIndexInfo(null);
     }
   };
 
   const handleImport = async () => {
     if (!indexInputValue) {
-      alert('请输入目录ID');
+      alert("Please enter the directory ID");
       return;
     }
     try {
       const info = await getIndexInfo(indexInputValue);
       setIndexInputValue(indexInputValue);
       setIndexInfo(info);
-      onSettingsChange('indexId', indexInputValue);
+      onSettingsChange("indexId", indexInputValue);
     } catch (error) {
-      console.error('Failed to fetch index info:', error);
-      if (error.message === 'Index not found') {
-        alert('目录不存在或者FIFA了');
+      console.error("Failed to fetch index info:", error);
+      if (error.message === "Index not found") {
+        alert("Directory does not exist or was deleted");
       } else {
-        alert('导入失败，请稍后重试');
+        alert("Import failed, please try again later");
       }
       // Reset index settings on error
-      onSettingsChange('useIndex', false);
-      onSettingsChange('indexId', null);
-      setIndexInputValue('');
+      onSettingsChange("useIndex", false);
+      onSettingsChange("indexId", null);
+      setIndexInputValue("");
       setIndexInfo(null);
     }
   };
 
   const handleSearch = async () => {
     if (!searchQuery.trim()) return;
-    
+
     setIsSearching(true);
     try {
       const results = await searchSubjects(searchQuery);
       setSearchResults(results);
     } catch (error) {
-      console.error('Search failed:', error);
+      console.error("Search failed:", error);
       setSearchResults([]);
     } finally {
       setIsSearching(false);
@@ -142,37 +154,40 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
         name: subject.name,
         name_cn: subject.name_cn,
         type: subject.type,
-      }
+      },
     ];
-    onSettingsChange('addedSubjects', newAddedSubjects);
-    
+    onSettingsChange("addedSubjects", newAddedSubjects);
+
     // Clear search
-    setSearchQuery('');
+    setSearchQuery("");
     setSearchResults([]);
   };
 
   const handleRemoveSubject = (id) => {
     // Remove the subject from gameSettings
-    const newAddedSubjects = gameSettings.addedSubjects.filter(subject => subject.id !== id);
-    onSettingsChange('addedSubjects', newAddedSubjects);
+    const newAddedSubjects = gameSettings.addedSubjects.filter(
+      (subject) => subject.id !== id
+    );
+    onSettingsChange("addedSubjects", newAddedSubjects);
   };
 
   const handleClearCache = () => {
     axiosCache.clearCache();
-    alert('缓存已清空！');
-  }
+    alert("Cache cleared!");
+  };
 
   const applyPresetConfig = async (presetName) => {
     const presetConfig = getPresetConfig(presetName);
     if (!presetConfig) return;
-    
+
     // 处理所有普通配置项
     Object.entries(presetConfig).forEach(([key, value]) => {
-      if (key !== 'indexId') { // 特殊处理indexId
+      if (key !== "indexId") {
+        // 特殊处理indexId
         onSettingsChange(key, value);
       }
     });
-    
+
     // 特殊处理indexId，确保使用setIndex函数
     if (presetConfig.useIndex && presetConfig.indexId) {
       await setIndex(presetConfig.indexId);
@@ -184,24 +199,30 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-       {hideRestart ? (
-          <button className="popup-close multiplayer-confirm" onClick={onClose}>确认修改</button>
+        {hideRestart ? (
+          <button className="popup-close multiplayer-confirm" onClick={onClose}>
+            确认修改
+          </button>
         ) : (
-          <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
+          <button className="popup-close" onClick={onClose}>
+            <i class="fas fa-xmark"></i>
+          </button>
         )}
         <div className="popup-header">
-          <h2>设置</h2>
+          <h2>Settings</h2>
         </div>
         <div className="popup-body">
           <div className="settings-content">
             <div className="settings-section">
-              <h3>预设</h3>
+              <h3>Presets</h3>
               <div className="settings-import-export-row">
                 <button
                   className="preset-button preset-button-export"
                   onClick={() => {
-                    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(gameSettings, null, 2));
-                    const dlAnchorElem = document.createElement('a');
+                    const dataStr =
+                      "data:text/json;charset=utf-8," +
+                      encodeURIComponent(JSON.stringify(gameSettings, null, 2));
+                    const dlAnchorElem = document.createElement("a");
                     dlAnchorElem.setAttribute("href", dataStr);
                     dlAnchorElem.setAttribute("download", "gameSettings.json");
                     document.body.appendChild(dlAnchorElem);
@@ -209,14 +230,14 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     document.body.removeChild(dlAnchorElem);
                   }}
                 >
-                  导出设置
+                  Export Settings
                 </button>
                 <button
                   className="preset-button preset-button-import"
                   onClick={() => {
-                    const input = document.createElement('input');
-                    input.type = 'file';
-                    input.accept = '.json,application/json';
+                    const input = document.createElement("input");
+                    input.type = "file";
+                    input.accept = ".json,application/json";
                     input.onchange = (e) => {
                       const file = e.target.files[0];
                       if (!file) return;
@@ -227,9 +248,9 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                           Object.entries(imported).forEach(([key, value]) => {
                             onSettingsChange(key, value);
                           });
-                          alert('设置已导入！');
+                          alert("Settings imported!");
                         } catch (err) {
-                          alert('导入失败无效的JSON文件');
+                          alert("Import failed, invalid JSON file");
                         }
                       };
                       reader.readAsText(file);
@@ -237,187 +258,228 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     input.click();
                   }}
                 >
-                  导入设置
+                  Import Settings
                 </button>
               </div>
               <div className="presets-buttons">
-                <button 
+                <button
                   className="preset-button"
-                  onClick={() => applyPresetConfig('入门')}
+                  onClick={() => applyPresetConfig("Beginner")}
                 >
-                  入门
+                  Beginner
                 </button>
-                <button 
+                <button
                   className="preset-button"
-                  onClick={() => applyPresetConfig('冻鳗高手')}
+                  onClick={() => applyPresetConfig("Frozen Eel Expert")}
                 >
-                  冻鳗高手
+                  Frozen Eel Expert
                 </button>
-                <button 
+                <button
                   className="preset-button"
-                  onClick={() => applyPresetConfig('老番享受者')}
+                  onClick={() => applyPresetConfig("Old Series Enthusiast")}
                 >
-                  老番享受者
+                  Old Series Enthusiast
                 </button>
-                <button 
+                <button
                   className="preset-button"
-                  onClick={() => applyPresetConfig('瓶子严选')}
+                  onClick={() => applyPresetConfig("Bottle’s Selection")}
                 >
-                  瓶子严选
+                  Bottle’s Selection
                 </button>
-                <button 
+                <button
                   className="preset-button"
                   onClick={() => {
-                    alert('😅');
-                    applyPresetConfig('木柜子痴');
+                    alert("😅");
+                    applyPresetConfig("Wooden Cabinet Fan");
                   }}
                 >
-                  木柜子痴
+                  Wooden Cabinet Fan
                 </button>
-                <button 
+                <button
                   className="preset-button"
                   onClick={() => {
-                    alert('那很有生活了😅');
-                    applyPresetConfig('二游高手');
+                    alert("那很有生活了😅");
+                    applyPresetConfig("Second Game Expert");
                   }}
                 >
-                  二游高手
+                  Second Game Expert
                 </button>
-                <button 
+                <button
                   className="preset-button"
                   onClick={() => {
-                    applyPresetConfig('米哈游高手');
+                    applyPresetConfig("米哈游高手");
                   }}
                 >
-                  米哈游高高手
+                  miHoYo Expert
                 </button>
-                <button 
+                <button
                   className="preset-button"
                   onClick={() => {
-                    alert('风暴要火');
-                    applyPresetConfig('MOBA糕手');
+                    alert("风暴要火");
+                    applyPresetConfig("MOBA Cake Master");
                   }}
                 >
-                  MOBA糕手
+                  MOBA Cake Master
                 </button>
               </div>
             </div>
 
             <div className="settings-section">
-              <h3>游戏设置</h3>
-              <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <label>搜作品</label>
-                <input 
+              <h3>Game Settings</h3>
+              <div
+                className="settings-row"
+                style={{ display: "flex", gap: "8px", alignItems: "center" }}
+              >
+                <label>Search Subjects</label>
+                <input
                   type="checkbox"
                   checked={gameSettings.subjectSearch}
                   onChange={(e) => {
-                    onSettingsChange('subjectSearch', e.target.checked);
+                    onSettingsChange("subjectSearch", e.target.checked);
                   }}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                  style={{ marginRight: "50px", marginLeft: "0px" }}
                 />
-                <div style={{ marginLeft: '30px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <label>关联游戏条目</label>
+                <div
+                  style={{
+                    marginLeft: "30px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  <label>Include Game Entries</label>
                   <span className="tooltip-trigger">
                     ?
                     <span className="tooltip-text">
-                      计算登场作品（年份、分数）时会包括游戏。<br/>
-                      但是，答案角色还是只会从动画中选取，因为游戏的热度榜有bug。<br/>
-                      如果想要猜游戏角色，可以自创一个目录或者添加额外作品。
+                      When calculating appearing works (year, score), games will
+                      be included.
+                      <br />
+                      However, answer characters will only be selected from
+                      animations, as the game popularity ranking has bugs.
+                      <br />
+                      If you want to guess game characters, you can create a
+                      custom directory or add extra works.
                     </span>
                   </span>
-                  <input 
+                  <input
                     type="checkbox"
                     checked={gameSettings.includeGame}
                     onChange={(e) => {
-                      onSettingsChange('includeGame', e.target.checked);
+                      onSettingsChange("includeGame", e.target.checked);
                     }}
-                    style={{ marginRight: '50px', marginLeft: '0px' }}
+                    style={{ marginRight: "50px", marginLeft: "0px" }}
                   />
                 </div>
               </div>
               <div className="settings-row">
-                <label>启用提示</label>
+                <label>Enable Hints</label>
                 <input
                   type="checkbox"
-                  checked={Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0}
-                  onChange={e => {
+                  checked={
+                    Array.isArray(gameSettings.useHints) &&
+                    gameSettings.useHints.length > 0
+                  }
+                  onChange={(e) => {
                     if (e.target.checked) {
-                      setHintInputs(['8','5','3']);
-                      onSettingsChange('useHints', [8,5,3]);
+                      setHintInputs(["8", "5", "3"]);
+                      onSettingsChange("useHints", [8, 5, 3]);
                     } else {
-                      setHintInputs(['8','5','3']);
-                      onSettingsChange('useHints', []);
+                      setHintInputs(["8", "5", "3"]);
+                      onSettingsChange("useHints", []);
                     }
                   }}
-                  style={{ marginRight: '20px', marginLeft: '0px' }}
+                  style={{ marginRight: "20px", marginLeft: "0px" }}
                 />
-                {Array.isArray(gameSettings.useHints) && gameSettings.useHints.length > 0 && (
-                  <>
-                    <label style={{marginLeft: '10px'}}>提示出现时机（剩余次数）</label>
-                    {[0,1,2].map((idx) => (
-                      <input
-                        key={idx}
-                        type="number"
-                        min="1"
-                        max={gameSettings.maxAttempts || 10}
-                        value={hintInputs[idx] || ''}
-                        onChange={e => {
-                          const newInputs = [...hintInputs];
-                          let val = e.target.value;
-                          if (val === '' || isNaN(Number(val)) || Number(val) < 1) {
-                            newInputs[idx] = '';
-                          } else {
-                            val = String(Math.floor(Number(val)));
-                            // Enforce strictly decreasing order
-                            if (idx > 0 && newInputs[idx-1] && Number(val) >= Number(newInputs[idx-1])) {
-                              // Clear this and all subsequent inputs
-                              for (let i = idx; i < 3; i++) newInputs[i] = '';
+                {Array.isArray(gameSettings.useHints) &&
+                  gameSettings.useHints.length > 0 && (
+                    <>
+                      <label style={{ marginLeft: "10px" }}>
+                        Hint Appearance Timing (Remaining Attempts)
+                      </label>
+                      {[0, 1, 2].map((idx) => (
+                        <input
+                          key={idx}
+                          type="number"
+                          min="1"
+                          max={gameSettings.maxAttempts || 10}
+                          value={hintInputs[idx] || ""}
+                          onChange={(e) => {
+                            const newInputs = [...hintInputs];
+                            let val = e.target.value;
+                            if (
+                              val === "" ||
+                              isNaN(Number(val)) ||
+                              Number(val) < 1
+                            ) {
+                              newInputs[idx] = "";
                             } else {
-                              newInputs[idx] = val;
+                              val = String(Math.floor(Number(val)));
+                              // Enforce strictly decreasing order
+                              if (
+                                idx > 0 &&
+                                newInputs[idx - 1] &&
+                                Number(val) >= Number(newInputs[idx - 1])
+                              ) {
+                                // Clear this and all subsequent inputs
+                                for (let i = idx; i < 3; i++) newInputs[i] = "";
+                              } else {
+                                newInputs[idx] = val;
+                              }
                             }
-                          }
-                          setHintInputs(newInputs);
-                          // Only save non-empty, valid numbers, and in strictly decreasing order
-                          const arr = [];
-                          for (let i = 0; i < 3; i++) {
-                            const n = parseInt(newInputs[i], 10);
-                            if (!isNaN(n) && (i === 0 || n < arr[i-1])) {
-                              arr.push(n);
-                            } else {
-                              break;
+                            setHintInputs(newInputs);
+                            // Only save non-empty, valid numbers, and in strictly decreasing order
+                            const arr = [];
+                            for (let i = 0; i < 3; i++) {
+                              const n = parseInt(newInputs[i], 10);
+                              if (!isNaN(n) && (i === 0 || n < arr[i - 1])) {
+                                arr.push(n);
+                              } else {
+                                break;
+                              }
                             }
-                          }
-                          onSettingsChange('useHints', arr);
-                        }}
-                        style={{ marginLeft: idx === 0 ? '8px' : '4px', width: '60px' }}
-                        placeholder={`🚫`}
-                      />
-                    ))}
-                  </>
-                )}
+                            onSettingsChange("useHints", arr);
+                          }}
+                          style={{
+                            marginLeft: idx === 0 ? "8px" : "4px",
+                            width: "60px",
+                          }}
+                          placeholder={`🚫`}
+                        />
+                      ))}
+                    </>
+                  )}
               </div>
               <div className="settings-row">
-                <label>剩余次数为</label>
+                <label>When remaining attempts are</label>
                 <input
                   type="number"
                   min="0"
                   max="10"
                   value={gameSettings.useImageHint}
                   onChange={(e) => {
-                    const value = Math.max(0, Math.min(10, parseInt(e.target.value) || 0));
-                    onSettingsChange('useImageHint', value);
+                    const value = Math.max(
+                      0,
+                      Math.min(10, parseInt(e.target.value) || 0)
+                    );
+                    onSettingsChange("useImageHint", value);
                   }}
                 />
-                <label>时，显示图片提示(0为不使用)</label>
+                <label>, show image hints (0 to disable)</label>
               </div>
               <div className="settings-row">
-                <label>每局次数</label>
-                <input 
+                <label>Attempts per Game</label>
+                <input
                   type="number"
-                  value={gameSettings.maxAttempts || ''}
+                  value={gameSettings.maxAttempts || ""}
                   onChange={(e) => {
-                    const value = e.target.value === '' ? 10 : Math.max(1, Math.min(15, parseInt(e.target.value) || 1));
-                    onSettingsChange('maxAttempts', value);
+                    const value =
+                      e.target.value === ""
+                        ? 10
+                        : Math.max(
+                            1,
+                            Math.min(15, parseInt(e.target.value) || 1)
+                          );
+                    onSettingsChange("maxAttempts", value);
                   }}
                   min="1"
                   max="15"
@@ -425,12 +487,14 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
               </div>
 
               <div className="settings-row">
-                <label>*时间限制</label>
+                <label>*Time Limit</label>
                 <input
                   type="checkbox"
                   checked={gameSettings.timeLimit !== null}
-                  onChange={(e) => onSettingsChange('timeLimit', e.target.checked ? 60 : null)}
-                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                  onChange={(e) =>
+                    onSettingsChange("timeLimit", e.target.checked ? 60 : null)
+                  }
+                  style={{ marginRight: "50px", marginLeft: "0px" }}
                 />
                 {gameSettings.timeLimit !== null && (
                   <div className="settings-row">
@@ -440,44 +504,51 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                       max="120"
                       value={gameSettings.timeLimit}
                       onChange={(e) => {
-                        const value = Math.max(30, Math.min(120, parseInt(e.target.value) || 30));
-                        onSettingsChange('timeLimit', value);
+                        const value = Math.max(
+                          30,
+                          Math.min(120, parseInt(e.target.value) || 30)
+                        );
+                        onSettingsChange("timeLimit", value);
                       }}
                     />
-                    <label>秒/轮</label>
+                    <label>seconds per round</label>
                   </div>
                 )}
               </div>
               <div className="settings-row">
-                <label>（带*的功能可能有bug）</label>
+                <label>(*Features may have bugs)</label>
               </div>
-              
             </div>
 
             <div className="settings-section">
-              <h3>范围设置</h3>
-              
+              <h3>Range Settings</h3>
+
               <div className="settings-subsection">
-                <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                  <label>时间</label>
-                  <input 
-                    type="number" 
-                    value={gameSettings.startYear || ''}
+                <div
+                  className="settings-row"
+                  style={{ display: "flex", gap: "8px", alignItems: "center" }}
+                >
+                  <label>Year</label>
+                  <input
+                    type="number"
+                    value={gameSettings.startYear || ""}
                     onChange={(e) => {
-                      const value = e.target.value === '' ? 1900 : parseInt(e.target.value);
-                      onSettingsChange('startYear', value);
+                      const value =
+                        e.target.value === "" ? 1900 : parseInt(e.target.value);
+                      onSettingsChange("startYear", value);
                     }}
                     min="1900"
                     max="2100"
                     disabled={gameSettings.useIndex}
                   />
                   <span>-</span>
-                  <input 
-                    type="number" 
-                    value={gameSettings.endYear || ''}
+                  <input
+                    type="number"
+                    value={gameSettings.endYear || ""}
                     onChange={(e) => {
-                      const value = e.target.value === '' ? 2100 : parseInt(e.target.value);
-                      onSettingsChange('endYear', value);
+                      const value =
+                        e.target.value === "" ? 2100 : parseInt(e.target.value);
+                      onSettingsChange("endYear", value);
                     }}
                     min="1900"
                     max="2100"
@@ -486,190 +557,259 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 </div>
                 <div className="filter-row">
                   <div className="filter-item">
-                    <label>分类</label>
-                    <select 
+                    <label>Category</label>
+                    <select
                       className="settings-select"
-                      value={gameSettings.metaTags[0] || ''}
+                      value={gameSettings.metaTags[0] || ""}
                       onChange={(e) => {
                         const value = e.target.value;
                         const newMetaTags = [...gameSettings.metaTags];
                         newMetaTags[0] = value;
-                        onSettingsChange('metaTags', newMetaTags);
+                        onSettingsChange("metaTags", newMetaTags);
                       }}
                       // disabled={gameSettings.useIndex}
                     >
-                      <option value="">全部</option>
+                      <option value="">All</option>
                       <option value="TV">TV</option>
                       <option value="WEB">WEB</option>
                       <option value="OVA">OVA</option>
-                      <option value="剧场版">剧场版</option>
-                      <option value="动态漫画">动态漫画</option>
-                      <option value="其他">其他</option>
+                      <option value="Movie">Movie</option>
+                      <option value="Motion Comic">Motion Comic</option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
                   <div className="filter-item">
-                    <label>来源</label>
-                    <select 
+                    <label>Source</label>
+                    <select
                       className="settings-select"
-                      value={gameSettings.metaTags[1] || ''}
+                      value={gameSettings.metaTags[1] || ""}
                       onChange={(e) => {
                         const value = e.target.value;
                         const newMetaTags = [...gameSettings.metaTags];
                         newMetaTags[1] = value;
-                        onSettingsChange('metaTags', newMetaTags);
+                        onSettingsChange("metaTags", newMetaTags);
                       }}
                       // disabled={gameSettings.useIndex}
                     >
-                      <option value="">全部</option>
-                      <option value="原创">原创</option>
-                      <option value="漫画改">漫画改</option>
-                      <option value="游戏改">游戏改</option>
-                      <option value="小说改">小说改</option>
+                      <option value="">All</option>
+                      <option value="Original">Original</option>
+                      <option value="Manga Adaptation">Manga Adaptation</option>
+                      <option value="Game Adaptation">Game Adaptation</option>
+                      <option value="Novel Adaptation">Novel Adaptation</option>
                     </select>
                   </div>
                   <div className="filter-item">
-                    <label>类型</label>
-                    <select 
+                    <label>Genre</label>
+                    <select
                       className="settings-select"
-                      value={gameSettings.metaTags[2] || ''}
+                      value={gameSettings.metaTags[2] || ""}
                       onChange={(e) => {
                         const value = e.target.value;
                         const newMetaTags = [...gameSettings.metaTags];
                         newMetaTags[2] = value;
-                        onSettingsChange('metaTags', newMetaTags);
+                        onSettingsChange("metaTags", newMetaTags);
                       }}
                       // disabled={gameSettings.useIndex}
                     >
-                      <option value="">全部</option>
-                      <option value="科幻">科幻</option>
-                      <option value="喜剧">喜剧</option>
-                      <option value="百合">百合</option>
-                      <option value="校园">校园</option>
-                      <option value="惊悚">惊悚</option>
-                      <option value="后宫">后宫</option>
-                      <option value="机战">机战</option>
-                      <option value="悬疑">悬疑</option>
-                      <option value="恋爱">恋爱</option>
-                      <option value="奇幻">奇幻</option>
-                      <option value="推理">推理</option>
-                      <option value="运动">运动</option>
-                      <option value="耽美">耽美</option>
-                      <option value="音乐">音乐</option>
-                      <option value="战斗">战斗</option>
-                      <option value="冒险">冒险</option>
-                      <option value="萌系">萌系</option>
-                      <option value="穿越">穿越</option>
-                      <option value="玄幻">玄幻</option>
-                      <option value="乙女">乙女</option>
-                      <option value="恐怖">恐怖</option>
-                      <option value="历史">历史</option>
-                      <option value="日常">日常</option>
-                      <option value="剧情">剧情</option>
-                      <option value="武侠">武侠</option>
-                      <option value="美食">美食</option>
-                      <option value="职场">职场</option>
+                      <option value="">All</option>
+                      <option value="Sci-Fi">Sci-Fi</option>
+                      <option value="Comedy">Comedy</option>
+                      <option value="Yuri">Yuri</option>
+                      <option value="School">School</option>
+                      <option value="Thriller">Thriller</option>
+                      <option value="Harem">Harem</option>
+                      <option value="Mecha">Mecha</option>
+                      <option value="Mystery">Mystery</option>
+                      <option value="Romance">Romance</option>
+                      <option value="Fantasy">Fantasy</option>
+                      <option value="Detective">Detective</option>
+                      <option value="Sports">Sports</option>
+                      <option value="Boys' Love">Boys' Love</option>
+                      <option value="Music">Music</option>
+                      <option value="Battle">Battle</option>
+                      <option value="Adventure">Adventure</option>
+                      <option value="Moe">Moe</option>
+                      <option value="Time Travel">Time Travel</option>
+                      <option value="Xuanhuan">Xuanhuan</option>
+                      <option value="Otome">Otome</option>
+                      <option value="Horror">Horror</option>
+                      <option value="History">History</option>
+                      <option value="Slice of Life">Slice of Life</option>
+                      <option value="Drama">Drama</option>
+                      <option value="Martial Arts">Martial Arts</option>
+                      <option value="Gourmet">Gourmet</option>
+                      <option value="Workplace">Workplace</option>
                     </select>
                   </div>
                   <span className="tooltip-trigger">
                     ?
                     <span className="tooltip-text">
-                      这行选项同时会影响登场作品的信息<br/>
-                      比如不想让剧场版计入登场数据，可以只勾选"TV"。<br/>
-                      当"使用目录"生效时，这行选项不会影响正确答案的抽取，只会影响表格内显示的信息。
+                      These options also affect information of appearing works.
+                      <br />
+                      For example, if you don’t want movies counted, select only
+                      “TV”.
+                      <br />
+                      When "Use Index" is enabled, these options won’t affect
+                      answer selection, only table display.
                     </span>
                   </span>
                 </div>
-                <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                  <label>Bangumi热度排行榜{gameSettings.useSubjectPerYear ? '每年' : '共计'}</label>
-                  <input 
-                    type="number" 
-                    value={gameSettings.topNSubjects === undefined ? '' : gameSettings.topNSubjects}
+                <div
+                  className="settings-row"
+                  style={{ display: "flex", gap: "8px", alignItems: "center" }}
+                >
+                  <label>
+                    Bangumi Popularity Ranking
+                    {gameSettings.useSubjectPerYear ? "Per Year" : "Total"}
+                  </label>
+                  <input
+                    type="number"
+                    value={
+                      gameSettings.topNSubjects === undefined
+                        ? ""
+                        : gameSettings.topNSubjects
+                    }
                     onChange={(e) => {
-                      const value = e.target.value === '' ? 100 : Math.max(0, parseInt(e.target.value));
-                      onSettingsChange('topNSubjects', value);
+                      const value =
+                        e.target.value === ""
+                          ? 100
+                          : Math.max(0, parseInt(e.target.value));
+                      onSettingsChange("topNSubjects", value);
                     }}
                     min="0"
                     max="1000"
                     disabled={gameSettings.useIndex}
                   />
-                  <label>部</label>
-                  <div style={{ marginLeft: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <div className="toggle-switch-container" style={{ display: 'inline-flex', alignItems: 'center' }}>
-                      <label style={{ marginRight: '8px', color: !gameSettings.useSubjectPerYear ? '#1890ff' : '#666' }}>总作品数</label>
-                      <div 
-                        className="toggle-switch" 
+                  <label>Works</label>
+                  <div
+                    style={{
+                      marginLeft: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <div
+                      className="toggle-switch-container"
+                      style={{ display: "inline-flex", alignItems: "center" }}
+                    >
+                      <label
                         style={{
-                          width: '40px',
-                          height: '20px',
-                          backgroundColor: gameSettings.useSubjectPerYear ? '#1890ff' : '#ccc',
-                          borderRadius: '10px',
-                          position: 'relative',
-                          cursor: gameSettings.useIndex ? 'not-allowed' : 'pointer',
-                          transition: 'background-color 0.3s',
+                          marginRight: "8px",
+                          color: !gameSettings.useSubjectPerYear
+                            ? "#1890ff"
+                            : "#666",
                         }}
-                        onClick={() => !gameSettings.useIndex && onSettingsChange('useSubjectPerYear', !gameSettings.useSubjectPerYear)}
                       >
-                        <div 
+                        Total Works
+                      </label>
+                      <div
+                        className="toggle-switch"
+                        style={{
+                          width: "40px",
+                          height: "20px",
+                          backgroundColor: gameSettings.useSubjectPerYear
+                            ? "#1890ff"
+                            : "#ccc",
+                          borderRadius: "10px",
+                          position: "relative",
+                          cursor: gameSettings.useIndex
+                            ? "not-allowed"
+                            : "pointer",
+                          transition: "background-color 0.3s",
+                        }}
+                        onClick={() =>
+                          !gameSettings.useIndex &&
+                          onSettingsChange(
+                            "useSubjectPerYear",
+                            !gameSettings.useSubjectPerYear
+                          )
+                        }
+                      >
+                        <div
                           style={{
-                            width: '16px',
-                            height: '16px',
-                            backgroundColor: 'white',
-                            borderRadius: '50%',
-                            position: 'absolute',
-                            top: '2px',
-                            left: gameSettings.useSubjectPerYear ? '22px' : '2px',
-                            transition: 'left 0.3s',
+                            width: "16px",
+                            height: "16px",
+                            backgroundColor: "white",
+                            borderRadius: "50%",
+                            position: "absolute",
+                            top: "2px",
+                            left: gameSettings.useSubjectPerYear
+                              ? "22px"
+                              : "2px",
+                            transition: "left 0.3s",
                           }}
                         />
                       </div>
-                      <label style={{ marginLeft: '8px', color: gameSettings.useSubjectPerYear ? '#1890ff' : '#666' }}>每年作品数</label>
+                      <label
+                        style={{
+                          marginLeft: "8px",
+                          color: gameSettings.useSubjectPerYear
+                            ? "#1890ff"
+                            : "#666",
+                        }}
+                      >
+                        Works Per Year
+                      </label>
                       <span className="tooltip-trigger">
                         ?
                         <span className="tooltip-text">
-                          启用时会先抽取某一年份，再从中抽取作品。<br/>
-                          削弱了新番热度的影响。<br/>利好老二次元！
+                          When enabled, a year is selected first, then works
+                          from that year.
+                          <br />
+                          Reduces influence of new works’ popularity.
+                          <br />
+                          Good for older anime fans!
                         </span>
                       </span>
                     </div>
                   </div>
                 </div>
                 <div className="settings-row">
-                  <label>使用目录</label>
+                  <label>Use Index</label>
                   <span className="tooltip-trigger">
                     ?
                     <span className="tooltip-text">
-                      勾选时，正确答案只会从目录（+额外作品）中抽取。
+                      When checked, correct answers will only be selected from
+                      the index (+ extra works).
                     </span>
                   </span>
-                  <input 
+                  <input
                     type="checkbox"
                     checked={gameSettings.useIndex}
                     onChange={(e) => {
-                      onSettingsChange('useIndex', e.target.checked);
+                      onSettingsChange("useIndex", e.target.checked);
                       if (!e.target.checked) {
                         // Reset when disabling index
-                        onSettingsChange('metaTags', ["", "", ""]);
-                        onSettingsChange('addedSubjects', []);
-                        onSettingsChange('indexId', null);
+                        onSettingsChange("metaTags", ["", "", ""]);
+                        onSettingsChange("addedSubjects", []);
+                        onSettingsChange("indexId", null);
                         setIndexInfo(null);
-                        setIndexInputValue('');
+                        setIndexInputValue("");
                       }
                     }}
-                    style={{ marginRight: '50px', marginLeft: '0px' }}
+                    style={{ marginRight: "50px", marginLeft: "0px" }}
                   />
                   {gameSettings.useIndex && (
                     <>
                       <div className="settings-row">
                         <div className="index-input-group">
-                          <span className="index-prefix">https://bangumi.tv/index/</span>
-                          <input 
+                          <span className="index-prefix">
+                            https://bangumi.tv/index/
+                          </span>
+                          <input
                             type="text"
                             value={indexInputValue}
                             onChange={(e) => {
                               setIndexInputValue(e.target.value);
                             }}
                           />
-                          <button className="import-button" onClick={handleImport}>导入</button>
+                          <button
+                            className="import-button"
+                            onClick={handleImport}
+                          >
+                            Import
+                          </button>
                         </div>
                       </div>
                     </>
@@ -678,41 +818,50 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 {gameSettings.useIndex && indexInfo && (
                   <div className="settings-row index-info">
                     <div className="index-info-content">
-                      <a className="index-title" href={`https://bangumi.tv/index/${gameSettings.indexId}`} target='_blank' rel='noopener noreferrer'>{indexInfo.title}</a>
-                      <span className="index-total">共 {indexInfo.total} 部作品</span>
+                      <a
+                        className="index-title"
+                        href={`https://bangumi.tv/index/${gameSettings.indexId}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {indexInfo.title}
+                      </a>
+                      <span className="index-total">
+                        Total {indexInfo.total} works
+                      </span>
                     </div>
                   </div>
                 )}
               </div>
 
               <div className="settings-subsection">
-                <h4>添加额外作品</h4>
+                <h4>Add Extra Works</h4>
                 <div className="settings-row">
                   <div className="search-box" ref={searchContainerRef}>
-                    <input 
+                    <input
                       type="text"
-                      placeholder="搜索作品..."
+                      placeholder="Search Works..."
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       onKeyDown={(e) => {
-                        if (e.key === 'Enter') {
+                        if (e.key === "Enter") {
                           handleSearch();
                         }
                       }}
                     />
-                    <button 
+                    <button
                       onClick={handleSearch}
                       disabled={!searchQuery.trim() || isSearching}
                     >
-                      {isSearching ? '搜索中...' : '搜索'}
+                      {isSearching ? "Searching..." : "Search"}
                     </button>
                   </div>
                 </div>
                 {searchResults.length > 0 && (
                   <div className="search-results">
                     {searchResults.map((subject) => (
-                      <div 
-                        key={subject.id} 
+                      <div
+                        key={subject.id}
                         className="search-result-item"
                         onMouseDown={(e) => {
                           e.preventDefault();
@@ -721,7 +870,9 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                         }}
                       >
                         <span className="subject-title">{subject.name}</span>
-                        <span className="subject-meta">{subject.name_cn || ''}</span>
+                        <span className="subject-meta">
+                          {subject.name_cn || ""}
+                        </span>
                         <span className="subject-type">{subject.type}</span>
                       </div>
                     ))}
@@ -729,14 +880,26 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 )}
                 {gameSettings.addedSubjects.length > 0 && (
                   <div className="added-subjects">
-                    <h5>已添加的作品（只想猜下列作品的话，可以把上面的排行榜部数调成0）</h5>
+                    <h5>
+                      Added Works (If you only want to guess these, set ranking
+                      works above to 0)
+                    </h5>
                     {gameSettings.addedSubjects.map((subject) => (
                       <div key={subject.id} className="added-subject-item">
                         <div className="subject-info">
-                          <a className="subject-title" href={`https://bangumi.tv/subject/${subject.id}`} target="_blank" rel="noopener noreferrer">{subject.name}</a>
-                          <span className="subject-meta">{subject.name_cn || ''}（{subject.type}）</span>
+                          <a
+                            className="subject-title"
+                            href={`https://bangumi.tv/subject/${subject.id}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {subject.name}
+                          </a>
+                          <span className="subject-meta">
+                            {subject.name_cn || ""}（{subject.type}）
+                          </span>
                         </div>
-                        <button 
+                        <button
                           className="remove-button"
                           onClick={() => handleRemoveSubject(subject.id)}
                         >
@@ -750,25 +913,26 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
 
               <div className="settings-subsection">
                 <div className="settings-row">
-                  <label>仅主角</label>
-                  <input 
+                  <label>Main Characters Only</label>
+                  <input
                     type="checkbox"
                     checked={gameSettings.mainCharacterOnly}
                     onChange={(e) => {
-                      onSettingsChange('mainCharacterOnly', e.target.checked);
+                      onSettingsChange("mainCharacterOnly", e.target.checked);
                     }}
-                    style={{ marginRight: '50px', marginLeft: '0px' }}
+                    style={{ marginRight: "50px", marginLeft: "0px" }}
                   />
                 </div>
                 {!gameSettings.mainCharacterOnly && (
                   <div className="settings-row">
-                    <label>每个作品的角色数</label>
-                    <input 
+                    <label>Number of Characters per Work</label>
+                    <input
                       type="number"
-                      value={gameSettings.characterNum || ''}
+                      value={gameSettings.characterNum || ""}
                       onChange={(e) => {
-                        const value = e.target.value === '' ? 1 : parseInt(e.target.value);
-                        onSettingsChange('characterNum', value);
+                        const value =
+                          e.target.value === "" ? 1 : parseInt(e.target.value);
+                        onSettingsChange("characterNum", value);
                       }}
                       min="1"
                       max="10"
@@ -776,65 +940,93 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   </div>
                 )}
                 <div className="settings-row">
-                  <label>角色标签数</label>
-                  <input 
+                  <label>Character Tag Count</label>
+                  <input
                     type="number"
-                    value={gameSettings.characterTagNum || ''}
+                    value={gameSettings.characterTagNum || ""}
                     onChange={(e) => {
-                      const value = e.target.value === '' ? 0 : Math.max(0, Math.min(10, parseInt(e.target.value) || 0));
-                      onSettingsChange('characterTagNum', value);
+                      const value =
+                        e.target.value === ""
+                          ? 0
+                          : Math.max(
+                              0,
+                              Math.min(10, parseInt(e.target.value) || 0)
+                            );
+                      onSettingsChange("characterTagNum", value);
                     }}
                     min="0"
                     max="10"
                   />
                 </div>
                 <div className="settings-row">
-                  <label>作品标签数</label>
-                  <input 
+                  <label>Work Tag Count</label>
+                  <input
                     type="number"
-                    value={gameSettings.subjectTagNum || ''}
+                    value={gameSettings.subjectTagNum || ""}
                     onChange={(e) => {
-                      const value = e.target.value === '' ? 0 : Math.max(0, Math.min(10, parseInt(e.target.value) || 0));
-                      onSettingsChange('subjectTagNum', value);
+                      const value =
+                        e.target.value === ""
+                          ? 0
+                          : Math.max(
+                              0,
+                              Math.min(10, parseInt(e.target.value) || 0)
+                            );
+                      onSettingsChange("subjectTagNum", value);
                     }}
                     min="0"
                     max="10"
                   />
                 </div>
-                <div className="settings-row" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                  <label>共同标签优先</label>
+                <div
+                  className="settings-row"
+                  style={{ display: "flex", gap: "8px", alignItems: "center" }}
+                >
+                  <label>Common Tags Priority</label>
                   <span className="tooltip-trigger">
                     ?
                     <span className="tooltip-text">
-                      优先展示共同的（标绿的）标签，但可能会增加处理时间。
+                      Prioritize displaying common (green) tags, may increase
+                      processing time.
                     </span>
                   </span>
-                  <input 
+                  <input
                     type="checkbox"
                     checked={gameSettings.commonTags}
                     onChange={(e) => {
-                      onSettingsChange('commonTags', e.target.checked);
+                      onSettingsChange("commonTags", e.target.checked);
                     }}
-                    style={{ marginRight: '50px', marginLeft: '0px' }}
+                    style={{ marginRight: "50px", marginLeft: "0px" }}
                   />
                 </div>
               </div>
             </div>
-
-            
           </div>
         </div>
-        <div className="popup-footer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div
+          className="popup-footer"
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           {!hideRestart && (
             <>
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <button className="restart-button" onClick={onRestart} style={{ marginRight: '10px' }}>
-                  重新开始
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <button
+                  className="restart-button"
+                  onClick={onRestart}
+                  style={{ marginRight: "10px" }}
+                >
+                  Restart
                 </button>
-                <label style={{ fontSize: '0.8rem' }}>*设置改动点了才会生效！否则下一把生效</label>
+                <label style={{ fontSize: "0.8rem" }}>
+                  *Changes only take effect if clicked; otherwise take effect
+                  next game
+                </label>
               </div>
               <button className="clear-cache-button" onClick={handleClearCache}>
-                清空缓存
+                Clear Cache
               </button>
             </>
           )}
@@ -844,4 +1036,4 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
   );
 }
 
-export default SettingsPopup; 
+export default SettingsPopup;

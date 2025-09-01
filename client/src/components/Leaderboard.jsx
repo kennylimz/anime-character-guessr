@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import '../styles/Leaderboard.css';
-import leaderboardCharacters from '../data/leaderboard_characters';
-import guessesCharacters from '../data/leaderboard_guesses';
+import { useState } from "react";
+import "../styles/Leaderboard.css";
+import leaderboardCharacters from "../data/leaderboard_characters";
+import guessesCharacters from "../data/leaderboard_guesses";
 
 const Leaderboard = ({ defaultExpanded = false }) => {
   const [isExpanded1, setIsExpanded1] = useState(defaultExpanded);
@@ -21,21 +21,27 @@ const Leaderboard = ({ defaultExpanded = false }) => {
     <>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand1}>
-          <h3>大家都在猜（8.4-8.20）</h3>
-          <span className={`expand-icon ${isExpanded1 ? 'expanded' : ''}`}>{isExpanded1 ? '▼' : '▶'}</span>
+          <h3>Everyone's Guessing (Aug 4 - Aug 20)</h3>
+          <span className={`expand-icon ${isExpanded1 ? "expanded" : ""}`}>
+            {isExpanded1 ? "▼" : "▶"}
+          </span>
         </div>
         {isExpanded1 && (
           <div className="leaderboard-content">
             <div className="leaderboard-podium">
               {podiumOrder1.map((char) => (
                 <div
-                  className={`podium-place podium-place-${char.rank} ${char.rank === 1 ? 'podium-center' : ''}`}
+                  className={`podium-place podium-place-${char.rank} ${
+                    char.rank === 1 ? "podium-center" : ""
+                  }`}
                   key={char.name}
                 >
                   <img
                     src={char.image}
                     alt={char.name}
-                    className={`podium-image${char.rank === 1 ? ' podium-image-center' : ''}`}
+                    className={`podium-image${
+                      char.rank === 1 ? " podium-image-center" : ""
+                    }`}
                   />
                   <div className="podium-rank">#{char.rank}</div>
                   <a
@@ -54,7 +60,11 @@ const Leaderboard = ({ defaultExpanded = false }) => {
                 <div className="leaderboard-list-item" key={char.name}>
                   <div className="list-rank">#{char.rank}</div>
                   {/* Use char.image as grid image for now */}
-                  <img src={char.image} alt={char.name} className="list-image" />
+                  <img
+                    src={char.image}
+                    alt={char.name}
+                    className="list-image"
+                  />
                   <a
                     href={char.link}
                     className="list-name podium-link"
@@ -71,21 +81,27 @@ const Leaderboard = ({ defaultExpanded = false }) => {
       </div>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand2}>
-          <h3>热门出题角色总榜（截至8.20）</h3>
-          <span className={`expand-icon ${isExpanded2 ? 'expanded' : ''}`}>{isExpanded2 ? '▼' : '▶'}</span>
+          <h3>Popular Quiz Characters Overall Ranking (as of Aug 20)</h3>
+          <span className={`expand-icon ${isExpanded2 ? "expanded" : ""}`}>
+            {isExpanded2 ? "▼" : "▶"}
+          </span>
         </div>
         {isExpanded2 && (
           <div className="leaderboard-content">
             <div className="leaderboard-podium">
               {podiumOrder2.map((char) => (
                 <div
-                  className={`podium-place podium-place-${char.rank} ${char.rank === 1 ? 'podium-center' : ''}`}
+                  className={`podium-place podium-place-${char.rank} ${
+                    char.rank === 1 ? "podium-center" : ""
+                  }`}
                   key={char.name}
                 >
                   <img
                     src={char.image}
                     alt={char.name}
-                    className={`podium-image${char.rank === 1 ? ' podium-image-center' : ''}`}
+                    className={`podium-image${
+                      char.rank === 1 ? " podium-image-center" : ""
+                    }`}
                   />
                   <div className="podium-rank">#{char.rank}</div>
                   <a
@@ -104,7 +120,11 @@ const Leaderboard = ({ defaultExpanded = false }) => {
                 <div className="leaderboard-list-item" key={char.name}>
                   <div className="list-rank">#{char.rank}</div>
                   {/* Use char.image as grid image for now */}
-                  <img src={char.image} alt={char.name} className="list-image" />
+                  <img
+                    src={char.image}
+                    alt={char.name}
+                    className="list-image"
+                  />
                   <a
                     href={char.link}
                     className="list-name podium-link"
@@ -123,4 +143,4 @@ const Leaderboard = ({ defaultExpanded = false }) => {
   );
 };
 
-export default Leaderboard; 
+export default Leaderboard;

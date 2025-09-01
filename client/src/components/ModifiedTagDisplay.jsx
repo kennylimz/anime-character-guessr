@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import '../styles/GuessesTable.css';
-import axios from 'axios';
-import { subjectsWithExtraTags } from '../data/extra_tag_subjects';
+import { useState, useEffect } from "react";
+import "../styles/GuessesTable.css";
+import axios from "axios";
+import { subjectsWithExtraTags } from "../data/extra_tag_subjects";
 
 function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
   const [guessTagData, setGuessTagData] = useState(null);
@@ -17,14 +17,18 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
         let answerData = null;
         for (const subjectId of guessCharacter.appearanceIds) {
           if (subjectsWithExtraTags.has(subjectId)) {
-            const response = await axios.get(`/data/extra_tags/${subjectId}.json`);
+            const response = await axios.get(
+              `/data/extra_tags/${subjectId}.json`
+            );
             guessData = response.data[guessCharacter.id];
             break;
           }
         }
         for (const subjectId of answerCharacter.appearanceIds) {
           if (subjectsWithExtraTags.has(subjectId)) {
-            const response = await axios.get(`/data/extra_tags/${subjectId}.json`);
+            const response = await axios.get(
+              `/data/extra_tags/${subjectId}.json`
+            );
             answerData = response.data[answerCharacter.id];
             break;
           }
@@ -32,7 +36,7 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
         setGuessTagData(guessData);
         setAnswerTagData(answerData);
       } catch (err) {
-        console.error('Error fetching tag data:', err);
+        console.error("Error fetching tag data:", err);
         setError(err.message);
       } finally {
         setLoading(false);
@@ -45,15 +49,21 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
   }, [guessCharacter, answerCharacter]);
 
   if (loading) {
-    return <div className="modified-tag-display loading">加载中……</div>;
+    return <div className="modified-tag-display loading">Loading…</div>;
   }
 
   if (error) {
-    return <div className="modified-tag-display error">出错了: {error}</div>;
+    return <div className="modified-tag-display error">Error: {error}</div>;
   }
 
   if (!guessTagData) {
-    return <div className="modified-tag-display empty">没有标签……<br/>（可能是作者尚未录入）</div>;
+    return (
+      <div className="modified-tag-display empty">
+        No tags…
+        <br />
+        (May not have been entered by the author)
+      </div>
+    );
   }
 
   return (
@@ -66,12 +76,17 @@ function ModifiedTagDisplay({ guessCharacter, answerCharacter }) {
               const isShared = !!(
                 answerTagData &&
                 answerTagData[section] &&
-                Object.prototype.hasOwnProperty.call(answerTagData[section], tagKey)
+                Object.prototype.hasOwnProperty.call(
+                  answerTagData[section],
+                  tagKey
+                )
               );
               return (
                 <span
                   key={tagKey}
-                  className={`meta-tag external-tag${isShared ? ' shared-tag' : ''}`}
+                  className={`meta-tag external-tag${
+                    isShared ? " shared-tag" : ""
+                  }`}
                   dangerouslySetInnerHTML={{ __html: tagContent }}
                 />
               );
