@@ -10,7 +10,7 @@ const Home = () => {
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
 
   useEffect(() => {
-    const serverUrl = "https://anime-character-guessr.netlify.app";
+    const serverUrl = import.meta.env.VITE_SERVER_URL;
     fetch(`${serverUrl}/room-count`)
       .then((response) => response.json())
       .then((data) => setRoomCount(data.count))

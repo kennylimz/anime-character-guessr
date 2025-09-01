@@ -43,6 +43,9 @@ jobs:
         run: npm ci
         working-directory: ./client
       - name: Build
+        env:
+          VITE_AES_SECRET: my-secret-key-1234567890
+          VITE_SERVER_URL: https://anime-character-guessr-ek3p.onrender.com/
         run: npm run build
         working-directory: ./client
       - name: Setup Pages
