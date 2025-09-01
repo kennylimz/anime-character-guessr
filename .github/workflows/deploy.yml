@@ -35,10 +35,10 @@ jobs:
         uses: actions/checkout@v5
       - name: Set up Node
         uses: actions/setup-node@v4
-        working-directory: ./client
         with:
           node-version: lts/*
           cache: "npm"
+          cache-dependency-path: ./client/package-lock.json
       - name: Install dependencies
         run: npm ci
         working-directory: ./client
