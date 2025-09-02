@@ -1,20 +1,20 @@
 import React from "react";
 import { matchPreset } from "../data/presets";
 import "../styles/GameSettingsDisplay.css";
-/*相关内容
+/*Related content
 This is the multiplayer participant view, showing game settings*/
 /**
  * Game Settings Display Component - Converts JSON game settings to visual display
  *
  * @param {Object} props
- * @param {Object} props.settings - Game Rules对象
+ * @param {Object} props.settings - Game Rules object
  * @param {string} props.title - Display title, default is "The Room's Question Bank Range"
  * @param {boolean} props.collapsible - Whether collapsible, default is true
  * @param {boolean} props.defaultExpanded - Default expanded state, default is true
  */
 const GameSettingsDisplay = ({
   settings,
-  title = "The Room's Question Bank Range",
+  title = "Room Settings",
   collapsible = true,
   defaultExpanded = true,
 }) => {
@@ -40,22 +40,22 @@ const GameSettingsDisplay = ({
     );
   }
 
-  // 使用共享预设匹配函数获取预设信息
+  // Use shared preset matching function to get preset info
   const presetInfo = matchPreset(settings);
 
   // Convert boolean to text
   const boolToText = (value) => (value ? "Yes" : "No");
 
-  // 将主要设置项映射为中文
+  // Map main settings to English
   const settingLabels = {
     // Time Range
     yearRange: {
-      label: "Work Time Range",
+      label: "Release timeframe",
       value: `${settings.startYear || "Not Set"} - ${
         settings.endYear || "Not Set"
       }`,
     },
-    // 热度设置
+    // Popularity settings
     topNSubjects: {
       label: "Top Ranked Works Count",
       value: settings.topNSubjects || "Not Set",
@@ -76,7 +76,7 @@ const GameSettingsDisplay = ({
     },
     indexId: {
       label: "Index ID",
-      value: settings.indexId || "未使用",
+      value: settings.indexId || "Not Used",
     },
     // Character Settings
     mainCharacterOnly: {
@@ -109,7 +109,7 @@ const GameSettingsDisplay = ({
     },
     timeLimit: {
       label: "Time Limit",
-      value: settings.timeLimit ? `${settings.timeLimit}seconds` : "无限制",
+      value: settings.timeLimit ? `${settings.timeLimit}seconds` : "Unlimited",
     },
     subjectSearch: {
       label: "Enable Work Search",
