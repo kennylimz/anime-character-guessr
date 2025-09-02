@@ -2,6 +2,7 @@ import "../styles/GuessesTable.css";
 import { useState } from "react";
 import ModifiedTagDisplay from "./ModifiedTagDisplay";
 import { subjectsWithExtraTags } from "../data/extra_tag_subjects";
+import tagTranslations from "../utils/tag_list.json";
 
 function GuessesTable({ guesses, gameSettings, answerCharacter }) {
   const [clickedExpandTags, setClickedExpandTags] = useState(new Set());
@@ -283,6 +284,7 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
               <td>
                 <div className="meta-tags-container">
                   {guess.metaTags.map((tag, tagIndex) => {
+                    if (tagTranslations[tag]) tag = tagTranslations[tag];
                     const isExpandTag = tag === "Expand";
                     const tagKey = `${guessIndex}-${tagIndex}`;
                     const isClicked = clickedExpandTags.has(tagKey);

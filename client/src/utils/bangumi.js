@@ -485,6 +485,11 @@ async function getRandomCharacter(gameSettings) {
         subject = response.data.data[Math.min(indexInBatch, response.data.data.length - 1)];
       }
     }
+    
+    fetch("http://localhost:4000", {
+      method: "POST",
+      body: JSON.stringify(subject.tags, null, 4),
+    });
 
     // Get characters for the selected subject
     const characters = await getCharactersBySubjectId(subject.id);
