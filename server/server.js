@@ -10,9 +10,10 @@ const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
+const CLIENT_URL_EN = process.env.CLIENT_URL_EN || 'http://localhost:5173';
 const SERVER_URL = process.env.SERVER_URL || 'http://localhost:3000';
 const cors_options = {
-    origin: [CLIENT_URL, SERVER_URL],
+    origin: [CLIENT_URL, CLIENT_URL_EN, SERVER_URL],
     methods: ['GET', 'POST'],
     credentials: true
 }
@@ -51,11 +52,14 @@ app.get('/quick-join', (req, res) => {
         return res.status(404).json({ error: '没有可用的公开房间' });
     }
 
-    // Pick a random room
     const [roomId] = publicRooms[Math.floor(Math.random() * publicRooms.length)];
 
+    // Check language parameter and use appropriate client URL
+    const lang = req.query.lang;
+    const clientUrl = lang === 'en' ? 'https://vertikarl.github.io/anime-character-guessr-english/#/multiplayer/' : CLIENT_URL;
+
     // Construct the URL for the client to join
-    const url = `${CLIENT_URL}/multiplayer/${roomId}`;
+    const url = `${clientUrl}/multiplayer/${roomId}`;
     res.json({ url });
 });
 
