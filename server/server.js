@@ -56,7 +56,7 @@ app.get('/quick-join', (req, res) => {
 
     // Check language parameter and use appropriate client URL
     const lang = req.query.lang;
-    const clientUrl = lang === 'en' ? 'https://vertikarl.github.io/anime-character-guessr-english/#/multiplayer/' : CLIENT_URL;
+    const clientUrl = lang === 'en' ? 'https://vertikarl.github.io/anime-character-guessr-english/#' : CLIENT_URL;
 
     // Construct the URL for the client to join
     const url = `${clientUrl}/multiplayer/${roomId}`;
