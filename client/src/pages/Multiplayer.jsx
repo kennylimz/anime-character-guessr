@@ -769,7 +769,7 @@ const Multiplayer = () => {
   // Add handleQuickJoin function
   const handleQuickJoin = async () => {
     try {
-      const response = await axios.get(`${SOCKET_URL}/quick-join`);
+      const response = await axios.get(`${SOCKET_URL}/quick-join?lang=en`);
       window.location.href = response.data.url;
     } catch (error) {
       if (error.response && error.response.status === 404) {
