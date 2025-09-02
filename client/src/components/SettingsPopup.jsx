@@ -201,7 +201,7 @@ function SettingsPopup({
       <div className="popup-content">
         {hideRestart ? (
           <button className="popup-close multiplayer-confirm" onClick={onClose}>
-            确认修改
+            Confirm
           </button>
         ) : (
           <button className="popup-close" onClick={onClose}>
@@ -298,7 +298,7 @@ function SettingsPopup({
                 <button
                   className="preset-button"
                   onClick={() => {
-                    alert("那很有生活了😅");
+                    alert("That’s very realistic 😅");
                     applyPresetConfig("Second Game Expert");
                   }}
                 >
@@ -307,7 +307,7 @@ function SettingsPopup({
                 <button
                   className="preset-button"
                   onClick={() => {
-                    applyPresetConfig("米哈游高手");
+                    applyPresetConfig("miHoYo Expert");
                   }}
                 >
                   miHoYo Expert
@@ -315,7 +315,7 @@ function SettingsPopup({
                 <button
                   className="preset-button"
                   onClick={() => {
-                    alert("风暴要火");
+                    alert("Storm is going to blow up");
                     applyPresetConfig("MOBA Cake Master");
                   }}
                 >
@@ -521,7 +521,7 @@ function SettingsPopup({
             </div>
 
             <div className="settings-section">
-              <h3>Range Settings</h3>
+              <h3>Media Settings</h3>
 
               <div className="settings-subsection">
                 <div

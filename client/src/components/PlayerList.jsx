@@ -90,7 +90,7 @@ const PlayerList = ({
       if (player.id === answerSetterId) {
         return <button className="ready-button ready">Setting Question</button>;
       }
-      return <button className="ready-button">选择</button>;
+      return <button className="ready-button">Select</button>;
     }
 
     if (player.isHost) {
@@ -103,7 +103,7 @@ const PlayerList = ({
           onClick={handleReadyToggle}
           className={`ready-button ${player.ready ? "ready" : ""}`}
         >
-          {player.ready ? "Cancel Ready" : "Ready"}
+          {player.ready ? "Unready" : "Ready"}
         </button>
       );
     }
@@ -124,14 +124,14 @@ const PlayerList = ({
   };
 
   const handleKickClick = (e, playerId) => {
-    e.stopPropagation(); // 阻止事件冒泡，防止触发行点击事件
+    e.stopPropagation(); // Prevent event bubbling to avoid triggering row click
     if (onKickPlayer) {
       onKickPlayer(playerId);
     }
   };
 
   const handleTransferHostClick = (e, playerId) => {
-    e.stopPropagation(); // 阻止事件冒泡，防止触发行点击事件
+    e.stopPropagation(); // Prevent event bubbling to avoid triggering row click
     if (onTransferHost) {
       onTransferHost(playerId);
     }
@@ -149,7 +149,7 @@ const PlayerList = ({
         <thead>
           <tr>
             <th></th>
-            <th>队</th>
+            <th>Team</th>
             <th></th>
             <th>
               <button
@@ -159,11 +159,13 @@ const PlayerList = ({
                 {showNames ? "Name" : "Anonymous"}
               </button>
             </th>
-            <th>分</th>
-            <th>猜</th>
+            <th>Score</th>
+            <th>Guesses</th>
             {isHost && (
               <th>
-                <span style={{ width: "100px", display: "block" }}>操作</span>
+                <span style={{ width: "100px", display: "block" }}>
+                  Actions
+                </span>
               </th>
             )}
           </tr>
@@ -284,7 +286,7 @@ const PlayerList = ({
                       className="action-menu-button"
                       onClick={(e) => {
                         e.stopPropagation();
-                        // 切换显示该玩家的操作菜单
+                        // Toggle the action menu for this player
                         setActiveMenu(
                           activeMenu === player.id ? null : player.id
                         );

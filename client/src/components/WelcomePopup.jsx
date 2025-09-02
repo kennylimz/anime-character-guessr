@@ -1,4 +1,6 @@
 import "../styles/popups.css";
+import SearchBar from "./SearchBar";
+import banner from "../../public/assets/welcome-banner.svg";
 
 function WelcomePopup({ onClose }) {
   return (
@@ -9,13 +11,13 @@ function WelcomePopup({ onClose }) {
         </button>
         <div className="popup-header">
           <h2>
-            Congratulations to the Shaw Team for winning the 3rd CCB Major!
+            Welcome to the translation project for anime character guessr!
           </h2>
         </div>
         <div className="popup-header">
           <img
-            src="/assets/poster.png"
-            alt="3队"
+            src={banner}
+            alt="welcome"
             style={{ width: "auto", height: "500px" }}
           />
         </div>
@@ -23,27 +25,15 @@ function WelcomePopup({ onClose }) {
           <div className="welcome-content">
             <div className="welcome-text">
               <p>
-                Over a week of the 3rd<b>CCB Major</b>has successfully
-                concluded, congratulations to Shaw (<b>Shaw</b> | <b>云霄</b> |{" "}
-                <b>中华小当家</b>）获得冠军！
+                This project focuses on translating the game originally
+                developed by{" "}
+                <a href="https://github.com/kennylimz">kennylimz</a> into
+                english and beyond! 🚀
               </p>
               <p>
-                Other finalists: Group Seven (<b>鲁迪乌斯</b> | <b>Chelseaaa</b>{" "}
-                | <b>Ryo</b>），Cool (<b>doka</b> | <b>V.</b> |{" "}
-                <b>表演制造者</b>）
+                It is still very early in development, so expect bugs and wrong
+                translations.
               </p>
-              <p>
-                Viewers witnessed an unusually intense 100-minute final, where
-                the Shaw team fell behind multiple times but bounced back,
-                ultimately reaching match point first and claiming the
-                championship!
-              </p>
-              <p>
-                <a href="https://www.bilibili.com/video/BV1eyePzBEXC">
-                  Final Replay
-                </a>
-              </p>
-              <p>QQ Group：467740403</p>
             </div>
           </div>
         </div>
