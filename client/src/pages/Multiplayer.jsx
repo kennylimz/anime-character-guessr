@@ -771,11 +771,12 @@ const Multiplayer = () => {
     try {
       const response = await axios.get(`${SOCKET_URL}/quick-join?lang=en`);
       window.location.href = response.data.url;
+      window.location.reload();
     } catch (error) {
       if (error.response && error.response.status === 404) {
         alert(error.response.data.error || "No available public rooms");
       } else {
-        alert("Quick Join失败，请重试");
+        alert("Quick Join Failed");
       }
     }
   };
