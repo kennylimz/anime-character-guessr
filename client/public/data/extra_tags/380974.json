@@ -1,534 +1,534 @@
 {
   "170107": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "物理": "<img src='/assets/tag/zzz/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Physical": "<img src='/assets/tag/zzz/物理.png' alt='Physical' />Physical"
     },
-    "职业": {
-      "击破": "<img src='/assets/tag/zzz/击破.png' alt='击破' />击破"
+    "Profession": {
+      "Break": "<img src='/assets/tag/zzz/击破.png' alt='Break' />Break"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "卡吕冬之子": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='卡吕冬之子' />卡吕冬之子"
+    "Faction": {
+      "Child of Calydon": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='Child of Calydon' />Child of Calydon"
     }
   },
   "170108": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "击破": "<img src='/assets/tag/zzz/击破.png' alt='击破' />击破"
+    "Profession": {
+      "Break": "<img src='/assets/tag/zzz/击破.png' alt='Break' />Break"
     },
-    "伤害类型": {
-      "穿透": "<img src='/assets/tag/zzz/穿透.png' alt='穿透' />穿透"
+    "Damage Type": {
+      "Pierce": "<img src='/assets/tag/zzz/穿透.png' alt='Pierce' />Pierce"
     },
-    "阵营": {
-      "防卫军·奥波勒斯小队": "<img src='/assets/tag/zzz/防卫军·奥波勒斯小队.png' alt='防卫军·奥波勒斯小队' />防卫军·奥波勒斯小队"
+    "Faction": {
+      "防卫军·Opoles Squad": "<img src='/assets/tag/zzz/防卫军·奥波勒斯小队.png' alt='防卫军·Opoles Squad' />防卫军·Opoles Squad"
     }
   },
   "172428": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "以太": "<img src='/assets/tag/zzz/以太.png' alt='以太' />以太"
+    "Attribute": {
+      "Aether": "<img src='/assets/tag/zzz/以太.png' alt='Aether' />Aether"
     },
-    "职业": {
-      "异常": "<img src='/assets/tag/zzz/异常.png' alt='异常' />异常"
+    "Profession": {
+      "Abnormal": "<img src='/assets/tag/zzz/异常.png' alt='Abnormal' />Abnormal"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "反舌鸟": "<img src='/assets/tag/zzz/反舌鸟.png' alt='反舌鸟' />反舌鸟"
+    "Faction": {
+      "Mockingbird": "<img src='/assets/tag/zzz/反舌鸟.png' alt='Mockingbird' />Mockingbird"
     }
   },
   "110634": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />",
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻",
-      "击破": "<img src='/assets/tag/zzz/击破.png' alt='击破' />击破"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack",
+      "Break": "<img src='/assets/tag/zzz/击破.png' alt='Break' />Break"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "狡兔屋": "<img src='/assets/tag/zzz/狡兔屋.png' alt='狡兔屋' />狡兔屋",
-      "防卫军·白银小队": "<img src='/assets/tag/zzz/防卫军·白银小队.png' alt='防卫军·白银小队' />防卫军·白银小队"
+    "Faction": {
+      "Cunning Rabbit House": "<img src='/assets/tag/zzz/狡兔屋.png' alt='Cunning Rabbit House' />Cunning Rabbit House",
+      "防卫军·Silver Squad": "<img src='/assets/tag/zzz/防卫军·白银小队.png' alt='防卫军·Silver Squad' />防卫军·Silver Squad"
     }
   },
   "110783": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "以太": "<img src='/assets/tag/zzz/以太.png' alt='以太' />以太"
+    "Attribute": {
+      "Aether": "<img src='/assets/tag/zzz/以太.png' alt='Aether' />Aether"
     },
-    "职业": {
-      "支援": "<img src='/assets/tag/zzz/支援.png' alt='支援' />支援"
+    "Profession": {
+      "Support": "<img src='/assets/tag/zzz/支援.png' alt='Support' />Support"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "狡兔屋": "<img src='/assets/tag/zzz/狡兔屋.png' alt='狡兔屋' />狡兔屋"
+    "Faction": {
+      "Cunning Rabbit House": "<img src='/assets/tag/zzz/狡兔屋.png' alt='Cunning Rabbit House' />Cunning Rabbit House"
     }
   },
   "111110": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "物理": "<img src='/assets/tag/zzz/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Physical": "<img src='/assets/tag/zzz/物理.png' alt='Physical' />Physical"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "穿透": "<img src='/assets/tag/zzz/穿透.png' alt='穿透' />穿透"
+    "Damage Type": {
+      "Pierce": "<img src='/assets/tag/zzz/穿透.png' alt='Pierce' />Pierce"
     },
-    "阵营": {
-      "狡兔屋": "<img src='/assets/tag/zzz/狡兔屋.png' alt='狡兔屋' />狡兔屋"
+    "Faction": {
+      "Cunning Rabbit House": "<img src='/assets/tag/zzz/狡兔屋.png' alt='Cunning Rabbit House' />Cunning Rabbit House"
     }
   },
   "114012": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "物理": "<img src='/assets/tag/zzz/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Physical": "<img src='/assets/tag/zzz/物理.png' alt='Physical' />Physical"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "狡兔屋": "<img src='/assets/tag/zzz/狡兔屋.png' alt='狡兔屋' />狡兔屋"
+    "Faction": {
+      "Cunning Rabbit House": "<img src='/assets/tag/zzz/狡兔屋.png' alt='Cunning Rabbit House' />Cunning Rabbit House"
     }
   },
   "114931": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/zzz/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/zzz/火.png' alt='Fire' />Fire"
     },
-    "职业": {
-      "击破": "<img src='/assets/tag/zzz/击破.png' alt='击破' />击破"
+    "Profession": {
+      "Break": "<img src='/assets/tag/zzz/击破.png' alt='Break' />Break"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "白祇重工": "<img src='/assets/tag/zzz/白祇重工.png' alt='白祇重工' />白祇重工"
+    "Faction": {
+      "Shirogane Heavy Industries": "<img src='/assets/tag/zzz/白祇重工.png' alt='Shirogane Heavy Industries' />Shirogane Heavy Industries"
     }
   },
   "114934": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "穿透": "<img src='/assets/tag/zzz/穿透.png' alt='穿透' />穿透"
+    "Damage Type": {
+      "Pierce": "<img src='/assets/tag/zzz/穿透.png' alt='Pierce' />Pierce"
     },
-    "阵营": {
-      "白祇重工": "<img src='/assets/tag/zzz/白祇重工.png' alt='白祇重工' />白祇重工"
+    "Faction": {
+      "Shirogane Heavy Industries": "<img src='/assets/tag/zzz/白祇重工.png' alt='Shirogane Heavy Industries' />Shirogane Heavy Industries"
     }
   },
   "114935": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/zzz/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/zzz/火.png' alt='Fire' />Fire"
     },
-    "职业": {
-      "防护": "<img src='/assets/tag/zzz/防护.png' alt='防护' />防护"
+    "Profession": {
+      "Protection": "<img src='/assets/tag/zzz/防护.png' alt='Protection' />Protection"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "白祇重工": "<img src='/assets/tag/zzz/白祇重工.png' alt='白祇重工' />白祇重工"
+    "Faction": {
+      "Shirogane Heavy Industries": "<img src='/assets/tag/zzz/白祇重工.png' alt='Shirogane Heavy Industries' />Shirogane Heavy Industries"
     }
   },
   "160814": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "异常": "<img src='/assets/tag/zzz/异常.png' alt='异常' />异常"
+    "Profession": {
+      "Abnormal": "<img src='/assets/tag/zzz/异常.png' alt='Abnormal' />Abnormal"
     },
-    "伤害类型": {
-      "穿透": "<img src='/assets/tag/zzz/穿透.png' alt='穿透' />穿透"
+    "Damage Type": {
+      "Pierce": "<img src='/assets/tag/zzz/穿透.png' alt='Pierce' />Pierce"
     },
-    "阵营": {
-      "白祇重工": "<img src='/assets/tag/zzz/白祇重工.png' alt='白祇重工' />白祇重工"
+    "Faction": {
+      "Shirogane Heavy Industries": "<img src='/assets/tag/zzz/白祇重工.png' alt='Shirogane Heavy Industries' />Shirogane Heavy Industries"
     }
   },
   "114019": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/zzz/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/zzz/冰.png' alt='Ice' />Ice"
     },
-    "职业": {
-      "击破": "<img src='/assets/tag/zzz/击破.png' alt='击破' />击破"
+    "Profession": {
+      "Break": "<img src='/assets/tag/zzz/击破.png' alt='Break' />Break"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "维多利亚家政": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='维多利亚家政' />维多利亚家政"
+    "Faction": {
+      "Victoria Housekeeping": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='Victoria Housekeeping' />Victoria Housekeeping"
     }
   },
   "114022": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "物理": "<img src='/assets/tag/zzz/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Physical": "<img src='/assets/tag/zzz/物理.png' alt='Physical' />Physical"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "维多利亚家政": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='维多利亚家政' />维多利亚家政"
+    "Faction": {
+      "Victoria Housekeeping": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='Victoria Housekeeping' />Victoria Housekeeping"
     }
   },
   "158634": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/zzz/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/zzz/冰.png' alt='Ice' />Ice"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "维多利亚家政": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='维多利亚家政' />维多利亚家政"
+    "Faction": {
+      "Victoria Housekeeping": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='Victoria Housekeeping' />Victoria Housekeeping"
     }
   },
   "160813": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "支援": "<img src='/assets/tag/zzz/支援.png' alt='支援' />支援"
+    "Profession": {
+      "Support": "<img src='/assets/tag/zzz/支援.png' alt='Support' />Support"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "维多利亚家政": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='维多利亚家政' />维多利亚家政"
+    "Faction": {
+      "Victoria Housekeeping": "<img src='/assets/tag/zzz/维多利亚家政.png' alt='Victoria Housekeeping' />Victoria Housekeeping"
     }
   },
   "114929": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/zzz/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/zzz/冰.png' alt='Ice' />Ice"
     },
-    "职业": {
-      "异常": "<img src='/assets/tag/zzz/异常.png' alt='异常' />异常"
+    "Profession": {
+      "Abnormal": "<img src='/assets/tag/zzz/异常.png' alt='Abnormal' />Abnormal"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "对空六课": "<img src='/assets/tag/zzz/对空六课.png' alt='对空六课' />对空六课"
+    "Faction": {
+      "Anti-Air Section Six": "<img src='/assets/tag/zzz/对空六课.png' alt='Anti-Air Section Six' />Anti-Air Section Six"
     }
   },
   "114930": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/zzz/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/zzz/冰.png' alt='Ice' />Ice"
     },
-    "职业": {
-      "支援": "<img src='/assets/tag/zzz/支援.png' alt='支援' />支援"
+    "Profession": {
+      "Support": "<img src='/assets/tag/zzz/支援.png' alt='Support' />Support"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "对空六课": "<img src='/assets/tag/zzz/对空六课.png' alt='对空六课' />对空六课"
+    "Faction": {
+      "Anti-Air Section Six": "<img src='/assets/tag/zzz/对空六课.png' alt='Anti-Air Section Six' />Anti-Air Section Six"
     }
   },
   "166522": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "异常": "<img src='/assets/tag/zzz/异常.png' alt='异常' />异常"
+    "Profession": {
+      "Abnormal": "<img src='/assets/tag/zzz/异常.png' alt='Abnormal' />Abnormal"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "对空六课": "<img src='/assets/tag/zzz/对空六课.png' alt='对空六课' />对空六课"
+    "Faction": {
+      "Anti-Air Section Six": "<img src='/assets/tag/zzz/对空六课.png' alt='Anti-Air Section Six' />Anti-Air Section Six"
     }
   },
   "167121": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击",
-      "穿透": "<img src='/assets/tag/zzz/穿透.png' alt='穿透' />穿透"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash",
+      "Pierce": "<img src='/assets/tag/zzz/穿透.png' alt='Pierce' />Pierce"
     },
-    "阵营": {
-      "对空六课": "<img src='/assets/tag/zzz/对空六课.png' alt='对空六课' />对空六课"
+    "Faction": {
+      "Anti-Air Section Six": "<img src='/assets/tag/zzz/对空六课.png' alt='Anti-Air Section Six' />Anti-Air Section Six"
     }
   },
   "111757": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/zzz/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/zzz/火.png' alt='Fire' />Fire"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "防卫军·奥波勒斯小队": "<img src='/assets/tag/zzz/防卫军·奥波勒斯小队.png' alt='防卫军·奥波勒斯小队' />防卫军·奥波勒斯小队"
+    "Faction": {
+      "防卫军·Opoles Squad": "<img src='/assets/tag/zzz/防卫军·奥波勒斯小队.png' alt='防卫军·Opoles Squad' />防卫军·Opoles Squad"
     }
   },
   "160809": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "击破": "<img src='/assets/tag/zzz/击破.png' alt='击破' />击破"
+    "Profession": {
+      "Break": "<img src='/assets/tag/zzz/击破.png' alt='Break' />Break"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "刑侦特勤组": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='刑侦特勤组' />刑侦特勤组"
+    "Faction": {
+      "Criminal Investigation Task Force": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='Criminal Investigation Task Force' />Criminal Investigation Task Force"
     }
   },
   "160812": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "以太": "<img src='/assets/tag/zzz/以太.png' alt='以太' />以太"
+    "Attribute": {
+      "Aether": "<img src='/assets/tag/zzz/以太.png' alt='Aether' />Aether"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "穿透": "<img src='/assets/tag/zzz/穿透.png' alt='穿透' />穿透"
+    "Damage Type": {
+      "Pierce": "<img src='/assets/tag/zzz/穿透.png' alt='Pierce' />Pierce"
     },
-    "阵营": {
-      "刑侦特勤组": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='刑侦特勤组' />刑侦特勤组"
+    "Faction": {
+      "Criminal Investigation Task Force": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='Criminal Investigation Task Force' />Criminal Investigation Task Force"
     }
   },
   "161417": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/zzz/电.png' alt='电' />电"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/zzz/电.png' alt='Electric' />Electric"
     },
-    "职业": {
-      "防护": "<img src='/assets/tag/zzz/防护.png' alt='防护' />防护"
+    "Profession": {
+      "Protection": "<img src='/assets/tag/zzz/防护.png' alt='Protection' />Protection"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "刑侦特勤组": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='刑侦特勤组' />刑侦特勤组"
+    "Faction": {
+      "Criminal Investigation Task Force": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='Criminal Investigation Task Force' />Criminal Investigation Task Force"
     }
   },
   "161418": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "物理": "<img src='/assets/tag/zzz/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Physical": "<img src='/assets/tag/zzz/物理.png' alt='Physical' />Physical"
     },
-    "职业": {
-      "异常": "<img src='/assets/tag/zzz/异常.png' alt='异常' />异常"
+    "Profession": {
+      "Abnormal": "<img src='/assets/tag/zzz/异常.png' alt='Abnormal' />Abnormal"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "刑侦特勤组": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='刑侦特勤组' />刑侦特勤组"
+    "Faction": {
+      "Criminal Investigation Task Force": "<img src='/assets/tag/zzz/刑侦特勤组.png' alt='Criminal Investigation Task Force' />Criminal Investigation Task Force"
     }
   },
   "115202": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "物理": "<img src='/assets/tag/zzz/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Physical": "<img src='/assets/tag/zzz/物理.png' alt='Physical' />Physical"
     },
-    "职业": {
-      "防护": "<img src='/assets/tag/zzz/防护.png' alt='防护' />防护"
+    "Profession": {
+      "Protection": "<img src='/assets/tag/zzz/防护.png' alt='Protection' />Protection"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击",
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike",
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "卡吕冬之子": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='卡吕冬之子' />卡吕冬之子"
+    "Faction": {
+      "Child of Calydon": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='Child of Calydon' />Child of Calydon"
     }
   },
   "160810": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "物理": "<img src='/assets/tag/zzz/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Physical": "<img src='/assets/tag/zzz/物理.png' alt='Physical' />Physical"
     },
-    "职业": {
-      "异常": "<img src='/assets/tag/zzz/异常.png' alt='异常' />异常"
+    "Profession": {
+      "Abnormal": "<img src='/assets/tag/zzz/异常.png' alt='Abnormal' />Abnormal"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "卡吕冬之子": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='卡吕冬之子' />卡吕冬之子"
+    "Faction": {
+      "Child of Calydon": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='Child of Calydon' />Child of Calydon"
     }
   },
   "162694": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/zzz/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/zzz/火.png' alt='Fire' />Fire"
     },
-    "职业": {
-      "异常": "<img src='/assets/tag/zzz/异常.png' alt='异常' />异常"
+    "Profession": {
+      "Abnormal": "<img src='/assets/tag/zzz/异常.png' alt='Abnormal' />Abnormal"
     },
-    "伤害类型": {
-      "穿透": "<img src='/assets/tag/zzz/穿透.png' alt='穿透' />穿透"
+    "Damage Type": {
+      "Pierce": "<img src='/assets/tag/zzz/穿透.png' alt='Pierce' />Pierce"
     },
-    "阵营": {
-      "卡吕冬之子": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='卡吕冬之子' />卡吕冬之子"
+    "Faction": {
+      "Child of Calydon": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='Child of Calydon' />Child of Calydon"
     }
   },
   "167120": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/zzz/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/zzz/火.png' alt='Fire' />Fire"
     },
-    "职业": {
-      "击破": "<img src='/assets/tag/zzz/击破.png' alt='击破' />击破"
+    "Profession": {
+      "Break": "<img src='/assets/tag/zzz/击破.png' alt='Break' />Break"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "卡吕冬之子": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='卡吕冬之子' />卡吕冬之子"
+    "Faction": {
+      "Child of Calydon": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='Child of Calydon' />Child of Calydon"
     }
   },
   "160811": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/zzz/A.png' alt='A' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/zzz/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/zzz/火.png' alt='Fire' />Fire"
     },
-    "职业": {
-      "支援": "<img src='/assets/tag/zzz/支援.png' alt='支援' />支援"
+    "Profession": {
+      "Support": "<img src='/assets/tag/zzz/支援.png' alt='Support' />Support"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "卡吕冬之子": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='卡吕冬之子' />卡吕冬之子"
+    "Faction": {
+      "Child of Calydon": "<img src='/assets/tag/zzz/卡吕冬之子.png' alt='Child of Calydon' />Child of Calydon"
     }
   },
   "170052": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "以太": "<img src='/assets/tag/zzz/以太.png' alt='以太' />以太"
+    "Attribute": {
+      "Aether": "<img src='/assets/tag/zzz/以太.png' alt='Aether' />Aether"
     },
-    "职业": {
-      "支援": "<img src='/assets/tag/zzz/支援.png' alt='支援' />支援"
+    "Profession": {
+      "Support": "<img src='/assets/tag/zzz/支援.png' alt='Support' />Support"
     },
-    "伤害类型": {
-      "打击": "<img src='/assets/tag/zzz/打击.png' alt='打击' />打击"
+    "Damage Type": {
+      "Strike": "<img src='/assets/tag/zzz/打击.png' alt='Strike' />Strike"
     },
-    "阵营": {
-      "天琴座": "<img src='/assets/tag/zzz/天琴座.png' alt='天琴座' />天琴座"
+    "Faction": {
+      "Lyra": "<img src='/assets/tag/zzz/天琴座.png' alt='Lyra' />Lyra"
     }
   },
   "170053": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/zzz/S.png' alt='S' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/zzz/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/zzz/火.png' alt='Fire' />Fire"
     },
-    "职业": {
-      "强攻": "<img src='/assets/tag/zzz/强攻.png' alt='强攻' />强攻"
+    "Profession": {
+      "Strong Attack": "<img src='/assets/tag/zzz/强攻.png' alt='Strong Attack' />Strong Attack"
     },
-    "伤害类型": {
-      "斩击": "<img src='/assets/tag/zzz/斩击.png' alt='斩击' />斩击"
+    "Damage Type": {
+      "Slash": "<img src='/assets/tag/zzz/斩击.png' alt='Slash' />Slash"
     },
-    "阵营": {
-      "天琴座": "<img src='/assets/tag/zzz/天琴座.png' alt='天琴座' />天琴座"
+    "Faction": {
+      "Lyra": "<img src='/assets/tag/zzz/天琴座.png' alt='Lyra' />Lyra"
     }
   }
 }

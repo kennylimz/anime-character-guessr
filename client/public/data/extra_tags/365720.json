@@ -1,1708 +1,1708 @@
 {
     "129011": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "辅助": "辅助",
-            "控制": "控制"
+        "Role": {
+            "DPS": "DPS",
+            "Support": "Support",
+            "Control": "Control"
         }
     },
     "130811": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "辅助": "辅助"
+        "Role": {
+            "DPS": "DPS",
+            "Support": "Support"
         }
     },
     "131369": {
-        "灵感": {
-            "意识唤醒者": "意识唤醒者"
+        "Inspiration": {
+            "Awakener": "Awakener"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "治疗": "治疗"
+        "Role": {
+            "DPS": "DPS",
+            "Healer": "Healer"
         }
     },
     "130985": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "中毒": "中毒",
-            "治疗": "治疗",
-            "输出": "输出"
+        "Role": {
+            "Poisoned": "Poisoned",
+            "Healer": "Healer",
+            "DPS": "DPS"
         }
     },
     "130983": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "控制": "控制",
-            "辅助": "辅助"
+        "Role": {
+            "DPS": "DPS",
+            "Control": "Control",
+            "Support": "Support"
         }
     },
     "130984": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "智": "<img src='/assets/tag/1999/智.png'/>智"
+        "Attribute": {
+            "Wisdom": "<img src='/assets/tag/1999/智.png'/>Wisdom"
         },
-        "创伤类型": {
-            "创伤": "<img src='/assets/tag/1999/创伤.png'/>创伤"
+        "Trauma Type": {
+            "Trauma": "<img src='/assets/tag/1999/创伤.png'/>Trauma"
         },
-        "定位": {
-            "驱散": "驱散",
-            "输出": "输出",
-            "控制": "控制"
+        "Role": {
+            "Dispel": "Dispel",
+            "DPS": "DPS",
+            "Control": "Control"
         }
     },
     "130989": {
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "弱化敌方": "弱化敌方",
-            "急速必杀": "急速必杀"
+        "Role": {
+            "Weaken Enemy": "Weaken Enemy",
+            "Rapid Kill": "Rapid Kill"
         }
     },
     "130987": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "创伤": "<img src='/assets/tag/1999/创伤.png'/>创伤"
+        "Trauma Type": {
+            "Trauma": "<img src='/assets/tag/1999/创伤.png'/>Trauma"
         },
-        "定位": {
-            "削弱": "削弱",
-            "输出": "输出"
+        "Role": {
+            "Debuff": "Debuff",
+            "DPS": "DPS"
         }
     },
     "130988": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "爆发": "爆发",
-            "输出": "输出"
+        "Role": {
+            "Burst": "Burst",
+            "DPS": "DPS"
         }
     },
     "142179": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "追击": "追击",
-            "辅助": "辅助"
+        "Role": {
+            "DPS": "DPS",
+            "Pursuit": "Pursuit",
+            "Support": "Support"
         }
     },
     "144667": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "智": "<img src='/assets/tag/1999/智.png'/>智"
+        "Attribute": {
+            "Wisdom": "<img src='/assets/tag/1999/智.png'/>Wisdom"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "削弱": "削弱",
-            "净化": "净化"
+        "Role": {
+            "Support": "Support",
+            "Debuff": "Debuff",
+            "Purification": "Purification"
         }
     },
     "153431": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "辅助": "辅助",
-            "燃烧": "燃烧"
+        "Role": {
+            "DPS": "DPS",
+            "Support": "Support",
+            "Burn": "Burn"
         }
     },
     "160229": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst"
         }
     },
     "162545": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "治疗": "治疗",
-            "净化": "净化"
+        "Role": {
+            "Support": "Support",
+            "Healer": "Healer",
+            "Purification": "Purification"
         }
     },
     "162546": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发",
-            "额外行动": "额外行动"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst",
+            "Extra Action": "Extra Action"
         }
     },
     "162547": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "驱散": "驱散",
-            "治疗": "治疗"
+        "Role": {
+            "DPS": "DPS",
+            "Dispel": "Dispel",
+            "Healer": "Healer"
         }
     },
     "167316": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "护盾": "护盾",
-            "反击": "反击"
+        "Role": {
+            "DPS": "DPS",
+            "Shield": "Shield",
+            "Counter": "Counter"
         }
     },
     "167317": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "输出": "输出",
-            "调阶": "调阶"
+        "Role": {
+            "Support": "Support",
+            "DPS": "DPS",
+            "Rank Adjustment": "Rank Adjustment"
         }
     },
     "167318": {
-        "灵感": {
-            "意识唤醒者": "意识唤醒者"
+        "Inspiration": {
+            "Awakener": "Awakener"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "护盾": "护盾",
-            "位移": "位移"
+        "Role": {
+            "Support": "Support",
+            "Shield": "Shield",
+            "Movement": "Movement"
         }
     },
     "168095": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "削弱": "削弱",
-            "中毒": "中毒",
-            "辅助": "辅助"
+        "Role": {
+            "Debuff": "Debuff",
+            "Poisoned": "Poisoned",
+            "Support": "Support"
         }
     },
     "168097": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "削弱": "削弱",
-            "辅助": "辅助"
+        "Role": {
+            "DPS": "DPS",
+            "Debuff": "Debuff",
+            "Support": "Support"
         }
     },
     "168098": {
-        "灵感": {
-            "神秘学家混血种": "神秘学家混血种"
+        "Inspiration": {
+            "Occult Hybrid": "Occult Hybrid"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "护盾": "护盾",
-            "治疗": "治疗"
+        "Role": {
+            "Support": "Support",
+            "Shield": "Shield",
+            "Healer": "Healer"
         }
     },
     "169234": {
-        "灵感": {
-            "超自然存在": "超自然存在"
+        "Inspiration": {
+            "Supernatural Being": "Supernatural Being"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "控制": "控制",
-            "爆发": "爆发"
+        "Role": {
+            "DPS": "DPS",
+            "Control": "Control",
+            "Burst": "Burst"
         }
     },
     "169312": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "燃烧": "燃烧",
-            "额外行动": "额外行动"
+        "Role": {
+            "Support": "Support",
+            "Burn": "Burn",
+            "Extra Action": "Extra Action"
         }
     },
     "171042": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "中毒": "中毒",
-            "爆发": "爆发"
+        "Role": {
+            "DPS": "DPS",
+            "Poisoned": "Poisoned",
+            "Burst": "Burst"
         }
     },
     "171050": {
-        "灵感": {
-            "神秘学家混血种": "神秘学家混血种"
+        "Inspiration": {
+            "Occult Hybrid": "Occult Hybrid"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "辅助": "辅助",
-            "额外行动": "额外行动"
+        "Role": {
+            "DPS": "DPS",
+            "Support": "Support",
+            "Extra Action": "Extra Action"
         }
     },
     "171054": {
-        "灵感": {
-            "意识唤醒者": "意识唤醒者"
+        "Inspiration": {
+            "Awakener": "Awakener"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "驱散": "驱散",
-            "额外行动": "额外行动"
+        "Role": {
+            "Support": "Support",
+            "Dispel": "Dispel",
+            "Extra Action": "Extra Action"
         }
     },
     "172878": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "辅助": "辅助",
-            "启示": "启示"
+        "Role": {
+            "DPS": "DPS",
+            "Support": "Support",
+            "Revelation": "Revelation"
         }
     },
     "172879": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "治疗": "治疗",
-            "驱散": "驱散",
-            "额外行动": "额外行动"
+        "Role": {
+            "Healer": "Healer",
+            "Dispel": "Dispel",
+            "Extra Action": "Extra Action"
         }
     },
     "172881": {
-        "灵感": {
-            "人类": "人类"
+        "Inspiration": {
+            "Human": "Human"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "反击": "反击",
-            "收割": "收割"
+        "Role": {
+            "DPS": "DPS",
+            "Counter": "Counter",
+            "Harvest": "Harvest"
         }
     },
     "172882": {
-        "灵感": {
-            "意识唤醒者": "意识唤醒者"
+        "Inspiration": {
+            "Awakener": "Awakener"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "智": "<img src='/assets/tag/1999/智.png'/>智"
+        "Attribute": {
+            "Wisdom": "<img src='/assets/tag/1999/智.png'/>Wisdom"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "控制": "控制",
-            "位移": "位移"
+        "Role": {
+            "DPS": "DPS",
+            "Control": "Control",
+            "Movement": "Movement"
         }
     },
     "131373": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "智": "<img src='/assets/tag/1999/智.png'/>智"
+        "Attribute": {
+            "Wisdom": "<img src='/assets/tag/1999/智.png'/>Wisdom"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助"
+        "Role": {
+            "Support": "Support"
         }
     },
     "131374": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "输出": "输出"
+        "Role": {
+            "Support": "Support",
+            "DPS": "DPS"
         }
     },
     "144670": {
-        "灵感": {
-            "意识唤醒者": "意识唤醒者"
+        "Inspiration": {
+            "Awakener": "Awakener"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "智": "<img src='/assets/tag/1999/智.png'/>智"
+        "Attribute": {
+            "Wisdom": "<img src='/assets/tag/1999/智.png'/>Wisdom"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "收割": "收割",
-            "额外行动": "额外行动"
+        "Role": {
+            "DPS": "DPS",
+            "Harvest": "Harvest",
+            "Extra Action": "Extra Action"
         }
     },
     "153432": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "防御": "防御",
-            "辅助": "辅助",
-            "爆发": "爆发"
+        "Role": {
+            "Defense": "Defense",
+            "Support": "Support",
+            "Burst": "Burst"
         }
     },
     "131411": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst"
         }
     },
     "133183": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "辅助": "辅助",
-            "驱散": "驱散"
+        "Role": {
+            "DPS": "DPS",
+            "Support": "Support",
+            "Dispel": "Dispel"
         }
     },
     "133184": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "削弱": "削弱",
-            "控制": "控制",
-            "护盾": "护盾"
+        "Role": {
+            "Debuff": "Debuff",
+            "Control": "Control",
+            "Shield": "Shield"
         }
     },
     "133677": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "治疗": "治疗",
-            "削弱": "削弱",
-            "净化": "净化"
+        "Role": {
+            "Healer": "Healer",
+            "Debuff": "Debuff",
+            "Purification": "Purification"
         }
     },
     "133678": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst"
         }
     },
     "135287": {
-        "灵感": {
-            "超自然者": "超自然者"
+        "Inspiration": {
+            "Supernatural": "Supernatural"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "中毒": "中毒"
+        "Role": {
+            "DPS": "DPS",
+            "Poisoned": "Poisoned"
         }
     },
     "135352": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "驱散": "驱散",
-            "削弱": "削弱"
+        "Role": {
+            "DPS": "DPS",
+            "Dispel": "Dispel",
+            "Debuff": "Debuff"
         }
     },
     "138289": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发",
-            "削弱": "削弱"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst",
+            "Debuff": "Debuff"
         }
     },
     "138290": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "中毒": "中毒",
-            "削弱": "削弱"
+        "Role": {
+            "DPS": "DPS",
+            "Poisoned": "Poisoned",
+            "Debuff": "Debuff"
         }
     },
     "138757": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发",
-            "追击": "追击"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst",
+            "Pursuit": "Pursuit"
         }
     },
     "144672": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发",
-            "燃烧": "燃烧"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst",
+            "Burn": "Burn"
         }
     },
     "144673": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "输出": "输出",
-            "燃烧": "燃烧"
+        "Role": {
+            "Support": "Support",
+            "DPS": "DPS",
+            "Burn": "Burn"
         }
     },
     "151501": {
-        "灵感": {
-            "人类": "人类"
+        "Inspiration": {
+            "Human": "Human"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "护盾": "护盾",
-            "削弱": "削弱"
+        "Role": {
+            "Support": "Support",
+            "Shield": "Shield",
+            "Debuff": "Debuff"
         }
     },
     "151502": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "输出": "输出"
+        "Role": {
+            "Support": "Support",
+            "DPS": "DPS"
         }
     },
     "151503": {
-        "灵感": {
-            "神秘学家混血种": "神秘学家混血种"
+        "Inspiration": {
+            "Occult Hybrid": "Occult Hybrid"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发",
-            "额外行动": "额外行动"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst",
+            "Extra Action": "Extra Action"
         }
     },
     "151505": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "治疗": "治疗",
-            "免疫": "免疫"
+        "Role": {
+            "Support": "Support",
+            "Healer": "Healer",
+            "Immune": "Immune"
         }
     },
     "153430": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "削弱": "削弱",
-            "输出": "输出"
+        "Role": {
+            "Support": "Support",
+            "Debuff": "Debuff",
+            "DPS": "DPS"
         }
     },
     "153537": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "输出": "输出",
-            "热血": "热血"
+        "Role": {
+            "Support": "Support",
+            "DPS": "DPS",
+            "Hot-Blooded": "Hot-Blooded"
         }
     },
     "129012": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "治疗": "治疗",
-            "削弱": "削弱",
-            "控制": "控制"
+        "Role": {
+            "Healer": "Healer",
+            "Debuff": "Debuff",
+            "Control": "Control"
         }
     },
     "129013": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "重伤": "重伤"
+        "Role": {
+            "DPS": "DPS",
+            "Severe Injury": "Severe Injury"
         }
     },
     "129014": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "削弱": "削弱"
+        "Role": {
+            "DPS": "DPS",
+            "Debuff": "Debuff"
         }
     },
     "129015": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "驱散": "驱散"
+        "Role": {
+            "DPS": "DPS",
+            "Dispel": "Dispel"
         }
     },
     "130986": {
-        "灵感": {
-            "超自然者": "超自然者"
+        "Inspiration": {
+            "Supernatural": "Supernatural"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
+        "Trauma Type": {
             "NaN": "<img src='/assets/tag/1999/nan.png'/>nan"
         },
-        "定位": {
-            "削弱": "削弱",
-            "输出": "输出",
-            "控制": "控制"
+        "Role": {
+            "Debuff": "Debuff",
+            "DPS": "DPS",
+            "Control": "Control"
         }
     },
     "131375": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "爆发": "爆发"
+        "Role": {
+            "DPS": "DPS",
+            "Burst": "Burst"
         }
     },
     "131376": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "防御": "防御",
-            "辅助": "辅助",
-            "护盾": "护盾"
+        "Role": {
+            "Defense": "Defense",
+            "Support": "Support",
+            "Shield": "Shield"
         }
     },
     "131377": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "控制": "控制",
-            "输出": "输出"
+        "Role": {
+            "Support": "Support",
+            "Control": "Control",
+            "DPS": "DPS"
         }
     },
     "131378": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "6星": "✦✦✦✦✦✦"
+        "Rarity": {
+            "6Star": "✦✦✦✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出"
+        "Role": {
+            "DPS": "DPS"
         }
     },
     "131379": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "驱散": "驱散"
+        "Role": {
+            "DPS": "DPS",
+            "Dispel": "Dispel"
         }
     },
     "131380": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "治疗": "治疗",
-            "防御": "防御"
+        "Role": {
+            "Healer": "Healer",
+            "Defense": "Defense"
         }
     },
     "131381": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "控制": "控制",
-            "仪式高伤": "仪式高伤",
-            "弱化敌方": "弱化敌方"
+        "Role": {
+            "Control": "Control",
+            "Ritual High Damage": "Ritual High Damage",
+            "Weaken Enemy": "Weaken Enemy"
         }
     },
     "131382": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "控制": "控制"
+        "Role": {
+            "DPS": "DPS",
+            "Control": "Control"
         }
     },
     "131383": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "削弱": "削弱",
-            "控制": "控制"
+        "Role": {
+            "Debuff": "Debuff",
+            "Control": "Control"
         }
     },
     "131384": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "护盾": "护盾",
-            "削弱": "削弱",
-            "输出": "输出"
+        "Role": {
+            "Shield": "Shield",
+            "Debuff": "Debuff",
+            "DPS": "DPS"
         }
     },
     "131385": {
-        "灵感": {
-            "神秘学家混血种": "神秘学家混血种"
+        "Inspiration": {
+            "Occult Hybrid": "Occult Hybrid"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "控制": "控制"
+        "Role": {
+            "DPS": "DPS",
+            "Control": "Control"
         }
     },
     "131386": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "输出": "输出"
+        "Role": {
+            "Support": "Support",
+            "DPS": "DPS"
         }
     },
     "131387": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "5星": "✦✦✦✦✦"
+        "Rarity": {
+            "5Star": "✦✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "治疗": "治疗"
+        "Role": {
+            "DPS": "DPS",
+            "Healer": "Healer"
         }
     },
     "131388": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "防御": "防御"
+        "Role": {
+            "Support": "Support",
+            "Defense": "Defense"
         }
     },
     "131389": {
-        "灵感": {
-            "神秘学家混血种": "神秘学家混血种"
+        "Inspiration": {
+            "Occult Hybrid": "Occult Hybrid"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "自愈": "自愈"
+        "Role": {
+            "DPS": "DPS",
+            "Self-Healing": "Self-Healing"
         }
     },
     "131390": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "控制": "控制"
+        "Role": {
+            "Support": "Support",
+            "Control": "Control"
         }
     },
     "131391": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "治疗": "治疗",
-            "重伤": "重伤"
+        "Role": {
+            "Healer": "Healer",
+            "Severe Injury": "Severe Injury"
         }
     },
     "131392": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "爆发": "爆发",
-            "输出": "输出"
+        "Role": {
+            "Burst": "Burst",
+            "DPS": "DPS"
         }
     },
     "131393": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "控制": "控制",
-            "护盾": "护盾"
+        "Role": {
+            "Control": "Control",
+            "Shield": "Shield"
         }
     },
     "131394": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "防御": "防御",
-            "削弱": "削弱"
+        "Role": {
+            "Defense": "Defense",
+            "Debuff": "Debuff"
         }
     },
     "131395": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出"
+        "Role": {
+            "DPS": "DPS"
         }
     },
     "131396": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "重伤": "重伤",
-            "辅助": "辅助"
+        "Role": {
+            "Severe Injury": "Severe Injury",
+            "Support": "Support"
         }
     },
     "131397": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "中毒": "中毒"
+        "Role": {
+            "DPS": "DPS",
+            "Poisoned": "Poisoned"
         }
     },
     "131399": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "4星": "✦✦✦✦"
+        "Rarity": {
+            "4Star": "✦✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助"
+        "Role": {
+            "Support": "Support"
         }
     },
     "131400": {
-        "灵感": {
-            "超自然者": "超自然者"
+        "Inspiration": {
+            "Supernatural": "Supernatural"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "防御": "防御",
-            "控制": "控制"
+        "Role": {
+            "Defense": "Defense",
+            "Control": "Control"
         }
     },
     "131401": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "木": "<img src='/assets/tag/1999/木.png'/>木"
+        "Attribute": {
+            "Wood": "<img src='/assets/tag/1999/木.png'/>Wood"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "治疗": "治疗"
+        "Role": {
+            "Healer": "Healer"
         }
     },
     "131402": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "防御": "防御"
+        "Role": {
+            "Defense": "Defense"
         }
     },
     "131403": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助",
-            "护盾": "护盾"
+        "Role": {
+            "Support": "Support",
+            "Shield": "Shield"
         }
     },
     "131404": {
-        "灵感": {
-            "意识唤醒者": "意识唤醒者"
+        "Inspiration": {
+            "Awakener": "Awakener"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "星": "<img src='/assets/tag/1999/星.png'/>星"
+        "Attribute": {
+            "Star": "<img src='/assets/tag/1999/星.png'/>Star"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "防御": "防御",
-            "控制": "控制"
+        "Role": {
+            "Defense": "Defense",
+            "Control": "Control"
         }
     },
     "131405": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "兽": "<img src='/assets/tag/1999/兽.png'/>兽"
+        "Attribute": {
+            "Beast": "<img src='/assets/tag/1999/兽.png'/>Beast"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "辅助": "辅助"
+        "Role": {
+            "Support": "Support"
         }
     },
     "131406": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "岩": "<img src='/assets/tag/1999/岩.png'/>岩"
+        "Attribute": {
+            "Rock": "<img src='/assets/tag/1999/岩.png'/>Rock"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "输出": "输出",
-            "削弱": "削弱"
+        "Role": {
+            "DPS": "DPS",
+            "Debuff": "Debuff"
         }
     },
     "131407": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "智": "<img src='/assets/tag/1999/智.png'/>智"
+        "Attribute": {
+            "Wisdom": "<img src='/assets/tag/1999/智.png'/>Wisdom"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "驱散": "驱散",
-            "净化": "净化"
+        "Role": {
+            "Dispel": "Dispel",
+            "Purification": "Purification"
         }
     },
     "131408": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "3星": "✦✦✦"
+        "Rarity": {
+            "3Star": "✦✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "削弱": "削弱",
-            "控制": "控制"
+        "Role": {
+            "Debuff": "Debuff",
+            "Control": "Control"
         }
     },
     "131409": {
-        "灵感": {
-            "意识唤醒者": "意识唤醒者"
+        "Inspiration": {
+            "Awakener": "Awakener"
         },
-        "稀有度": {
-            "2星": "✦✦"
+        "Rarity": {
+            "2Star": "✦✦"
         },
-        "属性": {
-            "灵": "<img src='/assets/tag/1999/灵.png'/>灵"
+        "Attribute": {
+            "Spirit": "<img src='/assets/tag/1999/灵.png'/>Spirit"
         },
-        "创伤类型": {
-            "精神创伤": "<img src='/assets/tag/1999/精神创伤.png'/>精神创伤"
+        "Trauma Type": {
+            "Mental Trauma": "<img src='/assets/tag/1999/精神创伤.png'/>Mental Trauma"
         },
-        "定位": {
-            "削弱": "削弱"
+        "Role": {
+            "Debuff": "Debuff"
         }
     },
     "131410": {
-        "灵感": {
-            "神秘学家": "神秘学家"
+        "Inspiration": {
+            "Occultist": "Occultist"
         },
-        "稀有度": {
-            "2星": "✦✦"
+        "Rarity": {
+            "2Star": "✦✦"
         },
-        "属性": {
-            "智": "<img src='/assets/tag/1999/智.png'/>智"
+        "Attribute": {
+            "Wisdom": "<img src='/assets/tag/1999/智.png'/>Wisdom"
         },
-        "创伤类型": {
-            "现实创伤": "<img src='/assets/tag/1999/现实创伤.png'/>现实创伤"
+        "Trauma Type": {
+            "Physical Trauma": "<img src='/assets/tag/1999/现实创伤.png'/>Physical Trauma"
         },
-        "定位": {
-            "辅助": "辅助"
+        "Role": {
+            "Support": "Support"
         }
     }
 }

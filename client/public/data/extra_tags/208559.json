@@ -1,750 +1,750 @@
 {
     "70470": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "72230": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "72231": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "115897": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "166107": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "173471": {
-        "稀有度": {
-            "1星": "普通"
+        "Rarity": {
+            "1Star": "Normal"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "78733": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "70466": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "72055": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "75962": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "轻航": "<img src='/assets/tag/al/轻航.png'/>轻航"
+        "Type": {
+            "Light Carrier": "<img src='/assets/tag/al/轻航.png'/>Light Carrier"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "78721": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "72054": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "76049": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "70439": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "78720": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "76120": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "72559": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "72229": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "78725": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "战巡": "<img src='/assets/tag/al/战巡.png'/>战巡"
+        "Type": {
+            "Battlecruiser": "<img src='/assets/tag/al/战巡.png'/>Battlecruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "72234": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "78729": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "72074": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "70437": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻航": "<img src='/assets/tag/al/轻航.png'/>轻航"
+        "Type": {
+            "Light Carrier": "<img src='/assets/tag/al/轻航.png'/>Light Carrier"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "72233": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "76118": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "70438": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "70467": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "70468": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "78707": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "76119": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "78191": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "战巡": "<img src='/assets/tag/al/战巡.png'/>战巡"
+        "Type": {
+            "Battlecruiser": "<img src='/assets/tag/al/战巡.png'/>Battlecruiser"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "78726": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "80867": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "72235": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "72236": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "77591": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "78727": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "维修": "<img src='/assets/tag/al/维修.png'/>维修"
+        "Type": {
+            "Repair": "<img src='/assets/tag/al/维修.png'/>Repair"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "70471": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "铁血": "<img src='/assets/tag/al/铁血.png'/>铁血"
+        "Faction": {
+            "Iron Blood": "<img src='/assets/tag/al/铁血.png'/>Iron Blood"
         }
     },
     "78728": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "铁血": "<img src='/assets/tag/al/铁血.png'/>铁血"
+        "Faction": {
+            "Iron Blood": "<img src='/assets/tag/al/铁血.png'/>Iron Blood"
         }
     },
     "72232": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "铁血": "<img src='/assets/tag/al/铁血.png'/>铁血"
+        "Faction": {
+            "Iron Blood": "<img src='/assets/tag/al/铁血.png'/>Iron Blood"
         }
     },
     "70469": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "铁血": "<img src='/assets/tag/al/铁血.png'/>铁血"
+        "Faction": {
+            "Iron Blood": "<img src='/assets/tag/al/铁血.png'/>Iron Blood"
         }
     },
     "75972": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "北方联合": "<img src='/assets/tag/al/北方联合.png'/>北方联合"
+        "Faction": {
+            "Northern Parliament": "<img src='/assets/tag/al/北方联合.png'/>Northern Parliament"
         }
     },
     "75973": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "75974": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "北方联合": "<img src='/assets/tag/al/北方联合.png'/>北方联合"
+        "Faction": {
+            "Northern Parliament": "<img src='/assets/tag/al/北方联合.png'/>Northern Parliament"
         }
     },
     "75993": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "76239": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "北方联合": "<img src='/assets/tag/al/北方联合.png'/>北方联合"
+        "Faction": {
+            "Northern Parliament": "<img src='/assets/tag/al/北方联合.png'/>Northern Parliament"
         }
     },
     "76740": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "77592": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "78058": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "78447": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "撒丁帝国": "<img src='/assets/tag/al/撒丁帝国.png'/>撒丁帝国"
+        "Faction": {
+            "Sardegna Empire": "<img src='/assets/tag/al/撒丁帝国.png'/>Sardegna Empire"
         }
     },
     "78448": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "78449": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "自由鸢尾": "<img src='/assets/tag/al/自由鸢尾.png'/>自由鸢尾"
+        "Faction": {
+            "Iris Libre": "<img src='/assets/tag/al/自由鸢尾.png'/>Iris Libre"
         }
     },
     "78450": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "维希教廷": "<img src='/assets/tag/al/维希教廷.png'/>维希教廷"
+        "Faction": {
+            "Vichya Dominion": "<img src='/assets/tag/al/维希教廷.png'/>Vichya Dominion"
         }
     },
     "78708": {
-        "稀有度": {
-            "5星": "决战方案"
+        "Rarity": {
+            "5Star": "Decisive Plan"
         },
-        "类型": {
-            "超巡": "<img src='/assets/tag/al/超巡.png'/>超巡"
+        "Type": {
+            "Super Cruiser": "<img src='/assets/tag/al/超巡.png'/>Super Cruiser"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "78709": {
-        "稀有度": {
-            "5星": "决战方案"
+        "Rarity": {
+            "5Star": "Decisive Plan"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "铁血": "<img src='/assets/tag/al/铁血.png'/>铁血"
+        "Faction": {
+            "Iron Blood": "<img src='/assets/tag/al/铁血.png'/>Iron Blood"
         }
     },
     "78722": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "东煌": "<img src='/assets/tag/al/东煌.png'/>东煌"
+        "Faction": {
+            "Eastern Radiance": "<img src='/assets/tag/al/东煌.png'/>Eastern Radiance"
         }
     },
     "78724": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "东煌": "<img src='/assets/tag/al/东煌.png'/>东煌"
+        "Faction": {
+            "Eastern Radiance": "<img src='/assets/tag/al/东煌.png'/>Eastern Radiance"
         }
     },
     "78730": {
-        "稀有度": {
-            "4星": "最高方案"
+        "Rarity": {
+            "4Star": "Supreme Plan"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "铁血": "<img src='/assets/tag/al/铁血.png'/>铁血"
+        "Faction": {
+            "Iron Blood": "<img src='/assets/tag/al/铁血.png'/>Iron Blood"
         }
     },
     "78731": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "维希教廷": "<img src='/assets/tag/al/维希教廷.png'/>维希教廷"
+        "Faction": {
+            "Vichya Dominion": "<img src='/assets/tag/al/维希教廷.png'/>Vichya Dominion"
         }
     },
     "78732": {
-        "稀有度": {
-            "2星": "稀有"
+        "Rarity": {
+            "2Star": "Rare"
         },
-        "类型": {
-            "驱逐": "<img src='/assets/tag/al/驱逐.png'/>驱逐"
+        "Type": {
+            "Destroyer": "<img src='/assets/tag/al/驱逐.png'/>Destroyer"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     },
     "80865": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "战巡": "<img src='/assets/tag/al/战巡.png'/>战巡"
+        "Type": {
+            "Battlecruiser": "<img src='/assets/tag/al/战巡.png'/>Battlecruiser"
         },
-        "阵营": {
-            "维希教廷": "<img src='/assets/tag/al/维希教廷.png'/>维希教廷"
+        "Faction": {
+            "Vichya Dominion": "<img src='/assets/tag/al/维希教廷.png'/>Vichya Dominion"
         }
     },
     "80866": {
-        "稀有度": {
-            "5星": "海上传奇"
+        "Rarity": {
+            "5Star": "Ocean Legend"
         },
-        "类型": {
-            "航母": "<img src='/assets/tag/al/航母.png'/>航母"
+        "Type": {
+            "Aircraft Carrier": "<img src='/assets/tag/al/航母.png'/>Aircraft Carrier"
         },
-        "阵营": {
-            "重樱": "<img src='/assets/tag/al/重樱.png'/>重樱"
+        "Faction": {
+            "Sakura Empire": "<img src='/assets/tag/al/重樱.png'/>Sakura Empire"
         }
     },
     "80868": {
-        "稀有度": {
-            "4星": "最高方案"
+        "Rarity": {
+            "4Star": "Supreme Plan"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "80869": {
-        "稀有度": {
-            "4星": "最高方案"
+        "Rarity": {
+            "4Star": "Supreme Plan"
         },
-        "类型": {
-            "战列": "<img src='/assets/tag/al/战列.png'/>战列"
+        "Type": {
+            "Battleship": "<img src='/assets/tag/al/战列.png'/>Battleship"
         },
-        "阵营": {
-            "维希教廷": "<img src='/assets/tag/al/维希教廷.png'/>维希教廷"
+        "Faction": {
+            "Vichya Dominion": "<img src='/assets/tag/al/维希教廷.png'/>Vichya Dominion"
         }
     },
     "80870": {
-        "稀有度": {
-            "4星": "超稀有"
+        "Rarity": {
+            "4Star": "Super Rare"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "维希教廷": "<img src='/assets/tag/al/维希教廷.png'/>维希教廷"
+        "Faction": {
+            "Vichya Dominion": "<img src='/assets/tag/al/维希教廷.png'/>Vichya Dominion"
         }
     },
     "87192": {
-        "稀有度": {
-            "4星": "最高方案"
+        "Rarity": {
+            "4Star": "Supreme Plan"
         },
-        "类型": {
-            "重巡": "<img src='/assets/tag/al/重巡.png'/>重巡"
+        "Type": {
+            "Heavy Cruiser": "<img src='/assets/tag/al/重巡.png'/>Heavy Cruiser"
         },
-        "阵营": {
-            "皇家": "<img src='/assets/tag/al/皇家.png'/>皇家"
+        "Faction": {
+            "Royal Navy": "<img src='/assets/tag/al/皇家.png'/>Royal Navy"
         }
     },
     "90540": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "维希教廷": "<img src='/assets/tag/al/维希教廷.png'/>维希教廷"
+        "Faction": {
+            "Vichya Dominion": "<img src='/assets/tag/al/维希教廷.png'/>Vichya Dominion"
         }
     },
     "170387": {
-        "稀有度": {
-            "3星": "精锐"
+        "Rarity": {
+            "3Star": "Elite"
         },
-        "类型": {
-            "轻巡": "<img src='/assets/tag/al/轻巡.png'/>轻巡"
+        "Type": {
+            "Light Cruiser": "<img src='/assets/tag/al/轻巡.png'/>Light Cruiser"
         },
-        "阵营": {
-            "白鹰": "<img src='/assets/tag/al/白鹰.png'/>白鹰"
+        "Faction": {
+            "Eagle Union": "<img src='/assets/tag/al/白鹰.png'/>Eagle Union"
         }
     }
 }

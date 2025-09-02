@@ -1,2820 +1,2820 @@
 {
   "51916": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "67207": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "86478": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "166109": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "26146": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "26147": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "26148": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "26149": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "比尔吉沃特": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='比尔吉沃特'/>比尔吉沃特"
+    "Region": {
+      "Bilgewater": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='Bilgewater'/>Bilgewater"
     }
   },
   "26150": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "26151": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "26152": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "26153": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "26154": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "26155": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "26156": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "26397": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "26398": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "26399": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "52025": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "52027": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "巨神峰": "<img src='/assets/tag/lol/巨神峰.png' alt='巨神峰'/>巨神峰"
+    "Region": {
+      "Mount Targon": "<img src='/assets/tag/lol/巨神峰.png' alt='Mount Targon'/>Mount Targon"
     }
   },
   "52030": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "班德尔城": "<img src='/assets/tag/lol/班德尔城.png' alt='班德尔城'/>班德尔城"
+    "Region": {
+      "Bandle City": "<img src='/assets/tag/lol/班德尔城.png' alt='Bandle City'/>Bandle City"
     }
   },
   "52049": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "班德尔城": "<img src='/assets/tag/lol/班德尔城.png' alt='班德尔城'/>班德尔城"
+    "Region": {
+      "Bandle City": "<img src='/assets/tag/lol/班德尔城.png' alt='Bandle City'/>Bandle City"
     }
   },
   "52017": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "52013": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "比尔吉沃特": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='比尔吉沃特'/>比尔吉沃特"
+    "Region": {
+      "Bilgewater": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='Bilgewater'/>Bilgewater"
     }
   },
   "2121": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "52024": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "30759": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "2157": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "52020": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "2156": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "52023": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "51911": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "2163": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "51918": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "比尔吉沃特": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='比尔吉沃特'/>比尔吉沃特"
+    "Region": {
+      "Bilgewater": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='Bilgewater'/>Bilgewater"
     }
   },
   "51927": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "52051": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "班德尔城": "<img src='/assets/tag/lol/班德尔城.png' alt='班德尔城'/>班德尔城"
+    "Region": {
+      "Bandle City": "<img src='/assets/tag/lol/班德尔城.png' alt='Bandle City'/>Bandle City"
     }
   },
   "2231": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "2234": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "52012": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "以绪塔尔": "<img src='/assets/tag/lol/以绪塔尔.png' alt='以绪塔尔'/>以绪塔尔"
+    "Region": {
+      "Ixtal": "<img src='/assets/tag/lol/以绪塔尔.png' alt='Ixtal'/>Ixtal"
     }
   },
   "51928": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "51914": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "52016": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "2233": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "52050": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "52022": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "班德尔城": "<img src='/assets/tag/lol/班德尔城.png' alt='班德尔城'/>班德尔城"
+    "Region": {
+      "Bandle City": "<img src='/assets/tag/lol/班德尔城.png' alt='Bandle City'/>Bandle City"
     }
   },
   "2230": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "52026": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {},
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Position": {},
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "以绪塔尔": "<img src='/assets/tag/lol/以绪塔尔.png' alt='以绪塔尔'/>以绪塔尔"
+    "Region": {
+      "Ixtal": "<img src='/assets/tag/lol/以绪塔尔.png' alt='Ixtal'/>Ixtal"
     }
   },
   "51922": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "52015": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "52018": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86334": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "51917": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "86335": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "86337": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "86338": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "2158": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86339": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "52006": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86340": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "51919": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86341": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "86342": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "86343": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "52008": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "巨神峰": "<img src='/assets/tag/lol/巨神峰.png' alt='巨神峰'/>巨神峰"
+    "Region": {
+      "Mount Targon": "<img src='/assets/tag/lol/巨神峰.png' alt='Mount Targon'/>Mount Targon"
     }
   },
   "86344": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "86345": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "班德尔城": "<img src='/assets/tag/lol/班德尔城.png' alt='班德尔城'/>班德尔城"
+    "Region": {
+      "Bandle City": "<img src='/assets/tag/lol/班德尔城.png' alt='Bandle City'/>Bandle City"
     }
   },
   "52029": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "86346": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "巨神峰": "<img src='/assets/tag/lol/巨神峰.png' alt='巨神峰'/>巨神峰"
+    "Region": {
+      "Mount Targon": "<img src='/assets/tag/lol/巨神峰.png' alt='Mount Targon'/>Mount Targon"
     }
   },
   "52021": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "86347": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "86348": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "86349": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "86350": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "86351": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "86352": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86353": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "52010": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86354": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86355": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "以绪塔尔": "<img src='/assets/tag/lol/以绪塔尔.png' alt='以绪塔尔'/>以绪塔尔"
+    "Region": {
+      "Ixtal": "<img src='/assets/tag/lol/以绪塔尔.png' alt='Ixtal'/>Ixtal"
     }
   },
   "86356": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "86357": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "2165": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86358": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "巨神峰": "<img src='/assets/tag/lol/巨神峰.png' alt='巨神峰'/>巨神峰"
+    "Region": {
+      "Mount Targon": "<img src='/assets/tag/lol/巨神峰.png' alt='Mount Targon'/>Mount Targon"
     }
   },
   "86359": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "86360": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "86361": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "86362": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "86363": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86364": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "86365": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86366": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "比尔吉沃特": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='比尔吉沃特'/>比尔吉沃特"
+    "Region": {
+      "Bilgewater": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='Bilgewater'/>Bilgewater"
     }
   },
   "86367": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "86368": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "51923": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86369": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "以绪塔尔": "<img src='/assets/tag/lol/以绪塔尔.png' alt='以绪塔尔'/>以绪塔尔"
+    "Region": {
+      "Ixtal": "<img src='/assets/tag/lol/以绪塔尔.png' alt='Ixtal'/>Ixtal"
     }
   },
   "86370": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86371": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "比尔吉沃特": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='比尔吉沃特'/>比尔吉沃特"
+    "Region": {
+      "Bilgewater": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='Bilgewater'/>Bilgewater"
     }
   },
   "52009": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "班德尔城": "<img src='/assets/tag/lol/班德尔城.png' alt='班德尔城'/>班德尔城"
+    "Region": {
+      "Bandle City": "<img src='/assets/tag/lol/班德尔城.png' alt='Bandle City'/>Bandle City"
     }
   },
   "86372": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "86373": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "86374": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "86375": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "86376": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "51907": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "86377": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "86378": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "86379": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86380": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "51925": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "86381": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "巨神峰": "<img src='/assets/tag/lol/巨神峰.png' alt='巨神峰'/>巨神峰"
+    "Region": {
+      "Mount Targon": "<img src='/assets/tag/lol/巨神峰.png' alt='Mount Targon'/>Mount Targon"
     }
   },
   "86382": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "以绪塔尔": "<img src='/assets/tag/lol/以绪塔尔.png' alt='以绪塔尔'/>以绪塔尔"
+    "Region": {
+      "Ixtal": "<img src='/assets/tag/lol/以绪塔尔.png' alt='Ixtal'/>Ixtal"
     }
   },
   "86383": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "86384": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86385": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "51908": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "巨神峰": "<img src='/assets/tag/lol/巨神峰.png' alt='巨神峰'/>巨神峰"
+    "Region": {
+      "Mount Targon": "<img src='/assets/tag/lol/巨神峰.png' alt='Mount Targon'/>Mount Targon"
     }
   },
   "86386": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "86387": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "52019": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86388": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86389": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "以绪塔尔": "<img src='/assets/tag/lol/以绪塔尔.png' alt='以绪塔尔'/>以绪塔尔"
+    "Region": {
+      "Ixtal": "<img src='/assets/tag/lol/以绪塔尔.png' alt='Ixtal'/>Ixtal"
     }
   },
   "86390": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "86391": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "班德尔城": "<img src='/assets/tag/lol/班德尔城.png' alt='班德尔城'/>班德尔城"
+    "Region": {
+      "Bandle City": "<img src='/assets/tag/lol/班德尔城.png' alt='Bandle City'/>Bandle City"
     }
   },
   "51903": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "86392": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "86393": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "虚空之地": "<img src='/assets/tag/lol/虚空之地.png' alt='虚空之地'/>虚空之地"
+    "Region": {
+      "Void": "<img src='/assets/tag/lol/虚空之地.png' alt='Void'/>Void"
     }
   },
   "86394": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86395": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "86396": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "86397": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86398": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86399": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "86400": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "德玛西亚": "<img src='/assets/tag/lol/德玛西亚.png' alt='德玛西亚'/>德玛西亚"
+    "Region": {
+      "Demacia": "<img src='/assets/tag/lol/德玛西亚.png' alt='Demacia'/>Demacia"
     }
   },
   "86401": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/lol/difficulty1.svg' alt='1' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "以绪塔尔": "<img src='/assets/tag/lol/以绪塔尔.png' alt='以绪塔尔'/>以绪塔尔"
+    "Region": {
+      "Ixtal": "<img src='/assets/tag/lol/以绪塔尔.png' alt='Ixtal'/>Ixtal"
     }
   },
   "86402": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "巨神峰": "<img src='/assets/tag/lol/巨神峰.png' alt='巨神峰'/>巨神峰"
+    "Region": {
+      "Mount Targon": "<img src='/assets/tag/lol/巨神峰.png' alt='Mount Targon'/>Mount Targon"
     }
   },
   "86403": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "比尔吉沃特": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='比尔吉沃特'/>比尔吉沃特"
+    "Region": {
+      "Bilgewater": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='Bilgewater'/>Bilgewater"
     }
   },
   "86404": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "51920": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "86405": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单",
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane",
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "86406": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "92636": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "52028": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "51904": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "皮尔特沃夫": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='皮尔特沃夫'/>皮尔特沃夫"
+    "Region": {
+      "Piltover": "<img src='/assets/tag/lol/皮尔特沃夫.png' alt='Piltover'/>Piltover"
     }
   },
   "2232": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   },
   "51926": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "艾欧尼亚": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='艾欧尼亚'/>艾欧尼亚"
+    "Region": {
+      "Ionia": "<img src='/assets/tag/lol/艾欧尼亚.png' alt='Ionia'/>Ionia"
     }
   },
   "52007": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "27151": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "52011": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路",
-      "下路": "<img src='/assets/tag/lol/pos_下路.png' alt='下路'/>下路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane",
+      "Bottom Lane": "<img src='/assets/tag/lol/pos_下路.png' alt='Bottom Lane'/>Bottom Lane"
     },
-    "定位": {
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "51921": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "诺克萨斯": "<img src='/assets/tag/lol/诺克萨斯.png' alt='诺克萨斯'/>诺克萨斯"
+    "Region": {
+      "Noxus": "<img src='/assets/tag/lol/诺克萨斯.png' alt='Noxus'/>Noxus"
     }
   },
   "51912": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "打野": "<img src='/assets/tag/lol/pos_打野.png' alt='打野'/>打野",
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Jungle": "<img src='/assets/tag/lol/pos_打野.png' alt='Jungle'/>Jungle",
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "祖安": "<img src='/assets/tag/lol/祖安.png' alt='祖安'/>祖安"
+    "Region": {
+      "Zaun": "<img src='/assets/tag/lol/祖安.png' alt='Zaun'/>Zaun"
     }
   },
   "2236": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "射手": "<img src='/assets/tag/lol/射手.png' alt='射手'/>射手"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Marksman": "<img src='/assets/tag/lol/射手.png' alt='Marksman'/>Marksman"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "恕瑞玛": "<img src='/assets/tag/lol/恕瑞玛.png' alt='恕瑞玛'/>恕瑞玛"
+    "Region": {
+      "Shurima": "<img src='/assets/tag/lol/恕瑞玛.png' alt='Shurima'/>Shurima"
     }
   },
   "51924": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士",
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior",
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "比尔吉沃特": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='比尔吉沃特'/>比尔吉沃特"
+    "Region": {
+      "Bilgewater": "<img src='/assets/tag/lol/比尔吉沃特.png' alt='Bilgewater'/>Bilgewater"
     }
   },
   "52014": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "52031": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/lol/difficulty3.svg' alt='3' />"
     },
-    "位置": {
-      "辅助": "<img src='/assets/tag/lol/pos_辅助.png' alt='辅助'/>辅助"
+    "Position": {
+      "Support": "<img src='/assets/tag/lol/pos_辅助.png' alt='Support'/>Support"
     },
-    "定位": {
-      "坦克": "<img src='/assets/tag/lol/坦克.png' alt='坦克'/>坦克",
-      "辅助": "<img src='/assets/tag/lol/辅助.png' alt='辅助'/>辅助"
+    "Role": {
+      "Tank": "<img src='/assets/tag/lol/坦克.png' alt='Tank'/>Tank",
+      "Support": "<img src='/assets/tag/lol/辅助.png' alt='Support'/>Support"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "暗影岛": "<img src='/assets/tag/lol/暗影岛.png' alt='暗影岛'/>暗影岛"
+    "Region": {
+      "Shadow Isles": "<img src='/assets/tag/lol/暗影岛.png' alt='Shadow Isles'/>Shadow Isles"
     }
   },
   "2160": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "上单": "<img src='/assets/tag/lol/pos_上单.png' alt='上单'/>上单"
+    "Position": {
+      "Top Lane": "<img src='/assets/tag/lol/pos_上单.png' alt='Top Lane'/>Top Lane"
     },
-    "定位": {
-      "战士": "<img src='/assets/tag/lol/战士.png' alt='战士'/>战士"
+    "Role": {
+      "Warrior": "<img src='/assets/tag/lol/战士.png' alt='Warrior'/>Warrior"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/lol/近战.png' alt='近战'/>近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/lol/近战.png' alt='Melee'/>Melee"
     },
-    "地区": {
-      "符文之地": "<img src='/assets/tag/lol/符文之地.png' alt='符文之地'/>符文之地"
+    "Region": {
+      "Runeterra": "<img src='/assets/tag/lol/符文之地.png' alt='Runeterra'/>Runeterra"
     }
   },
   "163421": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/lol/difficulty2.svg' alt='2' />"
     },
-    "位置": {
-      "中路": "<img src='/assets/tag/lol/pos_中路.png' alt='中路'/>中路"
+    "Position": {
+      "Mid Lane": "<img src='/assets/tag/lol/pos_中路.png' alt='Mid Lane'/>Mid Lane"
     },
-    "定位": {
-      "法师": "<img src='/assets/tag/lol/法师.png' alt='法师'/>法师",
-      "刺客": "<img src='/assets/tag/lol/刺客.png' alt='刺客'/>刺客"
+    "Role": {
+      "Mage": "<img src='/assets/tag/lol/法师.png' alt='Mage'/>Mage",
+      "Assassin": "<img src='/assets/tag/lol/刺客.png' alt='Assassin'/>Assassin"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/lol/远程.png' alt='远程'/>远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/lol/远程.png' alt='Ranged'/>Ranged"
     },
-    "地区": {
-      "弗雷尔卓德": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='弗雷尔卓德'/>弗雷尔卓德"
+    "Region": {
+      "Freljord": "<img src='/assets/tag/lol/弗雷尔卓德.png' alt='Freljord'/>Freljord"
     }
   }
 }

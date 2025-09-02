@@ -1,200 +1,200 @@
 {
     "151162": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "双枪·冲锋枪": "双枪·冲锋枪"
+        "Weapon Type": {
+            "双枪·Submachine Gun": "双枪·Submachine Gun"
         },
-        "属性": {
-            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        "Attribute": {
+            "Kinetic": "<img src='/assets/tag/cbjq/动能.png'/>Kinetic"
         }
     },
     "151163": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "突击步枪": "突击步枪"
+        "Weapon Type": {
+            "Assault Rifle": "Assault Rifle"
         },
-        "属性": {
-            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        "Attribute": {
+            "Kinetic": "<img src='/assets/tag/cbjq/动能.png'/>Kinetic"
         }
     },
     "151164": {
-        "稀有度": {
-            "4星": "<img src='/assets/tag/cbjq/4星.png' alt='4星'/>"
+        "Rarity": {
+            "4Star": "<img src='/assets/tag/cbjq/4星.png' alt='4Star'/>"
         },
-        "武器类型": {
-            "手枪": "手枪"
+        "Weapon Type": {
+            "Pistol": "Pistol"
         },
-        "属性": {
-            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        "Attribute": {
+            "Unique": "<img src='/assets/tag/cbjq/特异.png'/>Unique"
         }
     },
     "151254": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "冲锋枪": "冲锋枪"
+        "Weapon Type": {
+            "Submachine Gun": "Submachine Gun"
         },
-        "属性": {
-            "电击": "<img src='/assets/tag/cbjq/电击.png'/>电击"
+        "Attribute": {
+            "Electric Shock": "<img src='/assets/tag/cbjq/电击.png'/>Electric Shock"
         }
     },
     "151255": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "霰弹枪": "霰弹枪"
+        "Weapon Type": {
+            "Shotgun": "Shotgun"
         },
-        "属性": {
-            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        "Attribute": {
+            "Unique": "<img src='/assets/tag/cbjq/特异.png'/>Unique"
         }
     },
     "151257": {
-        "稀有度": {
-            "4星": "<img src='/assets/tag/cbjq/4星.png' alt='4星'/>"
+        "Rarity": {
+            "4Star": "<img src='/assets/tag/cbjq/4星.png' alt='4Star'/>"
         },
-        "武器类型": {
-            "冲锋枪": "冲锋枪"
+        "Weapon Type": {
+            "Submachine Gun": "Submachine Gun"
         },
-        "属性": {
-            "低温": "<img src='/assets/tag/cbjq/低温.png'/>低温"
+        "Attribute": {
+            "Low Temperature": "<img src='/assets/tag/cbjq/低温.png'/>Low Temperature"
         }
     },
     "151258": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "霰弹枪": "霰弹枪"
+        "Weapon Type": {
+            "Shotgun": "Shotgun"
         },
-        "属性": {
-            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        "Attribute": {
+            "Kinetic": "<img src='/assets/tag/cbjq/动能.png'/>Kinetic"
         }
     },
     "151259": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "狙击枪": "狙击枪"
+        "Weapon Type": {
+            "Sniper Rifle": "Sniper Rifle"
         },
-        "属性": {
-            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        "Attribute": {
+            "Unique": "<img src='/assets/tag/cbjq/特异.png'/>Unique"
         }
     },
     "151289": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "弓": "弓"
+        "Weapon Type": {
+            "Bow": "Bow"
         },
-        "属性": {
-            "电击": "<img src='/assets/tag/cbjq/电击.png'/>电击"
+        "Attribute": {
+            "Electric Shock": "<img src='/assets/tag/cbjq/电击.png'/>Electric Shock"
         }
     },
     "151367": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "手枪": "手枪"
+        "Weapon Type": {
+            "Pistol": "Pistol"
         },
-        "属性": {
-            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        "Attribute": {
+            "Kinetic": "<img src='/assets/tag/cbjq/动能.png'/>Kinetic"
         }
     },
     "151368": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "冲锋枪": "冲锋枪"
+        "Weapon Type": {
+            "Submachine Gun": "Submachine Gun"
         },
-        "属性": {
-            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        "Attribute": {
+            "Unique": "<img src='/assets/tag/cbjq/特异.png'/>Unique"
         }
     },
     "151369": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "霰弹枪": "霰弹枪"
+        "Weapon Type": {
+            "Shotgun": "Shotgun"
         },
-        "属性": {
-            "高热": "<img src='/assets/tag/cbjq/高热.png'/>高热"
+        "Attribute": {
+            "High Heat": "<img src='/assets/tag/cbjq/高热.png'/>High Heat"
         }
     },
     "151370": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "霰弹枪": "霰弹枪"
+        "Weapon Type": {
+            "Shotgun": "Shotgun"
         },
-        "属性": {
-            "高热": "<img src='/assets/tag/cbjq/高热.png'/>高热"
+        "Attribute": {
+            "High Heat": "<img src='/assets/tag/cbjq/高热.png'/>High Heat"
         }
     },
     "155424": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "狙击枪": "狙击枪"
+        "Weapon Type": {
+            "Sniper Rifle": "Sniper Rifle"
         },
-        "属性": {
-            "电击": "<img src='/assets/tag/cbjq/电击.png'/>电击"
+        "Attribute": {
+            "Electric Shock": "<img src='/assets/tag/cbjq/电击.png'/>Electric Shock"
         }
     },
     "155425": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "突击步枪": "突击步枪"
+        "Weapon Type": {
+            "Assault Rifle": "Assault Rifle"
         },
-        "属性": {
-            "低温": "<img src='/assets/tag/cbjq/低温.png'/>低温"
+        "Attribute": {
+            "Low Temperature": "<img src='/assets/tag/cbjq/低温.png'/>Low Temperature"
         }
     },
     "163595": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "狙击枪": "狙击枪"
+        "Weapon Type": {
+            "Sniper Rifle": "Sniper Rifle"
         },
-        "属性": {
-            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        "Attribute": {
+            "Unique": "<img src='/assets/tag/cbjq/特异.png'/>Unique"
         }
     },
     "174413": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "突击步枪": "突击步枪"
+        "Weapon Type": {
+            "Assault Rifle": "Assault Rifle"
         },
-        "属性": {
-            "特异": "<img src='/assets/tag/cbjq/特异.png'/>特异"
+        "Attribute": {
+            "Unique": "<img src='/assets/tag/cbjq/特异.png'/>Unique"
         }
     },
     "155426": {
-        "稀有度": {
-            "5星": "<img src='/assets/tag/cbjq/5星.png' alt='5星'/>"
+        "Rarity": {
+            "5Star": "<img src='/assets/tag/cbjq/5星.png' alt='5Star'/>"
         },
-        "武器类型": {
-            "霰弹枪": "霰弹枪"
+        "Weapon Type": {
+            "Shotgun": "Shotgun"
         },
-        "属性": {
-            "动能": "<img src='/assets/tag/cbjq/动能.png'/>动能"
+        "Attribute": {
+            "Kinetic": "<img src='/assets/tag/cbjq/动能.png'/>Kinetic"
         }
     }
 }

@@ -1,1755 +1,1755 @@
 {
   "50576": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "50577": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "50578": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "50599": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "50586": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地",
-      "草地": "草地"
+    "Field": {
+      "Mud": "Mud",
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "50593": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地",
-      "草地": "草地"
+    "Field": {
+      "Mud": "Mud",
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "50600": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "50592": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Lead": "Lead"
     }
   },
   "68386": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "50588": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "50580": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "50594": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "50587": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "50585": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "泥地": "泥地",
-      "草地": "草地"
+    "Field": {
+      "Mud": "Mud",
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "50584": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68392": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase",
+      "Lead": "Lead"
     }
   },
   "60561": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "60529": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68383": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "60522": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "62513": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "60527": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "泥地": "泥地"
+    "Field": {
+      "Mud": "Mud"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "60530": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68394": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68395": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "50595": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "62509": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "62512": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68388": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离"
+    "Distance": {
+      "Short Range": "Short Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "60558": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "60557": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地"
+    "Field": {
+      "Mud": "Mud"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "50596": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "23243": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "50597": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Chase": "Chase"
     }
   },
   "50598": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "60560": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68385": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68390": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "62506": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "68389": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地",
-      "草地": "草地"
+    "Field": {
+      "Mud": "Mud",
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "60528": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中"
+    "Running Style": {
+      "Center": "Center"
     }
   },
   "60525": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中"
+    "Running Style": {
+      "Center": "Center"
     }
   },
   "60526": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "68393": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "60556": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "60523": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "96119": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "106681": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "68387": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离"
+    "Distance": {
+      "Mid Range": "Mid Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "89568": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "90095": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "89569": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "106373": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "62504": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "106374": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "62511": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "91246": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "60562": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地",
-      "草地": "草地"
+    "Field": {
+      "Mud": "Mud",
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "62510": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "60559": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "62507": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中"
+    "Running Style": {
+      "Center": "Center"
     }
   },
   "114176": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地"
+    "Field": {
+      "Mud": "Mud"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "60524": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "60521": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地",
-      "草地": "草地"
+    "Field": {
+      "Mud": "Mud",
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "115274": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "109439": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "68391": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "114172": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地"
+    "Field": {
+      "Mud": "Mud"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "68384": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "114171": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地"
+    "Field": {
+      "Mud": "Mud"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "90096": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "68382": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地"
+    "Field": {
+      "Mud": "Mud"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "91610": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "90090": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/umamusume/1star.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/umamusume/1star.png' alt='1Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "107336": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "110329": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "133649": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "133650": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "115289": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "110330": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "62508": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "125977": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "106375": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "106372": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "115290": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "125975": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "133651": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "122526": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "122525": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "143489": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中"
+    "Running Style": {
+      "Center": "Center"
     }
   },
   "62505": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "139048": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "90093": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "152172": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "136229": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "138303": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前"
+    "Running Style": {
+      "Close": "Close"
     }
   },
   "125976": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "160762": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "160765": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离"
+    "Distance": {
+      "Short Range": "Short Range"
     },
-    "跑法": {
-      "领跑": "领跑"
+    "Running Style": {
+      "Lead": "Lead"
     }
   },
   "152831": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "152173": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "160766": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "后追": "后追"
+    "Running Style": {
+      "Chase": "Chase"
     }
   },
   "163803": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "152832": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "152824": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "泥地": "泥地"
+    "Field": {
+      "Mud": "Mud"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "领跑": "领跑"
+    "Running Style": {
+      "Close": "Close",
+      "Lead": "Lead"
     }
   },
   "108091": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/umamusume/2star.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/umamusume/2star.png' alt='2Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离"
+    "Distance": {
+      "Mid Range": "Mid Range"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center"
     }
   },
   "152830": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "长距离": "长距离"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Long Range": "Long Range"
     },
-    "跑法": {
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "171891": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "短距离": "短距离",
-      "英里": "英里"
+    "Distance": {
+      "Short Range": "Short Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "跟前": "跟前",
-      "居中": "居中",
-      "后追": "后追"
+    "Running Style": {
+      "Close": "Close",
+      "Center": "Center",
+      "Chase": "Chase"
     }
   },
   "152828": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/umamusume/3star.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/umamusume/3star.png' alt='3Star' />"
     },
-    "场地": {
-      "草地": "草地"
+    "Field": {
+      "Grassland": "Grassland"
     },
-    "距离": {
-      "中距离": "中距离",
-      "英里": "英里"
+    "Distance": {
+      "Mid Range": "Mid Range",
+      "Mile": "Mile"
     },
-    "跑法": {
-      "居中": "居中"
+    "Running Style": {
+      "Center": "Center"
     }
   }
 }

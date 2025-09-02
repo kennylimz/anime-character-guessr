@@ -1,1384 +1,1384 @@
 {
   "85978": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火",
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水",
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草",
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷",
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风",
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire",
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water",
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass",
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning",
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind",
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "其它": "其它"
+    "Affiliation": {
+      "Other": "Other"
     }
   },
   "85979": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火",
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水",
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草",
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷",
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风",
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire",
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water",
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass",
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning",
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind",
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "其它": "其它"
+    "Affiliation": {
+      "Other": "Other"
     }
   },
   "85762": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85765": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85764": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85970": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85972": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85983": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85981": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85984": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85982": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85975": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85973": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85974": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85985": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85976": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85763": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85971": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85987": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85977": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85986": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85767": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "85766": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "86310": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "86308": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "至冬": "至冬"
+    "Affiliation": {
+      "Snezhnaya": "Snezhnaya"
     }
   },
   "86309": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "86292": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "89988": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "86312": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "85980": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "91909": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "89100": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "94889": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "94890": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "96352": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "86294": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "98865": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "98864": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "98863": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "98862": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "98861": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "99208": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "99210": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "101819": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "102832": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "102831": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "99209": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "104088": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "108989": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "108990": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "110693": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "111520": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "113127": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "113128": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "115322": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "86326": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "115321": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "112644": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "116915": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "119351": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "94892": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "86317": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "115744": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "115743": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "116431": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "蒙德": "<img src='/assets/tag/ys/蒙德.png' alt='蒙德' />蒙德"
+    "Affiliation": {
+      "Mondstadt": "<img src='/assets/tag/ys/蒙德.png' alt='Mondstadt' />Mondstadt"
     }
   },
   "126118": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "86311": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "127808": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "86328": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "86327": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "132773": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "132778": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "132777": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "129744": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "132779": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "132774": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "142343": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "148640": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "99211": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "147835": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "113132": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "至冬": "至冬"
+    "Affiliation": {
+      "Snezhnaya": "Snezhnaya"
     }
   },
   "155205": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "须弥": "<img src='/assets/tag/ys/须弥.png' alt='须弥' />须弥"
+    "Affiliation": {
+      "Sumeru": "<img src='/assets/tag/ys/须弥.png' alt='Sumeru' />Sumeru"
     }
   },
   "132775": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "132776": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "158753": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "枫丹": "<img src='/assets/tag/ys/枫丹.png' alt='枫丹' />枫丹"
+    "Affiliation": {
+      "Fontaine": "<img src='/assets/tag/ys/枫丹.png' alt='Fontaine' />Fontaine"
     }
   },
   "161148": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "161147": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "水": "<img src='/assets/tag/ys/水.png' alt='水' />水"
+    "Attribute": {
+      "Water": "<img src='/assets/tag/ys/水.png' alt='Water' />Water"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "161149": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "草": "<img src='/assets/tag/ys/草.png' alt='草' />草"
+    "Attribute": {
+      "Grass": "<img src='/assets/tag/ys/草.png' alt='Grass' />Grass"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "161152": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "岩": "<img src='/assets/tag/ys/岩.png' alt='岩' />岩"
+    "Attribute": {
+      "Rock": "<img src='/assets/tag/ys/岩.png' alt='Rock' />Rock"
     },
-    "武器类型": {
-      "单手剑": "<img src='/assets/tag/ys/单手剑.png' alt='单手剑' />单手剑"
+    "Weapon Type": {
+      "One-Handed Sword": "<img src='/assets/tag/ys/单手剑.png' alt='One-Handed Sword' />One-Handed Sword"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "161153": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "161155": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "161154": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "火": "<img src='/assets/tag/ys/火.png' alt='火' />火"
+    "Attribute": {
+      "Fire": "<img src='/assets/tag/ys/火.png' alt='Fire' />Fire"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/ys/双手剑.png' alt='双手剑' />双手剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/ys/双手剑.png' alt='Greatsword' />Greatsword"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "161151": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "167428": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "璃月": "<img src='/assets/tag/ys/璃月.png' alt='璃月' />璃月"
+    "Affiliation": {
+      "Liyue": "<img src='/assets/tag/ys/璃月.png' alt='Liyue' />Liyue"
     }
   },
   "169449": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "风": "<img src='/assets/tag/ys/风.png' alt='风' />风"
+    "Attribute": {
+      "Wind": "<img src='/assets/tag/ys/风.png' alt='Wind' />Wind"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "稻妻": "<img src='/assets/tag/ys/稻妻.png' alt='稻妻' />稻妻"
+    "Affiliation": {
+      "Inazuma": "<img src='/assets/tag/ys/稻妻.png' alt='Inazuma' />Inazuma"
     }
   },
   "171553": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/ys/法器.png' alt='法器' />法器"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/ys/法器.png' alt='Magic Tool' />Magic Tool"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "86329": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/ys/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/ys/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "雷": "<img src='/assets/tag/ys/雷.png' alt='雷' />雷"
+    "Attribute": {
+      "Lightning": "<img src='/assets/tag/ys/雷.png' alt='Lightning' />Lightning"
     },
-    "武器类型": {
-      "长柄武器": "<img src='/assets/tag/ys/长柄武器.png' alt='长柄武器' />长柄武器"
+    "Weapon Type": {
+      "Polearm": "<img src='/assets/tag/ys/长柄武器.png' alt='Polearm' />Polearm"
     },
-    "所属": {
-      "纳塔": "<img src='/assets/tag/ys/纳塔.png' alt='纳塔' />纳塔"
+    "Affiliation": {
+      "Natlan": "<img src='/assets/tag/ys/纳塔.png' alt='Natlan' />Natlan"
     }
   },
   "80855": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/ys/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/ys/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冰": "<img src='/assets/tag/ys/冰.png' alt='冰' />冰"
+    "Attribute": {
+      "Ice": "<img src='/assets/tag/ys/冰.png' alt='Ice' />Ice"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/ys/弓.png' alt='弓' />弓"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/ys/弓.png' alt='Bow' />Bow"
     },
-    "所属": {
-      "其它": "其它"
+    "Affiliation": {
+      "Other": "Other"
     }
   }
 }

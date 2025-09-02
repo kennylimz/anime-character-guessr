@@ -1,861 +1,861 @@
 {
   "160432": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160429": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160433": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "破译型": "<img src='/assets/tag/id5/破译型.png' alt='' />破译型"
+    "Role": {
+      "Decrypting Type": "<img src='/assets/tag/id5/破译型.png' alt='' />Decrypting Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160438": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160430": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160461": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160442": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "破译型": "<img src='/assets/tag/id5/破译型.png' alt='' />破译型"
+    "Role": {
+      "Decrypting Type": "<img src='/assets/tag/id5/破译型.png' alt='' />Decrypting Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160440": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160435": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160456": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "破译型": "<img src='/assets/tag/id5/破译型.png' alt='' />破译型"
+    "Role": {
+      "Decrypting Type": "<img src='/assets/tag/id5/破译型.png' alt='' />Decrypting Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160469": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型",
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type",
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160468": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "破译型": "<img src='/assets/tag/id5/破译型.png' alt='' />破译型"
+    "Role": {
+      "Decrypting Type": "<img src='/assets/tag/id5/破译型.png' alt='' />Decrypting Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160458": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型",
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type",
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160449": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160466": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型",
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type",
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160448": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "74336": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160441": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160464": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160443": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160450": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型",
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type",
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160465": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160452": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160460": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型",
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type",
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160436": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160431": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160451": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "破译型": "<img src='/assets/tag/id5/破译型.png' alt='' />破译型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Decrypting Type": "<img src='/assets/tag/id5/破译型.png' alt='' />Decrypting Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160445": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160457": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160463": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型",
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type",
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160447": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160437": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160467": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160453": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160412": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160444": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160455": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160470": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160462": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "破译型": "<img src='/assets/tag/id5/破译型.png' alt='' />破译型"
+    "Role": {
+      "Decrypting Type": "<img src='/assets/tag/id5/破译型.png' alt='' />Decrypting Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160459": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160471": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160454": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型",
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型"
+    "Role": {
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type",
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160434": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "救援型": "<img src='/assets/tag/id5/救援型.png' alt='' />救援型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Rescue Type": "<img src='/assets/tag/id5/救援型.png' alt='' />Rescue Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160446": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "牵制型": "<img src='/assets/tag/id5/牵制型.png' alt='' />牵制型",
-      "辅助型": "<img src='/assets/tag/id5/辅助型.png' alt='' />辅助型"
+    "Role": {
+      "Restraining Type": "<img src='/assets/tag/id5/牵制型.png' alt='' />Restraining Type",
+      "Support Type": "<img src='/assets/tag/id5/辅助型.png' alt='' />Support Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160439": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "破译型": "<img src='/assets/tag/id5/破译型.png' alt='' />破译型"
+    "Role": {
+      "Decrypting Type": "<img src='/assets/tag/id5/破译型.png' alt='' />Decrypting Type"
     },
-    "阵营": {
-      "求生者": "求生者"
+    "Faction": {
+      "Survivor": "Survivor"
     }
   },
   "160479": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160475": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160493": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160474": {
-    "难度": {
+    "Difficulty": {
       "1": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160483": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160482": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160484": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160488": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160494": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160500": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160499": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160490": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160487": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160491": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160485": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160486": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160481": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160496": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160476": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160501": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160489": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160492": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160477": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160497": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "127282": {
-    "难度": {
+    "Difficulty": {
       "2": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160480": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160495": {
-    "难度": {
+    "Difficulty": {
       "2.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160478": {
-    "难度": {
+    "Difficulty": {
       "1.5": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_半.png' alt='⬦'/><img src='/assets/tag/id5/难度面具_无.png' alt=''/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160498": {
-    "难度": {
+    "Difficulty": {
       "3": "<img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/><img src='/assets/tag/id5/难度面具_全.png' alt='⬥'/>"
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "监管者": "监管者"
+    "Faction": {
+      "Supervisor": "Supervisor"
     }
   },
   "160472": {
-    "难度": {
+    "Difficulty": {
       "0": ""
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "个人角色": "个人角色"
+    "Faction": {
+      "Individual Character": "Individual Character"
     }
   },
   "160473": {
-    "难度": {
+    "Difficulty": {
       "0": ""
     },
-    "定位": {
-      "无定位": "无定位"
+    "Role": {
+      "No Role": "No Role"
     },
-    "阵营": {
-      "个人角色": "个人角色"
+    "Faction": {
+      "Individual Character": "Individual Character"
     }
   }
 }

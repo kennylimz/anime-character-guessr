@@ -1,69 +1,69 @@
 {
     "104089": {
-        "难度": {
+        "Difficulty": {
             "2.0": "★★"
         },
-        "定位": {
-            "控制": "控制"
+        "Role": {
+            "Control": "Control"
         }
     },
     "104724": {
-        "难度": {
+        "Difficulty": {
             "3.5": "★★★☆"
         },
-        "定位": {
-            "支援": "支援"
+        "Role": {
+            "Support": "Support"
         }
     },
     "104725": {
-        "难度": {
+        "Difficulty": {
             "4.0": "★★★★"
         },
-        "定位": {
-            "支援": "支援",
-            "机动": "机动"
+        "Role": {
+            "Support": "Support",
+            "Mobility": "Mobility"
         }
     },
     "104726": {
-        "难度": {
+        "Difficulty": {
             "5.0": "★★★★★"
         },
-        "定位": {
-            "伤害": "伤害",
-            "机动": "机动"
+        "Role": {
+            "Damage": "Damage",
+            "Mobility": "Mobility"
         }
     },
     "104727": {
-        "难度": {
+        "Difficulty": {
             "2.5": "★★☆"
         },
-        "定位": {
-            "控制": "控制"
+        "Role": {
+            "Control": "Control"
         }
     },
     "104728": {
-        "难度": {
+        "Difficulty": {
             "2.0": "★★"
         },
-        "定位": {
-            "生存": "生存"
+        "Role": {
+            "Survival": "Survival"
         }
     },
     "104729": {
-        "难度": {
+        "Difficulty": {
             "2.0": "★★"
         },
-        "定位": {
-            "伤害": "伤害"
+        "Role": {
+            "Damage": "Damage"
         }
     },
     "127303": {
-        "难度": {
+        "Difficulty": {
             "4.0": "★★★★"
         },
-        "定位": {
-            "控制": "控制",
-            "机动": "机动"
+        "Role": {
+            "Control": "Control",
+            "Mobility": "Mobility"
         }
     }
 }

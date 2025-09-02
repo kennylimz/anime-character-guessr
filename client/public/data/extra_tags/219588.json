@@ -1,1212 +1,1212 @@
 {
     "61046": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "美食殿堂": "美食殿堂"
+        "Guild": {
+            "Gourmet Hall": "Gourmet Hall"
         }
     },
     "61047": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "美食殿堂": "美食殿堂"
+        "Guild": {
+            "Gourmet Hall": "Gourmet Hall"
         }
     },
     "61049": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "美食殿堂": "美食殿堂"
+        "Guild": {
+            "Gourmet Hall": "Gourmet Hall"
         }
     },
     "91493": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "美食殿堂": "美食殿堂"
+        "Guild": {
+            "Gourmet Hall": "Gourmet Hall"
         }
     },
     "31353": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "破晓之星": "破晓之星"
+        "Guild": {
+            "破晓之Star": "破晓之Star"
         }
     },
     "31363": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "破晓之星": "破晓之星"
+        "Guild": {
+            "破晓之Star": "破晓之Star"
         }
     },
     "31365": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "破晓之星": "破晓之星"
+        "Guild": {
+            "破晓之Star": "破晓之Star"
         }
     },
     "61044": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "拉比林斯": "拉比林斯"
+        "Guild": {
+            "Labyrinths": "Labyrinths"
         }
     },
     "61055": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "拉比林斯": "拉比林斯"
+        "Guild": {
+            "Labyrinths": "Labyrinths"
         }
     },
     "61056": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "拉比林斯": "拉比林斯"
+        "Guild": {
+            "Labyrinths": "Labyrinths"
         }
     },
     "31356": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "慈乐之音": "慈乐之音"
+        "Guild": {
+            "Sound of Mercy": "Sound of Mercy"
         }
     },
     "61057": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "慈乐之音": "慈乐之音"
+        "Guild": {
+            "Sound of Mercy": "Sound of Mercy"
         }
     },
     "61059": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "慈乐之音": "慈乐之音"
+        "Guild": {
+            "Sound of Mercy": "Sound of Mercy"
         }
     },
     "31354": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "小小甜心": "小小甜心"
+        "Guild": {
+            "Little Sweetheart": "Little Sweetheart"
         }
     },
     "61061": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "小小甜心": "小小甜心"
+        "Guild": {
+            "Little Sweetheart": "Little Sweetheart"
         }
     },
     "61062": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "小小甜心": "小小甜心"
+        "Guild": {
+            "Little Sweetheart": "Little Sweetheart"
         }
     },
     "61063": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "森林守卫": "森林守卫"
+        "Guild": {
+            "Forest Guard": "Forest Guard"
         }
     },
     "61064": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "森林守卫": "森林守卫"
+        "Guild": {
+            "Forest Guard": "Forest Guard"
         }
     },
     "61065": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "森林守卫": "森林守卫"
+        "Guild": {
+            "Forest Guard": "Forest Guard"
         }
     },
     "31357": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "恶魔伪王国军": "恶魔伪王国军"
+        "Guild": {
+            "Demon Pseudo-Kingdom Army": "Demon Pseudo-Kingdom Army"
         }
     },
     "61066": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "恶魔伪王国军": "恶魔伪王国军"
+        "Guild": {
+            "Demon Pseudo-Kingdom Army": "Demon Pseudo-Kingdom Army"
         }
     },
     "61067": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "恶魔伪王国军": "恶魔伪王国军"
+        "Guild": {
+            "Demon Pseudo-Kingdom Army": "Demon Pseudo-Kingdom Army"
         }
     },
     "61068": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "恶魔伪王国军": "恶魔伪王国军"
+        "Guild": {
+            "Demon Pseudo-Kingdom Army": "Demon Pseudo-Kingdom Army"
         }
     },
     "61069": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "恶魔伪王国军": "恶魔伪王国军"
+        "Guild": {
+            "Demon Pseudo-Kingdom Army": "Demon Pseudo-Kingdom Army"
         }
     },
     "61071": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "王宫骑士团": "王宫骑士团"
+        "Guild": {
+            "Royal Knights": "Royal Knights"
         }
     },
     "61072": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "王宫骑士团": "王宫骑士团"
+        "Guild": {
+            "Royal Knights": "Royal Knights"
         }
     },
     "61073": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "王宫骑士团": "王宫骑士团"
+        "Guild": {
+            "Royal Knights": "Royal Knights"
         }
     },
     "61074": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "王宫骑士团": "王宫骑士团"
+        "Guild": {
+            "Royal Knights": "Royal Knights"
         }
     },
     "31361": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "咲恋救济院": "咲恋救济院"
+        "Guild": {
+            "Sakuren Relief": "Sakuren Relief"
         }
     },
     "31362": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "咲恋救济院": "咲恋救济院"
+        "Guild": {
+            "Sakuren Relief": "Sakuren Relief"
         }
     },
     "61076": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "咲恋救济院": "咲恋救济院"
+        "Guild": {
+            "Sakuren Relief": "Sakuren Relief"
         }
     },
     "61077": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "咲恋救济院": "咲恋救济院"
+        "Guild": {
+            "Sakuren Relief": "Sakuren Relief"
         }
     },
     "61080": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "自卫团": "自卫团"
+        "Guild": {
+            "Self-Defense Corps": "Self-Defense Corps"
         }
     },
     "61081": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "自卫团": "自卫团"
+        "Guild": {
+            "Self-Defense Corps": "Self-Defense Corps"
         }
     },
     "61082": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "自卫团": "自卫团"
+        "Guild": {
+            "Self-Defense Corps": "Self-Defense Corps"
         }
     },
     "61083": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "自卫团": "自卫团"
+        "Guild": {
+            "Self-Defense Corps": "Self-Defense Corps"
         }
     },
     "31359": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "伊丽莎白牧场": "伊丽莎白牧场"
+        "Guild": {
+            "Elizabeth Ranch": "Elizabeth Ranch"
         }
     },
     "61084": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "伊丽莎白牧场": "伊丽莎白牧场"
+        "Guild": {
+            "Elizabeth Ranch": "Elizabeth Ranch"
         }
     },
     "61085": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "伊丽莎白牧场": "伊丽莎白牧场"
+        "Guild": {
+            "Elizabeth Ranch": "Elizabeth Ranch"
         }
     },
     "61086": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "伊丽莎白牧场": "伊丽莎白牧场"
+        "Guild": {
+            "Elizabeth Ranch": "Elizabeth Ranch"
         }
     },
     "31358": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "墨丘利财团": "墨丘利财团"
+        "Guild": {
+            "Mercury Foundation": "Mercury Foundation"
         }
     },
     "31360": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "墨丘利财团": "墨丘利财团"
+        "Guild": {
+            "Mercury Foundation": "Mercury Foundation"
         }
     },
     "61087": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "墨丘利财团": "墨丘利财团"
+        "Guild": {
+            "Mercury Foundation": "Mercury Foundation"
         }
     },
     "61089": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "墨丘利财团": "墨丘利财团"
+        "Guild": {
+            "Mercury Foundation": "Mercury Foundation"
         }
     },
     "31355": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "暮光流星群": "暮光流星群"
+        "Guild": {
+            "Twilight Meteor Cluster": "Twilight Meteor Cluster"
         }
     },
     "31364": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "暮光流星群": "暮光流星群"
+        "Guild": {
+            "Twilight Meteor Cluster": "Twilight Meteor Cluster"
         }
     },
     "61092": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "暮光流星群": "暮光流星群"
+        "Guild": {
+            "Twilight Meteor Cluster": "Twilight Meteor Cluster"
         }
     },
     "61094": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "暮光流星群": "暮光流星群"
+        "Guild": {
+            "Twilight Meteor Cluster": "Twilight Meteor Cluster"
         }
     },
     "61095": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "暮光流星群": "暮光流星群"
+        "Guild": {
+            "Twilight Meteor Cluster": "Twilight Meteor Cluster"
         }
     },
     "61096": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "月光学院": "月光学院"
+        "Guild": {
+            "Moonlight Academy": "Moonlight Academy"
         }
     },
     "61097": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "月光学院": "月光学院"
+        "Guild": {
+            "Moonlight Academy": "Moonlight Academy"
         }
     },
     "61098": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "月光学院": "月光学院"
+        "Guild": {
+            "Moonlight Academy": "Moonlight Academy"
         }
     },
     "61079": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "纯白之翼": "纯白之翼"
+        "Guild": {
+            "Pure White Wings": "Pure White Wings"
         }
     },
     "61099": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "纯白之翼": "纯白之翼"
+        "Guild": {
+            "Pure White Wings": "Pure White Wings"
         }
     },
     "61100": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫",
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard",
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "纯白之翼": "纯白之翼"
+        "Guild": {
+            "Pure White Wings": "Pure White Wings"
         }
     },
     "61101": {
-        "稀有度": {
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "纯白之翼": "纯白之翼"
+        "Guild": {
+            "Pure White Wings": "Pure White Wings"
         }
     },
     "61102": {
-        "稀有度": {
-            "2星": "<img src='/assets/tag/pcr/2星.png' alt='2星'/>",
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "2Star": "<img src='/assets/tag/pcr/2星.png' alt='2Star'/>",
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫",
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard",
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind"
         },
-        "公会": {
-            "纯白之翼": "纯白之翼"
+        "Guild": {
+            "Pure White Wings": "Pure White Wings"
         }
     },
     "71629": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "好朋友社": "好朋友社"
+        "Guild": {
+            "Good Friends Club": "Good Friends Club"
         }
     },
     "71630": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "好朋友社": "好朋友社"
+        "Guild": {
+            "Good Friends Club": "Good Friends Club"
         }
     },
     "71631": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "好朋友社": "好朋友社"
+        "Guild": {
+            "Good Friends Club": "Good Friends Club"
         }
     },
     "77324": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "风": "<img src='/assets/tag/pcr/风.png'/>风",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Wind": "<img src='/assets/tag/pcr/风.png'/>Wind",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
-            "龙族据点": "龙族据点"
+        "Guild": {
+            "Dragon Outpost": "Dragon Outpost"
         }
     },
     "77326": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
-            "龙族据点": "龙族据点"
+        "Guild": {
+            "Dragon Outpost": "Dragon Outpost"
         }
     },
     "77327": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>",
-            "1星": "<img src='/assets/tag/pcr/1星.png' alt='1星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>",
+            "1Star": "<img src='/assets/tag/pcr/1星.png' alt='1Star'/>"
         },
-        "站位": {
-            "前卫": "<img src='/assets/tag/pcr/前卫.png'/>前卫"
+        "Positioning": {
+            "Vanguard": "<img src='/assets/tag/pcr/前卫.png'/>Vanguard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "龙族据点": "龙族据点"
+        "Guild": {
+            "Dragon Outpost": "Dragon Outpost"
         }
     },
     "135404": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗",
-            "水": "<img src='/assets/tag/pcr/水.png'/>水"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark",
+            "Water": "<img src='/assets/tag/pcr/水.png'/>Water"
         },
-        "公会": {
-            "幻变少女": "幻变少女"
+        "Guild": {
+            "Illusion Girl": "Illusion Girl"
         }
     },
     "135405": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "幻变少女": "幻变少女"
+        "Guild": {
+            "Illusion Girl": "Illusion Girl"
         }
     },
     "135406": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "暗": "<img src='/assets/tag/pcr/暗.png'/>暗"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Dark": "<img src='/assets/tag/pcr/暗.png'/>Dark"
         },
-        "公会": {
-            "幻变少女": "幻变少女"
+        "Guild": {
+            "Illusion Girl": "Illusion Girl"
         }
     },
     "135403": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "中卫": "<img src='/assets/tag/pcr/中卫.png'/>中卫"
+        "Positioning": {
+            "Mid Guard": "<img src='/assets/tag/pcr/中卫.png'/>Mid Guard"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pcr/物理.png'/>物理",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pcr/物理.png'/>Physical",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light"
         },
-        "公会": {
+        "Guild": {
             "Geo Teogonia": "Geo Teogonia"
         }
     },
     "135410": {
-        "稀有度": {
-            "3星": "<img src='/assets/tag/pcr/3星.png' alt='3星'/>"
+        "Rarity": {
+            "3Star": "<img src='/assets/tag/pcr/3星.png' alt='3Star'/>"
         },
-        "站位": {
-            "后卫": "<img src='/assets/tag/pcr/后卫.png'/>后卫"
+        "Positioning": {
+            "Rear Guard": "<img src='/assets/tag/pcr/后卫.png'/>Rear Guard"
         },
-        "属性": {
-            "魔法": "<img src='/assets/tag/pcr/魔法.png'/>魔法",
-            "光": "<img src='/assets/tag/pcr/光.png'/>光",
-            "火": "<img src='/assets/tag/pcr/火.png'/>火"
+        "Attribute": {
+            "Magic": "<img src='/assets/tag/pcr/魔法.png'/>Magic",
+            "Light": "<img src='/assets/tag/pcr/光.png'/>Light",
+            "Fire": "<img src='/assets/tag/pcr/火.png'/>Fire"
         },
-        "公会": {
+        "Guild": {
             "Geo Teogonia": "Geo Teogonia"
         }
     }

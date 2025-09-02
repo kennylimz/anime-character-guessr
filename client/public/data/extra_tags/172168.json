@@ -1,337 +1,337 @@
 {
   "26394": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />",
       "B": "<img src='/assets/tag/bh3/B.png' alt='B' />"
     },
-    "属性": {
-      "虚数": "<img src='/assets/tag/bh3/虚数.png' alt='虚数' />虚数",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤",
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械"
+    "Attribute": {
+      "Imaginary": "<img src='/assets/tag/bh3/虚数.png' alt='Imaginary' />Imaginary",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage",
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical"
     },
-    "武器类型": {
-      "双枪": "<img src='/assets/tag/bh3/双枪.png' alt='双枪' />双枪"
+    "Weapon Type": {
+      "Dual Guns": "<img src='/assets/tag/bh3/双枪.png' alt='Dual Guns' />Dual Guns"
     }
   },
   "26395": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />",
       "B": "<img src='/assets/tag/bh3/B.png' alt='B' />"
     },
-    "属性": {
-      "虚数": "<img src='/assets/tag/bh3/虚数.png' alt='虚数' />虚数",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物"
+    "Attribute": {
+      "Imaginary": "<img src='/assets/tag/bh3/虚数.png' alt='Imaginary' />Imaginary",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological"
     },
-    "武器类型": {
-      "太刀": "<img src='/assets/tag/bh3/太刀.png' alt='太刀' />太刀"
+    "Weapon Type": {
+      "Katana": "<img src='/assets/tag/bh3/太刀.png' alt='Katana' />Katana"
     }
   },
   "26396": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />",
       "B": "<img src='/assets/tag/bh3/B.png' alt='B' />"
     },
-    "属性": {
-      "虚数": "<img src='/assets/tag/bh3/虚数.png' alt='虚数' />虚数",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤",
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械"
+    "Attribute": {
+      "Imaginary": "<img src='/assets/tag/bh3/虚数.png' alt='Imaginary' />Imaginary",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage",
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical"
     },
-    "武器类型": {
-      "重炮": "<img src='/assets/tag/bh3/重炮.png' alt='重炮' />重炮"
+    "Weapon Type": {
+      "Heavy Cannon": "<img src='/assets/tag/bh3/重炮.png' alt='Heavy Cannon' />Heavy Cannon"
     }
   },
   "45099": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />",
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "B": "<img src='/assets/tag/bh3/B.png' alt='B' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤",
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage",
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/bh3/大剑.png' alt='大剑' />大剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/bh3/大剑.png' alt='Great Sword' />Great Sword"
     }
   },
   "46073": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤"
+    "Attribute": {
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage"
     },
-    "武器类型": {
-      "太刀": "<img src='/assets/tag/bh3/太刀.png' alt='太刀' />太刀"
+    "Weapon Type": {
+      "Katana": "<img src='/assets/tag/bh3/太刀.png' alt='Katana' />Katana"
     }
   },
   "45100": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤",
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage",
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/bh3/十字架.png' alt='十字架' />十字架"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/bh3/十字架.png' alt='Cross' />Cross"
     }
   },
   "81026": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/bh3/十字架.png' alt='十字架' />十字架"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/bh3/十字架.png' alt='Cross' />Cross"
     }
   },
   "70690": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械"
+    "Attribute": {
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical"
     },
-    "武器类型": {
-      "太刀": "<img src='/assets/tag/bh3/太刀.png' alt='太刀' />太刀"
+    "Weapon Type": {
+      "Katana": "<img src='/assets/tag/bh3/太刀.png' alt='Katana' />Katana"
     }
   },
   "74952": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤",
-      "量子": "<img src='/assets/tag/bh3/量子.png' alt='量子' />量子",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤",
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤",
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage",
+      "Quantum": "<img src='/assets/tag/bh3/量子.png' alt='Quantum' />Quantum",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage",
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage",
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "镰刀": "<img src='/assets/tag/bh3/镰刀.png' alt='镰刀' />镰刀"
+    "Weapon Type": {
+      "Scythe": "<img src='/assets/tag/bh3/镰刀.png' alt='Scythe' />Scythe"
     }
   },
   "46081": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "量子": "<img src='/assets/tag/bh3/量子.png' alt='量子' />量子",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Quantum": "<img src='/assets/tag/bh3/量子.png' alt='Quantum' />Quantum",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage"
     },
-    "武器类型": {
-      "镰刀": "<img src='/assets/tag/bh3/镰刀.png' alt='镰刀' />镰刀"
+    "Weapon Type": {
+      "Scythe": "<img src='/assets/tag/bh3/镰刀.png' alt='Scythe' />Scythe"
     }
   },
   "69866": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "镰刀": "<img src='/assets/tag/bh3/镰刀.png' alt='镰刀' />镰刀"
+    "Weapon Type": {
+      "Scythe": "<img src='/assets/tag/bh3/镰刀.png' alt='Scythe' />Scythe"
     }
   },
   "69867": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "双手剑": "<img src='/assets/tag/bh3/大剑.png' alt='大剑' />大剑"
+    "Weapon Type": {
+      "Greatsword": "<img src='/assets/tag/bh3/大剑.png' alt='Great Sword' />Great Sword"
     }
   },
   "114202": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "弓": "<img src='/assets/tag/bh3/弓箭.png' alt='弓箭' />弓箭"
+    "Weapon Type": {
+      "Bow": "<img src='/assets/tag/bh3/弓箭.png' alt='Arrow' />Arrow"
     }
   },
   "114210": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤"
+    "Attribute": {
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage"
     },
-    "武器类型": {
-      "环刃": "<img src='/assets/tag/bh3/环刃.png' alt='环刃' />环刃"
+    "Weapon Type": {
+      "Ring Blade": "<img src='/assets/tag/bh3/环刃.png' alt='Ring Blade' />Ring Blade"
     }
   },
   "86256": {
-    "稀有度": {
+    "Rarity": {
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "虚数": "<img src='/assets/tag/bh3/虚数.png' alt='虚数' />虚数",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤"
+    "Attribute": {
+      "Imaginary": "<img src='/assets/tag/bh3/虚数.png' alt='Imaginary' />Imaginary",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage"
     },
-    "武器类型": {
-      "驱动核心": "<img src='/assets/tag/bh3/驱动核心.png' alt='驱动核心' />驱动核心"
+    "Weapon Type": {
+      "Drive Core": "<img src='/assets/tag/bh3/驱动核心.png' alt='Drive Core' />Drive Core"
     }
   },
   "89780": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "拳套": "<img src='/assets/tag/bh3/拳套.png' alt='拳套' />拳套"
+    "Weapon Type": {
+      "Gauntlet": "<img src='/assets/tag/bh3/拳套.png' alt='Gauntlet' />Gauntlet"
     }
   },
   "114212": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "虚数": "<img src='/assets/tag/bh3/虚数.png' alt='虚数' />虚数",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤"
+    "Attribute": {
+      "Imaginary": "<img src='/assets/tag/bh3/虚数.png' alt='Imaginary' />Imaginary",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage"
     },
-    "武器类型": {
-      "环刃": "<img src='/assets/tag/bh3/环刃.png' alt='环刃' />环刃"
+    "Weapon Type": {
+      "Ring Blade": "<img src='/assets/tag/bh3/环刃.png' alt='Ring Blade' />Ring Blade"
     }
   },
   "114203": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤"
+    "Attribute": {
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage"
     },
-    "武器类型": {
-      "法器": "<img src='/assets/tag/bh3/十字架.png' alt='十字架' />十字架"
+    "Weapon Type": {
+      "Magic Tool": "<img src='/assets/tag/bh3/十字架.png' alt='Cross' />Cross"
     }
   },
   "114204": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "虚数": "<img src='/assets/tag/bh3/虚数.png' alt='虚数' />虚数",
-      "雷": "<img src='/assets/tag/bh3/雷伤.png' alt='雷伤' />雷伤"
+    "Attribute": {
+      "Imaginary": "<img src='/assets/tag/bh3/虚数.png' alt='Imaginary' />Imaginary",
+      "Lightning": "<img src='/assets/tag/bh3/雷伤.png' alt='Lightning Damage' />Lightning Damage"
     },
-    "武器类型": {
-      "驱动核心": "<img src='/assets/tag/bh3/驱动核心.png' alt='驱动核心' />驱动核心"
+    "Weapon Type": {
+      "Drive Core": "<img src='/assets/tag/bh3/驱动核心.png' alt='Drive Core' />Drive Core"
     }
   },
   "114205": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "量子": "<img src='/assets/tag/bh3/量子.png' alt='量子' />量子",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤"
+    "Attribute": {
+      "Quantum": "<img src='/assets/tag/bh3/量子.png' alt='Quantum' />Quantum",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage"
     },
-    "武器类型": {
-      "驱动核心": "<img src='/assets/tag/bh3/驱动核心.png' alt='驱动核心' />驱动核心"
+    "Weapon Type": {
+      "Drive Core": "<img src='/assets/tag/bh3/驱动核心.png' alt='Drive Core' />Drive Core"
     }
   },
   "114211": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical"
     },
-    "武器类型": {
-      "驱动核心": "<img src='/assets/tag/bh3/驱动核心.png' alt='驱动核心' />驱动核心"
+    "Weapon Type": {
+      "Drive Core": "<img src='/assets/tag/bh3/驱动核心.png' alt='Drive Core' />Drive Core"
     }
   },
   "118715": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />"
     },
-    "属性": {
-      "异能": "<img src='/assets/tag/bh3/异能.png' alt='异能' />异能",
-      "冰": "<img src='/assets/tag/bh3/冰伤.png' alt='冰伤' />冰伤"
+    "Attribute": {
+      "Mystic": "<img src='/assets/tag/bh3/异能.png' alt='Mystic' />Mystic",
+      "Ice": "<img src='/assets/tag/bh3/冰伤.png' alt='Ice Damage' />Ice Damage"
     },
-    "武器类型": {
-      "太刀": "<img src='/assets/tag/bh3/太刀.png' alt='太刀' />太刀"
+    "Weapon Type": {
+      "Katana": "<img src='/assets/tag/bh3/太刀.png' alt='Katana' />Katana"
     }
   },
   "77223": {
-    "稀有度": {
+    "Rarity": {
       "S": "<img src='/assets/tag/bh3/S.png' alt='S' />",
       "A": "<img src='/assets/tag/bh3/A.png' alt='A' />"
     },
-    "属性": {
-      "虚数": "<img src='/assets/tag/bh3/虚数.png' alt='虚数' />虚数",
-      "物理": "<img src='/assets/tag/bh3/物理.png' alt='物理' />物理",
-      "生物": "<img src='/assets/tag/bh3/生物.png' alt='生物' />生物",
-      "火": "<img src='/assets/tag/bh3/火伤.png' alt='火伤' />火伤",
-      "机械": "<img src='/assets/tag/bh3/机械.png' alt='机械' />机械",
-      "量子": "<img src='/assets/tag/bh3/量子.png' alt='量子' />量子"
+    "Attribute": {
+      "Imaginary": "<img src='/assets/tag/bh3/虚数.png' alt='Imaginary' />Imaginary",
+      "Physical": "<img src='/assets/tag/bh3/物理.png' alt='Physical' />Physical",
+      "Biological": "<img src='/assets/tag/bh3/生物.png' alt='Biological' />Biological",
+      "Fire": "<img src='/assets/tag/bh3/火伤.png' alt='Fire Damage' />Fire Damage",
+      "Mechanical": "<img src='/assets/tag/bh3/机械.png' alt='Mechanical' />Mechanical",
+      "Quantum": "<img src='/assets/tag/bh3/量子.png' alt='Quantum' />Quantum"
     },
-    "武器类型": {
-      "骑枪": "<img src='/assets/tag/bh3/骑枪.png' alt='骑枪' />骑枪"
+    "Weapon Type": {
+      "Lancer": "<img src='/assets/tag/bh3/骑枪.png' alt='Lancer' />Lancer"
     }
   }
 }

@@ -1,932 +1,932 @@
 {
   "104348": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30902": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30903": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30904": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30905": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30906": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30907": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30908": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30909": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability"
     }
   },
   "30910": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30911": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30912": {
-    "难度": {
+    "Difficulty": {
       "3": "◆◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30913": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30915": {
-    "难度": {
+    "Difficulty": {
       "3": "◆◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "30917": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30922": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30923": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30924": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30925": {
-    "难度": {
+    "Difficulty": {
       "3": "◆◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30926": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30927": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30928": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30929": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30930": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30931": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30932": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30933": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "30934": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30935": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30936": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30937": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "30938": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30939": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "力量": "<img src='/assets/tag/dota2/力量.png' alt='力量' />力量"
+    "Attribute": {
+      "Strength": "<img src='/assets/tag/dota2/力量.png' alt='Strength' />Strength"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability"
     }
   },
   "30940": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "30941": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability"
     }
   },
   "31037": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "31038": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "31039": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "31040": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "54037": {
-    "难度": {
+    "Difficulty": {
       "3": "◆◆◆"
     },
-    "属性": {
-      "智力": "<img src='/assets/tag/dota2/智力.png' alt='智力' />智力"
+    "Attribute": {
+      "Intelligence": "<img src='/assets/tag/dota2/智力.png' alt='Intelligence' />Intelligence"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "64311": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "101935": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "101936": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "101937": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "101993": {
-    "难度": {
+    "Difficulty": {
       "3": "◆◆◆"
     },
-    "属性": {
-      "智力": "<img src='/assets/tag/dota2/智力.png' alt='智力' />智力"
+    "Attribute": {
+      "Intelligence": "<img src='/assets/tag/dota2/智力.png' alt='Intelligence' />Intelligence"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "102208": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "先手": "<img src='/assets/tag/dota2/先手.png' alt='先手' />先手"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Initiative": "<img src='/assets/tag/dota2/先手.png' alt='Initiative' />Initiative"
     }
   },
   "104347": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "智力": "<img src='/assets/tag/dota2/智力.png' alt='智力' />智力"
+    "Attribute": {
+      "Intelligence": "<img src='/assets/tag/dota2/智力.png' alt='Intelligence' />Intelligence"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control"
     }
   },
   "104642": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "智力": "<img src='/assets/tag/dota2/智力.png' alt='智力' />智力"
+    "Attribute": {
+      "Intelligence": "<img src='/assets/tag/dota2/智力.png' alt='Intelligence' />Intelligence"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control"
     }
   },
   "104643": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "智力": "<img src='/assets/tag/dota2/智力.png' alt='智力' />智力"
+    "Attribute": {
+      "Intelligence": "<img src='/assets/tag/dota2/智力.png' alt='Intelligence' />Intelligence"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control"
     }
   },
   "104685": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "耐久": "<img src='/assets/tag/dota2/耐久.png' alt='耐久' />耐久"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Durability": "<img src='/assets/tag/dota2/耐久.png' alt='Durability' />Durability"
     }
   },
   "114735": {
-    "难度": {
+    "Difficulty": {
       "1": "◆"
     },
-    "属性": {
-      "智力": "<img src='/assets/tag/dota2/智力.png' alt='智力' />智力"
+    "Attribute": {
+      "Intelligence": "<img src='/assets/tag/dota2/智力.png' alt='Intelligence' />Intelligence"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "114763": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "辅助": "<img src='/assets/tag/dota2/辅助.png' alt='辅助' />辅助",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "控制": "<img src='/assets/tag/dota2/控制.png' alt='控制' />控制",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Support": "<img src='/assets/tag/dota2/辅助.png' alt='Support' />Support",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Control": "<img src='/assets/tag/dota2/控制.png' alt='Control' />Control",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   },
   "114764": {
-    "难度": {
+    "Difficulty": {
       "2": "◆◆"
     },
-    "属性": {
-      "敏捷": "<img src='/assets/tag/dota2/敏捷.png' alt='敏捷' />敏捷"
+    "Attribute": {
+      "Agility": "<img src='/assets/tag/dota2/敏捷.png' alt='Agility' />Agility"
     },
-    "攻击类型": {
-      "近战": "<img src='/assets/tag/dota2/近战.png' alt='近战' />近战"
+    "Attack Type": {
+      "Melee": "<img src='/assets/tag/dota2/近战.png' alt='Melee' />Melee"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生",
-      "推进": "<img src='/assets/tag/dota2/推进.png' alt='推进' />推进"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape",
+      "Push": "<img src='/assets/tag/dota2/推进.png' alt='Push' />Push"
     }
   },
   "114770": {
-    "难度": {
+    "Difficulty": {
       "3": "◆◆◆"
     },
-    "属性": {
-      "全才": "<img src='/assets/tag/dota2/全才.png' alt='全才' />全才"
+    "Attribute": {
+      "Versatile": "<img src='/assets/tag/dota2/全才.png' alt='Versatile' />Versatile"
     },
-    "攻击类型": {
-      "远程": "<img src='/assets/tag/dota2/远程.png' alt='远程' />远程"
+    "Attack Type": {
+      "Ranged": "<img src='/assets/tag/dota2/远程.png' alt='Ranged' />Ranged"
     },
-    "标签": {
-      "核心": "<img src='/assets/tag/dota2/核心.png' alt='核心' />核心",
-      "爆发": "<img src='/assets/tag/dota2/爆发.png' alt='爆发' />爆发",
-      "逃生": "<img src='/assets/tag/dota2/逃生.png' alt='逃生' />逃生"
+    "Tag": {
+      "Core": "<img src='/assets/tag/dota2/核心.png' alt='Core' />Core",
+      "Burst": "<img src='/assets/tag/dota2/爆发.png' alt='Burst' />Burst",
+      "Escape": "<img src='/assets/tag/dota2/逃生.png' alt='Escape' />Escape"
     }
   }
 }

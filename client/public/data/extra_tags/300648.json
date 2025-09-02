@@ -1,2450 +1,2450 @@
 {
   "104645": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "104646": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "阿拜多斯高中": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>阿拜多斯高中"
+    "Affiliation": {
+      "Abidos High School": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>Abidos High School"
     }
   },
   "104647": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "载具支援": "<img src='/assets/tag/ba/载具支援.png'/>载具支援",
-      "中排": "中排",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Vehicle Support": "<img src='/assets/tag/ba/载具支援.png'/>Vehicle Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "104648": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "104650": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "阿拜多斯高中": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>阿拜多斯高中"
+    "Affiliation": {
+      "Abidos High School": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>Abidos High School"
     }
   },
   "104652": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "RG": "<img src='/assets/tag/ba/RG.png'/>RG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "104754": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "阿拜多斯高中": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>阿拜多斯高中"
+    "Affiliation": {
+      "Abidos High School": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>Abidos High School"
     }
   },
   "104755": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "前排": "前排",
-      "后排": "后排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "106190": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "108919": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "109628": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "SRT特殊学院": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRT特殊学院"
+    "Affiliation": {
+      "SRTSpecial Academy": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRTSpecial Academy"
     }
   },
   "109659": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MT": "<img src='/assets/tag/ba/MT.png'/>MT"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "109660": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "山海经高级中学": "<img src='/assets/tag/ba/山海经高级中学.png'/>山海经高级中学"
+    "Affiliation": {
+      "Shan Hai Jing Senior High": "<img src='/assets/tag/ba/山海经高级中学.png'/>Shan Hai Jing Senior High"
     }
   },
   "109662": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "SRT特殊学院": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRT特殊学院"
+    "Affiliation": {
+      "SRTSpecial Academy": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRTSpecial Academy"
     }
   },
   "112156": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "112157": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "载具支援": "<img src='/assets/tag/ba/载具支援.png'/>载具支援",
-      "后排": "后排"
+      "Vehicle Support": "<img src='/assets/tag/ba/载具支援.png'/>Vehicle Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "112158": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "114587": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "114588": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "114589": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "山海经高级中学": "<img src='/assets/tag/ba/山海经高级中学.png'/>山海经高级中学"
+    "Affiliation": {
+      "Shan Hai Jing Senior High": "<img src='/assets/tag/ba/山海经高级中学.png'/>Shan Hai Jing Senior High"
     }
   },
   "114590": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "GL": "<img src='/assets/tag/ba/GL.png'/>GL"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "114592": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "阿拜多斯高中": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>阿拜多斯高中"
+    "Affiliation": {
+      "Abidos High School": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>Abidos High School"
     }
   },
   "114593": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "前排": "前排",
-      "后排": "后排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "114594": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "114595": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "114596": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "114597": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "114598": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "114599": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "114600": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "114601": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115362": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115851": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "115852": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "115853": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "载具支援": "<img src='/assets/tag/ba/载具支援.png'/>载具支援",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Vehicle Support": "<img src='/assets/tag/ba/载具支援.png'/>Vehicle Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "115854": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "115855": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "GL": "<img src='/assets/tag/ba/GL.png'/>GL"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "115856": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115857": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "115858": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "115859": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "瓦尔基里警察学校": "<img src='/assets/tag/ba/瓦尔基里警察学校.png'/>瓦尔基里警察学校"
+    "Affiliation": {
+      "Valkyrie Police School": "<img src='/assets/tag/ba/瓦尔基里警察学校.png'/>Valkyrie Police School"
     }
   },
   "115860": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115861": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115862": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "115863": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "115864": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "瓦尔基里警察学校": "<img src='/assets/tag/ba/瓦尔基里警察学校.png'/>瓦尔基里警察学校"
+    "Affiliation": {
+      "Valkyrie Police School": "<img src='/assets/tag/ba/瓦尔基里警察学校.png'/>Valkyrie Police School"
     }
   },
   "115865": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "GL": "<img src='/assets/tag/ba/GL.png'/>GL"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "载具支援": "<img src='/assets/tag/ba/载具支援.png'/>载具支援",
-      "中排": "中排",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Vehicle Support": "<img src='/assets/tag/ba/载具支援.png'/>Vehicle Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "115866": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "115871": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "115872": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115873": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "SRT特殊学院": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRT特殊学院"
+    "Affiliation": {
+      "SRTSpecial Academy": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRTSpecial Academy"
     }
   },
   "115874": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "115875": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "阿里乌斯分校": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>阿里乌斯分校"
+    "Affiliation": {
+      "Arius Branch School": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>Arius Branch School"
     }
   },
   "115876": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "前排": "前排",
-      "后排": "后排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "阿里乌斯分校": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>阿里乌斯分校"
+    "Affiliation": {
+      "Arius Branch School": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>Arius Branch School"
     }
   },
   "115877": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "GL": "<img src='/assets/tag/ba/GL.png'/>GL"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "115878": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115879": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "115880": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "中排": "中排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "山海经高级中学": "<img src='/assets/tag/ba/山海经高级中学.png'/>山海经高级中学"
+    "Affiliation": {
+      "Shan Hai Jing Senior High": "<img src='/assets/tag/ba/山海经高级中学.png'/>Shan Hai Jing Senior High"
     }
   },
   "115882": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "前排": "前排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115883": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "115884": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115885": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "115886": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "RL": "<img src='/assets/tag/ba/RL.png'/>RL"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "115887": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "115888": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "115889": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "117876": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "124955": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "124994": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "山海经高级中学": "<img src='/assets/tag/ba/山海经高级中学.png'/>山海经高级中学"
+    "Affiliation": {
+      "Shan Hai Jing Senior High": "<img src='/assets/tag/ba/山海经高级中学.png'/>Shan Hai Jing Senior High"
     }
   },
   "125395": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "125441": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "载具支援": "<img src='/assets/tag/ba/载具支援.png'/>载具支援",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Vehicle Support": "<img src='/assets/tag/ba/载具支援.png'/>Vehicle Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "125917": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "128422": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "载具支援": "<img src='/assets/tag/ba/载具支援.png'/>载具支援",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Vehicle Support": "<img src='/assets/tag/ba/载具支援.png'/>Vehicle Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "阿拜多斯高中": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>阿拜多斯高中"
+    "Affiliation": {
+      "Abidos High School": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>Abidos High School"
     }
   },
   "132125": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "132126": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "132264": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "132265": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "132266": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "132275": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "132277": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "MG": "<img src='/assets/tag/ba/MG.png'/>MG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "132278": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "133767": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "前排": "前排",
-      "后排": "后排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "133768": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "前排": "前排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "134300": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "瓦尔基里警察学校": "<img src='/assets/tag/ba/瓦尔基里警察学校.png'/>瓦尔基里警察学校"
+    "Affiliation": {
+      "Valkyrie Police School": "<img src='/assets/tag/ba/瓦尔基里警察学校.png'/>Valkyrie Police School"
     }
   },
   "138959": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "138960": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "138961": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "139606": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "139696": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "139698": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "139701": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "139702": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "弹力装甲": "<span style='color: #794394;'>弹力装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Elastic Armor": "<span style='color: #794394;'>弹力装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "139703": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "山海经高级中学": "<img src='/assets/tag/ba/山海经高级中学.png'/>山海经高级中学"
+    "Affiliation": {
+      "Shan Hai Jing Senior High": "<img src='/assets/tag/ba/山海经高级中学.png'/>Shan Hai Jing Senior High"
     }
   },
   "139712": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "阿拜多斯高中": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>阿拜多斯高中"
+    "Affiliation": {
+      "Abidos High School": "<img src='/assets/tag/ba/阿拜多斯高中.png'/>Abidos High School"
     }
   },
   "139724": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "142672": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "142673": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "147114": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "前排": "前排",
-      "后排": "后排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Front Row": "Front Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "千年科学学园": "<img src='/assets/tag/ba/千年科学学园.png'/>千年科学学园"
+    "Affiliation": {
+      "Millennium Science Academy": "<img src='/assets/tag/ba/千年科学学园.png'/>Millennium Science Academy"
     }
   },
   "147117": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "阿里乌斯分校": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>阿里乌斯分校"
+    "Affiliation": {
+      "Arius Branch School": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>Arius Branch School"
     }
   },
   "147119": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "RL": "<img src='/assets/tag/ba/RL.png'/>RL"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "阿里乌斯分校": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>阿里乌斯分校"
+    "Affiliation": {
+      "Arius Branch School": "<img src='/assets/tag/ba/阿里乌斯分校.png'/>Arius Branch School"
     }
   },
   "147124": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "148588": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "148589": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "148591": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "SRT特殊学院": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRT特殊学院"
+    "Affiliation": {
+      "SRTSpecial Academy": "<img src='/assets/tag/ba/SRT特殊学院.png'/>SRTSpecial Academy"
     }
   },
   "148592": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "148593": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "FT": "<img src='/assets/tag/ba/FT.png'/>FT"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "前排": "前排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "148594": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "三一综合学园": "<img src='/assets/tag/ba/三一综合学园.png'/>三一综合学园"
+    "Affiliation": {
+      "Trinity Comprehensive Academy": "<img src='/assets/tag/ba/三一综合学园.png'/>Trinity Comprehensive Academy"
     }
   },
   "148595": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   },
   "148596": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "前排": "前排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "山海经高级中学": "<img src='/assets/tag/ba/山海经高级中学.png'/>山海经高级中学"
+    "Affiliation": {
+      "Shan Hai Jing Senior High": "<img src='/assets/tag/ba/山海经高级中学.png'/>Shan Hai Jing Senior High"
     }
   },
   "148597": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "山海经高级中学": "<img src='/assets/tag/ba/山海经高级中学.png'/>山海经高级中学"
+    "Affiliation": {
+      "Shan Hai Jing Senior High": "<img src='/assets/tag/ba/山海经高级中学.png'/>Shan Hai Jing Senior High"
     }
   },
   "148598": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "151710": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "155143": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "海兰德铁道学园": "<img src='/assets/tag/ba/海兰德铁道学园.png'/>海兰德铁道学园"
+    "Affiliation": {
+      "Highland Railway Academy": "<img src='/assets/tag/ba/海兰德铁道学园.png'/>Highland Railway Academy"
     }
   },
   "155144": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "海兰德铁道学园": "<img src='/assets/tag/ba/海兰德铁道学园.png'/>海兰德铁道学园"
+    "Affiliation": {
+      "Highland Railway Academy": "<img src='/assets/tag/ba/海兰德铁道学园.png'/>Highland Railway Academy"
     }
   },
   "174655": {
-    "稀有度": {
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SG": "<img src='/assets/tag/ba/SG.png'/>SG"
     },
-    "标签": {
-      "振动": "<span style='color: #794394;'>振动</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Vibration": "<span style='color: #794394;'>振动</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "海兰德铁道学园": "<img src='/assets/tag/ba/海兰德铁道学园.png'/>海兰德铁道学园"
+    "Affiliation": {
+      "Highland Railway Academy": "<img src='/assets/tag/ba/海兰德铁道学园.png'/>Highland Railway Academy"
     }
   },
   "104649": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "爆发": "<span style='color: #920008;'>爆发</span>",
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Burst": "<span style='color: #920008;'>爆发</span>",
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "114591": {
-    "稀有度": {
-      "2星": "<img src='/assets/tag/ba/2星.png' alt='2星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "2Star": "<img src='/assets/tag/ba/2星.png' alt='2Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "AR": "<img src='/assets/tag/ba/AR.png'/>AR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
-      "重装甲": "<span style='color: #BD8901;'>重装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
+      "Heavy Armor": "<span style='color: #BD8901;'>重装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出": "<img src='/assets/tag/ba/输出.png'/>输出",
-      "中排": "中排"
+      "DPS": "<img src='/assets/tag/ba/输出.png'/>DPS",
+      "Mid Row": "Mid Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "115881": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "HG": "<img src='/assets/tag/ba/HG.png'/>HG"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "治疗": "<img src='/assets/tag/ba/治疗.png'/>治疗",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "中排": "中排",
-      "后排": "后排"
+      "Healer": "<img src='/assets/tag/ba/治疗.png'/>Healer",
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Mid Row": "Mid Row",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "格黑娜学园": "<img src='/assets/tag/ba/格黑娜学园.png'/>格黑娜学园"
+    "Affiliation": {
+      "Gheena Academy": "<img src='/assets/tag/ba/格黑娜学园.png'/>Gheena Academy"
     }
   },
   "148587": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />",
-      "1星": "<img src='/assets/tag/ba/1星.png' alt='1星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />",
+      "1Star": "<img src='/assets/tag/ba/1星.png' alt='1Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SR": "<img src='/assets/tag/ba/SR.png'/>SR"
     },
-    "标签": {
-      "贯通": "<span style='color: #BD8901;'>贯通</span>",
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "特殊装甲": "<span style='color: #226F9B;'>特殊装甲</span>",
+    "Tag": {
+      "Piercing": "<span style='color: #BD8901;'>贯通</span>",
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Special Armor": "<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "SPECIAL": "<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "辅助": "<img src='/assets/tag/ba/辅助.png'/>辅助",
-      "后排": "后排"
+      "Support": "<img src='/assets/tag/ba/辅助.png'/>Support",
+      "Back Row": "Back Row"
     },
-    "所属": {
-      "赤冬联邦学园": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>赤冬联邦学园"
+    "Affiliation": {
+      "Red Winter Federal Academy": "<img src='/assets/tag/ba/赤冬联邦学园.png'/>Red Winter Federal Academy"
     }
   },
   "148590": {
-    "稀有度": {
-      "3星": "<img src='/assets/tag/ba/3星.png' alt='3星' />"
+    "Rarity": {
+      "3Star": "<img src='/assets/tag/ba/3星.png' alt='3Star' />"
     },
-    "武器类型": {
+    "Weapon Type": {
       "SMG": "<img src='/assets/tag/ba/SMG.png'/>SMG"
     },
-    "标签": {
-      "神秘": "<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲": "<span style='color: #920008;'>轻装甲</span>",
+    "Tag": {
+      "Mystery": "<span style='color: #226F9B;'>神秘</span>",
+      "Light Armor": "<span style='color: #920008;'>轻装甲</span>",
       "STRIKER": "<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "坦克": "<img src='/assets/tag/ba/坦克.png'/>坦克",
-      "前排": "前排"
+      "Tank": "<img src='/assets/tag/ba/坦克.png'/>Tank",
+      "Front Row": "Front Row"
     },
-    "所属": {
-      "百鬼夜行联合学院": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    "Affiliation": {
+      "Hyakki Yagyo United Academy": "<img src='/assets/tag/ba/百鬼夜行联合学院.png'/>Hyakki Yagyo United Academy"
     }
   }
 }

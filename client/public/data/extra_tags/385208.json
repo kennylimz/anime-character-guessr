@@ -1,391 +1,391 @@
 {
   "158082": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动",
-      "衍射": "<img src='/assets/tag/mc/衍射.png'/>衍射",
-      "湮灭": "<img src='/assets/tag/mc/湮灭.png'/>湮灭"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic",
+      "Diffraction": "<img src='/assets/tag/mc/衍射.png'/>Diffraction",
+      "Annihilation": "<img src='/assets/tag/mc/湮灭.png'/>Annihilation"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "158081": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动",
-      "衍射": "<img src='/assets/tag/mc/衍射.png'/>衍射",
-      "湮灭": "<img src='/assets/tag/mc/湮灭.png'/>湮灭"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic",
+      "Diffraction": "<img src='/assets/tag/mc/衍射.png'/>Diffraction",
+      "Annihilation": "<img src='/assets/tag/mc/湮灭.png'/>Annihilation"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "158096": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "158095": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "热熔": "<img src='/assets/tag/mc/热熔.png'/>热熔"
+    "Attribute": {
+      "Hot Melt": "<img src='/assets/tag/mc/热熔.png'/>Hot Melt"
     },
-    "武器类型": {
-      "佩枪": "<img src='/assets/tag/mc/佩枪.png'/>佩枪"
+    "Weapon Type": {
+      "Carry Gun": "<img src='/assets/tag/mc/佩枪.png'/>Carry Gun"
     }
   },
   "158094": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冷凝": "<img src='/assets/tag/mc/冷凝.png'/>冷凝"
+    "Attribute": {
+      "Condensation": "<img src='/assets/tag/mc/冷凝.png'/>Condensation"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "158093": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冷凝": "<img src='/assets/tag/mc/冷凝.png'/>冷凝"
+    "Attribute": {
+      "Condensation": "<img src='/assets/tag/mc/冷凝.png'/>Condensation"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "158091": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "热熔": "<img src='/assets/tag/mc/热熔.png'/>热熔"
+    "Attribute": {
+      "Hot Melt": "<img src='/assets/tag/mc/热熔.png'/>Hot Melt"
     },
-    "武器类型": {
-      "佩枪": "<img src='/assets/tag/mc/佩枪.png'/>佩枪"
+    "Weapon Type": {
+      "Carry Gun": "<img src='/assets/tag/mc/佩枪.png'/>Carry Gun"
     }
   },
   "158087": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic"
     },
-    "武器类型": {
-      "臂铠": "<img src='/assets/tag/mc/臂铠.png'/>臂铠"
+    "Weapon Type": {
+      "Arm Armor": "<img src='/assets/tag/mc/臂铠.png'/>Arm Armor"
     }
   },
   "158086": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "衍射": "<img src='/assets/tag/mc/衍射.png'/>衍射"
+    "Attribute": {
+      "Diffraction": "<img src='/assets/tag/mc/衍射.png'/>Diffraction"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "158101": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic"
     },
-    "武器类型": {
-      "佩枪": "<img src='/assets/tag/mc/佩枪.png'/>佩枪"
+    "Weapon Type": {
+      "Carry Gun": "<img src='/assets/tag/mc/佩枪.png'/>Carry Gun"
     }
   },
   "158097": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "热熔": "<img src='/assets/tag/mc/热熔.png'/>热熔"
+    "Attribute": {
+      "Hot Melt": "<img src='/assets/tag/mc/热熔.png'/>Hot Melt"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "158088": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "湮灭": "<img src='/assets/tag/mc/湮灭.png'/>湮灭"
+    "Attribute": {
+      "Annihilation": "<img src='/assets/tag/mc/湮灭.png'/>Annihilation"
     },
-    "武器类型": {
-      "长刃": "<img src='/assets/tag/mc/长刃.png'/>长刃"
+    "Weapon Type": {
+      "Long Blade": "<img src='/assets/tag/mc/长刃.png'/>Long Blade"
     }
   },
   "158084": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冷凝": "<img src='/assets/tag/mc/冷凝.png'/>冷凝"
+    "Attribute": {
+      "Condensation": "<img src='/assets/tag/mc/冷凝.png'/>Condensation"
     },
-    "武器类型": {
-      "臂铠": "<img src='/assets/tag/mc/臂铠.png'/>臂铠"
+    "Weapon Type": {
+      "Arm Armor": "<img src='/assets/tag/mc/臂铠.png'/>Arm Armor"
     }
   },
   "158090": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "湮灭": "<img src='/assets/tag/mc/湮灭.png'/>湮灭"
+    "Attribute": {
+      "Annihilation": "<img src='/assets/tag/mc/湮灭.png'/>Annihilation"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "158089": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "导电": "<img src='/assets/tag/mc/导电.png'/>导电"
+    "Attribute": {
+      "Conductive": "<img src='/assets/tag/mc/导电.png'/>Conductive"
     },
-    "武器类型": {
-      "臂铠": "<img src='/assets/tag/mc/臂铠.png'/>臂铠"
+    "Weapon Type": {
+      "Arm Armor": "<img src='/assets/tag/mc/臂铠.png'/>Arm Armor"
     }
   },
   "158102": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "导电": "<img src='/assets/tag/mc/导电.png'/>导电"
+    "Attribute": {
+      "Conductive": "<img src='/assets/tag/mc/导电.png'/>Conductive"
     },
-    "武器类型": {
-      "长刃": "<img src='/assets/tag/mc/长刃.png'/>长刃"
+    "Weapon Type": {
+      "Long Blade": "<img src='/assets/tag/mc/长刃.png'/>Long Blade"
     }
   },
   "158110": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic"
     },
-    "武器类型": {
-      "长刃": "<img src='/assets/tag/mc/长刃.png'/>长刃"
+    "Weapon Type": {
+      "Long Blade": "<img src='/assets/tag/mc/长刃.png'/>Long Blade"
     }
   },
   "158715": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "导电": "<img src='/assets/tag/mc/导电.png'/>导电"
+    "Attribute": {
+      "Conductive": "<img src='/assets/tag/mc/导电.png'/>Conductive"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "158713": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "衍射": "<img src='/assets/tag/mc/衍射.png'/>衍射"
+    "Attribute": {
+      "Diffraction": "<img src='/assets/tag/mc/衍射.png'/>Diffraction"
     },
-    "武器类型": {
-      "长刃": "<img src='/assets/tag/mc/长刃.png'/>长刃"
+    "Weapon Type": {
+      "Long Blade": "<img src='/assets/tag/mc/长刃.png'/>Long Blade"
     }
   },
   "158714": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "热熔": "<img src='/assets/tag/mc/热熔.png'/>热熔"
+    "Attribute": {
+      "Hot Melt": "<img src='/assets/tag/mc/热熔.png'/>Hot Melt"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "161487": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冷凝": "<img src='/assets/tag/mc/冷凝.png'/>冷凝"
+    "Attribute": {
+      "Condensation": "<img src='/assets/tag/mc/冷凝.png'/>Condensation"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "161488": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "导电": "<img src='/assets/tag/mc/导电.png'/>导电"
+    "Attribute": {
+      "Conductive": "<img src='/assets/tag/mc/导电.png'/>Conductive"
     },
-    "武器类型": {
-      "臂铠": "<img src='/assets/tag/mc/臂铠.png'/>臂铠"
+    "Weapon Type": {
+      "Arm Armor": "<img src='/assets/tag/mc/臂铠.png'/>Arm Armor"
     }
   },
   "162418": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "衍射": "<img src='/assets/tag/mc/衍射.png'/>衍射"
+    "Attribute": {
+      "Diffraction": "<img src='/assets/tag/mc/衍射.png'/>Diffraction"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "162417": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "冷凝": "<img src='/assets/tag/mc/冷凝.png'/>冷凝"
+    "Attribute": {
+      "Condensation": "<img src='/assets/tag/mc/冷凝.png'/>Condensation"
     },
-    "武器类型": {
-      "臂铠": "<img src='/assets/tag/mc/臂铠.png'/>臂铠"
+    "Weapon Type": {
+      "Arm Armor": "<img src='/assets/tag/mc/臂铠.png'/>Arm Armor"
     }
   },
   "164113": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "湮灭": "<img src='/assets/tag/mc/湮灭.png'/>湮灭"
+    "Attribute": {
+      "Annihilation": "<img src='/assets/tag/mc/湮灭.png'/>Annihilation"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "164249": {
-    "稀有度": {
-      "4星": "<img src='/assets/tag/mc/4星.png' alt='4星' />"
+    "Rarity": {
+      "4Star": "<img src='/assets/tag/mc/4星.png' alt='4Star' />"
     },
-    "属性": {
-      "导电": "<img src='/assets/tag/mc/导电.png'/>导电"
+    "Attribute": {
+      "Conductive": "<img src='/assets/tag/mc/导电.png'/>Conductive"
     },
-    "武器类型": {
-      "长刃": "<img src='/assets/tag/mc/长刃.png'/>长刃"
+    "Weapon Type": {
+      "Long Blade": "<img src='/assets/tag/mc/长刃.png'/>Long Blade"
     }
   },
   "167287": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "冷凝": "<img src='/assets/tag/mc/冷凝.png'/>冷凝"
+    "Attribute": {
+      "Condensation": "<img src='/assets/tag/mc/冷凝.png'/>Condensation"
     },
-    "武器类型": {
-      "佩枪": "<img src='/assets/tag/mc/佩枪.png'/>佩枪"
+    "Weapon Type": {
+      "Carry Gun": "<img src='/assets/tag/mc/佩枪.png'/>Carry Gun"
     }
   },
   "167270": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "湮灭": "<img src='/assets/tag/mc/湮灭.png'/>湮灭"
+    "Attribute": {
+      "Annihilation": "<img src='/assets/tag/mc/湮灭.png'/>Annihilation"
     },
-    "武器类型": {
-      "臂铠": "<img src='/assets/tag/mc/臂铠.png'/>臂铠"
+    "Weapon Type": {
+      "Arm Armor": "<img src='/assets/tag/mc/臂铠.png'/>Arm Armor"
     }
   },
   "167269": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "衍射": "<img src='/assets/tag/mc/衍射.png'/>衍射"
+    "Attribute": {
+      "Diffraction": "<img src='/assets/tag/mc/衍射.png'/>Diffraction"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "167273": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "热熔": "<img src='/assets/tag/mc/热熔.png'/>热熔"
+    "Attribute": {
+      "Hot Melt": "<img src='/assets/tag/mc/热熔.png'/>Hot Melt"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "171681": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "湮灭": "<img src='/assets/tag/mc/湮灭.png'/>湮灭"
+    "Attribute": {
+      "Annihilation": "<img src='/assets/tag/mc/湮灭.png'/>Annihilation"
     },
-    "武器类型": {
-      "音感仪": "<img src='/assets/tag/mc/音感仪.png'/>音感仪"
+    "Weapon Type": {
+      "Audio Sensor": "<img src='/assets/tag/mc/音感仪.png'/>Audio Sensor"
     }
   },
   "167283": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "衍射": "<img src='/assets/tag/mc/衍射.png'/>衍射"
+    "Attribute": {
+      "Diffraction": "<img src='/assets/tag/mc/衍射.png'/>Diffraction"
     },
-    "武器类型": {
-      "臂铠": "<img src='/assets/tag/mc/臂铠.png'/>臂铠"
+    "Weapon Type": {
+      "Arm Armor": "<img src='/assets/tag/mc/臂铠.png'/>Arm Armor"
     }
   },
   "173088": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic"
     },
-    "武器类型": {
-      "佩枪": "<img src='/assets/tag/mc/佩枪.png'/>佩枪"
+    "Weapon Type": {
+      "Carry Gun": "<img src='/assets/tag/mc/佩枪.png'/>Carry Gun"
     }
   },
   "169357": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "气动": "<img src='/assets/tag/mc/气动.png'/>气动"
+    "Attribute": {
+      "Pneumatic": "<img src='/assets/tag/mc/气动.png'/>Pneumatic"
     },
-    "武器类型": {
-      "迅刀": "<img src='/assets/tag/mc/迅刀.png'/>迅刀"
+    "Weapon Type": {
+      "Swift Blade": "<img src='/assets/tag/mc/迅刀.png'/>Swift Blade"
     }
   },
   "175541": {
-    "稀有度": {
-      "5星": "<img src='/assets/tag/mc/5星.png' alt='5星' />"
+    "Rarity": {
+      "5Star": "<img src='/assets/tag/mc/5星.png' alt='5Star' />"
     },
-    "属性": {
-      "热熔": "<img src='/assets/tag/mc/热熔.png'/>热熔"
+    "Attribute": {
+      "Hot Melt": "<img src='/assets/tag/mc/热熔.png'/>Hot Melt"
     },
-    "武器类型": {
-      "长刃": "<img src='/assets/tag/mc/长刃.png'/>长刃"
+    "Weapon Type": {
+      "Long Blade": "<img src='/assets/tag/mc/长刃.png'/>Long Blade"
     }
   }
 }

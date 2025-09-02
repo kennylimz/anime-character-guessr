@@ -1,444 +1,444 @@
 {
     "43162": {
-        "乐队": {
+        "Band": {
             "Poppin'Party": "<img src='/assets/tag/bandori/Popipa.png'/>Poppin'Party"
         },
-        "担当": {
-            "吉他手": "吉他手",
-            "主唱": "主唱"
+        "Role": {
+            "Guitarist": "Guitarist",
+            "Vocalist": "Vocalist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "43164": {
-        "乐队": {
+        "Band": {
             "Poppin'Party": "<img src='/assets/tag/bandori/Popipa.png'/>Poppin'Party"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "43165": {
-        "乐队": {
+        "Band": {
             "Poppin'Party": "<img src='/assets/tag/bandori/Popipa.png'/>Poppin'Party"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "43167": {
-        "乐队": {
+        "Band": {
             "Poppin'Party": "<img src='/assets/tag/bandori/Popipa.png'/>Poppin'Party"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "43168": {
-        "乐队": {
+        "Band": {
             "Poppin'Party": "<img src='/assets/tag/bandori/Popipa.png'/>Poppin'Party"
         },
-        "担当": {
-            "键盘手": "键盘手"
+        "Role": {
+            "Keyboardist": "Keyboardist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "52507": {
-        "乐队": {
+        "Band": {
             "Afterglow": "<img src='/assets/tag/bandori/Afterglow.png'/>Afterglow"
         },
-        "担当": {
-            "吉他手": "吉他手",
-            "主唱": "主唱"
+        "Role": {
+            "Guitarist": "Guitarist",
+            "Vocalist": "Vocalist"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "52508": {
-        "乐队": {
+        "Band": {
             "Afterglow": "<img src='/assets/tag/bandori/Afterglow.png'/>Afterglow"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "52506": {
-        "乐队": {
+        "Band": {
             "Afterglow": "<img src='/assets/tag/bandori/Afterglow.png'/>Afterglow"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "52509": {
-        "乐队": {
+        "Band": {
             "Afterglow": "<img src='/assets/tag/bandori/Afterglow.png'/>Afterglow"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "52510": {
-        "乐队": {
+        "Band": {
             "Afterglow": "<img src='/assets/tag/bandori/Afterglow.png'/>Afterglow"
         },
-        "担当": {
-            "键盘手": "键盘手"
+        "Role": {
+            "Keyboardist": "Keyboardist"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "52802": {
-        "乐队": {
+        "Band": {
             "Pastel*Palettes": "<img src='/assets/tag/bandori/Pastel_Palettes.png'/>Pastel*Palettes"
         },
-        "担当": {
-            "主唱": "主唱"
+        "Role": {
+            "Vocalist": "Vocalist"
         },
-        "学校": {
-            "四叶女子大学": "四叶女子大学"
+        "School": {
+            "Yotsuba Women’s University": "Yotsuba Women’s University"
         }
     },
     "52803": {
-        "乐队": {
+        "Band": {
             "Pastel*Palettes": "<img src='/assets/tag/bandori/Pastel_Palettes.png'/>Pastel*Palettes"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "庆鹏女子大学": "庆鹏女子大学"
+        "School": {
+            "Qingpeng Women’s University": "Qingpeng Women’s University"
         }
     },
     "52819": {
-        "乐队": {
+        "Band": {
             "Pastel*Palettes": "<img src='/assets/tag/bandori/Pastel_Palettes.png'/>Pastel*Palettes"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "四叶女子大学": "四叶女子大学"
+        "School": {
+            "Yotsuba Women’s University": "Yotsuba Women’s University"
         }
     },
     "52820": {
-        "乐队": {
+        "Band": {
             "Pastel*Palettes": "<img src='/assets/tag/bandori/Pastel_Palettes.png'/>Pastel*Palettes"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "庆鹏女子大学": "庆鹏女子大学"
+        "School": {
+            "Qingpeng Women’s University": "Qingpeng Women’s University"
         }
     },
     "52821": {
-        "乐队": {
+        "Band": {
             "Pastel*Palettes": "<img src='/assets/tag/bandori/Pastel_Palettes.png'/>Pastel*Palettes"
         },
-        "担当": {
-            "键盘手": "键盘手"
+        "Role": {
+            "Keyboardist": "Keyboardist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "52822": {
-        "乐队": {
+        "Band": {
             "Roselia": "<img src='/assets/tag/bandori/Roselia.png'/>Roselia"
         },
-        "担当": {
-            "主唱": "主唱"
+        "Role": {
+            "Vocalist": "Vocalist"
         },
-        "学校": {
-            "四叶女子大学": "四叶女子大学"
+        "School": {
+            "Yotsuba Women’s University": "Yotsuba Women’s University"
         }
     },
     "52823": {
-        "乐队": {
+        "Band": {
             "Roselia": "<img src='/assets/tag/bandori/Roselia.png'/>Roselia"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "庆鹏女子大学": "庆鹏女子大学"
+        "School": {
+            "Qingpeng Women’s University": "Qingpeng Women’s University"
         }
     },
     "52824": {
-        "乐队": {
+        "Band": {
             "Roselia": "<img src='/assets/tag/bandori/Roselia.png'/>Roselia"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "四叶女子大学": "四叶女子大学"
+        "School": {
+            "Yotsuba Women’s University": "Yotsuba Women’s University"
         }
     },
     "52825": {
-        "乐队": {
+        "Band": {
             "Roselia": "<img src='/assets/tag/bandori/Roselia.png'/>Roselia"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "52826": {
-        "乐队": {
+        "Band": {
             "Roselia": "<img src='/assets/tag/bandori/Roselia.png'/>Roselia"
         },
-        "担当": {
-            "键盘手": "键盘手"
+        "Role": {
+            "Keyboardist": "Keyboardist"
         },
-        "学校": {
-            "四叶女子大学": "四叶女子大学"
+        "School": {
+            "Yotsuba Women’s University": "Yotsuba Women’s University"
         }
     },
     "52827": {
-        "乐队": {
+        "Band": {
             "Hello, Happy World!": "<img src='/assets/tag/bandori/HHW.png'/>Hello, Happy World!"
         },
-        "担当": {
-            "主唱": "主唱"
+        "Role": {
+            "Vocalist": "Vocalist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "52828": {
-        "乐队": {
+        "Band": {
             "Hello, Happy World!": "<img src='/assets/tag/bandori/HHW.png'/>Hello, Happy World!"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "四叶女子大学": "四叶女子大学"
+        "School": {
+            "Yotsuba Women’s University": "Yotsuba Women’s University"
         }
     },
     "52830": {
-        "乐队": {
+        "Band": {
             "Hello, Happy World!": "<img src='/assets/tag/bandori/HHW.png'/>Hello, Happy World!"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "52831": {
-        "乐队": {
+        "Band": {
             "Hello, Happy World!": "<img src='/assets/tag/bandori/HHW.png'/>Hello, Happy World!"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "庆鹏女子大学": "庆鹏女子大学"
+        "School": {
+            "Qingpeng Women’s University": "Qingpeng Women’s University"
         }
     },
     "52832": {
-        "乐队": {
+        "Band": {
             "Hello, Happy World!": "<img src='/assets/tag/bandori/HHW.png'/>Hello, Happy World!"
         },
-        "担当": {
+        "Role": {
             "DJ": "DJ"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "76314": {
-        "乐队": {
+        "Band": {
             "Morfonica": "<img src='/assets/tag/bandori/Morfonica.png'/>Morfonica"
         },
-        "担当": {
-            "主唱": "主唱"
+        "Role": {
+            "Vocalist": "Vocalist"
         },
-        "学校": {
-            "月之森女子学园": "月之森女子学园"
+        "School": {
+            "Moon Forest Girls’ Academy": "Moon Forest Girls’ Academy"
         }
     },
     "76315": {
-        "乐队": {
+        "Band": {
             "Morfonica": "<img src='/assets/tag/bandori/Morfonica.png'/>Morfonica"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "月之森女子学园": "月之森女子学园"
+        "School": {
+            "Moon Forest Girls’ Academy": "Moon Forest Girls’ Academy"
         }
     },
     "76316": {
-        "乐队": {
+        "Band": {
             "Morfonica": "<img src='/assets/tag/bandori/Morfonica.png'/>Morfonica"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "月之森女子学园": "月之森女子学园"
+        "School": {
+            "Moon Forest Girls’ Academy": "Moon Forest Girls’ Academy"
         }
     },
     "76317": {
-        "乐队": {
+        "Band": {
             "Morfonica": "<img src='/assets/tag/bandori/Morfonica.png'/>Morfonica"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "月之森女子学园": "月之森女子学园"
+        "School": {
+            "Moon Forest Girls’ Academy": "Moon Forest Girls’ Academy"
         }
     },
     "76318": {
-        "乐队": {
+        "Band": {
             "Morfonica": "<img src='/assets/tag/bandori/Morfonica.png'/>Morfonica"
         },
-        "担当": {
-            "小提琴手": "小提琴手"
+        "Role": {
+            "Violinist": "Violinist"
         },
-        "学校": {
-            "月之森女子学园": "月之森女子学园"
+        "School": {
+            "Moon Forest Girls’ Academy": "Moon Forest Girls’ Academy"
         }
     },
     "68267": {
-        "乐队": {
+        "Band": {
             "RAISE A SUILEN": "<img src='/assets/tag/bandori/RAS.png'/>RAISE A SUILEN"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "艺术学院高中": "艺术学院高中"
+        "School": {
+            "Art Academy High School": "Art Academy High School"
         }
     },
     "68266": {
-        "乐队": {
+        "Band": {
             "RAISE A SUILEN": "<img src='/assets/tag/bandori/RAS.png'/>RAISE A SUILEN"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "68268": {
-        "乐队": {
+        "Band": {
             "RAISE A SUILEN": "<img src='/assets/tag/bandori/RAS.png'/>RAISE A SUILEN"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "白雪学园": "白雪学园"
+        "School": {
+            "Shirayuki Academy": "Shirayuki Academy"
         }
     },
     "68269": {
-        "乐队": {
+        "Band": {
             "RAISE A SUILEN": "<img src='/assets/tag/bandori/RAS.png'/>RAISE A SUILEN"
         },
-        "担当": {
-            "键盘手": "键盘手"
+        "Role": {
+            "Keyboardist": "Keyboardist"
         },
-        "学校": {
-            "加茂川中央中学": "加茂川中央中学"
+        "School": {
+            "Kamogawa Central Middle School": "Kamogawa Central Middle School"
         }
     },
     "68270": {
-        "乐队": {
+        "Band": {
             "RAISE A SUILEN": "<img src='/assets/tag/bandori/RAS.png'/>RAISE A SUILEN"
         },
-        "担当": {
+        "Role": {
             "DJ": "DJ"
         },
-        "学校": {
-            "瑟罗希亚国际学校": "瑟罗希亚国际学校"
+        "School": {
+            "Serosia International School": "Serosia International School"
         }
     },
     "127790": {
-        "乐队": {
+        "Band": {
             "MyGO!!!!!": "<img src='/assets/tag/bandori/MyGO.png'/>MyGO!!!!!"
         },
-        "担当": {
-            "主唱": "主唱"
+        "Role": {
+            "Vocalist": "Vocalist"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "127791": {
-        "乐队": {
+        "Band": {
             "MyGO!!!!!": "<img src='/assets/tag/bandori/MyGO.png'/>MyGO!!!!!"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "羽丘女子学园": "羽丘女子学园"
+        "School": {
+            "Haneoka Girls’ Academy": "Haneoka Girls’ Academy"
         }
     },
     "127792": {
-        "乐队": {
+        "Band": {
             "MyGO!!!!!": "<img src='/assets/tag/bandori/MyGO.png'/>MyGO!!!!!"
         },
-        "担当": {
-            "吉他手": "吉他手"
+        "Role": {
+            "Guitarist": "Guitarist"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     },
     "127793": {
-        "乐队": {
+        "Band": {
             "MyGO!!!!!": "<img src='/assets/tag/bandori/MyGO.png'/>MyGO!!!!!"
         },
-        "担当": {
-            "贝斯手": "贝斯手"
+        "Role": {
+            "Bassist": "Bassist"
         },
-        "学校": {
-            "月之森女子学园": "月之森女子学园"
+        "School": {
+            "Moon Forest Girls’ Academy": "Moon Forest Girls’ Academy"
         }
     },
     "127794": {
-        "乐队": {
+        "Band": {
             "MyGO!!!!!": "<img src='/assets/tag/bandori/MyGO.png'/>MyGO!!!!!"
         },
-        "担当": {
-            "鼓手": "鼓手"
+        "Role": {
+            "Drummer": "Drummer"
         },
-        "学校": {
-            "花咲川女子学园": "花咲川女子学园"
+        "School": {
+            "Hanasakigawa Girls’ Academy": "Hanasakigawa Girls’ Academy"
         }
     }
 }

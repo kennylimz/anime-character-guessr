@@ -1,767 +1,767 @@
 {
     "86263": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>",
             "B": "<img src='/assets/tag/pns/B.png' alt='B'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "光纹太刀": "<img src='/assets/tag/pns/光纹太刀.png' alt='光纹太刀'/>光纹太刀",
-            "太刀": "<img src='/assets/tag/pns/太刀.png' alt='太刀'/>太刀"
+        "Weapon Type": {
+            "Light-Pattern Katana": "<img src='/assets/tag/pns/光纹太刀.png' alt='Light-Pattern Katana'/>Light-Pattern Katana",
+            "Katana": "<img src='/assets/tag/pns/太刀.png' alt='Katana'/>Katana"
         },
-        "属性": {
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "冰": "<img src='/assets/tag/pns/冰.png' alt='冰'/>冰",
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷"
+        "Attribute": {
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Ice": "<img src='/assets/tag/pns/冰.png' alt='Ice'/>Ice",
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning"
         },
-        "效应": {
-            "电束": "<img src='/assets/tag/pns/电束.png' alt='电束'/>电束"
+        "Effect": {
+            "Electric Beam": "<img src='/assets/tag/pns/电束.png' alt='Electric Beam'/>Electric Beam"
         },
-        "所属": {
-            "灰鸦小队": "<img src='/assets/tag/pns/灰鸦小队.png' alt='灰鸦小队'/>灰鸦小队"
+        "Affiliation": {
+            "Grey Raven Squad": "<img src='/assets/tag/pns/灰鸦小队.png' alt='Grey Raven Squad'/>Grey Raven Squad"
         }
     },
     "86264": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "复合兵装": "<img src='/assets/tag/pns/复合兵装.png' alt='复合兵装'/>复合兵装",
-            "双枪": "<img src='/assets/tag/pns/双枪.png' alt='双枪'/>双枪"
+        "Weapon Type": {
+            "Composite Armament": "<img src='/assets/tag/pns/复合兵装.png' alt='Composite Armament'/>Composite Armament",
+            "Dual Guns": "<img src='/assets/tag/pns/双枪.png' alt='Dual Guns'/>Dual Guns"
         },
-        "属性": {
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "灰鸦小队": "<img src='/assets/tag/pns/灰鸦小队.png' alt='灰鸦小队'/>灰鸦小队"
+        "Affiliation": {
+            "Grey Raven Squad": "<img src='/assets/tag/pns/灰鸦小队.png' alt='Grey Raven Squad'/>Grey Raven Squad"
         }
     },
     "86265": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>",
             "B": "<img src='/assets/tag/pns/B.png' alt='B'/>"
         },
-        "机体类型": {
-            "增幅型": "<img src='/assets/tag/pns/增幅型.png' alt='增幅型'/>增幅型",
-            "辅助型": "<img src='/assets/tag/pns/辅助型.png' alt='辅助型'/>辅助型"
+        "Mech Type": {
+            "Amplifier Type": "<img src='/assets/tag/pns/增幅型.png' alt='Amplifier Type'/>Amplifier Type",
+            "Support Type": "<img src='/assets/tag/pns/辅助型.png' alt='Support Type'/>Support Type"
         },
-        "武器类型": {
-            "权杖": "<img src='/assets/tag/pns/权杖.png' alt='权杖'/>权杖",
-            "浮游炮": "<img src='/assets/tag/pns/浮游炮.png' alt='浮游炮'/>浮游炮"
+        "Weapon Type": {
+            "Staff": "<img src='/assets/tag/pns/权杖.png' alt='Staff'/>Staff",
+            "Floating Cannon": "<img src='/assets/tag/pns/浮游炮.png' alt='Floating Cannon'/>Floating Cannon"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火",
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire",
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "灰鸦小队": "<img src='/assets/tag/pns/灰鸦小队.png' alt='灰鸦小队'/>灰鸦小队"
+        "Affiliation": {
+            "Grey Raven Squad": "<img src='/assets/tag/pns/灰鸦小队.png' alt='Grey Raven Squad'/>Grey Raven Squad"
         }
     },
     "86605": {
-        "稀有度": {
+        "Rarity": {
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "辅助型": "<img src='/assets/tag/pns/辅助型.png' alt='辅助型'/>辅助型"
+        "Mech Type": {
+            "Support Type": "<img src='/assets/tag/pns/辅助型.png' alt='Support Type'/>Support Type"
         },
-        "武器类型": {
-            "双枪": "<img src='/assets/tag/pns/双枪.png' alt='双枪'/>双枪"
+        "Weapon Type": {
+            "Dual Guns": "<img src='/assets/tag/pns/双枪.png' alt='Dual Guns'/>Dual Guns"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "阿迪莱商业联盟": "<img src='/assets/tag/pns/阿迪莱商业联盟.png' alt='阿迪莱商业联盟'/>阿迪莱商业联盟"
+        "Affiliation": {
+            "Adlai Commercial Alliance": "<img src='/assets/tag/pns/阿迪莱商业联盟.png' alt='Adlai Commercial Alliance'/>Adlai Commercial Alliance"
         }
     },
     "86703": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型",
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type",
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "重破锤": "<img src='/assets/tag/pns/重破锤.png' alt='重破锤'/>重破锤",
-            "火炮": "<img src='/assets/tag/pns/火炮.png' alt='火炮'/>火炮"
+        "Weapon Type": {
+            "Heavy Breaker": "<img src='/assets/tag/pns/重破锤.png' alt='Heavy Breaker'/>Heavy Breaker",
+            "Cannon": "<img src='/assets/tag/pns/火炮.png' alt='Cannon'/>Cannon"
         },
-        "属性": {
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火"
+        "Attribute": {
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire"
         },
-        "效应": {
-            "电束": "<img src='/assets/tag/pns/电束.png' alt='电束'/>电束"
+        "Effect": {
+            "Electric Beam": "<img src='/assets/tag/pns/电束.png' alt='Electric Beam'/>Electric Beam"
         },
-        "所属": {
-            "工程部队": "<img src='/assets/tag/pns/工程部队.png' alt='工程部队'/>工程部队"
+        "Affiliation": {
+            "Engineering Corps": "<img src='/assets/tag/pns/工程部队.png' alt='Engineering Corps'/>Engineering Corps"
         }
     },
     "86945": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "剑杖": "<img src='/assets/tag/pns/剑杖.png' alt='剑杖'/>剑杖",
-            "弓": "<img src='/assets/tag/pns/弓.png' alt='弓'/>弓"
+        "Weapon Type": {
+            "Sword Staff": "<img src='/assets/tag/pns/剑杖.png' alt='Sword Staff'/>Sword Staff",
+            "Bow": "<img src='/assets/tag/pns/弓.png' alt='Bow'/>Bow"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning"
         },
-        "效应": {
-            "真意斩": "<img src='/assets/tag/pns/真意斩.png' alt='真意斩'/>真意斩"
+        "Effect": {
+            "True Intent Slash": "<img src='/assets/tag/pns/真意斩.png' alt='True Intent Slash'/>True Intent Slash"
         },
-        "所属": {
-            "清理部队": "<img src='/assets/tag/pns/清理部队.png' alt='清理部队'/>清理部队"
+        "Affiliation": {
+            "Cleanup Unit": "<img src='/assets/tag/pns/清理部队.png' alt='Cleanup Unit'/>Cleanup Unit"
         }
     },
     "87068": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "B": "<img src='/assets/tag/pns/B.png' alt='B'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type"
         },
-        "武器类型": {
-            "盾斧": "<img src='/assets/tag/pns/盾斧.png' alt='盾斧'/>盾斧",
-            "超电锯": "<img src='/assets/tag/pns/超电锯.png' alt='超电锯'/>超电锯",
-            "电锯": "<img src='/assets/tag/pns/电锯.png' alt='电锯'/>电锯"
+        "Weapon Type": {
+            "Shield Axe": "<img src='/assets/tag/pns/盾斧.png' alt='Shield Axe'/>Shield Axe",
+            "Super Chainsaw": "<img src='/assets/tag/pns/超电锯.png' alt='Super Chainsaw'/>Super Chainsaw",
+            "Chainsaw": "<img src='/assets/tag/pns/电锯.png' alt='Chainsaw'/>Chainsaw"
         },
-        "属性": {
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷",
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning",
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "焚烧": "<img src='/assets/tag/pns/焚烧.png' alt='焚烧'/>焚烧"
+        "Effect": {
+            "Incineration": "<img src='/assets/tag/pns/焚烧.png' alt='Incineration'/>Incineration"
         },
-        "所属": {
-            "机械教会": "<img src='/assets/tag/pns/机械教会.png' alt='机械教会'/>机械教会"
+        "Affiliation": {
+            "Mechanical Church": "<img src='/assets/tag/pns/机械教会.png' alt='Mechanical Church'/>Mechanical Church"
         }
     },
     "87069": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型",
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type",
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "拓刀": "<img src='/assets/tag/pns/拓刀.png' alt='拓刀'/>拓刀",
-            "短刀": "<img src='/assets/tag/pns/短刀.png' alt='短刀'/>短刀"
+        "Weapon Type": {
+            "Extended Blade": "<img src='/assets/tag/pns/拓刀.png' alt='Extended Blade'/>Extended Blade",
+            "Dagger": "<img src='/assets/tag/pns/短刀.png' alt='Dagger'/>Dagger"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火",
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire",
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "遗忘者": "<img src='/assets/tag/pns/遗忘者.png' alt='遗忘者'/>遗忘者"
+        "Affiliation": {
+            "Oblivion": "<img src='/assets/tag/pns/遗忘者.png' alt='Oblivion'/>Oblivion"
         }
     },
     "87070": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type"
         },
-        "武器类型": {
-            "大剑": "<img src='/assets/tag/pns/大剑.png' alt='大剑'/>大剑"
+        "Weapon Type": {
+            "Great Sword": "<img src='/assets/tag/pns/大剑.png' alt='Great Sword'/>Great Sword"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "突击鹰小队": "<img src='/assets/tag/pns/突击鹰小队.png' alt='突击鹰小队'/>突击鹰小队"
+        "Affiliation": {
+            "Assault Eagle Squad": "<img src='/assets/tag/pns/突击鹰小队.png' alt='Assault Eagle Squad'/>Assault Eagle Squad"
         }
     },
     "87071": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type"
         },
-        "武器类型": {
-            "铳刃": "<img src='/assets/tag/pns/铳刃.png' alt='铳刃'/>铳刃",
-            "镰刀": "<img src='/assets/tag/pns/镰刀.png' alt='镰刀'/>镰刀"
+        "Weapon Type": {
+            "Gun Blade": "<img src='/assets/tag/pns/铳刃.png' alt='Gun Blade'/>Gun Blade",
+            "Scythe": "<img src='/assets/tag/pns/镰刀.png' alt='Scythe'/>Scythe"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "冰": "<img src='/assets/tag/pns/冰.png' alt='冰'/>冰",
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Ice": "<img src='/assets/tag/pns/冰.png' alt='Ice'/>Ice",
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "突击鹰小队": "<img src='/assets/tag/pns/突击鹰小队.png' alt='突击鹰小队'/>突击鹰小队"
+        "Affiliation": {
+            "Assault Eagle Squad": "<img src='/assets/tag/pns/突击鹰小队.png' alt='Assault Eagle Squad'/>Assault Eagle Squad"
         }
     },
     "87072": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "增幅型": "<img src='/assets/tag/pns/增幅型.png' alt='增幅型'/>增幅型",
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型"
+        "Mech Type": {
+            "Amplifier Type": "<img src='/assets/tag/pns/增幅型.png' alt='Amplifier Type'/>Amplifier Type",
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type"
         },
-        "武器类型": {
-            "光束铳枪": "<img src='/assets/tag/pns/光束铳枪.png' alt='光束铳枪'/>光束铳枪",
-            "镰刀": "<img src='/assets/tag/pns/镰刀.png' alt='镰刀'/>镰刀"
+        "Weapon Type": {
+            "Beam Gun": "<img src='/assets/tag/pns/光束铳枪.png' alt='Beam Gun'/>Beam Gun",
+            "Scythe": "<img src='/assets/tag/pns/镰刀.png' alt='Scythe'/>Scythe"
         },
-        "属性": {
-            "冰": "<img src='/assets/tag/pns/冰.png' alt='冰'/>冰",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Ice": "<img src='/assets/tag/pns/冰.png' alt='Ice'/>Ice",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "虹莺小队": "<img src='/assets/tag/pns/虹莺小队.png' alt='虹莺小队'/>虹莺小队",
-            "艺术协会": "<img src='/assets/tag/pns/艺术协会.png' alt='艺术协会'/>艺术协会"
+        "Affiliation": {
+            "Rainbow Oriole Squad": "<img src='/assets/tag/pns/虹莺小队.png' alt='Rainbow Oriole Squad'/>Rainbow Oriole Squad",
+            "Art Association": "<img src='/assets/tag/pns/艺术协会.png' alt='Art Association'/>Art Association"
         }
     },
     "87073": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "先锋型": "<img src='/assets/tag/pns/先锋型.png' alt='先锋型'/>先锋型"
+        "Mech Type": {
+            "Vanguard Type": "<img src='/assets/tag/pns/先锋型.png' alt='Vanguard Type'/>Vanguard Type"
         },
-        "武器类型": {
-            "独域·大剑": "<img src='/assets/tag/pns/独域·大剑.png' alt='独域·大剑'/>独域·大剑"
+        "Weapon Type": {
+            "独域·Great Sword": "<img src='/assets/tag/pns/独域·大剑.png' alt='独域·Great Sword'/>独域·Great Sword"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "突击鹰小队": "<img src='/assets/tag/pns/突击鹰小队.png' alt='突击鹰小队'/>突击鹰小队"
+        "Affiliation": {
+            "Assault Eagle Squad": "<img src='/assets/tag/pns/突击鹰小队.png' alt='Assault Eagle Squad'/>Assault Eagle Squad"
         }
     },
     "87074": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "增幅型": "<img src='/assets/tag/pns/增幅型.png' alt='增幅型'/>增幅型",
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型",
-            "辅助型": "<img src='/assets/tag/pns/辅助型.png' alt='辅助型'/>辅助型"
+        "Mech Type": {
+            "Amplifier Type": "<img src='/assets/tag/pns/增幅型.png' alt='Amplifier Type'/>Amplifier Type",
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type",
+            "Support Type": "<img src='/assets/tag/pns/辅助型.png' alt='Support Type'/>Support Type"
         },
-        "武器类型": {
-            "双刃枪": "<img src='/assets/tag/pns/双刃枪.png' alt='双刃枪'/>双刃枪",
-            "旗枪": "<img src='/assets/tag/pns/旗枪.png' alt='旗枪'/>旗枪",
-            "太刀": "<img src='/assets/tag/pns/太刀.png' alt='太刀'/>太刀"
+        "Weapon Type": {
+            "Dual Blade Gun": "<img src='/assets/tag/pns/双刃枪.png' alt='Dual Blade Gun'/>Dual Blade Gun",
+            "Flag Gun": "<img src='/assets/tag/pns/旗枪.png' alt='Flag Gun'/>Flag Gun",
+            "Katana": "<img src='/assets/tag/pns/太刀.png' alt='Katana'/>Katana"
         },
-        "属性": {
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷",
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning",
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "黯衍": "<img src='/assets/tag/pns/黯衍.png' alt='黯衍'/>黯衍"
+        "Effect": {
+            "Dark Derivative": "<img src='/assets/tag/pns/黯衍.png' alt='Dark Derivative'/>Dark Derivative"
         },
-        "所属": {
-            "三头犬小队": "<img src='/assets/tag/pns/三头犬小队.png' alt='三头犬小队'/>三头犬小队"
+        "Affiliation": {
+            "Cerberus Squad": "<img src='/assets/tag/pns/三头犬小队.png' alt='Cerberus Squad'/>Cerberus Squad"
         }
     },
     "87075": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type"
         },
-        "武器类型": {
-            "枪盾": "<img src='/assets/tag/pns/枪盾.png' alt='枪盾'/>枪盾"
+        "Weapon Type": {
+            "Gun Shield": "<img src='/assets/tag/pns/枪盾.png' alt='Gun Shield'/>Gun Shield"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "北极航线联合": "<img src='/assets/tag/pns/北极航线联合.png' alt='北极航线联合'/>北极航线联合"
+        "Affiliation": {
+            "Arctic Route Union": "<img src='/assets/tag/pns/北极航线联合.png' alt='Arctic Route Union'/>Arctic Route Union"
         }
     },
     "87076": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型",
-            "先锋型": "<img src='/assets/tag/pns/先锋型.png' alt='先锋型'/>先锋型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type",
+            "Vanguard Type": "<img src='/assets/tag/pns/先锋型.png' alt='Vanguard Type'/>Vanguard Type"
         },
-        "武器类型": {
-            "长剑": "<img src='/assets/tag/pns/长剑.png' alt='长剑'/>长剑",
-            "独域·龙枪": "<img src='/assets/tag/pns/独域·龙枪.png' alt='独域·龙枪'/>独域·龙枪"
+        "Weapon Type": {
+            "Longsword": "<img src='/assets/tag/pns/长剑.png' alt='Longsword'/>Longsword",
+            "独域·Dragon Lance": "<img src='/assets/tag/pns/独域·龙枪.png' alt='独域·Dragon Lance'/>独域·Dragon Lance"
         },
-        "属性": {
-            "冰": "<img src='/assets/tag/pns/冰.png' alt='冰'/>冰",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Ice": "<img src='/assets/tag/pns/冰.png' alt='Ice'/>Ice",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "九龙商会": "<img src='/assets/tag/pns/九龙商会.png' alt='九龙商会'/>九龙商会"
+        "Affiliation": {
+            "Nine Dragons Chamber of Commerce": "<img src='/assets/tag/pns/九龙商会.png' alt='Nine Dragons Chamber of Commerce'/>Nine Dragons Chamber of Commerce"
         }
     },
     "87544": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "湮灭型": "<img src='/assets/tag/pns/湮灭型.png' alt='湮灭型'/>湮灭型",
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Annihilation Type": "<img src='/assets/tag/pns/湮灭型.png' alt='Annihilation Type'/>Annihilation Type",
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "月轮": "<img src='/assets/tag/pns/月轮.png' alt='月轮'/>月轮",
-            "增幅器": "<img src='/assets/tag/pns/增幅器.png' alt='增幅器'/>增幅器"
+        "Weapon Type": {
+            "Moon Wheel": "<img src='/assets/tag/pns/月轮.png' alt='Moon Wheel'/>Moon Wheel",
+            "Amplifier": "<img src='/assets/tag/pns/增幅器.png' alt='Amplifier'/>Amplifier"
         },
-        "属性": {
-            "空": "<img src='/assets/tag/pns/空.png' alt='空'/>空",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Void": "<img src='/assets/tag/pns/空.png' alt='Void'/>Void",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "紊乱": "<img src='/assets/tag/pns/紊乱.png' alt='紊乱'/>紊乱"
+        "Effect": {
+            "Chaos": "<img src='/assets/tag/pns/紊乱.png' alt='Chaos'/>Chaos"
         },
-        "所属": {
-            "升格者": "<img src='/assets/tag/pns/升格者.png' alt='升格者'/>升格者"
+        "Affiliation": {
+            "Ascender": "<img src='/assets/tag/pns/升格者.png' alt='Ascender'/>Ascender"
         }
     },
     "96115": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型",
-            "增幅型": "<img src='/assets/tag/pns/增幅型.png' alt='增幅型'/>增幅型",
-            "先锋型": "<img src='/assets/tag/pns/先锋型.png' alt='先锋型'/>先锋型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type",
+            "Amplifier Type": "<img src='/assets/tag/pns/增幅型.png' alt='Amplifier Type'/>Amplifier Type",
+            "Vanguard Type": "<img src='/assets/tag/pns/先锋型.png' alt='Vanguard Type'/>Vanguard Type"
         },
-        "武器类型": {
-            "弦剑": "<img src='/assets/tag/pns/弦剑.png' alt='弦剑'/>弦剑",
-            "笛剑": "<img src='/assets/tag/pns/笛剑.png' alt='笛剑'/>笛剑",
-            "独域·提琴剑": "<img src='/assets/tag/pns/独域·提琴剑.png' alt='独域·提琴剑'/>独域·提琴剑"
+        "Weapon Type": {
+            "String Sword": "<img src='/assets/tag/pns/弦剑.png' alt='String Sword'/>String Sword",
+            "Flute Sword": "<img src='/assets/tag/pns/笛剑.png' alt='Flute Sword'/>Flute Sword",
+            "独域·Violin Sword": "<img src='/assets/tag/pns/独域·提琴剑.png' alt='独域·Violin Sword'/>独域·Violin Sword"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗",
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark",
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning"
         },
-        "效应": {
-            "覆冰": "<img src='/assets/tag/pns/覆冰.png' alt='覆冰'/>覆冰"
+        "Effect": {
+            "覆Ice": "<img src='/assets/tag/pns/覆冰.png' alt='Frozen'/>覆Ice"
         },
-        "所属": {
-            "艺术协会": "<img src='/assets/tag/pns/艺术协会.png' alt='艺术协会'/>艺术协会"
+        "Affiliation": {
+            "Art Association": "<img src='/assets/tag/pns/艺术协会.png' alt='Art Association'/>Art Association"
         }
     },
     "96116": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型",
-            "辅助型": "<img src='/assets/tag/pns/辅助型.png' alt='辅助型'/>辅助型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type",
+            "Support Type": "<img src='/assets/tag/pns/辅助型.png' alt='Support Type'/>Support Type"
         },
-        "武器类型": {
-            "左轮手枪": "<img src='/assets/tag/pns/左轮手枪.png' alt='左轮手枪'/>左轮手枪",
-            "枪械组": "<img src='/assets/tag/pns/枪械组.png' alt='枪械组'/>枪械组"
+        "Weapon Type": {
+            "Revolver": "<img src='/assets/tag/pns/左轮手枪.png' alt='Revolver'/>Revolver",
+            "Firearm Unit": "<img src='/assets/tag/pns/枪械组.png' alt='Firearm Unit'/>Firearm Unit"
         },
-        "属性": {
-            "冰": "<img src='/assets/tag/pns/冰.png' alt='冰'/>冰",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Ice": "<img src='/assets/tag/pns/冰.png' alt='Ice'/>Ice",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "覆冰": "<img src='/assets/tag/pns/覆冰.png' alt='覆冰'/>覆冰"
+        "Effect": {
+            "覆Ice": "<img src='/assets/tag/pns/覆冰.png' alt='Frozen'/>覆Ice"
         },
-        "所属": {
-            "突击鹰小队": "<img src='/assets/tag/pns/突击鹰小队.png' alt='突击鹰小队'/>突击鹰小队"
+        "Affiliation": {
+            "Assault Eagle Squad": "<img src='/assets/tag/pns/突击鹰小队.png' alt='Assault Eagle Squad'/>Assault Eagle Squad"
         }
     },
     "99495": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "增幅型": "<img src='/assets/tag/pns/增幅型.png' alt='增幅型'/>增幅型",
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型"
+        "Mech Type": {
+            "Amplifier Type": "<img src='/assets/tag/pns/增幅型.png' alt='Amplifier Type'/>Amplifier Type",
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type"
         },
-        "武器类型": {
-            "爪刃": "<img src='/assets/tag/pns/爪刃.png' alt='爪刃'/>爪刃",
-            "协作子机": "<img src='/assets/tag/pns/协作子机.png' alt='协作子机'/>协作子机"
+        "Weapon Type": {
+            "Claw Blade": "<img src='/assets/tag/pns/爪刃.png' alt='Claw Blade'/>Claw Blade",
+            "Co-op Drone": "<img src='/assets/tag/pns/协作子机.png' alt='Co-op Drone'/>Co-op Drone"
         },
-        "属性": {
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "三头犬小队": "<img src='/assets/tag/pns/三头犬小队.png' alt='三头犬小队'/>三头犬小队"
+        "Affiliation": {
+            "Cerberus Squad": "<img src='/assets/tag/pns/三头犬小队.png' alt='Cerberus Squad'/>Cerberus Squad"
         }
     },
     "124873": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "封刃太刀": "<img src='/assets/tag/pns/封刃太刀.png' alt='封刃太刀'/>封刃太刀",
-            "太刀": "<img src='/assets/tag/pns/太刀.png' alt='太刀'/>太刀"
+        "Weapon Type": {
+            "封刃Katana": "<img src='/assets/tag/pns/封刃太刀.png' alt='Sealed Katana'/>封刃Katana",
+            "Katana": "<img src='/assets/tag/pns/太刀.png' alt='Katana'/>Katana"
         },
-        "属性": {
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷",
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning",
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "黯衍": "<img src='/assets/tag/pns/黯衍.png' alt='黯衍'/>黯衍"
+        "Effect": {
+            "Dark Derivative": "<img src='/assets/tag/pns/黯衍.png' alt='Dark Derivative'/>Dark Derivative"
         },
-        "所属": {
-            "升格者": "<img src='/assets/tag/pns/升格者.png' alt='升格者'/>升格者"
+        "Affiliation": {
+            "Ascender": "<img src='/assets/tag/pns/升格者.png' alt='Ascender'/>Ascender"
         }
     },
     "124877": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "先锋型": "<img src='/assets/tag/pns/先锋型.png' alt='先锋型'/>先锋型"
+        "Mech Type": {
+            "Vanguard Type": "<img src='/assets/tag/pns/先锋型.png' alt='Vanguard Type'/>Vanguard Type"
         },
-        "武器类型": {
-            "独域·回旋龙厄": "<img src='/assets/tag/pns/独域·回旋龙厄.png' alt='独域·回旋龙厄'/>独域·回旋龙厄"
+        "Weapon Type": {
+            "独域·Spiral Dragon": "<img src='/assets/tag/pns/独域·回旋龙厄.png' alt='独域·Spiral Dragon'/>独域·Spiral Dragon"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "九龙商会": "<img src='/assets/tag/pns/九龙商会.png' alt='九龙商会'/>九龙商会"
+        "Affiliation": {
+            "Nine Dragons Chamber of Commerce": "<img src='/assets/tag/pns/九龙商会.png' alt='Nine Dragons Chamber of Commerce'/>Nine Dragons Chamber of Commerce"
         }
     },
     "124878": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "先锋型": "<img src='/assets/tag/pns/先锋型.png' alt='先锋型'/>先锋型"
+        "Mech Type": {
+            "Vanguard Type": "<img src='/assets/tag/pns/先锋型.png' alt='Vanguard Type'/>Vanguard Type"
         },
-        "武器类型": {
-            "独域·链刀": "<img src='/assets/tag/pns/独域·链刀.png' alt='独域·链刀'/>独域·链刀"
+        "Weapon Type": {
+            "独域·Chain Blade": "<img src='/assets/tag/pns/独域·链刀.png' alt='独域·Chain Blade'/>独域·Chain Blade"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "不明": "<img src='/assets/tag/pns/不明.png' alt='不明'/>不明"
+        "Affiliation": {
+            "Unknown": "<img src='/assets/tag/pns/不明.png' alt='Unknown'/>Unknown"
         }
     },
     "124880": {
-        "稀有度": {
+        "Rarity": {
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "螳螂刃": "<img src='/assets/tag/pns/螳螂刃.png' alt='螳螂刃'/>螳螂刃"
+        "Weapon Type": {
+            "Mantis Blade": "<img src='/assets/tag/pns/螳螂刃.png' alt='Mantis Blade'/>Mantis Blade"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "冰": "<img src='/assets/tag/pns/冰.png' alt='冰'/>冰"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Ice": "<img src='/assets/tag/pns/冰.png' alt='Ice'/>Ice"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "清庭白鹭": "<img src='/assets/tag/pns/清庭白鹭.png' alt='清庭白鹭'/>清庭白鹭"
+        "Affiliation": {
+            "Pure Court Egret": "<img src='/assets/tag/pns/清庭白鹭.png' alt='Pure Court Egret'/>Pure Court Egret"
         }
     },
     "129128": {
-        "稀有度": {
+        "Rarity": {
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "机械臂": "<img src='/assets/tag/pns/机械臂.png' alt='机械臂'/>机械臂"
+        "Weapon Type": {
+            "Mechanical Arm": "<img src='/assets/tag/pns/机械臂.png' alt='Mechanical Arm'/>Mechanical Arm"
         },
-        "属性": {
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷"
+        "Attribute": {
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "三头犬小队": "<img src='/assets/tag/pns/三头犬小队.png' alt='三头犬小队'/>三头犬小队"
+        "Affiliation": {
+            "Cerberus Squad": "<img src='/assets/tag/pns/三头犬小队.png' alt='Cerberus Squad'/>Cerberus Squad"
         }
     },
     "130786": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>",
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型",
-            "辅助型": "<img src='/assets/tag/pns/辅助型.png' alt='辅助型'/>辅助型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type",
+            "Support Type": "<img src='/assets/tag/pns/辅助型.png' alt='Support Type'/>Support Type"
         },
-        "武器类型": {
-            "琵琶": "<img src='/assets/tag/pns/琵琶.png' alt='琵琶'/>琵琶",
-            "折扇": "<img src='/assets/tag/pns/折扇.png' alt='折扇'/>折扇"
+        "Weapon Type": {
+            "Pipa": "<img src='/assets/tag/pns/琵琶.png' alt='Pipa'/>Pipa",
+            "Folding Fan": "<img src='/assets/tag/pns/折扇.png' alt='Folding Fan'/>Folding Fan"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "真意斩": "<img src='/assets/tag/pns/真意斩.png' alt='真意斩'/>真意斩"
+        "Effect": {
+            "True Intent Slash": "<img src='/assets/tag/pns/真意斩.png' alt='True Intent Slash'/>True Intent Slash"
         },
-        "所属": {
-            "九龙商会": "<img src='/assets/tag/pns/九龙商会.png' alt='九龙商会'/>九龙商会",
-            "机械教会": "<img src='/assets/tag/pns/机械教会.png' alt='机械教会'/>机械教会"
+        "Affiliation": {
+            "Nine Dragons Chamber of Commerce": "<img src='/assets/tag/pns/九龙商会.png' alt='Nine Dragons Chamber of Commerce'/>Nine Dragons Chamber of Commerce",
+            "Mechanical Church": "<img src='/assets/tag/pns/机械教会.png' alt='Mechanical Church'/>Mechanical Church"
         }
     },
     "150465": {
-        "稀有度": {
+        "Rarity": {
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "装甲型": "<img src='/assets/tag/pns/装甲型.png' alt='装甲型'/>装甲型"
+        "Mech Type": {
+            "Armored Type": "<img src='/assets/tag/pns/装甲型.png' alt='Armored Type'/>Armored Type"
         },
-        "武器类型": {
-            "战术旋棍": "<img src='/assets/tag/pns/战术旋棍.png' alt='战术旋棍'/>战术旋棍"
+        "Weapon Type": {
+            "Tactical Staff": "<img src='/assets/tag/pns/战术旋棍.png' alt='Tactical Staff'/>Tactical Staff"
         },
-        "属性": {
-            "火": "<img src='/assets/tag/pns/火.png' alt='火'/>火"
+        "Attribute": {
+            "Fire": "<img src='/assets/tag/pns/火.png' alt='Fire'/>Fire"
         },
-        "效应": {
-            "焚烧": "<img src='/assets/tag/pns/焚烧.png' alt='焚烧'/>焚烧"
+        "Effect": {
+            "Incineration": "<img src='/assets/tag/pns/焚烧.png' alt='Incineration'/>Incineration"
         },
-        "所属": {
-            "支援部队": "<img src='/assets/tag/pns/支援部队.png' alt='支援部队'/>支援部队"
+        "Affiliation": {
+            "Support Troops": "<img src='/assets/tag/pns/支援部队.png' alt='Support Troops'/>Support Troops"
         }
     },
     "150466": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "异刃戟": "<img src='/assets/tag/pns/异刃戟.png' alt='异刃戟'/>异刃戟"
+        "Weapon Type": {
+            "Exotic Halberd": "<img src='/assets/tag/pns/异刃戟.png' alt='Exotic Halberd'/>Exotic Halberd"
         },
-        "属性": {
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "升格者": "<img src='/assets/tag/pns/升格者.png' alt='升格者'/>升格者"
+        "Affiliation": {
+            "Ascender": "<img src='/assets/tag/pns/升格者.png' alt='Ascender'/>Ascender"
         }
     },
     "150468": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "增幅型": "<img src='/assets/tag/pns/增幅型.png' alt='增幅型'/>增幅型"
+        "Mech Type": {
+            "Amplifier Type": "<img src='/assets/tag/pns/增幅型.png' alt='Amplifier Type'/>Amplifier Type"
         },
-        "武器类型": {
-            "弓": "<img src='/assets/tag/pns/弓.png' alt='弓'/>弓"
+        "Weapon Type": {
+            "Bow": "<img src='/assets/tag/pns/弓.png' alt='Bow'/>Bow"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical"
         },
-        "效应": {
-            "覆冰": "<img src='/assets/tag/pns/覆冰.png' alt='覆冰'/>覆冰"
+        "Effect": {
+            "覆Ice": "<img src='/assets/tag/pns/覆冰.png' alt='Frozen'/>覆Ice"
         },
-        "所属": {
-            "不明": "<img src='/assets/tag/pns/不明.png' alt='不明'/>不明"
+        "Affiliation": {
+            "Unknown": "<img src='/assets/tag/pns/不明.png' alt='Unknown'/>Unknown"
         }
     },
     "150470": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "观测者": "<img src='/assets/tag/pns/观测者.png' alt='观测者'/>观测者"
+        "Mech Type": {
+            "Observer": "<img src='/assets/tag/pns/观测者.png' alt='Observer'/>Observer"
         },
-        "武器类型": {
-            "钥杖": "<img src='/assets/tag/pns/钥杖.png' alt='钥杖'/>钥杖"
+        "Weapon Type": {
+            "Key Staff": "<img src='/assets/tag/pns/钥杖.png' alt='Key Staff'/>Key Staff"
         },
-        "属性": {
-            "空": "<img src='/assets/tag/pns/空.png' alt='空'/>空"
+        "Attribute": {
+            "Void": "<img src='/assets/tag/pns/空.png' alt='Void'/>Void"
         },
-        "效应": {
-            "紊乱": "<img src='/assets/tag/pns/紊乱.png' alt='紊乱'/>紊乱"
+        "Effect": {
+            "Chaos": "<img src='/assets/tag/pns/紊乱.png' alt='Chaos'/>Chaos"
         },
-        "所属": {
+        "Affiliation": {
             "■■■": "<img src='/assets/tag/pns/■■■.png' alt='■■■'/>■■■"
         }
     },
     "150471": {
-        "稀有度": {
+        "Rarity": {
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "动力臂组": "<img src='/assets/tag/pns/动力臂组.png' alt='动力臂组'/>动力臂组"
+        "Weapon Type": {
+            "Power Arm Unit": "<img src='/assets/tag/pns/动力臂组.png' alt='Power Arm Unit'/>Power Arm Unit"
         },
-        "属性": {
-            "雷": "<img src='/assets/tag/pns/雷.png' alt='雷'/>雷"
+        "Attribute": {
+            "Lightning": "<img src='/assets/tag/pns/雷.png' alt='Lightning'/>Lightning"
         },
-        "效应": {
-            "覆冰": "<img src='/assets/tag/pns/覆冰.png' alt='覆冰'/>覆冰"
+        "Effect": {
+            "覆Ice": "<img src='/assets/tag/pns/覆冰.png' alt='Frozen'/>覆Ice"
         },
-        "所属": {
-            "圣甲虫小队": "<img src='/assets/tag/pns/圣甲虫小队.png' alt='圣甲虫小队'/>圣甲虫小队"
+        "Affiliation": {
+            "Beetle Squad": "<img src='/assets/tag/pns/圣甲虫小队.png' alt='Beetle Squad'/>Beetle Squad"
         }
     },
     "150473": {
-        "稀有度": {
+        "Rarity": {
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "辅助型": "<img src='/assets/tag/pns/辅助型.png' alt='辅助型'/>辅助型"
+        "Mech Type": {
+            "Support Type": "<img src='/assets/tag/pns/辅助型.png' alt='Support Type'/>Support Type"
         },
-        "武器类型": {
-            "战术耳机": "<img src='/assets/tag/pns/战术耳机.png' alt='战术耳机'/>战术耳机"
+        "Weapon Type": {
+            "Tactical Headset": "<img src='/assets/tag/pns/战术耳机.png' alt='Tactical Headset'/>Tactical Headset"
         },
-        "属性": {
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗",
-            "空": "<img src='/assets/tag/pns/空.png' alt='空'/>空"
+        "Attribute": {
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark",
+            "Void": "<img src='/assets/tag/pns/空.png' alt='Void'/>Void"
         },
-        "效应": {
-            "紊乱": "<img src='/assets/tag/pns/紊乱.png' alt='紊乱'/>紊乱"
+        "Effect": {
+            "Chaos": "<img src='/assets/tag/pns/紊乱.png' alt='Chaos'/>Chaos"
         },
-        "所属": {
-            "工程部队": "<img src='/assets/tag/pns/工程部队.png' alt='工程部队'/>工程部队"
+        "Affiliation": {
+            "Engineering Corps": "<img src='/assets/tag/pns/工程部队.png' alt='Engineering Corps'/>Engineering Corps"
         }
     },
     "163802": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "增幅型": "<img src='/assets/tag/pns/增幅型.png' alt='增幅型'/>增幅型"
+        "Mech Type": {
+            "Amplifier Type": "<img src='/assets/tag/pns/增幅型.png' alt='Amplifier Type'/>Amplifier Type"
         },
-        "武器类型": {
-            "月伞": "<img src='/assets/tag/pns/月伞.png' alt='月伞'/>月伞"
+        "Weapon Type": {
+            "Moon Umbrella": "<img src='/assets/tag/pns/月伞.png' alt='Moon Umbrella'/>Moon Umbrella"
         },
-        "属性": {
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "电束": "<img src='/assets/tag/pns/电束.png' alt='电束'/>电束"
+        "Effect": {
+            "Electric Beam": "<img src='/assets/tag/pns/电束.png' alt='Electric Beam'/>Electric Beam"
         },
-        "所属": {
-            "升格者": "<img src='/assets/tag/pns/升格者.png' alt='升格者'/>升格者"
+        "Affiliation": {
+            "Ascender": "<img src='/assets/tag/pns/升格者.png' alt='Ascender'/>Ascender"
         }
     },
     "164270": {
-        "稀有度": {
+        "Rarity": {
             "S": "<img src='/assets/tag/pns/S.png' alt='S'/>"
         },
-        "机体类型": {
-            "先锋型": "<img src='/assets/tag/pns/先锋型.png' alt='先锋型'/>先锋型"
+        "Mech Type": {
+            "Vanguard Type": "<img src='/assets/tag/pns/先锋型.png' alt='Vanguard Type'/>Vanguard Type"
         },
-        "武器类型": {
-            "镰刀": "<img src='/assets/tag/pns/镰刀.png' alt='镰刀'/>镰刀"
+        "Weapon Type": {
+            "Scythe": "<img src='/assets/tag/pns/镰刀.png' alt='Scythe'/>Scythe"
         },
-        "属性": {
-            "物理": "<img src='/assets/tag/pns/物理.png' alt='物理'/>物理",
-            "冰": "<img src='/assets/tag/pns/冰.png' alt='冰'/>冰"
+        "Attribute": {
+            "Physical": "<img src='/assets/tag/pns/物理.png' alt='Physical'/>Physical",
+            "Ice": "<img src='/assets/tag/pns/冰.png' alt='Ice'/>Ice"
         },
-        "效应": {
-            "无": "无"
+        "Effect": {
+            "None": "None"
         },
-        "所属": {
-            "机械教会": "<img src='/assets/tag/pns/机械教会.png' alt='机械教会'/>机械教会"
+        "Affiliation": {
+            "Mechanical Church": "<img src='/assets/tag/pns/机械教会.png' alt='Mechanical Church'/>Mechanical Church"
         }
     },
     "169591": {
-        "稀有度": {
+        "Rarity": {
             "A": "<img src='/assets/tag/pns/A.png' alt='A'/>"
         },
-        "机体类型": {
-            "进攻型": "<img src='/assets/tag/pns/进攻型.png' alt='进攻型'/>进攻型"
+        "Mech Type": {
+            "Offensive Type": "<img src='/assets/tag/pns/进攻型.png' alt='Offensive Type'/>Offensive Type"
         },
-        "武器类型": {
-            "聚能剑炮": "<img src='/assets/tag/pns/聚能剑炮.png' alt='聚能剑炮'/>聚能剑炮"
+        "Weapon Type": {
+            "Energy Sword Cannon": "<img src='/assets/tag/pns/聚能剑炮.png' alt='Energy Sword Cannon'/>Energy Sword Cannon"
         },
-        "属性": {
-            "暗": "<img src='/assets/tag/pns/暗.png' alt='暗'/>暗"
+        "Attribute": {
+            "Dark": "<img src='/assets/tag/pns/暗.png' alt='Dark'/>Dark"
         },
-        "效应": {
-            "焚烧": "<img src='/assets/tag/pns/焚烧.png' alt='焚烧'/>焚烧"
+        "Effect": {
+            "Incineration": "<img src='/assets/tag/pns/焚烧.png' alt='Incineration'/>Incineration"
         },
-        "所属": {
-            "不明": "<img src='/assets/tag/pns/不明.png' alt='不明'/>不明"
+        "Affiliation": {
+            "Unknown": "<img src='/assets/tag/pns/不明.png' alt='Unknown'/>Unknown"
         }
     }
 }
