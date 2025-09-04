@@ -324,7 +324,7 @@ function TagContributionPopup({ character, onClose }) {
           <i class="fas fa-xmark"></i>
         </button>
         <div className="popup-header">
-          <h2>Contribute Tags for {character.nameCn}</h2>
+          <h2>Contribute Tags for {character.nameEn}</h2>
         </div>
         <div className="popup-body">
           <div className="tag-contribution-container">
@@ -337,7 +337,7 @@ function TagContributionPopup({ character, onClose }) {
               <div className="character-preview-info">
                 <div className="character-preview-name">{character.name}</div>
                 <div className="character-preview-name-cn">
-                  {character.nameCn}
+                  {character.nameEn}
                 </div>
               </div>
               <div className="existing-tags">

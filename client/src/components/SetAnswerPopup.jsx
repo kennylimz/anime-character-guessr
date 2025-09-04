@@ -72,7 +72,7 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings }) => {
             <img src={selectedCharacter.image} alt={selectedCharacter.name} />
             <div className="character-info">
               <div>{selectedCharacter.name}</div>
-              <div>{selectedCharacter.nameCn}</div>
+              <div>{selectedCharacter.nameEn}</div>
             </div>
           </div>
         )}

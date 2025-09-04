@@ -221,6 +221,21 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
         nameCn:
           character.infobox.find((item) => item.key === "简体中文名")?.value ||
           character.name,
+        nameEn: (() => {
+          const aliases = character.infobox.find(item => item.key === '别名')?.value;
+          if (aliases && Array.isArray(aliases)) {
+            const englishName = aliases.find(alias => alias.k === '英文名');
+            if (englishName) {
+              return englishName.v;
+            } else {
+              const romaji = aliases.find(alias => alias.k === '罗马字');
+              if (romaji) {
+                return romaji.v;
+              }
+            }
+          }
+          return character.name;
+        })(),
         gender: character.gender || "?",
         popularity: character.stat.collects + character.stat.comments,
       }));
@@ -272,6 +287,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
             image: character.images?.grid,
             name: character.name,
             nameCn: details.nameCn,
+            nameEn: details.nameEn,
             gender: details.gender,
             popularity: details.popularity,
           };
@@ -385,7 +401,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch }) {
                 <div className="result-character-info">
                   <div className="result-character-name">{character.name}</div>
                   <div className="result-character-name-cn">
-                    {character.nameCn}
+                    {character.nameEn}
                   </div>
                 </div>
               </div>
