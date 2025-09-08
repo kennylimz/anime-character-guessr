@@ -49,7 +49,7 @@ function GameEndPopup({ result, answer, onClose }) {
                 >
                   <div className="answer-character-name">{answer.name}</div>
                   <div className="answer-character-name-cn">
-                    {answer.nameCn}
+                    {answer.nameEn}
                   </div>
                 </a>
                 <div className="button-container">

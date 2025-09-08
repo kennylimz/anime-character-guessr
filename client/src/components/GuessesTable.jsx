@@ -139,7 +139,7 @@ function GuessesTable({ guesses, gameSettings, answerCharacter }) {
                     </div>
                   )}
                   <div className="character-name">{guess.name}</div>
-                  <div className="character-name-cn">{guess.nameCn}</div>
+                  <div className="character-name-cn">{guess.nameEn}</div>
                 </div>
               </td>
               <td>

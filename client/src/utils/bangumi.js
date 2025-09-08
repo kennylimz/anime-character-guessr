@@ -331,6 +331,20 @@ async function getCharacterDetails(characterId) {
     // Extract Chinese name from infobox
     const nameCn = response.data.infobox?.find(item => item.key === '简体中文名')?.value || null;
 
+    let nameEn = null;
+    const aliases = response.data.infobox?.find(item => item.key === '别名')?.value;
+    if (aliases && Array.isArray(aliases)) {
+      const englishName = aliases.find(alias => alias.k === '英文名');
+      if (englishName) {
+        nameEn = englishName.v;
+      } else {
+        const romaji = aliases.find(alias => alias.k === '罗马字');
+        if (romaji) {
+          nameEn = romaji.v;
+        }
+      }
+    }
+
     // Handle gender - only accept string values of 'male' or 'female'
     const gender = typeof response.data.gender === 'string' && 
       (response.data.gender === 'male' || response.data.gender === 'female') 
@@ -340,6 +354,7 @@ async function getCharacterDetails(characterId) {
     return {
       name: response.data.name,
       nameCn: nameCn,
+      nameEn: nameEn,
       gender,
       image: response.data.images.medium,
       imageGrid: response.data.images.grid,

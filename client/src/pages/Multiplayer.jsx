@@ -298,6 +298,7 @@ const Multiplayer = () => {
           icon: guessData.image,
           name: guessData.name,
           nameCn: guessData.nameCn,
+          nameEn: guessData.nameEn,
           gender: guessData.gender,
           genderFeedback: feedback.gender.feedback,
           latestAppearance: guessData.latestAppearance,
@@ -496,6 +497,7 @@ const Multiplayer = () => {
             icon: guessData.image,
             name: guessData.name,
             nameCn: guessData.nameCn,
+            nameEn: guessData.nameEn,
             gender: guessData.gender,
             genderFeedback: "yes",
             latestAppearance: guessData.latestAppearance,
@@ -527,6 +529,7 @@ const Multiplayer = () => {
             icon: guessData.image,
             name: guessData.name,
             nameCn: guessData.nameCn,
+            nameEn: guessData.nameEn,
             gender: guessData.gender,
             genderFeedback: feedback.gender.feedback,
             latestAppearance: guessData.latestAppearance,
@@ -555,6 +558,7 @@ const Multiplayer = () => {
             icon: guessData.image,
             name: guessData.name,
             nameCn: guessData.nameCn,
+            nameEn: guessData.nameEn,
             gender: guessData.gender,
             genderFeedback: feedback.gender.feedback,
             latestAppearance: guessData.latestAppearance,
@@ -1056,7 +1060,7 @@ const Multiplayer = () => {
                     />
                     <div className="answer-info">
                       <div>{answerCharacter.name}</div>
-                      <div>{answerCharacter.nameCn}</div>
+                      <div>{answerCharacter.nameEn}</div>
                     </div>
                   </div>
                   {/* Switch for Simple/Detailed */}
@@ -1138,7 +1142,7 @@ const Multiplayer = () => {
                                       <div className="character-name-cn">
                                         {
                                           playerGuesses.guesses[rowIndex]
-                                            .guessData.nameCn
+                                            .guessData.nameEn
                                         }
                                       </div>
                                     </>
@@ -1220,7 +1224,7 @@ const Multiplayer = () => {
                 ) : (
                   ""
                 )}{" "}
-                The answer is: {answerCharacter.nameCn || answerCharacter.name}
+                The answer is: {answerCharacter.nameEn || answerCharacter.name}
                 <button
                   className="character-details-button"
                   onClick={() => setShowCharacterPopup(true)}
@@ -1282,7 +1286,7 @@ const Multiplayer = () => {
                                   <div className="character-name-cn">
                                     {
                                       playerGuesses.guesses[rowIndex].guessData
-                                        .nameCn
+                                        .nameEn
                                     }
                                   </div>
                                 </>
