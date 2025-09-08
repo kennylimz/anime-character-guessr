@@ -48,8 +48,9 @@ const Home = () => {
       
       <div className="home-footer">
         <p>
-          一个猜动漫/游戏角色的网站，
-          建议使用桌面端浏览器游玩。
+          <a href="https://vertikarl.github.io/anime-character-guessr-english/"> ENGLISH ver. </a>
+          <br/>
+          一个猜动漫/游戏角色的网站，建议使用桌面端浏览器游玩。
           <br/>
           <a href="https://www.bilibili.com/video/BV14CVRzUELs">玩法简介视频</a>，灵感来源<a href="https://blast.tv/counter-strikle"> BLAST.tv </a>,
           数据来源<a href="https://bgm.tv/"> Bangumi </a>。<br />
