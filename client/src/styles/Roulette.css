@@ -295,6 +295,71 @@
   color: #fff;
 }
 
+.roulette-exchange-section {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.roulette-exchange-input {
+  flex: 1;
+  padding: 10px 12px;
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #334155;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.roulette-exchange-input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+.roulette-exchange-input:disabled {
+  background: #f8fafc;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.roulette-exchange-input::placeholder {
+  color: #94a3b8;
+}
+
+.roulette-exchange-btn {
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #fff;
+  border: 2px solid #38bdf8;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.roulette-exchange-btn:hover:not(:disabled) {
+  background: #0ea5e9;
+  border-color: #0ea5e9;
+  transform: translateY(-1px);
+}
+
+.roulette-exchange-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.roulette-exchange-btn:disabled {
+  background: #94a3b8;
+  border-color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
 @keyframes rainbow-border-move {
   0% {
     background-position: 0% 50%, 0% 50%;

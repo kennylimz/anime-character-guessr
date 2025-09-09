@@ -14,6 +14,8 @@ const Roulette = ({ defaultExpanded = false }) => {
   const [initialAvatarId, setInitialAvatarId] = useState(() => {
     return sessionStorage.getItem('avatarId') !== null;
   });
+  const [redeemCode, setRedeemCode] = useState('');
+  const [redeeming, setRedeeming] = useState(false);
 
   useEffect(() => {
     if (isExpanded && rouletteData.length === 0) {
@@ -31,6 +33,38 @@ const Roulette = ({ defaultExpanded = false }) => {
   }, [isExpanded, rouletteData.length]);
 
   const toggleExpand = () => setIsExpanded((prev) => !prev);
+
+  const handleRedeem = async () => {
+    if (!redeemCode.trim()) {
+      alert('请输入兑换码');
+      return;
+    }
+
+    setRedeeming(true);
+    try {
+      const response = await axios.get(`${serverUrl}/redeem?code=${encodeURIComponent(redeemCode.trim())}`);
+      
+      if (response.data.avatarId && response.data.avatarImage) {
+        sessionStorage.setItem('avatarId', response.data.avatarId);
+        sessionStorage.setItem('avatarImage', response.data.avatarImage);
+        
+        // Reset states
+        setSelected(null);
+        setRedeemCode('');
+        
+        alert('兑换成功！');
+      }
+    } catch (error) {
+      if (error.response?.status === 404) {
+        alert('兑换码无效或已过期');
+      } else {
+        alert('兑换失败，请稍后重试');
+      }
+      console.error('Redeem error:', error);
+    } finally {
+      setRedeeming(false);
+    }
+  };
 
   const handleCardClick = (idx) => {
     if (!flipped[idx]) {
@@ -116,6 +150,24 @@ const Roulette = ({ defaultExpanded = false }) => {
               取消选择
             </button>
           )}
+          <div className="roulette-exchange-section">
+            <input 
+              type="text" 
+              placeholder="头像兑换码" 
+              className="roulette-exchange-input"
+              value={redeemCode}
+              onChange={(e) => setRedeemCode(e.target.value)}
+              onKeyPress={(e) => e.key === 'Enter' && handleRedeem()}
+              disabled={redeeming}
+            />
+            <button 
+              className="roulette-exchange-btn"
+              onClick={handleRedeem}
+              disabled={redeeming}
+            >
+              {redeeming ? '兑换中...' : '兑换'}
+            </button>
+          </div>
         </div>
       )}
     </div>

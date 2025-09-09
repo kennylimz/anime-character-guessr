@@ -128,6 +128,36 @@ app.get('/roulette', (req, res) => {
     res.json(selected);
 });
 
+app.get('/redeem', async (req, res) => {
+    try {
+        const { code } = req.query;
+        if (!code) {
+            return res.status(400).json({ error: 'Code is required' });
+        }
+
+        const client = db.getClient();
+        const database = client.db('misc');
+        const collection = database.collection('avatars');
+
+        // Look up the code in the collection
+        const result = await collection.findOne({ code: code });
+        
+        if (!result) {
+            console.log(`[ERROR][redeem][${req.ip}] Invalid or expired code: ${code}`);
+            return res.status(404).json({ error: 'Invalid or expired code' });
+        }
+
+        // Return the URL field
+        res.json({ 
+            avatarId: result.avatarId,
+            avatarImage: result.avatarImage 
+        });
+    } catch (error) {
+        console.error('Error redeeming code:', error);
+        res.status(500).json({ error: 'Failed to redeem code' });
+    }
+});
+
 startAutoClean();
 
 app.post('/api/character-tags', async (req, res) => {
