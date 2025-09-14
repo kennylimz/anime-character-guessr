@@ -440,7 +440,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                       max="120"
                       value={gameSettings.timeLimit}
                       onChange={(e) => {
-                        const value = Math.max(30, Math.min(120, parseInt(e.target.value) || 30));
+                        const value = Math.max(15, Math.min(120, parseInt(e.target.value) || 15));
                         onSettingsChange('timeLimit', value);
                       }}
                     />
