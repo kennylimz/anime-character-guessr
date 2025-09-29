@@ -1,3 +1,5 @@
+[中文](README.md) | [English](README.en.md)
+
 ## 📖 简介
 二次元笑传之猜猜呗，快来弗/灯一把吧！
 
