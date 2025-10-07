@@ -101,20 +101,71 @@ function setupSocket(io, rooms) {
                 return;
             }
     
-            // Check for duplicate username (case-insensitive)
-            const isUsernameTaken = room.players.some(
-                player => player.username.toLowerCase() === username.toLowerCase()
+            // Check for existing player with same username (case-insensitive)
+            const existingPlayerIndex = room.players.findIndex(
+                player => player.username === username
             );
     
-            if (isUsernameTaken) {
-                console.log(`[ERROR][joinRoom][${socket.id}] 换个名字吧`);
-                socket.emit('error', {message: 'joinRoom: 换个名字吧'});
-                return;
+            if (existingPlayerIndex !== -1) {
+                const existingPlayer = room.players[existingPlayerIndex];
+                
+                // If the existing player is disconnected, allow reconnection
+                if (existingPlayer.disconnected) {
+                    console.log(`Player ${username} reconnecting to room ${roomId}`);
+                    
+                    // Update the disconnected player's socket ID
+                    room.players[existingPlayerIndex].id = socket.id;
+                    room.players[existingPlayerIndex].disconnected = false;
+                    
+                    // Update avatar if provided
+                    if (avatarId !== undefined) {
+                        room.players[existingPlayerIndex].avatarId = avatarId;
+                    }
+                    if (avatarImage !== undefined) {
+                        room.players[existingPlayerIndex].avatarImage = avatarImage;
+                    }
+                    
+                    // Join socket to room
+                    socket.join(roomId);
+                    
+                    // Send updated player list to all clients in room
+                    io.to(roomId).emit('updatePlayers', {
+                        players: room.players,
+                        isPublic: room.isPublic
+                    });
+                    
+                    
+                    // If a game is in progress, send the current game state to the reconnecting player
+                    if (room.currentGame && room.currentGame.character) {
+                        socket.emit('gameStart', {
+                            character: room.currentGame.character,
+                            settings: room.currentGame.settings,
+                            players: room.players,
+                            isPublic: room.isPublic,
+                            hints: room.currentGame.hints || null,
+                            isAnswerSetter: existingPlayer.isAnswerSetter
+                        });
+
+                        socket.emit('guessHistoryUpdate', {
+                            guesses: room.currentGame.guesses
+                        });
+                    }
+                    
+                    console.log(`${username} reconnected to room ${roomId}`);
+                    return;
+                } else {
+                    // Username is taken by an active player
+                    console.log(`[ERROR][joinRoom][${socket.id}] 换个名字吧`);
+                    socket.emit('error', {message: 'joinRoom: 换个名字吧'});
+                    return;
+                }
             }
     
-            // Check for duplicate avatarId
+            // Check for duplicate avatarId (only for active players)
             if (avatarId !== undefined) {
-                const isAvatarTaken = room.players.some(player => String(player.avatarId) === String(avatarId));
+                const isAvatarTaken = room.players.some(player => 
+                    !player.disconnected && String(player.avatarId) === String(avatarId)
+                );
                 if (isAvatarTaken) {
                     console.log(`[ERROR][joinRoom][${socket.id}] 头像已被选用`);
                     socket.emit('error', {message: 'joinRoom: 头像已被选用'});
@@ -573,7 +624,7 @@ function setupSocket(io, rooms) {
                 
                 if (playerIndex !== -1) {
                     const disconnectedPlayer = room.players[playerIndex];
-                    disconnectedPlayer.guesses += '💀';
+                    // disconnectedPlayer.guesses += '💀';
     
                     if (room.host === socket.id) {
                         // 找出一个新的房主（第一个没有断开连接的玩家）
@@ -588,13 +639,10 @@ function setupSocket(io, rooms) {
                                 room.players[newHostIndex].isHost = true;
                             }
                             
-                            // 如果原房主分数为0，则移除，否则标记为断开连接
-                            if (disconnectedPlayer.score === 0) {
-                                room.players.splice(playerIndex, 1);
-                            } else {
-                                disconnectedPlayer.disconnected = true;
-                            }
-                            
+                            // 撤销原房主的状态
+                            disconnectedPlayer.isHost = false;
+                            disconnectedPlayer.disconnected = true;
+
                             // 通知房间中的所有玩家房主已更换
                             io.to(roomId).emit('hostTransferred', {
                                 oldHostName: disconnectedPlayer.username,
@@ -616,12 +664,13 @@ function setupSocket(io, rooms) {
                             console.log(`Host ${disconnectedPlayer.username} disconnected. Room ${roomId} closed as no available players to transfer ownership.`);
                         }
                     } else {
-                        // Remove player if score is 0, otherwise mark as disconnected
-                        if (disconnectedPlayer.score === 0) {
-                            room.players.splice(playerIndex, 1);
-                        } else {
-                            disconnectedPlayer.disconnected = true;
-                        }
+                        // // Remove player if score is 0, otherwise mark as disconnected
+                        // if (disconnectedPlayer.score === 0) {
+                        //     room.players.splice(playerIndex, 1);
+                        // } else {
+                        //     disconnectedPlayer.disconnected = true;
+                        // }
+                        disconnectedPlayer.disconnected = true;
                         // Update player list for remaining players
                         io.to(roomId).emit('updatePlayers', {
                             players: room.players
@@ -636,7 +685,8 @@ function setupSocket(io, rooms) {
                         const allEnded = activePlayers.every(p =>
                             p.guesses.includes('✌') ||
                             p.guesses.includes('💀') ||
-                            p.guesses.includes('🏳️')
+                            p.guesses.includes('🏳️') ||
+                            p.guesses.includes('👑')
                         );
                         if (allEnded) {
                             // Find answer setter (if any)

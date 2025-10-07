@@ -637,6 +637,11 @@
   background-color: rgba(74, 144, 226, 0.9);
 }
 
+/* 重连通知样式 */
+.kick-notification.reconnect-notification {
+  background-color: rgba(39, 174, 96, 0.9);
+}
+
 .kick-notification-content {
   display: flex;
   align-items: center;

@@ -23,6 +23,14 @@ const announcements = [
   },
 
   {
+    version: '1.5.5',
+    date: '2025-10-07',
+    content: `
+      不再自动移除断线玩家。现在允许以相同用户名重新连接。
+    `
+  },
+
+  {
     version: '1.5.4',
     date: '2025-08-21',
     content: `

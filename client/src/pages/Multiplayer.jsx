@@ -121,7 +121,13 @@ const Multiplayer = () => {
       setAnswerCharacter(decryptedCharacter);
       answerCharacterRef.current = decryptedCharacter;
       setGameSettings(settings);
-      setGuessesLeft(settings.maxAttempts);
+      
+      // Calculate guesses left based on current player's guess history
+      const currentPlayer = players?.find(p => p.id === newSocket.id);
+      const guessesMade = currentPlayer?.guesses?.length || 0;
+      const remainingGuesses = Math.max(0, settings.maxAttempts - guessesMade);
+      setGuessesLeft(remainingGuesses);
+      
       setIsAnswerSetter(isAnswerSetterFlag);
       if (players) {
         setPlayers(players);
@@ -708,9 +714,9 @@ const Multiplayer = () => {
     <div className="multiplayer-container">
       {/* 添加踢出通知 */}
       {kickNotification && (
-        <div className={`kick-notification ${kickNotification.type === 'host' ? 'host-notification' : ''}`}>
+        <div className={`kick-notification ${kickNotification.type === 'host' ? 'host-notification' : kickNotification.type === 'reconnect' ? 'reconnect-notification' : ''}`}>
           <div className="kick-notification-content">
-            <i className={`fas ${kickNotification.type === 'host' ? 'fa-crown' : 'fa-exclamation-circle'}`}></i>
+            <i className={`fas ${kickNotification.type === 'host' ? 'fa-crown' : kickNotification.type === 'reconnect' ? 'fa-wifi' : 'fa-exclamation-circle'}`}></i>
             <span>{kickNotification.message}</span>
           </div>
         </div>

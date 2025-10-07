@@ -21,7 +21,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
     <>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand1}>
-          <h3>大家都在猜（8.4-8.20）</h3>
+          <h3>大家都在猜（8.21-10.7）</h3>
           <span className={`expand-icon ${isExpanded1 ? 'expanded' : ''}`}>{isExpanded1 ? '▼' : '▶'}</span>
         </div>
         {isExpanded1 && (
@@ -71,7 +71,7 @@ const Leaderboard = ({ defaultExpanded = false }) => {
       </div>
       <div className="leaderboard-container">
         <div className="leaderboard-header" onClick={toggleExpand2}>
-          <h3>热门出题角色总榜（截至8.20）</h3>
+          <h3>热门出题角色总榜（截至10.7）</h3>
           <span className={`expand-icon ${isExpanded2 ? 'expanded' : ''}`}>{isExpanded2 ? '▼' : '▶'}</span>
         </div>
         {isExpanded2 && (
