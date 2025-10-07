@@ -136,7 +136,12 @@ const Multiplayer = () => {
         setAnswerCharacter(decryptedCharacter);
         answerCharacterRef.current = decryptedCharacter;
         setGameSettings(settings);
-        setGuessesLeft(settings.maxAttempts);
+        
+        const currentPlayer = players?.find(p => p.id === newSocket.id);
+        const guessesMade = currentPlayer?.guesses?.length || 0;
+        const remainingGuesses = Math.max(0, settings.maxAttempts - guessesMade);
+        setGuessesLeft(remainingGuesses);
+        
         setIsAnswerSetter(isAnswerSetterFlag);
         if (players) {
           setPlayers(players);
