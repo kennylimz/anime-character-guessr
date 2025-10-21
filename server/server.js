@@ -45,6 +45,9 @@ app.get('/health', async (req, res) => {
 });
 
 app.get('/quick-join', (req, res) => {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.set('Pragma', 'no-cache');
+    res.set('Expires', '0');
     // Get all public rooms that are not in progress
     const publicRooms = Array.from(rooms.entries()).filter(([id, room]) => room.isPublic);
 
