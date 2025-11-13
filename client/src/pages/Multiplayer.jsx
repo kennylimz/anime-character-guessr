@@ -386,6 +386,18 @@ const Multiplayer = () => {
   const handleCharacterSelect = async (character) => {
     if (isGuessing || !answerCharacter || gameEnd) return;
 
+    if (gameSettings.globalPick) {
+      console.log(guessesHistory);
+      const duplicateInHistory = guessesHistory.filter(playerHistory => playerHistory.username !== username).some(playerHistory =>
+        Array.isArray(playerHistory.guesses) &&
+        playerHistory.guesses.some(guessEntry => guessEntry?.guessData?.id === character.id)
+      );
+      if (duplicateInHistory) {
+        alert('【全局BP】已经被别人猜过了！请尝试其他角色');
+        return;
+      }
+    }
+
     setIsGuessing(true);
     setShouldResetTimer(true);
 

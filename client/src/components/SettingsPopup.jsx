@@ -423,6 +423,19 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   max="15"
                 />
               </div>
+              
+              <div className="settings-row">
+                <label>*全局BP</label>
+                <input
+                  type="checkbox"
+                  checked={gameSettings.globalPick}
+                  onChange={(e) => {
+                    onSettingsChange('globalPick', e.target.checked);
+                  }}
+                  style={{ marginRight: '50px', marginLeft: '0px' }}
+                />
+              </div>
+              
 
               <div className="settings-row">
                 <label>*时间限制</label>

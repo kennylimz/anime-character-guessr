@@ -109,6 +109,10 @@ const GameSettingsDisplay = ({
       label: '启用作品搜索',
       value: boolToText(settings.subjectSearch)
     },
+    globalPick: {
+      label: '全局BP',
+      value: boolToText(settings.globalPick)
+    },
     // 标签设置
     characterTagNum: {
       label: '角色标签数量',
@@ -139,7 +143,7 @@ const GameSettingsDisplay = ({
     '作品范围': ['yearRange', 'topNSubjects', 'useSubjectPerYear', 'metaTags'],
     '目录设置': ['useIndex', 'indexId'],
     '角色设置': ['mainCharacterOnly', 'characterNum', 'characterTagNum'],
-    '游戏规则': ['maxAttempts', 'useHints', 'timeLimit', 'subjectSearch', 'includeGame', 'subjectTagNum', 'commonTags']
+    '游戏规则': ['maxAttempts', 'useHints', 'timeLimit', 'subjectSearch', 'includeGame', 'subjectTagNum', 'commonTags', 'globalPick']
   };
 
   const toggleExpand = () => {

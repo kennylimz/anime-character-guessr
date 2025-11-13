@@ -23,6 +23,14 @@ const announcements = [
   },
 
   {
+    version: '1.5.6',
+    date: '2025-11-12',
+    content: `
+      向金牌赛区学习，新增了全局BP选项，开启可以禁止猜别人已猜过的角色。
+    `
+  },
+
+  {
     version: '1.5.5',
     date: '2025-10-07',
     content: `

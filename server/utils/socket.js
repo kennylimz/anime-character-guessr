@@ -370,12 +370,12 @@ function setupSocket(io, rooms) {
                     });
     
                     // Send real-time guess history update to the original answer setter and team 0 members
-                    room.players.filter(p => (p.isAnswerSetter || p.team === '0') && p.id !== socket.id)
-                                .forEach(teammate => {
-                                    io.to(teammate.id).emit('guessHistoryUpdate', {
-                                        guesses: room.currentGame.guesses
-                                    });
-                                });
+                    // room.players.filter(p => (p.isAnswerSetter || p.team === '0') && p.id !== socket.id)
+                    room.players.forEach(teammate => {
+                        io.to(teammate.id).emit('guessHistoryUpdate', {
+                            guesses: room.currentGame.guesses
+                        });
+                    });
                 }
             }
     
