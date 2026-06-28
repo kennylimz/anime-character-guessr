@@ -5,12 +5,12 @@
       "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
     },
     "属性":{
-      "火":"<img src='/assets/extra_tags/284157/火.png' alt='火' />火",
+      "岩":"<img src='/assets/extra_tags/284157/岩.png' alt='岩' />岩",
       "水":"<img src='/assets/extra_tags/284157/水.png' alt='水' />水",
+      "火":"<img src='/assets/extra_tags/284157/火.png' alt='火' />火",
       "草":"<img src='/assets/extra_tags/284157/草.png' alt='草' />草",
       "雷":"<img src='/assets/extra_tags/284157/雷.png' alt='雷' />雷",
-      "风":"<img src='/assets/extra_tags/284157/风.png' alt='风' />风",
-      "岩":"<img src='/assets/extra_tags/284157/岩.png' alt='岩' />岩"
+      "风":"<img src='/assets/extra_tags/284157/风.png' alt='风' />风"
     },
     "武器类型":{
       "单手剑":"<img src='/assets/extra_tags/284157/单手剑.png' alt='单手剑' />单手剑"
@@ -25,12 +25,12 @@
       "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
     },
     "属性":{
-      "火":"<img src='/assets/extra_tags/284157/火.png' alt='火' />火",
+      "岩":"<img src='/assets/extra_tags/284157/岩.png' alt='岩' />岩",
       "水":"<img src='/assets/extra_tags/284157/水.png' alt='水' />水",
+      "火":"<img src='/assets/extra_tags/284157/火.png' alt='火' />火",
       "草":"<img src='/assets/extra_tags/284157/草.png' alt='草' />草",
       "雷":"<img src='/assets/extra_tags/284157/雷.png' alt='雷' />雷",
-      "风":"<img src='/assets/extra_tags/284157/风.png' alt='风' />风",
-      "岩":"<img src='/assets/extra_tags/284157/岩.png' alt='岩' />岩"
+      "风":"<img src='/assets/extra_tags/284157/风.png' alt='风' />风"
     },
     "武器类型":{
       "单手剑":"<img src='/assets/extra_tags/284157/单手剑.png' alt='单手剑' />单手剑"
@@ -1762,6 +1762,21 @@
     },
     "所属":{
       "其它":"其它"
+    }
+  },
+  "113131":{
+    "_name":"桑多涅",
+    "稀有度":{
+      "5":"<img src='/assets/extra_tags/284157/5.png' alt='5' />"
+    },
+    "属性":{
+      "冰":"<img src='/assets/extra_tags/284157/冰.png' alt='冰' />冰"
+    },
+    "武器类型":{
+      "双手剑":"<img src='/assets/extra_tags/284157/双手剑.png' alt='双手剑' />双手剑"
+    },
+    "所属":{
+      "至冬":"至冬"
     }
   }
 }
