@@ -66,6 +66,11 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings, locale = 'zh' }) => {
         });
       } catch (error) {
         console.error('Failed to get character details:', error);
+        if (error?.isConnectionClosed || error?.code === 'ERR_CONNECTION_CLOSED' || error?.code === 'ERR_CONNECTION_TIMED_OUT' || error?.code === 'ECONNABORTED' || !error?.response ||
+            String(error).toLowerCase().includes('closed') || String(error).toLowerCase().includes('timeout') || String(error).toLowerCase().includes('timed out') ||
+            String(error).toLowerCase().includes('network') || String(error).toLowerCase().includes('fetch')) {
+          return;
+        }
         alert(text.fetchFailed);
       } finally {
         setIsSubmitting(false);

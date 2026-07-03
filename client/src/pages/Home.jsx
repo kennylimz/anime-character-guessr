@@ -41,6 +41,53 @@ const Home = ({ locale = 'zh' }) => {
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
 
   useEffect(() => {
+    const apiBaseUrl = import.meta.env.VITE_BGM_API_URL || 'https://api.bgm.tv';
+    if (!apiBaseUrl.startsWith('https://api.bgm.tv')) return;
+
+    let mountTimeoutId;
+    let fetchTimeoutId;
+    const controller = new AbortController();
+
+    const startTest = () => {
+      fetchTimeoutId = setTimeout(() => controller.abort(), 5000);
+
+      fetch(`https://api.bgm.tv/v0/characters/132476?t=${Date.now()}`, { 
+        cache: 'no-store',
+        signal: controller.signal
+      })
+        .then(() => clearTimeout(fetchTimeoutId))
+        .catch(error => {
+          clearTimeout(fetchTimeoutId);
+          const isConnectionClosed = 
+            error?.name === 'AbortError' || 
+            error?.message?.includes('Connection Closed') || 
+            error?.code === 'ERR_CONNECTION_CLOSED' || 
+            error?.code === 'ERR_CONNECTION_TIMED_OUT' ||
+            String(error).includes('Connection Closed') || 
+            String(error).includes('ERR_CONNECTION_CLOSED') || 
+            String(error).includes('ERR_CONNECTION_TIMED_OUT') ||
+            String(error).toLowerCase().includes('closed') ||
+            String(error).toLowerCase().includes('timeout') ||
+            String(error).toLowerCase().includes('timed out') ||
+            String(error).toLowerCase().includes('failed to fetch');
+          
+          if (isConnectionClosed) {
+            window.dispatchEvent(new CustomEvent('bgm-api-blocked-home'));
+          }
+        });
+    };
+
+    // Delay 100ms to ensure App's event listeners are fully mounted and active
+    mountTimeoutId = setTimeout(startTest, 100);
+
+    return () => {
+      clearTimeout(mountTimeoutId);
+      clearTimeout(fetchTimeoutId);
+      controller.abort();
+    };
+  }, []);
+
+  useEffect(() => {
     const serverUrl = import.meta.env.VITE_SERVER_URL || '';
     let mounted = true;
 

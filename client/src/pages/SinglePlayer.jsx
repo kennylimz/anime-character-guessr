@@ -126,6 +126,12 @@ function SinglePlayer() {
         }
       } catch (error) {
         console.error('Failed to initialize game:', error);
+        if (error?.isConnectionClosed || error?.code === 'ERR_CONNECTION_CLOSED' || error?.code === 'ERR_CONNECTION_TIMED_OUT' || error?.code === 'ECONNABORTED' || !error?.response ||
+            String(error).toLowerCase().includes('closed') || String(error).toLowerCase().includes('timeout') || String(error).toLowerCase().includes('timed out') ||
+            String(error).toLowerCase().includes('network') || String(error).toLowerCase().includes('fetch')) {
+          setInitFailed(true);
+          return;
+        }
         if (isMounted) {
           const message = error?.response?.data?.message || error?.message || text.initFailed;
           alert(message);
@@ -269,6 +275,11 @@ function SinglePlayer() {
       }
     } catch (error) {
       console.error('Error processing guess:', error);
+      if (error?.isConnectionClosed || error?.code === 'ERR_CONNECTION_CLOSED' || error?.code === 'ERR_CONNECTION_TIMED_OUT' || error?.code === 'ECONNABORTED' || !error?.response ||
+          String(error).toLowerCase().includes('closed') || String(error).toLowerCase().includes('timeout') || String(error).toLowerCase().includes('timed out') ||
+          String(error).toLowerCase().includes('network') || String(error).toLowerCase().includes('fetch')) {
+        return;
+      }
       alert(text.guessFailed);
     } finally {
       setIsGuessing(false);
