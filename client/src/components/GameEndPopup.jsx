@@ -199,8 +199,9 @@ function GameEndPopup({ result, answer, onClose, locale = 'zh' }) {
                 <div className="answer-appearances">
                   <h3>{text.appearances}</h3>
                   <ul className="appearances-list">
-                    {answer.appearances.slice(0, 3).map((appearance, index) => (
-                      <li key={index}>{appearance}</li>
+                    {((locale === 'en' ? answer.appearances : (answer.appearancesCn || answer.appearances)) || [])
+                      .slice(0, 3).map((appearance, index) => (
+                        <li key={index}>{appearance}</li>
                     ))}
                     {answer.appearances.length > 3 && (
                       <li>{text.moreWorks(answer.appearances.length)}</li>
