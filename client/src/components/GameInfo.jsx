@@ -4,6 +4,7 @@ import Image from './Image';
 const GAME_INFO_TEXT = {
   zh: {
     loading: '正在加载...',
+    questionLoading: '题目正在加载中，请稍后',
     playAgain: '再玩一次',
     guessesLeft: '剩余次数',
     retry: '重试',
@@ -13,6 +14,7 @@ const GAME_INFO_TEXT = {
   },
   en: {
     loading: 'Loading...',
+    questionLoading: 'Loading question, please wait...',
     playAgain: 'Play Again',
     guessesLeft: 'Attempts left',
     retry: 'Retry',
@@ -47,6 +49,17 @@ function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, useHints
               )
             )}
           </div>
+          {!finishInit && !initFailed && (
+            <div className="game-loading-banner">
+              <span>{text.questionLoading}</span>
+              <div className="loading-dots-orbit">
+                <div className="loading-dot"></div>
+                <div className="loading-dot"></div>
+                <div className="loading-dot"></div>
+                <div className="loading-dot"></div>
+              </div>
+            </div>
+          )}
           {useHints && hints && useHints.map((val, idx) => (
             <div key={idx}>
               {guessesLeft <= val && hints[idx] && (
