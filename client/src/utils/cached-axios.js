@@ -96,9 +96,12 @@ class RequestCache {
   setCache(key, value) {
     // check if status is 200
     if (value.status !== 200) return;
-    // do not cache headers
-    const { headers, ...rest } = value;
-    this.cache.set(key, rest);
+    // Only cache status and data to minimize storage size
+    const cachedResponse = {
+      status: value.status,
+      data: value.data
+    };
+    this.cache.set(key, cachedResponse);
     this._saveCacheToStorage();
   }
 
