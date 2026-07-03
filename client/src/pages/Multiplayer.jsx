@@ -358,7 +358,7 @@ const Multiplayer = () => {
     // 用于追踪事件是否已经被处理
     const kickEventProcessed = {}; 
 
-    // 辅助函数：从玩家数据更新剩余次数和检查死亡状态
+    // 辅助函数：从玩家数据更新剩余次数和检查死亡/结束状态
     const updateGuessesLeftFromPlayer = (player) => {
       if (!player || player.isAnswerSetter || player.team === '0') {
         return;
@@ -371,13 +371,13 @@ const Multiplayer = () => {
       const left = Math.max(0, max - used);
       setGuessesLeft(left);
 
-      // 检查是否包含死亡标记（💀）- 服务器已判定玩家死亡
-      const isDead = player.guesses.includes('💀');
+      // 检查是否包含结束标记（💀/🏳️/✌/👑/🏆） - 服务器已判定该玩家/队伍本局已结束
+      const isEnded = ['💀', '🏳️', '✌', '👑', '🏆'].some(mark => player.guesses.includes(mark));
 
-      if (isDead) {
-        // 已被服务器判死，进入旁观状态，避免重复触发结束逻辑
+      if (isEnded) {
+        // 已被服务器判定结束（死亡、投降、或胜利），进入旁观状态，避免重复触发结束逻辑
         setIsObserver(true);
-        // 死亡后属于“临时旁观者”，允许看到答案卡片
+        // 允许看到答案卡片
         setCanShowSelectedAnswer(true);
       }
     };
@@ -1239,6 +1239,9 @@ const Multiplayer = () => {
               isAnswer: false
             }]);
           }
+        } else {
+          // If the server rejects the guess, display the error message to the player
+          alert(response?.message || '猜测提交失败');
         }
       });
     } catch (error) {
@@ -1804,7 +1807,7 @@ const Multiplayer = () => {
                   <SearchBar
                     onCharacterSelect={handleCharacterSelect}
                     isGuessing={isGuessing || waitingForSync}
-                    gameEnd={gameEnd}
+                    gameEnd={gameEnd || isObserver}
                     subjectSearch={gameSettings.subjectSearch}
                     finishInit={isGameStarted}
                     locale={locale}
