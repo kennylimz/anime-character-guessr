@@ -404,9 +404,7 @@
   font-size: 14px;
   color: #666;
   line-height: 1.5;
-  max-height: 200px;
-  overflow-y: auto;
-  padding-right: 10px;
+  padding-right: 0;
 }
 
 .answer-summary h3,
@@ -453,23 +451,7 @@
   color: #1e293b;
 }
 
-.answer-summary::-webkit-scrollbar {
-  width: 6px;
-}
 
-.answer-summary::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 3px;
-}
-
-.answer-summary::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3px;
-}
-
-.answer-summary::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 .summary-content {
   color: #475569;
