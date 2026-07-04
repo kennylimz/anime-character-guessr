@@ -5,15 +5,21 @@
 
 .feedback-board-header {
   display: flex;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: space-between;
   align-items: center;
   padding: 12px 0;
+  width: 100%;
+}
+
+.feedback-board-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
   user-select: none;
 }
 
-.feedback-board-header h3 {
+.feedback-board-header-left h3 {
   margin: 0;
   font-size: 1.1rem;
   color: #1e293b;
@@ -22,8 +28,33 @@
   font-weight: 600;
 }
 
-.feedback-board-header:hover .expand-icon {
+.feedback-board-header-left:hover .expand-icon {
   color: #10b981;
+}
+
+.add-feedback-btn {
+  background: #ffffff;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: none;
+}
+
+.add-feedback-btn:hover {
+  background: #f8fafc;
+  color: #10b981;
+  border-color: #a7f3d0;
+}
+
+.add-feedback-btn:active {
+  background: #f1f5f9;
 }
 
 .feedback-board-content {
@@ -33,26 +64,17 @@
   max-height: 350px;
   overflow-y: auto;
   gap: 10px;
-  padding-right: 4px;
+  padding-right: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-/* Custom scrollbar for feedbacks list */
+/* Hide scrollbar for feedbacks list to prevent layout shifts and asymmetry */
 .feedback-board-content::-webkit-scrollbar {
-  width: 6px;
-}
-
-.feedback-board-content::-webkit-scrollbar-track {
-  background: #f1f5f9;
-  border-radius: 4px;
-}
-
-.feedback-board-content::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-
-.feedback-board-content::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 .feedback-board-status {

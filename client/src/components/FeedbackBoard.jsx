@@ -9,7 +9,8 @@ const BOARD_TEXT = {
     expand: '展开 ▶',
     loading: '正在加载反馈记录...',
     empty: '暂无公开反馈记录',
-    replyHeader: '开发者回复：'
+    replyHeader: '开发者回复：',
+    addFeedback: '新增反馈'
   },
   en: {
     title: 'Public Feedback Board',
@@ -17,11 +18,12 @@ const BOARD_TEXT = {
     expand: 'Expand ▶',
     loading: 'Loading feedback records...',
     empty: 'No public feedback records found',
-    replyHeader: 'Developer Reply: '
+    replyHeader: 'Developer Reply: ',
+    addFeedback: 'Add Feedback'
   }
 };
 
-const FeedbackBoard = ({ defaultExpanded = false, locale = 'zh' }) => {
+const FeedbackBoard = ({ defaultExpanded = false, locale = 'zh', onAddFeedbackClick }) => {
   const text = BOARD_TEXT[locale] || BOARD_TEXT.zh;
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
   const [feedbacks, setFeedbacks] = useState([]);
@@ -67,11 +69,24 @@ const FeedbackBoard = ({ defaultExpanded = false, locale = 'zh' }) => {
 
   return (
     <div className="feedback-board">
-      <div className="feedback-board-header" onClick={toggleExpand}>
-        <h3>{text.title}</h3>
-        <span className={`expand-icon ${isExpanded ? 'expanded' : ''}`}>
-          {isExpanded ? text.collapse : text.expand}
-        </span>
+      <div className="feedback-board-header">
+        <div className="feedback-board-header-left" onClick={toggleExpand}>
+          <h3>{text.title}</h3>
+          <span className={`expand-icon ${isExpanded ? 'expanded' : ''}`}>
+            {isExpanded ? text.collapse : text.expand}
+          </span>
+        </div>
+        <button 
+          className="add-feedback-btn" 
+          onClick={(e) => {
+            e.stopPropagation();
+            onAddFeedbackClick?.();
+          }}
+          type="button"
+        >
+          <i className="fas fa-plus" style={{ marginRight: '6px' }}></i>
+          {text.addFeedback}
+        </button>
       </div>
       
       <div className="feedback-board-content" style={!isExpanded ? { maxHeight: 'none', overflowY: 'visible' } : {}}>

@@ -1,7 +1,12 @@
+import { useState } from 'react';
 import '../styles/popups.css';
 import announcements from '../data/announcements';
 import UpdateAnnouncement from './UpdateAnnouncement';
 import FeedbackBoard from './FeedbackBoard';
+import FeedbackPopup from './FeedbackPopup';
+import TagContributionPopup from './TagContributionPopup';
+import axios from 'axios';
+import logCollector from '../utils/logCollector';
 
 const WELCOME_TEXT = {
   zh: {
@@ -30,6 +35,26 @@ const WELCOME_TEXT = {
 
 function WelcomePopup({ onClose, locale = 'zh' }) {
   const text = WELCOME_TEXT[locale] || WELCOME_TEXT.zh;
+  const [showFeedbackPopup, setShowFeedbackPopup] = useState(false);
+  const [tagFeedbackCharacter, setTagFeedbackCharacter] = useState(null);
+
+  const handleFeedbackSubmit = async ({ type, description, includeLogs }) => {
+    const payload = {
+      bugType: type,
+      description,
+    };
+
+    if (includeLogs) {
+      payload.diagnosticData = logCollector.getDiagnosticData();
+    }
+
+    const serverUrl = import.meta.env.VITE_SERVER_URL || '';
+    await axios.post(`${serverUrl}/api/bug-feedback`, payload);
+  };
+
+  const handleTagFeedbackSelect = (character) => {
+    setTagFeedbackCharacter(character);
+  };
 
   return (
     <div className="popup-overlay">
@@ -62,6 +87,7 @@ function WelcomePopup({ onClose, locale = 'zh' }) {
               <FeedbackBoard 
                 defaultExpanded={false}
                 locale={locale}
+                onAddFeedbackClick={() => setShowFeedbackPopup(true)}
               />
 
               <hr style={{margin: '10px 0', border: '0', borderTop: '1px solid rgba(0,0,0,0.1)'}} />
@@ -75,6 +101,21 @@ function WelcomePopup({ onClose, locale = 'zh' }) {
             </div>
           </div>
         </div>
+        {showFeedbackPopup && (
+          <FeedbackPopup
+            onClose={() => setShowFeedbackPopup(false)}
+            onSubmit={handleFeedbackSubmit}
+            onTagFeedbackSelect={handleTagFeedbackSelect}
+            locale={locale}
+          />
+        )}
+        {tagFeedbackCharacter && (
+          <TagContributionPopup
+            character={tagFeedbackCharacter}
+            onClose={() => setTagFeedbackCharacter(null)}
+            locale={locale}
+          />
+        )}
       </div>
     </div>
   );
