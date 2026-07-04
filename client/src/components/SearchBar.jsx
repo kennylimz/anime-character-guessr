@@ -53,7 +53,7 @@ const SUBJECT_TYPE_LABELS = {
   }
 };
 
-function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, finishInit = true, locale = 'zh' }) {
+function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, finishInit = true, locale = 'zh', placeholder }) {
   const text = SEARCH_TEXT[locale] || SEARCH_TEXT.zh;
   const getSubjectTypeLabel = (type) => SUBJECT_TYPE_LABELS[locale]?.[type] || type;
   const [searchQuery, setSearchQuery] = useState('');
@@ -460,7 +460,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, fini
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             disabled={isGuessing || gameEnd || !finishInit}
-            placeholder={searchMode === 'character' ? text.searchCharacters : text.searchSubjects}
+            placeholder={searchMode === 'character' ? (placeholder || text.searchCharacters) : text.searchSubjects}
             ref={searchInputRef}
           />
           {renderSearchResults()}

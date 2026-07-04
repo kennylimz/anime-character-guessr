@@ -11,6 +11,7 @@ import PlayerList from '../components/PlayerList';
 import GameEndPopup from '../components/GameEndPopup';
 import SetAnswerPopup from '../components/SetAnswerPopup';
 import FeedbackPopup from '../components/FeedbackPopup';
+import TagContributionPopup from '../components/TagContributionPopup';
 import GameSettingsDisplay from '../components/GameSettingsDisplay';
 import Leaderboard from '../components/Leaderboard';
 import Roulette from '../components/Roulette';
@@ -298,6 +299,7 @@ const Multiplayer = () => {
   const [showCharacterPopup, setShowCharacterPopup] = useState(false);
   const [showSetAnswerPopup, setShowSetAnswerPopup] = useState(false);
   const [showFeedbackPopup, setShowFeedbackPopup] = useState(false);
+  const [tagFeedbackCharacter, setTagFeedbackCharacter] = useState(null);
   const [isAnswerSetter, setIsAnswerSetter] = useState(false);
   // 是否允许在本局游戏中显示 selected-answer（答案卡片）。
   // 该状态必须：每局开始时默认 false；仅在收到服务端“本客户端应显示答案”的信号后置为 true（出题人/旁观者/临时旁观者）；每局结束时重置。
@@ -336,12 +338,10 @@ const Multiplayer = () => {
   const handleFeedbackSubmit = async ({ type, description, includeLogs }) => {
     const payload = {
       bugType: type,
-      description: roomId ? `[房间 ${roomId}] ${description}` : description,
+      description,
     };
 
     if (includeLogs) {
-      payload.logs = logCollector.getLogs();
-      payload.errors = logCollector.getErrors();
       payload.diagnosticData = logCollector.getDiagnosticData();
     }
 
@@ -2367,7 +2367,15 @@ const Multiplayer = () => {
         <FeedbackPopup
           onClose={() => setShowFeedbackPopup(false)}
           onSubmit={handleFeedbackSubmit}
+          onTagFeedbackSelect={(character) => setTagFeedbackCharacter(character)}
           locale={locale}
+        />
+      )}
+      {tagFeedbackCharacter && (
+        <TagContributionPopup
+          character={tagFeedbackCharacter}
+          locale={locale}
+          onClose={() => setTagFeedbackCharacter(null)}
         />
       )}
     </div>

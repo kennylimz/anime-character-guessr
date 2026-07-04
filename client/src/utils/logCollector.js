@@ -1,6 +1,49 @@
 const MAX_LOGS = 500;
 const MAX_ERRORS = 100;
 
+function formatLogArgument(arg) {
+  if (arg === null) return 'null';
+  if (arg === undefined) return 'undefined';
+  
+  if (arg instanceof Error || (typeof arg === 'object' && arg.message)) {
+    // Check if it's an AxiosError
+    if (arg.isAxiosError || arg.name === 'AxiosError') {
+      const method = arg.config?.method?.toUpperCase() || '';
+      const url = arg.config?.url || '';
+      const code = arg.code || '';
+      const status = arg.response?.status ? ` [Status: ${arg.response.status}]` : '';
+      let msg = `[AxiosError] ${arg.message}${code ? ` (${code})` : ''} on ${method} ${url}${status}`;
+      if (arg.response?.data?.message) {
+        msg += ` - Response: ${arg.response.data.message}`;
+      }
+      return msg;
+    }
+    
+    // Regular error
+    const name = arg.name || 'Error';
+    const message = arg.message || '';
+    let stackLine = '';
+    if (arg.stack) {
+      // Get the first three lines of stack trace for brevity
+      stackLine = '\n' + arg.stack.split('\n').slice(0, 3).join('\n');
+    }
+    return `[${name}] ${message}${stackLine}`;
+  }
+  
+  if (typeof arg === 'object') {
+    try {
+      if (typeof HTMLElement !== 'undefined' && arg instanceof HTMLElement) {
+        return `<${arg.tagName.toLowerCase()}${arg.id ? ` id="${arg.id}"` : ''}${arg.className ? ` class="${arg.className}"` : ''}>`;
+      }
+      return JSON.stringify(arg);
+    } catch (e) {
+      return String(arg);
+    }
+  }
+  
+  return String(arg);
+}
+
 class LogCollector {
   constructor() {
     this.logs = [];
@@ -66,16 +109,7 @@ class LogCollector {
 
   addLog(type, args) {
     const timestamp = new Date().toISOString();
-    const message = args.map(arg => {
-      if (typeof arg === 'object') {
-        try {
-          return JSON.stringify(arg, null, 2);
-        } catch (e) {
-          return String(arg);
-        }
-      }
-      return String(arg);
-    }).join(' ');
+    const message = args.map(formatLogArgument).join(' ');
 
     this.logs.push({
       timestamp,
@@ -95,22 +129,12 @@ class LogCollector {
     if (Array.isArray(args)) {
       errorInfo = {
         timestamp,
-        message: args.map(arg => {
-          if (typeof arg === 'object') {
-            try {
-              return JSON.stringify(arg, null, 2);
-            } catch (e) {
-              return String(arg);
-            }
-          }
-          return String(arg);
-        }).join(' ')
+        message: args.map(formatLogArgument).join(' ')
       };
     } else {
       errorInfo = {
         timestamp,
-        message: args.message || String(args),
-        stack: args.stack
+        message: formatLogArgument(args)
       };
     }
 

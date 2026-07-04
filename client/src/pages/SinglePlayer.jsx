@@ -10,6 +10,7 @@ import SocialLinks from '../components/SocialLinks';
 import GameInfo from '../components/GameInfo';
 import Timer from '../components/Timer';
 import FeedbackPopup from '../components/FeedbackPopup';
+import TagContributionPopup from '../components/TagContributionPopup';
 import logCollector from '../utils/logCollector';
 import '../styles/game.css';
 import '../styles/SinglePlayer.css';
@@ -58,6 +59,7 @@ function SinglePlayer() {
   const [imgHint, setImgHint] = useState(null);
   const [useImageHint, setUseImageHint] = useState(0);
   const [showFeedbackPopup, setShowFeedbackPopup] = useState(false);
+  const [tagFeedbackCharacter, setTagFeedbackCharacter] = useState(null);
   const [isGameRestarting, setIsGameRestarting] = useState(false); // 防止重复点击"再玩一次"
   const [gameSettings, setGameSettings] = useLocalStorage('singleplayer-game-settings', {
     startYear: new Date().getFullYear()-10,
@@ -398,8 +400,6 @@ function SinglePlayer() {
     };
 
     if (includeLogs) {
-      payload.logs = logCollector.getLogs();
-      payload.errors = logCollector.getErrors();
       payload.diagnosticData = logCollector.getDiagnosticData();
     }
 
@@ -496,7 +496,16 @@ function SinglePlayer() {
         <FeedbackPopup
           onClose={() => setShowFeedbackPopup(false)}
           onSubmit={handleFeedbackSubmit}
+          onTagFeedbackSelect={(character) => setTagFeedbackCharacter(character)}
           locale={locale}
+        />
+      )}
+
+      {tagFeedbackCharacter && (
+        <TagContributionPopup
+          character={tagFeedbackCharacter}
+          locale={locale}
+          onClose={() => setTagFeedbackCharacter(null)}
         />
       )}
     </div>

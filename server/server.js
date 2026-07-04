@@ -485,7 +485,7 @@ app.post('/api/feedback-tags', async (req, res) => {
 
 app.post('/api/bug-feedback', async (req, res) => {
     try {
-        const { bugType, description, logs, errors, diagnosticData } = req.body;
+        const { bugType, description, diagnosticData } = req.body;
 
         if (!bugType || !description || typeof bugType !== 'string' || typeof description !== 'string') {
             return res.status(400).json({
@@ -495,21 +495,13 @@ app.post('/api/bug-feedback', async (req, res) => {
 
         const client = db.getClient();
         const database = client.db('misc');
-        const collection = database.collection('bug_feedback');
+        const collection = database.collection('feedback');
 
         const document = {
             bugType: bugType.trim(),
             description: description.trim(),
             createdAt: new Date()
         };
-
-        if (logs && Array.isArray(logs)) {
-            document.logs = logs;
-        }
-
-        if (errors && Array.isArray(errors)) {
-            document.errors = errors;
-        }
 
         if (diagnosticData && typeof diagnosticData === 'object') {
             document.diagnosticData = diagnosticData;
@@ -518,12 +510,12 @@ app.post('/api/bug-feedback', async (req, res) => {
         const result = await collection.insertOne(document);
 
         res.status(201).json({
-            message: 'Bug feedback submitted successfully',
+            message: 'Feedback submitted successfully',
             feedbackId: result.insertedId
         });
     } catch (error) {
-        console.error('Error submitting tag feedback:', error);
-        res.status(500).json({ error: 'Failed to submit tag feedback' });
+        console.error('Error submitting feedback:', error);
+        res.status(500).json({ error: 'Failed to submit feedback' });
     }
 });
 
