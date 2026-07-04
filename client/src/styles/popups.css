@@ -107,7 +107,18 @@
   /* allow inner scrolling when content is tall (mobile friendliness) */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding-right: 8px; /* give room for scrollbar without overlapping content */
+  padding-left: 0 !important;
+  padding-right: 0 !important; /* remove asymmetric right padding */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide webkit scrollbar to prevent layout shifts and asymmetry */
+.popup-body::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 /* Settings Popup Styles */
@@ -809,21 +820,6 @@
     max-height: none;
     overflow: visible;
     padding-bottom: 6px;
-  }
-
-  /* popup body scrollbar styling */
-  .popup-body::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .popup-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 6px;
-  }
-
-  .popup-body::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 6px;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -1587,6 +1583,10 @@
 
 .welcome-popup .popup-body {
   overflow-y: auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .popup-update-log {
