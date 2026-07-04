@@ -700,3 +700,21 @@
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
+/* Collapsible sections folding/expanding animation using CSS Grid templates */
+.settings-group-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    overflow: hidden;
+}
+
+.settings-group-content.open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.settings-group-content-inner {
+    min-height: 0;
+}
+
