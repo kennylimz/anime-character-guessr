@@ -37,10 +37,6 @@ const announcements = [
       <ul>
         <li>优化前端加载速度</li>
       </ul>
-      <b>调整：</b><br/>
-      <ul>
-        <li>首页房间数改为公开房间数</li>
-      </ul>
       <b>修复：</b><br/>
       <ul>
         <li>角色全局BP模式部分问题</li>
