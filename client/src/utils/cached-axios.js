@@ -47,10 +47,10 @@ async function requestWithRetry(requestFn, retries = RETRY_CONFIG.maxRetries) {
     } catch (error) {
       lastError = error;
       
-      // 判断是否应该重试（排除被阻断/超时的错误，直接触发拦截弹窗而不浪费时间重试）
+      // 判断是否应该重试（连接阻断或超时等网络错误也需要进行重试，直至重试全部失败才抛出）
       const shouldRetry = 
-        attempt < retries && 
-        !isConnectionClosedError(error) && (
+        attempt < retries && (
+          isConnectionClosedError(error) ||
           !error.response || // 网络错误
           RETRY_CONFIG.retryableStatusCodes.includes(error.response?.status) // 可重试的状态码
         );
@@ -97,7 +97,7 @@ class RequestCache {
       this.setCache(cacheKey, response);
       return response;
     } catch (error) {
-      if (isConnectionClosedError(error)) {
+      if (url && url.startsWith('https://api.bgm.tv') && isConnectionClosedError(error)) {
         error.isConnectionClosed = true;
         window.dispatchEvent(new CustomEvent('bgm-api-blocked'));
       }
@@ -118,7 +118,7 @@ class RequestCache {
       this.setCache(cacheKey, response);
       return response;
     } catch (error) {
-      if (isConnectionClosedError(error)) {
+      if (url && url.startsWith('https://api.bgm.tv') && isConnectionClosedError(error)) {
         error.isConnectionClosed = true;
         window.dispatchEvent(new CustomEvent('bgm-api-blocked'));
       }

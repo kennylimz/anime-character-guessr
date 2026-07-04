@@ -46,19 +46,27 @@ const Home = ({ locale = 'zh' }) => {
     if (!apiBaseUrl.startsWith('https://api.bgm.tv')) return;
 
     let mountTimeoutId;
+    let nextAttemptTimeoutId;
     let fetchTimeoutId;
-    const controller = new AbortController();
+    let controller;
+    let isAborted = false;
 
-    const startTest = () => {
+    const startTestWithRetry = (attempt = 0) => {
+      if (isAborted) return;
+      controller = new AbortController();
       fetchTimeoutId = setTimeout(() => controller.abort(), 5000);
 
       fetch(`https://api.bgm.tv/v0/characters/132476?t=${Date.now()}`, { 
         cache: 'no-store',
         signal: controller.signal
       })
-        .then(() => clearTimeout(fetchTimeoutId))
+        .then(() => {
+          clearTimeout(fetchTimeoutId);
+        })
         .catch(error => {
           clearTimeout(fetchTimeoutId);
+          if (isAborted) return;
+
           const isConnectionClosed = 
             error?.name === 'AbortError' || 
             error?.message?.includes('Connection Closed') || 
@@ -73,18 +81,25 @@ const Home = ({ locale = 'zh' }) => {
             String(error).toLowerCase().includes('failed to fetch');
           
           if (isConnectionClosed) {
-            window.dispatchEvent(new CustomEvent('bgm-api-blocked-home'));
+            if (attempt < 3) {
+              const waitTime = 1000 * Math.pow(2, attempt);
+              nextAttemptTimeoutId = setTimeout(() => startTestWithRetry(attempt + 1), waitTime);
+            } else {
+              window.dispatchEvent(new CustomEvent('bgm-api-blocked-home'));
+            }
           }
         });
     };
 
     // Delay 100ms to ensure App's event listeners are fully mounted and active
-    mountTimeoutId = setTimeout(startTest, 100);
+    mountTimeoutId = setTimeout(() => startTestWithRetry(0), 100);
 
     return () => {
+      isAborted = true;
       clearTimeout(mountTimeoutId);
+      clearTimeout(nextAttemptTimeoutId);
       clearTimeout(fetchTimeoutId);
-      controller.abort();
+      if (controller) controller.abort();
     };
   }, []);
 
