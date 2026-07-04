@@ -5638,5 +5638,22 @@
       "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体",
       "Buster单体":"<img src='/assets/extra_tags/109378/Buster.png' alt='Buster'/>单体"
     }
+  },
+  "215924":{
+    "_name":"阿斯卡拉福斯",
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/109378/5星.png' alt='5星' />"
+    },
+    "属性":{
+      "天":"天",
+      "恶":"恶",
+      "秩序":"秩序"
+    },
+    "职阶":{
+      "Alterego":"<img src='/assets/extra_tags/109378/金卡Alterego.png'/>Alterego"
+    },
+    "宝具":{
+      "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体"
+    }
   }
 }
