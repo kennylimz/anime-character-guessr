@@ -20,5 +20,10 @@
   "devDependencies": {
     "nodemon": "^3.1.14",
     "socket.io-client": "^4.8.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/feedbacks.json"
+    ]
   }
 }

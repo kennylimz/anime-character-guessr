@@ -55,7 +55,43 @@ const rooms = new Map();
 const setupSocket = require('./utils/socket');
 setupSocket(io, rooms);
 
-db.connect().catch(console.error);
+async function generateFeedbackJson() {
+    try {
+        const client = db.getClient();
+        if (!client) {
+            console.error('MongoDB client not initialized, skipping feedbacks.json generation');
+            return;
+        }
+        const database = client.db('misc');
+        const collection = database.collection('feedback');
+        
+        // Find all feedback entries, projecting only public fields, sorting by createdAt desc
+        const feedbacks = await collection.find(
+            {},
+            {
+                projection: {
+                    bugType: 1,
+                    description: 1,
+                    createdAt: 1,
+                    reply: 1
+                }
+            }
+        ).sort({ createdAt: -1 }).toArray();
+        
+        const dataPath = path.join(__dirname, 'data', 'feedbacks.json');
+        fs.writeFileSync(dataPath, JSON.stringify(feedbacks, null, 2), 'utf-8');
+        console.log(`Generated feedbacks.json with ${feedbacks.length} items at server startup/refresh.`);
+    } catch (err) {
+        console.error('Error generating feedbacks.json:', err);
+    }
+}
+
+db.connect()
+    .then(() => {
+        console.log('Connected to MongoDB');
+        return generateFeedbackJson();
+    })
+    .catch(console.error);
 
 app.get('/', (req, res) => {
     res.send(`Hello from the server!`);
@@ -516,6 +552,32 @@ app.post('/api/bug-feedback', async (req, res) => {
     } catch (error) {
         console.error('Error submitting feedback:', error);
         res.status(500).json({ error: 'Failed to submit feedback' });
+    }
+});
+
+app.get('/api/refresh-feedback', async (req, res) => {
+    try {
+        await generateFeedbackJson();
+        res.json({ message: 'feedbacks.json regenerated successfully' });
+    } catch (error) {
+        console.error('Error refreshing feedback JSON:', error);
+        res.status(500).json({ error: 'Failed to refresh feedback JSON' });
+    }
+});
+
+app.get('/api/feedback-list', (req, res) => {
+    try {
+        const dataPath = path.join(__dirname, 'data', 'feedbacks.json');
+        if (fs.existsSync(dataPath)) {
+            const data = fs.readFileSync(dataPath, 'utf-8');
+            res.setHeader('Content-Type', 'application/json');
+            res.send(data);
+        } else {
+            res.json([]);
+        }
+    } catch (err) {
+        console.error('Error serving feedback list:', err);
+        res.status(500).json({ error: 'Failed to retrieve feedback list' });
     }
 });
 
