@@ -350,7 +350,7 @@ const Multiplayer = () => {
 
   useEffect(() => {
     // Initialize socket connection
-    const newSocket = io(SOCKET_URL);
+    const newSocket = io(SOCKET_URL, { transports: ['websocket'] });
     setSocket(newSocket);
     socketRef.current = newSocket;
     latestPlayersRef.current = [];
