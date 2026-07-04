@@ -40,7 +40,7 @@ function SocialLinks({ onSettingsClick, onHelpClick, onFeedbackClick, showFeedba
           title={text.feedbackTitle}
           onClick={onFeedbackClick}
         >
-          🐞
+          <i className="fas fa-bug"></i>
         </button>
       )}
 

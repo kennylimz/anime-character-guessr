@@ -203,35 +203,20 @@
   filter: invert(1);
 }
 
-/* Inline feedback button (for mobile single-player) - hidden by default */
+/* Inline feedback button in single-player: show on all screens and match other social link colors */
 .inline-feedback-button {
-  display: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-radius: 6px;
+  padding: 0;
+  font-size: 24px;
+  align-self: center;
+  transition: color 0.2s, transform 0.14s ease;
 }
 
-@media (max-width: 768px) {
-  /* show inline feedback button within social-links on small screens */
-  .inline-feedback-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /* don't force width/height — let it align with other .social-link items and use container gap */
-    background: none; /* match other social-link buttons */
-    color: #b42318;
-    border-radius: 6px;
-    padding: 0;
-    font-size: 24px; /* same as other social icons */
-    align-self: center;
-    transition: color 0.2s, transform 0.14s ease;
-  }
-
-  /* use same hover behavior as .social-link */
-  .inline-feedback-button:hover {
-    color: #ff5c39;
-    transform: scale(1.08);
-  }
-
-  /* ensure floating feedback button remains hidden in single-player (we keep existing rule) */
-  .single-player-container .floating-feedback-button {
-    display: none !important;
-  }
+/* ensure floating feedback button remains hidden in single-player */
+.single-player-container .floating-feedback-button {
+  display: none !important;
 } 

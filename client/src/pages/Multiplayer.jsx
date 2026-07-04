@@ -1607,22 +1607,24 @@ const Multiplayer = () => {
           </div>
         </div>
       )}
-      <button
-        type="button"
-        className="social-link floating-back-button"
-        title={text.backTitle}
-        onClick={() => navigate(isEnglish ? '/en' : '/')}
-      >
-        &larr;
-      </button>
-      <button
-        type="button"
-        className="social-link floating-feedback-button"
-        title={text.feedbackTitle}
-        onClick={() => setShowFeedbackPopup(true)}
-      >
-        📝
-      </button>
+      <div className="multiplayer-top-nav">
+        <button
+          type="button"
+          className="social-link floating-back-button-new"
+          title={text.backTitle}
+          onClick={() => navigate(isEnglish ? '/en' : '/')}
+        >
+          <i className="fas fa-arrow-left"></i>
+        </button>
+        <button
+          type="button"
+          className="social-link floating-feedback-button-new"
+          title={text.feedbackTitle}
+          onClick={() => setShowFeedbackPopup(true)}
+        >
+          <i className="fas fa-bug"></i>
+        </button>
+      </div>
       {!isJoined ? (
         <>
           <div className="join-container">

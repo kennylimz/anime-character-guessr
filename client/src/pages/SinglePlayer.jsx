@@ -409,15 +409,6 @@ function SinglePlayer() {
 
   return (
     <div className="single-player-container" lang={isEnglish ? 'en' : 'zh-CN'}>
-      <button
-        type="button"
-        className="social-link floating-feedback-button"
-        title={text.feedbackTitle}
-        onClick={() => setShowFeedbackPopup(true)}
-      >
-        🐞
-      </button>
-
       <SocialLinks
         onSettingsClick={() => setSettingsPopup(true)}
         onHelpClick={() => setHelpPopup(true)}
