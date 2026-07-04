@@ -91,7 +91,7 @@ const FeedbackPopup = ({ onClose, onSubmit, onTagFeedbackSelect, locale = 'zh' }
         {isTagFeedback ? (
           <div className="feedback-tag-search-container" style={{ margin: '5px 0' }}>
             <div className="feedback-hint-tip" style={{ marginBottom: '15px' }}>
-              {isEnglish ? 'You can also click "Tag Feedback" on the character card page after the game ends.' : '在游戏结束后的角色卡片页面点击“标签反馈”也可以进行标签反馈'}
+              {isEnglish ? 'You can also click "Contribute Tags" on the character card page after the game ends.' : '在游戏结束后的角色卡片页面点击“贡献标签”也可以进行标签反馈'}
             </div>
             <SearchBar
               onCharacterSelect={handleCharacterSelect}
