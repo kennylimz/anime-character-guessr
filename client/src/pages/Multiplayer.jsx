@@ -349,11 +349,20 @@ const Multiplayer = () => {
   };
 
   useEffect(() => {
-    // Initialize socket connection
-    const newSocket = io(SOCKET_URL, { transports: ['websocket'] });
+    let connectTimeoutId;
+    // Initialize socket connection (configured with autoConnect: false to prevent instant connection attempt)
+    const newSocket = io(SOCKET_URL, { 
+      transports: ['websocket'],
+      autoConnect: false
+    });
     setSocket(newSocket);
     socketRef.current = newSocket;
     latestPlayersRef.current = [];
+
+    // Delay connection attempt to prevent double-mount / Strict Mode unmount warning
+    connectTimeoutId = setTimeout(() => {
+      newSocket.connect();
+    }, 50);
 
     // 用于追踪事件是否已经被处理
     const kickEventProcessed = {}; 
@@ -883,6 +892,7 @@ const Multiplayer = () => {
 
     return () => {
       isManualDisconnectRef.current = true;
+      clearTimeout(connectTimeoutId);
       
       if (reconnectTimerRef.current) {
         clearTimeout(reconnectTimerRef.current);
