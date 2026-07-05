@@ -1767,7 +1767,8 @@
   "113131":{
     "_name":"桑多涅",
     "稀有度":{
-      "5":"<img src='/assets/extra_tags/284157/5.png' alt='5' />"
+      "5":"<img src='/assets/extra_tags/284157/5.png' alt='5' />",
+      "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
     },
     "属性":{
       "冰":"<img src='/assets/extra_tags/284157/冰.png' alt='冰' />冰"
