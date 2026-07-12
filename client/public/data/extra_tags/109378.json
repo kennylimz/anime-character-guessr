@@ -5655,5 +5655,22 @@
     "宝具":{
       "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体"
     }
+  },
+  "216274":{
+    "_name":"格蕾·Lily(Lancer)",
+    "稀有度":{
+      "4星":"<img src='/assets/extra_tags/109378/4星.png' alt='4星' />"
+    },
+    "属性":{
+      "人":"人",
+      "善":"善",
+      "秩序":"秩序"
+    },
+    "职阶":{
+      "Lancer":"<img src='/assets/extra_tags/109378/金卡Lancer.png'/>Lancer"
+    },
+    "宝具":{
+      "Buster单体":"<img src='/assets/extra_tags/109378/Buster.png' alt='Buster'/>单体"
+    }
   }
 }
