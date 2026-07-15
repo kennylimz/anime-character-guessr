@@ -8,7 +8,7 @@ const HOME_TEXT = {
     singleplayer: '单人',
     multiplayer: '多人',
     roomCount: '当前房间数',
-    showAnnouncements: '显示公告',
+    showAnnouncements: '公告/反馈公开',
     status: '服务状态',
     howToPlay: '玩法简介',
     repository: 'GitHub仓库',
@@ -25,6 +25,7 @@ const HOME_TEXT = {
     singleplayer: 'Singleplayer',
     multiplayer: 'Multiplayer',
     roomCount: 'Active rooms',
+    showAnnouncements: 'Announcements/Feedback',
     dataSource: 'Data from',
     bangumi: 'Bangumi',
     tagTranslationNote: 'Some parts are not translated. Please use the translation feature of your browser.',
@@ -39,6 +40,68 @@ const Home = ({ locale = 'zh' }) => {
   const text = HOME_TEXT[locale] || HOME_TEXT.zh;
   const [roomCount, setRoomCount] = useState(0);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
+
+  useEffect(() => {
+    const apiBaseUrl = import.meta.env.VITE_BGM_API_URL || 'https://api.bgm.tv';
+    if (!apiBaseUrl.startsWith('https://api.bgm.tv')) return;
+
+    let mountTimeoutId;
+    let nextAttemptTimeoutId;
+    let fetchTimeoutId;
+    let controller;
+    let isAborted = false;
+
+    const startTestWithRetry = (attempt = 0) => {
+      if (isAborted) return;
+      controller = new AbortController();
+      fetchTimeoutId = setTimeout(() => controller.abort(), 5000);
+
+      fetch(`https://api.bgm.tv/v0/characters/132476?t=${Date.now()}`, { 
+        cache: 'no-store',
+        signal: controller.signal
+      })
+        .then(() => {
+          clearTimeout(fetchTimeoutId);
+        })
+        .catch(error => {
+          clearTimeout(fetchTimeoutId);
+          if (isAborted) return;
+
+          const isConnectionClosed = 
+            error?.name === 'AbortError' || 
+            error?.message?.includes('Connection Closed') || 
+            error?.code === 'ERR_CONNECTION_CLOSED' || 
+            error?.code === 'ERR_CONNECTION_TIMED_OUT' ||
+            String(error).includes('Connection Closed') || 
+            String(error).includes('ERR_CONNECTION_CLOSED') || 
+            String(error).includes('ERR_CONNECTION_TIMED_OUT') ||
+            String(error).toLowerCase().includes('closed') ||
+            String(error).toLowerCase().includes('timeout') ||
+            String(error).toLowerCase().includes('timed out') ||
+            String(error).toLowerCase().includes('failed to fetch');
+          
+          if (isConnectionClosed) {
+            if (attempt < 3) {
+              const waitTime = 1000 * Math.pow(2, attempt);
+              nextAttemptTimeoutId = setTimeout(() => startTestWithRetry(attempt + 1), waitTime);
+            } else {
+              window.dispatchEvent(new CustomEvent('bgm-api-blocked-home'));
+            }
+          }
+        });
+    };
+
+    // Delay 100ms to ensure App's event listeners are fully mounted and active
+    mountTimeoutId = setTimeout(() => startTestWithRetry(0), 100);
+
+    return () => {
+      isAborted = true;
+      clearTimeout(mountTimeoutId);
+      clearTimeout(nextAttemptTimeoutId);
+      clearTimeout(fetchTimeoutId);
+      if (controller) controller.abort();
+    };
+  }, []);
 
   useEffect(() => {
     const serverUrl = import.meta.env.VITE_SERVER_URL || '';

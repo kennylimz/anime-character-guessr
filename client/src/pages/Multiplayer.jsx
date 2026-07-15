@@ -11,6 +11,7 @@ import PlayerList from '../components/PlayerList';
 import GameEndPopup from '../components/GameEndPopup';
 import SetAnswerPopup from '../components/SetAnswerPopup';
 import FeedbackPopup from '../components/FeedbackPopup';
+import TagContributionPopup from '../components/TagContributionPopup';
 import GameSettingsDisplay from '../components/GameSettingsDisplay';
 import Leaderboard from '../components/Leaderboard';
 import Roulette from '../components/Roulette';
@@ -58,7 +59,7 @@ const MULTIPLAYER_TEXT = {
     quickJoin: '快速加入',
     inputUsername: '输入用户名',
     create: '创建',
-    anonymousInfo: <>匿名模式？点表头"名"切换。<br/>沟通玩法？点自己名字编辑短信息。<br/>有Bug/缺标签？到<a href="https://github.com/kennylimz/anime-character-guessr/issues/new" target="_blank" rel="noopener noreferrer">Github Issues</a>反馈或加入下方QQ群。<br/>想找猜猜呗同好？QQ群：<a href="https://qm.qq.com/q/2sWbSsCwBu" target="_blank" rel="noopener noreferrer">467740403</a>。</>,
+    anonymousInfo: <>匿名模式？点表头"名"切换。<br/>沟通玩法？点自己名字编辑短信息。<br/></>,
     roomNamePlaceholder: '房间名（可选）',
     copy: '复制',
     settings: '设置',
@@ -151,7 +152,7 @@ const MULTIPLAYER_TEXT = {
     quickJoin: 'Quick Join',
     inputUsername: 'Enter username',
     create: 'Create',
-    anonymousInfo: <>Anonymous mode? Click the "Name" header to toggle.<br/>Want to chat? Click your own name to edit a short message.<br/>Found a bug or missing tag? Report it on <a href="https://github.com/kennylimz/anime-character-guessr/issues/new" target="_blank" rel="noopener noreferrer">GitHub Issues</a>.</>,
+    anonymousInfo: <>Anonymous mode? Click the "Name" header to toggle.<br/>Want to chat? Click your own name to edit a short message.<br/></>,
     roomNamePlaceholder: 'Room name (optional)',
     copy: 'Copy',
     settings: 'Settings',
@@ -298,6 +299,7 @@ const Multiplayer = () => {
   const [showCharacterPopup, setShowCharacterPopup] = useState(false);
   const [showSetAnswerPopup, setShowSetAnswerPopup] = useState(false);
   const [showFeedbackPopup, setShowFeedbackPopup] = useState(false);
+  const [tagFeedbackCharacter, setTagFeedbackCharacter] = useState(null);
   const [isAnswerSetter, setIsAnswerSetter] = useState(false);
   // 是否允许在本局游戏中显示 selected-answer（答案卡片）。
   // 该状态必须：每局开始时默认 false；仅在收到服务端“本客户端应显示答案”的信号后置为 true（出题人/旁观者/临时旁观者）；每局结束时重置。
@@ -336,12 +338,10 @@ const Multiplayer = () => {
   const handleFeedbackSubmit = async ({ type, description, includeLogs }) => {
     const payload = {
       bugType: type,
-      description: roomId ? `[房间 ${roomId}] ${description}` : description,
+      description,
     };
 
     if (includeLogs) {
-      payload.logs = logCollector.getLogs();
-      payload.errors = logCollector.getErrors();
       payload.diagnosticData = logCollector.getDiagnosticData();
     }
 
@@ -349,16 +349,25 @@ const Multiplayer = () => {
   };
 
   useEffect(() => {
-    // Initialize socket connection
-    const newSocket = io(SOCKET_URL);
+    let connectTimeoutId;
+    // Initialize socket connection (configured with autoConnect: false to prevent instant connection attempt)
+    const newSocket = io(SOCKET_URL, { 
+      transports: ['websocket'],
+      autoConnect: false
+    });
     setSocket(newSocket);
     socketRef.current = newSocket;
     latestPlayersRef.current = [];
 
+    // Delay connection attempt to prevent double-mount / Strict Mode unmount warning
+    connectTimeoutId = setTimeout(() => {
+      newSocket.connect();
+    }, 50);
+
     // 用于追踪事件是否已经被处理
     const kickEventProcessed = {}; 
 
-    // 辅助函数：从玩家数据更新剩余次数和检查死亡状态
+    // 辅助函数：从玩家数据更新剩余次数和检查死亡/结束状态
     const updateGuessesLeftFromPlayer = (player) => {
       if (!player || player.isAnswerSetter || player.team === '0') {
         return;
@@ -371,13 +380,13 @@ const Multiplayer = () => {
       const left = Math.max(0, max - used);
       setGuessesLeft(left);
 
-      // 检查是否包含死亡标记（💀）- 服务器已判定玩家死亡
-      const isDead = player.guesses.includes('💀');
+      // 检查是否包含结束标记（💀/🏳️/✌/👑/🏆） - 服务器已判定该玩家/队伍本局已结束
+      const isEnded = ['💀', '🏳️', '✌', '👑', '🏆'].some(mark => player.guesses.includes(mark));
 
-      if (isDead) {
-        // 已被服务器判死，进入旁观状态，避免重复触发结束逻辑
+      if (isEnded) {
+        // 已被服务器判定结束（死亡、投降、或胜利），进入旁观状态，避免重复触发结束逻辑
         setIsObserver(true);
-        // 死亡后属于“临时旁观者”，允许看到答案卡片
+        // 允许看到答案卡片
         setCanShowSelectedAnswer(true);
       }
     };
@@ -883,6 +892,7 @@ const Multiplayer = () => {
 
     return () => {
       isManualDisconnectRef.current = true;
+      clearTimeout(connectTimeoutId);
       
       if (reconnectTimerRef.current) {
         clearTimeout(reconnectTimerRef.current);
@@ -1239,10 +1249,19 @@ const Multiplayer = () => {
               isAnswer: false
             }]);
           }
+        } else {
+          // If the server rejects the guess, display the error message to the player
+          alert(response?.message || '猜测提交失败');
         }
       });
     } catch (error) {
       console.error('Error processing guess:', error);
+      if (error?.isConnectionClosed || error?.code === 'ERR_CONNECTION_CLOSED' || error?.code === 'ERR_CONNECTION_TIMED_OUT' || error?.code === 'ECONNABORTED' || !error?.response ||
+          String(error).toLowerCase().includes('closed') || String(error).toLowerCase().includes('timeout') || String(error).toLowerCase().includes('timed out') ||
+          String(error).toLowerCase().includes('network') || String(error).toLowerCase().includes('fetch')) {
+        setIsGuessing(false);
+        return;
+      }
       alert(text.errorRetry);
       setIsGuessing(false);
     }
@@ -1335,6 +1354,12 @@ const Multiplayer = () => {
           setGuesses([]);
         } catch (error) {
           console.error('Failed to initialize game:', error);
+          if (error?.isConnectionClosed || error?.code === 'ERR_CONNECTION_CLOSED' || error?.code === 'ERR_CONNECTION_TIMED_OUT' || error?.code === 'ECONNABORTED' || !error?.response ||
+              String(error).toLowerCase().includes('closed') || String(error).toLowerCase().includes('timeout') || String(error).toLowerCase().includes('timed out') ||
+              String(error).toLowerCase().includes('network') || String(error).toLowerCase().includes('fetch')) {
+            setIsGameStarting(false);
+            return;
+          }
           alert(text.gameStartingFailed);
           setIsGameStarting(false); // 重置标志以允许重试
         }
@@ -1592,22 +1617,24 @@ const Multiplayer = () => {
           </div>
         </div>
       )}
-      <button
-        type="button"
-        className="social-link floating-back-button"
-        title={text.backTitle}
-        onClick={() => navigate(isEnglish ? '/en' : '/')}
-      >
-        &larr;
-      </button>
-      <button
-        type="button"
-        className="social-link floating-feedback-button"
-        title={text.feedbackTitle}
-        onClick={() => setShowFeedbackPopup(true)}
-      >
-        📝
-      </button>
+      <div className="multiplayer-top-nav">
+        <button
+          type="button"
+          className="social-link floating-back-button-new"
+          title={text.backTitle}
+          onClick={() => navigate(isEnglish ? '/en' : '/')}
+        >
+          <i className="fas fa-arrow-left"></i>
+        </button>
+        <button
+          type="button"
+          className="social-link floating-feedback-button-new"
+          title={text.feedbackTitle}
+          onClick={() => setShowFeedbackPopup(true)}
+        >
+          <i className="fas fa-bug"></i>
+        </button>
+      </div>
       {!isJoined ? (
         <>
           <div className="join-container">
@@ -1804,7 +1831,7 @@ const Multiplayer = () => {
                   <SearchBar
                     onCharacterSelect={handleCharacterSelect}
                     isGuessing={isGuessing || waitingForSync}
-                    gameEnd={gameEnd}
+                    gameEnd={gameEnd || isObserver}
                     subjectSearch={gameSettings.subjectSearch}
                     finishInit={isGameStarted}
                     locale={locale}
@@ -2352,7 +2379,15 @@ const Multiplayer = () => {
         <FeedbackPopup
           onClose={() => setShowFeedbackPopup(false)}
           onSubmit={handleFeedbackSubmit}
+          onTagFeedbackSelect={(character) => setTagFeedbackCharacter(character)}
           locale={locale}
+        />
+      )}
+      {tagFeedbackCharacter && (
+        <TagContributionPopup
+          character={tagFeedbackCharacter}
+          locale={locale}
+          onClose={() => setTagFeedbackCharacter(null)}
         />
       )}
     </div>

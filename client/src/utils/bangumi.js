@@ -312,6 +312,11 @@ async function getCharacterAppearances(characterId, gameSettings) {
     };
   } catch (error) {
     console.error('Error fetching character appearances:', error);
+    if (error?.isConnectionClosed || error?.code === 'ERR_CONNECTION_CLOSED' || error?.code === 'ERR_CONNECTION_TIMED_OUT' || error?.code === 'ECONNABORTED' || !error?.response ||
+        String(error).toLowerCase().includes('closed') || String(error).toLowerCase().includes('timeout') || String(error).toLowerCase().includes('timed out') ||
+        String(error).toLowerCase().includes('network') || String(error).toLowerCase().includes('fetch')) {
+      throw error;
+    }
     return {
       appearances: [],
       appearanceIds: [],
@@ -468,11 +473,12 @@ async function getRandomCharacter(gameSettings) {
       const today = new Date();
       const minDate = new Date(Math.min(endDate.getTime(), today.getTime())).toISOString().split('T')[0];
 
-      total = gameSettings.topNSubjects*(endYear-startYear+1) + gameSettings.addedSubjects.length;
+      const baseYearSubjectsCount = gameSettings.topNSubjects * (endYear - startYear + 1);
+      total = baseYearSubjectsCount + gameSettings.addedSubjects.length;
       randomOffset = Math.floor(Math.random() * total);
 
-      if (randomOffset >= gameSettings.topNSubjects*(endYear-startYear+1)) {
-        randomOffset = randomOffset - gameSettings.topNSubjects;
+      if (randomOffset >= baseYearSubjectsCount) {
+        randomOffset = randomOffset - baseYearSubjectsCount;
         subject = gameSettings.addedSubjects[randomOffset];
       } 
       else {
@@ -508,14 +514,15 @@ async function getRandomCharacter(gameSettings) {
     }
     else {
       gameSettings.useIndex = false;
-      total = Math.min(gameSettings.topNSubjects, 1000)+gameSettings.addedSubjects.length;
+      const limitTopN = Math.min(gameSettings.topNSubjects, 1000);
+      total = limitTopN + gameSettings.addedSubjects.length;
       randomOffset = Math.floor(Math.random() * total);
       const endDate = new Date(`${gameSettings.endYear + 1}-01-01`);
       const today = new Date();
       const minDate = new Date(Math.min(endDate.getTime(), today.getTime())).toISOString().split('T')[0];
       
-      if (randomOffset >= gameSettings.topNSubjects) {
-        randomOffset = randomOffset - gameSettings.topNSubjects;
+      if (randomOffset >= limitTopN) {
+        randomOffset = randomOffset - limitTopN;
         subject = gameSettings.addedSubjects[randomOffset];
       }
       else {

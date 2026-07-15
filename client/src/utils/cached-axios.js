@@ -2,6 +2,9 @@ import axios from 'axios';
 import CryptoJS from 'crypto-js';
 import debounce from 'lodash.debounce';
 
+// 设置请求超时时间为 5 秒
+axios.defaults.timeout = 5000;
+
 // 重试配置
 const RETRY_CONFIG = {
   maxRetries: 3,
@@ -11,6 +14,28 @@ const RETRY_CONFIG = {
 
 // 延迟函数
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// 判断是否为 Connection Closed 或 Connection Timed Out 相关的网络错误
+function isConnectionClosedError(error) {
+  if (!error) return false;
+  const errMsg = String(error.message || error || '').toLowerCase();
+  const errCode = String(error.code || '').toLowerCase();
+  return errMsg.includes('connection closed') || 
+         errCode.includes('err_connection_closed') || 
+         errMsg.includes('err_connection_closed') || 
+         errMsg.includes('connection_closed') ||
+         errCode.includes('err_connection_timed_out') ||
+         errMsg.includes('connection timed out') ||
+         errMsg.includes('err_connection_timed_out') ||
+         errMsg.includes('timeout') ||
+         errCode.includes('timeout') ||
+         errMsg.includes('timed out') ||
+         errCode.includes('timed out') ||
+         errCode.includes('econnaborted') ||
+         errMsg.includes('network error') ||
+         errCode.includes('network') ||
+         !error.response; // 无响应返回通常代表被浏览器或防火墙阻断/下线
+}
 
 // 带重试的请求函数
 async function requestWithRetry(requestFn, retries = RETRY_CONFIG.maxRetries) {
@@ -22,9 +47,10 @@ async function requestWithRetry(requestFn, retries = RETRY_CONFIG.maxRetries) {
     } catch (error) {
       lastError = error;
       
-      // 判断是否应该重试
+      // 判断是否应该重试（连接阻断或超时等网络错误也需要进行重试，直至重试全部失败才抛出）
       const shouldRetry = 
         attempt < retries && (
+          isConnectionClosedError(error) ||
           !error.response || // 网络错误
           RETRY_CONFIG.retryableStatusCodes.includes(error.response?.status) // 可重试的状态码
         );
@@ -66,9 +92,17 @@ class RequestCache {
     }
 
     this.stat.fetch.GET++;
-    const response = await requestWithRetry(() => axios.get(url, config));
-    this.setCache(cacheKey, response);
-    return response;
+    try {
+      const response = await requestWithRetry(() => axios.get(url, config));
+      this.setCache(cacheKey, response);
+      return response;
+    } catch (error) {
+      if (url && url.startsWith('https://api.bgm.tv') && isConnectionClosedError(error)) {
+        error.isConnectionClosed = true;
+        window.dispatchEvent(new CustomEvent('bgm-api-blocked'));
+      }
+      throw error;
+    }
   }
 
   async post(url, data = {}, config = {}) {
@@ -79,9 +113,17 @@ class RequestCache {
     }
 
     this.stat.fetch.POST++;
-    const response = await requestWithRetry(() => axios.post(url, data, config));
-    this.setCache(cacheKey, response);
-    return response;
+    try {
+      const response = await requestWithRetry(() => axios.post(url, data, config));
+      this.setCache(cacheKey, response);
+      return response;
+    } catch (error) {
+      if (url && url.startsWith('https://api.bgm.tv') && isConnectionClosedError(error)) {
+        error.isConnectionClosed = true;
+        window.dispatchEvent(new CustomEvent('bgm-api-blocked'));
+      }
+      throw error;
+    }
   }
 
   clearCache() {
@@ -96,9 +138,12 @@ class RequestCache {
   setCache(key, value) {
     // check if status is 200
     if (value.status !== 200) return;
-    // do not cache headers
-    const { headers, ...rest } = value;
-    this.cache.set(key, rest);
+    // Only cache status and data to minimize storage size
+    const cachedResponse = {
+      status: value.status,
+      data: value.data
+    };
+    this.cache.set(key, cachedResponse);
     this._saveCacheToStorage();
   }
 

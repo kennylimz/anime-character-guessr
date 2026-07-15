@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/assets/fonts/NotoSans.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/assets/fonts/NotoSans.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   font-family: "Noto Sans", "Noto Sans SC", "Noto Color Emoji", system-ui, sans-serif;
   line-height: 1.5;

@@ -35,7 +35,7 @@ function HelpPopup({ onClose, locale = 'zh' }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
+        <button className="popup-close" onClick={onClose}><i className="fas fa-xmark"></i></button>
         <div className="popup-header">
           <h2>{text.title}</h2>
         </div>

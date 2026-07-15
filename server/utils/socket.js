@@ -1500,6 +1500,15 @@ function setupSocket(io, rooms) {
                 const idx = room.players.findIndex(p => p.id === socket.id);
                 if (idx === -1) continue;
                 const disconnectedPlayer = room.players[idx];
+
+                // If the disconnected player was the designated answer setter, clean up and cancel the wait
+                if (room.answerSetterId && room.answerSetterId === disconnectedPlayer.id) {
+                    room.answerSetterId = null;
+                    room.waitingForAnswer = false;
+                    revertSetterObservers(room, roomId, io);
+                    io.to(roomId).emit('waitForAnswerCanceled', { message: `指定的出题人 ${disconnectedPlayer.username} 已离开，等待被取消` });
+                }
+
                 if (room.host === socket.id) {
                     const newHost = room.players.find(p => !p.disconnected && p.id !== socket.id);
                     if (newHost) {
@@ -1512,7 +1521,7 @@ function setupSocket(io, rooms) {
                         disconnectedPlayer.isHost = false;
                         disconnectedPlayer.disconnected = true;
                         io.to(roomId).emit('hostTransferred', { oldHostName: disconnectedPlayer.username, newHostId: newHost.id, newHostName: newHost.username });
-                        broadcastPlayers(roomId, room, { isPublic: room.isPublic });
+                        broadcastPlayers(roomId, room, { isPublic: room.isPublic, answerSetterId: room.answerSetterId });
                     } else {
                         clearGameTimeoutTimers(room.currentGame);
                         rooms.delete(roomId);
@@ -1520,13 +1529,7 @@ function setupSocket(io, rooms) {
                     }
                 } else {
                     disconnectedPlayer.disconnected = true;
-                    if (room.answerSetterId && room.answerSetterId === disconnectedPlayer.id) {
-                        room.answerSetterId = null;
-                        room.waitingForAnswer = false;
-                        revertSetterObservers(room, roomId, io);
-                        io.to(roomId).emit('waitForAnswerCanceled', { message: `指定的出题人 ${disconnectedPlayer.username} 已离开，等待被取消` });
-                    }
-                    broadcastPlayers(roomId, room, { isPublic: room.isPublic });
+                    broadcastPlayers(roomId, room, { isPublic: room.isPublic, answerSetterId: room.answerSetterId });
                     if (room.currentGame && room.currentGame.settings?.syncMode && room.currentGame.syncPlayersCompleted) {
                         updateSyncProgress(room, roomId, io);
                     }

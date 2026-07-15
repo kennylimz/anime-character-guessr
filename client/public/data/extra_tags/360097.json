@@ -979,5 +979,29 @@
     "阵营":{
       "星穹列车":"星穹列车"
     }
+  },
+  "215853":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/360097/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "同谐":"<img src='/assets/extra_tags/360097/同谐.png'/>同谐",
+      "物理":"<img src='/assets/extra_tags/360097/物理.png'/>物理"
+    },
+    "阵营":{
+      "匹诺康尼":"<img src='/assets/extra_tags/360097/匹诺康尼.png'/>匹诺康尼"
+    }
+  },
+  "215855":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/360097/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "存护":"<img src='/assets/extra_tags/360097/存护.png'/>存护",
+      "虚数":"<img src='/assets/extra_tags/360097/虚数.png'/>虚数"
+    },
+    "阵营":{
+      "星际和平公司":"星际和平公司"
+    }
   }
 }

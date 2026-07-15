@@ -632,7 +632,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     marginBottom: isGuessSettingsOpen ? '16px' : '0',
                     borderBottom: isGuessSettingsOpen ? '1px solid #f0f0f0' : 'none',
                     paddingBottom: isGuessSettingsOpen ? '12px' : '0',
-                    transition: 'all 0.3s ease'
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'baseline' }}>
@@ -643,13 +643,13 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     className="fas fa-chevron-down" 
                     style={{ 
                         transform: isGuessSettingsOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                        transition: 'transform 0.3s ease'
+                        transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
                     }}
                 ></i>
               </div>
 
-              {isGuessSettingsOpen && (
-              <>
+              <div className={`settings-group-content ${isGuessSettingsOpen ? 'open' : ''}`}>
+                <div className="settings-group-content-inner">
               {/* Row 1: Search, Rounds, Time */}
               <div className="settings-row compact-row">
                 <div className="setting-item-compact">
@@ -788,8 +788,8 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                   </div>
                 </div>
               </div>
-              </>
-              )}
+                </div>
+              </div>
             </div>
 
             {/* Group 3: Question Scope */}
@@ -803,7 +803,7 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     marginBottom: isAnswerSettingsOpen ? '16px' : '0',
                     borderBottom: isAnswerSettingsOpen ? '1px solid #f0f0f0' : 'none',
                     paddingBottom: isAnswerSettingsOpen ? '12px' : '0',
-                    transition: 'all 0.3s ease'
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'baseline' }}>
@@ -814,13 +814,13 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                     className="fas fa-chevron-down" 
                     style={{ 
                         transform: isAnswerSettingsOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                        transition: 'transform 0.3s ease'
+                        transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
                     }}
                 ></i>
               </div>
 
-              {isAnswerSettingsOpen && (
-              <>
+              <div className={`settings-group-content ${isAnswerSettingsOpen ? 'open' : ''}`}>
+                <div className="settings-group-content-inner">
               {/* Row 1: Subject Filter & Related Games */}
               <div className="settings-row compact-row">
                 <div className="setting-item-compact" style={{ gap: '16px' }}>
@@ -1127,8 +1127,8 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                       )}
                   </div>
               )}
-              </>
-              )}
+                </div>
+              </div>
             </div>
 
           </div>

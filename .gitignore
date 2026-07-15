@@ -75,3 +75,5 @@ out
 
 # Local Netlify folder
 .netlify
+
+feedbacks.json

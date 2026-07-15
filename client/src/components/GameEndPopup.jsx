@@ -146,7 +146,7 @@ function GameEndPopup({ result, answer, onClose, locale = 'zh' }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onClose}><i class="fas fa-xmark"></i></button>
+        <button className="popup-close" onClick={onClose}><i className="fas fa-xmark"></i></button>
         <div className="popup-header">
           <h2>{result === 'win' ? text.win : text.lose}</h2>
         </div>
@@ -199,8 +199,9 @@ function GameEndPopup({ result, answer, onClose, locale = 'zh' }) {
                 <div className="answer-appearances">
                   <h3>{text.appearances}</h3>
                   <ul className="appearances-list">
-                    {answer.appearances.slice(0, 3).map((appearance, index) => (
-                      <li key={index}>{appearance}</li>
+                    {((locale === 'en' ? answer.appearances : (answer.appearancesCn || answer.appearances)) || [])
+                      .slice(0, 3).map((appearance, index) => (
+                        <li key={index}>{appearance}</li>
                     ))}
                     {answer.appearances.length > 3 && (
                       <li>{text.moreWorks(answer.appearances.length)}</li>

@@ -800,8 +800,7 @@
       "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
     },
     "武器类型":{
-      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR",
-      "sr":"sr"
+      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
       "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",

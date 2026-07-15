@@ -1336,3 +1336,39 @@
     max-height: calc(100vh - 280px) !important;
   }
 }
+
+/* Grouped Multiplayer Top Navigation controls */
+.multiplayer-top-nav {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+}
+
+.floating-back-button-new,
+.floating-feedback-button-new {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #e2e8f0;
+  background: #fff;
+  color: #475569;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 22px;
+  padding: 0;
+}
+
+.floating-back-button-new:hover,
+.floating-feedback-button-new:hover {
+  background: #f8fafc;
+  color: #646cff;
+  border-color: #cbd5e1;
+}

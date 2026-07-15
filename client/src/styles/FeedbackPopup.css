@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  position: relative;
 }
 
 .feedback-header {
@@ -50,6 +51,8 @@
   gap: 8px;
   font-size: 14px;
   color: #374151;
+  text-align: left;
+  align-items: stretch;
 }
 
 .feedback-label.checkbox-label {
@@ -147,38 +150,35 @@
 
 .feedback-button {
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 10px 14px;
   font-size: 14px;
   cursor: pointer;
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .feedback-button.primary {
-  background: #4f46e5;
+  background: #646cff;
   color: #fff;
-  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.25);
 }
 
 .feedback-button.primary:hover:enabled {
-  background: #4338ca;
-  transform: translateY(-1px);
+  background: #535bf2;
 }
 
 .feedback-button.primary:disabled {
-  background: #cdd0df;
+  background: #cbd5e1;
+  color: #94a3b8;
   cursor: not-allowed;
-  box-shadow: none;
 }
 
 .feedback-button.secondary {
-  background: #eef2ff;
-  color: #4b5563;
+  background: #f1f5f9;
+  color: #475569;
 }
 
 .feedback-button.secondary:hover {
-  background: #e0e7ff;
-  transform: translateY(-1px);
+  background: #e2e8f0;
 }
 
 @media (max-width: 480px) {
@@ -186,5 +186,24 @@
     padding: 16px;
     gap: 12px;
   }
+}
+
+/* Feedback Search Styles */
+.feedback-tag-search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: visible;
+}
+
+.feedback-hint-tip {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #475569;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-align: left;
 }
 
