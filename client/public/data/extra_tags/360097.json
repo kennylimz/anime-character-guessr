@@ -1003,5 +1003,29 @@
     "阵营":{
       "星际和平公司":"星际和平公司"
     }
+  },
+  "10596":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/360097/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "智识":"<img src='/assets/extra_tags/360097/智识.png'/>智识",
+      "量子":"<img src='/assets/extra_tags/360097/量子.png'/>量子"
+    },
+    "阵营":{
+      "异界(Fate系列)":"异界(Fate系列)"
+    }
+  },
+  "1227":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/360097/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "毁灭":"<img src='/assets/extra_tags/360097/毁灭.png'/>毁灭",
+      "雷":"<img src='/assets/extra_tags/360097/雷.png'/>雷"
+    },
+    "阵营":{
+      "异界(Fate系列)":"异界(Fate系列)"
+    }
   }
 }
