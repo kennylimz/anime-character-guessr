@@ -103,7 +103,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
     }
     filteredAppearances = subjectsResponse.data.filter(appearance => 
       (appearance.staff === '主角' || appearance.staff === '配角')
-      && (bigTypes.includes(appearance.type) || subjectsWithExtraTags.has(appearance.id))
+      && bigTypes.includes(appearance.type)
     );
     if (filteredAppearances.length === 0) {
       filteredAppearances = subjectsResponse.data.filter(appearance => 
@@ -284,6 +284,17 @@ async function getCharacterAppearances(characterId, gameSettings) {
         appearanceNamesCn.push(appearance.nameCn || appearance.name);
         appearanceIds.push(appearance.id);
       });
+
+    // 添加需要额外标签的条目
+    for (const appearance of subjectsResponse.data) {
+      if (
+        (appearance.staff === '主角' || appearance.staff === '配角')
+        && subjectsWithExtraTags.has(appearance.id)
+        && !appearanceIds.includes(appearance.id)
+      ) {
+        appearanceIds.push(appearance.id);
+      }
+    }
 
     const animeVAs = new Set();
     if (characterId === 56822 || characterId === 56823 || characterId === 17529 || characterId === 10956) {
