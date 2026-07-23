@@ -53,7 +53,7 @@ const SUBJECT_TYPE_LABELS = {
   }
 };
 
-function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, finishInit = true, locale = 'zh', placeholder }) {
+function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, gameSettings, finishInit = true, locale = 'zh', placeholder }) {
   const text = SEARCH_TEXT[locale] || SEARCH_TEXT.zh;
   const getSubjectTypeLabel = (type) => SUBJECT_TYPE_LABELS[locale]?.[type] || type;
   const [searchQuery, setSearchQuery] = useState('');
@@ -290,7 +290,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, fini
     if (!searchQuery.trim() || !finishInit) return;
     setIsSearching(true);
     try {
-      const results = await searchSubjects(searchQuery);
+      const results = await searchSubjects(searchQuery, gameSettings);
       setSearchResults(results);
       setHasMore(false);
     } catch (error) {

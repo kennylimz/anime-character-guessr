@@ -1861,6 +1861,7 @@ const Multiplayer = () => {
                     isGuessing={isGuessing || waitingForSync}
                     gameEnd={gameEnd || isObserver}
                     subjectSearch={gameSettings.subjectSearch}
+                    gameSettings={gameSettings}
                     finishInit={isGameStarted}
                     locale={locale}
                   />

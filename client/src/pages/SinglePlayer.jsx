@@ -446,6 +446,7 @@ function SinglePlayer() {
           isGuessing={isGuessing}
           gameEnd={gameEnd}
           subjectSearch={currentGameSettings.subjectSearch}
+          gameSettings={currentGameSettings}
           finishInit={finishInit}
           locale={locale}
         />
