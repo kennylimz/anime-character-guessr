@@ -1,5 +1,6 @@
 import '../styles/game.css';
 import Image from './Image';
+import BlurredImageHint from './BlurredImageHint';
 
 const GAME_INFO_TEXT = {
   zh: {
@@ -72,7 +73,7 @@ function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, useHints
           ))}
           {guessesLeft <= useImageHint && imgHint && (
             <div className="hint-container">
-              <Image className="hint-image" src={imgHint} style={{height: '200px', filter: `blur(${guessesLeft}px)`}} alt={text.imageHintAlt} />
+              <BlurredImageHint src={imgHint} blurRadius={guessesLeft} alt={text.imageHintAlt} height={200} />
             </div>
           )}
         </div>
@@ -82,3 +83,4 @@ function GameInfo({ gameEnd, guessesLeft, onRestart, finishInit, hints, useHints
 }
 
 export default GameInfo;
+
