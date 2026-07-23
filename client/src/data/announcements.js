@@ -34,6 +34,7 @@ const announcements = [
         <li>“搜索作品”关闭时不再隐藏按钮</li>
         <li>优化UI样式</li>
         <li>移除史山</li>
+        <li>更新世萌2025海报图片</li>
       </ul>
       <b>修复：</b><br/>
       <ul>
