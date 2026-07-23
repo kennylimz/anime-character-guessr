@@ -1,5 +1,8 @@
+import axios from 'axios';
+
 const MAX_LOGS = 500;
 const MAX_ERRORS = 100;
+const MAX_NETWORK_LOGS = 30;
 
 function formatLogArgument(arg) {
   if (arg === null) return 'null';
@@ -48,6 +51,8 @@ class LogCollector {
   constructor() {
     this.logs = [];
     this.errors = [];
+    this.networkLogs = [];
+    this.appStateProvider = null;
     this.originalConsole = {
       log: console.log,
       error: console.error,
@@ -60,6 +65,7 @@ class LogCollector {
   init() {
     this.overrideConsole();
     this.setupErrorHandlers();
+    this.setupAxiosInterceptors();
   }
 
   overrideConsole() {
@@ -88,6 +94,8 @@ class LogCollector {
   }
 
   setupErrorHandlers() {
+    if (typeof window === 'undefined') return;
+
     window.addEventListener('error', (event) => {
       this.addError({
         message: event.message,
@@ -105,6 +113,98 @@ class LogCollector {
         stack: event.reason?.stack
       });
     });
+  }
+
+  setupAxiosInterceptors() {
+    try {
+      axios.interceptors.request.use(
+        (config) => {
+          config._startTime = Date.now();
+          return config;
+        },
+        (error) => {
+          return Promise.reject(error);
+        }
+      );
+
+      axios.interceptors.response.use(
+        (response) => {
+          const durationMs = response.config?._startTime ? Date.now() - response.config._startTime : null;
+          this.addNetworkLog({
+            method: response.config?.method?.toUpperCase() || 'GET',
+            url: response.config?.url || '',
+            status: response.status,
+            durationMs
+          });
+          return response;
+        },
+        (error) => {
+          const durationMs = error.config?._startTime ? Date.now() - error.config._startTime : null;
+          const status = error.response?.status || (error.code ? error.code : 'FAILED');
+          const message = error.response?.data?.message || error.message || 'Network Request Error';
+          this.addNetworkLog({
+            method: error.config?.method?.toUpperCase() || 'GET',
+            url: error.config?.url || '',
+            status,
+            durationMs,
+            error: message
+          });
+          return Promise.reject(error);
+        }
+      );
+    } catch (e) {
+      // Intentionally silent
+    }
+  }
+
+  setAppStateProvider(providerFn) {
+    this.appStateProvider = providerFn;
+  }
+
+  getAppState() {
+    if (typeof this.appStateProvider === 'function') {
+      try {
+        return this.appStateProvider();
+      } catch (e) {
+        return null;
+      }
+    }
+    return null;
+  }
+
+  getLayoutHealth() {
+    if (typeof document === 'undefined' || typeof window === 'undefined') return null;
+
+    const checkElement = (selector) => {
+      try {
+        const el = document.querySelector(selector);
+        if (!el) return { found: false };
+        const rect = el.getBoundingClientRect();
+        const style = window.getComputedStyle(el);
+        return {
+          found: true,
+          width: Math.round(rect.width),
+          height: Math.round(rect.height),
+          top: Math.round(rect.top),
+          left: Math.round(rect.left),
+          display: style.display,
+          visibility: style.visibility,
+          opacity: style.opacity
+        };
+      } catch (e) {
+        return { found: false, error: e.message };
+      }
+    };
+
+    return {
+      gameContainer: checkElement('.single-player-container, .multiplayer-container'),
+      searchBar: checkElement('.search-bar'),
+      gameInfo: checkElement('.game-info'),
+      popupOverlay: checkElement('.popup-overlay'),
+      bodyScrollHeight: document.body?.scrollHeight || 0,
+      windowInnerWidth: window.innerWidth,
+      windowInnerHeight: window.innerHeight
+    };
   }
 
   addLog(type, args) {
@@ -145,6 +245,18 @@ class LogCollector {
     }
   }
 
+  addNetworkLog(item) {
+    const timestamp = new Date().toISOString();
+    this.networkLogs.push({
+      timestamp,
+      ...item
+    });
+
+    if (this.networkLogs.length > MAX_NETWORK_LOGS) {
+      this.networkLogs.shift();
+    }
+  }
+
   getLogs() {
     return [...this.logs];
   }
@@ -153,9 +265,14 @@ class LogCollector {
     return [...this.errors];
   }
 
+  getNetworkLogs() {
+    return [...this.networkLogs];
+  }
+
   clear() {
     this.logs = [];
     this.errors = [];
+    this.networkLogs = [];
   }
 
   getDiagnosticData() {
@@ -171,6 +288,9 @@ class LogCollector {
         width: window.innerWidth,
         height: window.innerHeight
       },
+      appState: this.getAppState(),
+      layoutHealth: this.getLayoutHealth(),
+      networkLogs: this.getNetworkLogs(),
       logs: this.getLogs(),
       errors: this.getErrors()
     };
@@ -180,3 +300,4 @@ class LogCollector {
 const logCollector = new LogCollector();
 
 export default logCollector;
+

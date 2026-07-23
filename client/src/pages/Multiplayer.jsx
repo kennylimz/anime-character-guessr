@@ -318,6 +318,34 @@ const Multiplayer = () => {
   const maxReconnectAttempts = 5;
   const reconnectTimerRef = useRef(null);
   const isManualDisconnectRef = useRef(false);
+
+  // Register app state provider for diagnostic logs
+  useEffect(() => {
+    logCollector.setAppStateProvider(() => ({
+      mode: 'multiplayer',
+      roomId: roomId || null,
+      isHost,
+      isJoined,
+      isGameStarted,
+      isGameStarting,
+      gameEnd,
+      globalGameEnd,
+      isObserver,
+      playerCount: players?.length || 0,
+      guessesLeft,
+      guessesCount: guesses.length,
+      hasAnswerCharacter: Boolean(answerCharacter),
+      answerCharacterId: answerCharacter?.id || null,
+      answerCharacterName: answerCharacter?.name || null,
+      subjectSearchEnabled: gameSettings?.subjectSearch ?? true,
+      syncMode: gameSettings?.syncMode,
+      nonstopMode: gameSettings?.nonstopMode
+    }));
+
+    return () => {
+      logCollector.setAppStateProvider(null);
+    };
+  }, [roomId, isHost, isJoined, isGameStarted, isGameStarting, gameEnd, globalGameEnd, isObserver, players, guessesLeft, guesses.length, answerCharacter, gameSettings]);
   const isAutoReconnectingRef = useRef(false);
   const allSpectators = useMemo(() => {
     if (!players || players.length === 0) return false;
