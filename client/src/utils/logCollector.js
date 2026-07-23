@@ -4,6 +4,30 @@ const MAX_LOGS = 500;
 const MAX_ERRORS = 100;
 const MAX_NETWORK_LOGS = 30;
 
+function cleanBackslashes(str) {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/\\([\[\]\(\)\{\}'"\/])/g, '$1')
+    .replace(/\\\\/g, '\\');
+}
+
+function sanitizeData(data) {
+  if (typeof data === 'string') {
+    return cleanBackslashes(data);
+  }
+  if (Array.isArray(data)) {
+    return data.map(item => sanitizeData(item));
+  }
+  if (data && typeof data === 'object') {
+    const cleaned = {};
+    for (const [key, value] of Object.entries(data)) {
+      cleaned[key] = sanitizeData(value);
+    }
+    return cleaned;
+  }
+  return data;
+}
+
 function formatLogArgument(arg) {
   if (arg === null) return 'null';
   if (arg === undefined) return 'undefined';
@@ -19,7 +43,7 @@ function formatLogArgument(arg) {
       if (arg.response?.data?.message) {
         msg += ` - Response: ${arg.response.data.message}`;
       }
-      return msg;
+      return cleanBackslashes(msg);
     }
     
     // Regular error
@@ -30,21 +54,21 @@ function formatLogArgument(arg) {
       // Get the first three lines of stack trace for brevity
       stackLine = '\n' + arg.stack.split('\n').slice(0, 3).join('\n');
     }
-    return `[${name}] ${message}${stackLine}`;
+    return cleanBackslashes(`[${name}] ${message}${stackLine}`);
   }
   
   if (typeof arg === 'object') {
     try {
       if (typeof HTMLElement !== 'undefined' && arg instanceof HTMLElement) {
-        return `<${arg.tagName.toLowerCase()}${arg.id ? ` id="${arg.id}"` : ''}${arg.className ? ` class="${arg.className}"` : ''}>`;
+        return cleanBackslashes(`<${arg.tagName.toLowerCase()}${arg.id ? ` id="${arg.id}"` : ''}${arg.className ? ` class="${arg.className}"` : ''}>`);
       }
-      return JSON.stringify(arg);
+      return cleanBackslashes(JSON.stringify(arg));
     } catch (e) {
-      return String(arg);
+      return cleanBackslashes(String(arg));
     }
   }
   
-  return String(arg);
+  return cleanBackslashes(String(arg));
 }
 
 class LogCollector {
@@ -164,7 +188,7 @@ class LogCollector {
   getAppState() {
     if (typeof this.appStateProvider === 'function') {
       try {
-        return this.appStateProvider();
+        return sanitizeData(this.appStateProvider());
       } catch (e) {
         return null;
       }
@@ -196,7 +220,7 @@ class LogCollector {
       }
     };
 
-    return {
+    return sanitizeData({
       gameContainer: checkElement('.single-player-container, .multiplayer-container'),
       searchBar: checkElement('.search-bar'),
       gameInfo: checkElement('.game-info'),
@@ -204,12 +228,12 @@ class LogCollector {
       bodyScrollHeight: document.body?.scrollHeight || 0,
       windowInnerWidth: window.innerWidth,
       windowInnerHeight: window.innerHeight
-    };
+    });
   }
 
   addLog(type, args) {
     const timestamp = new Date().toISOString();
-    const message = args.map(formatLogArgument).join(' ');
+    const message = cleanBackslashes(args.map(formatLogArgument).join(' '));
 
     this.logs.push({
       timestamp,
@@ -229,16 +253,16 @@ class LogCollector {
     if (Array.isArray(args)) {
       errorInfo = {
         timestamp,
-        message: args.map(formatLogArgument).join(' ')
+        message: cleanBackslashes(args.map(formatLogArgument).join(' '))
       };
     } else {
       errorInfo = {
         timestamp,
-        message: formatLogArgument(args)
+        message: cleanBackslashes(formatLogArgument(args))
       };
     }
 
-    this.errors.push(errorInfo);
+    this.errors.push(sanitizeData(errorInfo));
 
     if (this.errors.length > MAX_ERRORS) {
       this.errors.shift();
@@ -247,10 +271,10 @@ class LogCollector {
 
   addNetworkLog(item) {
     const timestamp = new Date().toISOString();
-    this.networkLogs.push({
+    this.networkLogs.push(sanitizeData({
       timestamp,
       ...item
-    });
+    }));
 
     if (this.networkLogs.length > MAX_NETWORK_LOGS) {
       this.networkLogs.shift();
@@ -258,15 +282,15 @@ class LogCollector {
   }
 
   getLogs() {
-    return [...this.logs];
+    return sanitizeData([...this.logs]);
   }
 
   getErrors() {
-    return [...this.errors];
+    return sanitizeData([...this.errors]);
   }
 
   getNetworkLogs() {
-    return [...this.networkLogs];
+    return sanitizeData([...this.networkLogs]);
   }
 
   clear() {
@@ -276,7 +300,7 @@ class LogCollector {
   }
 
   getDiagnosticData() {
-    return {
+    const rawData = {
       userAgent: navigator.userAgent,
       url: window.location.href,
       timestamp: new Date().toISOString(),
@@ -294,10 +318,13 @@ class LogCollector {
       logs: this.getLogs(),
       errors: this.getErrors()
     };
+
+    return sanitizeData(rawData);
   }
 }
 
 const logCollector = new LogCollector();
 
 export default logCollector;
+
 
