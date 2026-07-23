@@ -65,7 +65,7 @@ const FeedbackBoard = ({ defaultExpanded = false, locale = 'zh', onAddFeedbackCl
     }
   };
 
-  const displayedFeedbacks = isExpanded ? feedbacks : feedbacks.slice(0, 1);
+  const displayedFeedbacks = isExpanded ? feedbacks : feedbacks.slice(0, 3);
 
   return (
     <div className="feedback-board">
@@ -114,13 +114,13 @@ const FeedbackBoard = ({ defaultExpanded = false, locale = 'zh', onAddFeedbackCl
             </div>
             {item.reply && (
               <div className="feedback-developer-reply">
-                <div className="reply-header">
+                <span className="reply-header">
                   <i className="fas fa-reply fa-flip-horizontal" style={{ marginRight: '6px' }}></i>
                   {text.replyHeader}
-                </div>
-                <div className="reply-content">
+                </span>
+                <span className="reply-content">
                   {item.reply}
-                </div>
+                </span>
               </div>
             )}
           </div>
