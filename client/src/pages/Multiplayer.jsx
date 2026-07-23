@@ -261,7 +261,6 @@ const Multiplayer = () => {
     characterNum: 6, // 每个作品的角色数
     maxAttempts: 10, // 最大尝试次数
     enableHints: false, // 提示出现次数
-    includeGame: false, // 包含游戏作品
     timeLimit: 60, // 时间限制
     subjectSearch: true, // 启用作品搜索
     characterTagNum: 4, // 角色标签数量

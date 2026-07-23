@@ -801,7 +801,7 @@ async function getIndexInfo(indexId) {
 
 function getPossibleSubjectTypes(gameSettings) {
   if (!gameSettings) {
-    return [2, 4];
+    return [2];
   }
 
   const primaryTag = gameSettings.metaTags?.[0] || "";
@@ -819,11 +819,7 @@ function getPossibleSubjectTypes(gameSettings) {
     return [1, 2, 4, 6];
   }
 
-  const types = [2];
-  if (gameSettings.includeGame) {
-    types.push(4);
-  }
-  return types;
+  return [2];
 }
 
 async function searchSubjects(keyword, gameSettings = null) {

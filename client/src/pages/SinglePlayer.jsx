@@ -75,7 +75,6 @@ function SinglePlayer() {
     maxAttempts: 10,
     useHints: [],
     useImageHint: 0,
-    includeGame: false,
     timeLimit: null,
     subjectSearch: true,
     characterTagNum: 4,
