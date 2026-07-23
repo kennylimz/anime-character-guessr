@@ -436,7 +436,7 @@
     },
     "标签":{
       "以太":"<img src='/assets/extra_tags/380974/以太.png'/>以太",
-      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破",
+      "命破":"<img src='/assets/extra_tags/380974/命破.png'/>命破",
       "打击":"打击"
     },
     "阵营":{
@@ -541,7 +541,7 @@
     },
     "标签":{
       "冰":"<img src='/assets/extra_tags/380974/冰.png'/>冰",
-      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破",
+      "命破":"<img src='/assets/extra_tags/380974/命破.png'/>命破",
       "打击":"打击"
     },
     "阵营":{
@@ -553,7 +553,7 @@
       "A":"<img src='/assets/extra_tags/380974/A.png' alt='A' />"
     },
     "标签":{
-      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破",
+      "命破":"<img src='/assets/extra_tags/380974/命破.png'/>命破",
       "斩击":"斩击",
       "火":"<img src='/assets/extra_tags/380974/火.png'/>火"
     },
@@ -579,7 +579,7 @@
       "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
     },
     "标签":{
-      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破",
+      "命破":"<img src='/assets/extra_tags/380974/命破.png'/>命破",
       "打击":"打击",
       "火":"<img src='/assets/extra_tags/380974/火.png'/>火"
     },
@@ -683,7 +683,7 @@
       "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
     },
     "标签":{
-      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破",
+      "命破":"<img src='/assets/extra_tags/380974/命破.png'/>命破",
       "斩击":"斩击",
       "物理":"<img src='/assets/extra_tags/380974/物理.png'/>物理"
     },
