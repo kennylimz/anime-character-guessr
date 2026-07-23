@@ -20,7 +20,8 @@ const SEARCH_TEXT = {
     searchingButton: '在搜了...',
     guessingButton: '在猜了...',
     characterButton: '搜角色',
-    subjectButton: '搜作品'
+    subjectButton: '搜作品',
+    subjectDisabledTip: '搜作品已被关闭，如需使用请前往设置更改'
   },
   en: {
     searchCharacters: 'Search characters...',
@@ -34,7 +35,8 @@ const SEARCH_TEXT = {
     searchingButton: 'Searching...',
     guessingButton: 'Guessing...',
     characterButton: 'Char',
-    subjectButton: 'Work'
+    subjectButton: 'Work',
+    subjectDisabledTip: 'Subject search is disabled. Go to Settings to change.'
   }
 };
 
@@ -66,6 +68,13 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, game
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedItemIndex, setSelectedItemIndex] = useState(-1); // 当前键盘选中的项目索引
   const [isLoadingNewResults, setIsLoadingNewResults] = useState(false); // 标记是否正在加载更多结果
+  const [showSubjectTip, setShowSubjectTip] = useState(false);
+
+  const handleDisabledSubjectClick = (e) => {
+    if (e) e.preventDefault();
+    setShowSubjectTip(true);
+    setTimeout(() => setShowSubjectTip(false), 2500);
+  };
   
   // DOM引用
   const searchContainerRef = useRef(null);
@@ -475,18 +484,30 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, game
         >
           {isSearching && searchMode === 'character' ? text.searchingButton : isGuessing ? text.guessingButton : text.characterButton}
         </button>
-        {subjectSearch && (
+        <div 
+          className="subject-search-wrapper"
+          onMouseEnter={() => { if (!subjectSearch) setShowSubjectTip(true); }}
+          onMouseLeave={() => { if (!subjectSearch) setShowSubjectTip(false); }}
+          onClick={!subjectSearch ? handleDisabledSubjectClick : undefined}
+        >
+          {showSubjectTip && !subjectSearch && (
+            <div className="subject-disabled-tooltip">
+              {text.subjectDisabledTip}
+            </div>
+          )}
           <button 
-            className={`search-button ${searchMode === 'subject' ? 'active' : ''}`}
+            className={`search-button ${searchMode === 'subject' ? 'active' : ''} ${!subjectSearch ? 'disabled-mode' : ''}`}
             onClick={() => {
+              if (!subjectSearch) return;
               setSearchMode('subject');
               if (searchQuery.trim()) handleSubjectSearch();
             }}
-            disabled={!searchQuery.trim() || isSearching || isGuessing || gameEnd || !finishInit}
+            disabled={!subjectSearch || !searchQuery.trim() || isSearching || isGuessing || gameEnd || !finishInit}
+            title={!subjectSearch ? text.subjectDisabledTip : undefined}
           >
             {isSearching && searchMode === 'subject' ? text.searchingButton : text.subjectButton}
           </button>
-        )}
+        </div>
       </div>
     </div>
   );
