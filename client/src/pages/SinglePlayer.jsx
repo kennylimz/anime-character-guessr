@@ -75,7 +75,6 @@ function SinglePlayer() {
     maxAttempts: 10,
     useHints: [],
     useImageHint: 0,
-    includeGame: false,
     timeLimit: null,
     subjectSearch: true,
     characterTagNum: 4,
@@ -148,6 +147,29 @@ function SinglePlayer() {
       isMounted = false;
     };
   }, []);
+
+  // Register app state provider for diagnostic logs
+  useEffect(() => {
+    logCollector.setAppStateProvider(() => ({
+      mode: 'singleplayer',
+      finishInit,
+      initFailed,
+      gameEnd,
+      isGuessing,
+      guessesLeft,
+      guessesCount: guesses.length,
+      hasAnswerCharacter: Boolean(answerCharacter),
+      answerCharacterId: answerCharacter?.id || null,
+      answerCharacterName: answerCharacter?.name || null,
+      subjectSearchEnabled: currentGameSettings?.subjectSearch ?? true,
+      maxAttempts: currentGameSettings?.maxAttempts,
+      timeLimit: currentGameSettings?.timeLimit
+    }));
+
+    return () => {
+      logCollector.setAppStateProvider(null);
+    };
+  }, [finishInit, initFailed, gameEnd, isGuessing, guessesLeft, guesses.length, answerCharacter, currentGameSettings]);
 
   const handleCharacterSelect = async (character) => {
     if (isGuessing || !answerCharacter) return;
@@ -423,6 +445,7 @@ function SinglePlayer() {
           isGuessing={isGuessing}
           gameEnd={gameEnd}
           subjectSearch={currentGameSettings.subjectSearch}
+          gameSettings={currentGameSettings}
           finishInit={finishInit}
           locale={locale}
         />

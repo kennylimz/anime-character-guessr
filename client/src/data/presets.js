@@ -20,7 +20,6 @@ const createBasePreset = () => ({
   maxAttempts: 10,
   useHints: [],
   useImageHint: 0,
-  includeGame: false,
   subjectSearch: true,
   subjectTagNum: 3,
   characterTagNum: 4,
@@ -87,7 +86,6 @@ export const gamePresets = {
       indexId: '77344',
       mainCharacterOnly: false,
       characterNum: 30,
-      includeGame: true,
       subjectTagNum: 3,
     },
     ['startYear', 'endYear']
@@ -98,7 +96,6 @@ export const gamePresets = {
       indexId: '77186',
       mainCharacterOnly: false,
       characterNum: 40,
-      includeGame: true,
       subjectSearch: false,
       subjectTagNum: 3,
     },
@@ -110,7 +107,6 @@ export const gamePresets = {
       indexId: '76637',
       mainCharacterOnly: false,
       characterNum: 100,
-      includeGame: true,
       subjectSearch: false,
       subjectTagNum: 3,
     },
@@ -163,7 +159,7 @@ export function matchPreset(settings) {
   const keySettings = [
     'useIndex', 'indexId', 'topNSubjects', 'useSubjectPerYear', 
     'mainCharacterOnly', 'characterNum', 'maxAttempts', 
-    'useHints', 'includeGame', 'subjectSearch'
+    'useHints', 'subjectSearch'
   ];
   
   // 所有设置项，用于检查是否有修改

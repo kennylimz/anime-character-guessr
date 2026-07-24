@@ -7,12 +7,11 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
       "爆发":"<span style='color: #920008;'>爆发</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -26,15 +25,13 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "阿拜多斯高中":"<img src='/assets/extra_tags/300648/阿拜多斯高中.png'/>阿拜多斯高中"
@@ -48,15 +45,15 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "载具支援":"<img src='/assets/extra_tags/300648/载具支援.png'/>载具支援",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -71,16 +68,36 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
+    }
+  },
+  "104649":{
+    "稀有度":{
+      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+    },
+    "武器类型":{
+      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
+    },
+    "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
+    },
+    "所属":{
+      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
     }
   },
   "104650":{
@@ -91,16 +108,14 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "前排":"前排"
     },
     "所属":{
       "阿拜多斯高中":"<img src='/assets/extra_tags/300648/阿拜多斯高中.png'/>阿拜多斯高中"
@@ -114,12 +129,12 @@
       "RG":"<img src='/assets/extra_tags/300648/RG.png'/>RG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -134,13 +149,13 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
     },
     "所属":{
       "阿拜多斯高中":"<img src='/assets/extra_tags/300648/阿拜多斯高中.png'/>阿拜多斯高中"
@@ -148,22 +163,17 @@
   },
   "104755":{
     "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
     },
     "武器类型":{
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -171,20 +181,17 @@
   },
   "106190":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
       "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
     },
     "武器类型":{
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -199,13 +206,13 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -213,21 +220,17 @@
   },
   "109628":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
       "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
     },
     "武器类型":{
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "后排":"后排"
     },
     "所属":{
       "SRT特殊学院":"<img src='/assets/extra_tags/300648/SRT特殊学院.png'/>SRT特殊学院"
@@ -242,13 +245,13 @@
       "MT":"<img src='/assets/extra_tags/300648/MT.png'/>MT"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -262,13 +265,13 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
     },
     "所属":{
       "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
@@ -282,15 +285,11 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "SRT特殊学院":"<img src='/assets/extra_tags/300648/SRT特殊学院.png'/>SRT特殊学院"
@@ -298,19 +297,17 @@
   },
   "112156":{
     "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
     },
     "武器类型":{
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "中排":"中排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -324,11 +321,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "载具支援":"<img src='/assets/extra_tags/300648/载具支援.png'/>载具支援",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -342,11 +339,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -360,14 +357,11 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -381,15 +375,14 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "前排":"前排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -403,11 +396,11 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
     },
     "所属":{
       "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
@@ -422,16 +415,37 @@
       "GL":"<img src='/assets/extra_tags/300648/GL.png'/>GL"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    }
+  },
+  "114591":{
+    "稀有度":{
+      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
+      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
+    },
+    "武器类型":{
+      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
+    },
+    "标签":{
+      "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "中排":"中排"
+    },
+    "所属":{
+      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
     }
   },
   "114592":{
@@ -443,18 +457,16 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
       "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排",
+      "后排":"后排"
     },
     "所属":{
       "阿拜多斯高中":"<img src='/assets/extra_tags/300648/阿拜多斯高中.png'/>阿拜多斯高中"
@@ -469,14 +481,14 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "前排":"前排",
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -484,21 +496,19 @@
   },
   "114594":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
       "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
     },
     "武器类型":{
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -513,14 +523,14 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -535,13 +545,13 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -549,20 +559,17 @@
   },
   "114597":{
     "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
     },
     "武器类型":{
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -577,16 +584,16 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "中排":"中排",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -600,13 +607,13 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -620,12 +627,12 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "前排":"前排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -639,11 +646,11 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "前排":"前排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -657,13 +664,11 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -678,12 +683,12 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -697,12 +702,11 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -716,16 +720,16 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "载具支援":"<img src='/assets/extra_tags/300648/载具支援.png'/>载具支援",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排",
+      "后排":"后排"
     },
     "所属":{
       "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
@@ -740,13 +744,13 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
@@ -761,15 +765,15 @@
       "GL":"<img src='/assets/extra_tags/300648/GL.png'/>GL"
     },
     "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
       "中排":"中排",
-      "后排":"后排",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -783,13 +787,13 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -803,16 +807,13 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -826,13 +827,13 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -840,22 +841,17 @@
   },
   "115859":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
       "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
     },
     "武器类型":{
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "瓦尔基里警察学校":"<img src='/assets/extra_tags/300648/瓦尔基里警察学校.png'/>瓦尔基里警察学校"
@@ -869,11 +865,11 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -888,16 +884,14 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
+      "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -911,15 +905,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -933,13 +923,13 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -947,20 +937,17 @@
   },
   "115864":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
     },
     "武器类型":{
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "瓦尔基里警察学校":"<img src='/assets/extra_tags/300648/瓦尔基里警察学校.png'/>瓦尔基里警察学校"
@@ -974,16 +961,11 @@
       "GL":"<img src='/assets/extra_tags/300648/GL.png'/>GL"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "载具支援":"<img src='/assets/extra_tags/300648/载具支援.png'/>载具支援",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -997,11 +979,11 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1015,14 +997,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "中排":"中排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -1036,13 +1015,11 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -1056,12 +1033,11 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "SRT特殊学院":"<img src='/assets/extra_tags/300648/SRT特殊学院.png'/>SRT特殊学院"
@@ -1075,11 +1051,11 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "前排":"前排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -1093,15 +1069,11 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "阿里乌斯分校":"<img src='/assets/extra_tags/300648/阿里乌斯分校.png'/>阿里乌斯分校"
@@ -1109,22 +1081,17 @@
   },
   "115876":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
       "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
     },
     "武器类型":{
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>"
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "阿里乌斯分校":"<img src='/assets/extra_tags/300648/阿里乌斯分校.png'/>阿里乌斯分校"
@@ -1138,16 +1105,11 @@
       "GL":"<img src='/assets/extra_tags/300648/GL.png'/>GL"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
@@ -1161,32 +1123,14 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
-    }
-  },
-  "115879":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
     }
   },
   "115880":{
@@ -1197,40 +1141,17 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
+      "中排":"中排"
     },
     "所属":{
       "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
     }
   },
-  "115882":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
-    },
-    "武器类型":{
-      "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
-    }
-  },
-  "115883":{
+  "115881":{
     "稀有度":{
       "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
       "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
@@ -1239,15 +1160,51 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排",
+      "后排":"后排"
+    },
+    "所属":{
+      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
+    }
+  },
+  "115882":{
+    "稀有度":{
+      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
+    },
+    "武器类型":{
+      "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
+    },
+    "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
+    },
+    "所属":{
+      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
+    }
+  },
+  "115883":{
+    "稀有度":{
+      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
+    },
+    "武器类型":{
+      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
+    },
+    "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1255,22 +1212,17 @@
   },
   "115884":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
     },
     "武器类型":{
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -1284,32 +1236,14 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
-    }
-  },
-  "115886":{
-    "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
-    },
-    "武器类型":{
-      "RL":"<img src='/assets/extra_tags/300648/RL.png'/>RL"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
     }
   },
   "115887":{
@@ -1320,11 +1254,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1338,29 +1272,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
-    }
-  },
-  "115889":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -1375,16 +1291,13 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -1399,39 +1312,15 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
-    }
-  },
-  "124994":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "SRT特殊学院":"<img src='/assets/extra_tags/300648/SRT特殊学院.png'/>SRT特殊学院",
-      "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
     }
   },
   "125395":{
@@ -1442,14 +1331,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "中排":"中排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1457,23 +1343,17 @@
   },
   "125441":{
     "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
     },
     "武器类型":{
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "载具支援":"<img src='/assets/extra_tags/300648/载具支援.png'/>载具支援",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -1487,12 +1367,12 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
       "爆发":"<span style='color: #920008;'>爆发</span>",
+      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "中排":"中排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1507,12 +1387,12 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "载具支援":"<img src='/assets/extra_tags/300648/载具支援.png'/>载具支援"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
+      "载具支援":"<img src='/assets/extra_tags/300648/载具支援.png'/>载具支援",
+      "后排":"后排"
     },
     "所属":{
       "阿拜多斯高中":"<img src='/assets/extra_tags/300648/阿拜多斯高中.png'/>阿拜多斯高中"
@@ -1527,13 +1407,13 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "前排":"前排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -1548,13 +1428,13 @@
       "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -1569,13 +1449,12 @@
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -1589,11 +1468,11 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -1608,38 +1487,16 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
-    }
-  },
-  "132275":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "中排":"中排",
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1647,21 +1504,17 @@
   },
   "132277":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
     },
     "武器类型":{
       "MG":"<img src='/assets/extra_tags/300648/MG.png'/>MG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
@@ -1676,15 +1529,15 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "前排":"前排",
+      "后排":"后排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1692,22 +1545,17 @@
   },
   "133767":{
     "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
     },
     "武器类型":{
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
@@ -1721,15 +1569,11 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "前排":"前排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -1743,259 +1587,32 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "后排":"后排"
     },
     "所属":{
       "瓦尔基里警察学校":"<img src='/assets/extra_tags/300648/瓦尔基里警察学校.png'/>瓦尔基里警察学校"
     }
   },
-  "138959":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
-    }
-  },
-  "138960":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "138961":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
-    }
-  },
   "139606":{
     "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
     },
     "武器类型":{
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
-    }
-  },
-  "139696":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "139698":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "139701":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "139702":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "弹力装甲":"<span style='color: #794394;'>弹力装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
-    },
-    "所属":{
-      "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
-    }
-  },
-  "139703":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
-    }
-  },
-  "139712":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "阿拜多斯高中":"<img src='/assets/extra_tags/300648/阿拜多斯高中.png'/>阿拜多斯高中"
-    }
-  },
-  "139724":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
-    }
-  },
-  "142672":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
-    }
-  },
-  "142673":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
     }
   },
   "147114":{
@@ -2006,16 +1623,11 @@
       "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "后排":"后排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
@@ -2029,15 +1641,11 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "阿里乌斯分校":"<img src='/assets/extra_tags/300648/阿里乌斯分校.png'/>阿里乌斯分校"
@@ -2051,11 +1659,11 @@
       "RL":"<img src='/assets/extra_tags/300648/RL.png'/>RL"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
     },
     "所属":{
       "阿里乌斯分校":"<img src='/assets/extra_tags/300648/阿里乌斯分校.png'/>阿里乌斯分校"
@@ -2069,14 +1677,32 @@
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
+    }
+  },
+  "148587":{
+    "稀有度":{
+      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
+    },
+    "武器类型":{
+      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
+    },
+    "标签":{
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
+    },
+    "所属":{
+      "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
     }
   },
   "148588":{
@@ -2087,15 +1713,11 @@
       "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
       "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
@@ -2109,325 +1731,11 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
       "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
       "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
-    }
-  },
-  "148591":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "SRT特殊学院":"<img src='/assets/extra_tags/300648/SRT特殊学院.png'/>SRT特殊学院"
-    }
-  },
-  "148592":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
-    }
-  },
-  "148593":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "FT":"<img src='/assets/extra_tags/300648/FT.png'/>FT"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "148594":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
-    }
-  },
-  "148595":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
-    }
-  },
-  "148596":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
-    }
-  },
-  "148597":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
-    }
-  },
-  "148598":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
-    }
-  },
-  "151710":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "155143":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
-    },
-    "所属":{
-      "海兰德铁道学园":"<img src='/assets/extra_tags/300648/海兰德铁道学园.png'/>海兰德铁道学园"
-    }
-  },
-  "155144":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出"
-    },
-    "所属":{
-      "海兰德铁道学园":"<img src='/assets/extra_tags/300648/海兰德铁道学园.png'/>海兰德铁道学园"
-    }
-  },
-  "174655":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />"
-    },
-    "武器类型":{
-      "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
-      "振动":"<span style='color: #794394;'>振动</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>"
-    },
-    "所属":{
-      "海兰德铁道学园":"<img src='/assets/extra_tags/300648/海兰德铁道学园.png'/>海兰德铁道学园"
-    }
-  },
-  "104649":{
-    "稀有度":{
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "114591":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "115881":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "后排":"后排",
-      "治疗":"<img src='/assets/extra_tags/300648/治疗.png'/>治疗",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
-    },
-    "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
-    }
-  },
-  "148587":{
-    "稀有度":{
-      "1星":"<img src='/assets/extra_tags/300648/1星.png' alt='1星' />",
-      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
-    },
-    "武器类型":{
-      "SR":"<img src='/assets/extra_tags/300648/SR.png'/>SR"
-    },
-    "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "后排":"后排",
-      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
-      "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "前排":"前排"
     },
     "所属":{
       "赤冬联邦学园":"<img src='/assets/extra_tags/300648/赤冬联邦学园.png'/>赤冬联邦学园"
@@ -2441,32 +1749,122 @@
       "SMG":"<img src='/assets/extra_tags/300648/SMG.png'/>SMG"
     },
     "标签":{
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "前排":"前排",
-      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
       "神秘":"<span style='color: #226F9B;'>神秘</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>"
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
     },
     "所属":{
       "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
     }
   },
-  "180258":{
+  "148591":{
     "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
+      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+    },
+    "武器类型":{
+      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
+    },
+    "标签":{
+      "贯通":"<span style='color: #BD8901;'>贯通</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "后排":"后排"
+    },
+    "所属":{
+      "SRT特殊学院":"<img src='/assets/extra_tags/300648/SRT特殊学院.png'/>SRT特殊学院"
+    }
+  },
+  "148592":{
+    "稀有度":{
+      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+    },
+    "武器类型":{
+      "SG":"<img src='/assets/extra_tags/300648/SG.png'/>SG"
+    },
+    "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "坦克":"<img src='/assets/extra_tags/300648/坦克.png'/>坦克",
+      "前排":"前排"
+    },
+    "所属":{
+      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
+    }
+  },
+  "148593":{
+    "稀有度":{
+      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+    },
+    "武器类型":{
+      "FT":"<img src='/assets/extra_tags/300648/FT.png'/>FT"
+    },
+    "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "前排":"前排"
+    },
+    "所属":{
+      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
+    }
+  },
+  "148594":{
+    "稀有度":{
+      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
     },
     "武器类型":{
       "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
     },
     "标签":{
+      "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "特殊装甲":"<span style='color: #226F9B;'>特殊装甲</span>",
       "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "中排":"中排",
-      "爆发":"<span style='color: #920008;'>爆发</span>",
       "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "重装甲":"<span style='color: #BD8901;'>重装甲</span>"
+      "中排":"中排"
     },
     "所属":{
-      "格黑娜学园":"<img src='/assets/extra_tags/300648/格黑娜学园.png'/>格黑娜学园"
+      "三一综合学园":"<img src='/assets/extra_tags/300648/三一综合学园.png'/>三一综合学园"
+    }
+  },
+  "148595":{
+    "稀有度":{
+      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+    },
+    "武器类型":{
+      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
+    },
+    "标签":{
+      "神秘":"<span style='color: #226F9B;'>神秘</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
+      "中排":"中排"
+    },
+    "所属":{
+      "百鬼夜行联合学院":"<img src='/assets/extra_tags/300648/百鬼夜行联合学院.png'/>百鬼夜行联合学院"
+    }
+  },
+  "148597":{
+    "稀有度":{
+      "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"
+    },
+    "武器类型":{
+      "HG":"<img src='/assets/extra_tags/300648/HG.png'/>HG"
+    },
+    "标签":{
+      "爆发":"<span style='color: #920008;'>爆发</span>",
+      "重装甲":"<span style='color: #BD8901;'>重装甲</span>",
+      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "中排":"中排"
+    },
+    "所属":{
+      "山海经高级中学":"<img src='/assets/extra_tags/300648/山海经高级中学.png'/>山海经高级中学"
     }
   },
   "10452":{
@@ -2477,11 +1875,11 @@
       "GL":"<img src='/assets/extra_tags/300648/GL.png'/>GL"
     },
     "标签":{
-      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
-      "后排":"后排",
       "爆发":"<span style='color: #920008;'>爆发</span>",
       "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助"
+      "SPECIAL":"<span style='font-style: italic; font-weight: bold;'>SPECIAL</span>",
+      "辅助":"<img src='/assets/extra_tags/300648/辅助.png'/>辅助",
+      "后排":"后排"
     },
     "所属":{
       "其它":"其它"

@@ -799,13 +799,37 @@ async function getIndexInfo(indexId) {
   }
 }
 
-async function searchSubjects(keyword) {
+function getPossibleSubjectTypes(gameSettings) {
+  if (!gameSettings) {
+    return [2];
+  }
+
+  const primaryTag = gameSettings.metaTags?.[0] || "";
+
+  if (primaryTag === '书籍') {
+    return [1];
+  }
+  if (primaryTag === '游戏' || primaryTag === 'Galgame') {
+    return [4];
+  }
+  if (primaryTag === '三次元') {
+    return [6];
+  }
+  if (primaryTag === '全部') {
+    return [1, 2, 4, 6];
+  }
+
+  return [2];
+}
+
+async function searchSubjects(keyword, gameSettings = null) {
   try {
+    const types = getPossibleSubjectTypes(gameSettings);
+
     const response = await axios.post(`${API_BASE_URL}/v0/search/subjects`, {
       keyword: keyword.trim(),
       filter: {
-        // type: [2]  // Only anime
-        type: [2, 4]  // anime and game
+        type: types
       }
     });
 
@@ -813,13 +837,20 @@ async function searchSubjects(keyword) {
       return [];
     }
 
+    const typeLabelMap = {
+      1: '书籍',
+      2: '动漫',
+      4: '游戏',
+      6: '三次元'
+    };
+
     return response.data.data.map(subject => ({
       id: subject.id,
       name: subject.name,
       name_cn: subject.name_cn,
       image: fixImageUrl(subject.images?.grid || subject.images?.medium || ''),
       date: subject.date,
-      type: subject.type==2 ? '动漫' : '游戏'
+      type: typeLabelMap[subject.type] || '动漫'
     }));
   } catch (error) {
     console.error('Error searching subjects:', error);
@@ -836,4 +867,5 @@ export {
   generateFeedback,
   getIndexInfo,
   searchSubjects
-}; 
+};
+ 

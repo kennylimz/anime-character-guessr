@@ -261,7 +261,6 @@ const Multiplayer = () => {
     characterNum: 6, // 每个作品的角色数
     maxAttempts: 10, // 最大尝试次数
     enableHints: false, // 提示出现次数
-    includeGame: false, // 包含游戏作品
     timeLimit: 60, // 时间限制
     subjectSearch: true, // 启用作品搜索
     characterTagNum: 4, // 角色标签数量
@@ -318,6 +317,34 @@ const Multiplayer = () => {
   const maxReconnectAttempts = 5;
   const reconnectTimerRef = useRef(null);
   const isManualDisconnectRef = useRef(false);
+
+  // Register app state provider for diagnostic logs
+  useEffect(() => {
+    logCollector.setAppStateProvider(() => ({
+      mode: 'multiplayer',
+      roomId: roomId || null,
+      isHost,
+      isJoined,
+      isGameStarted,
+      isGameStarting,
+      gameEnd,
+      globalGameEnd,
+      isObserver,
+      playerCount: players?.length || 0,
+      guessesLeft,
+      guessesCount: guesses.length,
+      hasAnswerCharacter: Boolean(answerCharacter),
+      answerCharacterId: answerCharacter?.id || null,
+      answerCharacterName: answerCharacter?.name || null,
+      subjectSearchEnabled: gameSettings?.subjectSearch ?? true,
+      syncMode: gameSettings?.syncMode,
+      nonstopMode: gameSettings?.nonstopMode
+    }));
+
+    return () => {
+      logCollector.setAppStateProvider(null);
+    };
+  }, [roomId, isHost, isJoined, isGameStarted, isGameStarting, gameEnd, globalGameEnd, isObserver, players, guessesLeft, guesses.length, answerCharacter, gameSettings]);
   const isAutoReconnectingRef = useRef(false);
   const allSpectators = useMemo(() => {
     if (!players || players.length === 0) return false;
@@ -1125,17 +1152,16 @@ const Multiplayer = () => {
         )
       );
       const isCorrectAnswer = character.id === answerCharacter?.id;
-      // 同步模式下所有猜测视为同时发生，角色BP由服务端跨轮次判定
-      // 非同步模式/血战模式仍由前端做客户端预拦截
-      if (duplicateInHistory) {
+      // 血战模式/同步模式下允许多人猜正确答案（跨轮次亦可提交）
+      if (isCorrectAnswer && (gameSettings.nonstopMode || gameSettings.syncMode)) {
+        // 正确答案在血战模式与同步模式下允许所有人提交，不触发全局BP拦截
+      } else if (duplicateInHistory) {
         if (gameSettings.syncMode) {
-          // 同步模式：同轮可猜同角色，如果是之前轮次被猜过了，前端需要预拦截
+          // 同步模式：同轮可猜同普通角色，如果是之前轮次被猜过了，前端需要预拦截
           if (duplicateInPreviousRounds) {
             alert(text.globalPickUsed);
             return;
           }
-        } else if (gameSettings.nonstopMode && isCorrectAnswer) {
-          // 血战模式下允许多人猜正确答案
         } else {
           alert(text.globalPickUsed);
           return;
@@ -1833,6 +1859,7 @@ const Multiplayer = () => {
                     isGuessing={isGuessing || waitingForSync}
                     gameEnd={gameEnd || isObserver}
                     subjectSearch={gameSettings.subjectSearch}
+                    gameSettings={gameSettings}
                     finishInit={isGameStarted}
                     locale={locale}
                   />

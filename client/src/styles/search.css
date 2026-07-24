@@ -216,4 +216,50 @@
 .search-result-item.selected {
   background-color: rgba(70, 130, 180, 0.2);
   border-left: 3px solid #4682b4;
-} 
+}
+
+/* 搜作品禁用时的提示气泡与包裹层 */
+.subject-search-wrapper {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+.subject-disabled-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  background: #1e293b;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  pointer-events: none;
+  animation: tooltipFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.subject-disabled-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 24px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1e293b transparent transparent transparent;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

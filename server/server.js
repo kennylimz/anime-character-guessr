@@ -519,6 +519,30 @@ app.post('/api/feedback-tags', async (req, res) => {
     }
 });
 
+function cleanBackslashes(str) {
+    if (typeof str !== 'string') return str;
+    return str
+        .replace(/\\([\[\]\(\)\{\}'"\/])/g, '$1')
+        .replace(/\\\\/g, '\\');
+}
+
+function sanitizeDiagnosticData(data) {
+    if (typeof data === 'string') {
+        return cleanBackslashes(data);
+    }
+    if (Array.isArray(data)) {
+        return data.map(item => sanitizeDiagnosticData(item));
+    }
+    if (data && typeof data === 'object') {
+        const cleaned = {};
+        for (const [key, value] of Object.entries(data)) {
+            cleaned[key] = sanitizeDiagnosticData(value);
+        }
+        return cleaned;
+    }
+    return data;
+}
+
 app.post('/api/bug-feedback', async (req, res) => {
     try {
         const { bugType, description, diagnosticData } = req.body;
@@ -534,13 +558,13 @@ app.post('/api/bug-feedback', async (req, res) => {
         const collection = database.collection('feedback');
 
         const document = {
-            bugType: bugType.trim(),
-            description: description.trim(),
+            bugType: cleanBackslashes(bugType.trim()),
+            description: cleanBackslashes(description.trim()),
             createdAt: new Date()
         };
 
         if (diagnosticData && typeof diagnosticData === 'object') {
-            document.diagnosticData = diagnosticData;
+            document.diagnosticData = sanitizeDiagnosticData(diagnosticData);
         }
 
         const result = await collection.insertOne(document);

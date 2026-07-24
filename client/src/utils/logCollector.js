@@ -1,5 +1,32 @@
+import axios from 'axios';
+
 const MAX_LOGS = 500;
 const MAX_ERRORS = 100;
+const MAX_NETWORK_LOGS = 30;
+
+function cleanBackslashes(str) {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/\\([\[\]\(\)\{\}'"\/])/g, '$1')
+    .replace(/\\\\/g, '\\');
+}
+
+function sanitizeData(data) {
+  if (typeof data === 'string') {
+    return cleanBackslashes(data);
+  }
+  if (Array.isArray(data)) {
+    return data.map(item => sanitizeData(item));
+  }
+  if (data && typeof data === 'object') {
+    const cleaned = {};
+    for (const [key, value] of Object.entries(data)) {
+      cleaned[key] = sanitizeData(value);
+    }
+    return cleaned;
+  }
+  return data;
+}
 
 function formatLogArgument(arg) {
   if (arg === null) return 'null';
@@ -16,7 +43,7 @@ function formatLogArgument(arg) {
       if (arg.response?.data?.message) {
         msg += ` - Response: ${arg.response.data.message}`;
       }
-      return msg;
+      return cleanBackslashes(msg);
     }
     
     // Regular error
@@ -27,27 +54,29 @@ function formatLogArgument(arg) {
       // Get the first three lines of stack trace for brevity
       stackLine = '\n' + arg.stack.split('\n').slice(0, 3).join('\n');
     }
-    return `[${name}] ${message}${stackLine}`;
+    return cleanBackslashes(`[${name}] ${message}${stackLine}`);
   }
   
   if (typeof arg === 'object') {
     try {
       if (typeof HTMLElement !== 'undefined' && arg instanceof HTMLElement) {
-        return `<${arg.tagName.toLowerCase()}${arg.id ? ` id="${arg.id}"` : ''}${arg.className ? ` class="${arg.className}"` : ''}>`;
+        return cleanBackslashes(`<${arg.tagName.toLowerCase()}${arg.id ? ` id="${arg.id}"` : ''}${arg.className ? ` class="${arg.className}"` : ''}>`);
       }
-      return JSON.stringify(arg);
+      return cleanBackslashes(JSON.stringify(arg));
     } catch (e) {
-      return String(arg);
+      return cleanBackslashes(String(arg));
     }
   }
   
-  return String(arg);
+  return cleanBackslashes(String(arg));
 }
 
 class LogCollector {
   constructor() {
     this.logs = [];
     this.errors = [];
+    this.networkLogs = [];
+    this.appStateProvider = null;
     this.originalConsole = {
       log: console.log,
       error: console.error,
@@ -60,6 +89,7 @@ class LogCollector {
   init() {
     this.overrideConsole();
     this.setupErrorHandlers();
+    this.setupAxiosInterceptors();
   }
 
   overrideConsole() {
@@ -88,6 +118,8 @@ class LogCollector {
   }
 
   setupErrorHandlers() {
+    if (typeof window === 'undefined') return;
+
     window.addEventListener('error', (event) => {
       this.addError({
         message: event.message,
@@ -107,9 +139,101 @@ class LogCollector {
     });
   }
 
+  setupAxiosInterceptors() {
+    try {
+      axios.interceptors.request.use(
+        (config) => {
+          config._startTime = Date.now();
+          return config;
+        },
+        (error) => {
+          return Promise.reject(error);
+        }
+      );
+
+      axios.interceptors.response.use(
+        (response) => {
+          const durationMs = response.config?._startTime ? Date.now() - response.config._startTime : null;
+          this.addNetworkLog({
+            method: response.config?.method?.toUpperCase() || 'GET',
+            url: response.config?.url || '',
+            status: response.status,
+            durationMs
+          });
+          return response;
+        },
+        (error) => {
+          const durationMs = error.config?._startTime ? Date.now() - error.config._startTime : null;
+          const status = error.response?.status || (error.code ? error.code : 'FAILED');
+          const message = error.response?.data?.message || error.message || 'Network Request Error';
+          this.addNetworkLog({
+            method: error.config?.method?.toUpperCase() || 'GET',
+            url: error.config?.url || '',
+            status,
+            durationMs,
+            error: message
+          });
+          return Promise.reject(error);
+        }
+      );
+    } catch (e) {
+      // Intentionally silent
+    }
+  }
+
+  setAppStateProvider(providerFn) {
+    this.appStateProvider = providerFn;
+  }
+
+  getAppState() {
+    if (typeof this.appStateProvider === 'function') {
+      try {
+        return sanitizeData(this.appStateProvider());
+      } catch (e) {
+        return null;
+      }
+    }
+    return null;
+  }
+
+  getLayoutHealth() {
+    if (typeof document === 'undefined' || typeof window === 'undefined') return null;
+
+    const checkElement = (selector) => {
+      try {
+        const el = document.querySelector(selector);
+        if (!el) return { found: false };
+        const rect = el.getBoundingClientRect();
+        const style = window.getComputedStyle(el);
+        return {
+          found: true,
+          width: Math.round(rect.width),
+          height: Math.round(rect.height),
+          top: Math.round(rect.top),
+          left: Math.round(rect.left),
+          display: style.display,
+          visibility: style.visibility,
+          opacity: style.opacity
+        };
+      } catch (e) {
+        return { found: false, error: e.message };
+      }
+    };
+
+    return sanitizeData({
+      gameContainer: checkElement('.single-player-container, .multiplayer-container'),
+      searchBar: checkElement('.search-bar'),
+      gameInfo: checkElement('.game-info'),
+      popupOverlay: checkElement('.popup-overlay'),
+      bodyScrollHeight: document.body?.scrollHeight || 0,
+      windowInnerWidth: window.innerWidth,
+      windowInnerHeight: window.innerHeight
+    });
+  }
+
   addLog(type, args) {
     const timestamp = new Date().toISOString();
-    const message = args.map(formatLogArgument).join(' ');
+    const message = cleanBackslashes(args.map(formatLogArgument).join(' '));
 
     this.logs.push({
       timestamp,
@@ -129,37 +253,54 @@ class LogCollector {
     if (Array.isArray(args)) {
       errorInfo = {
         timestamp,
-        message: args.map(formatLogArgument).join(' ')
+        message: cleanBackslashes(args.map(formatLogArgument).join(' '))
       };
     } else {
       errorInfo = {
         timestamp,
-        message: formatLogArgument(args)
+        message: cleanBackslashes(formatLogArgument(args))
       };
     }
 
-    this.errors.push(errorInfo);
+    this.errors.push(sanitizeData(errorInfo));
 
     if (this.errors.length > MAX_ERRORS) {
       this.errors.shift();
     }
   }
 
+  addNetworkLog(item) {
+    const timestamp = new Date().toISOString();
+    this.networkLogs.push(sanitizeData({
+      timestamp,
+      ...item
+    }));
+
+    if (this.networkLogs.length > MAX_NETWORK_LOGS) {
+      this.networkLogs.shift();
+    }
+  }
+
   getLogs() {
-    return [...this.logs];
+    return sanitizeData([...this.logs]);
   }
 
   getErrors() {
-    return [...this.errors];
+    return sanitizeData([...this.errors]);
+  }
+
+  getNetworkLogs() {
+    return sanitizeData([...this.networkLogs]);
   }
 
   clear() {
     this.logs = [];
     this.errors = [];
+    this.networkLogs = [];
   }
 
   getDiagnosticData() {
-    return {
+    const rawData = {
       userAgent: navigator.userAgent,
       url: window.location.href,
       timestamp: new Date().toISOString(),
@@ -171,12 +312,19 @@ class LogCollector {
         width: window.innerWidth,
         height: window.innerHeight
       },
+      appState: this.getAppState(),
+      layoutHealth: this.getLayoutHealth(),
+      networkLogs: this.getNetworkLogs(),
       logs: this.getLogs(),
       errors: this.getErrors()
     };
+
+    return sanitizeData(rawData);
   }
 }
 
 const logCollector = new LogCollector();
 
 export default logCollector;
+
+
