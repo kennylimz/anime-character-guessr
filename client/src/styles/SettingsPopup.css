@@ -712,6 +712,8 @@
 .settings-group-content.open {
     grid-template-rows: 1fr;
     opacity: 1;
+    /* Allow absolute dropdowns (e.g. extra-subject search) to escape the collapse clip */
+    overflow: visible;
 }
 
 .settings-group-content-inner {

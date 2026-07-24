@@ -801,7 +801,7 @@ async function getIndexInfo(indexId) {
 
 function getPossibleSubjectTypes(gameSettings) {
   if (!gameSettings) {
-    return [2];
+    return [1, 2, 4, 6];
   }
 
   const primaryTag = gameSettings.metaTags?.[0] || "";
