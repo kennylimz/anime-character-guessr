@@ -2,13 +2,14 @@
   "209791":{
     "标签":{
       "以太":"<img src='/assets/extra_tags/380974/以太.png'/>以太",
-      "强攻":"<img src='/assets/extra_tags/380974/强攻.png'/>强攻"
+      "强攻":"<img src='/assets/extra_tags/380974/强攻.png'/>强攻",
+      "斩击":"斩击"
     },
     "阵营":{
       "法厄同":"<img src='/assets/extra_tags/380974/法厄同.png'/>法厄同"
     },
     "稀有度":{
-      "∞":"∞"
+      "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
     }
   },
   "110634":{
@@ -326,7 +327,7 @@
   },
   "114929":{
     "标签":{
-      "冰":"<img src='/assets/extra_tags/380974/冰.png'/>冰",
+      "烈霜":"<img src='/assets/extra_tags/380974/烈霜.png'/>烈霜",
       "异常":"<img src='/assets/extra_tags/380974/异常.png'/>异常",
       "斩击":"斩击"
     },
@@ -444,7 +445,7 @@
   },
   "174102":{
     "标签":{
-      "以太":"<img src='/assets/extra_tags/380974/以太.png'/>以太",
+      "玄墨":"<img src='/assets/extra_tags/380974/玄墨.png'/>玄墨",
       "命破":"<img src='/assets/extra_tags/380974/命破.png'/>命破",
       "打击":"打击"
     },
@@ -588,7 +589,7 @@
   },
   "174108":{
     "标签":{
-      "物理":"<img src='/assets/extra_tags/380974/物理.png'/>物理",
+      "凛刃":"<img src='/assets/extra_tags/380974/凛刃.png'/>凛刃",
       "强攻":"<img src='/assets/extra_tags/380974/强攻.png'/>强攻",
       "斩击":"斩击"
     },
@@ -693,7 +694,8 @@
   "201863":{
     "标签":{
       "风":"<img src='/assets/extra_tags/380974/风.png'/>风",
-      "异常":"<img src='/assets/extra_tags/380974/异常.png'/>异常"
+      "异常":"<img src='/assets/extra_tags/380974/异常.png'/>异常",
+      "斩击":"斩击"
     },
     "阵营":{
       "罗斯凯利法·外务筹策局":"<img src='/assets/extra_tags/380974/罗斯凯利法·外务筹策局.png'/>罗斯凯利法·外务筹策局"
@@ -705,10 +707,36 @@
   "201864":{
     "标签":{
       "火":"<img src='/assets/extra_tags/380974/火.png'/>火",
-      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破"
+      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破",
+      "打击":"打击"
     },
     "阵营":{
       "罗斯凯利法·外务筹策局":"<img src='/assets/extra_tags/380974/罗斯凯利法·外务筹策局.png'/>罗斯凯利法·外务筹策局"
+    },
+    "稀有度":{
+      "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
+    }
+  },
+  "205795":{
+    "标签":{
+      "流明":"<img src='/assets/extra_tags/380974/流明.png'/>流明",
+      "异常":"<img src='/assets/extra_tags/380974/异常.png'/>异常",
+      "斩击":"斩击"
+    },
+    "阵营":{
+      "达识结社":"<img src='/assets/extra_tags/380974/达识结社.png'/>达识结社"
+    },
+    "稀有度":{
+      "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
+    }
+  },
+  "210066":{
+    "标签":{
+      "冰":"<img src='/assets/extra_tags/380974/冰.png'/>冰",
+      "强攻":"<img src='/assets/extra_tags/380974/强攻.png'/>强攻"
+    },
+    "阵营":{
+      "罗斯凯利法·空域巡戍局":"<img src='/assets/extra_tags/380974/罗斯凯利法·空域巡戍局.png'/>罗斯凯利法·空域巡戍局"
     },
     "稀有度":{
       "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
