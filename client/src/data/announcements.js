@@ -30,6 +30,7 @@ const announcements = [
     content: `
       <b>优化与调整：</b><br/>
       <ul>
+        <li>公告现在只显示一次</li>
         <li>优化“搜索作品”搜索逻辑</li>
         <li>“搜索作品”关闭时不再隐藏按钮</li>
         <li>优化UI样式</li>

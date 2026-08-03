@@ -122,7 +122,8 @@ const Home = ({ locale = 'zh' }) => {
     // refresh every 5 seconds
     const intervalId = setInterval(fetchRoomCount, 5000);
 
-    if (!isEnglish) {
+    if (!isEnglish && !sessionStorage.getItem('hasSeenWelcomePopup')) {
+      sessionStorage.setItem('hasSeenWelcomePopup', '1');
       setShowWelcomePopup(true);
     }
 
