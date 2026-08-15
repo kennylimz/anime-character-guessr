@@ -21,4 +21,5 @@ export const subjectsWithExtraTags = new Set([
   219588, // 公主连结！Re:Dive
   365720, // 重返未来：1999
   105651, // 彩虹六号：围攻
+  303543, // 无畏契约（VALORANT）
 ]);

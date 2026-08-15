@@ -1,0 +1,156 @@
+{
+  "132972": {
+    "_name": "Jett",
+    "定位": { "决斗": "<img src='/assets/extra_tags/303543/role_duelist.png'/>决斗" },
+    "出身": { "韩国": "<img src='/assets/extra_tags/303543/origin_kr.png'/>韩国" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132973": {
+    "_name": "Breach",
+    "定位": { "先锋": "<img src='/assets/extra_tags/303543/role_initiator.png'/>先锋" },
+    "出身": { "瑞典": "<img src='/assets/extra_tags/303543/origin_se.png'/>瑞典" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132974": {
+    "_name": "Raze",
+    "定位": { "决斗": "<img src='/assets/extra_tags/303543/role_duelist.png'/>决斗" },
+    "出身": { "巴西": "<img src='/assets/extra_tags/303543/origin_br.png'/>巴西" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132975": {
+    "_name": "Omen",
+    "定位": { "控场": "<img src='/assets/extra_tags/303543/role_controller.png'/>控场" },
+    "出身": { "未知": "<img src='/assets/extra_tags/303543/origin_unknown.png'/>未知" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "7": "<img src='/assets/extra_tags/303543/ultimate_7.png'/>7" }
+  },
+  "132976": {
+    "_name": "Brimstone",
+    "定位": { "控场": "<img src='/assets/extra_tags/303543/role_controller.png'/>控场" },
+    "出身": { "美国": "<img src='/assets/extra_tags/303543/origin_us.png'/>美国" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132977": {
+    "_name": "Phoenix",
+    "定位": { "决斗": "<img src='/assets/extra_tags/303543/role_duelist.png'/>决斗" },
+    "出身": { "英格兰": "<img src='/assets/extra_tags/303543/origin_eng.png'/>英格兰" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "6": "<img src='/assets/extra_tags/303543/ultimate_6.png'/>6" }
+  },
+  "132978": {
+    "_name": "Sage",
+    "定位": { "哨卫": "<img src='/assets/extra_tags/303543/role_sentinel.png'/>哨卫" },
+    "出身": { "中国": "<img src='/assets/extra_tags/303543/origin_cn.png'/>中国" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "7": "<img src='/assets/extra_tags/303543/ultimate_7.png'/>7" }
+  },
+  "132979": {
+    "_name": "Sova",
+    "定位": { "先锋": "<img src='/assets/extra_tags/303543/role_initiator.png'/>先锋" },
+    "出身": { "俄罗斯": "<img src='/assets/extra_tags/303543/origin_ru.png'/>俄罗斯" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132980": {
+    "_name": "Viper",
+    "定位": { "控场": "<img src='/assets/extra_tags/303543/role_controller.png'/>控场" },
+    "出身": { "美国": "<img src='/assets/extra_tags/303543/origin_us.png'/>美国" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "9": "<img src='/assets/extra_tags/303543/ultimate_9.png'/>9" }
+  },
+  "132981": {
+    "_name": "Cypher",
+    "定位": { "哨卫": "<img src='/assets/extra_tags/303543/role_sentinel.png'/>哨卫" },
+    "出身": { "摩洛哥": "<img src='/assets/extra_tags/303543/origin_ma.png'/>摩洛哥" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "7": "<img src='/assets/extra_tags/303543/ultimate_7.png'/>7" }
+  },
+  "132982": {
+    "_name": "Reyna",
+    "定位": { "决斗": "<img src='/assets/extra_tags/303543/role_duelist.png'/>决斗" },
+    "出身": { "墨西哥": "<img src='/assets/extra_tags/303543/origin_mx.png'/>墨西哥" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "7": "<img src='/assets/extra_tags/303543/ultimate_7.png'/>7" }
+  },
+  "132983": {
+    "_name": "Killjoy",
+    "定位": { "哨卫": "<img src='/assets/extra_tags/303543/role_sentinel.png'/>哨卫" },
+    "出身": { "德国": "<img src='/assets/extra_tags/303543/origin_de.png'/>德国" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "9": "<img src='/assets/extra_tags/303543/ultimate_9.png'/>9" }
+  },
+  "132984": {
+    "_name": "Skye",
+    "定位": { "先锋": "<img src='/assets/extra_tags/303543/role_initiator.png'/>先锋" },
+    "出身": { "澳大利亚": "<img src='/assets/extra_tags/303543/origin_au.png'/>澳大利亚" },
+    "上线年份": { "2020": "2020" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132985": {
+    "_name": "Yoru",
+    "定位": { "决斗": "<img src='/assets/extra_tags/303543/role_duelist.png'/>决斗" },
+    "出身": { "日本": "<img src='/assets/extra_tags/303543/origin_jp.png'/>日本" },
+    "上线年份": { "2021": "2021" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132986": {
+    "_name": "Astra",
+    "定位": { "控场": "<img src='/assets/extra_tags/303543/role_controller.png'/>控场" },
+    "出身": { "加纳": "<img src='/assets/extra_tags/303543/origin_gh.png'/>加纳" },
+    "上线年份": { "2021": "2021" },
+    "大招点数": { "7": "<img src='/assets/extra_tags/303543/ultimate_7.png'/>7" }
+  },
+  "132987": {
+    "_name": "KAY/O",
+    "定位": { "先锋": "<img src='/assets/extra_tags/303543/role_initiator.png'/>先锋" },
+    "出身": { "未来世界": "未来世界" },
+    "上线年份": { "2021": "2021" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132988": {
+    "_name": "Chamber",
+    "定位": { "哨卫": "<img src='/assets/extra_tags/303543/role_sentinel.png'/>哨卫" },
+    "出身": { "法国": "<img src='/assets/extra_tags/303543/origin_fr.png'/>法国" },
+    "上线年份": { "2021": "2021" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132989": {
+    "_name": "Neon",
+    "定位": { "决斗": "<img src='/assets/extra_tags/303543/role_duelist.png'/>决斗" },
+    "出身": { "菲律宾": "<img src='/assets/extra_tags/303543/origin_ph.png'/>菲律宾" },
+    "上线年份": { "2022": "2022" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132990": {
+    "_name": "Fade",
+    "定位": { "先锋": "<img src='/assets/extra_tags/303543/role_initiator.png'/>先锋" },
+    "出身": { "土耳其": "<img src='/assets/extra_tags/303543/origin_tr.png'/>土耳其" },
+    "上线年份": { "2022": "2022" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132991": {
+    "_name": "Harbor",
+    "定位": { "控场": "<img src='/assets/extra_tags/303543/role_controller.png'/>控场" },
+    "出身": { "印度": "<img src='/assets/extra_tags/303543/origin_in.png'/>印度" },
+    "上线年份": { "2022": "2022" },
+    "大招点数": { "7": "<img src='/assets/extra_tags/303543/ultimate_7.png'/>7" }
+  },
+  "132992": {
+    "_name": "Gekko",
+    "定位": { "先锋": "<img src='/assets/extra_tags/303543/role_initiator.png'/>先锋" },
+    "出身": { "美国": "<img src='/assets/extra_tags/303543/origin_us.png'/>美国" },
+    "上线年份": { "2023": "2023" },
+    "大招点数": { "8": "<img src='/assets/extra_tags/303543/ultimate_8.png'/>8" }
+  },
+  "132993": {
+    "_name": "Deadlock",
+    "定位": { "哨卫": "<img src='/assets/extra_tags/303543/role_sentinel.png'/>哨卫" },
+    "出身": { "挪威": "<img src='/assets/extra_tags/303543/origin_no.png'/>挪威" },
+    "上线年份": { "2023": "2023" },
+    "大招点数": { "7": "<img src='/assets/extra_tags/303543/ultimate_7.png'/>7" }
+  }
+}
