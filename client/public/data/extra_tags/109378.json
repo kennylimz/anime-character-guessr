@@ -518,10 +518,12 @@
       "地":"地"
     },
     "职阶":{
+      "Pretender":"<img src='/assets/extra_tags/109378/金卡Pretender.png'/>Pretender",
       "Rider":"<img src='/assets/extra_tags/109378/金卡Rider.png'/>Rider"
     },
     "宝具":{
-      "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体"
+      "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体",
+      "Buster单体":"<img src='/assets/extra_tags/109378/Buster.png' alt='Buster'/>单体"
     }
   },
   "99482":{
@@ -1918,6 +1920,7 @@
   "169809":{
     "_name":"比肖内",
     "稀有度":{
+      "4星":"<img src='/assets/extra_tags/109378/4星.png' alt='4星' />",
       "5星":"<img src='/assets/extra_tags/109378/5星.png' alt='5星' />"
     },
     "属性":{
@@ -1926,15 +1929,18 @@
       "混沌":"混沌"
     },
     "职阶":{
+      "Caster":"<img src='/assets/extra_tags/109378/金卡Caster.png'/>Caster",
       "Lancer":"<img src='/assets/extra_tags/109378/金卡Lancer.png'/>Lancer"
     },
     "宝具":{
+      "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体",
       "Quick单体":"<img src='/assets/extra_tags/109378/Quick.png' alt='Quick'/>单体"
     }
   },
   "171289":{
     "_name":"小野小町",
     "稀有度":{
+      "4星":"<img src='/assets/extra_tags/109378/4星.png' alt='4星' />",
       "5星":"<img src='/assets/extra_tags/109378/5星.png' alt='5星' />"
     },
     "属性":{
@@ -1943,6 +1949,7 @@
       "天":"天"
     },
     "职阶":{
+      "Archer":"<img src='/assets/extra_tags/109378/金卡Archer.png'/>Archer",
       "Caster":"<img src='/assets/extra_tags/109378/金卡Caster.png'/>Caster"
     },
     "宝具":{
@@ -2028,9 +2035,11 @@
       "混沌":"混沌"
     },
     "职阶":{
-      "Berserker":"<img src='/assets/extra_tags/109378/金卡Berserker.png'/>Berserker"
+      "Berserker":"<img src='/assets/extra_tags/109378/金卡Berserker.png'/>Berserker",
+      "Rider":"<img src='/assets/extra_tags/109378/金卡Rider.png'/>Rider"
     },
     "宝具":{
+      "Quick全体":"<img src='/assets/extra_tags/109378/Quick.png' alt='Quick'/>全体",
       "Quick单体":"<img src='/assets/extra_tags/109378/Quick.png' alt='Quick'/>单体"
     }
   },
@@ -5249,9 +5258,11 @@
       "秩序":"秩序"
     },
     "职阶":{
+      "Berserker":"<img src='/assets/extra_tags/109378/金卡Berserker.png'/>Berserker",
       "Saber":"<img src='/assets/extra_tags/109378/金卡Saber.png'/>Saber"
     },
     "宝具":{
+      "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体",
       "Arts单体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>单体"
     }
   },
