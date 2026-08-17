@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import SinglePlayer from './pages/SinglePlayer';
 import Multiplayer from './pages/Multiplayer';
-import BgmBlockerPopup from './components/BgmBlockerPopup';
 
 const PAGE_TITLES = {
   zh: '二刺猿笑传之猜猜呗',
@@ -30,31 +29,9 @@ function AppRoutes() {
 }
 
 function App() {
-  const [blockerMode, setBlockerMode] = useState(null); // 'home' or 'game' or null
-
-  useEffect(() => {
-    const handleGameBlock = () => setBlockerMode('game');
-    const handleHomeBlock = () => setBlockerMode('home');
-    
-    window.addEventListener('bgm-api-blocked', handleGameBlock);
-    window.addEventListener('bgm-api-blocked-home', handleHomeBlock);
-    
-    return () => {
-      window.removeEventListener('bgm-api-blocked', handleGameBlock);
-      window.removeEventListener('bgm-api-blocked-home', handleHomeBlock);
-    };
-  }, []);
-
   return (
     <Router>
       <AppRoutes />
-      {blockerMode && (
-        <BgmBlockerPopup 
-          mode={blockerMode} 
-          onClose={() => setBlockerMode(null)} 
-          locale={window.location.pathname.startsWith('/en') || new URLSearchParams(window.location.search).get('lang') === 'en' ? 'en' : 'zh'}
-        />
-      )}
     </Router>
   );
 }

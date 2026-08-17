@@ -1,6 +1,7 @@
 import axios from 'axios';
 import CryptoJS from 'crypto-js';
 import debounce from 'lodash.debounce';
+import { enableBgmAccelAfterBlock, isOfficialBgmUrl, toAccelBgmUrl } from './bgmApi.js';
 
 // 设置请求超时时间为 5 秒
 axios.defaults.timeout = 5000;
@@ -67,6 +68,16 @@ async function requestWithRetry(requestFn, retries = RETRY_CONFIG.maxRetries) {
   throw lastError;
 }
 
+async function retryWithAccel(method, url, data, config) {
+  const accelUrl = toAccelBgmUrl(url);
+  if (!accelUrl || !enableBgmAccelAfterBlock()) return null;
+
+  if (method === 'GET') {
+    return requestWithRetry(() => axios.get(accelUrl, config));
+  }
+  return requestWithRetry(() => axios.post(accelUrl, data, config));
+}
+
 class RequestCache {
   constructor() {
     this.cache = new Map();
@@ -97,9 +108,18 @@ class RequestCache {
       this.setCache(cacheKey, response);
       return response;
     } catch (error) {
-      if (url && url.startsWith('https://api.bgm.tv') && isConnectionClosedError(error)) {
+      if (isOfficialBgmUrl(url) && isConnectionClosedError(error)) {
         error.isConnectionClosed = true;
-        window.dispatchEvent(new CustomEvent('bgm-api-blocked'));
+        try {
+          const response = await retryWithAccel('GET', url, null, config);
+          if (response) {
+            const accelUrl = toAccelBgmUrl(url);
+            this.setCache(this._generateCacheKey('GET', accelUrl, config), response);
+            return response;
+          }
+        } catch (accelError) {
+          throw accelError;
+        }
       }
       throw error;
     }
@@ -118,9 +138,18 @@ class RequestCache {
       this.setCache(cacheKey, response);
       return response;
     } catch (error) {
-      if (url && url.startsWith('https://api.bgm.tv') && isConnectionClosedError(error)) {
+      if (isOfficialBgmUrl(url) && isConnectionClosedError(error)) {
         error.isConnectionClosed = true;
-        window.dispatchEvent(new CustomEvent('bgm-api-blocked'));
+        try {
+          const response = await retryWithAccel('POST', url, data, config);
+          if (response) {
+            const accelUrl = toAccelBgmUrl(url);
+            this.setCache(this._generateCacheKey('POST', accelUrl, { data, ...config }), response);
+            return response;
+          }
+        } catch (accelError) {
+          throw accelError;
+        }
       }
       throw error;
     }

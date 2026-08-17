@@ -2,12 +2,11 @@ import axios from './cached-axios.js';
 import { idToTags } from '../data/id_tags.js';
 import { subjectsWithExtraTags } from '../data/extra_tag_subjects.js';
 import { fixImageUrl } from './imageUrl.js';
-
-const API_BASE_URL = import.meta.env.VITE_BGM_API_URL || 'https://api.bgm.tv';
+import { getBgmApiUrl } from './bgmApi.js';
 
 async function getSubjectDetails(subjectId) {
   try {
-    const response = await axios.get(`${API_BASE_URL}/v0/subjects/${subjectId}`);
+    const response = await axios.get(`${getBgmApiUrl()}/v0/subjects/${subjectId}`);
 
     if (!response.data) {
       throw new Error('No subject details found');
@@ -72,8 +71,8 @@ async function getSubjectDetails(subjectId) {
 async function getCharacterAppearances(characterId, gameSettings) {
   try {
     const [subjectsResponse, personsResponse] = await Promise.all([
-      axios.get(`${API_BASE_URL}/v0/characters/${characterId}/subjects`),
-      axios.get(`${API_BASE_URL}/v0/characters/${characterId}/persons`)
+      axios.get(`${getBgmApiUrl()}/v0/characters/${characterId}/subjects`),
+      axios.get(`${getBgmApiUrl()}/v0/characters/${characterId}/persons`)
     ]);
 
     if (!subjectsResponse.data || !subjectsResponse.data.length) {
@@ -343,7 +342,7 @@ async function getCharacterAppearances(characterId, gameSettings) {
 
 async function getCharacterDetails(characterId) {
   try {
-    const response = await axios.get(`${API_BASE_URL}/v0/characters/${characterId}`);
+    const response = await axios.get(`${getBgmApiUrl()}/v0/characters/${characterId}`);
     if (!response.data) {
       throw new Error('No character details found');
     }
@@ -389,7 +388,7 @@ async function getCharacterDetails(characterId) {
 
 async function getCharactersBySubjectId(subjectId) {
   try {
-    const response = await axios.get(`${API_BASE_URL}/v0/subjects/${subjectId}/characters`);
+    const response = await axios.get(`${getBgmApiUrl()}/v0/subjects/${subjectId}/characters`);
 
     if (!response.data || !response.data.length) {
       console.error('作品没有角色：'+subjectId);
@@ -466,7 +465,7 @@ async function getRandomCharacter(gameSettings) {
         indexInBatch = randomOffset % batchSize;
         // Fetch batch of subjects from the index
         const response = await axios.get(
-          `${API_BASE_URL}/v0/indices/${gameSettings.indexId}/subjects?limit=${batchSize}&offset=${batchOffset}`
+          `${getBgmApiUrl()}/v0/indices/${gameSettings.indexId}/subjects?limit=${batchSize}&offset=${batchOffset}`
         );
 
         if (!response.data || !response.data.data || response.data.data.length === 0) {
@@ -496,7 +495,7 @@ async function getRandomCharacter(gameSettings) {
         randomOffset = Math.floor(Math.random() * Math.min(gameSettings.topNSubjects, 1000));
         batchOffset = Math.floor(randomOffset / batchSize) * batchSize;
         indexInBatch = randomOffset % batchSize;
-        const fetchSubjects = async (offset) => axios.post(`${API_BASE_URL}/v0/search/subjects?limit=${batchSize}&offset=${offset}`, {
+        const fetchSubjects = async (offset) => axios.post(`${getBgmApiUrl()}/v0/search/subjects?limit=${batchSize}&offset=${offset}`, {
           "sort": "heat",
           "filter": buildFilter(`>=${randomYear}-01-01`, `<${minDate}`)
         });
@@ -541,7 +540,7 @@ async function getRandomCharacter(gameSettings) {
         batchOffset = Math.floor(randomOffset / batchSize) * batchSize;
         indexInBatch = randomOffset % batchSize;
 
-        const fetchSubjects = async (offset) => axios.post(`${API_BASE_URL}/v0/search/subjects?limit=${batchSize}&offset=${offset}`, {
+        const fetchSubjects = async (offset) => axios.post(`${getBgmApiUrl()}/v0/search/subjects?limit=${batchSize}&offset=${offset}`, {
           "sort": "heat",
           "filter": buildFilter(`>=${gameSettings.startYear}-01-01`, `<${minDate}`)
         });
@@ -780,7 +779,7 @@ function generateFeedback(guess, answerCharacter, gameSettings) {
 
 async function getIndexInfo(indexId) {
   try {
-    const response = await axios.get(`${API_BASE_URL}/v0/indices/${indexId}`);
+    const response = await axios.get(`${getBgmApiUrl()}/v0/indices/${indexId}`);
     
     if (!response.data) {
       throw new Error('No index information found');
@@ -826,7 +825,7 @@ async function searchSubjects(keyword, gameSettings = null) {
   try {
     const types = getPossibleSubjectTypes(gameSettings);
 
-    const response = await axios.post(`${API_BASE_URL}/v0/search/subjects`, {
+    const response = await axios.post(`${getBgmApiUrl()}/v0/search/subjects`, {
       keyword: keyword.trim(),
       filter: {
         type: types

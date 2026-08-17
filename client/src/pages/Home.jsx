@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles/Home.css';
 import WelcomePopup from '../components/WelcomePopup';
+import { enableBgmAccelAfterBlock, getBgmApiUrl, hasBgmAccelUrl } from '../utils/bgmApi.js';
 
 const HOME_TEXT = {
   zh: {
@@ -43,7 +44,9 @@ const Home = ({ locale = 'zh' }) => {
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
 
   useEffect(() => {
-    const apiBaseUrl = import.meta.env.VITE_BGM_API_URL || 'https://api.bgm.tv';
+    // Only probe when accel is available and we are still on the official API
+    if (!hasBgmAccelUrl()) return;
+    const apiBaseUrl = getBgmApiUrl();
     if (!apiBaseUrl.startsWith('https://api.bgm.tv')) return;
 
     let mountTimeoutId;
@@ -86,13 +89,12 @@ const Home = ({ locale = 'zh' }) => {
               const waitTime = 1000 * Math.pow(2, attempt);
               nextAttemptTimeoutId = setTimeout(() => startTestWithRetry(attempt + 1), waitTime);
             } else {
-              window.dispatchEvent(new CustomEvent('bgm-api-blocked-home'));
+              enableBgmAccelAfterBlock();
             }
           }
         });
     };
 
-    // Delay 100ms to ensure App's event listeners are fully mounted and active
     mountTimeoutId = setTimeout(() => startTestWithRetry(0), 100);
 
     return () => {

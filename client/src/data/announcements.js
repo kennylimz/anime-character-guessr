@@ -25,6 +25,23 @@ const announcements = [
   },
 
   {
+    version: '1.7.4',
+    date: '2026-08-16',
+    content: `
+      <b>新功能：</b><br/>
+      <ul>
+        <li>设置中新增「启用BGM加速」（国内访问建议启用）</li>
+        <li>在中国大陆端点（ccb.baka.website）默认开启加速</li>
+        <li>检测到官方 Bangumi API 不可用时，自动切换到加速镜像</li>
+      </ul>
+      <b>优化与调整：</b><br/>
+      <ul>
+        <li>移除原先的网络环境跳转大弹窗</li>
+      </ul>
+    `
+  },
+
+  {
     version: '1.7.3',
     date: '2026-07-24',
     content: `

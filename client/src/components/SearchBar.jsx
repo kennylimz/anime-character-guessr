@@ -4,8 +4,7 @@ import { fixImageUrl } from '../utils/imageUrl.js';
 import { searchSubjects, getCharactersBySubjectId, getCharacterDetails } from '../utils/bangumi';
 import '../styles/search.css';
 import { submitGuessCharacterCount } from '../utils/db';
-
-const API_BASE_URL = import.meta.env.VITE_BGM_API_URL || 'https://api.bgm.tv';
+import { getBgmApiUrl } from '../utils/bgmApi.js';
 
 const SEARCH_TEXT = {
   zh: {
@@ -246,7 +245,7 @@ function SearchBar({ onCharacterSelect, isGuessing, gameEnd, subjectSearch, game
     loadingState(true);
     try {
       const response = await axios.post(
-        `${API_BASE_URL}/v0/search/characters?limit=${currentLimit}&offset=${currentOffset}`,
+        `${getBgmApiUrl()}/v0/search/characters?limit=${currentLimit}&offset=${currentOffset}`,
         {
           keyword: searchQuery.trim()
         }

@@ -4,6 +4,7 @@ import { getIndexInfo, searchSubjects } from '../utils/bangumi';
 import { useState, useEffect, useRef } from 'react';
 import axiosCache from '../utils/cached-axios';
 import { getPresetConfig } from '../data/presets';
+import { hasBgmAccelUrl, isBgmAccelEnabled, setBgmAccelEnabled } from '../utils/bgmApi';
 
 // Helper Components
 const Tooltip = ({ content }) => (
@@ -165,6 +166,9 @@ const SETTINGS_TEXT = {
     totalWorks: (count) => `共 ${count} 部作品`,
     removeIndex: '移除目录',
     footerHint: '*设置改动点了才会生效！否则下一把生效',
+    bgmAccel: '启用BGM加速',
+    bgmAccelNote: '国内访问建议启用',
+    bgmAccelTitle: '开启后使用加速镜像访问 Bangumi API，适合官方接口不可用的网络环境。',
     presetMessages: {
       二游高手: '那很有生活了😅',
       MOBA糕手: '风暴要火'
@@ -250,6 +254,9 @@ const SETTINGS_TEXT = {
     totalWorks: (count) => `${count} subjects`,
     removeIndex: 'Remove index',
     footerHint: '*Changes only take effect after applying settings; otherwise they apply next game',
+    bgmAccel: 'Enable BGM Accel',
+    bgmAccelNote: 'Recommended for users in Mainland China',
+    bgmAccelTitle: 'Use an accelerated Bangumi API mirror when the official endpoint is unreachable.',
     presetMessages: {
       二游高手: 'That is quite a lifestyle.',
       MOBA糕手: 'The storm is coming.'
@@ -281,8 +288,16 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
   const [localSettings, setLocalSettings] = useState(() => JSON.parse(JSON.stringify(gameSettings)));
   const [isGuessSettingsOpen, setIsGuessSettingsOpen] = useState(false);
   const [isAnswerSettingsOpen, setIsAnswerSettingsOpen] = useState(false);
+  const [bgmAccel, setBgmAccel] = useState(() => isBgmAccelEnabled());
+  const canUseBgmAccel = hasBgmAccelUrl();
   const exclusiveMetaCategories = ['全部', '游戏', '书籍', '三次元', 'Galgame'];
   const isExclusiveMetaCategory = exclusiveMetaCategories.includes(gameSettings.metaTags[0]);
+
+  const handleBgmAccelChange = (enabled) => {
+    if (!canUseBgmAccel) return;
+    setBgmAccelEnabled(enabled);
+    setBgmAccel(enabled);
+  };
 
   // Handle click outside to close dropdown
   useEffect(() => {
@@ -1130,6 +1145,26 @@ function SettingsPopup({ gameSettings, onSettingsChange, onClose, onRestart, hid
                 </div>
               </div>
             </div>
+
+            {canUseBgmAccel && (
+              <div className="settings-group">
+                <div className="settings-row compact-row">
+                  <div className="setting-item-compact">
+                    <label
+                      className="settings-label"
+                      title={text.bgmAccelTitle}
+                    >
+                      {text.bgmAccel}
+                    </label>
+                    <ToggleSwitch
+                      checked={bgmAccel}
+                      onChange={handleBgmAccelChange}
+                    />
+                    <span style={{ fontSize: '13px', color: '#6b7280' }}>{text.bgmAccelNote}</span>
+                  </div>
+                </div>
+              </div>
+            )}
 
           </div>
         </div>
