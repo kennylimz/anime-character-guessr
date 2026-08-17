@@ -220,6 +220,14 @@
   flex-shrink: 0;
 }
 
+.home-footer p {
+  margin: 4px 0;
+}
+
+.home-friend-links {
+  margin: 8px 0 4px 0;
+}
+
 .home-footer a {
   color: #333;
   text-decoration: none;

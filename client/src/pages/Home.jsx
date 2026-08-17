@@ -17,6 +17,7 @@ const HOME_TEXT = {
     description: '一个猜动漫/游戏角色的网站，建议使用桌面端浏览器游玩',
     inspiredBy: '灵感来源',
     dataSource: '数据来源',
+    friendLinks: '其它二刺猿小游戏：',
     languageLabel: '语言',
     chinese: '中文',
     english: 'English'
@@ -237,12 +238,18 @@ const Home = ({ locale = 'zh' }) => {
             <i className="fas fa-desktop" style={{marginRight: '8px'}}></i>{text.newToy}
           </a>
         </div>
+        <p className="home-friend-links">
+          {text.friendLinks}
+          <a href="https://game.baka.website/" target="_blank" rel="noopener noreferrer"> BakaGame </a> &nbsp;
+          <a href="https://anipeek.animaster.dpdns.org/" target="_blank" rel="noopener noreferrer"> 动漫高手一眼顶针 </a> &nbsp;
+          <a href="https://decrypto.monight.dpdns.org/" target="_blank" rel="noopener noreferrer"> 动漫高手截码战 </a>
+        </p>
         <p>
           {/* <a href="https://vertikarl.github.io/anime-character-guessr-english/"> ENGLISH ver. </a> */}
           {text.description}
           <br/>
-          {text.inspiredBy}<a href="https://blast.tv/counter-strikle"> BLAST.tv </a> &nbsp;
-          {text.dataSource}<a href="https://bgm.tv/"> Bangumi </a>
+          {text.inspiredBy}<a href="https://blast.tv/counter-strikle" target="_blank" rel="noopener noreferrer"> BLAST.tv </a> &nbsp;
+          {text.dataSource}<a href="https://bgm.tv/" target="_blank" rel="noopener noreferrer"> Bangumi </a>
         </p>
       </div>
     </div>

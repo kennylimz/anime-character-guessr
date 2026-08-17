@@ -5,6 +5,7 @@
       "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
     },
     "属性":{
+      "冰":"<img src='/assets/extra_tags/284157/冰.png' alt='冰' />冰",
       "岩":"<img src='/assets/extra_tags/284157/岩.png' alt='岩' />岩",
       "水":"<img src='/assets/extra_tags/284157/水.png' alt='水' />水",
       "火":"<img src='/assets/extra_tags/284157/火.png' alt='火' />火",
@@ -25,6 +26,7 @@
       "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
     },
     "属性":{
+      "冰":"<img src='/assets/extra_tags/284157/冰.png' alt='冰' />冰",
       "岩":"<img src='/assets/extra_tags/284157/岩.png' alt='岩' />岩",
       "水":"<img src='/assets/extra_tags/284157/水.png' alt='水' />水",
       "火":"<img src='/assets/extra_tags/284157/火.png' alt='火' />火",
