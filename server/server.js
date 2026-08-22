@@ -337,25 +337,38 @@ const handleAddAvatar = async (req, res) => {
             });
         }
 
+        const CODE_REGEX = /^[A-Z0-9]{6}$/;
+        if (!CODE_REGEX.test(trimmedCode)) {
+            return res.status(400).json({ 
+                error: 'Code must be 6 characters containing uppercase letters and numbers only (e.g. A1B2C3)' 
+            });
+        }
+
         const client = db.getClient();
         const database = client.db('misc');
         const collection = database.collection('avatars');
 
-        const filter = { code: trimmedCode };
-        const updateDoc = {
-            $set: {
-                avatarId: trimmedAvatarId,
-                avatarImage: trimmedAvatarImage,
-                memo: trimmedMemo
-            }
+        // Check if code already exists
+        const existingAvatar = await collection.findOne({ code: trimmedCode });
+        if (existingAvatar) {
+            return res.status(409).json({ 
+                error: 'Code already exists' 
+            });
+        }
+
+        const document = {
+            avatarId: trimmedAvatarId,
+            avatarImage: trimmedAvatarImage,
+            code: trimmedCode,
+            memo: trimmedMemo
         };
 
-        const result = await collection.updateOne(filter, updateDoc, { upsert: true });
+        await collection.insertOne(document);
 
-        console.log(`[INFO][add-avatar][${req.ip}] Avatar ${result.upsertedCount > 0 ? 'added' : 'updated'}: code=${trimmedCode}, avatarId=${trimmedAvatarId}`);
+        console.log(`[INFO][add-avatar][${req.ip}] Avatar added: code=${trimmedCode}, avatarId=${trimmedAvatarId}`);
 
-        res.status(result.upsertedCount > 0 ? 201 : 200).json({
-            message: result.upsertedCount > 0 ? 'Avatar added successfully' : 'Avatar updated successfully',
+        res.status(201).json({
+            message: 'Avatar added successfully',
             avatar: {
                 avatarId: trimmedAvatarId,
                 avatarImage: trimmedAvatarImage,
