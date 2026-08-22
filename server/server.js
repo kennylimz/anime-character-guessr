@@ -14,6 +14,7 @@ const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
 const CLIENT_URL_EN = process.env.CLIENT_URL_EN || 'http://localhost:5173';
 const SERVER_URL = process.env.SERVER_URL || 'http://localhost:3000';
 const DEV_CLIENT_URLS = ['http://localhost:5173', 'http://127.0.0.1:5173'];
+const AES_SECRET = process.env.AES_SECRET || 'My-Secret-Key';
 const cors_options = {
     origin: [...new Set([CLIENT_URL, CLIENT_URL_EN, SERVER_URL, ...DEV_CLIENT_URLS, 'https://ccb.baka.website', 'https://ccbeta.baka.website', 'https://anime-character-guessr.netlify.app', 'https://vertikarl.github.io'])],
     methods: ['GET', 'POST'],
@@ -288,6 +289,86 @@ app.get('/redeem', async (req, res) => {
         res.status(500).json({ error: 'Failed to redeem code' });
     }
 });
+
+const handleAddAvatar = async (req, res) => {
+    try {
+        const secret = req.query.secret ?? req.query.Secret ?? req.body?.secret ?? req.body?.Secret;
+        const avatarId = req.query.avatarId ?? req.body?.avatarId;
+        const avatarImage = req.query.avatarImage ?? req.body?.avatarImage;
+        const code = req.query.code ?? req.body?.code;
+        const memo = req.query.memo ?? req.body?.memo ?? '';
+
+        if (!secret) {
+            return res.status(401).json({ 
+                error: 'Secret is required' 
+            });
+        }
+
+        if (secret !== AES_SECRET) {
+            return res.status(403).json({ 
+                error: 'Invalid secret' 
+            });
+        }
+
+        if (!avatarId || !avatarImage || !code) {
+            return res.status(400).json({ 
+                error: 'avatarId, avatarImage, and code are required' 
+            });
+        }
+
+        const trimmedCode = String(code).trim();
+        const trimmedAvatarImage = String(avatarImage).trim();
+        const trimmedMemo = String(memo).trim();
+        const parsedAvatarId = (!isNaN(Number(avatarId)) && String(avatarId).trim() !== '') 
+            ? Number(avatarId) 
+            : String(avatarId).trim();
+
+        if (!trimmedCode || !trimmedAvatarImage || (typeof parsedAvatarId === 'string' && !parsedAvatarId)) {
+            return res.status(400).json({ 
+                error: 'avatarId, avatarImage, and code cannot be empty' 
+            });
+        }
+
+        const client = db.getClient();
+        const database = client.db('misc');
+        const collection = database.collection('avatars');
+
+        const filter = { code: trimmedCode };
+        const updateDoc = {
+            $set: {
+                avatarId: parsedAvatarId,
+                avatarImage: trimmedAvatarImage,
+                memo: trimmedMemo,
+                updatedAt: new Date()
+            },
+            $setOnInsert: {
+                createdAt: new Date()
+            }
+        };
+
+        const result = await collection.updateOne(filter, updateDoc, { upsert: true });
+
+        console.log(`[INFO][add-avatar][${req.ip}] Avatar ${result.upsertedCount > 0 ? 'added' : 'updated'}: code=${trimmedCode}, avatarId=${parsedAvatarId}`);
+
+        res.status(result.upsertedCount > 0 ? 201 : 200).json({
+            message: result.upsertedCount > 0 ? 'Avatar added successfully' : 'Avatar updated successfully',
+            avatar: {
+                avatarId: parsedAvatarId,
+                avatarImage: trimmedAvatarImage,
+                code: trimmedCode,
+                memo: trimmedMemo
+            }
+        });
+    } catch (error) {
+        console.error('Error adding avatar:', error);
+        res.status(500).json({ error: 'Failed to add avatar' });
+    }
+};
+
+app.get('/api/add-avartar', handleAddAvatar);
+app.post('/api/add-avartar', handleAddAvatar);
+app.get('/api/add-avatar', handleAddAvatar);
+app.post('/api/add-avatar', handleAddAvatar);
 
 startAutoClean();
 
