@@ -12,7 +12,7 @@ const autoClean = () => {
     console.log('[DevMode] 跳过自动清理房间');
     return;
   }
-  axios.get(`${process.env.SERVER_URL}/clean-rooms`)
+  axios.get(`${process.env.SERVER_URL}/api/clean-rooms`)
     .then(response => console.log('Self-ping successful:', response.status, response.data.message))
     .catch(error => console.error('Self-ping failed:', error.message));
 };

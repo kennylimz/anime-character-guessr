@@ -53,7 +53,7 @@ const Roulette = ({ defaultExpanded = false, locale = 'zh' }) => {
   useEffect(() => {
     if (isExpanded && rouletteData.length === 0) {
       setLoading(true);
-      axios.get(`${serverUrl}/roulette`)
+      axios.get(`${serverUrl}/api/roulette`)
         .then((res) => {
           const data = (res.data || []).map(char => ({
             ...char,
@@ -80,7 +80,7 @@ const Roulette = ({ defaultExpanded = false, locale = 'zh' }) => {
 
     setRedeeming(true);
     try {
-      const response = await axios.get(`${serverUrl}/redeem?code=${encodeURIComponent(redeemCode.trim())}`);
+      const response = await axios.get(`${serverUrl}/api/redeem?code=${encodeURIComponent(redeemCode.trim())}`);
 
       if (response.data.avatarId && response.data.avatarImage) {
         sessionStorage.setItem('avatarId', response.data.avatarId);

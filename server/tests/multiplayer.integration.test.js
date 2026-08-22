@@ -65,6 +65,7 @@ test('12-player multi-round multiplayer integration across normal/sync/nonstop m
     const rooms = new Map();
     const httpServer = http.createServer();
     const io = new Server(httpServer, {
+        path: '/api/ws',
         cors: {
             origin: '*',
             methods: ['GET', 'POST']
@@ -83,6 +84,7 @@ test('12-player multi-round multiplayer integration across normal/sync/nonstop m
 
     const connectPlayer = async (username) => {
         const socket = Client(`http://127.0.0.1:${port}`, {
+            path: '/api/ws',
             transports: ['websocket'],
             reconnection: false,
             forceNew: true
@@ -264,6 +266,7 @@ test('global pick is enforced by server across normal and sync rounds', { timeou
     const rooms = new Map();
     const httpServer = http.createServer();
     const io = new Server(httpServer, {
+        path: '/api/ws',
         cors: {
             origin: '*',
             methods: ['GET', 'POST']
@@ -279,6 +282,7 @@ test('global pick is enforced by server across normal and sync rounds', { timeou
 
     const connectPlayer = async (username) => {
         const socket = Client(`http://127.0.0.1:${port}`, {
+            path: '/api/ws',
             transports: ['websocket'],
             reconnection: false,
             forceNew: true
@@ -422,6 +426,7 @@ test('server-owned timers apply solo and team timeouts without client timeOut ev
     const rooms = new Map();
     const httpServer = http.createServer();
     const io = new Server(httpServer, {
+        path: '/api/ws',
         cors: {
             origin: '*',
             methods: ['GET', 'POST']
@@ -435,6 +440,7 @@ test('server-owned timers apply solo and team timeouts without client timeOut ev
 
     const connectPlayer = async (username) => {
         const socket = Client(`http://127.0.0.1:${port}`, {
+            path: '/api/ws',
             transports: ['websocket'],
             reconnection: false,
             forceNew: true
@@ -514,6 +520,7 @@ test('multiplayer server keeps state authoritative during settings, reconnect, a
     const rooms = new Map();
     const httpServer = http.createServer();
     const io = new Server(httpServer, {
+        path: '/api/ws',
         cors: {
             origin: '*',
             methods: ['GET', 'POST']
@@ -528,6 +535,7 @@ test('multiplayer server keeps state authoritative during settings, reconnect, a
 
     const connectPlayer = async (username) => {
         const socket = Client(`http://127.0.0.1:${port}`, {
+            path: '/api/ws',
             transports: ['websocket'],
             reconnection: false,
             forceNew: true

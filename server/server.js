@@ -48,7 +48,7 @@ function getCharacterImage(id, type = 'medium') {
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, {cors: cors_options});
+const io = new Server(server, {cors: cors_options, path: '/api/ws'});
 app.use(cors(cors_options));
 app.use(express.json());
 
@@ -98,17 +98,18 @@ app.get('/', (req, res) => {
     res.send(`Hello from the server!`);
 });
 
-app.get('/health', async (req, res) => {
+const handleHealth = async (req, res) => {
     try {
         const client = db.getClient();
         await client.db("admin").command({ ping: 1 });
         res.json({ status: 'ok', mongodb: 'connected' });
-            } catch (error) {
+    } catch (error) {
         res.status(500).json({ status: 'error', message: 'MongoDB connection failed' });
     }
-});
+};
+app.get('/api/health', handleHealth);
 
-app.get('/quick-join', (req, res) => {
+const handleQuickJoin = (req, res) => {
     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
     res.set('Pragma', 'no-cache');
     res.set('Expires', '0');
@@ -128,13 +129,15 @@ app.get('/quick-join', (req, res) => {
     // Construct the URL for the client to join
     const url = `${clientUrl}/multiplayer/${roomId}`;
     res.json({ url });
-});
+};
+app.get('/api/quick-join', handleQuickJoin);
 
-app.get('/room-count', (req, res) => {
+const handleRoomCount = (req, res) => {
     res.json({count: rooms.size});
-});
+};
+app.get('/api/room-count', handleRoomCount);
 
-app.get('/clean-rooms', (req, res) => {
+const handleCleanRooms = (req, res) => {
     // 开发者模式下跳过自动清理
     if (process.env.DEV_MODE === 'true') {
         console.log('[DevMode] 跳过清理房间');
@@ -154,9 +157,10 @@ app.get('/clean-rooms', (req, res) => {
         }
     }
     res.json({message: `已清理${cleaned}个房间`});
-});
+};
+app.get('/api/clean-rooms', handleCleanRooms);
 
-app.get('/close-room/:id', (req, res) => {
+const handleCloseRoomGet = (req, res) => {
     const roomId = req.params.id;
 
     if (!roomId || typeof roomId !== 'string') {
@@ -176,10 +180,11 @@ app.get('/close-room/:id', (req, res) => {
         roomId,
         playerCount: room.players?.length || 0
     });
-});
+};
+app.get('/api/close-room/:id', handleCloseRoomGet);
 
 // 支持通过 POST 提交关闭原因: { reason: string }
-app.post('/close-room/:id', (req, res) => {
+const handleCloseRoomPost = (req, res) => {
     const roomId = req.params.id;
 
     if (!roomId || typeof roomId !== 'string') {
@@ -204,9 +209,10 @@ app.post('/close-room/:id', (req, res) => {
         closeMessage: message,
         reason: reason || null
     });
-});
+};
+app.post('/api/close-room/:id', handleCloseRoomPost);
 
-app.get('/list-rooms', (req, res) => {
+const handleListRooms = (req, res) => {
     const roomsList = Array.from(rooms.entries()).map(([id, room]) => {
         const hostPlayer = room.players.find(p => p.isHost) || room.players.find(p => p.id === room.host);
         const hostName = hostPlayer?.username || '';
@@ -224,18 +230,20 @@ app.get('/list-rooms', (req, res) => {
         };
     });
     res.json(roomsList);
-});
+};
+app.get('/api/list-rooms', handleListRooms);
 
-app.get('/room-info/:id', (req, res) => {
+const handleRoomInfo = (req, res) => {
     const roomId = req.params.id;
     const room = rooms.get(roomId);
     if (!room) {
         return res.status(404).json({ error: 'Room not found' });
     }
     res.json(room);
-});
+};
+app.get('/api/room-info/:id', handleRoomInfo);
 
-app.get('/roulette', (req, res) => {
+const handleRoulette = (req, res) => {
     if (!Array.isArray(characters) || characters.length < 10) {
         return res.status(500).json({ error: 'Not enough character images' });
     }
@@ -258,9 +266,10 @@ app.get('/roulette', (req, res) => {
         image_grid: Array.isArray(char.image_grid) && char.image_grid.length > 0 ? char.image_grid[Math.floor(Math.random() * char.image_grid.length)] : null
     }));
     res.json(selected);
-});
+};
+app.get('/api/roulette', handleRoulette);
 
-app.get('/redeem', async (req, res) => {
+const handleRedeem = async (req, res) => {
     try {
         const { code } = req.query;
         if (!code) {
@@ -288,7 +297,8 @@ app.get('/redeem', async (req, res) => {
         console.error('Error redeeming code:', error);
         res.status(500).json({ error: 'Failed to redeem code' });
     }
-});
+};
+app.get('/api/redeem', handleRedeem);
 
 const handleAddAvatar = async (req, res) => {
     try {
