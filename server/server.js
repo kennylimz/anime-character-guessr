@@ -320,7 +320,7 @@ const handleAddAvatar = async (req, res) => {
             });
         }
 
-        if (!avatarId || !avatarImage || !code) {
+        if (avatarId === undefined || avatarId === null || !avatarImage || !code) {
             return res.status(400).json({ 
                 error: 'avatarId, avatarImage, and code are required' 
             });
@@ -329,11 +329,9 @@ const handleAddAvatar = async (req, res) => {
         const trimmedCode = String(code).trim();
         const trimmedAvatarImage = String(avatarImage).trim();
         const trimmedMemo = String(memo).trim();
-        const parsedAvatarId = (!isNaN(Number(avatarId)) && String(avatarId).trim() !== '') 
-            ? Number(avatarId) 
-            : String(avatarId).trim();
+        const trimmedAvatarId = String(avatarId).trim();
 
-        if (!trimmedCode || !trimmedAvatarImage || (typeof parsedAvatarId === 'string' && !parsedAvatarId)) {
+        if (!trimmedCode || !trimmedAvatarImage || !trimmedAvatarId) {
             return res.status(400).json({ 
                 error: 'avatarId, avatarImage, and code cannot be empty' 
             });
@@ -346,24 +344,20 @@ const handleAddAvatar = async (req, res) => {
         const filter = { code: trimmedCode };
         const updateDoc = {
             $set: {
-                avatarId: parsedAvatarId,
+                avatarId: trimmedAvatarId,
                 avatarImage: trimmedAvatarImage,
-                memo: trimmedMemo,
-                updatedAt: new Date()
-            },
-            $setOnInsert: {
-                createdAt: new Date()
+                memo: trimmedMemo
             }
         };
 
         const result = await collection.updateOne(filter, updateDoc, { upsert: true });
 
-        console.log(`[INFO][add-avatar][${req.ip}] Avatar ${result.upsertedCount > 0 ? 'added' : 'updated'}: code=${trimmedCode}, avatarId=${parsedAvatarId}`);
+        console.log(`[INFO][add-avatar][${req.ip}] Avatar ${result.upsertedCount > 0 ? 'added' : 'updated'}: code=${trimmedCode}, avatarId=${trimmedAvatarId}`);
 
         res.status(result.upsertedCount > 0 ? 201 : 200).json({
             message: result.upsertedCount > 0 ? 'Avatar added successfully' : 'Avatar updated successfully',
             avatar: {
-                avatarId: parsedAvatarId,
+                avatarId: trimmedAvatarId,
                 avatarImage: trimmedAvatarImage,
                 code: trimmedCode,
                 memo: trimmedMemo

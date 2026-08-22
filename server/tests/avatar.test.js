@@ -33,8 +33,7 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
                     const upsertedCount = existing ? 0 : 1;
                     const doc = {
                         ...(existing || {}),
-                        ...(update.$set || {}),
-                        ...(upsertedCount ? update.$setOnInsert || {} : {})
+                        ...(update.$set || {})
                     };
                     mockStorage.set(filter.code, doc);
                     return { upsertedCount };
@@ -64,7 +63,7 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
                     });
                 }
 
-                if (!avatarId || !avatarImage || !code) {
+                if (avatarId === undefined || avatarId === null || !avatarImage || !code) {
                     return res.status(400).json({ 
                         error: 'avatarId, avatarImage, and code are required' 
                     });
@@ -73,11 +72,9 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
                 const trimmedCode = String(code).trim();
                 const trimmedAvatarImage = String(avatarImage).trim();
                 const trimmedMemo = String(memo).trim();
-                const parsedAvatarId = (!isNaN(Number(avatarId)) && String(avatarId).trim() !== '') 
-                    ? Number(avatarId) 
-                    : String(avatarId).trim();
+                const trimmedAvatarId = String(avatarId).trim();
 
-                if (!trimmedCode || !trimmedAvatarImage || (typeof parsedAvatarId === 'string' && !parsedAvatarId)) {
+                if (!trimmedCode || !trimmedAvatarImage || !trimmedAvatarId) {
                     return res.status(400).json({ 
                         error: 'avatarId, avatarImage, and code cannot be empty' 
                     });
@@ -90,13 +87,9 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
                 const filter = { code: trimmedCode };
                 const updateDoc = {
                     $set: {
-                        avatarId: parsedAvatarId,
+                        avatarId: trimmedAvatarId,
                         avatarImage: trimmedAvatarImage,
-                        memo: trimmedMemo,
-                        updatedAt: new Date()
-                    },
-                    $setOnInsert: {
-                        createdAt: new Date()
+                        memo: trimmedMemo
                     }
                 };
 
@@ -105,7 +98,7 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
                 res.status(result.upsertedCount > 0 ? 201 : 200).json({
                     message: result.upsertedCount > 0 ? 'Avatar added successfully' : 'Avatar updated successfully',
                     avatar: {
-                        avatarId: parsedAvatarId,
+                        avatarId: trimmedAvatarId,
                         avatarImage: trimmedAvatarImage,
                         code: trimmedCode,
                         memo: trimmedMemo
@@ -163,7 +156,7 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
             assert.equal(res.statusCode, 400);
         }
 
-        // Test 7: Successful creation with numeric avatarId and Secret parameter
+        // Test 7: Successful creation with string avatarId and Secret parameter
         {
             const { req, res } = createMockReqRes({
                 query: {
@@ -177,16 +170,17 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
             await handleAddAvatar(req, res);
             assert.equal(res.statusCode, 201);
             assert.equal(res.body.message, 'Avatar added successfully');
-            assert.equal(res.body.avatar.avatarId, 12393);
+            assert.equal(res.body.avatar.avatarId, '12393');
             assert.equal(res.body.avatar.avatarImage, 'https://example.com/avatar.jpg');
             assert.equal(res.body.avatar.code, 'SECRET_CODE_1');
             assert.equal(res.body.avatar.memo, 'VIP Reward');
 
             const stored = mockStorage.get('SECRET_CODE_1');
-            assert.equal(stored.avatarId, 12393);
+            assert.equal(stored.avatarId, '12393');
             assert.equal(stored.avatarImage, 'https://example.com/avatar.jpg');
             assert.equal(stored.memo, 'VIP Reward');
-            assert.ok(stored.createdAt instanceof Date);
+            assert.equal(stored.createdAt, undefined);
+            assert.equal(stored.updatedAt, undefined);
         }
 
         // Test 8: Successful update on existing code with lowercase secret parameter
@@ -209,7 +203,6 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
             const stored = mockStorage.get('SECRET_CODE_1');
             assert.equal(stored.avatarImage, 'https://example.com/avatar_updated.jpg');
             assert.equal(stored.memo, 'Updated Memo');
-            assert.ok(stored.updatedAt instanceof Date);
         }
 
         // Test 9: Read from req.body (POST) with Secret
@@ -225,7 +218,7 @@ test('Avatar API - validation, secret check, and storage logic', async () => {
             });
             await handleAddAvatar(req, res);
             assert.equal(res.statusCode, 201);
-            assert.equal(res.body.avatar.avatarId, 706);
+            assert.equal(res.body.avatar.avatarId, '706');
             assert.equal(res.body.avatar.code, 'CRAB_CODE');
         }
 
