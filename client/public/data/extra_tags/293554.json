@@ -108,7 +108,7 @@
       "S":"<img src='/assets/extra_tags/293554/S.png' alt='S' />"
     },
     "武器类型":{
-      "浮海舶锚":"浮海舶锚",
+      "浮海舶锚":"<img src='/assets/extra_tags/293554/浮海舶锚.png'/>浮海舶锚",
       "火炮":"<img src='/assets/extra_tags/293554/火炮.png'/>火炮",
       "重破锤":"<img src='/assets/extra_tags/293554/重破锤.png'/>重破锤"
     },

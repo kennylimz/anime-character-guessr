@@ -640,6 +640,17 @@
       "霜渐":"霜渐"
     }
   },
+  "214566":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/385208/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "热熔":"<img src='/assets/extra_tags/385208/热熔.png'/>热熔",
+      "长刃":"<img src='/assets/extra_tags/385208/长刃.png'/>长刃",
+      "主力输出":"主力输出",
+      "重击伤害":"重击伤害"
+    }
+  },
   "116353":{
     "稀有度":{
       "5星":"<img src='/assets/extra_tags/385208/5星.png' alt='5星' />"
