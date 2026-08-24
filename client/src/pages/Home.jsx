@@ -111,7 +111,7 @@ const Home = ({ locale = 'zh' }) => {
     let mounted = true;
 
     const fetchRoomCount = () => {
-      fetch(`${serverUrl}/room-count`)
+      fetch(`${serverUrl}/api/room-count`)
         .then(response => {
           if (!response.ok) throw new Error('Failed to fetch');
           return response.json();

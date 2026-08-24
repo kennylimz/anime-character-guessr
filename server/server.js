@@ -14,6 +14,7 @@ const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
 const CLIENT_URL_EN = process.env.CLIENT_URL_EN || 'http://localhost:5173';
 const SERVER_URL = process.env.SERVER_URL || 'http://localhost:3000';
 const DEV_CLIENT_URLS = ['http://localhost:5173', 'http://127.0.0.1:5173'];
+const AES_SECRET = process.env.AES_SECRET || 'My-Secret-Key';
 const cors_options = {
     origin: [...new Set([CLIENT_URL, CLIENT_URL_EN, SERVER_URL, ...DEV_CLIENT_URLS, 'https://ccb.baka.website', 'https://ccbeta.baka.website', 'https://anime-character-guessr.netlify.app', 'https://vertikarl.github.io'])],
     methods: ['GET', 'POST'],
@@ -47,7 +48,7 @@ function getCharacterImage(id, type = 'medium') {
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, {cors: cors_options});
+const io = new Server(server, {cors: cors_options, path: '/api/ws'});
 app.use(cors(cors_options));
 app.use(express.json());
 
@@ -97,17 +98,18 @@ app.get('/', (req, res) => {
     res.send(`Hello from the server!`);
 });
 
-app.get('/health', async (req, res) => {
+const handleHealth = async (req, res) => {
     try {
         const client = db.getClient();
         await client.db("admin").command({ ping: 1 });
         res.json({ status: 'ok', mongodb: 'connected' });
-            } catch (error) {
+    } catch (error) {
         res.status(500).json({ status: 'error', message: 'MongoDB connection failed' });
     }
-});
+};
+app.get('/api/health', handleHealth);
 
-app.get('/quick-join', (req, res) => {
+const handleQuickJoin = (req, res) => {
     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
     res.set('Pragma', 'no-cache');
     res.set('Expires', '0');
@@ -127,13 +129,15 @@ app.get('/quick-join', (req, res) => {
     // Construct the URL for the client to join
     const url = `${clientUrl}/multiplayer/${roomId}`;
     res.json({ url });
-});
+};
+app.get('/api/quick-join', handleQuickJoin);
 
-app.get('/room-count', (req, res) => {
+const handleRoomCount = (req, res) => {
     res.json({count: rooms.size});
-});
+};
+app.get('/api/room-count', handleRoomCount);
 
-app.get('/clean-rooms', (req, res) => {
+const handleCleanRooms = (req, res) => {
     // 开发者模式下跳过自动清理
     if (process.env.DEV_MODE === 'true') {
         console.log('[DevMode] 跳过清理房间');
@@ -153,9 +157,10 @@ app.get('/clean-rooms', (req, res) => {
         }
     }
     res.json({message: `已清理${cleaned}个房间`});
-});
+};
+app.get('/api/clean-rooms', handleCleanRooms);
 
-app.get('/close-room/:id', (req, res) => {
+const handleCloseRoomGet = (req, res) => {
     const roomId = req.params.id;
 
     if (!roomId || typeof roomId !== 'string') {
@@ -175,10 +180,11 @@ app.get('/close-room/:id', (req, res) => {
         roomId,
         playerCount: room.players?.length || 0
     });
-});
+};
+app.get('/api/close-room/:id', handleCloseRoomGet);
 
 // 支持通过 POST 提交关闭原因: { reason: string }
-app.post('/close-room/:id', (req, res) => {
+const handleCloseRoomPost = (req, res) => {
     const roomId = req.params.id;
 
     if (!roomId || typeof roomId !== 'string') {
@@ -203,9 +209,10 @@ app.post('/close-room/:id', (req, res) => {
         closeMessage: message,
         reason: reason || null
     });
-});
+};
+app.post('/api/close-room/:id', handleCloseRoomPost);
 
-app.get('/list-rooms', (req, res) => {
+const handleListRooms = (req, res) => {
     const roomsList = Array.from(rooms.entries()).map(([id, room]) => {
         const hostPlayer = room.players.find(p => p.isHost) || room.players.find(p => p.id === room.host);
         const hostName = hostPlayer?.username || '';
@@ -223,18 +230,20 @@ app.get('/list-rooms', (req, res) => {
         };
     });
     res.json(roomsList);
-});
+};
+app.get('/api/list-rooms', handleListRooms);
 
-app.get('/room-info/:id', (req, res) => {
+const handleRoomInfo = (req, res) => {
     const roomId = req.params.id;
     const room = rooms.get(roomId);
     if (!room) {
         return res.status(404).json({ error: 'Room not found' });
     }
     res.json(room);
-});
+};
+app.get('/api/room-info/:id', handleRoomInfo);
 
-app.get('/roulette', (req, res) => {
+const handleRoulette = (req, res) => {
     if (!Array.isArray(characters) || characters.length < 10) {
         return res.status(500).json({ error: 'Not enough character images' });
     }
@@ -257,9 +266,10 @@ app.get('/roulette', (req, res) => {
         image_grid: Array.isArray(char.image_grid) && char.image_grid.length > 0 ? char.image_grid[Math.floor(Math.random() * char.image_grid.length)] : null
     }));
     res.json(selected);
-});
+};
+app.get('/api/roulette', handleRoulette);
 
-app.get('/redeem', async (req, res) => {
+const handleRedeem = async (req, res) => {
     try {
         const { code } = req.query;
         if (!code) {
@@ -287,7 +297,95 @@ app.get('/redeem', async (req, res) => {
         console.error('Error redeeming code:', error);
         res.status(500).json({ error: 'Failed to redeem code' });
     }
-});
+};
+app.get('/api/redeem', handleRedeem);
+
+const handleAddAvatar = async (req, res) => {
+    try {
+        const secret = req.query.secret ?? req.query.Secret ?? req.body?.secret ?? req.body?.Secret;
+        const avatarId = req.query.avatarId ?? req.body?.avatarId;
+        const avatarImage = req.query.avatarImage ?? req.body?.avatarImage;
+        const code = req.query.code ?? req.body?.code;
+        const memo = req.query.memo ?? req.body?.memo ?? '';
+
+        if (!secret) {
+            return res.status(401).json({ 
+                error: 'Secret is required' 
+            });
+        }
+
+        if (secret !== AES_SECRET) {
+            return res.status(403).json({ 
+                error: 'Invalid secret' 
+            });
+        }
+
+        if (avatarId === undefined || avatarId === null || !avatarImage || !code) {
+            return res.status(400).json({ 
+                error: 'avatarId, avatarImage, and code are required' 
+            });
+        }
+
+        const trimmedCode = String(code).trim();
+        const trimmedAvatarImage = String(avatarImage).trim();
+        const trimmedMemo = String(memo).trim();
+        const trimmedAvatarId = String(avatarId).trim();
+
+        if (!trimmedCode || !trimmedAvatarImage || !trimmedAvatarId) {
+            return res.status(400).json({ 
+                error: 'avatarId, avatarImage, and code cannot be empty' 
+            });
+        }
+
+        const CODE_REGEX = /^[A-Z0-9]{6}$/;
+        if (!CODE_REGEX.test(trimmedCode)) {
+            return res.status(400).json({ 
+                error: 'Code must be 6 characters containing uppercase letters and numbers only (e.g. A1B2C3)' 
+            });
+        }
+
+        const client = db.getClient();
+        const database = client.db('misc');
+        const collection = database.collection('avatars');
+
+        // Check if code already exists
+        const existingAvatar = await collection.findOne({ code: trimmedCode });
+        if (existingAvatar) {
+            return res.status(409).json({ 
+                error: 'Code already exists' 
+            });
+        }
+
+        const document = {
+            avatarId: trimmedAvatarId,
+            avatarImage: trimmedAvatarImage,
+            code: trimmedCode,
+            memo: trimmedMemo
+        };
+
+        await collection.insertOne(document);
+
+        console.log(`[INFO][add-avatar][${req.ip}] Avatar added: code=${trimmedCode}, avatarId=${trimmedAvatarId}`);
+
+        res.status(201).json({
+            message: 'Avatar added successfully',
+            avatar: {
+                avatarId: trimmedAvatarId,
+                avatarImage: trimmedAvatarImage,
+                code: trimmedCode,
+                memo: trimmedMemo
+            }
+        });
+    } catch (error) {
+        console.error('Error adding avatar:', error);
+        res.status(500).json({ error: 'Failed to add avatar' });
+    }
+};
+
+app.get('/api/add-avartar', handleAddAvatar);
+app.post('/api/add-avartar', handleAddAvatar);
+app.get('/api/add-avatar', handleAddAvatar);
+app.post('/api/add-avatar', handleAddAvatar);
 
 startAutoClean();
 

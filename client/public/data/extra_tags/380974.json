@@ -733,10 +733,34 @@
   "210066":{
     "标签":{
       "冰":"<img src='/assets/extra_tags/380974/冰.png'/>冰",
-      "强攻":"<img src='/assets/extra_tags/380974/强攻.png'/>强攻"
+      "强攻":"<img src='/assets/extra_tags/380974/强攻.png'/>强攻",
+      "穿透":"穿透"
     },
     "阵营":{
       "罗斯凯利法·空域巡戍局":"<img src='/assets/extra_tags/380974/罗斯凯利法·空域巡戍局.png'/>罗斯凯利法·空域巡戍局"
+    },
+    "稀有度":{
+      "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
+    }
+  },
+  "210064":{
+    "标签":{
+      "电":"<img src='/assets/extra_tags/380974/电.png'/>电"
+    },
+    "阵营":{
+      "罗斯凯利法·弗林特工坊":"<img src='/assets/extra_tags/380974/罗斯凯利法·弗林特工坊.png'/>罗斯凯利法·弗林特工坊"
+    },
+    "稀有度":{
+      "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
+    }
+  },
+  "210065":{
+    "标签":{
+      "风":"<img src='/assets/extra_tags/380974/风.png'/>风",
+      "击破":"<img src='/assets/extra_tags/380974/击破.png'/>击破"
+    },
+    "阵营":{
+      "罗斯凯利法·弗林特工坊":"<img src='/assets/extra_tags/380974/罗斯凯利法·弗林特工坊.png'/>罗斯凯利法·弗林特工坊"
     },
     "稀有度":{
       "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"

@@ -379,6 +379,7 @@ const Multiplayer = () => {
     let connectTimeoutId;
     // Initialize socket connection (configured with autoConnect: false to prevent instant connection attempt)
     const newSocket = io(SOCKET_URL, { 
+      path: '/api/ws',
       transports: ['websocket'],
       autoConnect: false
     });
@@ -1502,7 +1503,7 @@ const Multiplayer = () => {
   // Add handleQuickJoin function
   const handleQuickJoin = async () => {
     try {
-      const response = await axios.get(`${SOCKET_URL}/quick-join`);
+      const response = await axios.get(`${SOCKET_URL}/api/quick-join`);
       window.location.href = `${response.data.url}${langQuery}`;
     } catch (error) {
       if (error.response && error.response.status === 404) {
@@ -1520,7 +1521,7 @@ const Multiplayer = () => {
       setLoadingRooms(true);
     }
     try {
-      const response = await axios.get(`${SOCKET_URL}/list-rooms`);
+      const response = await axios.get(`${SOCKET_URL}/api/list-rooms`);
       // 只显示公开房间
       const publicRooms = response.data.filter(room => room.isPublic);
       setRoomList(publicRooms);
