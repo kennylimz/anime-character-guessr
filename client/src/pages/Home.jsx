@@ -244,7 +244,7 @@ const Home = ({ locale = 'zh' }) => {
           {text.friendLinks}
           <a href="https://game.baka.website/" target="_blank" rel="noopener noreferrer"> BakaGame </a> &nbsp;
           <a href="https://anipeek.animaster.dpdns.org/" target="_blank" rel="noopener noreferrer"> 动漫高手一眼顶针 </a> &nbsp;
-          <a href="https://decrypto.monight.dpdns.org/" target="_blank" rel="noopener noreferrer"> 动漫高手截码战 </a> @&nbsp;
+          <a href="https://decrypto.monight.dpdns.org/" target="_blank" rel="noopener noreferrer"> 动漫高手截码战 </a> &nbsp;
           <a href="https://bot.q.qq.com/s/uDo9xxV9Pq" target="_blank" rel="noopener noreferrer"> 抽抽Bot </a>
         </p>
         <p>
