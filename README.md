@@ -5,6 +5,7 @@
 
 - 一个猜动漫角色的游戏, 建议使用桌面端浏览器游玩。
 - 灵感来源 [BLAST.tv](https://blast.tv/counter-strikle), 数据来源 [Bangumi](https://bgm.tv/)。
+- [国内备用网址](https://ccb.baka.website)
 - 游玩群：467740403
 - 开发交流群：894333602
 
