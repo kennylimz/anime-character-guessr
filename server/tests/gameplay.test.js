@@ -5,7 +5,8 @@ const {
     enforceAttemptLimit,
     handlePlayerTimeout,
     countAttemptMarks,
-    buildScoreChanges
+    buildScoreChanges,
+    finalizeStandardGame
 } = require('../utils/gameplay');
 
 function createMockIo() {
@@ -133,4 +134,28 @@ test('buildScoreChanges should keep partial score and classify surrender after e
     assert.equal(scoreChanges.p1.score, 1);
     assert.deepEqual(scoreChanges.p1.breakdown, { partial: 1 });
     assert.equal(scoreChanges.p1.result, 'surrender');
+});
+
+test('standard sync settlement calculates first-guess and speed bonuses per winner', () => {
+    const io = createMockIo();
+    const players = ['✔👑', '❌✔✌', '❌❌❌✔✌', '❌❌❌❌❌✔✌'].map((guesses, index) => ({
+        id: `p${index}`, username: `player-${index}`, guesses, score: 0, team: null
+    }));
+    const room = {
+        players,
+        currentGame: {
+            settings: { syncMode: true, nonstopMode: false, maxAttempts: 10 },
+            firstWinner: { id: 'p0', isBigWin: true },
+            guesses: players.map(player => ({
+                username: player.username,
+                guesses: [{ playerId: player.id, isCorrect: true }]
+            }))
+        }
+    };
+
+    assert.equal(finalizeStandardGame(room, 'room-sync-score', io), true);
+    assert.deepEqual(players.map(player => player.score), [14, 4, 3, 2]);
+    const details = io.events.find(event => event.eventName === 'gameEnded').payload.scoreDetails;
+    assert.deepEqual(details.map(detail => detail.breakdown.bigWin), [12, 0, 0, 0]);
+    assert.deepEqual(details.map(detail => detail.breakdown.quickGuess), [0, 2, 1, 0]);
 });

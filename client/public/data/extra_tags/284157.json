@@ -1808,5 +1808,33 @@
     "所属":{
       "至冬":"至冬"
     }
+  },
+  "215614":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
+    },
+    "属性":{
+      "风":"<img src='/assets/extra_tags/284157/风.png' alt='风' />风"
+    },
+    "武器类型":{
+      "单手剑":"<img src='/assets/extra_tags/284157/单手剑.png' alt='单手剑' />单手剑"
+    },
+    "所属":{
+      "至冬":"至冬"
+    }
+  },
+  "215023":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
+    },
+    "属性":{
+      "水":"<img src='/assets/extra_tags/284157/水.png' alt='水' />水"
+    },
+    "武器类型":{
+      "法器":"<img src='/assets/extra_tags/284157/法器.png' alt='法器' />法器"
+    },
+    "所属":{
+      "至冬":"至冬"
+    }
   }
 }

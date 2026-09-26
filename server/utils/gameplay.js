@@ -258,7 +258,7 @@ function getSyncAndNonstopState(room, emitCallback) {
         
         if (emitCallback) {
             emitCallback('nonstopProgress', {
-                winners: (room.currentGame?.nonstopWinners || []).map((w, idx) => ({ username: w.username, rank: idx + 1, score: w.score })),
+                winners: (room.currentGame?.nonstopWinners || []).map(w => ({ username: w.username, rank: w.rank, score: w.score })),
                 remainingCount: remainingPlayers.length,
                 totalCount: activePlayers.length
             });
@@ -900,7 +900,11 @@ function finalizeStandardGame(room, roomId, io, { force = false } = {}) {
 
     let actualWinners = [];
     if (syncMode) {
-        actualWinners = activePlayers.filter(p => p.guesses.includes('✌') || p.guesses.includes('👑'));
+        // 队伍共享结束标记，个人胜利只能来自该玩家已被接受的正确猜测。
+        const correctGuesserIds = new Set(room.currentGame.guesses.flatMap(history =>
+            history.guesses.filter(guess => guess.isCorrect).map(guess => guess.playerId)
+        ));
+        actualWinners = activePlayers.filter(p => correctGuesserIds.has(p.id));
     } else {
         const answerId = room.currentGame?.answerCharacterId;
         let bigwinner = firstWinner?.isBigWin
@@ -939,35 +943,12 @@ function finalizeStandardGame(room, roomId, io, { force = false } = {}) {
     const partialAwardees = computePartialAwardeesFromGuessHistory(room);
 
     const winnerScoreResults = {};
-    let primaryWinner = actualWinners.find(p => p.id === firstWinner?.id) || actualWinners[0] || null;
-    let sharedScoreResult = null;
-    let sharedDetailResult = null;
-
-    if (syncMode && primaryWinner) {
-        sharedScoreResult = calculateWinnerScore({
-            guesses: primaryWinner.guesses,
-            baseScore: 2,
-            totalRounds
-        });
-        sharedDetailResult = calculateWinnerScore({ guesses: primaryWinner.guesses, baseScore: 0, totalRounds });
-        actualWinners.forEach(w => {
-            w.score += sharedScoreResult.totalScore;
-            winnerScoreResults[w.id] = {
-                totalScore: sharedScoreResult.totalScore,
-                guessCount: sharedDetailResult.guessCount,
-                bonuses: sharedScoreResult.bonuses
-            };
-        });
-    } else {
-        actualWinners.forEach(w => {
-            const baseScore = 2;
-            const scoreResult = calculateWinnerScore({ guesses: w.guesses, baseScore, totalRounds });
-            w.score += scoreResult.totalScore;
-            winnerScoreResults[w.id] = scoreResult;
-        });
-        primaryWinner = primaryWinner || actualWinners[0] || null;
-        sharedDetailResult = primaryWinner ? calculateWinnerScore({ guesses: primaryWinner.guesses, baseScore: 0, totalRounds }) : null;
-    }
+    const primaryWinner = actualWinners.find(p => p.id === firstWinner?.id) || actualWinners[0] || null;
+    actualWinners.forEach(w => {
+        const scoreResult = calculateWinnerScore({ guesses: w.guesses, baseScore: 2, totalRounds });
+        w.score += scoreResult.totalScore;
+        winnerScoreResults[w.id] = scoreResult;
+    });
 
     const winnerIdSet = new Set((actualWinners || []).map(w => w.id));
     (room.players || []).forEach(p => {
@@ -979,16 +960,11 @@ function finalizeStandardGame(room, roomId, io, { force = false } = {}) {
         }
     });
 
-    const winnerGuessCount = sharedDetailResult?.guessCount || 0;
+    const winnerGuessCount = winnerScoreResults[primaryWinner?.id]?.guessCount || 0;
     let bigWinnerActualScore = 0;
-    if (syncMode && primaryWinner && primaryWinner.guesses.includes('👑') && sharedScoreResult) {
-        bigWinnerActualScore = sharedScoreResult.totalScore;
-    } else {
-        actualWinners.filter(p => p.guesses.includes('👑')).forEach(p => {
-            const res = calculateWinnerScore({ guesses: p.guesses, baseScore: 2, totalRounds }).totalScore;
-            bigWinnerActualScore = Math.max(bigWinnerActualScore, res);
-        });
-    }
+    actualWinners.filter(p => p.guesses.includes('👑')).forEach(p => {
+        bigWinnerActualScore = Math.max(bigWinnerActualScore, winnerScoreResults[p.id].totalScore);
+    });
 
     const scoreChanges = buildScoreChanges({
         players: room.players,
@@ -1080,7 +1056,7 @@ function buildScoreChanges({ players, actualWinner, actualWinners, winnerScoreRe
         const winners = nonstopWinners || [];
         const winnerIds = new Set(winners.map(w => w.id));
         
-        winners.forEach((w, idx) => {
+        winners.forEach(w => {
             const winnerPlayer = players.find(p => p.id === w.id);
             const isBigWin = winnerPlayer && winnerPlayer.guesses.includes('👑');
 
@@ -1092,7 +1068,7 @@ function buildScoreChanges({ players, actualWinner, actualWinners, winnerScoreRe
             scoreChanges[w.id] = {
                 score: w.score,
                 breakdown: {
-                    rank: idx + 1,
+                    rank: w.rank,
                     base: baseScore,
                     ...(bigWinBonus ? { bigWin: bigWinBonus } : {}),
                     ...(quickGuessBonus ? { quickGuess: quickGuessBonus } : {})

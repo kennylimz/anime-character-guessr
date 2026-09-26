@@ -295,24 +295,6 @@
       "SRT特殊学院":"<img src='/assets/extra_tags/300648/SRT特殊学院.png'/>SRT特殊学院"
     }
   },
-  "112156":{
-    "稀有度":{
-      "2星":"<img src='/assets/extra_tags/300648/2星.png' alt='2星' />"
-    },
-    "武器类型":{
-      "AR":"<img src='/assets/extra_tags/300648/AR.png'/>AR"
-    },
-    "标签":{
-      "贯通":"<span style='color: #BD8901;'>贯通</span>",
-      "轻装甲":"<span style='color: #920008;'>轻装甲</span>",
-      "STRIKER":"<span style='font-style: italic; font-weight: bold;'>STRIKER</span>",
-      "输出":"<img src='/assets/extra_tags/300648/输出.png'/>输出",
-      "中排":"中排"
-    },
-    "所属":{
-      "千年科学学园":"<img src='/assets/extra_tags/300648/千年科学学园.png'/>千年科学学园"
-    }
-  },
   "112157":{
     "稀有度":{
       "3星":"<img src='/assets/extra_tags/300648/3星.png' alt='3星' />"

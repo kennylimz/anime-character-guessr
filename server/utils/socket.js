@@ -327,8 +327,10 @@ function setupSocket(io, rooms) {
 
             const initialTotalPlayers = room.currentGame?.nonstopTotalPlayers || 1;
             const winnersCount = room.currentGame?.nonstopWinners?.length || 0;
-            const winnerRank = winnersCount + 1;
-            const rankScore = Math.max(1, initialTotalPlayers - winnersCount);
+            const winnerRank = room.currentGame.settings.syncMode
+                ? room.currentGame.syncRoundStartRank
+                : winnersCount + 1;
+            const rankScore = Math.max(1, initialTotalPlayers - winnerRank + 1);
             const totalRounds = room.currentGame?.settings?.maxAttempts || 10;
             const scoreResult = calculateWinnerScore({ guesses: player.guesses, baseScore: rankScore, totalRounds });
             const score = scoreResult.totalScore;
@@ -338,6 +340,7 @@ function setupSocket(io, rooms) {
                 username: player.username,
                 isBigWin,
                 team: player.team,
+                rank: winnerRank,
                 score,
                 bonuses: scoreResult.bonuses
             });
@@ -1124,7 +1127,7 @@ function setupSocket(io, rooms) {
          * @param {string} roomId - 房间 ID
          * @param {Object} guessResult - 猜测结果对象 { guessData, isCorrect, isPartialCorrect }
          */
-        socket.on('playerGuess', ({ roomId, guessResult }, ack) => {
+        socket.on('playerGuess', ({ roomId, guessResult, sharedMetaTags }, ack) => {
             const respond = (payload) => {
                 if (typeof ack === 'function') ack(payload);
             };
@@ -1234,6 +1237,10 @@ function setupSocket(io, rooms) {
                 player.guesses += mark;
             }
 
+            // 兼容客户端可随有效猜测提交标签，必须在同步轮推进前登记。
+            const tagBanApplied = Array.isArray(sharedMetaTags);
+            if (tagBanApplied) registerSharedMetaTags(room, roomId, player, sharedMetaTags);
+
             let settlement = null;
             if (isCorrect) {
                 settlement = room.currentGame?.settings?.nonstopMode
@@ -1258,7 +1265,7 @@ function setupSocket(io, rooms) {
                     scheduleActiveTimeouts(roomId, room, { resetExisting: false });
                 }
             }
-            respond({ ok: true, isCorrect, isPartialCorrect, settlement });
+            respond({ ok: true, isCorrect, isPartialCorrect, settlement, tagBanApplied });
         });
 
         /**
@@ -1267,10 +1274,8 @@ function setupSocket(io, rooms) {
          * @param {string} roomId - 房间 ID
          * @param {Array<string>} tags - 禁用标签列表
          */
-        socket.on('tagBanSharedMetaTags', ({ roomId, tags }) => {
-            const room = getRoom(roomId, 'tagBanSharedMetaTags');
+        const registerSharedMetaTags = (room, roomId, player, tags) => {
             if (!room || !room.currentGame || !room.currentGame.settings?.tagBan) return;
-            const player = room.players.find(p => p.id === socket.id);
             if (!player) return;
             if (!Array.isArray(tags) || !tags.length) return;
 
@@ -1305,6 +1310,12 @@ function setupSocket(io, rooms) {
             });
             if (!changed || room.currentGame?.settings?.syncMode) return;
             io.to(roomId).emit('tagBanStateUpdate', { tagBanState: Array.isArray(room.currentGame.tagBanState) ? room.currentGame.tagBanState : [] });
+        };
+
+        socket.on('tagBanSharedMetaTags', ({ roomId, tags }) => {
+            const room = getRoom(roomId, 'tagBanSharedMetaTags');
+            const player = room?.players.find(p => p.id === socket.id);
+            registerSharedMetaTags(room, roomId, player, tags);
         });
 
         /**
