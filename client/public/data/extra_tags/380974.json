@@ -747,7 +747,8 @@
     "标签":{
       "电":"<img src='/assets/extra_tags/380974/电.png'/>电",
       "锋御":"<img src='/assets/extra_tags/380974/锋御.png'/>锋御",
-      "锐化":"锐化"
+      "打击":"打击",
+      "斩击":"斩击"
     },
     "阵营":{
       "罗斯凯利法·弗林特工坊":"<img src='/assets/extra_tags/380974/罗斯凯利法·弗林特工坊.png'/>罗斯凯利法·弗林特工坊"
@@ -763,6 +764,30 @@
     },
     "阵营":{
       "罗斯凯利法·弗林特工坊":"<img src='/assets/extra_tags/380974/罗斯凯利法·弗林特工坊.png'/>罗斯凯利法·弗林特工坊"
+    },
+    "稀有度":{
+      "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
+    }
+  },
+  "210067":{
+    "标签":{
+      "火":"<img src='/assets/extra_tags/380974/火.png'/>火",
+      "异常":"<img src='/assets/extra_tags/380974/异常.png'/>异常"
+    },
+    "阵营":{
+      "坎卜斯黑枝":"<img src='/assets/extra_tags/380974/坎卜斯黑枝.png'/>坎卜斯黑枝"
+    },
+    "稀有度":{
+      "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
+    }
+  },
+  "201860":{
+    "标签":{
+      "风":"<img src='/assets/extra_tags/380974/风.png'/>风",
+      "强攻":"<img src='/assets/extra_tags/380974/强攻.png'/>强攻"
+    },
+    "阵营":{
+      "都市秩序部":"<img src='/assets/extra_tags/380974/都市秩序部.png'/>都市秩序部"
     },
     "稀有度":{
       "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
