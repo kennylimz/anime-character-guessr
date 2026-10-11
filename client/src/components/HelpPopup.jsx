@@ -33,7 +33,14 @@ function HelpPopup({ onClose, locale = 'zh' }) {
   const text = HELP_TEXT[locale] || HELP_TEXT.zh;
 
   return (
-    <div className="popup-overlay">
+    <div
+      className="popup-overlay"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose?.();
+        }
+      }}
+    >
       <div className="popup-content">
         <button className="popup-close" onClick={onClose}><i className="fas fa-xmark"></i></button>
         <div className="popup-header">

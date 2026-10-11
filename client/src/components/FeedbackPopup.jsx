@@ -11,6 +11,7 @@ const FEEDBACK_TEXT = {
     placeholder: '请简单描述您遇到的问题或想法...',
     submitting: '提交中...',
     submit: '提交',
+    cancel: '取消',
     types: [
       'Bug反馈',
       '标签反馈',
@@ -24,6 +25,7 @@ const FEEDBACK_TEXT = {
     placeholder: 'Briefly describe the issue or your suggestion...',
     submitting: 'Submitting...',
     submit: 'Submit',
+    cancel: 'Cancel',
     types: [
       'Bug feedback',
       'Tag feedback',
@@ -65,7 +67,16 @@ const FeedbackPopup = ({ onClose, onSubmit, onTagFeedbackSelect, locale = 'zh' }
   };
 
   return (
-    <div className="feedback-popup-overlay" role="dialog" aria-modal="true">
+    <div
+      className="feedback-popup-overlay"
+      role="dialog"
+      aria-modal="true"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose?.();
+        }
+      }}
+    >
       <div className="feedback-popup">
         <button className="popup-close" onClick={onClose} aria-label={isEnglish ? 'Close' : '关闭'}>
           <i className="fas fa-xmark"></i>
@@ -118,19 +129,25 @@ const FeedbackPopup = ({ onClose, onSubmit, onTagFeedbackSelect, locale = 'zh' }
           </label>
         )}
 
-        {!isTagFeedback && (
-          <div className="feedback-actions">
+        <div className="feedback-actions">
+          <button
+            type="button"
+            className="feedback-button secondary"
+            onClick={onClose}
+          >
+            {text.cancel || (isEnglish ? 'Cancel' : '取消')}
+          </button>
+          {!isTagFeedback && (
             <button
               type="button"
               className="feedback-button primary"
-              style={{ width: '100%' }}
               onClick={handleSubmit}
               disabled={!description.trim() || isSubmitting}
             >
               {isSubmitting ? text.submitting : text.submit}
             </button>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ html, body, #root {
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
-  font-family: "Noto Sans", "Noto Sans SC", "Noto Color Emoji", system-ui, sans-serif;
+  font-family: "Noto Sans Variable", "Noto Sans", "Noto Sans SC Variable", "Noto Sans SC", "Noto Color Emoji", system-ui, sans-serif;
   position: relative;
 }
 

@@ -7,7 +7,7 @@
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     overflow: hidden;
-    font-family: "Noto Sans", "Noto Sans SC", "Noto Color Emoji", system-ui, sans-serif;
+    font-family: "Noto Sans Variable", "Noto Sans", "Noto Sans SC Variable", "Noto Sans SC", "Noto Color Emoji", system-ui, sans-serif;
 }
 
 .settings-popup .popup-header {

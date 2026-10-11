@@ -58,6 +58,33 @@ function setupSocket(io, rooms) {
             return currentGame.globalPickState;
         };
 
+        const getDefaultSettings = () => ({
+            startYear: new Date().getFullYear() - 5,
+            endYear: new Date().getFullYear(),
+            topNSubjects: 20,
+            useSubjectPerYear: false,
+            metaTags: ["", "", ""],
+            useIndex: false,
+            indexId: null,
+            addedSubjects: [],
+            mainCharacterOnly: true,
+            characterNum: 6,
+            maxAttempts: 10,
+            enableHints: false,
+            timeLimit: 60,
+            subjectSearch: true,
+            characterTagNum: 4,
+            subjectTagNum: 4,
+            commonTags: true,
+            useHints: [],
+            useImageHint: 0,
+            imgHint: null,
+            syncMode: false,
+            nonstopMode: false,
+            globalPick: false,
+            tagBan: false,
+        });
+
         const rebuildGlobalPickState = (currentGame) => {
             if (!currentGame) return;
             const state = {
@@ -813,6 +840,7 @@ function setupSocket(io, rooms) {
             rooms.set(roomId, {
                 host: socket.id,
                 isPublic: true,
+                settings: getDefaultSettings(),
                 players: [{
                     id: socket.id,
                     username,
@@ -853,6 +881,7 @@ function setupSocket(io, rooms) {
                 rooms.set(roomId, {
                     host: socket.id,
                     isPublic: true,
+                    settings: getDefaultSettings(),
                     players: [{
                         id: socket.id,
                         username,
@@ -1107,7 +1136,8 @@ function setupSocket(io, rooms) {
             const allReady = room.players.every(p => p.isHost || p.ready || p.disconnected);
             if (!allReady) return rejectStart('所有玩家必须准备好才能开始游戏');
             room.players = room.players.filter(p => !p.disconnected || p.score > 0);
-            initGameState(room, character, settings || room.settings, null, null);
+            room.settings = settings || room.settings || getDefaultSettings();
+            initGameState(room, character, room.settings, null, null);
             io.to(roomId).emit('gameStart', { character, settings: room.currentGame.settings, players: room.players, isPublic: room.isPublic, isGameStarted: true });
             io.to(roomId).emit('tagBanStateUpdate', { tagBanState: [] });
             // 游戏开始时发送初始进度（同步模式和血战模式）
@@ -1712,6 +1742,7 @@ function setupSocket(io, rooms) {
             if (socket.id !== room.answerSetterId) return rejectAnswer('你不是指定的出题人');
             if (!normalizeCharacterId(decryptCharacter(character)?.id)) return rejectAnswer('答案数据无效');
             room.players = room.players.filter(p => !p.disconnected || p.score > 0);
+            room.settings = room.settings || getDefaultSettings();
             applySetterObservers(room, roomId, room.answerSetterId, io);
             initGameState(room, character, room.settings, hints, socket.id);
             room.waitingForAnswer = false;

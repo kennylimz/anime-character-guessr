@@ -62,7 +62,7 @@ const SetAnswerPopup = ({ onSetAnswer, gameSettings, locale = 'zh' }) => {
         }
         onSetAnswer({
           character,
-          hints: hints.slice(0, Array.isArray(gameSettings.useHints) ? gameSettings.useHints.length : 0)
+          hints: hints.slice(0, Array.isArray(gameSettings?.useHints) ? gameSettings.useHints.length : 0)
         });
       } catch (error) {
         console.error('Failed to get character details:', error);

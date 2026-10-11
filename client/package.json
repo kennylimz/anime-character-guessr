@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource/noto-sans": "^5.3.0",
-    "@fontsource/noto-sans-sc": "^5.3.0",
+    "@fontsource-variable/noto-sans": "^5.3.0",
+    "@fontsource-variable/noto-sans-sc": "^5.3.0",
     "axios": "^1.18.0",
     "baseline-browser-mapping": "^2.10.37",
     "blurify": "^1.2.1",

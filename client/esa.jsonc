@@ -1,0 +1,9 @@
+{
+  "name": "anime-character-guessr",
+  "installCommand": "printf '%s' 'Y29uc3QgZj1yZXF1aXJlKCJmcyIpLE09W10sZz0oZCxjKT0+Zi5yZWFkZGlyU3luYyhkKS5mb3JFYWNoKG49Pntjb25zdCBhPWQrIi8iK247Zi5zdGF0U3luYyhhKS5pc0RpcmVjdG9yeSgpP2coYSxjKTpjKGEsbil9KTsKZygiZGlzdCIsKGEsbik9Pntjb25zdCBtPW4ucmVwbGFjZSgvW15ceDIwLVx4N2VcdTRlMDAtXHU5ZmZmXS9nLGM9PiJ1IitjLmNvZGVQb2ludEF0KDApLnRvU3RyaW5nKDE2KS50b1VwcGVyQ2Fz' | base64 -d > .s.cjs && npm install",
+  "buildCommand": "printf '%s' 'ZSgpKTttIT09biYmTS5wdXNoKFthLGEucmVwbGFjZShuLG0pLG4sbV0pfSk7CmcoImRpc3QiLChhLG4pPT57aWYoIS9cLihqc29ufGpzfGNzc3xodG1sKSQvaS50ZXN0KG4pKXJldHVybjtsZXQgdD1mLnJlYWRGaWxlU3luYyhhLCJ1dGY4Iik7TS5mb3JFYWNoKHg9PnQ9dC5zcGxpdCh4WzJdKS5qb2luKHhbM10pKTtmLndyaXRlRmlsZVN5bmMoYSx0KX0pOwpNLmZvckVhY2goeD0+Zi5yZW5hbWVTeW5jKHhbMF0seFsxXSkp' | base64 -d >> .s.cjs && npm run build && node .s.cjs",
+  "assets": {
+    "directory": "./dist",
+    "notFoundStrategy": "singlePageApplication"
+  }
+}
