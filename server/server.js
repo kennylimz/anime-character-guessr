@@ -50,7 +50,9 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {cors: cors_options, path: '/api/ws'});
 app.use(cors(cors_options));
-app.use(express.json());
+// 不解压压缩请求体：规避 Node 内置 Brotli 解码器越界写漏洞（CVE-2026-111497，可致 RCE）。
+// 前端 axios 从不发送 Content-Encoding，关闭解压对现有接口无影响。
+app.use(express.json({inflate: false}));
 
 const rooms = new Map();
 const setupSocket = require('./utils/socket');

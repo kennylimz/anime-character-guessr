@@ -662,6 +662,15 @@
       "重击伤害":"重击伤害"
     }
   },
+  "214568":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/385208/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "导电":"<img src='/assets/extra_tags/385208/导电.png'/>导电",
+      "音感仪":"<img src='/assets/extra_tags/385208/音感仪.png'/>音感仪"
+    }
+  },
   "116353":{
     "稀有度":{
       "5星":"<img src='/assets/extra_tags/385208/5星.png' alt='5星' />"

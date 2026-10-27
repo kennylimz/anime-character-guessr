@@ -5683,5 +5683,39 @@
     "宝具":{
       "Buster单体":"<img src='/assets/extra_tags/109378/Buster.png' alt='Buster'/>单体"
     }
+  },
+  "135796":{
+    "_name":"玉藻艾莉亚",
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/109378/5星.png' alt='5星' />"
+    },
+    "属性":{
+      "中立":"中立",
+      "善":"善",
+      "地":"地"
+    },
+    "职阶":{
+      "Rider":"<img src='/assets/extra_tags/109378/金卡Rider.png'/>Rider"
+    },
+    "宝具":{
+      "Arts全体":"<img src='/assets/extra_tags/109378/Arts.png' alt='Arts'/>全体"
+    }
+  },
+  "189116":{
+    "_name":"终结的伊丽莎白",
+    "稀有度":{
+      "4星":"<img src='/assets/extra_tags/109378/4星.png' alt='4星' />"
+    },
+    "属性":{
+      "恶":"恶",
+      "星":"星",
+      "混沌":"混沌"
+    },
+    "职阶":{
+      "Avenger":"<img src='/assets/extra_tags/109378/金卡Avenger.png'/>Avenger"
+    },
+    "宝具":{
+      "Buster全体":"<img src='/assets/extra_tags/109378/Buster.png' alt='Buster'/>全体"
+    }
   }
 }
