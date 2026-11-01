@@ -793,5 +793,14 @@
     "稀有度":{
       "S":"<img src='/assets/extra_tags/380974/S.png' alt='S' />"
     }
+  },
+  "152028":{
+    "标签":{
+      "以太":"<img src='/assets/extra_tags/380974/以太.png'/>以太",
+      "防护":"<img src='/assets/extra_tags/380974/防护.png'/>防护"
+    },
+    "阵营":{
+      "未名界域":"未名界域"
+    }
   }
 }
