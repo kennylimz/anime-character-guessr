@@ -1037,6 +1037,18 @@
       "星际和平公司":"星际和平公司"
     }
   },
+  "151574":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/360097/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "欢愉":"<img src='/assets/extra_tags/360097/欢愉.png'/>欢愉",
+      "量子":"<img src='/assets/extra_tags/360097/量子.png'/>量子"
+    },
+    "阵营":{
+      "二相乐园":"<img src='/assets/extra_tags/360097/二相乐园.png'/>二相乐园"
+    }
+  },
   "10596":{
     "稀有度":{
       "5星":"<img src='/assets/extra_tags/360097/5星.png' alt='5星' />"

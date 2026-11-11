@@ -1836,5 +1836,33 @@
     "所属":{
       "至冬":"至冬"
     }
+  },
+  "215617":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/284157/5星.png' alt='5星' />"
+    },
+    "属性":{
+      "雷":"<img src='/assets/extra_tags/284157/雷.png' alt='雷' />雷"
+    },
+    "武器类型":{
+      "法器":"<img src='/assets/extra_tags/284157/法器.png' alt='法器' />法器"
+    },
+    "所属":{
+      "至冬":"至冬"
+    }
+  },
+  "215613":{
+    "稀有度":{
+      "4星":"<img src='/assets/extra_tags/284157/4星.png' alt='4星' />"
+    },
+    "属性":{
+      "雷":"<img src='/assets/extra_tags/284157/雷.png' alt='雷' />雷"
+    },
+    "武器类型":{
+      "单手剑":"<img src='/assets/extra_tags/284157/单手剑.png' alt='单手剑' />单手剑"
+    },
+    "所属":{
+      "至冬":"至冬"
+    }
   }
 }
