@@ -1820,9 +1820,11 @@
       "秩序":"秩序"
     },
     "职阶":{
-      "Archer":"<img src='/assets/extra_tags/109378/金卡Archer.png'/>Archer"
+      "Archer":"<img src='/assets/extra_tags/109378/金卡Archer.png'/>Archer",
+      "Rider":"<img src='/assets/extra_tags/109378/金卡Rider.png'/>Rider"
     },
     "宝具":{
+      "Quick全体":"<img src='/assets/extra_tags/109378/Quick.png' alt='Quick'/>全体",
       "Quick单体":"<img src='/assets/extra_tags/109378/Quick.png' alt='Quick'/>单体"
     }
   },

@@ -680,6 +680,18 @@
       "迅刀":"<img src='/assets/extra_tags/385208/迅刀.png'/>迅刀"
     }
   },
+  "224841":{
+    "稀有度":{
+      "5星":"<img src='/assets/extra_tags/385208/5星.png' alt='5星' />"
+    },
+    "标签":{
+      "衍射":"<img src='/assets/extra_tags/385208/衍射.png'/>衍射",
+      "佩枪":"<img src='/assets/extra_tags/385208/佩枪.png'/>佩枪",
+      "伤害加深":"伤害加深",
+      "牵引":"牵引",
+      "生存治疗":"生存治疗"
+    }
+  },
   "116353":{
     "稀有度":{
       "5星":"<img src='/assets/extra_tags/385208/5星.png' alt='5星' />"
